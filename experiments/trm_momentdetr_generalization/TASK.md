@@ -16,8 +16,11 @@
 - [x] **Stage 4**: Model architecture implementation (`models/moment_detr_trm/`, `training/moment_detr_trm/`, `configs/moment_detr_trm/`).
 - [x] **Stage 5**: 7-step unit verification suite (`scripts/smoke_test_trm.py` PASSED with 100% success; gradient flow verified; overfit test loss decreased by 19.56%).
 - [x] **Stage 6**: TRM-PT branch implementation (`models/moment_detr_trm_pt/`, `training/moment_detr_trm_pt/`, `scripts/smoke_test_trm_pt.py` PASSED; 9,428 $S^+$ pseudo labels generated in `features/phrase_data/pt_pseudo_labels/`).
-- [x] **Stage 7**: Formal configuration freeze (`EXPERIMENT_FREEZE.json`) and verified training/evaluation runners (`scripts/train_trm.sh`, `scripts/infer_trm.sh`, `scripts/run_all_splits_trm.sh`). Full training epoch and evaluation cycle tested and verified end-to-end.
+- [x] **Stage 7**: Formal configuration freeze (`EXPERIMENT_FREEZE.json`) and verified training/evaluation runners (`scripts/train_trm.sh`, `scripts/infer_trm.sh`, `scripts/run_all_splits_trm.sh`). Full training epoch and evaluation cycle tested and verified end-to-end on Split A1 (`results/moment_detr_trm/A1/best.ckpt`, `results/moment_detr_trm/A1/eval_output/generalization_summary.json`: S+ R@1@0.5=30.43%, U+ R@1@0.5=23.87%, Gap=6.56%).
 
 ### Evidence Directory
 All documentation, logs, metrics, manifests, and verification scripts are recorded in:
 `/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/experiments/trm_momentdetr_generalization/`
+- Full 1-epoch test outputs: `results/moment_detr_trm/A1/`
+- Checkpoint: `results/moment_detr_trm/A1/best.ckpt`
+- Generalization Metrics: `results/moment_detr_trm/A1/eval_output/generalization_summary.json`
