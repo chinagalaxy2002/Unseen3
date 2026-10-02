@@ -1,0 +1,41 @@
+{
+  "project": "Moment-DETR-TRM Generalization",
+  "audit_timestamp": "2026-10-02T15:30:00+08:00",
+  "unseen_source_path": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen",
+  "unseen_git_commit": "ddc78aa910a29445c162512fd45cbedc61e2f2cf",
+  "unseen_git_status": "clean",
+  "unseen2_source_path": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen2",
+  "unseen2_git_commit": "22418be7bb2b781190bc4dff8a8ff8ce901bc09a",
+  "gmr_upstream_path": "/home/guoxiangyu/paper/Openword/generalized-moment-retrieval",
+  "trm_repo_url": "https://github.com/minghangz/TRM",
+  "trm_local_path": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/_external/TRM",
+  "trm_git_commit": "a0fc1f97927bc1a5e53ae30d1032e343f862911f",
+  "papers": {
+    "TRM": {
+      "title": "Phrase-level Temporal Relationship Mining for Temporal Sentence Localization",
+      "venue": "AAAI 2023",
+      "doi": "10.1609/aaai.v37i3.25478",
+      "url": "https://ojs.aaai.org/index.php/AAAI/article/view/25478"
+    },
+    "TRM-PT": {
+      "title": "Large-Scale Pre-trained Models Empowering Phrase Generalization in Temporal Sentence Localization",
+      "venue": "IJCV 2026",
+      "doi": "10.1007/s11263-025-02599-w",
+      "url": "https://link.springer.com/article/10.1007/s11263-025-02599-w"
+    }
+  },
+  "key_file_sha256": {
+    "moment_detr.py": "c2e86f6157a13a36fbde4f297951582f6c3ffe22655e84d05793bc415df25f0b",
+    "moment_transformer.py": "86229992218d9b512318d5a200a7283e5e06651a60abc784c8a2dc23f5ec0d47",
+    "matcher.py": "8b07afe4a76b955e215f18ff72d303e807a63fa56d0f6ab839d6cf28c5784d3c",
+    "position_encoding.py": "4e5087a96dc0e4794ea9efa747808ac632e170c3366b69e66e9603cdad57e911",
+    "span_utils.py": "82d769f160355d23cc68dfb520732eee806540a6192442d9815b992bfcb37126",
+    "train.py": "e04452bf12f784476fbebcfd3e7c0de813436d4c5e42240b07ed49fa3b7833b3",
+    "dataset.py": "7cf3a8fe9bb09f077d6bc01666e55c4f5b509a50c0dc0190352e6876f4fd7dab",
+    "evaluate.py": "546ce3520f7a535882596472e9bddb61ca1ffd89a4364cad0748f5a398b4b2b3",
+    "trm.py": "092d49f818558cc0a7c1f24b0aac5a24a20d3b23f602d3eedb3a61f60be46b64",
+    "trm_text_encoder.py": "2959c27af131983a0eaab75d0e021da2fd66a5df3c70c2c4166ede4c79f66316",
+    "trm_charades_yaml": "846bb269f170c46c2318dd436f7bb1f0d60a993f01df5bb02b3068419f4fbf62",
+    "trm_charades_py": "68fe103bdadbe710c8488594cf3f1b5f1b61aaac2dd906a978defe29a600cc60"
+  }
+}
