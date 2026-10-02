@@ -46,8 +46,14 @@ All documentation, logs, metrics, manifests, and verification scripts are record
   - Generalization Gap: Gap R1@0.5 = **10.79%**, Gap mIoU = **9.68%**
   - Checkpoint: `results/moment_detr_trm/A2_alt/best.ckpt`
   - Summary: `results/moment_detr_trm/A2_alt/eval_output/generalization_summary.json`
-- **Split A3**: **IN PROGRESS** on GPU 0 (Epoch ~23/100, automatically claimed upon A1 completion)
-- **Split C1**: **IN PROGRESS** on GPU 1 (Epoch ~1/100, automatically claimed upon A2_alt completion)
-- **Split C2_alt**: Queued (will be auto-claimed by next available GPU)
+- **Split A3**: **COMPLETED (100 Epochs, max_v_l=200, seed=3407)**
+  - Seen Positive ($S^+$, N=2784): R@1@0.3 = **52.01%**, R@1@0.5 = **36.85%**, R@1@0.7 = **20.01%**, mIoU = **35.08%**
+  - Unseen Positive ($U^+$, N=192): R@1@0.3 = **68.75%**, R@1@0.5 = **51.56%**, R@1@0.7 = **28.12%**, mIoU = **46.13%**
+  - Generalization Gap: Gap R1@0.5 = **-14.71%**, Gap mIoU = **-11.05%** (Super-generalization on A3)
+  - Checkpoint: `results/moment_detr_trm/A3/best.ckpt`
+  - Summary: `results/moment_detr_trm/A3/eval_output/generalization_summary.json`
+- **Split C1**: **IN PROGRESS** on GPU 1 (Epoch ~80/100, finishing in ~15 mins)
+- **Split C2_alt**: **IN PROGRESS** on GPU 0 (Epoch ~2/100, automatically claimed upon A3 completion)
+
 
 
