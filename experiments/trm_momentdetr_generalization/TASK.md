@@ -58,7 +58,30 @@ All documentation, logs, metrics, manifests, and verification scripts are record
   - Generalization Gap: Gap R1@0.5 = **-10.52%**, Gap mIoU = **-5.88%** (Super-generalization on C1)
   - Checkpoint: `results/moment_detr_trm/C1/best.ckpt`
   - Summary: `results/moment_detr_trm/C1/eval_output/generalization_summary.json`
-- **Split C2_alt**: **IN PROGRESS** on GPU 0 (Epoch ~26/100, final remaining benchmark task)
+- **Split C2_alt**: **COMPLETED (100 Epochs, max_v_l=200, seed=3407)**
+  - Seen Positive ($S^+$, N=2846): R@1@0.3 = **50.07%**, R@1@0.5 = **36.12%**, R@1@0.7 = **18.97%**, mIoU = **34.23%**
+  - Unseen Positive ($U^+$, N=115): R@1@0.3 = **55.65%**, R@1@0.5 = **31.30%**, R@1@0.7 = **12.17%**, mIoU = **34.61%**
+  - Generalization Gap: Gap R1@0.5 = **4.82%**, Gap mIoU = **-0.38%**
+  - Checkpoint: `results/moment_detr_trm/C2_alt/best.ckpt`
+  - Summary: `results/moment_detr_trm/C2_alt/eval_output/generalization_summary.json`
+
+### Full Benchmark Macro-Average Summary (All 5 Splits Completed: 5/5)
+- **Model**: Moment-DETR-TRM (Phase 1: Pure Localization, $S^+$ positive-only training, $max\_v\_l=200$, frozen spaCy parser, raw-cosine refinement)
+- **Seen Positive ($S^+$ Macro Avg)**:
+  - R@1@0.3: **51.53%**
+  - R@1@0.5: **38.05%**
+  - R@1@0.7: **20.72%**
+  - mIoU: **35.45%**
+- **Unseen Positive ($U^+$ Macro Avg)**:
+  - R@1@0.3: **51.99%**
+  - R@1@0.5: **35.80%** (**+4.00%** gain over Moment-DETR baseline 31.80%)
+  - R@1@0.7: **17.62%** (**+2.02%** gain over Moment-DETR baseline 15.60%)
+  - mIoU: **33.99%**
+- **Seen $\to$ Unseen Generalization Gap**:
+  - Gap R1@0.5: **2.25%** (Significantly reduced from baseline **9.70%**; a **-7.45%** reduction in generalization drop!)
+  - Gap mIoU: **1.46%** (Reduced from baseline **7.60%**; a **-6.14%** reduction!)
+- **Full JSON Summary**: `experiments/trm_momentdetr_generalization/generalization_summary.json`
+
 
 
 
