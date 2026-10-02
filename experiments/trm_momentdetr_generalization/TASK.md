@@ -32,3 +32,16 @@ All documentation, logs, metrics, manifests, and verification scripts are record
 - Method Spec: `experiments/trm_momentdetr_generalization/METHOD_SPEC.md`
 - Implementation Log: `experiments/trm_momentdetr_generalization/IMPLEMENTATION_LOG.md`
 - Source Manifest: `experiments/trm_momentdetr_generalization/SOURCE_MANIFEST.json`
+
+### Multi-Split Benchmark Execution Progress (2-GPU Parallel Queue)
+- **Split A1**: **COMPLETED (100 Epochs, max_v_l=200, seed=3407)**
+  - Seen Positive ($S^+$, N=2218): R@1@0.3 = **57.03%**, R@1@0.5 = **43.87%** (+6.90% vs baseline 36.97%), R@1@0.7 = **24.62%**, mIoU = **39.24%**
+  - Unseen Positive ($U^+$, N=465): R@1@0.3 = **36.34%**, R@1@0.5 = **23.01%**, R@1@0.7 = **11.83%**, mIoU = **24.29%**
+  - Generalization Gap: Gap R1@0.5 = **20.86%**, Gap mIoU = **14.95%**
+  - Checkpoint: `results/moment_detr_trm/A1/best.ckpt`
+  - Summary: `results/moment_detr_trm/A1/eval_output/generalization_summary.json`
+- **Split A2_alt**: **IN PROGRESS** on GPU 1 (Epoch ~87/100)
+- **Split A3**: **IN PROGRESS** on GPU 0 (Epoch ~10/100, automatically claimed upon A1 completion)
+- **Split C1**: Queued (will be auto-claimed upon A2_alt completion)
+- **Split C2_alt**: Queued
+
