@@ -1,0 +1,18 @@
+dset_name: charades_sta_semantic_novelty
+clip_length: 1
+max_v_l: 75
+max_ts_val: 75
+max_q_l: 32
+train_path: data/release/semantic_existence_v2/A1/train.jsonl
+eval_path: data/release/semantic_existence_v2/A1/val.jsonl
+test_path: data/release/semantic_existence_v2/A1/test.jsonl
+t_feat_dir: features/semantic_existence_v2/shared_clip_text
+phrase_feat_dir: features/phrase_data/clip_phrase
+v_feat_dirs:
+  - features/charades_video/vid_slowfast
+  - features/charades_video/vid_clip
+use_exist_head: false
+n_epoch: 100
+max_es_cnt: 100
+bsz: 8
+eval_bsz: 8
