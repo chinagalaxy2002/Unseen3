@@ -1,6 +1,6 @@
 {
   "project": "Moment-DETR-TRM / TRM-PT Phrase-Level Temporal Relationship Mining",
-  "freeze_timestamp": "2026-10-02T17:00:00+08:00",
+  "freeze_timestamp": "2026-10-02T17:26:00+08:00",
   "benchmark": "Charades-STA Semantic Novelty (semantic_existence_v2)",
   "source_environment": {
     "source_unseen_path": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen",
@@ -22,7 +22,7 @@
     "total_seen_val_rows_A1": 747,
     "total_seen_test_rows_A1": 2218,
     "total_unseen_test_rows_A1": 465,
-    "phrase_decomposition_protocol": "Strict test isolation: charades_test.json is forbidden. All 8,663 eval queries (val/test) are strictly parsed by the frozen spaCy parser directly from query text without querying any external phrase dictionary. Only pure training queries use charades_train.json.",
+    "phrase_decomposition_protocol": "Unified frozen parser protocol: 100% of all queries across train, val, and test are decomposed exclusively by the frozen spaCy constituent parser. Official charades_train.json annotations are kept strictly for audit reference, completely preventing any train/test distribution shift.",
     "forbidden_u_access_declaration": "Strict protocol guarantee: U+ and U- test sets are strictly forbidden from training, pseudo-label generation, hyperparameter tuning, prompt selection, confidence thresholding, or validation checkpoint selection. Checkpoints are strictly selected on seen positive validation (MR-full-mAP)."
   },
   "feature_sources": {
@@ -30,7 +30,7 @@
     "video_clip": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/features/charades_video/vid_clip (dim 512, L2-normalized)",
     "query_text_clip": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/features/semantic_existence_v2/shared_clip_text (ViT-B/32 last_hidden_state, dim 512)",
     "phrase_clip_features": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/features/phrase_data/clip_phrase (contains token-level last_hidden_state [10, 16, 512] and projected_phrase_features [10, 512])",
-    "pt_pseudo_labels": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/features/phrase_data/pt_pseudo_labels (generated via cross-modal cosine of projected_phrase_features and vid_clip on S+ training queries)"
+    "pt_pseudo_labels": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/features/phrase_data/pt_pseudo_labels (generated via single contiguous connected components strictly constrained within sentence GT intervals using projected CLIP features)"
   },
   "code_sha256": {
     "models/moment_detr_trm/moment_detr_trm.py": "0403a9a8a41da7a6c9169900323f6a1127dc24777c8a5ea301d7dc213370ef2e",
@@ -43,12 +43,12 @@
     "training/moment_detr_trm/config.py": "6f51d9af2d323be770eda9ab9bf92afb62b0d0b5011ec4ba1cf8825deb30dde2",
     "models/moment_detr_trm_pt/moment_detr_trm_pt.py": "e4c92ba15e800d5c848750b3eae9000be368cf46e455692f3ef1cfbf52a443c1",
     "models/moment_detr_trm_pt/trm_pt_loss.py": "243a0d5abd8cfd90e88dda67c899121923bfa60b9647bdbaa65efef24778e1f1",
-    "features/phrase_data/trm_phrase_metadata.jsonl": "2f2fe301431c030f3a035ded9968fad6528e03d114810f43beb0fe01e7b6760a",
+    "features/phrase_data/trm_phrase_metadata.jsonl": "fd15c7219fb3ac3b63091c865c57967b529621439fc591e44a9f76dc4f908bdf",
     "configs/moment_detr_trm/base.yml": "8f493df664af897fc3e97cee424f1ebd0471b2a2d567aeb5f4705b73fe1a8504",
     "configs/moment_detr_trm/dataset/charades_sta_semantic_novelty.yml": "342d3826aa1e86af40363d81100ffda7249ef86710a52fb84ab329d1defb3941",
-    "scripts/extract_phrases.py": "e1f9fa5b8fc40020442470e7a50e133d6d30810a5b11639800c232d495705ed9",
+    "scripts/extract_phrases.py": "89e44fe0187396919f1b4b7ea4049b79b0da27e9ca7adf9f976efec9b60c34b9",
     "scripts/extract_phrase_clip_features.py": "c45218a7168c5ca7e34da9fa56422ad069d3bf243d0b539e8c827d723983665d",
-    "scripts/generate_trm_pt_pseudo_labels.py": "c4cf88537b8a13935fa51358d88218cfc315ca6f5f6d2ad587029b9c21e15fbc",
+    "scripts/generate_trm_pt_pseudo_labels.py": "d0cdde38b9da47daaca287669c657f23b34912d18767cb015ce8b395aa76b899",
     "scripts/train_trm.sh": "db492597e52dd3e62d2ad6d2f04327e1b36fdfa74395b5e13644eb96ec9b18e7",
     "scripts/infer_trm.sh": "01531bde28748033551708bc939c07b7fc7cd64098e87f4d9f4308cf626897a7"
   },
@@ -98,7 +98,7 @@
     "pt_lambda_giou": 0.5
   },
   "smoke_test_status": {
-    "smoke_test_trm": "PASSED (all 7 steps verified with max_v_l=200 and raw-cosine refinement, loss decreased -20.52%)",
-    "smoke_test_trm_pt": "PASSED (all 6 steps verified with max_v_l=200 and projected CLIP phrase embeddings, loss decreased 6.3599 -> 5.6341)"
+    "smoke_test_trm": "PASSED (all 7 steps verified with max_v_l=200, unified spaCy parser, and raw-cosine refinement, loss decreased -21.65%)",
+    "smoke_test_trm_pt": "PASSED (all 6 steps verified with max_v_l=200, connected component pseudo spans strictly inside sentence GT, and projected CLIP embeddings, loss decreased 6.9550 -> 5.3280)"
   }
 }

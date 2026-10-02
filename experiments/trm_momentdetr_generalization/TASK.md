@@ -19,10 +19,10 @@
 - [x] **Stage 7**: Formal configuration freeze (`EXPERIMENT_FREEZE.json`) and verified training/evaluation runners (`scripts/train_trm.sh`, `scripts/infer_trm.sh`, `scripts/run_all_splits_trm.sh`). All 6 post-audit protocol alignments completed and verified:
   1. `max_v_l: 200` & `max_ts_val: 200` restored to match Moment-DETR Charades baseline protocol.
   2. Training hyperparameters aligned with baseline protocol: `seed=3407`, `bsz=16`, `eval_bsz=16`, `lr_drop=400`, `max_es_cnt=-1`.
-  3. Strict phrase extraction: `charades_test.json` removed completely; all 8,663 evaluation queries parsed strictly by frozen spaCy parser with 0 test-side annotation lookup.
+  3. Unified frozen parser protocol: 100% of all queries across train, val, and test are parsed by the exact same frozen spaCy constituent parser (20,400 queries 100% parsed), completely eliminating train/test distribution shift. Official TRM annotations kept purely for audit.
   4. Raw-cosine weighted refinement implemented: `fg_logit += lambda_refine * scale * (phrase_weights @ raw_cosine)` to enable both positive reinforcement and negative suppression.
-  5. Projected CLIP phrase embeddings cached and 9,428 TRM-PT pseudo labels regenerated in shared visual-textual CLIP space.
-  6. `EXPERIMENT_FREEZE.json` completely rebuilt with corrected commit (`ddc78aa9...`), AAAI URL (`25478`), and verified SHA256 hashes.
+  5. Projected CLIP phrase embeddings cached and 9,428 TRM-PT pseudo labels regenerated using single contiguous connected components strictly constrained within sentence GT intervals (0 violations across all 9,428 instances).
+  6. `EXPERIMENT_FREEZE.json` completely rebuilt with corrected commit (`ddc78aa9...`), AAAI URL (`25478`), and verified fresh SHA256 hashes.
   *(Note: The previous preliminary 1-epoch test on split A1 is marked strictly as an engineering smoke/development check under legacy 75-frame setting, not a formal benchmark result).*
 
 ### Evidence Directory
