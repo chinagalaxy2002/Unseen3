@@ -3,6 +3,7 @@ set -euo pipefail
 
 # Training Runner for Moment-DETR-TRM (Phase 1: Pure Localization, S+ only)
 SPLIT="${1:-A1}"
+shift || true
 PYTHON="/home/guoxiangyu/miniconda3/envs/univtg/bin/python"
 RESULTS_DIR="results/moment_detr_trm/${SPLIT}"
 
@@ -33,7 +34,8 @@ ${PYTHON} training/moment_detr_trm/train_trm.py \
   --lambda_neg 0.5 \
   --lambda_exc 1.0 \
   --iou_thresh 0.1 \
-  --overwrite
+  --overwrite \
+  "$@"
 
 echo "=================================================="
 echo "Training finished for Split: ${SPLIT}"
