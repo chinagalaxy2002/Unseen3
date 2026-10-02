@@ -85,6 +85,7 @@ def main():
                 if not phrases:
                     phrases = [rec["query"].strip()]
                 rec["_phrase_feat"] = np.zeros((MAX_PHRASES, MAX_PHRASE_L, FEAT_DIM), dtype=np.float32)
+                rec["_projected_phrase_feat"] = np.zeros((MAX_PHRASES, FEAT_DIM), dtype=np.float32)
                 rec["_phrase_tok_mask"] = np.zeros((MAX_PHRASES, MAX_PHRASE_L), dtype=np.float32)
                 rec["_phrase_mask"] = np.zeros((MAX_PHRASES,), dtype=np.float32)
                 for p_idx, phrase in enumerate(phrases):
@@ -100,6 +101,7 @@ def main():
             # Forward pass
             out = model.encode_text(tokens)
             states = out["last_hidden_state"].float().cpu().numpy()  # [N_flat, 77, 512]
+            poolers = out["pooler_output"].float().cpu().numpy()     # [N_flat, 512]
             token_lengths = (tokens != 0).sum(1).cpu().numpy()
 
             # Fill in features from flat results
@@ -110,6 +112,7 @@ def main():
 
                 rec["_phrase_feat"][p_idx, :length] = state_norm
                 rec["_phrase_tok_mask"][p_idx, :length] = 1.0
+                rec["_projected_phrase_feat"][p_idx] = l2_normalize_np_array(poolers[flat_idx])
 
             # Save each record in this batch
             for rec in batch_records:
@@ -121,11 +124,13 @@ def main():
                 out_path = os.path.join(args.output_dir, f"qid{qid}.npz")
 
                 feat = rec.get("_phrase_feat")
+                proj_feat = rec.get("_projected_phrase_feat")
                 tok_mask = rec.get("_phrase_tok_mask")
                 p_mask = rec.get("_phrase_mask")
 
                 if feat is None:
                     feat = np.zeros((MAX_PHRASES, MAX_PHRASE_L, FEAT_DIM), dtype=np.float32)
+                    proj_feat = np.zeros((MAX_PHRASES, FEAT_DIM), dtype=np.float32)
                     tok_mask = np.zeros((MAX_PHRASES, MAX_PHRASE_L), dtype=np.float32)
                     p_mask = np.zeros((MAX_PHRASES,), dtype=np.float32)
                     p_mask[0] = 1.0
@@ -133,6 +138,7 @@ def main():
                 np.savez_compressed(
                     out_path,
                     phrase_features=feat,
+                    projected_phrase_features=proj_feat,
                     phrase_tokens_mask=tok_mask,
                     phrase_mask=p_mask,
                     phrase_count=np.int32(k),

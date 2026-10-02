@@ -16,12 +16,15 @@ ${PYTHON} training/moment_detr_trm/train_trm.py \
   --model moment_detr_trm \
   --dataset charades_sta_semantic_novelty \
   --feature clip_slowfast \
-  --seed 2023 \
+  --seed 3407 \
   --lr 0.0001 \
+  --lr_drop 400 \
   --n_epoch 100 \
-  --max_es_cnt 100 \
-  --bsz 8 \
-  --eval_bsz 8 \
+  --max_es_cnt -1 \
+  --bsz 16 \
+  --eval_bsz 16 \
+  --max_v_l 200 \
+  --max_ts_val 200 \
   --train_path "data/release/semantic_existence_v2/${SPLIT}/train.jsonl" \
   --eval_path "data/release/semantic_existence_v2/${SPLIT}/val.jsonl" \
   --t_feat_dir "features/semantic_existence_v2/shared_clip_text" \

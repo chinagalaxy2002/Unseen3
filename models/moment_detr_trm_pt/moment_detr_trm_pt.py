@@ -28,7 +28,7 @@ class MomentDETR_TRM_PT(MomentDETR_TRM):
         num_queries: int = 10,
         input_dropout: float = 0.5,
         aux_loss: bool = False,
-        max_v_l: int = 75,
+        max_v_l: int = 200,
         span_loss_type: str = "l1",
         use_txt_pos: bool = False,
         n_input_proj: int = 2,

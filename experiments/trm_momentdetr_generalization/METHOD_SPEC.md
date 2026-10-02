@@ -39,12 +39,14 @@ This document provides the definitive specification of the **Moment-DETR-TRM** a
      $$\alpha_{b, i} = \frac{\exp(\tilde{\alpha}_{b, i})}{\sum_{k=1}^{P} m_{b, k} \exp(\tilde{\alpha}_{b, k})}$$
    - Phrase-slot cosine matching:
      $$\hat{p}_{b, i} = \frac{\text{phrase\_proj}(\bar{p}_{b, i})}{\|\text{phrase\_proj}(\bar{p}_{b, i})\|_2}, \quad \hat{h}_{b, j} = \frac{\text{slot\_proj}(h_{b, j})}{\|\text{slot\_proj}(h_{b, j})\|_2}$$
-     $$S_{b, i, j}^P = \sigma\left(10 \cdot (\hat{p}_{b, i} \cdot \hat{h}_{b, j})\right)$$
-   - Weighted phrase support per slot:
-     $$\text{support}_{b, j} = \sum_{i=1}^P \alpha_{b, i} S_{b, i, j}^P$$
-   - Refined logits:
-     $$\text{pred\_logits}[b, j, 0] = \text{pred\_logits\_base}[b, j, 0] + \lambda_{\text{refine}} \cdot \text{support}_{b, j}$$
+     $$\text{raw\_cosine}_{b, i, j} = \hat{p}_{b, i} \cdot \hat{h}_{b, j} \in [-1, 1]$$
+     $$S_{b, i, j}^P = \sigma\left(10 \cdot \text{raw\_cosine}_{b, i, j}\right) \in (0, 1)$$
+   - Weighted phrase support per proposal slot (raw-cosine weighted support):
+     $$\text{support}_{b, j} = \sum_{i=1}^P \alpha_{b, i} \cdot \text{raw\_cosine}_{b, i, j} \in [-1, 1]$$
+   - Refined foreground logit (Moment-DETR adaptation of TRM proposal score fusion):
+     $$\text{pred\_logits}[b, j, 0] = \text{pred\_logits\_base}[b, j, 0] + \lambda_{\text{refine}} \cdot 10 \cdot \text{support}_{b, j}$$
      $$\text{pred\_logits}[b, j, 1] = \text{pred\_logits\_base}[b, j, 1]$$
+     *(Enables bidirectional evidence: positive alignment boosts foreground confidence, while negative cosine suppresses foreground proposal)*.
 
 ### 2.2 Losses
 Total training loss:

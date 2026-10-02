@@ -103,15 +103,21 @@ def generate_pseudo_labels(
         phrase_mask = p_data["phrase_mask"]            # [10]
         v_feat = v_data["features"]                    # [T, 512]
 
-        # Compute phrase representation via masked mean over valid tokens
-        valid_tok_counts = np.maximum(p_tok_mask.sum(axis=1, keepdims=True), 1.0)
-        p_rep = (phrase_feat * p_tok_mask[:, :, None]).sum(axis=1) / valid_tok_counts  # [10, 512]
-        p_norm = p_rep / (np.linalg.norm(p_rep, axis=-1, keepdims=True) + 1e-6)        # [10, 512]
+        # Use projected CLIP phrase embeddings living in the shared visual-textual space
+        if "projected_phrase_features" in p_data:
+            p_rep = p_data["projected_phrase_features"]  # [10, 512]
+            p_norm = p_rep / (np.linalg.norm(p_rep, axis=-1, keepdims=True) + 1e-6)
+        else:
+            phrase_feat = p_data["phrase_features"]
+            p_tok_mask = p_data["phrase_tokens_mask"]
+            valid_tok_counts = np.maximum(p_tok_mask.sum(axis=1, keepdims=True), 1.0)
+            p_rep = (phrase_feat * p_tok_mask[:, :, None]).sum(axis=1) / valid_tok_counts
+            p_norm = p_rep / (np.linalg.norm(p_rep, axis=-1, keepdims=True) + 1e-6)
 
-        # Video frame normalization
+        # Video frame normalization (vid_clip embeddings)
         v_norm = v_feat / (np.linalg.norm(v_feat, axis=-1, keepdims=True) + 1e-6)      # [T, 512]
 
-        # Cosine similarity matrix: [10, T]
+        # Cosine similarity matrix in shared CLIP space: [10, T]
         sim_matrix = np.dot(p_norm, v_norm.T)
 
         pseudo_spans = np.zeros((10, 2), dtype=np.float32)

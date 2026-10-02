@@ -29,6 +29,8 @@ ${PYTHON} training/moment_detr_trm/eval_cli_trm.py \
   --v_feat_dirs "features/charades_video/vid_slowfast" "features/charades_video/vid_clip" \
   --results_dir "${RESULTS_DIR}" \
   --device cuda \
+  --max_v_l 200 \
+  --max_ts_val 200 \
   --eval_bsz 16
 
 # 2. Evaluate Unseen Positive Test (U+)
@@ -46,6 +48,8 @@ ${PYTHON} training/moment_detr_trm/eval_cli_trm.py \
   --v_feat_dirs "features/charades_video/vid_slowfast" "features/charades_video/vid_clip" \
   --results_dir "${RESULTS_DIR}" \
   --device cuda \
+  --max_v_l 200 \
+  --max_ts_val 200 \
   --eval_bsz 16
 
 echo "=================================================="

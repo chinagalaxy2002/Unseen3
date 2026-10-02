@@ -24,7 +24,7 @@ class SetCriterionTRM_PT(SetCriterionTRM):
         eos_coef: float = 0.1,
         losses: list[str] | None = None,
         span_loss_type: str = "l1",
-        max_v_l: int = 75,
+        max_v_l: int = 200,
         saliency_margin: float = 0.2,
         iou_thresh: float = 0.1,
         use_focal: bool = True,

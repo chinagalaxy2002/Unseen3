@@ -16,11 +16,19 @@
 - [x] **Stage 4**: Model architecture implementation (`models/moment_detr_trm/`, `training/moment_detr_trm/`, `configs/moment_detr_trm/`).
 - [x] **Stage 5**: 7-step unit verification suite (`scripts/smoke_test_trm.py` PASSED with 100% success; gradient flow verified; overfit test loss decreased by 19.56%).
 - [x] **Stage 6**: TRM-PT branch implementation (`models/moment_detr_trm_pt/`, `training/moment_detr_trm_pt/`, `scripts/smoke_test_trm_pt.py` PASSED; 9,428 $S^+$ pseudo labels generated in `features/phrase_data/pt_pseudo_labels/`).
-- [x] **Stage 7**: Formal configuration freeze (`EXPERIMENT_FREEZE.json`) and verified training/evaluation runners (`scripts/train_trm.sh`, `scripts/infer_trm.sh`, `scripts/run_all_splits_trm.sh`). Full training epoch and evaluation cycle tested and verified end-to-end on Split A1 (`results/moment_detr_trm/A1/best.ckpt`, `results/moment_detr_trm/A1/eval_output/generalization_summary.json`: S+ R@1@0.5=30.43%, U+ R@1@0.5=23.87%, Gap=6.56%).
+- [x] **Stage 7**: Formal configuration freeze (`EXPERIMENT_FREEZE.json`) and verified training/evaluation runners (`scripts/train_trm.sh`, `scripts/infer_trm.sh`, `scripts/run_all_splits_trm.sh`). All 6 post-audit protocol alignments completed and verified:
+  1. `max_v_l: 200` & `max_ts_val: 200` restored to match Moment-DETR Charades baseline protocol.
+  2. Training hyperparameters aligned with baseline protocol: `seed=3407`, `bsz=16`, `eval_bsz=16`, `lr_drop=400`, `max_es_cnt=-1`.
+  3. Strict phrase extraction: `charades_test.json` removed completely; all 8,663 evaluation queries parsed strictly by frozen spaCy parser with 0 test-side annotation lookup.
+  4. Raw-cosine weighted refinement implemented: `fg_logit += lambda_refine * scale * (phrase_weights @ raw_cosine)` to enable both positive reinforcement and negative suppression.
+  5. Projected CLIP phrase embeddings cached and 9,428 TRM-PT pseudo labels regenerated in shared visual-textual CLIP space.
+  6. `EXPERIMENT_FREEZE.json` completely rebuilt with corrected commit (`ddc78aa9...`), AAAI URL (`25478`), and verified SHA256 hashes.
+  *(Note: The previous preliminary 1-epoch test on split A1 is marked strictly as an engineering smoke/development check under legacy 75-frame setting, not a formal benchmark result).*
 
 ### Evidence Directory
 All documentation, logs, metrics, manifests, and verification scripts are recorded in:
 `/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/experiments/trm_momentdetr_generalization/`
-- Full 1-epoch test outputs: `results/moment_detr_trm/A1/`
-- Checkpoint: `results/moment_detr_trm/A1/best.ckpt`
-- Generalization Metrics: `results/moment_detr_trm/A1/eval_output/generalization_summary.json`
+- Configuration Freeze: `experiments/trm_momentdetr_generalization/EXPERIMENT_FREEZE.json`
+- Method Spec: `experiments/trm_momentdetr_generalization/METHOD_SPEC.md`
+- Implementation Log: `experiments/trm_momentdetr_generalization/IMPLEMENTATION_LOG.md`
+- Source Manifest: `experiments/trm_momentdetr_generalization/SOURCE_MANIFEST.json`

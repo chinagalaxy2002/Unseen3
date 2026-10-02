@@ -68,6 +68,7 @@ class MomentDETR_TRM(MomentDETR):
         self.max_phrases = max_phrases
         self.drop_phrase = bool(drop_phrase)
         self.lambda_refine = float(lambda_refine)
+        self.phrase_scale = float(scale)
 
         if self.use_phrase:
             self.attentive_pooling = AttentivePooling(feat_dim=hidden_dim, att_hid_dim=att_hid_dim)
@@ -173,25 +174,30 @@ class MomentDETR_TRM(MomentDETR):
             phrase_weights = self.attentive_pooling(phrase_repr, eff_phrase_mask)
 
             # Phrase-slot cosine matching: [B, P, Q]
-            phrase_scores, _, p_norm, s_norm = self.phrase_matcher(phrase_repr, slot_repr)
+            phrase_scores, raw_cosine, p_norm, s_norm = self.phrase_matcher(phrase_repr, slot_repr)
 
-            # Aggregate phrase support per proposal slot: [B, Q]
-            # alpha: [B, 1, P], phrase_scores: [B, P, Q] -> [B, 1, Q] -> [B, Q]
-            phrase_support = torch.bmm(phrase_weights.unsqueeze(1), phrase_scores).squeeze(1)
+            # Aggregate phrase support per proposal slot using raw cosine: [B, Q] in [-1, 1]
+            # alpha: [B, 1, P], raw_cosine: [B, P, Q] -> [B, 1, Q] -> [B, Q]
+            weighted_raw_cosine = torch.bmm(phrase_weights.unsqueeze(1), raw_cosine).squeeze(1)
 
-            # Refine foreground logit (index 0), keep background logit (index 1) unchanged
+            # Refine foreground logit (index 0), preserving bidirectional support and suppression:
+            # fg_logit += lambda_refine * scale * weighted_raw_cosine
             pred_logits = pred_logits_base.clone()
-            pred_logits[:, :, 0] = pred_logits_base[:, :, 0] + self.lambda_refine * phrase_support
+            pred_logits[:, :, 0] = pred_logits_base[:, :, 0] + self.lambda_refine * self.phrase_scale * weighted_raw_cosine
         else:
             pred_logits = pred_logits_base
             p_norm = None
             s_norm = None
+            raw_cosine = None
+            weighted_raw_cosine = None
 
         out = {
             "pred_logits": pred_logits,
             "pred_logits_base": pred_logits_base,
             "pred_spans": pred_spans,
             "pred_phrase_scores": phrase_scores,
+            "raw_cosine": raw_cosine,
+            "weighted_raw_cosine": weighted_raw_cosine,
             "phrase_weights": phrase_weights,
             "phrase_mask": eff_phrase_mask,
             "phrase_repr": phrase_repr,

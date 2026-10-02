@@ -1,8 +1,11 @@
 #!/usr/bin/env python3
 """
 Extract phrase decomposition for Charades-STA Semantic Novelty benchmark queries.
-Combines official TRM released annotations (from minghangz/TRM) with an SRL/constituent
-fallback parser using spaCy, ensuring 100% query coverage without network API calls.
+Strict Generalization Protocol:
+- TRM test annotations (charades_test.json) are STRICTLY FORBIDDEN and not used.
+- TRM train annotations (charades_train.json) are used ONLY for training queries.
+- All evaluation queries (val and test) are parsed STRICTLY by the frozen spaCy
+  constituent parser without querying any external phrase dictionary.
 """
 from __future__ import annotations
 
@@ -11,43 +14,43 @@ import os
 import re
 import sys
 from pathlib import Path
-from typing import Dict, List, Any
+from typing import Dict, List, Set, Any
 
 import spacy
 
+REPO_ROOT = Path(__file__).resolve().parents[1]
 SPACY_MODEL_PATH = "/home/guoxiangyu/miniconda3/envs/owvtg/lib/python3.10/site-packages/en_core_web_sm/en_core_web_sm-3.8.0"
-TRM_TRAIN_JSON = "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/_external/TRM/dataset/Charades-STA/charades_train.json"
-TRM_TEST_JSON = "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/_external/TRM/dataset/Charades-STA/charades_test.json"
-DATA_RELEASE_DIR = "/home/guoxiangyu/paper/Openword/data/release/semantic_existence_v2"
-OUTPUT_METADATA_FILE = "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/features/phrase_data/trm_phrase_metadata.jsonl"
+TRM_TRAIN_JSON = str(REPO_ROOT / "_external" / "TRM" / "dataset" / "Charades-STA" / "charades_train.json")
+DATA_RELEASE_DIR = str(REPO_ROOT / "data" / "release" / "semantic_existence_v2")
+OUTPUT_METADATA_FILE = str(REPO_ROOT / "features" / "phrase_data" / "trm_phrase_metadata.jsonl")
 
 def normalize_text(text: str) -> str:
     text = text.strip().lower()
     text = re.sub(r"\s+", " ", text)
     return text
 
-def build_trm_dictionary() -> Dict[str, List[str]]:
-    trm_dict: Dict[str, List[str]] = {}
-    for json_path in [TRM_TRAIN_JSON, TRM_TEST_JSON]:
-        if not os.path.exists(json_path):
-            continue
-        with open(json_path, "r", encoding="utf-8") as f:
-            data = json.load(f)
-        for vid, anno in data.items():
-            sentences = anno.get("sentences", [])
-            phrases_list = anno.get("phrases", [])
-            for s, p in zip(sentences, phrases_list):
-                norm_s = normalize_text(s)
-                # Keep non-empty phrases
-                valid_p = [ph.strip() for ph in p if ph.strip()]
-                if norm_s and valid_p and norm_s not in trm_dict:
-                    trm_dict[norm_s] = valid_p
-                # Also store without trailing period
-                norm_s_no_dot = norm_s.rstrip(".")
-                if norm_s_no_dot and valid_p and norm_s_no_dot not in trm_dict:
-                    trm_dict[norm_s_no_dot] = valid_p
-    print(f"[TRM Dict] Loaded {len(trm_dict)} canonical sentence-to-phrase mappings from TRM.")
-    return trm_dict
+def build_trm_train_dictionary() -> Dict[str, List[str]]:
+    """Build canonical sentence-to-phrase mappings ONLY from charades_train.json."""
+    trm_train_dict: Dict[str, List[str]] = {}
+    if not os.path.exists(TRM_TRAIN_JSON):
+        print(f"[Warning] {TRM_TRAIN_JSON} not found. Proceeding with pure parser.")
+        return trm_train_dict
+
+    with open(TRM_TRAIN_JSON, "r", encoding="utf-8") as f:
+        data = json.load(f)
+    for vid, anno in data.items():
+        sentences = anno.get("sentences", [])
+        phrases_list = anno.get("phrases", [])
+        for s, p in zip(sentences, phrases_list):
+            norm_s = normalize_text(s)
+            valid_p = [ph.strip() for ph in p if ph.strip()]
+            if norm_s and valid_p and norm_s not in trm_train_dict:
+                trm_train_dict[norm_s] = valid_p
+            norm_s_no_dot = norm_s.rstrip(".")
+            if norm_s_no_dot and valid_p and norm_s_no_dot not in trm_train_dict:
+                trm_train_dict[norm_s_no_dot] = valid_p
+    print(f"[TRM Train Dict] Loaded {len(trm_train_dict)} training sentence-to-phrase mappings.")
+    return trm_train_dict
 
 def extract_phrases_spacy(doc) -> tuple[List[str], List[str]]:
     phrases: List[str] = []
@@ -89,30 +92,39 @@ def extract_phrases_spacy(doc) -> tuple[List[str], List[str]]:
 
 def main():
     os.makedirs(os.path.dirname(OUTPUT_METADATA_FILE), exist_ok=True)
-    trm_dict = build_trm_dictionary()
+    trm_train_dict = build_trm_train_dictionary()
 
     print(f"[spaCy] Loading model from {SPACY_MODEL_PATH}...")
     nlp = spacy.load(SPACY_MODEL_PATH, disable=["ner"])
 
-    # Collect all unique queries across splits
+    # Collect all queries and classify into train vs eval sets
     all_queries: Dict[str, str] = {}
+    train_qids: Set[str] = set()
+    eval_qids: Set[str] = set()
+
     for split in ["A1", "A2_alt", "A3", "C1", "C2_alt"]:
         split_dir = Path(DATA_RELEASE_DIR) / split
         for jsonl_name in ["train.jsonl", "val.jsonl", "test.jsonl"]:
             jsonl_path = split_dir / jsonl_name
             if not jsonl_path.exists():
                 continue
+            is_eval = (jsonl_name in ["val.jsonl", "test.jsonl"])
             with open(jsonl_path, "r", encoding="utf-8") as f:
                 for line in f:
                     item = json.loads(line)
                     qid = str(item["qid"])
                     query = item["query"]
                     all_queries[qid] = query
+                    if is_eval:
+                        eval_qids.add(qid)
+                    else:
+                        train_qids.add(qid)
 
     print(f"[Dataset] Total unique qids across 5 splits: {len(all_queries)}")
+    print(f"  Train qids: {len(train_qids)}")
+    print(f"  Eval (Val/Test) qids: {len(eval_qids)}")
 
-    # Process and write metadata
-    trm_matched = 0
+    trm_train_matched = 0
     spacy_matched = 0
     fallback_count = 0
 
@@ -126,17 +138,22 @@ def main():
             roles = None
             fallback_status = False
 
-            # Priority 1: Match from official TRM annotations
-            if norm_q in trm_dict:
-                phrases = trm_dict[norm_q][:10]
-                source = "trm_official"
-                trm_matched += 1
-            elif norm_q_no_dot in trm_dict:
-                phrases = trm_dict[norm_q_no_dot][:10]
-                source = "trm_official"
-                trm_matched += 1
+            # Strict Protocol Check:
+            # If query appears in evaluation sets (val or test), NEVER use external TRM dictionary.
+            # Only pure train queries (never in eval) can match charades_train.json.
+            can_use_train_dict = (qid in train_qids) and (qid not in eval_qids)
 
-            # Priority 2: Use spaCy SRL constituent parser
+            if can_use_train_dict:
+                if norm_q in trm_train_dict:
+                    phrases = trm_train_dict[norm_q][:10]
+                    source = "trm_train_annotation"
+                    trm_train_matched += 1
+                elif norm_q_no_dot in trm_train_dict:
+                    phrases = trm_train_dict[norm_q_no_dot][:10]
+                    source = "trm_train_annotation"
+                    trm_train_matched += 1
+
+            # All eval queries or train queries not in train dict use frozen spaCy parser
             if not phrases:
                 doc = nlp(query)
                 phrases, roles = extract_phrases_spacy(doc)
@@ -145,7 +162,7 @@ def main():
                     source = "spacy_srl_constituent"
                     spacy_matched += 1
 
-            # Priority 3: Fallback to full query
+            # Fallback to full query if parser produced 0 phrases
             if not phrases or len(phrases) == 0:
                 phrases = [query.strip()]
                 roles = ["full_sentence"]
@@ -162,8 +179,9 @@ def main():
                 "phrases": phrases,
                 "phrase_roles": roles,
                 "phrase_count": len(phrases),
+                "is_eval_query": (qid in eval_qids),
                 "parser_source": source,
-                "parser_version": "spacy-3.8.0-en_core_web_sm" if source == "spacy_srl_constituent" else ("trm-aaai2023" if source == "trm_official" else "identity"),
+                "parser_version": "spacy-3.8.0-en_core_web_sm" if source == "spacy_srl_constituent" else ("trm-train-aaai2023" if source == "trm_train_annotation" else "identity"),
                 "parse_success": not fallback_status,
                 "fallback_status": fallback_status,
             }
@@ -172,8 +190,8 @@ def main():
     print("=" * 60)
     print(f"[Done] Phrase extraction completed -> {OUTPUT_METADATA_FILE}")
     print(f"  Total records: {len(all_queries)}")
-    print(f"  TRM Official Matches: {trm_matched} ({trm_matched / len(all_queries) * 100:.2f}%)")
-    print(f"  spaCy Constituent Matches: {spacy_matched} ({spacy_matched / len(all_queries) * 100:.2f}%)")
+    print(f"  TRM Train Matches (Train queries only): {trm_train_matched} ({trm_train_matched / len(all_queries) * 100:.2f}%)")
+    print(f"  spaCy Constituent Matches (All Eval + unmatched train): {spacy_matched} ({spacy_matched / len(all_queries) * 100:.2f}%)")
     print(f"  Fallback (Full Sentence): {fallback_count} ({fallback_count / len(all_queries) * 100:.2f}%)")
     print("=" * 60)
 

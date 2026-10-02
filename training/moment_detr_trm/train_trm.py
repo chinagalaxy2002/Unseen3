@@ -204,6 +204,9 @@ def parse_args():
     parser.add_argument("--v_feat_dirs", type=str, nargs="+", default=None)
     parser.add_argument("--results_dir", type=str, default=None)
     parser.add_argument("--device", type=str, default=None)
+    parser.add_argument("--lr_drop", type=int, default=None)
+    parser.add_argument("--max_v_l", type=int, default=None)
+    parser.add_argument("--max_ts_val", type=float, default=None)
     parser.add_argument("--overwrite", action="store_true")
     # TRM hyperparameters
     parser.add_argument("--lambda_refine", type=float, default=1.0)
@@ -224,7 +227,7 @@ def main():
     option_manager.parse()
     opt = option_manager.option
 
-    for name in ["lr", "seed", "n_epoch", "bsz", "eval_bsz", "max_es_cnt", "train_path", "eval_path", "t_feat_dir", "results_dir", "device"]:
+    for name in ["lr", "seed", "n_epoch", "bsz", "eval_bsz", "max_es_cnt", "lr_drop", "max_v_l", "max_ts_val", "train_path", "eval_path", "t_feat_dir", "results_dir", "device"]:
         value = getattr(args, name)
         if value is not None:
             setattr(opt, name, value)

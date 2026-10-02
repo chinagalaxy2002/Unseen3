@@ -96,6 +96,8 @@ def parse_args():
     parser.add_argument("--eval_bsz", type=int, default=16)
     parser.add_argument("--num_workers", type=int, default=4)
     parser.add_argument("--partition_filter", type=str, default=None, help="Filter partition: e.g. S+ or U+")
+    parser.add_argument("--max_v_l", type=int, default=None)
+    parser.add_argument("--max_ts_val", type=float, default=None)
     return parser.parse_args()
 
 if __name__ == "__main__":
@@ -115,6 +117,10 @@ if __name__ == "__main__":
     opt.eval_bsz = args.eval_bsz
     opt.num_workers = args.num_workers
     opt.partition_filter = args.partition_filter
+    if args.max_v_l is not None:
+        opt.max_v_l = args.max_v_l
+    if args.max_ts_val is not None:
+        opt.max_ts_val = args.max_ts_val
 
     if args.t_feat_dir is not None:
         opt.t_feat_dir = args.t_feat_dir
