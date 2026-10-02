@@ -119,13 +119,13 @@ def main():
 
     for split in completed_splits:
         d = split_summaries[split]
-        s_r1 = d.get("raw_S+_R1@0.5", 0.0) * 100
-        u_r1 = d.get("raw_U+_R1@0.5", 0.0) * 100
+        s_r1 = float(d.get("S+_raw_R1@0.5", d.get("raw_S+_R1@0.5", 0.0)))
+        u_r1 = float(d.get("U+_raw_R1@0.5", d.get("raw_U+_R1@0.5", 0.0)))
         loc_gap = s_r1 - u_r1
-        soft_u_r1 = d.get("official_gated_U+_R1@0.5", 0.0) * 100
-        hard_u_r1 = d.get("diagnostic_hard_gated_U+_R1@0.5", 0.0) * 100
-        u_frr = d.get("U+_FRR", 0.0) * 100
-        u_rr = d.get("U-_RR", 0.0) * 100
+        soft_u_r1 = float(d.get("U+_official_gated_R1@0.5", d.get("official_gated_U+_R1@0.5", 0.0)))
+        hard_u_r1 = float(d.get("diagnostic_hard_gated_U+_R1@0.5", 0.0))
+        u_frr = float(d.get("U+_FRR", 0.0)) * 100
+        u_rr = float(d.get("U-_RR", 0.0)) * 100
         pair_acc = d.get("matched_pair_acc", 0.0)
         pair_str = f"{pair_acc * 100:.2f}%" if pair_acc is not None else "N/A"
 
