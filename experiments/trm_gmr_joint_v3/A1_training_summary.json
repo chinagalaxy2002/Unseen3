@@ -1,0 +1,2147 @@
+{
+  "training_meta": {
+    "best_epoch": -1,
+    "best_seen_val_mAP": null,
+    "best_seen_worst_semantic_auroc": null,
+    "best_seen_group_metrics": null,
+    "highest_seen_val_mAP": 22.64,
+    "localization_reference_mAP": 24.7,
+    "localization_floor_mAP": 23.7,
+    "selection_metric": "Seen-only worst action/composition AUROC subject to localization floor",
+    "epochs_trained": 40,
+    "max_epochs": 100,
+    "max_es_cnt": 30,
+    "mAP_stale_epochs": 30,
+    "training_status": "completed",
+    "selection_status": "no_eligible_checkpoint",
+    "auc_valid_batch_fraction": 1.0,
+    "nan_inf_detected": false,
+    "train_dataset_queries": 8608,
+    "val_dataset_queries": 1257,
+    "missing_feature_or_fallback": false,
+    "auc_valid_action_batch_fraction": 1.0,
+    "auc_valid_composition_batch_fraction": 1.0,
+    "matched_pair_counts": {
+      "matched_exact_query_pairs": 48729,
+      "matched_composition_pairs": 170129,
+      "matched_action_pairs": 69146
+    },
+    "sampler": "4 semantic groups x (2 positive + 2 negative); alternating action/composition"
+  },
+  "job_status": {
+    "split": "A1",
+    "gpu": 0,
+    "returncode": 0,
+    "status": "finished",
+    "ended_unix_time": 1791010360.9836705
+  },
+  "summary": {
+    "split": "A1",
+    "status": "localization_constraint_failed",
+    "reason": "No Seen-only checkpoint reached frozen localization floor; no U test inference was run",
+    "U_inference_run": false,
+    "best_epoch": -1,
+    "best_seen_val_mAP": null,
+    "best_seen_worst_semantic_auroc": null,
+    "best_seen_group_metrics": null,
+    "highest_seen_val_mAP": 22.64,
+    "localization_reference_mAP": 24.7,
+    "localization_floor_mAP": 23.7,
+    "selection_metric": "Seen-only worst action/composition AUROC subject to localization floor",
+    "epochs_trained": 40,
+    "max_epochs": 100,
+    "max_es_cnt": 30,
+    "mAP_stale_epochs": 30,
+    "training_status": "completed",
+    "selection_status": "no_eligible_checkpoint",
+    "auc_valid_batch_fraction": 1.0,
+    "nan_inf_detected": false,
+    "train_dataset_queries": 8608,
+    "val_dataset_queries": 1257,
+    "missing_feature_or_fallback": false,
+    "auc_valid_action_batch_fraction": 1.0,
+    "auc_valid_composition_batch_fraction": 1.0,
+    "matched_pair_counts": {
+      "matched_exact_query_pairs": 48729,
+      "matched_composition_pairs": 170129,
+      "matched_action_pairs": 69146
+    },
+    "sampler": "4 semantic groups x (2 positive + 2 negative); alternating action/composition"
+  },
+  "highest_mAP_epoch_diagnostic": {
+    "epoch": 10,
+    "metrics": {
+      "brief": {
+        "MR-full-R1@0.5": 33.47,
+        "MR-full-R1@0.7": 14.19,
+        "MR-full-mAP": 22.64,
+        "MR-full-mAP@0.5": 48.9,
+        "MR-full-mAP@0.75": 18.26
+      },
+      "full": {
+        "MR-mAP": {
+          "0.5": 48.9,
+          "0.55": 42.87,
+          "0.6": 36.58,
+          "0.65": 28.08,
+          "0.7": 23.77,
+          "0.75": 18.26,
+          "0.8": 12.72,
+          "0.85": 9.03,
+          "0.9": 4.59,
+          "0.95": 1.55,
+          "average": 22.64
+        },
+        "MR-R1": {
+          "0.5": 33.47,
+          "0.55": 28.92,
+          "0.6": 24.23,
+          "0.65": 17.27,
+          "0.7": 14.19,
+          "0.75": 11.65,
+          "0.8": 8.43,
+          "0.85": 6.43,
+          "0.9": 3.61,
+          "0.95": 1.07
+        }
+      },
+      "semantic_groups": {
+        "action": {
+          "groups": [
+            {
+              "group": "awaken",
+              "n_positive": 6,
+              "n_negative": 4,
+              "auroc": 0.7083333333333334,
+              "selection_eligible": false
+            },
+            {
+              "group": "close",
+              "n_positive": 76,
+              "n_negative": 117,
+              "auroc": 0.5498200629779577,
+              "selection_eligible": true
+            },
+            {
+              "group": "cook",
+              "n_positive": 16,
+              "n_negative": 0,
+              "auroc": null,
+              "selection_eligible": false
+            },
+            {
+              "group": "dress",
+              "n_positive": 1,
+              "n_negative": 0,
+              "auroc": null,
+              "selection_eligible": false
+            },
+            {
+              "group": "drink",
+              "n_positive": 38,
+              "n_negative": 4,
+              "auroc": 0.32894736842105265,
+              "selection_eligible": false
+            },
+            {
+              "group": "eat",
+              "n_positive": 51,
+              "n_negative": 0,
+              "auroc": null,
+              "selection_eligible": false
+            },
+            {
+              "group": "enter",
+              "n_positive": 2,
+              "n_negative": 0,
+              "auroc": null,
+              "selection_eligible": false
+            },
+            {
+              "group": "fix",
+              "n_positive": 8,
+              "n_negative": 0,
+              "auroc": null,
+              "selection_eligible": false
+            },
+            {
+              "group": "grab",
+              "n_positive": 1,
+              "n_negative": 0,
+              "auroc": null,
+              "selection_eligible": false
+            },
+            {
+              "group": "hold",
+              "n_positive": 40,
+              "n_negative": 9,
+              "auroc": 0.6916666666666667,
+              "selection_eligible": true
+            },
+            {
+              "group": "laugh",
+              "n_positive": 5,
+              "n_negative": 3,
+              "auroc": 0.8666666666666667,
+              "selection_eligible": false
+            },
+            {
+              "group": "lay",
+              "n_positive": 3,
+              "n_negative": 0,
+              "auroc": null,
+              "selection_eligible": false
+            },
+            {
+              "group": "leave",
+              "n_positive": 2,
+              "n_negative": 0,
+              "auroc": null,
+              "selection_eligible": false
+            },
+            {
+              "group": "lie",
+              "n_positive": 4,
+              "n_negative": 0,
+              "auroc": null,
+              "selection_eligible": false
+            },
+            {
+              "group": "look",
+              "n_positive": 31,
+              "n_negative": 5,
+              "auroc": 0.7225806451612903,
+              "selection_eligible": true
+            },
+            {
+              "group": "open",
+              "n_positive": 150,
+              "n_negative": 185,
+              "auroc": 0.7411531531531531,
+              "selection_eligible": true
+            },
+            {
+              "group": "play",
+              "n_positive": 9,
+              "n_negative": 0,
+              "auroc": null,
+              "selection_eligible": false
+            },
+            {
+              "group": "pour",
+              "n_positive": 16,
+              "n_negative": 20,
+              "auroc": 0.509375,
+              "selection_eligible": false
+            },
+            {
+              "group": "read",
+              "n_positive": 8,
+              "n_negative": 0,
+              "auroc": null,
+              "selection_eligible": false
+            },
+            {
+              "group": "run",
+              "n_positive": 24,
+              "n_negative": 4,
+              "auroc": 0.8020833333333334,
+              "selection_eligible": false
+            },
+            {
+              "group": "sit",
+              "n_positive": 70,
+              "n_negative": 121,
+              "auroc": 0.614521841794569,
+              "selection_eligible": true
+            },
+            {
+              "group": "smile",
+              "n_positive": 1,
+              "n_negative": 0,
+              "auroc": null,
+              "selection_eligible": false
+            },
+            {
+              "group": "sneeze",
+              "n_positive": 5,
+              "n_negative": 1,
+              "auroc": 0.4,
+              "selection_eligible": false
+            },
+            {
+              "group": "snuggle",
+              "n_positive": 3,
+              "n_negative": 2,
+              "auroc": 0.6666666666666666,
+              "selection_eligible": false
+            },
+            {
+              "group": "stand",
+              "n_positive": 5,
+              "n_negative": 0,
+              "auroc": null,
+              "selection_eligible": false
+            },
+            {
+              "group": "talk",
+              "n_positive": 7,
+              "n_negative": 0,
+              "auroc": null,
+              "selection_eligible": false
+            },
+            {
+              "group": "throw",
+              "n_positive": 38,
+              "n_negative": 34,
+              "auroc": 0.8490712074303406,
+              "selection_eligible": true
+            },
+            {
+              "group": "tidy",
+              "n_positive": 5,
+              "n_negative": 0,
+              "auroc": null,
+              "selection_eligible": false
+            },
+            {
+              "group": "turn",
+              "n_positive": 50,
+              "n_negative": 0,
+              "auroc": null,
+              "selection_eligible": false
+            },
+            {
+              "group": "undress",
+              "n_positive": 7,
+              "n_negative": 0,
+              "auroc": null,
+              "selection_eligible": false
+            },
+            {
+              "group": "walk",
+              "n_positive": 31,
+              "n_negative": 0,
+              "auroc": null,
+              "selection_eligible": false
+            },
+            {
+              "group": "wash",
+              "n_positive": 21,
+              "n_negative": 1,
+              "auroc": 0.5238095238095238,
+              "selection_eligible": false
+            },
+            {
+              "group": "watch",
+              "n_positive": 6,
+              "n_negative": 0,
+              "auroc": null,
+              "selection_eligible": false
+            },
+            {
+              "group": "work",
+              "n_positive": 5,
+              "n_negative": 0,
+              "auroc": null,
+              "selection_eligible": false
+            },
+            {
+              "group": "wrap",
+              "n_positive": 2,
+              "n_negative": 0,
+              "auroc": null,
+              "selection_eligible": false
+            }
+          ],
+          "worst_auroc": 0.5498200629779577,
+          "macro_auroc": 0.6948022628639962,
+          "eligible_group_count": 6
+        },
+        "composition": {
+          "groups": [
+            {
+              "group": [
+                "awaken",
+                "bathroom"
+              ],
+              "n_positive": 1,
+              "n_negative": 0,
+              "auroc": null,
+              "selection_eligible": false
+            },
+            {
+              "group": [
+                "awaken",
+                "bed"
+              ],
+              "n_positive": 1,
+              "n_negative": 1,
+              "auroc": 0.0,
+              "selection_eligible": false
+            },
+            {
+              "group": [
+                "awaken",
+                "bedroom"
+              ],
+              "n_positive": 2,
+              "n_negative": 0,
+              "auroc": null,
+              "selection_eligible": false
+            },
+            {
+              "group": [
+                "awaken",
+                "couch"
+              ],
+              "n_positive": 0,
+              "n_negative": 2,
+              "auroc": null,
+              "selection_eligible": false
+            },
+            {
+              "group": [
+                "awaken",
+                "room"
+              ],
+              "n_positive": 1,
+              "n_negative": 0,
+              "auroc": null,
+              "selection_eligible": false
+            },
+            {
+              "group": [
+                "awaken",
+                "sofa"
+              ],
+              "n_positive": 1,
+              "n_negative": 1,
+              "auroc": 0.0,
+              "selection_eligible": false
+            },
+            {
+              "group": [
+                "close",
+                "blind"
+              ],
+              "n_positive": 0,
+              "n_negative": 2,
+              "auroc": null,
+              "selection_eligible": false
+            },
+            {
+              "group": [
+                "close",
+                "book"
+              ],
+              "n_positive": 6,
+              "n_negative": 3,
+              "auroc": 0.38888888888888895,
+              "selection_eligible": false
+            },
+            {
+              "group": [
+                "close",
+                "box"
+              ],
+              "n_positive": 4,
+              "n_negative": 7,
+              "auroc": 0.0,
+              "selection_eligible": false
+            },
+            {
+              "group": [
+                "close",
+                "cabinet"
+              ],
+              "n_positive": 6,
+              "n_negative": 28,
+              "auroc": 0.7321428571428572,
+              "selection_eligible": true
+            },
+            {
+              "group": [
+                "close",
+                "door"
+              ],
+              "n_positive": 41,
+              "n_negative": 57,
+              "auroc": 0.5481386392811296,
+              "selection_eligible": true
+            },
+            {
+              "group": [
+                "close",
+                "doorknob"
+              ],
+              "n_positive": 0,
+              "n_negative": 1,
+              "auroc": null,
+              "selection_eligible": false
+            },
+            {
+              "group": [
+                "close",
+                "laptop"
+              ],
+              "n_positive": 6,
+              "n_negative": 6,
+              "auroc": 0.8055555555555556,
+              "selection_eligible": true
+            },
+            {
+              "group": [
+                "close",
+                "lid"
+              ],
+              "n_positive": 1,
+              "n_negative": 0,
+              "auroc": null,
+              "selection_eligible": false
+            },
+            {
+              "group": [
+                "close",
+                "light"
+              ],
+              "n_positive": 1,
+              "n_negative": 0,
+              "auroc": null,
+              "selection_eligible": false
+            },
+            {
+              "group": [
+                "close",
+                "refrigerator"
+              ],
+              "n_positive": 6,
+              "n_negative": 6,
+              "auroc": 0.6111111111111112,
+              "selection_eligible": true
+            },
+            {
+              "group": [
+                "close",
+                "window"
+              ],
+              "n_positive": 5,
+              "n_negative": 7,
+              "auroc": 0.4285714285714286,
+              "selection_eligible": true
+            },
+            {
+              "group": [
+                "cook",
+                "dinner"
+              ],
+              "n_positive": 1,
+              "n_negative": 0,
+              "auroc": null,
+              "selection_eligible": false
+            },
+            {
+              "group": [
+                "cook",
+                "food"
+              ],
+              "n_positive": 4,
+              "n_negative": 0,
+              "auroc": null,
+              "selection_eligible": false
+            },
+            {
+              "group": [
+                "cook",
+                "kitchen"
+              ],
+              "n_positive": 1,
+              "n_negative": 0,
+              "auroc": null,
+              "selection_eligible": false
+            },
+            {
+              "group": [
+                "cook",
+                "pan"
+              ],
+              "n_positive": 1,
+              "n_negative": 0,
+              "auroc": null,
+              "selection_eligible": false
+            },
+            {
+              "group": [
+                "cook",
+                "stove"
+              ],
+              "n_positive": 9,
+              "n_negative": 0,
+              "auroc": null,
+              "selection_eligible": false
+            },
+            {
+              "group": [
+                "dress",
+                "doorway"
+              ],
+              "n_positive": 1,
+              "n_negative": 0,
+              "auroc": null,
+              "selection_eligible": false
+            },
+            {
+              "group": [
+                "drink",
+                "bottle"
+              ],
+              "n_positive": 1,
+              "n_negative": 0,
+              "auroc": null,
+              "selection_eligible": false
+            },
+            {
+              "group": [
+                "drink",
+                "coffee"
+              ],
+              "n_positive": 1,
+              "n_negative": 2,
+              "auroc": 0.0,
+              "selection_eligible": false
+            },
+            {
+              "group": [
+                "drink",
+                "cup"
+              ],
+              "n_positive": 12,
+              "n_negative": 0,
+              "auroc": null,
+              "selection_eligible": false
+            },
+            {
+              "group": [
+                "drink",
+                "glass"
+              ],
+              "n_positive": 22,
+              "n_negative": 2,
+              "auroc": 0.1590909090909091,
+              "selection_eligible": false
+            },
+            {
+              "group": [
+                "drink",
+                "water"
+              ],
+              "n_positive": 2,
+              "n_negative": 0,
+              "auroc": null,
+              "selection_eligible": false
+            },
+            {
+              "group": [
+                "eat",
+                "cereal"
+              ],
+              "n_positive": 1,
+              "n_negative": 0,
+              "auroc": null,
+              "selection_eligible": false
+            },
+            {
+              "group": [
+                "eat",
+                "chip"
+              ],
+              "n_positive": 4,
+              "n_negative": 0,
+              "auroc": null,
+              "selection_eligible": false
+            },
+            {
+              "group": [
+                "eat",
+                "cracker"
+              ],
+              "n_positive": 1,
+              "n_negative": 0,
+              "auroc": null,
+              "selection_eligible": false
+            },
+            {
+              "group": [
+                "eat",
+                "doorway"
+              ],
+              "n_positive": 2,
+              "n_negative": 0,
+              "auroc": null,
+              "selection_eligible": false
+            },
+            {
+              "group": [
+                "eat",
+                "food"
+              ],
+              "n_positive": 20,
+              "n_negative": 0,
+              "auroc": null,
+              "selection_eligible": false
+            },
+            {
+              "group": [
+                "eat",
+                "kitchen"
+              ],
+              "n_positive": 1,
+              "n_negative": 0,
+              "auroc": null,
+              "selection_eligible": false
+            },
+            {
+              "group": [
+                "eat",
+                "piece"
+              ],
+              "n_positive": 2,
+              "n_negative": 0,
+              "auroc": null,
+              "selection_eligible": false
+            },
+            {
+              "group": [
+                "eat",
+                "sandwich"
+              ],
+              "n_positive": 18,
+              "n_negative": 0,
+              "auroc": null,
+              "selection_eligible": false
+            },
+            {
+              "group": [
+                "eat",
+                "snack"
+              ],
+              "n_positive": 1,
+              "n_negative": 0,
+              "auroc": null,
+              "selection_eligible": false
+            },
+            {
+              "group": [
+                "eat",
+                "table"
+              ],
+              "n_positive": 1,
+              "n_negative": 0,
+              "auroc": null,
+              "selection_eligible": false
+            },
+            {
+              "group": [
+                "enter",
+                "kitchen"
+              ],
+              "n_positive": 1,
+              "n_negative": 0,
+              "auroc": null,
+              "selection_eligible": false
+            },
+            {
+              "group": [
+                "enter",
+                "room"
+              ],
+              "n_positive": 1,
+              "n_negative": 0,
+              "auroc": null,
+              "selection_eligible": false
+            },
+            {
+              "group": [
+                "fix",
+                "doorknob"
+              ],
+              "n_positive": 1,
+              "n_negative": 0,
+              "auroc": null,
+              "selection_eligible": false
+            },
+            {
+              "group": [
+                "fix",
+                "hair"
+              ],
+              "n_positive": 6,
+              "n_negative": 0,
+              "auroc": null,
+              "selection_eligible": false
+            },
+            {
+              "group": [
+                "fix",
+                "vacuum"
+              ],
+              "n_positive": 1,
+              "n_negative": 0,
+              "auroc": null,
+              "selection_eligible": false
+            },
+            {
+              "group": [
+                "grab",
+                "doorknob"
+              ],
+              "n_positive": 1,
+              "n_negative": 0,
+              "auroc": null,
+              "selection_eligible": false
+            },
+            {
+              "group": [
+                "hold",
+                "bag"
+              ],
+              "n_positive": 1,
+              "n_negative": 0,
+              "auroc": null,
+              "selection_eligible": false
+            },
+            {
+              "group": [
+                "hold",
+                "blanket"
+              ],
+              "n_positive": 0,
+              "n_negative": 3,
+              "auroc": null,
+              "selection_eligible": false
+            },
+            {
+              "group": [
+                "hold",
+                "book"
+              ],
+              "n_positive": 1,
+              "n_negative": 1,
+              "auroc": 0.0,
+              "selection_eligible": false
+            },
+            {
+              "group": [
+                "hold",
+                "bottle"
+              ],
+              "n_positive": 1,
+              "n_negative": 0,
+              "auroc": null,
+              "selection_eligible": false
+            },
+            {
+              "group": [
+                "hold",
+                "box"
+              ],
+              "n_positive": 4,
+              "n_negative": 1,
+              "auroc": 0.5,
+              "selection_eligible": false
+            },
+            {
+              "group": [
+                "hold",
+                "broom"
+              ],
+              "n_positive": 5,
+              "n_negative": 0,
+              "auroc": null,
+              "selection_eligible": false
+            },
+            {
+              "group": [
+                "hold",
+                "camera"
+              ],
+              "n_positive": 5,
+              "n_negative": 0,
+              "auroc": null,
+              "selection_eligible": false
+            },
+            {
+              "group": [
+                "hold",
+                "cup"
+              ],
+              "n_positive": 4,
+              "n_negative": 0,
+              "auroc": null,
+              "selection_eligible": false
+            },
+            {
+              "group": [
+                "hold",
+                "glass"
+              ],
+              "n_positive": 2,
+              "n_negative": 0,
+              "auroc": null,
+              "selection_eligible": false
+            },
+            {
+              "group": [
+                "hold",
+                "light"
+              ],
+              "n_positive": 1,
+              "n_negative": 0,
+              "auroc": null,
+              "selection_eligible": false
+            },
+            {
+              "group": [
+                "hold",
+                "mirror"
+              ],
+              "n_positive": 1,
+              "n_negative": 0,
+              "auroc": null,
+              "selection_eligible": false
+            },
+            {
+              "group": [
+                "hold",
+                "pair"
+              ],
+              "n_positive": 0,
+              "n_negative": 1,
+              "auroc": null,
+              "selection_eligible": false
+            },
+            {
+              "group": [
+                "hold",
+                "paper"
+              ],
+              "n_positive": 0,
+              "n_negative": 2,
+              "auroc": null,
+              "selection_eligible": false
+            },
+            {
+              "group": [
+                "hold",
+                "phone"
+              ],
+              "n_positive": 3,
+              "n_negative": 0,
+              "auroc": null,
+              "selection_eligible": false
+            },
+            {
+              "group": [
+                "hold",
+                "picture"
+              ],
+              "n_positive": 1,
+              "n_negative": 1,
+              "auroc": 0.0,
+              "selection_eligible": false
+            },
+            {
+              "group": [
+                "hold",
+                "pillow"
+              ],
+              "n_positive": 3,
+              "n_negative": 0,
+              "auroc": null,
+              "selection_eligible": false
+            },
+            {
+              "group": [
+                "hold",
+                "plate"
+              ],
+              "n_positive": 1,
+              "n_negative": 0,
+              "auroc": null,
+              "selection_eligible": false
+            },
+            {
+              "group": [
+                "hold",
+                "sandwich"
+              ],
+              "n_positive": 3,
+              "n_negative": 0,
+              "auroc": null,
+              "selection_eligible": false
+            },
+            {
+              "group": [
+                "hold",
+                "towel"
+              ],
+              "n_positive": 4,
+              "n_negative": 0,
+              "auroc": null,
+              "selection_eligible": false
+            },
+            {
+              "group": [
+                "laugh",
+                "book"
+              ],
+              "n_positive": 1,
+              "n_negative": 1,
+              "auroc": 1.0,
+              "selection_eligible": false
+            },
+            {
+              "group": [
+                "laugh",
+                "camera"
+              ],
+              "n_positive": 0,
+              "n_negative": 1,
+              "auroc": null,
+              "selection_eligible": false
+            },
+            {
+              "group": [
+                "laugh",
+                "phone"
+              ],
+              "n_positive": 1,
+              "n_negative": 0,
+              "auroc": null,
+              "selection_eligible": false
+            },
+            {
+              "group": [
+                "laugh",
+                "picture"
+              ],
+              "n_positive": 1,
+              "n_negative": 1,
+              "auroc": 1.0,
+              "selection_eligible": false
+            },
+            {
+              "group": [
+                "laugh",
+                "television"
+              ],
+              "n_positive": 1,
+              "n_negative": 0,
+              "auroc": null,
+              "selection_eligible": false
+            },
+            {
+              "group": [
+                "laugh",
+                "tv"
+              ],
+              "n_positive": 1,
+              "n_negative": 0,
+              "auroc": null,
+              "selection_eligible": false
+            },
+            {
+              "group": [
+                "lay",
+                "floor"
+              ],
+              "n_positive": 3,
+              "n_negative": 0,
+              "auroc": null,
+              "selection_eligible": false
+            },
+            {
+              "group": [
+                "leave",
+                "door"
+              ],
+              "n_positive": 1,
+              "n_negative": 0,
+              "auroc": null,
+              "selection_eligible": false
+            },
+            {
+              "group": [
+                "leave",
+                "room"
+              ],
+              "n_positive": 1,
+              "n_negative": 0,
+              "auroc": null,
+              "selection_eligible": false
+            },
+            {
+              "group": [
+                "lie",
+                "awaken"
+              ],
+              "n_positive": 1,
+              "n_negative": 0,
+              "auroc": null,
+              "selection_eligible": false
+            },
+            {
+              "group": [
+                "lie",
+                "floor"
+              ],
+              "n_positive": 1,
+              "n_negative": 0,
+              "auroc": null,
+              "selection_eligible": false
+            },
+            {
+              "group": [
+                "lie",
+                "sofa"
+              ],
+              "n_positive": 2,
+              "n_negative": 0,
+              "auroc": null,
+              "selection_eligible": false
+            },
+            {
+              "group": [
+                "look",
+                "book"
+              ],
+              "n_positive": 3,
+              "n_negative": 3,
+              "auroc": 0.4444444444444445,
+              "selection_eligible": false
+            },
+            {
+              "group": [
+                "look",
+                "picture"
+              ],
+              "n_positive": 4,
+              "n_negative": 2,
+              "auroc": 0.75,
+              "selection_eligible": false
+            },
+            {
+              "group": [
+                "look",
+                "window"
+              ],
+              "n_positive": 24,
+              "n_negative": 0,
+              "auroc": null,
+              "selection_eligible": false
+            },
+            {
+              "group": [
+                "open",
+                "bag"
+              ],
+              "n_positive": 7,
+              "n_negative": 0,
+              "auroc": null,
+              "selection_eligible": false
+            },
+            {
+              "group": [
+                "open",
+                "blind"
+              ],
+              "n_positive": 2,
+              "n_negative": 0,
+              "auroc": null,
+              "selection_eligible": false
+            },
+            {
+              "group": [
+                "open",
+                "book"
+              ],
+              "n_positive": 10,
+              "n_negative": 1,
+              "auroc": 0.9,
+              "selection_eligible": false
+            },
+            {
+              "group": [
+                "open",
+                "box"
+              ],
+              "n_positive": 9,
+              "n_negative": 8,
+              "auroc": 0.5277777777777778,
+              "selection_eligible": true
+            },
+            {
+              "group": [
+                "open",
+                "cabinet"
+              ],
+              "n_positive": 20,
+              "n_negative": 49,
+              "auroc": 0.6622448979591837,
+              "selection_eligible": true
+            },
+            {
+              "group": [
+                "open",
+                "closet"
+              ],
+              "n_positive": 3,
+              "n_negative": 59,
+              "auroc": 0.5875706214689265,
+              "selection_eligible": false
+            },
+            {
+              "group": [
+                "open",
+                "door"
+              ],
+              "n_positive": 65,
+              "n_negative": 39,
+              "auroc": 0.6240631163708088,
+              "selection_eligible": true
+            },
+            {
+              "group": [
+                "open",
+                "doorknob"
+              ],
+              "n_positive": 1,
+              "n_negative": 0,
+              "auroc": null,
+              "selection_eligible": false
+            },
+            {
+              "group": [
+                "open",
+                "doorway"
+              ],
+              "n_positive": 1,
+              "n_negative": 0,
+              "auroc": null,
+              "selection_eligible": false
+            },
+            {
+              "group": [
+                "open",
+                "laptop"
+              ],
+              "n_positive": 6,
+              "n_negative": 6,
+              "auroc": 0.8333333333333334,
+              "selection_eligible": true
+            },
+            {
+              "group": [
+                "open",
+                "refrigerator"
+              ],
+              "n_positive": 11,
+              "n_negative": 21,
+              "auroc": 0.5238095238095238,
+              "selection_eligible": true
+            },
+            {
+              "group": [
+                "open",
+                "window"
+              ],
+              "n_positive": 15,
+              "n_negative": 2,
+              "auroc": 0.7666666666666666,
+              "selection_eligible": false
+            },
+            {
+              "group": [
+                "play",
+                "camera"
+              ],
+              "n_positive": 3,
+              "n_negative": 0,
+              "auroc": null,
+              "selection_eligible": false
+            },
+            {
+              "group": [
+                "play",
+                "game"
+              ],
+              "n_positive": 1,
+              "n_negative": 0,
+              "auroc": null,
+              "selection_eligible": false
+            },
+            {
+              "group": [
+                "play",
+                "light"
+              ],
+              "n_positive": 1,
+              "n_negative": 0,
+              "auroc": null,
+              "selection_eligible": false
+            },
+            {
+              "group": [
+                "play",
+                "phone"
+              ],
+              "n_positive": 4,
+              "n_negative": 0,
+              "auroc": null,
+              "selection_eligible": false
+            },
+            {
+              "group": [
+                "pour",
+                "bottle"
+              ],
+              "n_positive": 0,
+              "n_negative": 1,
+              "auroc": null,
+              "selection_eligible": false
+            },
+            {
+              "group": [
+                "pour",
+                "coffee"
+              ],
+              "n_positive": 5,
+              "n_negative": 1,
+              "auroc": 1.0,
+              "selection_eligible": false
+            },
+            {
+              "group": [
+                "pour",
+                "cup"
+              ],
+              "n_positive": 2,
+              "n_negative": 6,
+              "auroc": 0.5,
+              "selection_eligible": false
+            },
+            {
+              "group": [
+                "pour",
+                "drink"
+              ],
+              "n_positive": 1,
+              "n_negative": 0,
+              "auroc": null,
+              "selection_eligible": false
+            },
+            {
+              "group": [
+                "pour",
+                "glass"
+              ],
+              "n_positive": 4,
+              "n_negative": 10,
+              "auroc": 0.5499999999999999,
+              "selection_eligible": false
+            },
+            {
+              "group": [
+                "pour",
+                "water"
+              ],
+              "n_positive": 4,
+              "n_negative": 2,
+              "auroc": 0.5,
+              "selection_eligible": false
+            },
+            {
+              "group": [
+                "read",
+                "book"
+              ],
+              "n_positive": 8,
+              "n_negative": 0,
+              "auroc": null,
+              "selection_eligible": false
+            },
+            {
+              "group": [
+                "run",
+                "bathroom"
+              ],
+              "n_positive": 2,
+              "n_negative": 0,
+              "auroc": null,
+              "selection_eligible": false
+            },
+            {
+              "group": [
+                "run",
+                "bedroom"
+              ],
+              "n_positive": 1,
+              "n_negative": 0,
+              "auroc": null,
+              "selection_eligible": false
+            },
+            {
+              "group": [
+                "run",
+                "cabinet"
+              ],
+              "n_positive": 0,
+              "n_negative": 1,
+              "auroc": null,
+              "selection_eligible": false
+            },
+            {
+              "group": [
+                "run",
+                "camera"
+              ],
+              "n_positive": 0,
+              "n_negative": 1,
+              "auroc": null,
+              "selection_eligible": false
+            },
+            {
+              "group": [
+                "run",
+                "closet"
+              ],
+              "n_positive": 1,
+              "n_negative": 1,
+              "auroc": 0.0,
+              "selection_eligible": false
+            },
+            {
+              "group": [
+                "run",
+                "door"
+              ],
+              "n_positive": 1,
+              "n_negative": 1,
+              "auroc": 1.0,
+              "selection_eligible": false
+            },
+            {
+              "group": [
+                "run",
+                "doorway"
+              ],
+              "n_positive": 5,
+              "n_negative": 0,
+              "auroc": null,
+              "selection_eligible": false
+            },
+            {
+              "group": [
+                "run",
+                "entryway"
+              ],
+              "n_positive": 2,
+              "n_negative": 0,
+              "auroc": null,
+              "selection_eligible": false
+            },
+            {
+              "group": [
+                "run",
+                "house"
+              ],
+              "n_positive": 1,
+              "n_negative": 0,
+              "auroc": null,
+              "selection_eligible": false
+            },
+            {
+              "group": [
+                "run",
+                "phone"
+              ],
+              "n_positive": 1,
+              "n_negative": 0,
+              "auroc": null,
+              "selection_eligible": false
+            },
+            {
+              "group": [
+                "run",
+                "place"
+              ],
+              "n_positive": 1,
+              "n_negative": 0,
+              "auroc": null,
+              "selection_eligible": false
+            },
+            {
+              "group": [
+                "run",
+                "refrigerator"
+              ],
+              "n_positive": 1,
+              "n_negative": 0,
+              "auroc": null,
+              "selection_eligible": false
+            },
+            {
+              "group": [
+                "run",
+                "room"
+              ],
+              "n_positive": 8,
+              "n_negative": 0,
+              "auroc": null,
+              "selection_eligible": false
+            },
+            {
+              "group": [
+                "sit",
+                "bed"
+              ],
+              "n_positive": 10,
+              "n_negative": 46,
+              "auroc": 0.4391304347826087,
+              "selection_eligible": true
+            },
+            {
+              "group": [
+                "sit",
+                "chair"
+              ],
+              "n_positive": 35,
+              "n_negative": 21,
+              "auroc": 0.5918367346938777,
+              "selection_eligible": true
+            },
+            {
+              "group": [
+                "sit",
+                "couch"
+              ],
+              "n_positive": 6,
+              "n_negative": 38,
+              "auroc": 0.7149122807017544,
+              "selection_eligible": true
+            },
+            {
+              "group": [
+                "sit",
+                "pillow"
+              ],
+              "n_positive": 1,
+              "n_negative": 0,
+              "auroc": null,
+              "selection_eligible": false
+            },
+            {
+              "group": [
+                "sit",
+                "sofa"
+              ],
+              "n_positive": 10,
+              "n_negative": 16,
+              "auroc": 0.61875,
+              "selection_eligible": true
+            },
+            {
+              "group": [
+                "sit",
+                "stair"
+              ],
+              "n_positive": 1,
+              "n_negative": 0,
+              "auroc": null,
+              "selection_eligible": false
+            },
+            {
+              "group": [
+                "sit",
+                "table"
+              ],
+              "n_positive": 7,
+              "n_negative": 0,
+              "auroc": null,
+              "selection_eligible": false
+            },
+            {
+              "group": [
+                "smile",
+                "mirror"
+              ],
+              "n_positive": 1,
+              "n_negative": 0,
+              "auroc": null,
+              "selection_eligible": false
+            },
+            {
+              "group": [
+                "sneeze",
+                "blanket"
+              ],
+              "n_positive": 0,
+              "n_negative": 1,
+              "auroc": null,
+              "selection_eligible": false
+            },
+            {
+              "group": [
+                "sneeze",
+                "dust"
+              ],
+              "n_positive": 2,
+              "n_negative": 0,
+              "auroc": null,
+              "selection_eligible": false
+            },
+            {
+              "group": [
+                "sneeze",
+                "glass"
+              ],
+              "n_positive": 1,
+              "n_negative": 0,
+              "auroc": null,
+              "selection_eligible": false
+            },
+            {
+              "group": [
+                "sneeze",
+                "pillow"
+              ],
+              "n_positive": 1,
+              "n_negative": 0,
+              "auroc": null,
+              "selection_eligible": false
+            },
+            {
+              "group": [
+                "sneeze",
+                "stove"
+              ],
+              "n_positive": 1,
+              "n_negative": 0,
+              "auroc": null,
+              "selection_eligible": false
+            },
+            {
+              "group": [
+                "snuggle",
+                "blanket"
+              ],
+              "n_positive": 1,
+              "n_negative": 2,
+              "auroc": 0.5,
+              "selection_eligible": false
+            },
+            {
+              "group": [
+                "snuggle",
+                "pillow"
+              ],
+              "n_positive": 2,
+              "n_negative": 0,
+              "auroc": null,
+              "selection_eligible": false
+            },
+            {
+              "group": [
+                "stand",
+                "bathroom"
+              ],
+              "n_positive": 1,
+              "n_negative": 0,
+              "auroc": null,
+              "selection_eligible": false
+            },
+            {
+              "group": [
+                "stand",
+                "chair"
+              ],
+              "n_positive": 2,
+              "n_negative": 0,
+              "auroc": null,
+              "selection_eligible": false
+            },
+            {
+              "group": [
+                "stand",
+                "front"
+              ],
+              "n_positive": 1,
+              "n_negative": 0,
+              "auroc": null,
+              "selection_eligible": false
+            },
+            {
+              "group": [
+                "stand",
+                "room"
+              ],
+              "n_positive": 1,
+              "n_negative": 0,
+              "auroc": null,
+              "selection_eligible": false
+            },
+            {
+              "group": [
+                "talk",
+                "phone"
+              ],
+              "n_positive": 7,
+              "n_negative": 0,
+              "auroc": null,
+              "selection_eligible": false
+            },
+            {
+              "group": [
+                "throw",
+                "bag"
+              ],
+              "n_positive": 1,
+              "n_negative": 1,
+              "auroc": 1.0,
+              "selection_eligible": false
+            },
+            {
+              "group": [
+                "throw",
+                "blanket"
+              ],
+              "n_positive": 2,
+              "n_negative": 11,
+              "auroc": 0.5909090909090909,
+              "selection_eligible": false
+            },
+            {
+              "group": [
+                "throw",
+                "book"
+              ],
+              "n_positive": 2,
+              "n_negative": 1,
+              "auroc": 1.0,
+              "selection_eligible": false
+            },
+            {
+              "group": [
+                "throw",
+                "box"
+              ],
+              "n_positive": 2,
+              "n_negative": 5,
+              "auroc": 0.8,
+              "selection_eligible": false
+            },
+            {
+              "group": [
+                "throw",
+                "broom"
+              ],
+              "n_positive": 0,
+              "n_negative": 5,
+              "auroc": null,
+              "selection_eligible": false
+            },
+            {
+              "group": [
+                "throw",
+                "clothe"
+              ],
+              "n_positive": 9,
+              "n_negative": 0,
+              "auroc": null,
+              "selection_eligible": false
+            },
+            {
+              "group": [
+                "throw",
+                "floor"
+              ],
+              "n_positive": 7,
+              "n_negative": 0,
+              "auroc": null,
+              "selection_eligible": false
+            },
+            {
+              "group": [
+                "throw",
+                "item"
+              ],
+              "n_positive": 1,
+              "n_negative": 0,
+              "auroc": null,
+              "selection_eligible": false
+            },
+            {
+              "group": [
+                "throw",
+                "pair"
+              ],
+              "n_positive": 1,
+              "n_negative": 0,
+              "auroc": null,
+              "selection_eligible": false
+            },
+            {
+              "group": [
+                "throw",
+                "phone"
+              ],
+              "n_positive": 0,
+              "n_negative": 3,
+              "auroc": null,
+              "selection_eligible": false
+            },
+            {
+              "group": [
+                "throw",
+                "pillow"
+              ],
+              "n_positive": 11,
+              "n_negative": 2,
+              "auroc": 0.7727272727272727,
+              "selection_eligible": false
+            },
+            {
+              "group": [
+                "throw",
+                "sandwich"
+              ],
+              "n_positive": 0,
+              "n_negative": 3,
+              "auroc": null,
+              "selection_eligible": false
+            },
+            {
+              "group": [
+                "throw",
+                "shoe"
+              ],
+              "n_positive": 2,
+              "n_negative": 0,
+              "auroc": null,
+              "selection_eligible": false
+            },
+            {
+              "group": [
+                "throw",
+                "towel"
+              ],
+              "n_positive": 0,
+              "n_negative": 3,
+              "auroc": null,
+              "selection_eligible": false
+            },
+            {
+              "group": [
+                "tidy",
+                "clothe"
+              ],
+              "n_positive": 3,
+              "n_negative": 0,
+              "auroc": null,
+              "selection_eligible": false
+            },
+            {
+              "group": [
+                "tidy",
+                "shelf"
+              ],
+              "n_positive": 2,
+              "n_negative": 0,
+              "auroc": null,
+              "selection_eligible": false
+            },
+            {
+              "group": [
+                "turn",
+                "light"
+              ],
+              "n_positive": 48,
+              "n_negative": 0,
+              "auroc": null,
+              "selection_eligible": false
+            },
+            {
+              "group": [
+                "turn",
+                "switch"
+              ],
+              "n_positive": 2,
+              "n_negative": 0,
+              "auroc": null,
+              "selection_eligible": false
+            },
+            {
+              "group": [
+                "undress",
+                "front"
+              ],
+              "n_positive": 6,
+              "n_negative": 0,
+              "auroc": null,
+              "selection_eligible": false
+            },
+            {
+              "group": [
+                "undress",
+                "jacket"
+              ],
+              "n_positive": 1,
+              "n_negative": 0,
+              "auroc": null,
+              "selection_eligible": false
+            },
+            {
+              "group": [
+                "walk",
+                "bathroom"
+              ],
+              "n_positive": 1,
+              "n_negative": 0,
+              "auroc": null,
+              "selection_eligible": false
+            },
+            {
+              "group": [
+                "walk",
+                "door"
+              ],
+              "n_positive": 2,
+              "n_negative": 0,
+              "auroc": null,
+              "selection_eligible": false
+            },
+            {
+              "group": [
+                "walk",
+                "doorway"
+              ],
+              "n_positive": 23,
+              "n_negative": 0,
+              "auroc": null,
+              "selection_eligible": false
+            },
+            {
+              "group": [
+                "walk",
+                "light"
+              ],
+              "n_positive": 1,
+              "n_negative": 0,
+              "auroc": null,
+              "selection_eligible": false
+            },
+            {
+              "group": [
+                "walk",
+                "room"
+              ],
+              "n_positive": 1,
+              "n_negative": 0,
+              "auroc": null,
+              "selection_eligible": false
+            },
+            {
+              "group": [
+                "walk",
+                "smiling"
+              ],
+              "n_positive": 1,
+              "n_negative": 0,
+              "auroc": null,
+              "selection_eligible": false
+            },
+            {
+              "group": [
+                "walk",
+                "stair"
+              ],
+              "n_positive": 1,
+              "n_negative": 0,
+              "auroc": null,
+              "selection_eligible": false
+            },
+            {
+              "group": [
+                "walk",
+                "table"
+              ],
+              "n_positive": 1,
+              "n_negative": 0,
+              "auroc": null,
+              "selection_eligible": false
+            },
+            {
+              "group": [
+                "wash",
+                "clothe"
+              ],
+              "n_positive": 1,
+              "n_negative": 0,
+              "auroc": null,
+              "selection_eligible": false
+            },
+            {
+              "group": [
+                "wash",
+                "cup"
+              ],
+              "n_positive": 0,
+              "n_negative": 1,
+              "auroc": null,
+              "selection_eligible": false
+            },
+            {
+              "group": [
+                "wash",
+                "dish"
+              ],
+              "n_positive": 2,
+              "n_negative": 0,
+              "auroc": null,
+              "selection_eligible": false
+            },
+            {
+              "group": [
+                "wash",
+                "glass"
+              ],
+              "n_positive": 1,
+              "n_negative": 0,
+              "auroc": null,
+              "selection_eligible": false
+            },
+            {
+              "group": [
+                "wash",
+                "hand"
+              ],
+              "n_positive": 7,
+              "n_negative": 0,
+              "auroc": null,
+              "selection_eligible": false
+            },
+            {
+              "group": [
+                "wash",
+                "mirror"
+              ],
+              "n_positive": 6,
+              "n_negative": 0,
+              "auroc": null,
+              "selection_eligible": false
+            },
+            {
+              "group": [
+                "wash",
+                "table"
+              ],
+              "n_positive": 1,
+              "n_negative": 0,
+              "auroc": null,
+              "selection_eligible": false
+            },
+            {
+              "group": [
+                "wash",
+                "window"
+              ],
+              "n_positive": 3,
+              "n_negative": 0,
+              "auroc": null,
+              "selection_eligible": false
+            },
+            {
+              "group": [
+                "watch",
+                "mirror"
+              ],
+              "n_positive": 1,
+              "n_negative": 0,
+              "auroc": null,
+              "selection_eligible": false
+            },
+            {
+              "group": [
+                "watch",
+                "show"
+              ],
+              "n_positive": 1,
+              "n_negative": 0,
+              "auroc": null,
+              "selection_eligible": false
+            },
+            {
+              "group": [
+                "watch",
+                "television"
+              ],
+              "n_positive": 2,
+              "n_negative": 0,
+              "auroc": null,
+              "selection_eligible": false
+            },
+            {
+              "group": [
+                "watch",
+                "window"
+              ],
+              "n_positive": 2,
+              "n_negative": 0,
+              "auroc": null,
+              "selection_eligible": false
+            },
+            {
+              "group": [
+                "work",
+                "laptop"
+              ],
+              "n_positive": 5,
+              "n_negative": 0,
+              "auroc": null,
+              "selection_eligible": false
+            },
+            {
+              "group": [
+                "wrap",
+                "blanket"
+              ],
+              "n_positive": 1,
+              "n_negative": 0,
+              "auroc": null,
+              "selection_eligible": false
+            },
+            {
+              "group": [
+                "wrap",
+                "run"
+              ],
+              "n_positive": 1,
+              "n_negative": 0,
+              "auroc": null,
+              "selection_eligible": false
+            }
+          ],
+          "worst_auroc": 0.4285714285714286,
+          "macro_auroc": 0.6186698350779251,
+          "eligible_group_count": 14
+        },
+        "worst_semantic_auroc": 0.4285714285714286
+      },
+      "selection": {
+        "localization_floor_mAP": 23.7,
+        "localization_constraint_satisfied": false,
+        "worst_semantic_auroc": 0.4285714285714286
+      }
+    }
+  }
+}

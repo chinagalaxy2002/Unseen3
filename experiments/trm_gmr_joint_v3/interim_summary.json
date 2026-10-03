@@ -1,0 +1,48 @@
+{
+  "snapshot_utc": "2026-10-03T07:12:01.192020+00:00",
+  "code_git_sha": "18d6080284009045e840a301d22e1d0e377e3dda",
+  "exploratory_status": "Exploratory follow-up motivated by inspected v1/v2 U failure modes",
+  "splits": [
+    {
+      "split": "A1",
+      "training_status": "completed",
+      "epochs_completed": 40,
+      "mAP_stale_epochs": 30,
+      "highest_seen_val_mAP": 22.64,
+      "highest_seen_val_mAP_epoch": 10,
+      "worst_seen_semantic_auroc_at_highest_mAP": 0.4285714285714286,
+      "localization_reference_mAP": 24.7,
+      "localization_floor_mAP": 23.7,
+      "floor_shortfall_pp": 1.0599999999999987,
+      "best_eligible_epoch": -1,
+      "eligible_checkpoint_available": false,
+      "U_test_inference_run": false,
+      "nan_inf_detected": false,
+      "missing_feature_or_fallback": false,
+      "auc_valid_batch_fraction": 1.0,
+      "auc_valid_action_batch_fraction": 1.0,
+      "auc_valid_composition_batch_fraction": 1.0
+    },
+    {
+      "split": "A2_alt",
+      "training_status": "running",
+      "epochs_completed": 53,
+      "mAP_stale_epochs": 17,
+      "highest_seen_val_mAP": 22.38,
+      "highest_seen_val_mAP_epoch": 36,
+      "worst_seen_semantic_auroc_at_highest_mAP": 0.41666666666666663,
+      "localization_reference_mAP": 26.49,
+      "localization_floor_mAP": 25.49,
+      "floor_shortfall_pp": 3.1099999999999994,
+      "best_eligible_epoch": -1,
+      "eligible_checkpoint_available": false,
+      "U_test_inference_run": false,
+      "nan_inf_detected": false,
+      "missing_feature_or_fallback": false,
+      "auc_valid_batch_fraction": 1.0,
+      "auc_valid_action_batch_fraction": 1.0,
+      "auc_valid_composition_batch_fraction": 1.0
+    }
+  ],
+  "note": "A1 finished but failed the frozen Seen-only localization constraint; no U test was run. A2_alt is a progress snapshot, not final evaluation. Frozen selection and stopping rules remain in force."
+}
