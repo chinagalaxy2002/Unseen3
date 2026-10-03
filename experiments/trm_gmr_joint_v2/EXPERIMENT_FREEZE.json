@@ -2,7 +2,7 @@
   "experiment": "Moment-DETR-TRM-GMR-Joint-v2",
   "status": "frozen before any Joint-v2 U test inference",
   "exploratory_status": "Joint-v2 is an exploratory follow-up motivated by Joint-v1 failure modes; Joint-v1 U results were viewed before v2 was designed, so v2 is not an untouched unseen evaluation.",
-  "git_sha": "b0812ee7eb51fd7ff7f6a03d157084ca3fa56751",
+  "git_sha": "6ed9b672d6bbf514e17816ff091f09e12cc3e69e",
   "source_joint_v1_sha": "a25792a927c6feff2e19f20548a282963a44d800",
   "baseline_readme_correction_sha": "cb2cb37802339eeb05114f5c929e08825bc97205",
   "splits": ["A1", "A2_alt", "A3", "C1", "C2_alt"],
@@ -34,6 +34,7 @@
   },
   "background_pca": {
     "fit_data": "same-split train S+ only",
+    "data_access": "directly load only train S+ video visual NPZ arrays and vid/relevant_windows metadata; do not instantiate text/phrase dataset path or load query/phrase features",
     "sampling": "clip-level raw visual vectors strictly outside union of GT relevant_windows",
     "seed": 3407,
     "max_deterministic_subsample": 100000,
