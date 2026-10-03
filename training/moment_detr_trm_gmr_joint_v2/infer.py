@@ -96,6 +96,7 @@ def run_full_inference(opt, model_path: str, release_dir: str):
 
     if val_preds_path.exists():
         val_pred_list = load_jsonl(str(val_preds_path))
+        save_jsonl(val_pred_list, str(results_dir / "val_predictions.jsonl"))
         val_pred_dict = {str(p["qid"]): p for p in val_pred_list}
         val_seen = [r for r in val_gt if r.get("partition") in ("S+", "S-")]
         frozen_threshold = choose_threshold(val_seen, val_pred_dict)
@@ -230,6 +231,9 @@ def run_full_inference(opt, model_path: str, release_dir: str):
         probability_auc = float(roc_auc_score(labels, [test_pred_dict[str(r["qid"])]["pred_exist_score"] for r in subset]))
         if not np.isclose(probability_auc, auc[prefix], atol=1e-12, rtol=0):
             raise RuntimeError(f"Probability/logit AUROC mismatch for {prefix}: {probability_auc} vs {auc[prefix]}; inspect ties/serialization")
+        semantic_probability_auc = float(roc_auc_score(labels, [test_pred_dict[str(r["qid"])]["pred_exist_score_semantic"] for r in subset]))
+        if not np.isclose(semantic_probability_auc, semantic_auc[prefix], atol=1e-12, rtol=0):
+            raise RuntimeError(f"Semantic probability/logit AUROC mismatch for {prefix}: {semantic_probability_auc} vs {semantic_auc[prefix]}; inspect ties/serialization")
 
     # Matched Pair Accuracy
     pair_scores = []

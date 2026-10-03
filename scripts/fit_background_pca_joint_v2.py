@@ -22,21 +22,22 @@ def main():
     opt.t_feat_dir=str(ROOT/"features/semantic_existence_v2/shared_clip_text"); opt.phrase_feat_dir=str(ROOT/"features/phrase_data/clip_phrase")
     ds=StartEndDatasetJoint(**build_dataset_config_joint(opt,opt.train_path,load_labels=True,keep_empty_gt=True,partition_filter=["S+"]))
     # Deterministic Algorithm R reservoir; only raw visual rows outside train S+ GT.
-    reservoir=[]; seen=0; D=None
+    reservoir=None; used=0; seen=0; D=None
     for i in range(len(ds)):
         ex=ds[i]; visual=ex["model_inputs"]["src_visual"].numpy(); D=visual.shape[1]; meta=ex["meta"]; T=len(visual)
+        if reservoir is None: reservoir=np.empty((a.max_samples,D),dtype=np.float32)
         bg=np.ones(T,dtype=bool)
         for st,ed in meta.get("relevant_windows",[]):
             lo=max(0,min(T,int(float(st)/opt.clip_length))); hi=max(lo,min(T,int(float(ed)/opt.clip_length)))
             bg[lo:hi]=False
         for row in visual[bg]:
             seen+=1
-            if len(reservoir)<a.max_samples: reservoir.append(row.copy())
+            if used<a.max_samples: reservoir[used]=row; used+=1
             else:
                 j=random.randrange(seen)
-                if j<a.max_samples: reservoir[j]=row.copy()
-    if not reservoir: raise RuntimeError("No train S+ background visual vectors available")
-    X=np.asarray(reservoir,dtype=np.float32); K=min(256,D-1)
+                if j<a.max_samples: reservoir[j]=row
+    if not used: raise RuntimeError("No train S+ background visual vectors available")
+    X=reservoir[:used]; K=min(256,D-1)
     try:
         from sklearn.decomposition import IncrementalPCA
         ipca=IncrementalPCA(n_components=K,batch_size=max(K,2048))
@@ -47,7 +48,13 @@ def main():
             if len(chunk)>=K: ipca.partial_fit(chunk)
         mu=ipca.mean_.astype(np.float32); comps=ipca.components_.astype(np.float32)
     except ImportError:
-        mu=X.mean(0,dtype=np.float64).astype(np.float32); _,_,vt=np.linalg.svd(X-mu,full_matrices=False); comps=vt[:K].astype(np.float32)
+        mu=X.mean(0,dtype=np.float64)
+        cov=np.zeros((D,D),dtype=np.float64)
+        for st in range(0,len(X),1024):
+            xc=X[st:st+1024].astype(np.float64)-mu
+            cov += xc.T @ xc
+        _,vec=np.linalg.eigh(cov)
+        comps=vec[:,-K:][:,::-1].T.astype(np.float32); mu=mu.astype(np.float32)
     residual=[]
     for st in range(0,len(X),1024):
         x=X[st:st+1024]-mu; res=x-(x@comps.T)@comps; residual.extend(np.linalg.norm(res,axis=1).tolist())
