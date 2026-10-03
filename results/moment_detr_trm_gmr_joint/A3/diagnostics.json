@@ -1,0 +1,81 @@
+{
+    "threshold_source": "val_seen balanced accuracy",
+    "threshold": 0.9299,
+    "quadrants": {
+        "S+": {
+            "n": 2784,
+            "mean_exist_score": 0.9245261853448277,
+            "false_refusal": 0.1903735632183908,
+            "raw_R1_iou05": 0.3530890804597701,
+            "gated_R1_iou05": 0.27801724137931033,
+            "raw_correct_count": 983,
+            "gated_correct_count": 774,
+            "raw_correct_rejected": 209,
+            "raw_correct_rejection_rate": 0.2126144455747711
+        },
+        "S-": {
+            "n": 1723,
+            "mean_exist_score": 0.6204135229251305,
+            "rejection_rate": 0.6047591410330818
+        },
+        "U+": {
+            "n": 192,
+            "mean_exist_score": 0.9659093750000002,
+            "false_refusal": 0.06770833333333333,
+            "raw_R1_iou05": 0.515625,
+            "gated_R1_iou05": 0.484375,
+            "raw_correct_count": 99,
+            "gated_correct_count": 93,
+            "raw_correct_rejected": 6,
+            "raw_correct_rejection_rate": 0.06060606060606061
+        },
+        "U-": {
+            "n": 594,
+            "mean_exist_score": 0.947113973063973,
+            "rejection_rate": 0.15824915824915825
+        }
+    },
+    "AUROC": {
+        "seen": 0.7409575736652858,
+        "unseen": 0.6713269851290684
+    },
+    "AUROC_gap": 0.0696305885362174,
+    "over_refusal_gap": -0.12266522988505747,
+    "matched_pair_accuracy": 0.4728682170542636,
+    "matched_pair_n": 129,
+    "raw_localization": {
+        "S+": {
+            "count": 2784,
+            "R1@0.3": 49.497126436781606,
+            "R1@0.5": 35.30890804597701,
+            "R1@0.7": 17.74425287356322,
+            "mIoU": 33.864189871047365
+        },
+        "U+": {
+            "count": 192,
+            "R1@0.3": 68.22916666666666,
+            "R1@0.5": 51.5625,
+            "R1@0.7": 29.166666666666668,
+            "mIoU": 45.920012840449445
+        }
+    },
+    "official_gated_localization": {
+        "S+": {
+            "count": 2784,
+            "R1@0.3": 49.42528735632184,
+            "R1@0.5": 35.16522988505747,
+            "R1@0.7": 17.995689655172413,
+            "mIoU": 33.853811488412006
+        },
+        "U+": {
+            "count": 192,
+            "R1@0.3": 68.22916666666666,
+            "R1@0.5": 51.041666666666664,
+            "R1@0.7": 32.29166666666667,
+            "mIoU": 46.105397184205685
+        }
+    },
+    "diagnostic_hard_gate": {
+        "U+_gated_R1@0.5": 48.4375
+    }
+}

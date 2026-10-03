@@ -45,3 +45,9 @@ Thumbs.db
 /results/dq_cgp_semantic_existence/**/tensorboard_log/
 !/results/dq_cgp_semantic_existence/A1/**/*.log
 !/results/dq_cgp_semantic_existence/C1/**/*.log
+
+# Published Moment-DETR-TRM-GMR-Joint experiment metrics
+!/results/moment_detr_trm_gmr_joint/
+/results/moment_detr_trm_gmr_joint/queue/
+/results/moment_detr_trm_gmr_joint/**/*.jsonl
+

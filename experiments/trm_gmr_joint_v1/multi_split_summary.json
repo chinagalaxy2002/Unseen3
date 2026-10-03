@@ -32,7 +32,7 @@
     }
   },
   "A2_alt": {
-    "split": "A1",
+    "split": "A2_alt",
     "model": "Moment-DETR-TRM-GMR-Joint-v1",
     "seen_auroc": 0.7578058369741347,
     "unseen_auroc": 0.5060668498168498,
@@ -64,7 +64,7 @@
     }
   },
   "A3": {
-    "split": "A1",
+    "split": "A3",
     "model": "Moment-DETR-TRM-GMR-Joint-v1",
     "seen_auroc": 0.7409575736652858,
     "unseen_auroc": 0.6713269851290684,
@@ -96,7 +96,7 @@
     }
   },
   "C1": {
-    "split": "A1",
+    "split": "C1",
     "model": "Moment-DETR-TRM-GMR-Joint-v1",
     "seen_auroc": 0.7429165194198549,
     "unseen_auroc": 0.6024805669867398,
@@ -128,7 +128,7 @@
     }
   },
   "C2_alt": {
-    "split": "A1",
+    "split": "C2_alt",
     "model": "Moment-DETR-TRM-GMR-Joint-v1",
     "seen_auroc": 0.6944948049069222,
     "unseen_auroc": 0.4507189318726464,

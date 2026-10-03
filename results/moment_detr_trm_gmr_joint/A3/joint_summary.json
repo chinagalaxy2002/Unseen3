@@ -1,0 +1,32 @@
+{
+    "split": "A3",
+    "model": "Moment-DETR-TRM-GMR-Joint-v1",
+    "seen_auroc": 0.7409575736652858,
+    "unseen_auroc": 0.6713269851290684,
+    "auroc_gap": 0.0696305885362174,
+    "S+_raw_R1@0.3": 49.497126436781606,
+    "S+_raw_R1@0.5": 35.30890804597701,
+    "S+_raw_R1@0.7": 17.74425287356322,
+    "S+_raw_mIoU": 33.864189871047365,
+    "U+_raw_R1@0.3": 68.22916666666666,
+    "U+_raw_R1@0.5": 51.5625,
+    "U+_raw_R1@0.7": 29.166666666666668,
+    "U+_raw_mIoU": 45.920012840449445,
+    "S+_official_gated_R1@0.5": 35.16522988505747,
+    "U+_official_gated_R1@0.5": 51.041666666666664,
+    "U+_FRR": 0.06770833333333333,
+    "U-_RR": 0.15824915824915825,
+    "raw_correct_U+_rejection_rate": 0.06060606060606061,
+    "diagnostic_hard_gated_U+_R1@0.5": 48.4375,
+    "matched_pair_acc": 0.4728682170542636,
+    "best_epoch": 35,
+    "seen_val_selection_metric": "MR-full-mAP on Seen Validation",
+    "seen_val_mAP": 24.64,
+    "existence_threshold": 0.9299,
+    "counts": {
+        "S+": 2784,
+        "S-": 1723,
+        "U+": 192,
+        "U-": 594
+    }
+}

@@ -1,0 +1,5 @@
+{
+  "best_epoch": 35,
+  "best_seen_val_mAP": 24.64,
+  "epochs_trained": 100
+}

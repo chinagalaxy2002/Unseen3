@@ -1,0 +1,7 @@
+{
+    "threshold": 0.7642,
+    "selection_metric": "MR-full-mAP on Seen Validation",
+    "best_epoch": 7,
+    "best_seen_val_mAP": 24.7,
+    "val_seen_n": 1257
+}

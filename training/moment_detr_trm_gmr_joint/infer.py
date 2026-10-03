@@ -282,7 +282,7 @@ def run_full_inference(opt, model_path: str, release_dir: str):
 
     # 4. Step 4: Machine-readable Joint Summary
     joint_summary = {
-        "split": "A1",
+        "split": release.name,
         "model": "Moment-DETR-TRM-GMR-Joint-v1",
         "seen_auroc": auc["seen"],
         "unseen_auroc": auc["unseen"],

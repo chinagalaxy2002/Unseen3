@@ -1,0 +1,81 @@
+{
+    "threshold_source": "val_seen balanced accuracy",
+    "threshold": 0.9809,
+    "quadrants": {
+        "S+": {
+            "n": 2798,
+            "mean_exist_score": 0.8824861329521086,
+            "false_refusal": 0.22694781987133666,
+            "raw_R1_iou05": 0.38456040028591854,
+            "gated_R1_iou05": 0.28984989278055756,
+            "raw_correct_count": 1076,
+            "gated_correct_count": 811,
+            "raw_correct_rejected": 265,
+            "raw_correct_rejection_rate": 0.24628252788104088
+        },
+        "S-": {
+            "n": 1667,
+            "mean_exist_score": 0.5304221955608878,
+            "rejection_rate": 0.6442711457708459
+        },
+        "U+": {
+            "n": 168,
+            "mean_exist_score": 0.9999886904761904,
+            "false_refusal": 0.0,
+            "raw_R1_iou05": 0.27380952380952384,
+            "gated_R1_iou05": 0.27380952380952384,
+            "raw_correct_count": 46,
+            "gated_correct_count": 46,
+            "raw_correct_rejected": 0,
+            "raw_correct_rejection_rate": 0.0
+        },
+        "U-": {
+            "n": 312,
+            "mean_exist_score": 0.9999580128205128,
+            "rejection_rate": 0.0
+        }
+    },
+    "AUROC": {
+        "seen": 0.7578058369741347,
+        "unseen": 0.5060668498168498
+    },
+    "AUROC_gap": 0.25173898715728493,
+    "over_refusal_gap": -0.22694781987133666,
+    "matched_pair_accuracy": 0.5189873417721519,
+    "matched_pair_n": 79,
+    "raw_localization": {
+        "S+": {
+            "count": 2798,
+            "R1@0.3": 53.073624017155105,
+            "R1@0.5": 38.45604002859185,
+            "R1@0.7": 18.942101501072194,
+            "mIoU": 35.68771872733892
+        },
+        "U+": {
+            "count": 168,
+            "R1@0.3": 39.285714285714285,
+            "R1@0.5": 27.380952380952383,
+            "R1@0.7": 14.285714285714285,
+            "mIoU": 26.263080455029055
+        }
+    },
+    "official_gated_localization": {
+        "S+": {
+            "count": 2798,
+            "R1@0.3": 53.25232308791994,
+            "R1@0.5": 38.95639742673338,
+            "R1@0.7": 19.263759828448894,
+            "mIoU": 35.71016143073541
+        },
+        "U+": {
+            "count": 168,
+            "R1@0.3": 39.88095238095239,
+            "R1@0.5": 27.976190476190478,
+            "R1@0.7": 12.5,
+            "mIoU": 25.935695733527297
+        }
+    },
+    "diagnostic_hard_gate": {
+        "U+_gated_R1@0.5": 27.380952380952383
+    }
+}
