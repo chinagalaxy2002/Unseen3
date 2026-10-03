@@ -129,8 +129,9 @@ class MomentDETR_TRM_GMR_Joint(MomentDETR):
         """Query-independent masked mean pooling over detached normalized spans."""
         B, T, _ = src_visual.shape
         spans = pred_spans.detach()
-        starts = torch.floor((spans[..., 0] - spans[..., 1] / 2).clamp(0, 1) * T).long()
-        ends = torch.ceil((spans[..., 0] + spans[..., 1] / 2).clamp(0, 1) * T).long()
+        lengths = src_visual_mask.sum(dim=1).long().clamp(min=1)
+        starts = torch.floor((spans[..., 0] - spans[..., 1] / 2).clamp(0, 1) * lengths[:, None]).long()
+        ends = torch.ceil((spans[..., 0] + spans[..., 1] / 2).clamp(0, 1) * lengths[:, None]).long()
         starts = starts.clamp(0, max(T - 1, 0))
         ends = torch.maximum(ends, starts + 1).clamp(max=T)
         time = torch.arange(T, device=src_visual.device).view(1, 1, T)
