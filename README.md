@@ -1,5 +1,7 @@
 # FlashVTG DQ-CGP on Semantic Novelty × Event Existence Benchmark
 
+后续 Moment-DETR-GMR 研究的 V5 可执行工作方案见 [Evidence V5 工作方案](experiments/moment_detr_gmr_evidence_v5/WORK_PLAN.md)和[实施清单](experiments/moment_detr_gmr_evidence_v5/IMPLEMENTATION_CHECKLIST.md)。内层 baseline 实验已启动，实际任务与进度见[运行记录](experiments/moment_detr_gmr_evidence_v5/RUN_STATUS.md)。
+
 本项目在 Charades-STA 衍生的语义新颖性 × 事件存在基准（`semantic_existence_v2`）上，对 **FlashVTG-GMR Baseline** 与引入 **DQ-CGP (v3)** 候选细化模块的模型进行了严格的 100 轮实验对比。
 
 包含全部 5 个独立划分（`A1`, `A2_alt`, `A3`, `C1`, `C2_alt`）的训练脚本、推理评估脚本以及完整的客观评测数据。

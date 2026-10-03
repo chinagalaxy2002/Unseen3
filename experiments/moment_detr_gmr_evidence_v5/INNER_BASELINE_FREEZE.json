@@ -1,0 +1,30 @@
+{
+  "stage": "inner_baselines",
+  "frozen_utc": "2026-10-03T12:14:19.474724+00:00",
+  "epochs": 100,
+  "seed": 3407,
+  "initialization": "random; no trained canonical weights",
+  "selection": "inner Seen-val MR-full-mAP",
+  "code_hashes": {
+    "scripts/prepare_evidence_v5.py": "e16c3eda16d80ac0d8c06773988c3bbbaf1467bc680424400d794fe02b297e08",
+    "scripts/queue_evidence_v5_baselines.py": "af0cc0066e0474c1dd4d198f86379e786ed18533aae02a130054a4291d33af9a",
+    "training/moment_detr_gmr_evidence_v5/protocol.py": "9e25fb6e57a390a0018c822ee7897f173111bf5858bf5e7074a98f700c5e42ec",
+    "training/moment_detr_gmr_evidence_v5/train_inner_baseline.py": "d4755ac4f4f1c5d07dfc8c3fabf2d800d46deec1f8417592700f8d380bb1e332",
+    "training/moment_detr_gmr/train.py": "e04452bf12f784476fbebcfd3e7c0de813436d4c5e42240b07ed49fa3b7833b3",
+    "training/moment_detr_gmr/evaluate.py": "546ce3520f7a535882596472e9bddb61ca1ffd89a4364cad0748f5a398b4b2b3",
+    "training/moment_detr_gmr/dataset.py": "7cf3a8fe9bb09f077d6bc01666e55c4f5b509a50c0dc0190352e6876f4fd7dab",
+    "models/moment_detr_gmr/moment_detr.py": "c2e86f6157a13a36fbde4f297951582f6c3ffe22655e84d05793bc415df25f0b",
+    "models/moment_detr_gmr/moment_transformer.py": "86229992218d9b512318d5a200a7283e5e06651a60abc784c8a2dc23f5ec0d47"
+  },
+  "fold_manifest_hashes": {
+    "A1_action_01": "9d59510429734a95b116715e30102edbb3b9b9e7f9199bfd3f3bc2bb66385aaa",
+    "A1_action_02": "f9953e7bab106de49e2f92dbceb92dec10b818836928c233c0d2ce67c8f2a53f",
+    "C1_composition_01": "a402c0c8892e4b820fd7e4b82e6130d197b5f1b8746958e63919a19dbb81594f",
+    "C1_composition_02": "4099052ee9e248780c16093ac60d6e911754ecaf996bfbee09368be3ef89955f"
+  },
+  "input_verification_hash": "1993c3f5e85a33d587cc766faefaa0683ed393ca5c967d8599f5ee0626fadb90",
+  "formal_u_in_training": false,
+  "local_roi_time_mapping_gate": "pending; not needed for canonical baseline training",
+  "git_sha": "b9537d82712378506a63dfbef8ee7e4a7fcff7a0",
+  "git_worktree_dirty": true
+}

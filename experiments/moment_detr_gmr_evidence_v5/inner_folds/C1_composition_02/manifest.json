@@ -1,0 +1,60 @@
+{
+  "fold": "C1_composition_02",
+  "parent_split": "C1",
+  "level": "composition",
+  "heldout": [
+    "open::cabinet",
+    "open::refrigerator",
+    "sit::sofa",
+    "open::box"
+  ],
+  "selection": "Seen metadata only; support-greedy, deterministic; disjoint heldout IDs",
+  "counts": {
+    "inner_train": {
+      "rows": 10038,
+      "videos": 4288,
+      "labels": {
+        "1": 8601,
+        "0": 1437
+      }
+    },
+    "inner_seen_val": {
+      "rows": 946,
+      "videos": 366,
+      "labels": {
+        "1": 695,
+        "0": 251
+      }
+    },
+    "inner_novel_dev": {
+      "rows": 144,
+      "videos": 96,
+      "labels": {
+        "1": 50,
+        "0": 94
+      }
+    }
+  },
+  "files": {
+    "inner_train": {
+      "path": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/experiments/moment_detr_gmr_evidence_v5/inner_folds/C1_composition_02/inner_train.jsonl",
+      "sha256": "fd717bf754d191eab3b07f3f3acbd664f09de3f58f3e00e0ec1b9faf728f1a92"
+    },
+    "inner_seen_val": {
+      "path": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/experiments/moment_detr_gmr_evidence_v5/inner_folds/C1_composition_02/inner_seen_val.jsonl",
+      "sha256": "43e285c4da6088a59622edf5c5d5477b5df1a193fd07f299f84a5c4bce0c396b"
+    },
+    "inner_novel_dev": {
+      "path": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/experiments/moment_detr_gmr_evidence_v5/inner_folds/C1_composition_02/inner_novel_dev.jsonl",
+      "sha256": "71a4f68a86f4336777e5dc8d8d433ed5313b4ac140d4698223d553b2531fa29a"
+    }
+  },
+  "excluded_train_rows": 478,
+  "excluded_val_context_rows": 361,
+  "train_source_semantic_exposure": 0,
+  "train_eval_video_overlap": 0,
+  "initialization": "random task-model initialization; no canonical trained weights",
+  "baseline_epochs": 100,
+  "seed": 3407,
+  "baseline_selection": "inner Seen-val MR-full-mAP"
+}

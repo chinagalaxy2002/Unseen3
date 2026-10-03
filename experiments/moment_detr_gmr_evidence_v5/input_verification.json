@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "ranking_counterexample_passed": true,
+  "softmax_margin_agreement_passed": true,
+  "verified_folds": [
+    "A1_action_01",
+    "A1_action_02",
+    "C1_composition_01",
+    "C1_composition_02"
+  ],
+  "local_time_mapping_status": "nominal_1s_grid; exact extraction timestamps unavailable; local ROI gate pending",
+  "scope": "baseline inputs/ranking; not verifier implementation validation"
+}

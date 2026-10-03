@@ -1,0 +1,122 @@
+{
+  "A1": {
+    "train": {
+      "rows": 8608,
+      "videos": 3718,
+      "labels": {
+        "1": 7108,
+        "0": 1500
+      }
+    },
+    "seen_val": {
+      "rows": 1257,
+      "videos": 389,
+      "labels": {
+        "1": 747,
+        "0": 510
+      }
+    },
+    "eligible_pairs": 1499,
+    "exclusions": {
+      "source_not_in_allowed_rows": 1
+    },
+    "train_hash": "0cd951d33e1429d1cecf4ce0a661fc290dc4997b995abba362f76545bb486a14",
+    "pair_hash": "cefea9613b551882bd8f32218aa4176f4990e5df16df82a849c68dfbe4e37746"
+  },
+  "A2_alt": {
+    "train": {
+      "rows": 10323,
+      "videos": 4275,
+      "labels": {
+        "1": 8823,
+        "0": 1500
+      }
+    },
+    "seen_val": {
+      "rows": 1529,
+      "videos": 457,
+      "labels": {
+        "1": 940,
+        "0": 589
+      }
+    },
+    "eligible_pairs": 1499,
+    "exclusions": {
+      "source_not_in_allowed_rows": 1
+    },
+    "train_hash": "d00938614ba3e0583dbb32d129804adc8938f5c1f89a66316b4b754d539f71a3",
+    "pair_hash": "3f937542db42f74bfd9b9f251d29e52d7d65373e3f3cdd490c9e5481cfb8b475"
+  },
+  "A3": {
+    "train": {
+      "rows": 10352,
+      "videos": 4315,
+      "labels": {
+        "1": 8852,
+        "0": 1500
+      }
+    },
+    "seen_val": {
+      "rows": 1548,
+      "videos": 451,
+      "labels": {
+        "1": 939,
+        "0": 609
+      }
+    },
+    "eligible_pairs": 1499,
+    "exclusions": {
+      "source_not_in_allowed_rows": 1
+    },
+    "train_hash": "53a1976cad3aedead9019daa3b25967c44f6e7f993b502e4521eb30dff0e6ffe",
+    "pair_hash": "43441b9218f533ce40d629f20168bb3fba4da4beb95d9bf79338ce92b6533322"
+  },
+  "C1": {
+    "train": {
+      "rows": 10516,
+      "videos": 4379,
+      "labels": {
+        "1": 9016,
+        "0": 1500
+      }
+    },
+    "seen_val": {
+      "rows": 1451,
+      "videos": 462,
+      "labels": {
+        "1": 943,
+        "0": 508
+      }
+    },
+    "eligible_pairs": 1499,
+    "exclusions": {
+      "source_not_in_allowed_rows": 1
+    },
+    "train_hash": "0fa9cc62f1964069e9ec35808533c89845049dc93e0d7ecd16c6eb0576be0638",
+    "pair_hash": "0cbafbbe0aa3b86100a722cd1e619cc19a53cf142afab854502f4e3b7e12aecf"
+  },
+  "C2_alt": {
+    "train": {
+      "rows": 10612,
+      "videos": 4375,
+      "labels": {
+        "1": 9112,
+        "0": 1500
+      }
+    },
+    "seen_val": {
+      "rows": 1476,
+      "videos": 466,
+      "labels": {
+        "1": 955,
+        "0": 521
+      }
+    },
+    "eligible_pairs": 1499,
+    "exclusions": {
+      "source_not_in_allowed_rows": 1
+    },
+    "train_hash": "bb731690357dbb9af7b0641ec7649ba42b4fe3f3aad9798281cfb482caccbf3e",
+    "pair_hash": "912daa365ba196699aa5b166c807e57a39ee7fc3e47a51b492f56591dc71b8db"
+  }
+}

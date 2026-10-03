@@ -1,0 +1,77 @@
+{
+  "A1": {
+    "S+": {
+      "r1_iou05": 0.369702434625789,
+      "raw_miou": 0.35085127741495664
+    },
+    "U+": {
+      "r1_iou05": 0.23010752688172043,
+      "raw_miou": 0.2510108593604457
+    },
+    "evaluator_version": "raw_margin_revision_01",
+    "units": "fraction",
+    "postprocessing": "none; raw seconds unchanged",
+    "prediction_hash": "659aef4f79a6c2857c2797f9e08c3e60488f104a22cfeedddd7a5999e6f7e08e",
+    "existence_metrics_changed": false
+  },
+  "A2_alt": {
+    "S+": {
+      "r1_iou05": 0.3541815582558971,
+      "raw_miou": 0.33907548579281765
+    },
+    "U+": {
+      "r1_iou05": 0.26785714285714285,
+      "raw_miou": 0.2679514322680393
+    },
+    "evaluator_version": "raw_margin_revision_01",
+    "units": "fraction",
+    "postprocessing": "none; raw seconds unchanged",
+    "prediction_hash": "d8bcead2591c10371bd69f7ae13c0de2f06ccfeb73ff5001c5a711aa8fdbcb93",
+    "existence_metrics_changed": false
+  },
+  "A3": {
+    "S+": {
+      "r1_iou05": 0.3426724137931034,
+      "raw_miou": 0.33122655183539873
+    },
+    "U+": {
+      "r1_iou05": 0.3958333333333333,
+      "raw_miou": 0.3871805493071799
+    },
+    "evaluator_version": "raw_margin_revision_01",
+    "units": "fraction",
+    "postprocessing": "none; raw seconds unchanged",
+    "prediction_hash": "fe04c4de72afae3e0064d0c8ea76bfce09570ddf30875f88105f9cf8168bd536",
+    "existence_metrics_changed": false
+  },
+  "C1": {
+    "S+": {
+      "r1_iou05": 0.35727045373347627,
+      "raw_miou": 0.3409008390859605
+    },
+    "U+": {
+      "r1_iou05": 0.4876543209876543,
+      "raw_miou": 0.4460074704127858
+    },
+    "evaluator_version": "raw_margin_revision_01",
+    "units": "fraction",
+    "postprocessing": "none; raw seconds unchanged",
+    "prediction_hash": "d61bdd56a6952c37bbb313927e3771b51eed047a753d1c362f8a99b6c3826522",
+    "existence_metrics_changed": false
+  },
+  "C2_alt": {
+    "S+": {
+      "r1_iou05": 0.3689388615600843,
+      "raw_miou": 0.3413142505668939
+    },
+    "U+": {
+      "r1_iou05": 0.3565217391304348,
+      "raw_miou": 0.3361129362215119
+    },
+    "evaluator_version": "raw_margin_revision_01",
+    "units": "fraction",
+    "postprocessing": "none; raw seconds unchanged",
+    "prediction_hash": "3f4b635c5ec3e3aa79bb61be6f146c1385dc1f224d79d1514922a160b96a39dd",
+    "existence_metrics_changed": false
+  }
+}

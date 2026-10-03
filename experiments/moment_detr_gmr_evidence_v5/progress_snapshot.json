@@ -1,0 +1,49 @@
+{
+  "stage": "inner_baselines",
+  "jobs": [
+    {
+      "fold": "A1_action_01",
+      "gpu": "0",
+      "status": "running",
+      "epochs_completed": 12,
+      "epochs_planned": 100,
+      "validation_records": 12,
+      "best_seen_val_mAP": 26.69,
+      "pid": 1537251,
+      "log": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/results/moment_detr_gmr_evidence_v5/inner_baselines/A1_action_01/job.log"
+    },
+    {
+      "fold": "A1_action_02",
+      "gpu": "0",
+      "status": "queued",
+      "epochs_completed": 0,
+      "epochs_planned": 100,
+      "validation_records": 0,
+      "best_seen_val_mAP": null,
+      "pid": null,
+      "log": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/results/moment_detr_gmr_evidence_v5/inner_baselines/A1_action_02/job.log"
+    },
+    {
+      "fold": "C1_composition_01",
+      "gpu": "1",
+      "status": "running",
+      "epochs_completed": 9,
+      "epochs_planned": 100,
+      "validation_records": 9,
+      "best_seen_val_mAP": 22.71,
+      "pid": 1537252,
+      "log": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/results/moment_detr_gmr_evidence_v5/inner_baselines/C1_composition_01/job.log"
+    },
+    {
+      "fold": "C1_composition_02",
+      "gpu": "1",
+      "status": "queued",
+      "epochs_completed": 0,
+      "epochs_planned": 100,
+      "validation_records": 0,
+      "best_seen_val_mAP": null,
+      "pid": null,
+      "log": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/results/moment_detr_gmr_evidence_v5/inner_baselines/C1_composition_02/job.log"
+    }
+  ]
+}

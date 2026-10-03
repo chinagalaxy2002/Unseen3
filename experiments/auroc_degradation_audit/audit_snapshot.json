@@ -1,0 +1,170 @@
+{
+  "timestamp_utc": "2026-10-03T09:05:53.361923+00:00",
+  "scope": "read-only audit of ongoing fixed-50 Joint-v3; no training changes",
+  "comparison": {
+    "A1": {
+      "baseline": {
+        "seen_auroc": 0.8043862285711272,
+        "unseen_auroc": 0.49726906704334706,
+        "S+_raw_R1@0.5": 36.9702434625789,
+        "U+_raw_R1@0.5": 23.010752688172044,
+        "matched_pair_acc": 0.5592948717948718
+      },
+      "v3": {
+        "split": "A1",
+        "model": "Moment-DETR-TRM-GMR-Joint-v3",
+        "status": "completed",
+        "exploratory_status": "Exploratory follow-up motivated by previously inspected Joint-v1/v2 failure modes",
+        "seen_auroc": 0.695051518938615,
+        "unseen_auroc": 0.5113071386702798,
+        "seen_unseen_gap": 0.18374438026833528,
+        "joint_v1_unseen_auroc": 0.4624943545984799,
+        "delta_v3_vs_v1_unseen_auroc": 0.0488127840717999,
+        "joint_v2_unseen_auroc": 0.4809689911307139,
+        "delta_v3_vs_v2_unseen_auroc": 0.030338147539565874,
+        "S+_raw_R1@0.5": 36.834986474301175,
+        "U+_raw_R1@0.5": 21.72043010752688,
+        "S+_raw_mIoU": 34.691584725967374,
+        "U+_raw_mIoU": 23.951137582602726,
+        "U+_FRR": 0.2623655913978495,
+        "U-_RR": 0.29848078641644327,
+        "matched_pair_acc": 0.625,
+        "best_epoch": 10,
+        "threshold": 0.8656097898994382,
+        "best_seen_worst_semantic_auroc": 0.4285714285714286,
+        "best_seen_val_mAP": 22.64,
+        "localization_floor_mAP": 23.7,
+        "epochs_trained": 50,
+        "auc_valid_batch_fraction": 1.0,
+        "selection_mode": "fallback_seen_mAP",
+        "localization_constraint_satisfied": false,
+        "fallback_checkpoint_used": true,
+        "early_stopping_enabled": false,
+        "nan_inf_detected": false,
+        "missing_feature_or_fallback": false,
+        "pca_used": false,
+        "counts": {
+          "S+": 2218,
+          "S-": 1368,
+          "U+": 465,
+          "U-": 1119
+        }
+      },
+      "delta": {
+        "seen_auroc": -0.10933470963251213,
+        "unseen_auroc": 0.014038071626932713,
+        "S+_raw_R1@0.5": -0.1352569882777246,
+        "U+_raw_R1@0.5": -1.2903225806451637,
+        "matched_pair_acc": 0.0657051282051282
+      }
+    },
+    "A2_alt": {
+      "baseline": {
+        "seen_auroc": 0.7690488707119191,
+        "unseen_auroc": 0.5510817307692307,
+        "S+_raw_R1@0.5": 35.41815582558971,
+        "U+_raw_R1@0.5": 26.785714285714285,
+        "matched_pair_acc": 0.620253164556962
+      },
+      "v3": {
+        "split": "A2_alt",
+        "model": "Moment-DETR-TRM-GMR-Joint-v3",
+        "status": "completed",
+        "exploratory_status": "Exploratory follow-up motivated by previously inspected Joint-v1/v2 failure modes",
+        "seen_auroc": 0.7302453376372616,
+        "unseen_auroc": 0.5176663614163614,
+        "seen_unseen_gap": 0.21257897622090027,
+        "joint_v1_unseen_auroc": 0.5060668498168498,
+        "delta_v3_vs_v1_unseen_auroc": 0.011599511599511558,
+        "joint_v2_unseen_auroc": 0.5306967338217338,
+        "delta_v3_vs_v2_unseen_auroc": -0.013030372405372415,
+        "S+_raw_R1@0.5": 29.949964260185848,
+        "U+_raw_R1@0.5": 23.809523809523807,
+        "S+_raw_mIoU": 28.46163772019238,
+        "U+_raw_mIoU": 23.077440725904555,
+        "U+_FRR": 0.005952380952380952,
+        "U-_RR": 0.035256410256410256,
+        "matched_pair_acc": 0.3291139240506329,
+        "best_epoch": 36,
+        "threshold": 0.9986277025394176,
+        "best_seen_worst_semantic_auroc": 0.41666666666666663,
+        "best_seen_val_mAP": 22.38,
+        "localization_floor_mAP": 25.49,
+        "epochs_trained": 50,
+        "auc_valid_batch_fraction": 1.0,
+        "selection_mode": "fallback_seen_mAP",
+        "localization_constraint_satisfied": false,
+        "fallback_checkpoint_used": true,
+        "early_stopping_enabled": false,
+        "nan_inf_detected": false,
+        "missing_feature_or_fallback": false,
+        "pca_used": false,
+        "counts": {
+          "S+": 2798,
+          "S-": 1667,
+          "U+": 168,
+          "U-": 312
+        }
+      },
+      "delta": {
+        "seen_auroc": -0.03880353307465745,
+        "unseen_auroc": -0.03341536935286937,
+        "S+_raw_R1@0.5": -5.46819156540386,
+        "U+_raw_R1@0.5": -2.976190476190478,
+        "matched_pair_acc": -0.2911392405063291
+      }
+    }
+  },
+  "sampler": {
+    "A1": {
+      "total": 8608,
+      "positive": 7108,
+      "negative": 1500,
+      "never_sampled_positive": 2259,
+      "excluded_total_fraction": 0.2624302973977695,
+      "excluded_positive_fraction": 0.3178109172763084,
+      "original_negative_fraction": 0.17425650557620817,
+      "current_negative_fraction": 0.5
+    },
+    "A2_alt": {
+      "total": 10323,
+      "positive": 8823,
+      "negative": 1500,
+      "never_sampled_positive": 3956,
+      "excluded_total_fraction": 0.3832219316090284,
+      "excluded_positive_fraction": 0.4483735690808115,
+      "original_negative_fraction": 0.14530659691950015,
+      "current_negative_fraction": 0.5
+    },
+    "A3": {
+      "total": 10352,
+      "positive": 8852,
+      "negative": 1500,
+      "never_sampled_positive": 3991,
+      "excluded_total_fraction": 0.3855293663060278,
+      "excluded_positive_fraction": 0.4508585630366019,
+      "original_negative_fraction": 0.14489953632148378,
+      "current_negative_fraction": 0.5
+    },
+    "C1": {
+      "total": 10516,
+      "positive": 9016,
+      "negative": 1500,
+      "never_sampled_positive": 1326,
+      "excluded_total_fraction": 0.12609357170026625,
+      "excluded_positive_fraction": 0.14707187222715173,
+      "original_negative_fraction": 0.14263978699125143,
+      "current_negative_fraction": 0.5
+    },
+    "C2_alt": {
+      "total": 10612,
+      "positive": 9112,
+      "negative": 1500,
+      "never_sampled_positive": 1730,
+      "excluded_total_fraction": 0.16302299283829627,
+      "excluded_positive_fraction": 0.1898595258999122,
+      "original_negative_fraction": 0.14134941575574822,
+      "current_negative_fraction": 0.5
+    }
+  }
+}

@@ -4,6 +4,10 @@ __pycache__/
 *$py.class
 *.so
 
+# Generated inner-fold annotations and source-pair rows (hashes/manifests retained)
+/experiments/moment_detr_gmr_evidence_v5/inner_folds/**/*.jsonl
+/experiments/moment_detr_gmr_evidence_v5/source_pairs/**/*.jsonl
+
 # Data and feature storage (accessed via symlinks or external storage)
 data/
 features/
@@ -50,4 +54,3 @@ Thumbs.db
 !/results/moment_detr_trm_gmr_joint/
 /results/moment_detr_trm_gmr_joint/queue/
 /results/moment_detr_trm_gmr_joint/**/*.jsonl
-

@@ -36,7 +36,10 @@ def raw_localization_metrics(rows, predictions):
         if int(r["exist_label"]) != 1: continue
         pred = predictions[str(r["qid"])]
         if not r.get("relevant_windows"): continue
-        j = int(np.asarray(pred["raw_class_logits"])[:, 0].argmax())
+        logits = np.asarray(pred["raw_class_logits"], dtype=np.float64)
+        # Binary foreground softmax ranks by the foreground/background margin.
+        # Stable argmax retains the first slot on ties.
+        j = int((logits[:, 0] - logits[:, 1]).argmax())
         st, ed = pred["raw_spans_seconds"][j]
         best = 0.0
         for gs, ge in r["relevant_windows"]:

@@ -1,0 +1,15 @@
+{
+  "gpu": "1",
+  "pid": 1537250,
+  "jobs": {
+    "C1_composition_01": {
+      "status": "running",
+      "log": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/results/moment_detr_gmr_evidence_v5/inner_baselines/C1_composition_01/job.log",
+      "started_utc": "2026-10-03T12:14:19.514330+00:00",
+      "pid": 1537252
+    },
+    "C1_composition_02": {
+      "status": "queued"
+    }
+  }
+}
