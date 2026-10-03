@@ -106,6 +106,9 @@ def run_full_inference(opt, model_path: str, release_dir: str):
 
     training_meta_path = results_dir / "training_meta.json"
     training_meta = json.loads(training_meta_path.read_text()) if training_meta_path.exists() else {}
+    with np.load(results_dir / "background_pca.npz") as pca_data:
+        pca_rank = int(pca_data["pca_rank"])
+        background_sample_count = int(pca_data["background_sample_count"])
 
     threshold_info = {
         "threshold": float(frozen_threshold),
@@ -113,6 +116,10 @@ def run_full_inference(opt, model_path: str, release_dir: str):
         "best_epoch": training_meta.get("best_epoch", -1),
         "best_seen_val_mAP": training_meta.get("best_seen_val_mAP", 0.0),
         "val_seen_n": len([r for r in val_gt if r.get("partition") in ("S+", "S-")]),
+        "auc_valid_batch_fraction": training_meta.get("auc_valid_batch_fraction"),
+        "pca_rank": 256,
+        "pca_source": "train S+ background only",
+        "missing_feature_or_fallback": training_meta.get("missing_feature_or_fallback", False),
     }
     save_json(threshold_info, str(results_dir / "threshold_frozen.json"), save_pretty=True)
     logger.info("Calibrated and frozen threshold on Seen Validation: %.4f", frozen_threshold)
@@ -148,6 +155,11 @@ def run_full_inference(opt, model_path: str, release_dir: str):
         keep_empty_gt=True,
         partition_filter=None,
     )
+    if len(test_dataset) != len(test_gt):
+        raise FileNotFoundError(
+            f"Test feature-backed query count mismatch: {len(test_dataset)}/{len(test_gt)}; "
+            "missing visual feature fallback is forbidden"
+        )
 
     test_loader = DataLoader(
         test_dataset,
@@ -340,6 +352,11 @@ def run_full_inference(opt, model_path: str, release_dir: str):
         "seen_val_mAP": threshold_info["best_seen_val_mAP"],
         "existence_threshold": frozen_threshold,
         "alpha_visual": float(test_pred_dict[next(iter(test_pred_dict))]["alpha_visual"]) if test_pred_dict else None,
+        "auc_valid_batch_fraction": training_meta.get("auc_valid_batch_fraction"),
+        "pca_rank": pca_rank,
+        "pca_source": "train S+ background only",
+        "background_sample_count": background_sample_count,
+        "missing_feature_or_fallback": training_meta.get("missing_feature_or_fallback", False),
         "counts": {
             "S+": len(s_pos_rows),
             "S-": len([r for r in test_gt if r.get("partition") == "S-"]),

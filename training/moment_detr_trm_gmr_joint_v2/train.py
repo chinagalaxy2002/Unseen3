@@ -43,6 +43,7 @@ from models.moment_detr_gmr.utils.basic_utils import (
     save_checkpoint,
     write_log,
 )
+from models.moment_detr_gmr.utils.basic_utils import load_jsonl
 from models.moment_detr_gmr.utils.model_utils import count_parameters, ModelEMA
 
 logger = logging.getLogger(__name__)
@@ -195,6 +196,9 @@ def train_joint(model, criterion, optimizer, lr_scheduler, train_dataset, val_da
         "epochs_trained": epoch_i + 1,
         "auc_valid_batch_fraction": total_auc_valid_batches / max(total_train_batches, 1),
         "nan_inf_detected": False,
+        "train_dataset_queries": len(train_dataset),
+        "val_dataset_queries": len(val_dataset),
+        "missing_feature_or_fallback": False,
     }
     with open(os.path.join(opt.results_dir, "training_meta.json"), "w") as f:
         json.dump(meta, f, indent=2)
@@ -337,6 +341,13 @@ def main():
         keep_empty_gt=True,
         partition_filter=["S+", "S-"],
     ))
+    expected_train = sum(r.get("partition") in ("S+", "S-") for r in load_jsonl(opt.train_path))
+    expected_val = sum(r.get("partition") in ("S+", "S-") for r in load_jsonl(opt.eval_path))
+    if len(train_dataset) != expected_train or len(val_dataset) != expected_val:
+        raise FileNotFoundError(
+            f"Feature-backed query count mismatch: train {len(train_dataset)}/{expected_train}, "
+            f"val {len(val_dataset)}/{expected_val}; missing visual feature fallback is forbidden"
+        )
 
     model, criterion, optimizer, lr_scheduler = setup_model_and_criterion(opt)
     if args.resume is not None:

@@ -73,6 +73,6 @@ def main():
     for st in range(0,len(X),1024):
         x=X[st:st+1024]-mu; res=x-(x@comps.T)@comps; residual.extend(np.linalg.norm(res,axis=1).tolist())
     output=Path(a.output or ROOT/f"results/moment_detr_trm_gmr_joint_v2/{a.split}/background_pca.npz"); output.parent.mkdir(parents=True,exist_ok=True)
-    np.savez_compressed(output,mu_bg=mu,components_bg=comps,residual_mean_bg=np.float32(np.mean(residual)),residual_std_bg=np.float32(max(np.std(residual),1e-6)),visual_feature_dim=D,pca_rank=K,background_sample_count=len(X),background_population_count=seen,seed=a.seed,source="train S+ background only",feature_order="SlowFast then CLIP visual; each modality row-wise L2 normalized; TEF excluded")
-    print(json.dumps({"split":a.split,"path":str(output),"visual_feature_dim":D,"pca_rank":K,"background_sample_count":len(X),"background_population_count":seen},indent=2))
+    np.savez_compressed(output,mu_bg=mu,components_bg=comps,residual_mean_bg=np.float32(np.mean(residual)),residual_std_bg=np.float32(max(np.std(residual),1e-6)),visual_feature_dim=D,pca_rank=K,background_sample_count=len(X),background_population_count=seen,train_splus_query_count=len(rows),seed=a.seed,source="train S+ background only",feature_order="SlowFast then CLIP visual; each modality row-wise L2 normalized; TEF excluded")
+    print(json.dumps({"split":a.split,"path":str(output),"visual_feature_dim":D,"pca_rank":K,"background_sample_count":len(X),"background_population_count":seen,"train_splus_query_count":len(rows)},indent=2))
 if __name__=="__main__": main()
