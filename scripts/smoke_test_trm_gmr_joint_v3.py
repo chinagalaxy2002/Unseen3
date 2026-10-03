@@ -84,23 +84,36 @@ def main():
             self.data = [source.data[i] for i in indices]
     tiny = TinyDataset(dataset, indices)
     tiny_sampler = SemanticGroupBatchSampler(tiny.data)
-    with tempfile.TemporaryDirectory() as tmp:
-        opt.results_dir = tmp; opt.ckpt_filepath = str(Path(tmp, 'best.ckpt'))
-        opt.train_log_filepath = str(Path(tmp, 'train.log')); opt.eval_log_filepath = str(Path(tmp, 'val.log'))
-        opt.semantic_manifest = str(Path(tmp, 'manifest.json')); opt.n_epoch = 1; opt.max_es_cnt = 30
-        manifest = {'sampler_audit':tiny_sampler.audit(), 'localization_floor_mAP':0.0, 'localization_reference_mAP':1.0,
-                    'validation_selection_groups':eligible_validation_groups(tiny.data,tiny.data,min_per_class=1)}
-        Path(opt.semantic_manifest).write_text(json.dumps(manifest))
-        optimizer = torch.optim.AdamW(model.parameters(),lr=1e-4)
-        scheduler = torch.optim.lr_scheduler.StepLR(optimizer,400)
-        train_joint(model,criterion,optimizer,scheduler,tiny,tiny,opt)
-        metadata = json.loads(Path(tmp,'training_meta.json').read_text())
-        assert metadata['best_epoch']==1 and metadata['training_status']=='completed'
-        assert metadata['auc_valid_action_batch_fraction']==1.0
-        assert Path(tmp,'best.ckpt').exists() and Path(tmp,'best_selection.json').exists()
-        model.load_state_dict(torch.load(Path(tmp,'best.ckpt'),map_location='cuda',weights_only=False)['model'],strict=True)
+    for floor, expected_mode in [(0.0, 'constrained_worst_semantic_auroc'), (101.0, 'fallback_seen_mAP')]:
+        with tempfile.TemporaryDirectory() as tmp:
+            opt.results_dir = tmp; opt.ckpt_filepath = str(Path(tmp, 'best.ckpt'))
+            opt.train_log_filepath = str(Path(tmp, 'train.log')); opt.eval_log_filepath = str(Path(tmp, 'val.log'))
+            opt.semantic_manifest = str(Path(tmp, 'manifest.json'))
+            # Direct helper test: even max_es_cnt=0 cannot truncate the epoch loop.
+            # Formal CLI runs enforce n_epoch=50 and max_es_cnt=-1.
+            opt.n_epoch = 3; opt.max_es_cnt = 0
+            manifest = {'sampler_audit':tiny_sampler.audit(), 'localization_floor_mAP':floor,
+                        'localization_reference_mAP':floor+1.0,
+                        'validation_selection_groups':eligible_validation_groups(tiny.data,tiny.data,min_per_class=1)}
+            Path(opt.semantic_manifest).write_text(json.dumps(manifest))
+            optimizer = torch.optim.AdamW(model.parameters(),lr=1e-4)
+            scheduler = torch.optim.lr_scheduler.StepLR(optimizer,400)
+            train_joint(model,criterion,optimizer,scheduler,tiny,tiny,opt)
+            metadata = json.loads(Path(tmp,'training_meta.json').read_text())
+            selected = json.loads(Path(tmp,'best_selection.json').read_text())
+            map_selected = json.loads(Path(tmp,'best_mAP_selection.json').read_text())
+            assert metadata['best_epoch']>=1 and metadata['training_status']=='completed'
+            assert metadata['epochs_trained']==3 and metadata['early_stopping_enabled'] is False
+            assert metadata['auc_valid_action_batch_fraction']==1.0
+            assert metadata['selection_mode']==expected_mode==selected['selection_mode']
+            assert selected['best_seen_val_mAP']==metadata['best_seen_val_mAP']
+            assert map_selected['best_seen_val_mAP']==metadata['highest_seen_val_mAP']
+            assert metadata['fallback_checkpoint_used']==(floor>100)
+            for name in ['best.ckpt','best_mAP.ckpt']:
+                assert Path(tmp,name).exists()
+                model.load_state_dict(torch.load(Path(tmp,name),map_location='cuda',weights_only=False)['model'],strict=True)
     result={'status':'passed','device':'cuda','numeric_smooth_max':True,'semantic_offset_invariance':True,'all_positive_negative_graph_safe_zero':True,
       'balanced_sampler_deterministic':True,'real_mixed_batch_backward':True,'ranking_gradient_modules':checked,'semantic_only_existence':True,
-      'empty_GT_loss_behavior':True,'optimizer_step':True,'real_evaluation_and_full_precision_serialization':True,'group_diagnostics':True,'tiny_train_validation_checkpoint_integration':True,'nan_inf_detected':False}
+      'empty_GT_loss_behavior':True,'optimizer_step':True,'real_evaluation_and_full_precision_serialization':True,'group_diagnostics':True,'tiny_train_validation_checkpoint_integration':True,'below_floor_checkpoint_saved':True,'forced_epoch_completion_no_early_stop':True,'nan_inf_detected':False}
     path=ROOT/'experiments/trm_gmr_joint_v3/SMOKE_TEST_RESULT.json';path.write_text(json.dumps(result,indent=2)+'\n');print(json.dumps(result,indent=2))
 if __name__=='__main__':main()

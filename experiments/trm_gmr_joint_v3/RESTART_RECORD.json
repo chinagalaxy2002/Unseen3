@@ -1,0 +1,50 @@
+{
+  "run_id": "run_02_fixed50_20261003T080623Z",
+  "restart_requested_utc": "2026-10-03T08:06:23.029627+00:00",
+  "previous_results_archive": "results/moment_detr_trm_gmr_joint_v3_archive/run_01_patience30_20261003T080623Z",
+  "previous_documents_archive": "experiments/trm_gmr_joint_v3/archive/run_01_patience30_20261003T080623Z",
+  "user_instructions": [
+    "Save best checkpoint even below localization floor",
+    "Restart training",
+    "Each split must train exactly 50 epochs"
+  ],
+  "initialization": "from scratch",
+  "early_stopping": false,
+  "prior_run_split_statuses": [
+    {
+      "split": "C2_alt",
+      "last_training_status": "running",
+      "epochs_recorded": 20,
+      "U_test_inference_run": false,
+      "archived_for_restart": true
+    },
+    {
+      "split": "A1",
+      "last_training_status": "completed",
+      "epochs_recorded": 40,
+      "U_test_inference_run": false,
+      "archived_for_restart": true
+    },
+    {
+      "split": "C1",
+      "last_training_status": "running",
+      "epochs_recorded": 37,
+      "U_test_inference_run": false,
+      "archived_for_restart": true
+    },
+    {
+      "split": "A2_alt",
+      "last_training_status": "completed",
+      "epochs_recorded": 66,
+      "U_test_inference_run": false,
+      "archived_for_restart": true
+    },
+    {
+      "split": "A3",
+      "last_training_status": "completed",
+      "epochs_recorded": 50,
+      "U_test_inference_run": false,
+      "archived_for_restart": true
+    }
+  ]
+}

@@ -5,8 +5,8 @@ num_workers: 4
 lr: 0.0001
 lr_drop: 400
 wd: 0.0001
-n_epoch: 100
-max_es_cnt: 30
+n_epoch: 50
+max_es_cnt: -1
 bsz: 16
 eval_bsz: 16
 grad_clip: 0.1

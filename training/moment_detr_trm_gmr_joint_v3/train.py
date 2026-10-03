@@ -5,6 +5,8 @@ End-to-End training on S+ and S- with Seen validation checkpoint selection.
 from __future__ import annotations
 
 import argparse
+import copy
+import shutil
 import json
 import logging
 import os
@@ -40,8 +42,6 @@ from models.moment_detr_trm_gmr_joint_v3.moment_detr_trm_gmr_joint import build_
 from models.moment_detr_trm_gmr_joint_v3.joint_loss import build_criterion_joint
 from models.moment_detr_gmr.utils.basic_utils import (
     AverageMeter,
-    rename_latest_to_best,
-    save_checkpoint,
     write_log,
 )
 from models.moment_detr_gmr.utils.basic_utils import load_jsonl
@@ -125,6 +125,25 @@ def train_epoch_joint(model, criterion, train_loader, optimizer, opt, epoch_i):
     return auc_valid_batches, total_batches, ranking_stats
 
 
+def save_checkpoint_bundle(model, optimizer, scheduler, epoch_i, opt, latest_paths, prefix, selection):
+    """Persist matching weights, predictions and selection record, even below floor."""
+    checkpoint_opt = copy.copy(opt)
+    target = Path(opt.results_dir, prefix + ".ckpt")
+    checkpoint_opt.ckpt_filepath = str(target)
+    temporary = target.with_suffix(".ckpt.tmp")
+    torch.save({"model": model.state_dict(), "optimizer": optimizer.state_dict(),
+                "lr_scheduler": scheduler.state_dict(), "epoch": epoch_i,
+                "opt": checkpoint_opt}, temporary)
+    temporary.replace(target)
+    for path in latest_paths:
+        source = Path(path)
+        shutil.copy2(source, source.with_name(source.name.replace("latest_", prefix + "_", 1)))
+    destination = Path(opt.results_dir, prefix + "_selection.json")
+    temporary = destination.with_suffix(".tmp")
+    temporary.write_text(json.dumps(selection, indent=2, allow_nan=False) + "\n")
+    temporary.replace(destination)
+
+
 def train_joint(model, criterion, optimizer, lr_scheduler, train_dataset, val_dataset, opt):
     opt.train_log_txt_formatter = "{time_str} [Epoch] {epoch:03d} [Loss] {loss_str}\n"
     opt.eval_log_txt_formatter = "{time_str} [Epoch] {epoch:03d} [Loss] {loss_str} [Metrics] {eval_metrics_str}\n"
@@ -146,6 +165,10 @@ def train_joint(model, criterion, optimizer, lr_scheduler, train_dataset, val_da
     best_map = float("-inf")
     selected_map = None
     selected_group_metrics = None
+    selected_worst_auc = None
+    eligible_seen = False
+    highest_map_epoch = -1
+    selection_mode = None
     best_epoch = -1
     es_cnt = 0
     save_submission_filename = f"latest_{opt.dset_name}_val_preds.jsonl"
@@ -192,38 +215,58 @@ def train_joint(model, criterion, optimizer, lr_scheduler, train_dataset, val_da
         logger.info("Seen validation: mAP=%.4f floor=%.4f worst-semantic-AUROC=%.6f eligible=%s",
                     current_map, localization_floor, worst_auc, feasible)
 
-        # Early stopping retains the user's 30-epoch mAP patience instruction.
-        if current_map > best_map:
+        # Stale mAP epochs are diagnostic only; every formal run completes 50 epochs.
+        improved_map = current_map > best_map
+        if improved_map:
             best_map = current_map
+            highest_map_epoch = epoch_i + 1
             es_cnt = 0
+            map_selection = dict(metrics["selection"], best_epoch=epoch_i + 1,
+                                 best_seen_val_mAP=current_map, selection_mode="seen_mAP")
+            save_checkpoint_bundle(model, optimizer, lr_scheduler, epoch_i, opt,
+                                   latest_file_paths, "best_mAP", map_selection)
         else:
             es_cnt += 1
 
-        # Checkpoint selection: maximize min action/composition AUROC subject to
-        # the fixed Seen-only localization floor. Never relax a failed constraint.
-        if feasible and (worst_auc > prev_best_score or (worst_auc == prev_best_score and (selected_map is None or current_map > selected_map))):
-            prev_best_score = worst_auc
+        constrained_improved = feasible and (not eligible_seen or worst_auc > prev_best_score or
+                                   (worst_auc == prev_best_score and (selected_map is None or current_map > selected_map)))
+        fallback_improved = not feasible and not eligible_seen and improved_map
+        if constrained_improved or fallback_improved:
+            if constrained_improved:
+                eligible_seen = True
+                prev_best_score = worst_auc
+                selection_mode = "constrained_worst_semantic_auroc"
+            else:
+                selection_mode = "fallback_seen_mAP"
             selected_map = current_map
             selected_group_metrics = group_metrics
+            selected_worst_auc = worst_auc
             best_epoch = epoch_i + 1
-            save_checkpoint(model, optimizer, lr_scheduler, epoch_i, opt)
-            rename_latest_to_best(latest_file_paths)
-            Path(opt.results_dir, "best_selection.json").write_text(json.dumps(metrics["selection"], indent=2)+"\n")
-            logger.info("Updated eligible best checkpoint at epoch %d, worst-AUROC %.6f", best_epoch, worst_auc)
+            selected_info = dict(metrics["selection"], best_epoch=best_epoch,
+                                 best_seen_val_mAP=current_map, selection_mode=selection_mode)
+            save_checkpoint_bundle(model, optimizer, lr_scheduler, epoch_i, opt,
+                                   latest_file_paths, "best", selected_info)
+            logger.info("Updated %s checkpoint at epoch %d, mAP %.4f, worst-AUROC %.6f",
+                        selection_mode, best_epoch, current_map, worst_auc)
 
-        stop = int(opt.max_es_cnt) >= 0 and es_cnt >= int(opt.max_es_cnt)
         meta = {
             "best_epoch": best_epoch, "best_seen_val_mAP": selected_map,
-            "best_seen_worst_semantic_auroc": None if best_epoch < 0 else prev_best_score,
+            "best_seen_worst_semantic_auroc": selected_worst_auc,
             "best_seen_group_metrics": selected_group_metrics,
             "highest_seen_val_mAP": best_map,
+            "highest_seen_val_mAP_epoch": highest_map_epoch,
+            "selection_mode": selection_mode,
+            "localization_constraint_satisfied": eligible_seen,
+            "fallback_checkpoint_used": not eligible_seen,
+            "always_saved_mAP_checkpoint": "best_mAP.ckpt",
             "localization_reference_mAP": manifest["localization_reference_mAP"],
             "localization_floor_mAP": localization_floor,
-            "selection_metric": "Seen-only worst action/composition AUROC subject to localization floor",
+            "selection_metric": "Seen-only constrained worst-semantic AUROC; Seen-mAP fallback if no eligible epoch",
             "epochs_trained": epoch_i + 1, "max_epochs": opt.n_epoch,
             "max_es_cnt": opt.max_es_cnt, "mAP_stale_epochs": es_cnt,
-            "training_status": "completed" if stop or epoch_i+1==opt.n_epoch else "running",
-            "selection_status": "eligible_checkpoint_available" if best_epoch>0 else "no_eligible_checkpoint",
+            "training_status": "completed" if epoch_i+1==opt.n_epoch else "running",
+            "early_stopping_enabled": False,
+            "selection_status": "eligible_checkpoint_available" if eligible_seen else "fallback_checkpoint_available",
             "auc_valid_batch_fraction": total_auc_valid_batches / max(total_train_batches, 1),
             "nan_inf_detected": False, "train_dataset_queries": len(train_dataset),
             "val_dataset_queries": len(val_dataset), "missing_feature_or_fallback": False,
@@ -236,11 +279,10 @@ def train_joint(model, criterion, optimizer, lr_scheduler, train_dataset, val_da
         temporary = path.with_suffix(".tmp")
         temporary.write_text(json.dumps(meta, indent=2, allow_nan=False)+"\n")
         temporary.replace(path)
-        if stop:
-            logger.info("Early stopping at epoch %d after %d Seen-mAP stale epochs",epoch_i+1,es_cnt)
-            break
     if best_epoch < 0:
-        logger.warning("No localization-constrained checkpoint; U inference is forbidden for this split")
+        raise RuntimeError("No checkpoint saved despite completed training")
+    if not eligible_seen:
+        logger.warning("Localization floor unmet; using explicitly labelled Seen-mAP best fallback for evaluation")
 
 
 def build_dataset_config_joint(
@@ -283,10 +325,10 @@ def parse_args():
     parser.add_argument("--resume", "-r", type=str, default=None)
     parser.add_argument("--lr", type=float, default=None)
     parser.add_argument("--seed", type=int, default=3407)
-    parser.add_argument("--n_epoch", type=int, default=100)
+    parser.add_argument("--n_epoch", type=int, default=50)
     parser.add_argument("--bsz", type=int, default=16)
     parser.add_argument("--eval_bsz", type=int, default=16)
-    parser.add_argument("--max_es_cnt", type=int, default=30)
+    parser.add_argument("--max_es_cnt", type=int, default=-1)
     parser.add_argument("--train_path", type=str, default=None)
     parser.add_argument("--eval_path", type=str, default=None)
     parser.add_argument("--t_feat_dir", type=str, default=None)
@@ -336,6 +378,9 @@ def main():
         opt.ckpt_filepath = os.path.join(opt.results_dir, opt.ckpt_filename)
         opt.train_log_filepath = os.path.join(opt.results_dir, opt.train_log_filename)
         opt.eval_log_filepath = os.path.join(opt.results_dir, opt.eval_log_filename)
+
+    if opt.n_epoch != 50 or opt.max_es_cnt != -1:
+        raise ValueError("Formal Joint-v3 restart requires exactly 50 epochs with early stopping disabled")
 
     # TRM & Joint Hyperparameters
     opt.use_phrase = True

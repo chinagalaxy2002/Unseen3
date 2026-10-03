@@ -1,10 +1,10 @@
 {
   "experiment": "Moment-DETR-TRM-GMR-Joint-v3",
-  "code_git_sha": null,
+  "code_git_sha": "18d6080284009045e840a301d22e1d0e377e3dda",
   "source_joint_v2_sha": "7ec2fbbedfa5067d5c5a2f36d1a193fc46891dec",
   "source_joint_v1_sha": "a25792a927c6feff2e19f20548a282963a44d800",
-  "status": "re-frozen before fresh fixed-50 training and v3 U inference",
-  "created_utc": "2026-10-03T08:06:23.029926+00:00",
+  "status": "frozen before v3 training and U inference",
+  "created_utc": "2026-10-03T06:18:22.379799+00:00",
   "exploratory_status": "Exploratory follow-up motivated by already inspected Joint-v1 and Joint-v2 U results; not untouched unseen evaluation",
   "architecture": "Inherited Moment-DETR/TRM semantic existence path; final semantic LSE; no visual PCA/fusion/alpha; fresh initialization",
   "semantic_groups": {
@@ -49,9 +49,9 @@
     "lr": 0.0001,
     "wd": 0.0001,
     "lr_drop": 400,
-    "n_epoch_max": 50,
-    "max_es_cnt": -1,
-    "early_stop_metric": null,
+    "n_epoch_max": 100,
+    "max_es_cnt": 30,
+    "early_stop_metric": "Seen validation MR-full-mAP",
     "bsz": 16,
     "eval_bsz": 16,
     "max_v_l": 200,
@@ -68,9 +68,7 @@
     "lambda_robust": 1.0,
     "lambda_matched": 1.0,
     "robust_tau": 0.1,
-    "auc_margin": 1.0,
-    "n_epoch_required": 50,
-    "early_stopping_enabled": false
+    "auc_margin": 1.0
   },
   "checkpoint_selection": {
     "objective": "maximize minimum Seen AUROC across fixed action/composition groups",
@@ -79,9 +77,7 @@
     "localization_reference": "per-split Joint-v1 Seen-validation best MR-full-mAP from best validation metrics file",
     "floor": "reference - 1.0 percentage point",
     "tie_break": "higher Seen mAP then earlier epoch",
-    "no_eligible_checkpoint": "Select Seen-val MR-full-mAP best checkpoint as explicitly labelled fallback; calibrate and evaluate it",
-    "always_save": "best_mAP.ckpt and selected best.ckpt after first validation; both updated on their respective improvements",
-    "fallback_objective": "maximize Seen-val MR-full-mAP, then earlier epoch; only used when no localization-constrained checkpoint exists"
+    "no_eligible_checkpoint": "record selection failure; do not read U test"
   },
   "split_reference_floors": {
     "A1": 23.7,
@@ -120,7 +116,7 @@
     ]
   },
   "source_sha256": {
-    "configs/moment_detr_trm_gmr_joint_v3/base.yml": "71b2f369f812ebadc226389080b4b3531e2ec532edf4e2719ffd7aed42a94408",
+    "configs/moment_detr_trm_gmr_joint_v3/base.yml": "b3b2f48dae4556059655c5b71654c43c170ec0c2ab0d6ed93adbe225715a296a",
     "configs/moment_detr_trm_gmr_joint_v3/dataset/charades_sta_semantic_novelty.yml": "1c60dd7350dfd9c22e47dbcc3c7f99d44c79b8a336c3bb8dd44040590a36182e",
     "configs/moment_detr_trm_gmr_joint_v3/feature/clip_slowfast.yml": "6ee21de521ffe99353647188a8f288bec31f15a5eb23e1a324274fb99f03dbda",
     "configs/moment_detr_trm_gmr_joint_v3/model/moment_detr_trm_gmr_joint_v3.yml": "fc71e46baa2491a119581e0711e5b8f5b56d9d22b48990b591d2392dfd33d723",
@@ -134,21 +130,21 @@
     "models/moment_detr_trm_gmr_joint_v3/joint_modules.py": "5208e3ec7e4defa2ceb7eaad83d0bbd098d15480ea23ac3c7c0f1dab92630f5a",
     "models/moment_detr_trm_gmr_joint_v3/moment_detr_trm_gmr_joint.py": "f4da28639d20ba85cbb39996f91c6648448476957dc6a7b0da1073e39213af66",
     "models/moment_detr_trm_gmr_joint_v3/robust_auc.py": "d0f7b5be7e794c68cc9c77f4335655e2119db786394c7974c1e2b8d90b9bcd04",
-    "scripts/aggregate_joint_v3.py": "e9061c490817759c57eb9734a486dae7ed55b623333acb3eb89fcf16c706bfb1",
+    "scripts/aggregate_joint_v3.py": "5b6ba7e60bf19f867acf2088497679127e375cf6fc92da9303bfb77d0521c769",
     "scripts/prepare_semantic_groups_joint_v3.py": "07ea678f7419a6a2a22acabf73a50eb378a5e370a8e72d50afa25f622855f4dc",
-    "scripts/queue_worker_joint_v3.py": "6b90ce33af1c5468ae4df259097ff6ae204af51cfd8d5fec4b9189d441b4a724",
-    "scripts/record_joint_v3_selection_failure.py": "c7dcca1be2b9e67b933f10126b5630c0ae3f9bfc9eb8cd11a803cd51081e70e8",
+    "scripts/queue_worker_joint_v3.py": "4408847b4bc73a1278df4afb64ace7b7ad6f423a55f94d1133a363b6701fe577",
+    "scripts/record_joint_v3_selection_failure.py": "9b5aea75d5512495355e510cc2accae337d9adda31d302978d3468c6e09d8b82",
     "scripts/run_joint_v3_multisplit.sh": "91892d65f869ed4f0045a73c4d530eb4cef8f7b0adc242b85f68d517cf91f9ce",
-    "scripts/smoke_test_trm_gmr_joint_v3.py": "0a00c8c9a2a2c21b7adb5aec375570f232605539d07776d4f682317958ff8d15",
-    "scripts/train_trm_gmr_joint_v3.sh": "24c55511f75cf6c06399fd2323e7daa6ce2d319f11cc0a495d61012434b8826a",
+    "scripts/smoke_test_trm_gmr_joint_v3.py": "162aea70ba26e449c43d4e7357cdf0d76ddfe4a7140ebd100460ea77d6379464",
+    "scripts/train_trm_gmr_joint_v3.sh": "e07196fc66a991d2724c65d4d5ba40d656a8c873fa503ccda6f399a1fcc5452a",
     "scripts/verify_joint_v3_freeze.py": "744720662f0785abba7dd81c8ece68a57e8f5003232ec4ae4c27014da31950a9",
     "training/moment_detr_trm_gmr_joint_v3/__init__.py": "000e34569d4b84a1356a7f81282cdeb9acadb22bc6ae9516be643b96cc87a6ce",
     "training/moment_detr_trm_gmr_joint_v3/config.py": "100c0257f4695f05321252f1f43e253d9f137da7979b60d1bb97878ad3e34a6a",
     "training/moment_detr_trm_gmr_joint_v3/dataset.py": "cc64e3db5c360ad1d927fe964091f8e50c12e0b0c775c8d50d0401d74e9ca5e8",
     "training/moment_detr_trm_gmr_joint_v3/evaluate.py": "6b27b4d27bcefac4beb390adf86ed83463dccf85da58d16f378c13ae7345481a",
-    "training/moment_detr_trm_gmr_joint_v3/infer.py": "e217f04626623c5a4a534cfea82600f1e729b564081709b2c5d053c3b067ce60",
+    "training/moment_detr_trm_gmr_joint_v3/infer.py": "e21aa12f31a259ec5fa3598e6d4d301b2fb4b54c90941052ada83ecceb27e50a",
     "training/moment_detr_trm_gmr_joint_v3/semantic_groups.py": "0361fed3d66433c77aa2d7c357b18df305ec0d6a9d0221a5efd7fce6f96cd026",
-    "training/moment_detr_trm_gmr_joint_v3/train.py": "2064a4ec6194794c248839d09f2015e042d4f19aa45d7b90d862156286b5bc35"
+    "training/moment_detr_trm_gmr_joint_v3/train.py": "a88d7f596685e98fb75a0f6c3be2bddf40831015780186357db01e5e9c01f787"
   },
   "model_hyperparameters": {
     "enc_layers": 2,
@@ -169,18 +165,5 @@
     "max_phrases": 10,
     "phrase_dropout_keep_probability": 0.9,
     "model_ema": false
-  },
-  "run_id": "run_02_fixed50_20261003T080623Z",
-  "protocol_amendments": [
-    {
-      "requested_by_user": true,
-      "previous_run_archived": "results/moment_detr_trm_gmr_joint_v3_archive/run_01_patience30_20261003T080623Z",
-      "changes": [
-        "exactly 50 epochs for every split; no early stopping",
-        "always save mAP best checkpoint independently of constraint",
-        "evaluate explicitly labelled fallback if no checkpoint passes localization floor"
-      ],
-      "architecture_losses_sampler_unchanged": true
-    }
-  ]
+  }
 }

@@ -19,7 +19,5 @@
   "real_evaluation_and_full_precision_serialization": true,
   "group_diagnostics": true,
   "tiny_train_validation_checkpoint_integration": true,
-  "below_floor_checkpoint_saved": true,
-  "forced_epoch_completion_no_early_stop": true,
   "nan_inf_detected": false
 }

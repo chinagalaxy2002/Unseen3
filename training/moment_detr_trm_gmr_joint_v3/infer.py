@@ -40,10 +40,13 @@ def compute_auc(rows,byid):
 def run(args):
     out=Path(args.results_dir);release=Path(args.release_dir)
     meta=json.loads((out/'training_meta.json').read_text())
-    if meta['best_epoch']<1:raise ValueError('No localization-constrained checkpoint: U inference forbidden')
-    if not (out/'best_selection.json').exists():raise ValueError('Missing eligible Seen selection record')
+    if meta['best_epoch']<1:raise ValueError('No selected checkpoint saved')
+    if meta['training_status']!='completed' or meta['epochs_trained']!=50:raise ValueError('Formal evaluation requires all 50 epochs completed')
+    if not (out/'best_selection.json').exists():raise ValueError('Missing Seen selection record')
     selection=json.loads((out/'best_selection.json').read_text())
-    if not selection['localization_constraint_satisfied']:raise ValueError('Checkpoint fails localization constraint')
+    if selection['selection_mode'] not in ('constrained_worst_semantic_auroc','fallback_seen_mAP'):raise ValueError('Unknown selection mode')
+    if selection['selection_mode']=='fallback_seen_mAP' and selection['localization_constraint_satisfied']:raise ValueError('Fallback constraint metadata inconsistent')
+    if selection['selection_mode']=='constrained_worst_semantic_auroc' and not selection['localization_constraint_satisfied']:raise ValueError('Constrained checkpoint fails floor')
     val=[r for r in load_jsonl(str(release/'val.jsonl')) if r['partition'] in ('S+','S-')]
     predictions=load_jsonl(str(out/'best_charades_sta_semantic_novelty_val_preds.jsonl'))
     byid={str(p['qid']):p for p in predictions}
@@ -53,7 +56,9 @@ def run(args):
     frozen={'threshold':threshold,'threshold_source':'Seen validation S+/S- maximum balanced accuracy',
             'best_epoch':meta['best_epoch'],'best_seen_val_mAP':meta['best_seen_val_mAP'],
             'selection_metric':meta['selection_metric'],'best_seen_worst_semantic_auroc':meta['best_seen_worst_semantic_auroc'],
-            'localization_floor_mAP':meta['localization_floor_mAP'],'val_seen_n':len(val)}
+            'localization_floor_mAP':meta['localization_floor_mAP'],'val_seen_n':len(val),
+            'selection_mode':selection['selection_mode'],'localization_constraint_satisfied':selection['localization_constraint_satisfied'],
+            'fallback_checkpoint_used':meta['fallback_checkpoint_used']}
     write_json(out/'threshold_frozen.json',frozen)
     # Only after the Seen checkpoint and threshold are frozen may U be read.
     test=load_jsonl(str(release/'test.jsonl'))
@@ -99,6 +104,8 @@ def run(args):
       'best_seen_worst_semantic_auroc':meta['best_seen_worst_semantic_auroc'],
       'best_seen_val_mAP':meta['best_seen_val_mAP'],'localization_floor_mAP':meta['localization_floor_mAP'],
       'epochs_trained':meta['epochs_trained'],'auc_valid_batch_fraction':meta['auc_valid_batch_fraction'],
+      'selection_mode':selection['selection_mode'],'localization_constraint_satisfied':selection['localization_constraint_satisfied'],
+      'fallback_checkpoint_used':meta['fallback_checkpoint_used'],'early_stopping_enabled':False,
       'nan_inf_detected':False,'missing_feature_or_fallback':False,'pca_used':False,
       'counts':{k:v['n'] for k,v in quadrants.items()}}
     diagnostics={'quadrants':quadrants,'raw_and_official_localization':loc,'matched_pair_n':len(pair_values),

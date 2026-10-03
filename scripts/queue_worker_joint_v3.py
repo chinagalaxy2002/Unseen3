@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-"""Atomic split jobs; an ineligible localization checkpoint never triggers U inference."""
+"""Atomic split jobs; a below-floor fallback is saved and labelled for evaluation."""
 import json,subprocess,sys,time
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1];gpu=int(sys.argv[1]);splits=sys.argv[2:]
@@ -8,7 +8,7 @@ for split in splits:
  existing=out/'joint_v3_summary.json'
  if existing.exists():
   state=json.loads(existing.read_text())['status']
-  if state in ['completed','localization_constraint_failed']:
+  if state == 'completed':
    print(f'Skip already finished {split}: {state}',flush=True);continue
  print(f'Start {split} on GPU {gpu}',flush=True)
  with (out/'job.log').open('a') as log:
