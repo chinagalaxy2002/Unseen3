@@ -11,3 +11,7 @@ Run `python scripts/audit_gmr_baseline_v4.py`, implement and smoke-check code, t
 The global AUC term is a pairwise differentiable surrogate, **not exact AUROC differentiation**. Epoch 0 is a legal best checkpoint. If selected, it means all learned adapters scored worse than the frozen baseline on Seen validation.
 
 Outputs live only in `results/moment_detr_gmr_auc_v4/<SPLIT>/`, including feature-bank audits, `adapter_training_history.json`, `best.ckpt`, `test_predictions.jsonl`, and `v4_summary.json`. Full-precision logits are canonical. Final aggregate files are `experiments/moment_detr_gmr_auc_v4/MULTI_SPLIT_RESULT.md` and `multi_split_summary.json`. Large feature banks/checkpoints are retained locally and are not committed.
+
+## Completed result
+
+The canonical full-precision macro unseen AUROC changed from 0.52901 to 0.52940 (Δ +0.00039); 4/5 split deltas were positive, one was exactly zero, and none were negative. Every paired 95% bootstrap interval includes zero. The point estimate is therefore directionally positive but very small and uncertain; the data do not support a stable improvement claim. C2_alt contributes most of the macro gain, while its U sample is small and its confidence interval is wide. Raw localization outputs and localization metrics are identical by construction and validation. See the aggregate report for all split results and diagnostics.

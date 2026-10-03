@@ -1,0 +1,65 @@
+{
+  "status": "pass",
+  "splits": {
+    "A1": {
+      "test_qids": 5170,
+      "train_bank_count": 8608,
+      "val_bank_count": 1257,
+      "predictions_full_precision_roundtrip": true,
+      "delta_bounded": true,
+      "localization_identical": true,
+      "seen_unseen_auc_recomputed": true,
+      "best_epoch_rule_verified": true,
+      "no_u_in_train_or_val_banks": true,
+      "nan_inf": false
+    },
+    "A2_alt": {
+      "test_qids": 4945,
+      "train_bank_count": 10323,
+      "val_bank_count": 1529,
+      "predictions_full_precision_roundtrip": true,
+      "delta_bounded": true,
+      "localization_identical": true,
+      "seen_unseen_auc_recomputed": true,
+      "best_epoch_rule_verified": true,
+      "no_u_in_train_or_val_banks": true,
+      "nan_inf": false
+    },
+    "A3": {
+      "test_qids": 5293,
+      "train_bank_count": 10352,
+      "val_bank_count": 1548,
+      "predictions_full_precision_roundtrip": true,
+      "delta_bounded": true,
+      "localization_identical": true,
+      "seen_unseen_auc_recomputed": true,
+      "best_epoch_rule_verified": true,
+      "no_u_in_train_or_val_banks": true,
+      "nan_inf": false
+    },
+    "C1": {
+      "test_qids": 4705,
+      "train_bank_count": 10516,
+      "val_bank_count": 1451,
+      "predictions_full_precision_roundtrip": true,
+      "delta_bounded": true,
+      "localization_identical": true,
+      "seen_unseen_auc_recomputed": true,
+      "best_epoch_rule_verified": true,
+      "no_u_in_train_or_val_banks": true,
+      "nan_inf": false
+    },
+    "C2_alt": {
+      "test_qids": 4705,
+      "train_bank_count": 10612,
+      "val_bank_count": 1476,
+      "predictions_full_precision_roundtrip": true,
+      "delta_bounded": true,
+      "localization_identical": true,
+      "seen_unseen_auc_recomputed": true,
+      "best_epoch_rule_verified": true,
+      "no_u_in_train_or_val_banks": true,
+      "nan_inf": false
+    }
+  }
+}
