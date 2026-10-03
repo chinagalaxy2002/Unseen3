@@ -1,6 +1,6 @@
 # P3 读取实验执行记录
 
-日期：2026-10-03。状态：四个内层 baseline 完成，修订后的 P3 decoder 读取队列已启动。实时状态用 `python scripts/status_evidence_v5.py` 查看；GitHub 文件仅为提交时快照。
+日期：2026-10-03；完成状态于 2026-10-04 核验。状态：四个内层 baseline 完成，修订后的 P3 decoder 读取队列已完成全部 36 runs。实时状态用 `python scripts/status_evidence_v5.py` 查看；GitHub 文件仅为提交时快照。
 
 ## baseline 完成核验
 
@@ -75,3 +75,13 @@ python scripts/aggregate_evidence_v5_readouts.py
 ```
 
 训练环境使用 `/home/guoxiangyu/miniconda3/envs/univtg/bin/python`。计划完成后按四 fold 的完整对照决定下一步，保留失败和 fallback；不能仅按早期单 fold 点估计修改剩余运行。
+
+## 完成结果与阶段判断（2026-10-04）
+
+两张 GPU 队列均 completed，全部 train/eval 任务 exit code=0；队列记录的 freeze 哈希与当前 READOUT_FREEZE.json 一致。36 个 runs 均完成 50 epochs，完整逐 fold 结果见 [P3_READOUT_RESULTS.md](P3_READOUT_RESULTS.md)。本次仅更新结果与记录，未修改模型、loss、冻结配置或选模规则。
+
+R3 的 ΔNovel 分别为 A1_action_01 +6.48 pp、A1_action_02 +1.34 pp、C1_composition_01 −0.45 pp、C1_composition_02 −2.66 pp。Macro 为 +1.18 pp，达到 +1 pp 的效果目标，但仅 2/4 folds 为正，未达到至少 3/4 folds 为正的本轮推进条件，不能据此将 slot readout 定为后续主结构。
+
+R3 相对等参数 R2 仅在 A1_action_01 提升，其余三个 folds 均下降；当前证据更符合以 A1_action_01 为主的 fold-specific 收益，尚不支持稳定的 pooling bottleneck 结论。Cq query-only 的 macro ΔNovel 为 +3.16 pp，4/4 folds 为正，需要在后续实验中解释 query 侧信号与潜在 shortcut；该结果本身不能证明 shortcut。
+
+上述结果均为 seed-3407 的 Seen-only 内层开发结果。三 seed G2 尚未通过，source-pair supervision、正式五 split 和 R4 尚未启动。

@@ -49,24 +49,28 @@
   "readout_queues": [
     {
       "gpu": "0",
-      "queue_status": "running",
+      "queue_status": "completed",
       "current_task": {
-        "task": "A1_action_02_D_v4_seed3407_train",
-        "status": "running",
-        "log": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/results/moment_detr_gmr_evidence_v5/queues/A1_action_02_D_v4_seed3407_train.log",
-        "started_unix": 1791042004.9760094,
-        "pid": 1787236
+        "task": "A1_action_02_D_no_anchor_seed3407_eval",
+        "status": "completed",
+        "log": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/results/moment_detr_gmr_evidence_v5/queues/A1_action_02_D_no_anchor_seed3407_eval.log",
+        "started_unix": 1791042122.1775198,
+        "pid": 1787850,
+        "exit_code": 0,
+        "elapsed_seconds": 2.37371563911438
       }
     },
     {
       "gpu": "1",
-      "queue_status": "running",
+      "queue_status": "completed",
       "current_task": {
-        "task": "C1_composition_02_R3_seed3407_train",
-        "status": "running",
-        "log": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/results/moment_detr_gmr_evidence_v5/queues/C1_composition_02_R3_seed3407_train.log",
-        "started_unix": 1791041906.812792,
-        "pid": 1786543
+        "task": "C1_composition_02_D_no_anchor_seed3407_eval",
+        "status": "completed",
+        "log": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/results/moment_detr_gmr_evidence_v5/queues/C1_composition_02_D_no_anchor_seed3407_eval.log",
+        "started_unix": 1791042451.1696,
+        "pid": 1788626,
+        "exit_code": 0,
+        "elapsed_seconds": 2.22351336479187
       }
     }
   ],
@@ -92,6 +96,28 @@
       "best_epoch": 40,
       "best_seen_val_auroc": 0.5628909823702495,
       "deployment": "baseline_fallback"
+    },
+    {
+      "fold": "A1_action_01",
+      "variant": "D_no_anchor",
+      "seed": 3407,
+      "stage": "P3_bce",
+      "status": "evaluated",
+      "epochs_completed": 50,
+      "best_epoch": 24,
+      "best_seen_val_auroc": 0.8749227307568678,
+      "deployment": "learned"
+    },
+    {
+      "fold": "A1_action_01",
+      "variant": "D_no_bound",
+      "seed": 3407,
+      "stage": "P3_bce",
+      "status": "evaluated",
+      "epochs_completed": 50,
+      "best_epoch": 38,
+      "best_seen_val_auroc": 0.8832925351729596,
+      "deployment": "learned"
     },
     {
       "fold": "A1_action_01",
@@ -172,6 +198,39 @@
     },
     {
       "fold": "A1_action_02",
+      "variant": "D_no_anchor",
+      "seed": 3407,
+      "stage": "P3_bce",
+      "status": "evaluated",
+      "epochs_completed": 50,
+      "best_epoch": 31,
+      "best_seen_val_auroc": 0.8415330770346728,
+      "deployment": "learned"
+    },
+    {
+      "fold": "A1_action_02",
+      "variant": "D_no_bound",
+      "seed": 3407,
+      "stage": "P3_bce",
+      "status": "evaluated",
+      "epochs_completed": 50,
+      "best_epoch": 22,
+      "best_seen_val_auroc": 0.8518787175395329,
+      "deployment": "learned"
+    },
+    {
+      "fold": "A1_action_02",
+      "variant": "D_v4",
+      "seed": 3407,
+      "stage": "P3_bce",
+      "status": "evaluated",
+      "epochs_completed": 50,
+      "best_epoch": 22,
+      "best_seen_val_auroc": 0.8524499492238503,
+      "deployment": "learned"
+    },
+    {
+      "fold": "A1_action_02",
       "variant": "R1",
       "seed": 3407,
       "stage": "P3_bce",
@@ -212,6 +271,61 @@
       "epochs_completed": 50,
       "best_epoch": 17,
       "best_seen_val_auroc": 0.9049941970114609,
+      "deployment": "learned"
+    },
+    {
+      "fold": "C1_composition_01",
+      "variant": "Cq",
+      "seed": 3407,
+      "stage": "P3_bce",
+      "status": "evaluated",
+      "epochs_completed": 50,
+      "best_epoch": 8,
+      "best_seen_val_auroc": 0.8494758609148827,
+      "deployment": "learned"
+    },
+    {
+      "fold": "C1_composition_01",
+      "variant": "Cv",
+      "seed": 3407,
+      "stage": "P3_bce",
+      "status": "evaluated",
+      "epochs_completed": 50,
+      "best_epoch": 7,
+      "best_seen_val_auroc": 0.5638320125267449,
+      "deployment": "baseline_fallback"
+    },
+    {
+      "fold": "C1_composition_01",
+      "variant": "D_no_anchor",
+      "seed": 3407,
+      "stage": "P3_bce",
+      "status": "evaluated",
+      "epochs_completed": 50,
+      "best_epoch": 1,
+      "best_seen_val_auroc": 0.8140650960423613,
+      "deployment": "learned"
+    },
+    {
+      "fold": "C1_composition_01",
+      "variant": "D_no_bound",
+      "seed": 3407,
+      "stage": "P3_bce",
+      "status": "evaluated",
+      "epochs_completed": 50,
+      "best_epoch": 1,
+      "best_seen_val_auroc": 0.8138858010303487,
+      "deployment": "learned"
+    },
+    {
+      "fold": "C1_composition_01",
+      "variant": "D_v4",
+      "seed": 3407,
+      "stage": "P3_bce",
+      "status": "evaluated",
+      "epochs_completed": 50,
+      "best_epoch": 1,
+      "best_seen_val_auroc": 0.8139216600327512,
       "deployment": "learned"
     },
     {
@@ -260,6 +374,61 @@
     },
     {
       "fold": "C1_composition_02",
+      "variant": "Cq",
+      "seed": 3407,
+      "stage": "P3_bce",
+      "status": "evaluated",
+      "epochs_completed": 50,
+      "best_epoch": 27,
+      "best_seen_val_auroc": 0.8821806299979936,
+      "deployment": "learned"
+    },
+    {
+      "fold": "C1_composition_02",
+      "variant": "Cv",
+      "seed": 3407,
+      "stage": "P3_bce",
+      "status": "evaluated",
+      "epochs_completed": 50,
+      "best_epoch": 7,
+      "best_seen_val_auroc": 0.5678265355842815,
+      "deployment": "baseline_fallback"
+    },
+    {
+      "fold": "C1_composition_02",
+      "variant": "D_no_anchor",
+      "seed": 3407,
+      "stage": "P3_bce",
+      "status": "evaluated",
+      "epochs_completed": 50,
+      "best_epoch": 0,
+      "best_seen_val_auroc": 0.842792857347588,
+      "deployment": "baseline_fallback"
+    },
+    {
+      "fold": "C1_composition_02",
+      "variant": "D_no_bound",
+      "seed": 3407,
+      "stage": "P3_bce",
+      "status": "evaluated",
+      "epochs_completed": 50,
+      "best_epoch": 1,
+      "best_seen_val_auroc": 0.8430794806385968,
+      "deployment": "learned"
+    },
+    {
+      "fold": "C1_composition_02",
+      "variant": "D_v4",
+      "seed": 3407,
+      "stage": "P3_bce",
+      "status": "evaluated",
+      "epochs_completed": 50,
+      "best_epoch": 1,
+      "best_seen_val_auroc": 0.8430794806385968,
+      "deployment": "learned"
+    },
+    {
+      "fold": "C1_composition_02",
       "variant": "R1",
       "seed": 3407,
       "stage": "P3_bce",
@@ -296,11 +465,11 @@
       "variant": "R3",
       "seed": 3407,
       "stage": "P3_bce",
-      "status": "running",
-      "epochs_completed": 32,
-      "best_epoch": 32,
-      "best_seen_val_auroc": 0.8589813408237554,
-      "deployment": null
+      "status": "evaluated",
+      "epochs_completed": 50,
+      "best_epoch": 45,
+      "best_seen_val_auroc": 0.8641749548568316,
+      "deployment": "learned"
     }
   ]
 }
