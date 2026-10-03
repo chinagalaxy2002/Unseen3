@@ -2,7 +2,7 @@
   "experiment": "Moment-DETR-GMR-Residual-AUC-v4",
   "short_name": "GMR-AUC-v4",
   "status": "exploratory follow-up; not an untouched unseen evaluation",
-  "git_sha": "d86a68178201c7c1d5188dadfe5a80f64612dc5b",
+  "git_sha": "66297fa0b5a05c35dfc7a5624a437dbebdb822d4",
   "frozen_before_any_v4_test_u_inference": true,
   "u_policy": {
     "training": false,
