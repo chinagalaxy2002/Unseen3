@@ -1,6 +1,6 @@
 {
   "experiment": "Moment-DETR-TRM-GMR-Joint-v3",
-  "code_git_sha": null,
+  "code_git_sha": "18d6080284009045e840a301d22e1d0e377e3dda",
   "source_joint_v2_sha": "7ec2fbbedfa5067d5c5a2f36d1a193fc46891dec",
   "source_joint_v1_sha": "a25792a927c6feff2e19f20548a282963a44d800",
   "status": "frozen before v3 training and U inference",
