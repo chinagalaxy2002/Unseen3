@@ -5,11 +5,24 @@
   "git_sha": "3793876bcd9d66222f190220673d1b57b0353bbb",
   "source_joint_v1_sha": "a25792a927c6feff2e19f20548a282963a44d800",
   "baseline_readme_correction_sha": "cb2cb37802339eeb05114f5c929e08825bc97205",
-  "splits": ["A1", "A2_alt", "A3", "C1", "C2_alt"],
+  "splits": [
+    "A1",
+    "A2_alt",
+    "A3",
+    "C1",
+    "C2_alt"
+  ],
   "split_execution_queues": {
-    "GPU0": ["A1", "A3", "C2_alt"],
-    "GPU1": ["A2_alt", "C1"],
-    "atomic_job": "per split: fit split-specific PCA -> initialize from scratch -> train 100 epochs -> Seen-val checkpoint and threshold -> only then test inference"
+    "GPU0": [
+      "A1",
+      "A3",
+      "C2_alt"
+    ],
+    "GPU1": [
+      "A2_alt",
+      "C1"
+    ],
+    "atomic_job": "per split: fit split-specific PCA -> initialize from scratch -> train at most 100 epochs, stopping after 30 consecutive Seen-val MR-full-mAP non-improving epochs -> Seen-val checkpoint and threshold -> only then test inference"
   },
   "architecture": {
     "inheritance": "Joint-v1 Moment-DETR transformer and localization branch, phrase-slot matcher, candidate-conditioned phrase attention, candidate-wise gated phrase refinement, semantic evidence-aware existence head, smooth logsumexp pooling, TRM losses, S+/S- training, Seen-only MR-full-mAP selection, Seen-only balanced-accuracy calibration, official soft gate, diagnostic hard gate",
@@ -24,7 +37,10 @@
   },
   "visual_feature_protocol": {
     "source": "dataset video features before input_vid_proj and before text interaction",
-    "feature_order": ["SlowFast 2304", "CLIP visual 512"],
+    "feature_order": [
+      "SlowFast 2304",
+      "CLIP visual 512"
+    ],
     "visual_feature_dim": 2816,
     "normalization": "existing dataset preprocessing L2-normalizes each modality row-wise per clip before concatenation",
     "tef_excluded": true,
@@ -41,8 +57,23 @@
     "rank": "min(256, D-1)",
     "configured_rank": 256,
     "algorithm": "sklearn IncrementalPCA; stable covariance eigendecomposition fallback if sklearn is unavailable",
-    "saved_fields": ["mu_bg", "components_bg", "residual_mean_bg", "residual_std_bg"],
-    "forbidden_fit_sources": ["S-", "validation", "test", "U+", "U-", "query/text", "phrase", "predicted spans", "other splits"],
+    "saved_fields": [
+      "mu_bg",
+      "components_bg",
+      "residual_mean_bg",
+      "residual_std_bg"
+    ],
+    "forbidden_fit_sources": [
+      "S-",
+      "validation",
+      "test",
+      "U+",
+      "U-",
+      "query/text",
+      "phrase",
+      "predicted spans",
+      "other splits"
+    ],
     "per_split_independent_fit": true
   },
   "training_hyperparameters": {
@@ -51,7 +82,7 @@
     "lr_drop": 400,
     "weight_decay": 0.0001,
     "n_epoch": 100,
-    "max_es_cnt": -1,
+    "max_es_cnt": 30,
     "batch_size": 16,
     "eval_batch_size": 16,
     "num_workers": 4,
@@ -80,7 +111,13 @@
   "selection_and_threshold": {
     "checkpoint_selection": "Seen validation MR-full-mAP",
     "existence_threshold": "Seen validation S+/S- maximum balanced accuracy = 0.5*(TPR+TNR)",
-    "unseen_forbidden_for": ["training", "PCA fitting", "checkpoint selection", "threshold calibration", "hyperparameter selection"]
+    "unseen_forbidden_for": [
+      "training",
+      "PCA fitting",
+      "checkpoint selection",
+      "threshold calibration",
+      "hyperparameter selection"
+    ]
   },
   "test_protocol": {
     "inference_order": "after best checkpoint and Seen-only threshold are frozen, run full test S+/S-/U+/U- inference",
@@ -90,6 +127,21 @@
     "u_results_are_untouched": false
   },
   "smoke_tests": "scripts/smoke_test_trm_gmr_joint_v2.py",
+  "protocol_amendments": [
+    {
+      "requested_by_user_after_A1_test_inference": true,
+      "remaining_splits": [
+        "A3",
+        "C1",
+        "C2_alt"
+      ],
+      "stop_rule": "For A3, C1, and C2_alt, stop after 30 consecutive epochs without Seen validation MR-full-mAP improvement; hard cap 100 epochs. This user-requested training-duration rule changes no model or evaluation selection settings.",
+      "selection_metric_unchanged": "Seen validation MR-full-mAP",
+      "unseen_metrics_not_used_for_stopping": true,
+      "A2_alt_note": "A2_alt was already-running when the user requested the 30-epoch patience rule; it was stopped at epoch 64 after 43 consecutive validation epochs without improvement. Its selected checkpoint remains the Seen-val best at epoch 20 (checkpoint field epoch=19, MR-full-mAP=24.39).",
+      "A1_note": "A1 was stopped by user request at epoch 75; its Seen-val best checkpoint is epoch 28."
+    }
+  ],
   "feature_dimension_verified_from_npz": {
     "SlowFast": 2304,
     "CLIP_visual": 512,

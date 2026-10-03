@@ -365,6 +365,7 @@ def run_full_inference(opt, model_path: str, release_dir: str):
         }
     }
     save_json(joint_summary, str(results_dir / "joint_summary.json"), save_pretty=True)
+    save_json(joint_summary, str(results_dir / "joint_v2_summary.json"), save_pretty=True)
 
     # 5. Run Official GMR Evaluation via eval_main.py
     official_metrics_path = results_dir / "official_test_metrics.json"
