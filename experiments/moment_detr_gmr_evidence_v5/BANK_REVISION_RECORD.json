@@ -1,0 +1,8 @@
+{
+  "reason": "Bank integrity validation added after initial extraction; rebuild with final extractor hash before training",
+  "archived": [
+    "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/results/moment_detr_gmr_evidence_v5/bank_archive/initial_extractor_before_integrity_validation/A1_action_01",
+    "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/results/moment_detr_gmr_evidence_v5/bank_archive/initial_extractor_before_integrity_validation/C1_composition_01"
+  ],
+  "recorded_utc": "2026-10-03T15:16:25.924957+00:00"
+}

@@ -1,0 +1,22 @@
+{
+  "passed": true,
+  "parameters": {
+    "R1": 50049,
+    "R1_matched": 200433,
+    "R2": 199809,
+    "R3": 199809,
+    "Cq": 83329,
+    "Cv": 382849,
+    "D_v4": 17091,
+    "D_no_bound": 17091,
+    "D_no_anchor": 17091
+  },
+  "slot_permutation_invariant": true,
+  "padding_invariant": true,
+  "zero_init_replays_baseline": true,
+  "gradient_step_finite": true,
+  "R2_R3_same_parameter_count": true,
+  "R1_matched_within_20_percent": true,
+  "paired_video_bootstrap_identity": true,
+  "scope": "readout semantics and cluster behavior; real bank replay audited separately"
+}

@@ -1,0 +1,82 @@
+{
+  "stage": "P3_decoder_readouts",
+  "revision": 2,
+  "frozen_utc": "2026-10-03T15:27:21.181954+00:00",
+  "variants": [
+    "R1",
+    "R1_matched",
+    "R2",
+    "R3",
+    "Cq",
+    "Cv",
+    "D_v4",
+    "D_no_bound",
+    "D_no_anchor"
+  ],
+  "folds": [
+    "A1_action_01",
+    "A1_action_02",
+    "C1_composition_01",
+    "C1_composition_02"
+  ],
+  "seeds": [
+    3407
+  ],
+  "pair_weights": [
+    0.0
+  ],
+  "epochs": 50,
+  "early_stopping": false,
+  "hidden": 128,
+  "bce_batch_size": 32,
+  "lr": 0.001,
+  "weight_decay": 0.0001,
+  "gradient_clip": 1.0,
+  "selection": "inner Seen-val pooled AUROC, earliest tie",
+  "deployment": "baseline fallback if learned Seen-val AUROC does not exceed baseline",
+  "diagnostic_protocol": "D_v4 inherits V4 settings; D_no_bound changes only bound; D_no_anchor changes only anchor; batch256 and no gradient clipping",
+  "video_only_protocol": "canonical first-row representation per vid; infer once per unique video and broadcast identical score to its queries",
+  "novel_dev_in_epoch_selection": false,
+  "formal_u_read": false,
+  "R4_status": "pending time provenance; excluded from this freeze",
+  "capacity_matching": {
+    "R1": 50049,
+    "R1_matched": 200433,
+    "R2": 199809,
+    "R3": 199809,
+    "Cq": 83329,
+    "Cv": 382849,
+    "D_v4": 17091,
+    "D_no_bound": 17091,
+    "D_no_anchor": 17091
+  },
+  "code_hashes": {
+    "models/moment_detr_gmr_evidence_v5/readouts.py": "e91ebdb11e9fc9224c438af842ed92cb2891e4e9548ae94784115165d3934273",
+    "training/moment_detr_gmr_evidence_v5/feature_bank.py": "6d77404ff3d9341b16f8d74a07a0423baaec90cd798b37e1fb55bbc74be2f59d",
+    "training/moment_detr_gmr_evidence_v5/train_readout.py": "93bcefe77ec5449e40a8073babbf9ad7ca7d7f95ed4519a258c4f991da5f00e0",
+    "training/moment_detr_gmr_evidence_v5/infer_readout.py": "58ca1fa1ecb293b37e42f5a0240e040c0eb0e583ca68c31b8bb7626a1d85a345",
+    "training/moment_detr_gmr_evidence_v5/metrics.py": "5610fd478fc970f02df9a779c626c352cfa06bf7a223c4969d4afefd341d58a7",
+    "training/moment_detr_gmr_evidence_v5/protocol.py": "9e25fb6e57a390a0018c822ee7897f173111bf5858bf5e7074a98f700c5e42ec",
+    "scripts/queue_evidence_v5_readouts.py": "9d9c8bb125f17974196243bf8b913bde5a652fe98439aa7c65d16f873b1da3f2",
+    "scripts/aggregate_evidence_v5_readouts.py": "2732fa5676a0c9700cd34e89ac66f75390e1ad0a6e2ad1c853960952c7b3cafd"
+  },
+  "fold_manifest_hashes": {
+    "A1_action_01": "9d59510429734a95b116715e30102edbb3b9b9e7f9199bfd3f3bc2bb66385aaa",
+    "A1_action_02": "f9953e7bab106de49e2f92dbceb92dec10b818836928c233c0d2ce67c8f2a53f",
+    "C1_composition_01": "a402c0c8892e4b820fd7e4b82e6130d197b5f1b8746958e63919a19dbb81594f",
+    "C1_composition_02": "4099052ee9e248780c16093ac60d6e911754ecaf996bfbee09368be3ef89955f"
+  },
+  "baseline_checkpoint_hashes": {
+    "A1_action_01": "ae514a78ce1d8836cb849774fadd7ecbc496b25f36161bcce195c3efcae97343",
+    "A1_action_02": "c1778984ea36f70a1e98d065bd41737520a9d5b8415cb2e0bf6879667442742c",
+    "C1_composition_01": "c5319f94c70ef323e78e6bdb83d3e4d60ed020385aff5c0a57ef142e079dae43",
+    "C1_composition_02": "26dc38ea836349541a8465b89969a39ea12dbec1d898ffdee0709d5f3307ae9e"
+  },
+  "baseline_completion_hash": "2e6cbbd0abaf36fda89a8eb5c7d74ee6aa83341e3c92ac873ed2da947d24f291",
+  "readout_test_hash": "7cfc382d465a99c6efe23d627579e9eb94bc2a227e404afcb1110c0d3ecae489",
+  "bank_replay_test_hash": "d228b85fe7279fe805eb721f25fde32c272edeff34bdc39bed6158179f992be0",
+  "per_device_wall_budget_seconds": 14400,
+  "maximum_two_device_wall_gpu_hours": 8,
+  "git_sha": "a7e292970fe32069abdc8905f493d5c3fceda77c",
+  "git_worktree_dirty": true
+}

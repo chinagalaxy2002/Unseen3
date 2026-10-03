@@ -1,0 +1,290 @@
+{
+  "inner_train": {
+    "identity": {
+      "schema": "evidence_v5_decoder_bank_01",
+      "fold": "C1_composition_02",
+      "role": "inner_train",
+      "checkpoint_hash": "26dc38ea836349541a8465b89969a39ea12dbec1d898ffdee0709d5f3307ae9e",
+      "annotation_hash": "fd717bf754d191eab3b07f3f3acbd664f09de3f58f3e00e0ec1b9faf728f1a92",
+      "manifest_hash": "4099052ee9e248780c16093ac60d6e911754ecaf996bfbee09368be3ef89955f",
+      "extractor_hash": "6d77404ff3d9341b16f8d74a07a0423baaec90cd798b37e1fb55bbc74be2f59d",
+      "dataset_code_hash": "7cf3a8fe9bb09f077d6bc01666e55c4f5b509a50c0dc0190352e6876f4fd7dab",
+      "feature_sources_hash": "66d00686e9740f5533f4d967f88acad8927beed800a7ffbe6f5faa74f58158ab",
+      "feature_source_count": 18614,
+      "feature_order": [
+        "/home/guoxiangyu/paper/新建文件夹/charades/vid_clip",
+        "/home/guoxiangyu/paper/新建文件夹/charades/vid_slowfast"
+      ],
+      "query_dir": "/home/guoxiangyu/paper/Openword/generalized-moment-retrieval/features/semantic_existence_v2/C1/clip_text",
+      "max_q_l": 32,
+      "max_v_l": 200,
+      "normalization": "original per-modality per-clip/token L2",
+      "dtype": "float32",
+      "local_roi_enabled": false
+    },
+    "count": 10038,
+    "arrays": {
+      "pooled": {
+        "shape": [
+          10038,
+          256
+        ],
+        "sha256": "a11c9372701cb242f03d66cfca0975d4786f13474b725fd10f57be47d14f207f"
+      },
+      "slots": {
+        "shape": [
+          10038,
+          10,
+          256
+        ],
+        "sha256": "a8c6747698f99d9b945c0ab5450f7abaff8d91713146b93e677ddc7d917da5bd"
+      },
+      "base_logit": {
+        "shape": [
+          10038
+        ],
+        "sha256": "c4dd9c153494c357f5008ae72cb617e047ebe19740816be142922e554cbb6b55"
+      },
+      "query_tokens": {
+        "shape": [
+          10038,
+          32,
+          512
+        ],
+        "sha256": "81fbb972fbd83a4a4a5b8e47c6f4ed46e4e05db8811e3f8469c6378ada436777"
+      },
+      "query_mask": {
+        "shape": [
+          10038,
+          32
+        ],
+        "sha256": "25a381bafe35befc31707d7838042cebda1690580c6ebb35b3434f5956f726f4"
+      },
+      "video_mean": {
+        "shape": [
+          10038,
+          2816
+        ],
+        "sha256": "b3dd70d83dc00c5176c1268afab48e6bc8872365f1953388a38fe0ff0ac204a4"
+      },
+      "spans_seconds": {
+        "shape": [
+          10038,
+          10,
+          2
+        ],
+        "sha256": "83eeb9cc983758b70d15c38b4d6f76e67a5508874384acc5509b5749a27aa874"
+      },
+      "class_logits": {
+        "shape": [
+          10038,
+          10,
+          2
+        ],
+        "sha256": "b529792d302408fae90ef45c9a56d9949a19b2bb188325270a64c7c47888073a"
+      }
+    },
+    "rows_sha256": "5e1935432630bdc71511f7a915c0515a6e506047e781824fb48f7a8ff252fd49",
+    "missing_count": 0,
+    "replay_maxerr": 0.0,
+    "independent_localization_forward_maxerr": 0.0,
+    "elapsed_seconds": 13.413127422332764,
+    "storage_bytes": 886918552,
+    "label_counts": {
+      "0": 1437,
+      "1": 8601
+    }
+  },
+  "inner_seen_val": {
+    "identity": {
+      "schema": "evidence_v5_decoder_bank_01",
+      "fold": "C1_composition_02",
+      "role": "inner_seen_val",
+      "checkpoint_hash": "26dc38ea836349541a8465b89969a39ea12dbec1d898ffdee0709d5f3307ae9e",
+      "annotation_hash": "43e285c4da6088a59622edf5c5d5477b5df1a193fd07f299f84a5c4bce0c396b",
+      "manifest_hash": "4099052ee9e248780c16093ac60d6e911754ecaf996bfbee09368be3ef89955f",
+      "extractor_hash": "6d77404ff3d9341b16f8d74a07a0423baaec90cd798b37e1fb55bbc74be2f59d",
+      "dataset_code_hash": "7cf3a8fe9bb09f077d6bc01666e55c4f5b509a50c0dc0190352e6876f4fd7dab",
+      "feature_sources_hash": "07ae4dd2b04fc595ea28cc56c2cb26372ecb169c26c8f1b6bf0cdc52c69e6ed8",
+      "feature_source_count": 1678,
+      "feature_order": [
+        "/home/guoxiangyu/paper/新建文件夹/charades/vid_clip",
+        "/home/guoxiangyu/paper/新建文件夹/charades/vid_slowfast"
+      ],
+      "query_dir": "/home/guoxiangyu/paper/Openword/generalized-moment-retrieval/features/semantic_existence_v2/C1/clip_text",
+      "max_q_l": 32,
+      "max_v_l": 200,
+      "normalization": "original per-modality per-clip/token L2",
+      "dtype": "float32",
+      "local_roi_enabled": false
+    },
+    "count": 946,
+    "arrays": {
+      "pooled": {
+        "shape": [
+          946,
+          256
+        ],
+        "sha256": "d6233ac473d75a50139c6291fb5f41d14a641a64958328af6da01f27bdd3e146"
+      },
+      "slots": {
+        "shape": [
+          946,
+          10,
+          256
+        ],
+        "sha256": "fe91c649782de26d92f4c588583c8b59458f3bcbf8a535b9a13f9695995b6188"
+      },
+      "base_logit": {
+        "shape": [
+          946
+        ],
+        "sha256": "01efdaaa766c566ae669a4f043942e1db8904e2678803306cd67d7881075bc5a"
+      },
+      "query_tokens": {
+        "shape": [
+          946,
+          32,
+          512
+        ],
+        "sha256": "3a510310ed04bbabe1190bd455c039114e32c94537620df8c491dc600d150cfb"
+      },
+      "query_mask": {
+        "shape": [
+          946,
+          32
+        ],
+        "sha256": "fbf9b6d89193c526f569ed0e8d6c005cca996d27c61e10f2eafee04d20546219"
+      },
+      "video_mean": {
+        "shape": [
+          946,
+          2816
+        ],
+        "sha256": "c27358dfbdc6f6e8d9b6e694d388c8b773e43812a7fa58a07e6078b439f8ce37"
+      },
+      "spans_seconds": {
+        "shape": [
+          946,
+          10,
+          2
+        ],
+        "sha256": "1bf997914a3d9d5f180851aa0f80dfec728caf94379de67cc16e494f98ecf6f7"
+      },
+      "class_logits": {
+        "shape": [
+          946,
+          10,
+          2
+        ],
+        "sha256": "e853b7e26e416d6c91864cf9b84c6d357d3932a33bd4fd82a40544277b78edab"
+      }
+    },
+    "rows_sha256": "606cc59bcac16ac2a42dcbbcaa0ad6789ba924f3bac4d356d74934c097aae272",
+    "missing_count": 0,
+    "replay_maxerr": 0.0,
+    "independent_localization_forward_maxerr": 0.0,
+    "elapsed_seconds": 1.1871249675750732,
+    "storage_bytes": 83585800,
+    "label_counts": {
+      "0": 251,
+      "1": 695
+    }
+  },
+  "inner_novel_dev": {
+    "identity": {
+      "schema": "evidence_v5_decoder_bank_01",
+      "fold": "C1_composition_02",
+      "role": "inner_novel_dev",
+      "checkpoint_hash": "26dc38ea836349541a8465b89969a39ea12dbec1d898ffdee0709d5f3307ae9e",
+      "annotation_hash": "71a4f68a86f4336777e5dc8d8d433ed5313b4ac140d4698223d553b2531fa29a",
+      "manifest_hash": "4099052ee9e248780c16093ac60d6e911754ecaf996bfbee09368be3ef89955f",
+      "extractor_hash": "6d77404ff3d9341b16f8d74a07a0423baaec90cd798b37e1fb55bbc74be2f59d",
+      "dataset_code_hash": "7cf3a8fe9bb09f077d6bc01666e55c4f5b509a50c0dc0190352e6876f4fd7dab",
+      "feature_sources_hash": "ff0638471297e1408f34f851507c599cadd182495e2d021f1c326e35515f46f4",
+      "feature_source_count": 336,
+      "feature_order": [
+        "/home/guoxiangyu/paper/新建文件夹/charades/vid_clip",
+        "/home/guoxiangyu/paper/新建文件夹/charades/vid_slowfast"
+      ],
+      "query_dir": "/home/guoxiangyu/paper/Openword/generalized-moment-retrieval/features/semantic_existence_v2/C1/clip_text",
+      "max_q_l": 32,
+      "max_v_l": 200,
+      "normalization": "original per-modality per-clip/token L2",
+      "dtype": "float32",
+      "local_roi_enabled": false
+    },
+    "count": 144,
+    "arrays": {
+      "pooled": {
+        "shape": [
+          144,
+          256
+        ],
+        "sha256": "b5a287d84518769adab0cb971dce31f95fd4e8f1a7a96984ca54b05323447d0f"
+      },
+      "slots": {
+        "shape": [
+          144,
+          10,
+          256
+        ],
+        "sha256": "aedd90f3e516ad2042fd71beaa120e66146d8a5ad2ea33b7784aed07cf1ee530"
+      },
+      "base_logit": {
+        "shape": [
+          144
+        ],
+        "sha256": "f902abfd7c938b67dd739c642f79abf95af3d867537694648d564e9c28d18efe"
+      },
+      "query_tokens": {
+        "shape": [
+          144,
+          32,
+          512
+        ],
+        "sha256": "9484e8b67c89a2ef2e8693d3fe949a35b6ae832dc50316beb3322e3cd0e8e95f"
+      },
+      "query_mask": {
+        "shape": [
+          144,
+          32
+        ],
+        "sha256": "86a65078d39284f284b8caf5e3d311658f409e92928857debf6d3fde68ac565d"
+      },
+      "video_mean": {
+        "shape": [
+          144,
+          2816
+        ],
+        "sha256": "268651f50dc0c590ff2930b75f2d19783d66141d98037b851cfb0a304190bace"
+      },
+      "spans_seconds": {
+        "shape": [
+          144,
+          10,
+          2
+        ],
+        "sha256": "a6ec3517fa2044e8a1ad4a56176718413be3bb2ca0949b06c382e0a412da69e6"
+      },
+      "class_logits": {
+        "shape": [
+          144,
+          10,
+          2
+        ],
+        "sha256": "dcf9a705384715db6f25ed35288a290778c18f22d0a1070a06339b1412c5f68b"
+      }
+    },
+    "rows_sha256": "950dc9342ff1eec3b3a9c986f01650d5a0eb659330f17d6e0ff23946853d4c0c",
+    "missing_count": 0,
+    "replay_maxerr": 0.0,
+    "independent_localization_forward_maxerr": 0.0,
+    "elapsed_seconds": 0.34981226921081543,
+    "storage_bytes": 12724288,
+    "label_counts": {
+      "0": 94,
+      "1": 50
+    }
+  }
+}

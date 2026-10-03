@@ -1,0 +1,169 @@
+{
+  "gpu": "0",
+  "pid": 1780542,
+  "stage": "P3_readouts",
+  "freeze_hash": "1518d7f3e5705165b2642de599bf982dfcef6a00492f7a0b48574c0986cf0b92",
+  "status": "running",
+  "tasks": [
+    {
+      "task": "A1_action_01_extract",
+      "status": "completed",
+      "log": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/results/moment_detr_gmr_evidence_v5/queues/A1_action_01_extract.log",
+      "started_unix": 1791041241.6073985,
+      "pid": 1780544,
+      "exit_code": 0,
+      "elapsed_seconds": 4.673461675643921
+    },
+    {
+      "task": "A1_action_02_extract",
+      "status": "completed",
+      "log": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/results/moment_detr_gmr_evidence_v5/queues/A1_action_02_extract.log",
+      "started_unix": 1791041246.2817707,
+      "pid": 1780621,
+      "exit_code": 0,
+      "elapsed_seconds": 17.600375175476074
+    },
+    {
+      "task": "A1_action_01_R1_seed3407_train",
+      "status": "completed",
+      "log": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/results/moment_detr_gmr_evidence_v5/queues/A1_action_01_R1_seed3407_train.log",
+      "started_unix": 1791041263.8939116,
+      "pid": 1781817,
+      "exit_code": 0,
+      "elapsed_seconds": 30.363338470458984
+    },
+    {
+      "task": "A1_action_01_R1_seed3407_eval",
+      "status": "completed",
+      "log": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/results/moment_detr_gmr_evidence_v5/queues/A1_action_01_R1_seed3407_eval.log",
+      "started_unix": 1791041294.2582645,
+      "pid": 1782533,
+      "exit_code": 0,
+      "elapsed_seconds": 2.1712019443511963
+    },
+    {
+      "task": "A1_action_02_R1_seed3407_train",
+      "status": "completed",
+      "log": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/results/moment_detr_gmr_evidence_v5/queues/A1_action_02_R1_seed3407_train.log",
+      "started_unix": 1791041296.524405,
+      "pid": 1782558,
+      "exit_code": 0,
+      "elapsed_seconds": 36.68050026893616
+    },
+    {
+      "task": "A1_action_02_R1_seed3407_eval",
+      "status": "completed",
+      "log": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/results/moment_detr_gmr_evidence_v5/queues/A1_action_02_R1_seed3407_eval.log",
+      "started_unix": 1791041333.2059298,
+      "pid": 1782796,
+      "exit_code": 0,
+      "elapsed_seconds": 2.221298933029175
+    },
+    {
+      "task": "A1_action_01_R1_matched_seed3407_train",
+      "status": "completed",
+      "log": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/results/moment_detr_gmr_evidence_v5/queues/A1_action_01_R1_matched_seed3407_train.log",
+      "started_unix": 1791041335.5241828,
+      "pid": 1782826,
+      "exit_code": 0,
+      "elapsed_seconds": 31.4197518825531
+    },
+    {
+      "task": "A1_action_01_R1_matched_seed3407_eval",
+      "status": "completed",
+      "log": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/results/moment_detr_gmr_evidence_v5/queues/A1_action_01_R1_matched_seed3407_eval.log",
+      "started_unix": 1791041366.9450955,
+      "pid": 1783059,
+      "exit_code": 0,
+      "elapsed_seconds": 2.321441888809204
+    },
+    {
+      "task": "A1_action_02_R1_matched_seed3407_train",
+      "status": "completed",
+      "log": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/results/moment_detr_gmr_evidence_v5/queues/A1_action_02_R1_matched_seed3407_train.log",
+      "started_unix": 1791041369.363721,
+      "pid": 1783104,
+      "exit_code": 0,
+      "elapsed_seconds": 21.350257396697998
+    },
+    {
+      "task": "A1_action_02_R1_matched_seed3407_eval",
+      "status": "completed",
+      "log": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/results/moment_detr_gmr_evidence_v5/queues/A1_action_02_R1_matched_seed3407_eval.log",
+      "started_unix": 1791041390.7151735,
+      "pid": 1783226,
+      "exit_code": 0,
+      "elapsed_seconds": 2.2713043689727783
+    },
+    {
+      "task": "A1_action_01_R2_seed3407_train",
+      "status": "completed",
+      "log": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/results/moment_detr_gmr_evidence_v5/queues/A1_action_01_R2_seed3407_train.log",
+      "started_unix": 1791041393.0828872,
+      "pid": 1783260,
+      "exit_code": 0,
+      "elapsed_seconds": 104.49473142623901
+    },
+    {
+      "task": "A1_action_01_R2_seed3407_eval",
+      "status": "completed",
+      "log": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/results/moment_detr_gmr_evidence_v5/queues/A1_action_01_R2_seed3407_eval.log",
+      "started_unix": 1791041497.5789301,
+      "pid": 1783959,
+      "exit_code": 0,
+      "elapsed_seconds": 2.3744819164276123
+    },
+    {
+      "task": "A1_action_02_R2_seed3407_train",
+      "status": "completed",
+      "log": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/results/moment_detr_gmr_evidence_v5/queues/A1_action_02_R2_seed3407_train.log",
+      "started_unix": 1791041500.0517647,
+      "pid": 1783991,
+      "exit_code": 0,
+      "elapsed_seconds": 114.10051703453064
+    },
+    {
+      "task": "A1_action_02_R2_seed3407_eval",
+      "status": "completed",
+      "log": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/results/moment_detr_gmr_evidence_v5/queues/A1_action_02_R2_seed3407_eval.log",
+      "started_unix": 1791041614.1535845,
+      "pid": 1784674,
+      "exit_code": 0,
+      "elapsed_seconds": 2.3722760677337646
+    },
+    {
+      "task": "A1_action_01_R3_seed3407_train",
+      "status": "completed",
+      "log": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/results/moment_detr_gmr_evidence_v5/queues/A1_action_01_R3_seed3407_train.log",
+      "started_unix": 1791041616.6252608,
+      "pid": 1784695,
+      "exit_code": 0,
+      "elapsed_seconds": 105.88342761993408
+    },
+    {
+      "task": "A1_action_01_R3_seed3407_eval",
+      "status": "completed",
+      "log": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/results/moment_detr_gmr_evidence_v5/queues/A1_action_01_R3_seed3407_eval.log",
+      "started_unix": 1791041722.5100665,
+      "pid": 1785304,
+      "exit_code": 0,
+      "elapsed_seconds": 2.37253999710083
+    },
+    {
+      "task": "A1_action_02_R3_seed3407_train",
+      "status": "completed",
+      "log": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/results/moment_detr_gmr_evidence_v5/queues/A1_action_02_R3_seed3407_train.log",
+      "started_unix": 1791041724.9789941,
+      "pid": 1785336,
+      "exit_code": 0,
+      "elapsed_seconds": 105.84095311164856
+    },
+    {
+      "task": "A1_action_02_R3_seed3407_eval",
+      "status": "running",
+      "log": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/results/moment_detr_gmr_evidence_v5/queues/A1_action_02_R3_seed3407_eval.log",
+      "started_unix": 1791041830.8215902,
+      "pid": 1785958
+    }
+  ]
+}

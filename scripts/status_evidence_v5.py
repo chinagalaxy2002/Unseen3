@@ -43,7 +43,21 @@ def main():
                              "epochs_planned": 100, "validation_records": len(vals),
                              "best_seen_val_mAP": max(map(float, vals), default=None),
                              "pid": job.get("pid"), "log": str(directory / "job.log")})
-    result = {"stage": "inner_baselines", "jobs": progress}
+    readouts = []
+    for path in sorted(EXPERIMENT.glob("readout_queue_gpu*.json")):
+        queue = json.loads(path.read_text())
+        task = queue["tasks"][-1] if queue["tasks"] else None
+        entry = {"gpu": queue["gpu"], "queue_status": queue["status"], "current_task": task}
+        readouts.append(entry)
+    states = []
+    for path in sorted((RESULTS / "readouts").glob("*/*/status.json")):
+        try:
+            value = json.loads(path.read_text())
+        except json.JSONDecodeError:
+            continue
+        states.append({k: value.get(k) for k in ("fold", "variant", "seed", "stage", "status", "epochs_completed", "best_epoch", "best_seen_val_auroc", "deployment")})
+    result = {"stage": "P3_readouts" if readouts else "inner_baselines", "jobs": progress,
+              "readout_queues": readouts, "readout_runs": states}
     if args.save:
         write_json(EXPERIMENT / "progress_snapshot.json", result)
     print(json.dumps(result, indent=2))

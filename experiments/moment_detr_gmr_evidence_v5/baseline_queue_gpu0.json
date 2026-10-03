@@ -3,13 +3,18 @@
   "pid": 1537249,
   "jobs": {
     "A1_action_01": {
-      "status": "running",
+      "status": "completed",
       "log": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/results/moment_detr_gmr_evidence_v5/inner_baselines/A1_action_01/job.log",
       "started_utc": "2026-10-03T12:14:19.514011+00:00",
-      "pid": 1537251
+      "pid": 1537251,
+      "exit_code": 0
     },
     "A1_action_02": {
-      "status": "queued"
+      "status": "completed",
+      "log": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/results/moment_detr_gmr_evidence_v5/inner_baselines/A1_action_02/job.log",
+      "started_utc": "2026-10-03T12:56:51.335611+00:00",
+      "pid": 1634447,
+      "exit_code": 0
     }
   }
 }

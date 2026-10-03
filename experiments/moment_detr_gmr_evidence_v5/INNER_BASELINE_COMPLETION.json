@@ -1,0 +1,43 @@
+{
+  "passed": true,
+  "baselines": [
+    {
+      "fold": "A1_action_01",
+      "epochs_trained": 100,
+      "validation_records": 100,
+      "best_epoch_1_indexed": 4,
+      "best_seen_mAP": 26.69,
+      "checkpoint_hash": "ae514a78ce1d8836cb849774fadd7ecbc496b25f36161bcce195c3efcae97343",
+      "elapsed_seconds": 2548.7428686618805
+    },
+    {
+      "fold": "A1_action_02",
+      "epochs_trained": 100,
+      "validation_records": 100,
+      "best_epoch_1_indexed": 7,
+      "best_seen_mAP": 25.62,
+      "checkpoint_hash": "c1778984ea36f70a1e98d065bd41737520a9d5b8415cb2e0bf6879667442742c",
+      "elapsed_seconds": 2778.2152860164642
+    },
+    {
+      "fold": "C1_composition_01",
+      "epochs_trained": 100,
+      "validation_records": 100,
+      "best_epoch_1_indexed": 58,
+      "best_seen_mAP": 23.52,
+      "checkpoint_hash": "c5319f94c70ef323e78e6bdb83d3e4d60ed020385aff5c0a57ef142e079dae43",
+      "elapsed_seconds": 3615.73983001709
+    },
+    {
+      "fold": "C1_composition_02",
+      "epochs_trained": 100,
+      "validation_records": 100,
+      "best_epoch_1_indexed": 18,
+      "best_seen_mAP": 24.9,
+      "checkpoint_hash": "26dc38ea836349541a8465b89969a39ea12dbec1d898ffdee0709d5f3307ae9e",
+      "elapsed_seconds": 3912.6328303813934
+    }
+  ],
+  "baseline_code_unchanged": true,
+  "novel_dev_not_used_for_selection": true
+}

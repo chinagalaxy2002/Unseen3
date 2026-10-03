@@ -1,13 +1,13 @@
 {
-  "stage": "inner_baselines",
+  "stage": "P3_readouts",
   "jobs": [
     {
       "fold": "A1_action_01",
       "gpu": "0",
-      "status": "running",
-      "epochs_completed": 12,
+      "status": "completed",
+      "epochs_completed": 100,
       "epochs_planned": 100,
-      "validation_records": 12,
+      "validation_records": 100,
       "best_seen_val_mAP": 26.69,
       "pid": 1537251,
       "log": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/results/moment_detr_gmr_evidence_v5/inner_baselines/A1_action_01/job.log"
@@ -15,35 +15,160 @@
     {
       "fold": "A1_action_02",
       "gpu": "0",
-      "status": "queued",
-      "epochs_completed": 0,
+      "status": "completed",
+      "epochs_completed": 100,
       "epochs_planned": 100,
-      "validation_records": 0,
-      "best_seen_val_mAP": null,
-      "pid": null,
+      "validation_records": 100,
+      "best_seen_val_mAP": 25.62,
+      "pid": 1634447,
       "log": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/results/moment_detr_gmr_evidence_v5/inner_baselines/A1_action_02/job.log"
     },
     {
       "fold": "C1_composition_01",
       "gpu": "1",
-      "status": "running",
-      "epochs_completed": 9,
+      "status": "completed",
+      "epochs_completed": 100,
       "epochs_planned": 100,
-      "validation_records": 9,
-      "best_seen_val_mAP": 22.71,
+      "validation_records": 100,
+      "best_seen_val_mAP": 23.52,
       "pid": 1537252,
       "log": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/results/moment_detr_gmr_evidence_v5/inner_baselines/C1_composition_01/job.log"
     },
     {
       "fold": "C1_composition_02",
       "gpu": "1",
-      "status": "queued",
-      "epochs_completed": 0,
+      "status": "completed",
+      "epochs_completed": 100,
       "epochs_planned": 100,
-      "validation_records": 0,
-      "best_seen_val_mAP": null,
-      "pid": null,
+      "validation_records": 100,
+      "best_seen_val_mAP": 24.9,
+      "pid": 1672246,
       "log": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/results/moment_detr_gmr_evidence_v5/inner_baselines/C1_composition_02/job.log"
+    }
+  ],
+  "readout_queues": [
+    {
+      "gpu": "0",
+      "queue_status": "running",
+      "current_task": {
+        "task": "A1_action_01_R2_seed3407_train",
+        "status": "running",
+        "log": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/results/moment_detr_gmr_evidence_v5/queues/A1_action_01_R2_seed3407_train.log",
+        "started_unix": 1791041393.0828872,
+        "pid": 1783260
+      }
+    },
+    {
+      "gpu": "1",
+      "queue_status": "running",
+      "current_task": {
+        "task": "C1_composition_02_R1_matched_seed3407_train",
+        "status": "running",
+        "log": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/results/moment_detr_gmr_evidence_v5/queues/C1_composition_02_R1_matched_seed3407_train.log",
+        "started_unix": 1791041407.1215177,
+        "pid": 1783366
+      }
+    }
+  ],
+  "readout_runs": [
+    {
+      "fold": "A1_action_01",
+      "variant": "R1",
+      "seed": 3407,
+      "stage": "P3_bce",
+      "status": "evaluated",
+      "epochs_completed": 50,
+      "best_epoch": 45,
+      "best_seen_val_auroc": 0.874650743021042,
+      "deployment": "learned"
+    },
+    {
+      "fold": "A1_action_01",
+      "variant": "R1_matched",
+      "seed": 3407,
+      "stage": "P3_bce",
+      "status": "evaluated",
+      "epochs_completed": 50,
+      "best_epoch": 38,
+      "best_seen_val_auroc": 0.8799421407907425,
+      "deployment": "learned"
+    },
+    {
+      "fold": "A1_action_01",
+      "variant": "R2",
+      "seed": 3407,
+      "stage": "P3_bce",
+      "status": "running",
+      "epochs_completed": 11,
+      "best_epoch": 8,
+      "best_seen_val_auroc": 0.8927502905323541,
+      "deployment": null
+    },
+    {
+      "fold": "A1_action_02",
+      "variant": "R1",
+      "seed": 3407,
+      "stage": "P3_bce",
+      "status": "evaluated",
+      "epochs_completed": 50,
+      "best_epoch": 34,
+      "best_seen_val_auroc": 0.8455679675032641,
+      "deployment": "learned"
+    },
+    {
+      "fold": "A1_action_02",
+      "variant": "R1_matched",
+      "seed": 3407,
+      "stage": "P3_bce",
+      "status": "evaluated",
+      "epochs_completed": 50,
+      "best_epoch": 43,
+      "best_seen_val_auroc": 0.8477078195270565,
+      "deployment": "learned"
+    },
+    {
+      "fold": "C1_composition_01",
+      "variant": "R1",
+      "seed": 3407,
+      "stage": "P3_bce",
+      "status": "evaluated",
+      "epochs_completed": 50,
+      "best_epoch": 2,
+      "best_seen_val_auroc": 0.8093974492296292,
+      "deployment": "baseline_fallback"
+    },
+    {
+      "fold": "C1_composition_01",
+      "variant": "R1_matched",
+      "seed": 3407,
+      "stage": "P3_bce",
+      "status": "evaluated",
+      "epochs_completed": 50,
+      "best_epoch": 2,
+      "best_seen_val_auroc": 0.80856671567397,
+      "deployment": "baseline_fallback"
+    },
+    {
+      "fold": "C1_composition_02",
+      "variant": "R1",
+      "seed": 3407,
+      "stage": "P3_bce",
+      "status": "evaluated",
+      "epochs_completed": 50,
+      "best_epoch": 1,
+      "best_seen_val_auroc": 0.8447418957264468,
+      "deployment": "learned"
+    },
+    {
+      "fold": "C1_composition_02",
+      "variant": "R1_matched",
+      "seed": 3407,
+      "stage": "P3_bce",
+      "status": "running",
+      "epochs_completed": 10,
+      "best_epoch": 1,
+      "best_seen_val_auroc": 0.844151451746969,
+      "deployment": null
     }
   ]
 }

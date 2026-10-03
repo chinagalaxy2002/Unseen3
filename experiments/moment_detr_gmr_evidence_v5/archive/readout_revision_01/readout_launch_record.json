@@ -1,0 +1,23 @@
+{
+  "launched_utc": "2026-10-03T15:19:59.368916+00:00",
+  "queues": [
+    {
+      "gpu": "0",
+      "queue_pid": 1774322,
+      "folds": [
+        "A1_action_01",
+        "A1_action_02"
+      ],
+      "log": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/experiments/moment_detr_gmr_evidence_v5/readout_queue_gpu0.log"
+    },
+    {
+      "gpu": "1",
+      "queue_pid": 1774323,
+      "folds": [
+        "C1_composition_01",
+        "C1_composition_02"
+      ],
+      "log": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/experiments/moment_detr_gmr_evidence_v5/readout_queue_gpu1.log"
+    }
+  ]
+}

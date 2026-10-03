@@ -1,0 +1,222 @@
+{
+  "reason": "Video-only control must use a canonical per-video feature and one inference per unique video; batch reduction introduces tiny differences otherwise",
+  "interrupted_queues": [
+    {
+      "gpu": "0",
+      "pid": 1774322,
+      "stage": "P3_readouts",
+      "freeze_hash": "b9e38831fcdcdb153ea1098845f11c32999808d597541626546ce008fdd46672",
+      "status": "running",
+      "tasks": [
+        {
+          "task": "A1_action_01_extract",
+          "status": "completed",
+          "log": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/results/moment_detr_gmr_evidence_v5/queues/A1_action_01_extract.log",
+          "started_unix": 1791040799.3971455,
+          "pid": 1774324,
+          "exit_code": 0,
+          "elapsed_seconds": 4.522655248641968
+        },
+        {
+          "task": "A1_action_02_extract",
+          "status": "completed",
+          "log": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/results/moment_detr_gmr_evidence_v5/queues/A1_action_02_extract.log",
+          "started_unix": 1791040803.920707,
+          "pid": 1774388,
+          "exit_code": 0,
+          "elapsed_seconds": 20.855900526046753
+        },
+        {
+          "task": "A1_action_01_R1_seed3407_train",
+          "status": "completed",
+          "log": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/results/moment_detr_gmr_evidence_v5/queues/A1_action_01_R1_seed3407_train.log",
+          "started_unix": 1791040824.7776806,
+          "pid": 1775585,
+          "exit_code": 0,
+          "elapsed_seconds": 29.817203283309937
+        },
+        {
+          "task": "A1_action_01_R1_seed3407_eval",
+          "status": "completed",
+          "log": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/results/moment_detr_gmr_evidence_v5/queues/A1_action_01_R1_seed3407_eval.log",
+          "started_unix": 1791040854.5958233,
+          "pid": 1776386,
+          "exit_code": 0,
+          "elapsed_seconds": 2.221320629119873
+        },
+        {
+          "task": "A1_action_02_R1_seed3407_train",
+          "status": "completed",
+          "log": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/results/moment_detr_gmr_evidence_v5/queues/A1_action_02_R1_seed3407_train.log",
+          "started_unix": 1791040856.908838,
+          "pid": 1776404,
+          "exit_code": 0,
+          "elapsed_seconds": 30.963776111602783
+        },
+        {
+          "task": "A1_action_02_R1_seed3407_eval",
+          "status": "completed",
+          "log": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/results/moment_detr_gmr_evidence_v5/queues/A1_action_02_R1_seed3407_eval.log",
+          "started_unix": 1791040887.873633,
+          "pid": 1776627,
+          "exit_code": 0,
+          "elapsed_seconds": 2.221189498901367
+        },
+        {
+          "task": "A1_action_01_R1_matched_seed3407_train",
+          "status": "completed",
+          "log": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/results/moment_detr_gmr_evidence_v5/queues/A1_action_01_R1_matched_seed3407_train.log",
+          "started_unix": 1791040890.1904955,
+          "pid": 1776656,
+          "exit_code": 0,
+          "elapsed_seconds": 31.763113975524902
+        },
+        {
+          "task": "A1_action_01_R1_matched_seed3407_eval",
+          "status": "completed",
+          "log": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/results/moment_detr_gmr_evidence_v5/queues/A1_action_01_R1_matched_seed3407_eval.log",
+          "started_unix": 1791040921.9546928,
+          "pid": 1776868,
+          "exit_code": 0,
+          "elapsed_seconds": 2.3715133666992188
+        },
+        {
+          "task": "A1_action_02_R1_matched_seed3407_train",
+          "status": "completed",
+          "log": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/results/moment_detr_gmr_evidence_v5/queues/A1_action_02_R1_matched_seed3407_train.log",
+          "started_unix": 1791040924.4226532,
+          "pid": 1776914,
+          "exit_code": 0,
+          "elapsed_seconds": 35.521570444107056
+        },
+        {
+          "task": "A1_action_02_R1_matched_seed3407_eval",
+          "status": "completed",
+          "log": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/results/moment_detr_gmr_evidence_v5/queues/A1_action_02_R1_matched_seed3407_eval.log",
+          "started_unix": 1791040959.9454463,
+          "pid": 1777138,
+          "exit_code": 0,
+          "elapsed_seconds": 2.3222315311431885
+        },
+        {
+          "task": "A1_action_01_R2_seed3407_train",
+          "status": "running",
+          "log": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/results/moment_detr_gmr_evidence_v5/queues/A1_action_01_R2_seed3407_train.log",
+          "started_unix": 1791040962.3627617,
+          "pid": 1777188
+        }
+      ]
+    },
+    {
+      "gpu": "1",
+      "pid": 1774323,
+      "stage": "P3_readouts",
+      "freeze_hash": "b9e38831fcdcdb153ea1098845f11c32999808d597541626546ce008fdd46672",
+      "status": "running",
+      "tasks": [
+        {
+          "task": "C1_composition_01_extract",
+          "status": "completed",
+          "log": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/results/moment_detr_gmr_evidence_v5/queues/C1_composition_01_extract.log",
+          "started_unix": 1791040799.4012375,
+          "pid": 1774325,
+          "exit_code": 0,
+          "elapsed_seconds": 5.3238303661346436
+        },
+        {
+          "task": "C1_composition_02_extract",
+          "status": "completed",
+          "log": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/results/moment_detr_gmr_evidence_v5/queues/C1_composition_02_extract.log",
+          "started_unix": 1791040804.7258418,
+          "pid": 1774393,
+          "exit_code": 0,
+          "elapsed_seconds": 22.56890344619751
+        },
+        {
+          "task": "C1_composition_01_R1_seed3407_train",
+          "status": "completed",
+          "log": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/results/moment_detr_gmr_evidence_v5/queues/C1_composition_01_R1_seed3407_train.log",
+          "started_unix": 1791040827.2958298,
+          "pid": 1776121,
+          "exit_code": 0,
+          "elapsed_seconds": 40.479411363601685
+        },
+        {
+          "task": "C1_composition_01_R1_seed3407_eval",
+          "status": "completed",
+          "log": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/results/moment_detr_gmr_evidence_v5/queues/C1_composition_01_R1_seed3407_eval.log",
+          "started_unix": 1791040867.7761786,
+          "pid": 1776486,
+          "exit_code": 0,
+          "elapsed_seconds": 2.2714316844940186
+        },
+        {
+          "task": "C1_composition_02_R1_seed3407_train",
+          "status": "completed",
+          "log": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/results/moment_detr_gmr_evidence_v5/queues/C1_composition_02_R1_seed3407_train.log",
+          "started_unix": 1791040870.1445084,
+          "pid": 1776515,
+          "exit_code": 0,
+          "elapsed_seconds": 44.38439154624939
+        },
+        {
+          "task": "C1_composition_02_R1_seed3407_eval",
+          "status": "completed",
+          "log": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/results/moment_detr_gmr_evidence_v5/queues/C1_composition_02_R1_seed3407_eval.log",
+          "started_unix": 1791040914.5298934,
+          "pid": 1776802,
+          "exit_code": 0,
+          "elapsed_seconds": 2.2715415954589844
+        },
+        {
+          "task": "C1_composition_01_R1_matched_seed3407_train",
+          "status": "completed",
+          "log": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/results/moment_detr_gmr_evidence_v5/queues/C1_composition_01_R1_matched_seed3407_train.log",
+          "started_unix": 1791040916.9002125,
+          "pid": 1776820,
+          "exit_code": 0,
+          "elapsed_seconds": 41.73112893104553
+        },
+        {
+          "task": "C1_composition_01_R1_matched_seed3407_eval",
+          "status": "completed",
+          "log": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/results/moment_detr_gmr_evidence_v5/queues/C1_composition_01_R1_matched_seed3407_eval.log",
+          "started_unix": 1791040958.6324167,
+          "pid": 1777130,
+          "exit_code": 0,
+          "elapsed_seconds": 2.371396064758301
+        },
+        {
+          "task": "C1_composition_02_R1_matched_seed3407_train",
+          "status": "completed",
+          "log": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/results/moment_detr_gmr_evidence_v5/queues/C1_composition_02_R1_matched_seed3407_train.log",
+          "started_unix": 1791040961.0990856,
+          "pid": 1777159,
+          "exit_code": 0,
+          "elapsed_seconds": 46.73499298095703
+        },
+        {
+          "task": "C1_composition_02_R1_matched_seed3407_eval",
+          "status": "completed",
+          "log": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/results/moment_detr_gmr_evidence_v5/queues/C1_composition_02_R1_matched_seed3407_eval.log",
+          "started_unix": 1791041007.8352222,
+          "pid": 1777462,
+          "exit_code": 0,
+          "elapsed_seconds": 2.3211677074432373
+        },
+        {
+          "task": "C1_composition_01_R2_seed3407_train",
+          "status": "running",
+          "log": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/results/moment_detr_gmr_evidence_v5/queues/C1_composition_01_R2_seed3407_train.log",
+          "started_unix": 1791041010.253238,
+          "pid": 1777494
+        }
+      ]
+    }
+  ],
+  "artifact_archive": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/results/moment_detr_gmr_evidence_v5/readout_archive/revision_01_before_video_control_fix",
+  "baseline_training_unchanged": true,
+  "no_formal_U_read": true,
+  "restart_all_readout_variants": true,
+  "prior_partial_results_not_used_to_select_settings": true
+}

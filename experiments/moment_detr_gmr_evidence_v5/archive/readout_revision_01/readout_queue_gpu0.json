@@ -1,0 +1,106 @@
+{
+  "gpu": "0",
+  "pid": 1774322,
+  "stage": "P3_readouts",
+  "freeze_hash": "b9e38831fcdcdb153ea1098845f11c32999808d597541626546ce008fdd46672",
+  "status": "running",
+  "tasks": [
+    {
+      "task": "A1_action_01_extract",
+      "status": "completed",
+      "log": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/results/moment_detr_gmr_evidence_v5/queues/A1_action_01_extract.log",
+      "started_unix": 1791040799.3971455,
+      "pid": 1774324,
+      "exit_code": 0,
+      "elapsed_seconds": 4.522655248641968
+    },
+    {
+      "task": "A1_action_02_extract",
+      "status": "completed",
+      "log": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/results/moment_detr_gmr_evidence_v5/queues/A1_action_02_extract.log",
+      "started_unix": 1791040803.920707,
+      "pid": 1774388,
+      "exit_code": 0,
+      "elapsed_seconds": 20.855900526046753
+    },
+    {
+      "task": "A1_action_01_R1_seed3407_train",
+      "status": "completed",
+      "log": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/results/moment_detr_gmr_evidence_v5/queues/A1_action_01_R1_seed3407_train.log",
+      "started_unix": 1791040824.7776806,
+      "pid": 1775585,
+      "exit_code": 0,
+      "elapsed_seconds": 29.817203283309937
+    },
+    {
+      "task": "A1_action_01_R1_seed3407_eval",
+      "status": "completed",
+      "log": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/results/moment_detr_gmr_evidence_v5/queues/A1_action_01_R1_seed3407_eval.log",
+      "started_unix": 1791040854.5958233,
+      "pid": 1776386,
+      "exit_code": 0,
+      "elapsed_seconds": 2.221320629119873
+    },
+    {
+      "task": "A1_action_02_R1_seed3407_train",
+      "status": "completed",
+      "log": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/results/moment_detr_gmr_evidence_v5/queues/A1_action_02_R1_seed3407_train.log",
+      "started_unix": 1791040856.908838,
+      "pid": 1776404,
+      "exit_code": 0,
+      "elapsed_seconds": 30.963776111602783
+    },
+    {
+      "task": "A1_action_02_R1_seed3407_eval",
+      "status": "completed",
+      "log": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/results/moment_detr_gmr_evidence_v5/queues/A1_action_02_R1_seed3407_eval.log",
+      "started_unix": 1791040887.873633,
+      "pid": 1776627,
+      "exit_code": 0,
+      "elapsed_seconds": 2.221189498901367
+    },
+    {
+      "task": "A1_action_01_R1_matched_seed3407_train",
+      "status": "completed",
+      "log": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/results/moment_detr_gmr_evidence_v5/queues/A1_action_01_R1_matched_seed3407_train.log",
+      "started_unix": 1791040890.1904955,
+      "pid": 1776656,
+      "exit_code": 0,
+      "elapsed_seconds": 31.763113975524902
+    },
+    {
+      "task": "A1_action_01_R1_matched_seed3407_eval",
+      "status": "completed",
+      "log": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/results/moment_detr_gmr_evidence_v5/queues/A1_action_01_R1_matched_seed3407_eval.log",
+      "started_unix": 1791040921.9546928,
+      "pid": 1776868,
+      "exit_code": 0,
+      "elapsed_seconds": 2.3715133666992188
+    },
+    {
+      "task": "A1_action_02_R1_matched_seed3407_train",
+      "status": "completed",
+      "log": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/results/moment_detr_gmr_evidence_v5/queues/A1_action_02_R1_matched_seed3407_train.log",
+      "started_unix": 1791040924.4226532,
+      "pid": 1776914,
+      "exit_code": 0,
+      "elapsed_seconds": 35.521570444107056
+    },
+    {
+      "task": "A1_action_02_R1_matched_seed3407_eval",
+      "status": "completed",
+      "log": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/results/moment_detr_gmr_evidence_v5/queues/A1_action_02_R1_matched_seed3407_eval.log",
+      "started_unix": 1791040959.9454463,
+      "pid": 1777138,
+      "exit_code": 0,
+      "elapsed_seconds": 2.3222315311431885
+    },
+    {
+      "task": "A1_action_01_R2_seed3407_train",
+      "status": "running",
+      "log": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/results/moment_detr_gmr_evidence_v5/queues/A1_action_01_R2_seed3407_train.log",
+      "started_unix": 1791040962.3627617,
+      "pid": 1777188
+    }
+  ]
+}

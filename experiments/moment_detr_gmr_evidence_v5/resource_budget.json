@@ -1,0 +1,12 @@
+{
+  "stage": "P3_decoder_readouts",
+  "baseline_gpu_hours_observed": 3.57092522641023,
+  "runs_planned": 36,
+  "epochs_per_run": 50,
+  "per_device_wall_budget_seconds": 14400,
+  "two_device_maximum_wall_gpu_hours": 8,
+  "host_memory_available_GiB_at_start": 115,
+  "free_disk_GiB_at_start": 322,
+  "storage": "fp32 mmap per query; raw video represented by external deduplicated vid paths; no per-query raw-video duplication",
+  "R4_gpu_hours_included": false
+}

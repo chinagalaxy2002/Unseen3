@@ -1,6 +1,6 @@
 # V5 实施清单
 
-状态：第一批准备完成，内层 baseline 正在训练。勾选时填写产物路径、版本/哈希和必要验证结果，不以口头完成替代可审查产物。完整定义见 [工作方案](WORK_PLAN.md)，本次实际产物见 [运行记录](RUN_STATUS.md)。
+状态：四个内层 baseline 完成，P3 decoder 读取对照运行中。完整定义见 [工作方案](WORK_PLAN.md)，首批实际产物见 [运行记录](RUN_STATUS.md)，后续见 [P3 执行记录](P3_RUN_STATUS.md)。
 
 ## P0：评测可信
 
@@ -28,9 +28,9 @@
 - [x] 生成 action/composition 各两个有效 fold，保存支持量与视频组；见 `inner_fold_index.json`。
 - [x] 检查 source query 的语义暴露，阻止衍生样本跨角色；输入验证通过。
 - [x] 确认 composition primitives 在内层训练有独立正例支持；生成器检查通过。
-- [ ] 从任务训练前初始化训练内层 baseline；按 inner Seen val MR-mAP 选模。
-- [ ] 保存 fold/teacher hash、训练 counts、epoch 和选模记录。
-- [ ] G1 记录通过；若不可行，写原因与修订版本。
+- [x] 从任务训练前随机初始化训练内层 baseline；每 fold 完成100 epochs，按 inner Seen val MR-mAP 选模。
+- [x] 保存 fold/teacher hash、训练 counts、epoch 和选模记录；见 `INNER_BASELINE_COMPLETION.json`。
+- [x] G1 内层 baseline 资格通过，冻结代码/语义/视频角色审计通过。
 
 ## P3：读取对照
 
@@ -38,7 +38,7 @@
 - [ ] 同一 BCE/训练预算下完成 R1–R4；R2→R3 隔离 slots 与 pooling。
 - [ ] 完成 query-only/video-only 与候选容量匹配必要对照。
 - [ ] 完成同视频 source-pair 和共享 GT ROI 诊断，注明非正式性能。
-- [ ] 独立比较 baseline 与包装后 raw localization，记录 tensors 误差。
+- [x] 独立比较真实样本 readout optimizer step 前后 baseline raw localization；误差为0，见 `bank_replay_verification.json`。局部 verifier 后续单独验证。
 - [ ] 根据预定义分支选结构；保存所有尝试和失败，不只保存获胜者。
 
 ## P4：监督与门槛

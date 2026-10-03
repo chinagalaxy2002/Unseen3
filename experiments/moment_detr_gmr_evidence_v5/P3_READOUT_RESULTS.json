@@ -1,0 +1,844 @@
+{
+  "completed": 13,
+  "expected": 36,
+  "status": "partial",
+  "macros": {
+    "R1": {
+      "folds_completed": 4,
+      "complete": true,
+      "macro_delta_novel": -0.014230260880727555,
+      "macro_delta_seen": 0.00659561761522276,
+      "positive_novel_folds": 0
+    },
+    "R1_matched": {
+      "folds_completed": 4,
+      "complete": true,
+      "macro_delta_novel": -0.014935064799709755,
+      "macro_delta_seen": 0.008098135679811769,
+      "positive_novel_folds": 0
+    },
+    "R2": {
+      "folds_completed": 4,
+      "complete": true,
+      "macro_delta_novel": -0.0011231313384651026,
+      "macro_delta_seen": 0.028070078228053102,
+      "positive_novel_folds": 1
+    },
+    "R3": {
+      "folds_completed": 1,
+      "complete": false,
+      "macro_delta_novel": 0.06479279279279293,
+      "macro_delta_seen": 0.03933931706352123,
+      "positive_novel_folds": 1
+    }
+  },
+  "results": [
+    {
+      "fold": "A1_action_01",
+      "variant": "R1",
+      "seed": 3407,
+      "pair_weight": 0.0,
+      "best_epoch": 45,
+      "deployment": "learned",
+      "baseline": {
+        "seen": {
+          "pooled_auroc": 0.8600870360754644,
+          "rows": 625,
+          "videos": 251,
+          "source_pairs": {
+            "pair_acc": 0.7978142076502732,
+            "pair_count": 183,
+            "mean_score_gap": 1.5908533048312195
+          }
+        },
+        "novel": {
+          "pooled_auroc": 0.616036036036036,
+          "rows": 335,
+          "videos": 138,
+          "source_pairs": {
+            "pair_acc": 0.7062937062937062,
+            "pair_count": 143,
+            "mean_score_gap": 1.3199599610342012
+          }
+        }
+      },
+      "learned": {
+        "seen": {
+          "pooled_auroc": 0.874650743021042,
+          "rows": 625,
+          "videos": 251,
+          "source_pairs": {
+            "pair_acc": 0.8142076502732241,
+            "pair_count": 183,
+            "mean_score_gap": 2.907811170596568
+          }
+        },
+        "novel": {
+          "pooled_auroc": 0.6041801801801802,
+          "rows": 335,
+          "videos": 138,
+          "source_pairs": {
+            "pair_acc": 0.5944055944055944,
+            "pair_count": 143,
+            "mean_score_gap": 1.4539768825044166
+          }
+        }
+      },
+      "checkpoint_hash": "cfffbbadcad183f5e1675863a1d0e1e4f69154ae05230a4d2c8abd5e87ebbeb4",
+      "trainable_parameters": 50049,
+      "localization_preserved": "offline readout cannot change frozen localization tensors",
+      "novel_dev_used_for_epoch_selection": false,
+      "formal_u_read": false,
+      "threshold_role": "inner_seen_val",
+      "elapsed_training_seconds": 27.318679094314575,
+      "delta_novel_auroc": -0.011855855855855801,
+      "delta_seen_auroc": 0.014563706945577515,
+      "policy_novel_auroc": 0.6041801801801802
+    },
+    {
+      "fold": "A1_action_01",
+      "variant": "R1_matched",
+      "seed": 3407,
+      "pair_weight": 0.0,
+      "best_epoch": 38,
+      "deployment": "learned",
+      "baseline": {
+        "seen": {
+          "pooled_auroc": 0.8600870360754644,
+          "rows": 625,
+          "videos": 251,
+          "source_pairs": {
+            "pair_acc": 0.7978142076502732,
+            "pair_count": 183,
+            "mean_score_gap": 1.5908533048312195
+          }
+        },
+        "novel": {
+          "pooled_auroc": 0.616036036036036,
+          "rows": 335,
+          "videos": 138,
+          "source_pairs": {
+            "pair_acc": 0.7062937062937062,
+            "pair_count": 143,
+            "mean_score_gap": 1.3199599610342012
+          }
+        }
+      },
+      "learned": {
+        "seen": {
+          "pooled_auroc": 0.8799421407907425,
+          "rows": 625,
+          "videos": 251,
+          "source_pairs": {
+            "pair_acc": 0.7978142076502732,
+            "pair_count": 183,
+            "mean_score_gap": 2.8135025666548255
+          }
+        },
+        "novel": {
+          "pooled_auroc": 0.6074594594594594,
+          "rows": 335,
+          "videos": 138,
+          "source_pairs": {
+            "pair_acc": 0.6223776223776224,
+            "pair_count": 143,
+            "mean_score_gap": 1.904536900924636
+          }
+        }
+      },
+      "checkpoint_hash": "deb54ecb7e372bf17fe741108e247c9168ca44ec82697f6a35f0366d9d43d03a",
+      "trainable_parameters": 200433,
+      "localization_preserved": "offline readout cannot change frozen localization tensors",
+      "novel_dev_used_for_epoch_selection": false,
+      "formal_u_read": false,
+      "threshold_role": "inner_seen_val",
+      "elapsed_training_seconds": 28.363834857940674,
+      "delta_novel_auroc": -0.008576576576576511,
+      "delta_seen_auroc": 0.01985510471527807,
+      "policy_novel_auroc": 0.6074594594594594
+    },
+    {
+      "fold": "A1_action_01",
+      "variant": "R2",
+      "seed": 3407,
+      "pair_weight": 0.0,
+      "best_epoch": 47,
+      "deployment": "learned",
+      "baseline": {
+        "seen": {
+          "pooled_auroc": 0.8600870360754644,
+          "rows": 625,
+          "videos": 251,
+          "source_pairs": {
+            "pair_acc": 0.7978142076502732,
+            "pair_count": 183,
+            "mean_score_gap": 1.5908533048312195
+          }
+        },
+        "novel": {
+          "pooled_auroc": 0.616036036036036,
+          "rows": 335,
+          "videos": 138,
+          "source_pairs": {
+            "pair_acc": 0.7062937062937062,
+            "pair_count": 143,
+            "mean_score_gap": 1.3199599610342012
+          }
+        }
+      },
+      "learned": {
+        "seen": {
+          "pooled_auroc": 0.906584575822763,
+          "rows": 625,
+          "videos": 251,
+          "source_pairs": {
+            "pair_acc": 0.7704918032786885,
+            "pair_count": 183,
+            "mean_score_gap": 3.98122080057208
+          }
+        },
+        "novel": {
+          "pooled_auroc": 0.599027027027027,
+          "rows": 335,
+          "videos": 138,
+          "source_pairs": {
+            "pair_acc": 0.4405594405594406,
+            "pair_count": 143,
+            "mean_score_gap": 0.42399040864897775
+          }
+        }
+      },
+      "checkpoint_hash": "9eab0b80eff7fbdc6a40575c53faeab98f9d3c28f85a1c9af7f1ca4448821f8d",
+      "trainable_parameters": 199809,
+      "localization_preserved": "offline readout cannot change frozen localization tensors",
+      "novel_dev_used_for_epoch_selection": false,
+      "formal_u_read": false,
+      "threshold_role": "inner_seen_val",
+      "elapsed_training_seconds": 101.5200834274292,
+      "delta_novel_auroc": -0.017009009009008924,
+      "delta_seen_auroc": 0.04649753974729853,
+      "policy_novel_auroc": 0.599027027027027
+    },
+    {
+      "fold": "A1_action_01",
+      "variant": "R3",
+      "seed": 3407,
+      "pair_weight": 0.0,
+      "best_epoch": 20,
+      "deployment": "learned",
+      "baseline": {
+        "seen": {
+          "pooled_auroc": 0.8600870360754644,
+          "rows": 625,
+          "videos": 251,
+          "source_pairs": {
+            "pair_acc": 0.7978142076502732,
+            "pair_count": 183,
+            "mean_score_gap": 1.5908533048312195
+          }
+        },
+        "novel": {
+          "pooled_auroc": 0.616036036036036,
+          "rows": 335,
+          "videos": 138,
+          "source_pairs": {
+            "pair_acc": 0.7062937062937062,
+            "pair_count": 143,
+            "mean_score_gap": 1.3199599610342012
+          }
+        }
+      },
+      "learned": {
+        "seen": {
+          "pooled_auroc": 0.8994263531389857,
+          "rows": 625,
+          "videos": 251,
+          "source_pairs": {
+            "pair_acc": 0.7868852459016393,
+            "pair_count": 183,
+            "mean_score_gap": 3.5611206358247767
+          }
+        },
+        "novel": {
+          "pooled_auroc": 0.6808288288288289,
+          "rows": 335,
+          "videos": 138,
+          "source_pairs": {
+            "pair_acc": 0.7062937062937062,
+            "pair_count": 143,
+            "mean_score_gap": 1.3138144266355287
+          }
+        }
+      },
+      "checkpoint_hash": "9debebf8466f1588534b0f5964180bc8e37c37e86b9c75d2fc3a7d2ef0f2646a",
+      "trainable_parameters": 199809,
+      "localization_preserved": "offline readout cannot change frozen localization tensors",
+      "novel_dev_used_for_epoch_selection": false,
+      "formal_u_read": false,
+      "threshold_role": "inner_seen_val",
+      "elapsed_training_seconds": 102.85673260688782,
+      "delta_novel_auroc": 0.06479279279279293,
+      "delta_seen_auroc": 0.03933931706352123,
+      "policy_novel_auroc": 0.6808288288288289
+    },
+    {
+      "fold": "A1_action_02",
+      "variant": "R1",
+      "seed": 3407,
+      "pair_weight": 0.0,
+      "best_epoch": 34,
+      "deployment": "learned",
+      "baseline": {
+        "seen": {
+          "pooled_auroc": 0.8313234440736978,
+          "rows": 714,
+          "videos": 276,
+          "source_pairs": {
+            "pair_acc": 0.7477876106194691,
+            "pair_count": 226,
+            "mean_score_gap": 1.099770216040511
+          }
+        },
+        "novel": {
+          "pooled_auroc": 0.4994376968061179,
+          "rows": 193,
+          "videos": 113,
+          "source_pairs": {
+            "pair_acc": 0.6842105263157895,
+            "pair_count": 38,
+            "mean_score_gap": 1.2291097828236066
+          }
+        }
+      },
+      "learned": {
+        "seen": {
+          "pooled_auroc": 0.8455679675032641,
+          "rows": 714,
+          "videos": 276,
+          "source_pairs": {
+            "pair_acc": 0.7300884955752213,
+            "pair_count": 226,
+            "mean_score_gap": 1.573832893430923
+          }
+        },
+        "novel": {
+          "pooled_auroc": 0.49516419253261357,
+          "rows": 193,
+          "videos": 113,
+          "source_pairs": {
+            "pair_acc": 0.6842105263157895,
+            "pair_count": 38,
+            "mean_score_gap": 0.6929311015103993
+          }
+        }
+      },
+      "checkpoint_hash": "56ce6ed10d0c08a76bddd445cd925fae07eee886910fd1ccba15d79041a65356",
+      "trainable_parameters": 50049,
+      "localization_preserved": "offline readout cannot change frozen localization tensors",
+      "novel_dev_used_for_epoch_selection": false,
+      "formal_u_read": false,
+      "threshold_role": "inner_seen_val",
+      "elapsed_training_seconds": 33.674394369125366,
+      "delta_novel_auroc": -0.004273504273504314,
+      "delta_seen_auroc": 0.01424452342956628,
+      "policy_novel_auroc": 0.49516419253261357
+    },
+    {
+      "fold": "A1_action_02",
+      "variant": "R1_matched",
+      "seed": 3407,
+      "pair_weight": 0.0,
+      "best_epoch": 43,
+      "deployment": "learned",
+      "baseline": {
+        "seen": {
+          "pooled_auroc": 0.8313234440736978,
+          "rows": 714,
+          "videos": 276,
+          "source_pairs": {
+            "pair_acc": 0.7477876106194691,
+            "pair_count": 226,
+            "mean_score_gap": 1.099770216040511
+          }
+        },
+        "novel": {
+          "pooled_auroc": 0.4994376968061179,
+          "rows": 193,
+          "videos": 113,
+          "source_pairs": {
+            "pair_acc": 0.6842105263157895,
+            "pair_count": 38,
+            "mean_score_gap": 1.2291097828236066
+          }
+        }
+      },
+      "learned": {
+        "seen": {
+          "pooled_auroc": 0.8477078195270565,
+          "rows": 714,
+          "videos": 276,
+          "source_pairs": {
+            "pair_acc": 0.7345132743362832,
+            "pair_count": 226,
+            "mean_score_gap": 2.317484219039304
+          }
+        },
+        "novel": {
+          "pooled_auroc": 0.48886639676113364,
+          "rows": 193,
+          "videos": 113,
+          "source_pairs": {
+            "pair_acc": 0.6842105263157895,
+            "pair_count": 38,
+            "mean_score_gap": 1.461092156603148
+          }
+        }
+      },
+      "checkpoint_hash": "b48f4c4576789d7181fa9f92d0ba0c585b61cd3a6f433ac4f47f0860834fb8e6",
+      "trainable_parameters": 200433,
+      "localization_preserved": "offline readout cannot change frozen localization tensors",
+      "novel_dev_used_for_epoch_selection": false,
+      "formal_u_read": false,
+      "threshold_role": "inner_seen_val",
+      "elapsed_training_seconds": 18.110223054885864,
+      "delta_novel_auroc": -0.010571300044984244,
+      "delta_seen_auroc": 0.01638437545335869,
+      "policy_novel_auroc": 0.48886639676113364
+    },
+    {
+      "fold": "A1_action_02",
+      "variant": "R2",
+      "seed": 3407,
+      "pair_weight": 0.0,
+      "best_epoch": 46,
+      "deployment": "learned",
+      "baseline": {
+        "seen": {
+          "pooled_auroc": 0.8313234440736978,
+          "rows": 714,
+          "videos": 276,
+          "source_pairs": {
+            "pair_acc": 0.7477876106194691,
+            "pair_count": 226,
+            "mean_score_gap": 1.099770216040511
+          }
+        },
+        "novel": {
+          "pooled_auroc": 0.4994376968061179,
+          "rows": 193,
+          "videos": 113,
+          "source_pairs": {
+            "pair_acc": 0.6842105263157895,
+            "pair_count": 38,
+            "mean_score_gap": 1.2291097828236066
+          }
+        }
+      },
+      "learned": {
+        "seen": {
+          "pooled_auroc": 0.8867147831133033,
+          "rows": 714,
+          "videos": 276,
+          "source_pairs": {
+            "pair_acc": 0.7566371681415929,
+            "pair_count": 226,
+            "mean_score_gap": 3.910870975097724
+          }
+        },
+        "novel": {
+          "pooled_auroc": 0.5310391363022942,
+          "rows": 193,
+          "videos": 113,
+          "source_pairs": {
+            "pair_acc": 0.6052631578947368,
+            "pair_count": 38,
+            "mean_score_gap": 2.432423875520104
+          }
+        }
+      },
+      "checkpoint_hash": "accc7070821313f2111b1829523e1250e3e6ba91b95d29d62fed1eb8432d91c9",
+      "trainable_parameters": 199809,
+      "localization_preserved": "offline readout cannot change frozen localization tensors",
+      "novel_dev_used_for_epoch_selection": false,
+      "formal_u_read": false,
+      "threshold_role": "inner_seen_val",
+      "elapsed_training_seconds": 110.99336314201355,
+      "delta_novel_auroc": 0.031601439496176276,
+      "delta_seen_auroc": 0.05539133903960547,
+      "policy_novel_auroc": 0.5310391363022942
+    },
+    {
+      "fold": "C1_composition_01",
+      "variant": "R1",
+      "seed": 3407,
+      "pair_weight": 0.0,
+      "best_epoch": 2,
+      "deployment": "baseline_fallback",
+      "baseline": {
+        "seen": {
+          "pooled_auroc": 0.8137722475227407,
+          "rows": 943,
+          "videos": 370,
+          "source_pairs": {
+            "pair_acc": 0.7792792792792793,
+            "pair_count": 222,
+            "mean_score_gap": 3.579253021526981
+          }
+        },
+        "novel": {
+          "pooled_auroc": 0.5553262578616353,
+          "rows": 202,
+          "videos": 92,
+          "source_pairs": {
+            "pair_acc": 0.6578947368421053,
+            "pair_count": 76,
+            "mean_score_gap": 0.5690541597769448
+          }
+        }
+      },
+      "learned": {
+        "seen": {
+          "pooled_auroc": 0.8093974492296292,
+          "rows": 943,
+          "videos": 370,
+          "source_pairs": {
+            "pair_acc": 0.7837837837837838,
+            "pair_count": 222,
+            "mean_score_gap": 4.721265822481196
+          }
+        },
+        "novel": {
+          "pooled_auroc": 0.546875,
+          "rows": 202,
+          "videos": 92,
+          "source_pairs": {
+            "pair_acc": 0.6842105263157895,
+            "pair_count": 76,
+            "mean_score_gap": 0.7248954154354962
+          }
+        }
+      },
+      "checkpoint_hash": "3ec9a1aa98889deabc248b2644431f23876a889903a0dd74380b48f198469eee",
+      "trainable_parameters": 50049,
+      "localization_preserved": "offline readout cannot change frozen localization tensors",
+      "novel_dev_used_for_epoch_selection": false,
+      "formal_u_read": false,
+      "threshold_role": "inner_seen_val",
+      "elapsed_training_seconds": 37.93509292602539,
+      "delta_novel_auroc": -0.008451257861635253,
+      "delta_seen_auroc": -0.004374798293111493,
+      "policy_novel_auroc": 0.5553262578616353
+    },
+    {
+      "fold": "C1_composition_01",
+      "variant": "R1_matched",
+      "seed": 3407,
+      "pair_weight": 0.0,
+      "best_epoch": 2,
+      "deployment": "baseline_fallback",
+      "baseline": {
+        "seen": {
+          "pooled_auroc": 0.8137722475227407,
+          "rows": 943,
+          "videos": 370,
+          "source_pairs": {
+            "pair_acc": 0.7792792792792793,
+            "pair_count": 222,
+            "mean_score_gap": 3.579253021526981
+          }
+        },
+        "novel": {
+          "pooled_auroc": 0.5553262578616353,
+          "rows": 202,
+          "videos": 92,
+          "source_pairs": {
+            "pair_acc": 0.6578947368421053,
+            "pair_count": 76,
+            "mean_score_gap": 0.5690541597769448
+          }
+        }
+      },
+      "learned": {
+        "seen": {
+          "pooled_auroc": 0.80856671567397,
+          "rows": 943,
+          "videos": 370,
+          "source_pairs": {
+            "pair_acc": 0.7837837837837838,
+            "pair_count": 222,
+            "mean_score_gap": 4.783301971198337
+          }
+        },
+        "novel": {
+          "pooled_auroc": 0.5509040880503144,
+          "rows": 202,
+          "videos": 92,
+          "source_pairs": {
+            "pair_acc": 0.6842105263157895,
+            "pair_count": 76,
+            "mean_score_gap": 0.7117836384690905
+          }
+        }
+      },
+      "checkpoint_hash": "7de60073916d3dfd5518e1914a48808f35a8adeda3bdc587e35262f49d39c968",
+      "trainable_parameters": 200433,
+      "localization_preserved": "offline readout cannot change frozen localization tensors",
+      "novel_dev_used_for_epoch_selection": false,
+      "formal_u_read": false,
+      "threshold_role": "inner_seen_val",
+      "elapsed_training_seconds": 39.3387656211853,
+      "delta_novel_auroc": -0.00442216981132082,
+      "delta_seen_auroc": -0.005205531848770706,
+      "policy_novel_auroc": 0.5553262578616353
+    },
+    {
+      "fold": "C1_composition_01",
+      "variant": "R2",
+      "seed": 3407,
+      "pair_weight": 0.0,
+      "best_epoch": 50,
+      "deployment": "baseline_fallback",
+      "baseline": {
+        "seen": {
+          "pooled_auroc": 0.8137722475227407,
+          "rows": 943,
+          "videos": 370,
+          "source_pairs": {
+            "pair_acc": 0.7792792792792793,
+            "pair_count": 222,
+            "mean_score_gap": 3.579253021526981
+          }
+        },
+        "novel": {
+          "pooled_auroc": 0.5553262578616353,
+          "rows": 202,
+          "videos": 92,
+          "source_pairs": {
+            "pair_acc": 0.6578947368421053,
+            "pair_count": 76,
+            "mean_score_gap": 0.5690541597769448
+          }
+        }
+      },
+      "learned": {
+        "seen": {
+          "pooled_auroc": 0.8063643752764131,
+          "rows": 943,
+          "videos": 370,
+          "source_pairs": {
+            "pair_acc": 0.7837837837837838,
+            "pair_count": 222,
+            "mean_score_gap": 4.665465427343398
+          }
+        },
+        "novel": {
+          "pooled_auroc": 0.5532625786163522,
+          "rows": 202,
+          "videos": 92,
+          "source_pairs": {
+            "pair_acc": 0.6578947368421053,
+            "pair_count": 76,
+            "mean_score_gap": 1.2014925081871057
+          }
+        }
+      },
+      "checkpoint_hash": "474efa20449d9a8263541a10d0aa75e1fb9a2886b10f8bd4b880a396f22f1e7e",
+      "trainable_parameters": 199809,
+      "localization_preserved": "offline readout cannot change frozen localization tensors",
+      "novel_dev_used_for_epoch_selection": false,
+      "formal_u_read": false,
+      "threshold_role": "inner_seen_val",
+      "elapsed_training_seconds": 139.94844555854797,
+      "delta_novel_auroc": -0.0020636792452830566,
+      "delta_seen_auroc": -0.0074078722463275515,
+      "policy_novel_auroc": 0.5553262578616353
+    },
+    {
+      "fold": "C1_composition_02",
+      "variant": "R1",
+      "seed": 3407,
+      "pair_weight": 0.0,
+      "best_epoch": 1,
+      "deployment": "learned",
+      "baseline": {
+        "seen": {
+          "pooled_auroc": 0.842792857347588,
+          "rows": 946,
+          "videos": 366,
+          "source_pairs": {
+            "pair_acc": 0.6613545816733067,
+            "pair_count": 251,
+            "mean_score_gap": 1.4622197124468852
+          }
+        },
+        "novel": {
+          "pooled_auroc": 0.5193617021276595,
+          "rows": 144,
+          "videos": 96,
+          "source_pairs": {
+            "pair_acc": 0.72,
+            "pair_count": 25,
+            "mean_score_gap": 0.3404045033454895
+          }
+        }
+      },
+      "learned": {
+        "seen": {
+          "pooled_auroc": 0.8447418957264468,
+          "rows": 946,
+          "videos": 366,
+          "source_pairs": {
+            "pair_acc": 0.6573705179282868,
+            "pair_count": 251,
+            "mean_score_gap": 1.8350297164513296
+          }
+        },
+        "novel": {
+          "pooled_auroc": 0.4870212765957447,
+          "rows": 144,
+          "videos": 96,
+          "source_pairs": {
+            "pair_acc": 0.72,
+            "pair_count": 25,
+            "mean_score_gap": 0.2785672730207443
+          }
+        }
+      },
+      "checkpoint_hash": "0515afb0b9fe0c61c1349ce978818bca795dc2f864fe071afa7c8b87ac4f7163",
+      "trainable_parameters": 50049,
+      "localization_preserved": "offline readout cannot change frozen localization tensors",
+      "novel_dev_used_for_epoch_selection": false,
+      "formal_u_read": false,
+      "threshold_role": "inner_seen_val",
+      "elapsed_training_seconds": 44.09505558013916,
+      "delta_novel_auroc": -0.03234042553191485,
+      "delta_seen_auroc": 0.0019490383788587362,
+      "policy_novel_auroc": 0.4870212765957447
+    },
+    {
+      "fold": "C1_composition_02",
+      "variant": "R1_matched",
+      "seed": 3407,
+      "pair_weight": 0.0,
+      "best_epoch": 1,
+      "deployment": "learned",
+      "baseline": {
+        "seen": {
+          "pooled_auroc": 0.842792857347588,
+          "rows": 946,
+          "videos": 366,
+          "source_pairs": {
+            "pair_acc": 0.6613545816733067,
+            "pair_count": 251,
+            "mean_score_gap": 1.4622197124468852
+          }
+        },
+        "novel": {
+          "pooled_auroc": 0.5193617021276595,
+          "rows": 144,
+          "videos": 96,
+          "source_pairs": {
+            "pair_acc": 0.72,
+            "pair_count": 25,
+            "mean_score_gap": 0.3404045033454895
+          }
+        }
+      },
+      "learned": {
+        "seen": {
+          "pooled_auroc": 0.844151451746969,
+          "rows": 946,
+          "videos": 366,
+          "source_pairs": {
+            "pair_acc": 0.6533864541832669,
+            "pair_count": 251,
+            "mean_score_gap": 1.8891347651017376
+          }
+        },
+        "novel": {
+          "pooled_auroc": 0.4831914893617021,
+          "rows": 144,
+          "videos": 96,
+          "source_pairs": {
+            "pair_acc": 0.72,
+            "pair_count": 25,
+            "mean_score_gap": 0.1929032623767853
+          }
+        }
+      },
+      "checkpoint_hash": "ce494308ba5d3f94d4150256a2f570e69b3468ea10851e8b7e8d4a4bf5786bed",
+      "trainable_parameters": 200433,
+      "localization_preserved": "offline readout cannot change frozen localization tensors",
+      "novel_dev_used_for_epoch_selection": false,
+      "formal_u_read": false,
+      "threshold_role": "inner_seen_val",
+      "elapsed_training_seconds": 42.511337757110596,
+      "delta_novel_auroc": -0.036170212765957444,
+      "delta_seen_auroc": 0.001358594399381019,
+      "policy_novel_auroc": 0.4831914893617021
+    },
+    {
+      "fold": "C1_composition_02",
+      "variant": "R2",
+      "seed": 3407,
+      "pair_weight": 0.0,
+      "best_epoch": 42,
+      "deployment": "learned",
+      "baseline": {
+        "seen": {
+          "pooled_auroc": 0.842792857347588,
+          "rows": 946,
+          "videos": 366,
+          "source_pairs": {
+            "pair_acc": 0.6613545816733067,
+            "pair_count": 251,
+            "mean_score_gap": 1.4622197124468852
+          }
+        },
+        "novel": {
+          "pooled_auroc": 0.5193617021276595,
+          "rows": 144,
+          "videos": 96,
+          "source_pairs": {
+            "pair_acc": 0.72,
+            "pair_count": 25,
+            "mean_score_gap": 0.3404045033454895
+          }
+        }
+      },
+      "learned": {
+        "seen": {
+          "pooled_auroc": 0.860592163719224,
+          "rows": 946,
+          "videos": 366,
+          "source_pairs": {
+            "pair_acc": 0.7529880478087649,
+            "pair_count": 251,
+            "mean_score_gap": 2.312827009158543
+          }
+        },
+        "novel": {
+          "pooled_auroc": 0.5023404255319148,
+          "rows": 144,
+          "videos": 96,
+          "source_pairs": {
+            "pair_acc": 0.68,
+            "pair_count": 25,
+            "mean_score_gap": 0.2841498589515686
+          }
+        }
+      },
+      "checkpoint_hash": "2c9b1e9aaa8b6ed7cb3c36c3d70b37ffda22c4060b17e023501f8056014bbf26",
+      "trainable_parameters": 199809,
+      "localization_preserved": "offline readout cannot change frozen localization tensors",
+      "novel_dev_used_for_epoch_selection": false,
+      "formal_u_read": false,
+      "threshold_role": "inner_seen_val",
+      "elapsed_training_seconds": 149.55401945114136,
+      "delta_novel_auroc": -0.017021276595744705,
+      "delta_seen_auroc": 0.01779930637163596,
+      "policy_novel_auroc": 0.5023404255319148
+    }
+  ],
+  "local_roi_gate": "pending"
+}
