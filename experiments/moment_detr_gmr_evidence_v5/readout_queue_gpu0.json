@@ -3,7 +3,7 @@
   "pid": 1780542,
   "stage": "P3_readouts",
   "freeze_hash": "1518d7f3e5705165b2642de599bf982dfcef6a00492f7a0b48574c0986cf0b92",
-  "status": "running",
+  "status": "completed",
   "tasks": [
     {
       "task": "A1_action_01_extract",
@@ -160,10 +160,192 @@
     },
     {
       "task": "A1_action_02_R3_seed3407_eval",
-      "status": "running",
+      "status": "completed",
       "log": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/results/moment_detr_gmr_evidence_v5/queues/A1_action_02_R3_seed3407_eval.log",
       "started_unix": 1791041830.8215902,
-      "pid": 1785958
+      "pid": 1785958,
+      "exit_code": 0,
+      "elapsed_seconds": 2.3721606731414795
+    },
+    {
+      "task": "A1_action_01_Cq_seed3407_train",
+      "status": "completed",
+      "log": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/results/moment_detr_gmr_evidence_v5/queues/A1_action_01_Cq_seed3407_train.log",
+      "started_unix": 1791041833.2911808,
+      "pid": 1786043,
+      "exit_code": 0,
+      "elapsed_seconds": 37.533493757247925
+    },
+    {
+      "task": "A1_action_01_Cq_seed3407_eval",
+      "status": "completed",
+      "log": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/results/moment_detr_gmr_evidence_v5/queues/A1_action_01_Cq_seed3407_eval.log",
+      "started_unix": 1791041870.8262346,
+      "pid": 1786299,
+      "exit_code": 0,
+      "elapsed_seconds": 2.2739202976226807
+    },
+    {
+      "task": "A1_action_02_Cq_seed3407_train",
+      "status": "completed",
+      "log": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/results/moment_detr_gmr_evidence_v5/queues/A1_action_02_Cq_seed3407_train.log",
+      "started_unix": 1791041873.1984303,
+      "pid": 1786333,
+      "exit_code": 0,
+      "elapsed_seconds": 40.887441873550415
+    },
+    {
+      "task": "A1_action_02_Cq_seed3407_eval",
+      "status": "completed",
+      "log": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/results/moment_detr_gmr_evidence_v5/queues/A1_action_02_Cq_seed3407_eval.log",
+      "started_unix": 1791041914.0874684,
+      "pid": 1786609,
+      "exit_code": 0,
+      "elapsed_seconds": 2.3248133659362793
+    },
+    {
+      "task": "A1_action_01_Cv_seed3407_train",
+      "status": "completed",
+      "log": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/results/moment_detr_gmr_evidence_v5/queues/A1_action_01_Cv_seed3407_train.log",
+      "started_unix": 1791041916.5137253,
+      "pid": 1786630,
+      "exit_code": 0,
+      "elapsed_seconds": 27.32882308959961
+    },
+    {
+      "task": "A1_action_01_Cv_seed3407_eval",
+      "status": "completed",
+      "log": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/results/moment_detr_gmr_evidence_v5/queues/A1_action_01_Cv_seed3407_eval.log",
+      "started_unix": 1791041943.8441296,
+      "pid": 1786806,
+      "exit_code": 0,
+      "elapsed_seconds": 2.223752975463867
+    },
+    {
+      "task": "A1_action_02_Cv_seed3407_train",
+      "status": "completed",
+      "log": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/results/moment_detr_gmr_evidence_v5/queues/A1_action_02_Cv_seed3407_train.log",
+      "started_unix": 1791041946.1660445,
+      "pid": 1786827,
+      "exit_code": 0,
+      "elapsed_seconds": 33.58965992927551
+    },
+    {
+      "task": "A1_action_02_Cv_seed3407_eval",
+      "status": "completed",
+      "log": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/results/moment_detr_gmr_evidence_v5/queues/A1_action_02_Cv_seed3407_eval.log",
+      "started_unix": 1791041979.7573965,
+      "pid": 1787045,
+      "exit_code": 0,
+      "elapsed_seconds": 2.274590253829956
+    },
+    {
+      "task": "A1_action_01_D_v4_seed3407_train",
+      "status": "completed",
+      "log": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/results/moment_detr_gmr_evidence_v5/queues/A1_action_01_D_v4_seed3407_train.log",
+      "started_unix": 1791041982.1345963,
+      "pid": 1787066,
+      "exit_code": 0,
+      "elapsed_seconds": 20.516072511672974
+    },
+    {
+      "task": "A1_action_01_D_v4_seed3407_eval",
+      "status": "completed",
+      "log": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/results/moment_detr_gmr_evidence_v5/queues/A1_action_01_D_v4_seed3407_eval.log",
+      "started_unix": 1791042002.6524827,
+      "pid": 1787207,
+      "exit_code": 0,
+      "elapsed_seconds": 2.224921703338623
+    },
+    {
+      "task": "A1_action_02_D_v4_seed3407_train",
+      "status": "completed",
+      "log": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/results/moment_detr_gmr_evidence_v5/queues/A1_action_02_D_v4_seed3407_train.log",
+      "started_unix": 1791042004.9760094,
+      "pid": 1787236,
+      "exit_code": 0,
+      "elapsed_seconds": 23.212952136993408
+    },
+    {
+      "task": "A1_action_02_D_v4_seed3407_eval",
+      "status": "completed",
+      "log": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/results/moment_detr_gmr_evidence_v5/queues/A1_action_02_D_v4_seed3407_eval.log",
+      "started_unix": 1791042028.1907973,
+      "pid": 1787444,
+      "exit_code": 0,
+      "elapsed_seconds": 2.275146484375
+    },
+    {
+      "task": "A1_action_01_D_no_bound_seed3407_train",
+      "status": "completed",
+      "log": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/results/moment_detr_gmr_evidence_v5/queues/A1_action_01_D_no_bound_seed3407_train.log",
+      "started_unix": 1791042030.5686622,
+      "pid": 1787475,
+      "exit_code": 0,
+      "elapsed_seconds": 19.862479209899902
+    },
+    {
+      "task": "A1_action_01_D_no_bound_seed3407_eval",
+      "status": "completed",
+      "log": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/results/moment_detr_gmr_evidence_v5/queues/A1_action_01_D_no_bound_seed3407_eval.log",
+      "started_unix": 1791042050.4330037,
+      "pid": 1787619,
+      "exit_code": 0,
+      "elapsed_seconds": 2.273212194442749
+    },
+    {
+      "task": "A1_action_02_D_no_bound_seed3407_train",
+      "status": "completed",
+      "log": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/results/moment_detr_gmr_evidence_v5/queues/A1_action_02_D_no_bound_seed3407_train.log",
+      "started_unix": 1791042052.8073606,
+      "pid": 1787651,
+      "exit_code": 0,
+      "elapsed_seconds": 22.153088808059692
+    },
+    {
+      "task": "A1_action_02_D_no_bound_seed3407_eval",
+      "status": "completed",
+      "log": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/results/moment_detr_gmr_evidence_v5/queues/A1_action_02_D_no_bound_seed3407_eval.log",
+      "started_unix": 1791042074.9625719,
+      "pid": 1787722,
+      "exit_code": 0,
+      "elapsed_seconds": 2.323255777359009
+    },
+    {
+      "task": "A1_action_01_D_no_anchor_seed3407_train",
+      "status": "completed",
+      "log": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/results/moment_detr_gmr_evidence_v5/queues/A1_action_01_D_no_anchor_seed3407_train.log",
+      "started_unix": 1791042077.389883,
+      "pid": 1787747,
+      "exit_code": 0,
+      "elapsed_seconds": 20.750040769577026
+    },
+    {
+      "task": "A1_action_01_D_no_anchor_seed3407_eval",
+      "status": "completed",
+      "log": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/results/moment_detr_gmr_evidence_v5/queues/A1_action_01_D_no_anchor_seed3407_eval.log",
+      "started_unix": 1791042098.141936,
+      "pid": 1787765,
+      "exit_code": 0,
+      "elapsed_seconds": 2.323462963104248
+    },
+    {
+      "task": "A1_action_02_D_no_anchor_seed3407_train",
+      "status": "completed",
+      "log": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/results/moment_detr_gmr_evidence_v5/queues/A1_action_02_D_no_anchor_seed3407_train.log",
+      "started_unix": 1791042100.5696018,
+      "pid": 1787783,
+      "exit_code": 0,
+      "elapsed_seconds": 21.605772495269775
+    },
+    {
+      "task": "A1_action_02_D_no_anchor_seed3407_eval",
+      "status": "completed",
+      "log": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/results/moment_detr_gmr_evidence_v5/queues/A1_action_02_D_no_anchor_seed3407_eval.log",
+      "started_unix": 1791042122.1775198,
+      "pid": 1787850,
+      "exit_code": 0,
+      "elapsed_seconds": 2.37371563911438
     }
   ]
 }
