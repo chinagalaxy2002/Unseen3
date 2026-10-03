@@ -2,7 +2,7 @@
   "experiment": "Moment-DETR-TRM-GMR-Joint-v2",
   "status": "frozen before any Joint-v2 U test inference",
   "exploratory_status": "Joint-v2 is an exploratory follow-up motivated by Joint-v1 failure modes; Joint-v1 U results were viewed before v2 was designed, so v2 is not an untouched unseen evaluation.",
-  "git_sha": "6ed9b672d6bbf514e17816ff091f09e12cc3e69e",
+  "git_sha": "3793876bcd9d66222f190220673d1b57b0353bbb",
   "source_joint_v1_sha": "a25792a927c6feff2e19f20548a282963a44d800",
   "baseline_readme_correction_sha": "cb2cb37802339eeb05114f5c929e08825bc97205",
   "splits": ["A1", "A2_alt", "A3", "C1", "C2_alt"],
