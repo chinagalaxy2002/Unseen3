@@ -1,0 +1,19 @@
+{
+  "name": "Moment-DETR-GMR-Residual-AUC-v4",
+  "short_name": "GMR-AUC-v4",
+  "exploratory_status": "exploratory follow-up; not an untouched unseen evaluation",
+  "seed": 3407,
+  "epochs": 50,
+  "batch_size_bce": 256,
+  "global_auc_positive": 128,
+  "global_auc_negative": 128,
+  "same_semantic_pairs": 256,
+  "auc_margin": 1.0,
+  "residual_bound": 2.0,
+  "loss_coefficients": {"bce": 1.0, "global_auc": 1.0, "same_semantic": 1.0, "anchor": 0.1},
+  "optimizer": {"name": "AdamW", "lr": 0.001, "weight_decay": 0.0001, "scheduler": null},
+  "adapter": {"layer_norm": true, "hidden_dim": 64, "activation": "GELU", "dropout": 0.1, "last_layer_zero_initialized": true},
+  "checkpoint_selection": "max pooled Seen-validation AUROC; epoch 0 is included; ties choose earlier epoch",
+  "canonical_auroc": "full-precision pooled ROC AUC over logits, S+ vs S- and U+ vs U- separately",
+  "bootstrap": {"replicates": 2000, "seed": 3407, "stratified": true, "paired": true}
+}

@@ -1,0 +1,19 @@
+{
+  "split": "A1",
+  "baseline_loaded": true,
+  "all_baseline_parameters_frozen": true,
+  "exist_repr_head_replay": true,
+  "adapter_zero_init_and_epoch0_anchor": true,
+  "baseline_grads_none_and_parameters_unchanged": true,
+  "bce_finite": true,
+  "global_auc_finite": true,
+  "same_semantic_finite_and_empty_graph_safe": true,
+  "anchor_finite": true,
+  "bounded_delta": true,
+  "feature_bank_count": 8608,
+  "seen_train_count": 8608,
+  "feature_bank_has_no_u": true,
+  "global_cross_semantic_pairs": true,
+  "localization_forward_unchanged": true,
+  "full_precision_json_roundtrip": true
+}
