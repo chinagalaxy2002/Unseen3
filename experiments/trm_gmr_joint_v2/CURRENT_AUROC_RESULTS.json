@@ -1,0 +1,70 @@
+{
+  "experiment": "Moment-DETR-TRM-GMR-Joint-v2",
+  "report_status": "interim; only splits with completed full-test inference are included",
+  "exploratory_status": "Exploratory follow-up motivated by Joint-v1 failure modes; not an untouched unseen evaluation. U is excluded from training, PCA fitting, checkpoint selection, threshold calibration, and hyperparameter selection.",
+  "canonical_auroc": "full-precision pred_exist_logit",
+  "completed_splits": [
+    "A1",
+    "A2_alt"
+  ],
+  "pending_splits": [
+    "A3",
+    "C1",
+    "C2_alt"
+  ],
+  "completed_split_count": 2,
+  "total_split_count": 5,
+  "improved_vs_joint_v1_count": 2,
+  "degraded_vs_joint_v1_count": 0,
+  "per_split": {
+    "A1": {
+      "joint_v1_unseen_auroc": 0.4624943545984799,
+      "v2_semantic_seen_auroc": 0.828617794862871,
+      "v2_semantic_unseen_auroc": 0.48663265011963447,
+      "v2_fused_seen_auroc": 0.8279537041431352,
+      "v2_fused_unseen_auroc": 0.4809689911307139,
+      "delta_unseen_visual_fusion": -0.005663658988920572,
+      "delta_v2_vs_v1_unseen_auroc": 0.018474636532234023,
+      "seen_unseen_auroc_gap": 0.3469847130124213,
+      "best_epoch": 28,
+      "epochs_trained": 75,
+      "seen_val_mr_full_map": 24.28,
+      "frozen_threshold": 0.9889890518519866,
+      "alpha_visual": 0.9579519033432007,
+      "auc_valid_batch_fraction": 0.9529586666666667,
+      "background_sample_count": 100000,
+      "nan_inf_detected": false,
+      "missing_feature_or_fallback": false
+    },
+    "A2_alt": {
+      "joint_v1_unseen_auroc": 0.5060668498168498,
+      "v2_semantic_seen_auroc": 0.7740519087033201,
+      "v2_semantic_unseen_auroc": 0.5223405067155067,
+      "v2_fused_seen_auroc": 0.7747441934057793,
+      "v2_fused_unseen_auroc": 0.5306967338217338,
+      "delta_unseen_visual_fusion": 0.008356227106227077,
+      "delta_v2_vs_v1_unseen_auroc": 0.024629884004883973,
+      "seen_unseen_auroc_gap": 0.2440474595840455,
+      "best_epoch": 20,
+      "epochs_trained": 64,
+      "seen_val_mr_full_map": 24.39,
+      "frozen_threshold": 0.9946207134465245,
+      "alpha_visual": 0.9478161334991455,
+      "auc_valid_batch_fraction": 0.9168687500000002,
+      "background_sample_count": 100000,
+      "nan_inf_detected": false,
+      "missing_feature_or_fallback": false
+    }
+  },
+  "macro_over_completed_splits_only": {
+    "joint_v1_unseen_auroc": 0.48428060220766483,
+    "v2_semantic_seen_auroc": 0.8013348517830956,
+    "v2_semantic_unseen_auroc": 0.5044865784175706,
+    "v2_fused_seen_auroc": 0.8013489487744572,
+    "v2_fused_unseen_auroc": 0.5058328624762238,
+    "delta_unseen_visual_fusion": 0.001346284058653252,
+    "delta_v2_vs_v1_unseen_auroc": 0.021552260268558998,
+    "seen_unseen_auroc_gap": 0.2955160862982334
+  },
+  "macro_is_final_five_split_result": false
+}
