@@ -1,0 +1,98 @@
+{
+  "experiment": "Moment-DETR-TRM-GMR-Joint-v2",
+  "status": "frozen before any Joint-v2 U test inference",
+  "exploratory_status": "Joint-v2 is an exploratory follow-up motivated by Joint-v1 failure modes; Joint-v1 U results were viewed before v2 was designed, so v2 is not an untouched unseen evaluation.",
+  "git_sha": "b0812ee7eb51fd7ff7f6a03d157084ca3fa56751",
+  "source_joint_v1_sha": "a25792a927c6feff2e19f20548a282963a44d800",
+  "baseline_readme_correction_sha": "cb2cb37802339eeb05114f5c929e08825bc97205",
+  "splits": ["A1", "A2_alt", "A3", "C1", "C2_alt"],
+  "split_execution_queues": {
+    "GPU0": ["A1", "A3", "C2_alt"],
+    "GPU1": ["A2_alt", "C1"],
+    "atomic_job": "per split: fit split-specific PCA -> initialize from scratch -> train 100 epochs -> Seen-val checkpoint and threshold -> only then test inference"
+  },
+  "architecture": {
+    "inheritance": "Joint-v1 Moment-DETR transformer and localization branch, phrase-slot matcher, candidate-conditioned phrase attention, candidate-wise gated phrase refinement, semantic evidence-aware existence head, smooth logsumexp pooling, TRM losses, S+/S- training, Seen-only MR-full-mAP selection, Seen-only balanced-accuracy calibration, official soft gate, diagnostic hard gate",
+    "semantic_candidate_evidence": "existing MLP([h_j, base_margin_j, refined_margin_j, phrase_support_j, phrase_gate_j])",
+    "semantic_logit": "logsumexp(candidate_exist_evidence_semantic, dim=1) - log(Q)",
+    "visual_evidence": "raw visual candidate mean pool -> background-PCA orthogonal residual norm -> background residual standardization -> tanh",
+    "fusion": "q_fused_j = q_sem_j + softplus(alpha_visual_raw) * candidate_visual_support.detach(); fused logit uses smooth logsumexp",
+    "alpha_visual_initial": 1.0,
+    "visual_span_detach": true,
+    "visual_branch_query_independent": true,
+    "localization_branch_redesign": false
+  },
+  "visual_feature_protocol": {
+    "source": "dataset video features before input_vid_proj and before text interaction",
+    "feature_order": ["SlowFast 2304", "CLIP visual 512"],
+    "visual_feature_dim": 2816,
+    "normalization": "existing dataset preprocessing L2-normalizes each modality row-wise per clip before concatenation",
+    "tef_excluded": true,
+    "clip_length": 1,
+    "max_v_l": 200,
+    "temporal_indexing": "reuse dataset integer clip convention: floor(start/clip_length), end-exclusive int(end/clip_length), clipped to valid sequence length"
+  },
+  "background_pca": {
+    "fit_data": "same-split train S+ only",
+    "sampling": "clip-level raw visual vectors strictly outside union of GT relevant_windows",
+    "seed": 3407,
+    "max_deterministic_subsample": 100000,
+    "rank": "min(256, D-1)",
+    "configured_rank": 256,
+    "algorithm": "sklearn IncrementalPCA; stable covariance eigendecomposition fallback if sklearn is unavailable",
+    "saved_fields": ["mu_bg", "components_bg", "residual_mean_bg", "residual_std_bg"],
+    "forbidden_fit_sources": ["S-", "validation", "test", "U+", "U-", "query/text", "phrase", "predicted spans", "other splits"],
+    "per_split_independent_fit": true
+  },
+  "training_hyperparameters": {
+    "seed": 3407,
+    "lr": 0.0001,
+    "lr_drop": 400,
+    "weight_decay": 0.0001,
+    "n_epoch": 100,
+    "max_es_cnt": -1,
+    "batch_size": 16,
+    "eval_batch_size": 16,
+    "num_workers": 4,
+    "max_v_l": 200,
+    "max_ts_val": 200,
+    "clip_length": 1,
+    "lambda_refine": 1.0,
+    "phrase_scale": 10.0,
+    "lambda_con": 1.0,
+    "lambda_neg": 0.5,
+    "lambda_exc": 1.0,
+    "exist_loss_coef": 1.0,
+    "lambda_auc": 0.5,
+    "auc_margin": 1.0,
+    "background_pca_rank": 256,
+    "sampler": "existing DataLoader shuffle=True, no balanced sampler",
+    "loss": "Joint-v1 L_span + L_giou + L_label + 1.0 L_phrase_consistency + 0.5 L_phrase_negative + 1.0 L_phrase_exclusiveness + 1.0 L_exist_BCE + 0.5 L_auc_pairwise"
+  },
+  "auc_objective": {
+    "name": "loss_auc_pairwise",
+    "definition": "mean(softplus(auc_margin - (s_pos[:,None] - s_neg[None,:]))) over all within-batch pairs",
+    "surrogate_not_exact_auroc": true,
+    "empty_class_behavior": "graph-safe zero",
+    "balanced_sampling": false
+  },
+  "selection_and_threshold": {
+    "checkpoint_selection": "Seen validation MR-full-mAP",
+    "existence_threshold": "Seen validation S+/S- maximum balanced accuracy = 0.5*(TPR+TNR)",
+    "unseen_forbidden_for": ["training", "PCA fitting", "checkpoint selection", "threshold calibration", "hyperparameter selection"]
+  },
+  "test_protocol": {
+    "inference_order": "after best checkpoint and Seen-only threshold are frozen, run full test S+/S-/U+/U- inference",
+    "canonical_auroc_score": "full-precision pred_exist_logit",
+    "also_check": "full-precision probability AUROC must match logit AUROC or inference raises",
+    "machine_readable_precision": "Python/full float precision for existence logits, probabilities, candidate evidence, visual residual/support",
+    "u_results_are_untouched": false
+  },
+  "smoke_tests": "scripts/smoke_test_trm_gmr_joint_v2.py",
+  "feature_dimension_verified_from_npz": {
+    "SlowFast": 2304,
+    "CLIP_visual": 512,
+    "total_without_TEF": 2816,
+    "total_with_TEF": 2818
+  }
+}
