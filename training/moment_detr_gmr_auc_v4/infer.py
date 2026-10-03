@@ -13,7 +13,7 @@ from training.moment_detr_gmr_auc_v4.common import (
     ROOT, RELEASE_ROOT, SPLITS, auc, dataset_for, finite_or_raise, load_model,
     pooled_repr_and_logits, read_jsonl, start_end_collate, write_json,
 )
-from training.moment_detr_gmr_auc_v4.metrics import balanced_accuracy_threshold, matched_pair_acc, paired_bootstrap, raw_r1_at_05
+from training.moment_detr_gmr_auc_v4.metrics import balanced_accuracy_threshold, matched_pair_acc, paired_bootstrap, raw_localization_metrics
 from models.moment_detr_gmr.utils.span_utils import span_cxw_to_xx
 from models.moment_detr_gmr_auc_v4.residual_adapter import ResidualAdapter
 
@@ -58,6 +58,8 @@ def infer(split: str, device: str):
         for i, meta in enumerate(metas):
             scale = float(meta["duration"])
             span_sec = spans[i] * scale
+            span_cxw = raw["pred_spans"][i].detach().cpu().tolist()
+            raw_loc_logits = class_logits[i].tolist()
             s0v_i, sv_i, dv_i = float(s0[i].cpu()), float(s[i].cpu()), float(delta[i].cpu())
             row = next((r for r in source_rows if str(r["qid"]) == str(meta["qid"])), None)
             if row is None: raise RuntimeError(f"Unknown test qid {meta['qid']}")
@@ -67,9 +69,10 @@ def infer(split: str, device: str):
                 "pred_exist_logit_base": s0v_i, "pred_exist_score_base": float(sigmoid_np([s0v_i])[0]),
                 "pred_exist_logit_v4": sv_i, "pred_exist_score_v4": float(sigmoid_np([sv_i])[0]),
                 "pred_exist_delta": dv_i, "action_id": action, "composition_id": comp,
-                "raw_spans_cxw_normalized": raw["pred_spans"][i].detach().cpu().tolist(),
-                "raw_spans_seconds": span_sec.tolist(), "raw_class_logits": class_logits[i].tolist(),
-                "localization_identical": True,
+                "raw_spans_cxw_normalized_base": span_cxw, "raw_spans_cxw_normalized_v4": span_cxw,
+                "raw_spans_seconds_base": span_sec.tolist(), "raw_spans_seconds_v4": span_sec.tolist(),
+                "raw_class_logits_base": raw_loc_logits, "raw_class_logits_v4": raw_loc_logits,
+                "localization_identical": span_cxw == raw["pred_spans"][i].detach().cpu().tolist() and raw_loc_logits == class_logits[i].tolist(),
             })
     qids = [p["qid"] for p in preds]
     if len(set(qids)) != len(qids) or set(qids) != {str(r["qid"]) for r in source_rows}:
@@ -80,7 +83,7 @@ def infer(split: str, device: str):
         for p in preds: f.write(json.dumps(p, ensure_ascii=False, allow_nan=False) + "\n")
 
     by_qid = {p["qid"]: p for p in preds}
-    loc = {k: {"raw_spans_seconds": v["raw_spans_seconds"], "raw_class_logits": v["raw_class_logits"]} for k, v in by_qid.items()}
+    loc = {k: {"raw_spans_seconds": v["raw_spans_seconds_base"], "raw_class_logits": v["raw_class_logits_base"]} for k, v in by_qid.items()}
     y = np.asarray([p["exist_label"] for p in preds], dtype=np.int8)
     part = np.asarray([p["partition"] for p in preds])
     base = np.asarray([p["pred_exist_logit_base"] for p in preds], dtype=np.float64)
@@ -101,9 +104,11 @@ def infer(split: str, device: str):
     metrics["baseline_matched_pair_acc"] = pair_base; metrics["v4_matched_pair_acc"] = pair_v4; metrics["matched_pair_count"] = pair_n
     for part_name in ("S+", "U+"):
         rows = [r for r in source_rows if r["partition"] == part_name]
-        r1 = raw_r1_at_05(rows, loc)
-        metrics[f"{part_name}_raw_R1@0.5_baseline"] = r1
-        metrics[f"{part_name}_raw_R1@0.5_v4"] = r1
+        loc_metrics = raw_localization_metrics(rows, loc)
+        metrics[f"{part_name}_raw_R1@0.5_baseline"] = loc_metrics["r1_iou05"]
+        metrics[f"{part_name}_raw_R1@0.5_v4"] = loc_metrics["r1_iou05"]
+        metrics[f"{part_name}_raw_mIoU_baseline"] = loc_metrics["raw_miou"]
+        metrics[f"{part_name}_raw_mIoU_v4"] = loc_metrics["raw_miou"]
     threshold_pred = np.asarray([p["pred_exist_score_v4"] >= threshold for p in preds])
     u_pos = part == "U+"; u_neg = part == "U-"
     metrics["U+_FRR"] = float(np.mean(~threshold_pred[u_pos])) if u_pos.any() else None

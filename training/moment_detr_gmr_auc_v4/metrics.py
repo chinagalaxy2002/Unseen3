@@ -30,7 +30,7 @@ def paired_bootstrap(y, base, v4, seed=3407, replicates=2000):
             "delta_median": float(np.median(deltas)), "delta_mean": float(np.mean(deltas))}
 
 
-def raw_r1_at_05(rows, predictions):
+def raw_localization_metrics(rows, predictions):
     vals = []
     for r in rows:
         if int(r["exist_label"]) != 1: continue
@@ -42,8 +42,9 @@ def raw_r1_at_05(rows, predictions):
         for gs, ge in r["relevant_windows"]:
             inter = max(0.0, min(ed, ge) - max(st, gs)); union = max(ed, ge) - min(st, gs)
             best = max(best, inter / union if union > 0 else 0.0)
-        vals.append(best >= 0.5)
-    return float(np.mean(vals)) if vals else float("nan")
+        vals.append(best)
+    return {"r1_iou05": float(np.mean(np.asarray(vals) >= 0.5)) if vals else float("nan"),
+            "raw_miou": float(np.mean(vals)) if vals else float("nan")}
 
 
 def matched_pair_acc(pair_rows, scores):
@@ -53,4 +54,3 @@ def matched_pair_acc(pair_rows, scores):
         if pos in scores and neg in scores:
             vals.append(1.0 if scores[pos] > scores[neg] else (0.5 if scores[pos] == scores[neg] else 0.0))
     return float(np.mean(vals)) if vals else float("nan"), len(vals)
-
