@@ -1,0 +1,23 @@
+{
+  "status": "passed",
+  "device": "cuda",
+  "numeric_smooth_max": true,
+  "semantic_offset_invariance": true,
+  "all_positive_negative_graph_safe_zero": true,
+  "balanced_sampler_deterministic": true,
+  "real_mixed_batch_backward": true,
+  "ranking_gradient_modules": [
+    "semantic_head",
+    "transformer",
+    "phrase_matcher",
+    "candidate_attention",
+    "gate"
+  ],
+  "semantic_only_existence": true,
+  "empty_GT_loss_behavior": true,
+  "optimizer_step": true,
+  "real_evaluation_and_full_precision_serialization": true,
+  "group_diagnostics": true,
+  "tiny_train_validation_checkpoint_integration": true,
+  "nan_inf_detected": false
+}

@@ -1,0 +1,17 @@
+{
+  "Joint-v2_queues_cancelled": true,
+  "splits": [
+    {
+      "split": "A3",
+      "status": "stopped_by_user_for_v3_transition",
+      "completed_train_epochs_logged": 3,
+      "existing_best_checkpoint_preserved": true
+    },
+    {
+      "split": "C1",
+      "status": "stopped_by_user_for_v3_transition",
+      "completed_train_epochs_logged": 3,
+      "existing_best_checkpoint_preserved": true
+    }
+  ]
+}

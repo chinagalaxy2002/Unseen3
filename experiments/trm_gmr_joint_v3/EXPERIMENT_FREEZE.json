@@ -1,0 +1,169 @@
+{
+  "experiment": "Moment-DETR-TRM-GMR-Joint-v3",
+  "code_git_sha": null,
+  "source_joint_v2_sha": "7ec2fbbedfa5067d5c5a2f36d1a193fc46891dec",
+  "source_joint_v1_sha": "a25792a927c6feff2e19f20548a282963a44d800",
+  "status": "frozen before v3 training and U inference",
+  "created_utc": "2026-10-03T06:18:22.379799+00:00",
+  "exploratory_status": "Exploratory follow-up motivated by already inspected Joint-v1 and Joint-v2 U results; not untouched unseen evaluation",
+  "architecture": "Inherited Moment-DETR/TRM semantic existence path; final semantic LSE; no visual PCA/fusion/alpha; fresh initialization",
+  "semantic_groups": {
+    "action": "frozen semantic_graph.action_base",
+    "composition": "(action_base, object_concept or object or <no_object>)",
+    "no_reparsing": true,
+    "U_group_fitting": false
+  },
+  "robust_objective": {
+    "margin": 1.0,
+    "tau": 0.1,
+    "group_loss": "mean softplus(margin-s_pos+s_neg) within same group",
+    "level_aggregation": "tau*logsumexp(group_losses/tau), unnormalized",
+    "hierarchy_weights": {
+      "action": 0.5,
+      "composition": 0.5
+    },
+    "lambda_BCE": 1.0,
+    "lambda_robust": 1.0,
+    "lambda_matched": 1.0,
+    "matched_priority": [
+      "identical normalized query",
+      "identical composition",
+      "identical action"
+    ],
+    "surrogate_not_exact_auroc": true,
+    "global_auc_term": false
+  },
+  "sampler": {
+    "batch_size": 16,
+    "groups_per_batch": 4,
+    "positive_per_group": 2,
+    "negative_per_group": 2,
+    "level_schedule": "alternating action/composition; phase=(step+epoch)%2",
+    "epoch_batches": "ceil(number of Seen train rows/16)",
+    "epoch_seed": "3407 + zero-based epoch",
+    "anchor": "one exact-query-preferred pair plus one exploratory pair per group",
+    "unpaired_groups_excluded_and_audited": true
+  },
+  "training_hyperparameters": {
+    "seed": 3407,
+    "lr": 0.0001,
+    "wd": 0.0001,
+    "lr_drop": 400,
+    "n_epoch_max": 100,
+    "max_es_cnt": 30,
+    "early_stop_metric": "Seen validation MR-full-mAP",
+    "bsz": 16,
+    "eval_bsz": 16,
+    "max_v_l": 200,
+    "max_ts_val": 200,
+    "clip_length": 1,
+    "grad_clip": 0.1,
+    "num_workers": 4,
+    "lambda_refine": 1.0,
+    "phrase_scale": 10.0,
+    "lambda_con": 1.0,
+    "lambda_neg": 0.5,
+    "lambda_exc": 1.0,
+    "exist_loss_coef": 1.0,
+    "lambda_robust": 1.0,
+    "lambda_matched": 1.0,
+    "robust_tau": 0.1,
+    "auc_margin": 1.0
+  },
+  "checkpoint_selection": {
+    "objective": "maximize minimum Seen AUROC across fixed action/composition groups",
+    "minimum_validation_examples_per_label": 5,
+    "require_train_positive_and_negative_support": true,
+    "localization_reference": "per-split Joint-v1 Seen-validation best MR-full-mAP from best validation metrics file",
+    "floor": "reference - 1.0 percentage point",
+    "tie_break": "higher Seen mAP then earlier epoch",
+    "no_eligible_checkpoint": "record selection failure; do not read U test"
+  },
+  "split_reference_floors": {
+    "A1": 23.7,
+    "A2_alt": 25.49,
+    "A3": 23.64,
+    "C1": 23.93,
+    "C2_alt": 23.81
+  },
+  "feature_protocol": {
+    "ordering": [
+      "SlowFast 2304",
+      "CLIP visual 512",
+      "TEF 2"
+    ],
+    "per_modality_L2_normalize": true,
+    "PCA_used": false
+  },
+  "evaluation": {
+    "threshold": "Seen validation maximum balanced accuracy",
+    "canonical_auroc": "full precision existence logit",
+    "canonical_pair_acc": "full precision existence logit",
+    "probability_auroc_agreement_checked": true,
+    "U_used_for_training_selection_calibration_hyperparameters": false,
+    "official_soft_gate": true,
+    "diagnostic_hard_gate": true
+  },
+  "queues": {
+    "GPU0": [
+      "A1",
+      "A3",
+      "C2_alt"
+    ],
+    "GPU1": [
+      "A2_alt",
+      "C1"
+    ]
+  },
+  "source_sha256": {
+    "configs/moment_detr_trm_gmr_joint_v3/base.yml": "b3b2f48dae4556059655c5b71654c43c170ec0c2ab0d6ed93adbe225715a296a",
+    "configs/moment_detr_trm_gmr_joint_v3/dataset/charades_sta_semantic_novelty.yml": "1c60dd7350dfd9c22e47dbcc3c7f99d44c79b8a336c3bb8dd44040590a36182e",
+    "configs/moment_detr_trm_gmr_joint_v3/feature/clip_slowfast.yml": "6ee21de521ffe99353647188a8f288bec31f15a5eb23e1a324274fb99f03dbda",
+    "configs/moment_detr_trm_gmr_joint_v3/model/moment_detr_trm_gmr_joint_v3.yml": "fc71e46baa2491a119581e0711e5b8f5b56d9d22b48990b591d2392dfd33d723",
+    "experiments/trm_gmr_joint_v3/A1_semantic_manifest.json": "29c166f8cb6c04a04b886d4a53ae65ca0d776d951b2034c2cf1b56c62d18549f",
+    "experiments/trm_gmr_joint_v3/A2_alt_semantic_manifest.json": "e060a6e2619e873194811de5f3bcdf6588046cb440f1f327a0fdda99069ed35d",
+    "experiments/trm_gmr_joint_v3/A3_semantic_manifest.json": "38c0e6a911c2ea47d00c3618bb1b34fb7aa026d724db06b5683552abfcacf533",
+    "experiments/trm_gmr_joint_v3/C1_semantic_manifest.json": "9e926e40bad76b0f74c8432788383a705ca5789df71e028df94c54cd0d2a570e",
+    "experiments/trm_gmr_joint_v3/C2_alt_semantic_manifest.json": "35bc77523046b5038a6ad75af897d140b4486a2028d082df90660304b14a82cf",
+    "models/moment_detr_trm_gmr_joint_v3/__init__.py": "99856b40cfb3bdee0a80ac404dbe1a3c76cfa27b4d063d44574dc7b573e190d8",
+    "models/moment_detr_trm_gmr_joint_v3/joint_loss.py": "5e19e02f1fa2968c02be96b5d1139fa88f73c7f52266683d2e87a1799fa8069b",
+    "models/moment_detr_trm_gmr_joint_v3/joint_modules.py": "5208e3ec7e4defa2ceb7eaad83d0bbd098d15480ea23ac3c7c0f1dab92630f5a",
+    "models/moment_detr_trm_gmr_joint_v3/moment_detr_trm_gmr_joint.py": "f4da28639d20ba85cbb39996f91c6648448476957dc6a7b0da1073e39213af66",
+    "models/moment_detr_trm_gmr_joint_v3/robust_auc.py": "d0f7b5be7e794c68cc9c77f4335655e2119db786394c7974c1e2b8d90b9bcd04",
+    "scripts/aggregate_joint_v3.py": "5b6ba7e60bf19f867acf2088497679127e375cf6fc92da9303bfb77d0521c769",
+    "scripts/prepare_semantic_groups_joint_v3.py": "07ea678f7419a6a2a22acabf73a50eb378a5e370a8e72d50afa25f622855f4dc",
+    "scripts/queue_worker_joint_v3.py": "4408847b4bc73a1278df4afb64ace7b7ad6f423a55f94d1133a363b6701fe577",
+    "scripts/record_joint_v3_selection_failure.py": "9b5aea75d5512495355e510cc2accae337d9adda31d302978d3468c6e09d8b82",
+    "scripts/run_joint_v3_multisplit.sh": "91892d65f869ed4f0045a73c4d530eb4cef8f7b0adc242b85f68d517cf91f9ce",
+    "scripts/smoke_test_trm_gmr_joint_v3.py": "162aea70ba26e449c43d4e7357cdf0d76ddfe4a7140ebd100460ea77d6379464",
+    "scripts/train_trm_gmr_joint_v3.sh": "e07196fc66a991d2724c65d4d5ba40d656a8c873fa503ccda6f399a1fcc5452a",
+    "scripts/verify_joint_v3_freeze.py": "744720662f0785abba7dd81c8ece68a57e8f5003232ec4ae4c27014da31950a9",
+    "training/moment_detr_trm_gmr_joint_v3/__init__.py": "000e34569d4b84a1356a7f81282cdeb9acadb22bc6ae9516be643b96cc87a6ce",
+    "training/moment_detr_trm_gmr_joint_v3/config.py": "100c0257f4695f05321252f1f43e253d9f137da7979b60d1bb97878ad3e34a6a",
+    "training/moment_detr_trm_gmr_joint_v3/dataset.py": "cc64e3db5c360ad1d927fe964091f8e50c12e0b0c775c8d50d0401d74e9ca5e8",
+    "training/moment_detr_trm_gmr_joint_v3/evaluate.py": "6b27b4d27bcefac4beb390adf86ed83463dccf85da58d16f378c13ae7345481a",
+    "training/moment_detr_trm_gmr_joint_v3/infer.py": "e21aa12f31a259ec5fa3598e6d4d301b2fb4b54c90941052ada83ecceb27e50a",
+    "training/moment_detr_trm_gmr_joint_v3/semantic_groups.py": "0361fed3d66433c77aa2d7c357b18df305ec0d6a9d0221a5efd7fce6f96cd026",
+    "training/moment_detr_trm_gmr_joint_v3/train.py": "a88d7f596685e98fb75a0f6c3be2bddf40831015780186357db01e5e9c01f787"
+  },
+  "model_hyperparameters": {
+    "enc_layers": 2,
+    "dec_layers": 2,
+    "hidden_dim": 256,
+    "dim_feedforward": 1024,
+    "nheads": 8,
+    "num_queries": 10,
+    "input_dropout": 0.5,
+    "dropout": 0.1,
+    "n_input_proj": 2,
+    "aux_loss": true,
+    "span_loss_type": "l1",
+    "span_loss_coef": 10,
+    "giou_loss_coef": 1,
+    "label_loss_coef": 4,
+    "eos_coef": 0.1,
+    "max_phrases": 10,
+    "phrase_dropout_keep_probability": 0.9,
+    "model_ema": false
+  }
+}
