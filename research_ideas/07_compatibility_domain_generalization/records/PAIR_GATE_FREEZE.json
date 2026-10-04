@@ -1,0 +1,42 @@
+{
+  "idea": "07_compatibility_domain_generalization",
+  "stage": "source-linked same-video pair ERM gate before any domain-generalization training",
+  "folds": ["A1_action_01", "C1_composition_01"],
+  "seed": 3407,
+  "arms": ["B0_natural_pair_replay", "B1_pair_ERM"],
+  "epochs": 5,
+  "batch_size": 32,
+  "pair_batch_size": 16,
+  "dimension": 32,
+  "optimizer": "AdamW, lr=0.001, weight_decay=1e-4, gradient norm clip=1.0",
+  "model": "copied raw CLIP/SlowFast sequence compatibility adapter with one cross-attention layer; 75,649 trainable parameters",
+  "natural_exposure": "All strict inner-train rows once per epoch, identical order/seed policy in both arms.",
+  "pair_exposure": "Each verified same-video source positive/reviewed full-query negative unit once per epoch in both arms; replay BCE is present in both arms to match pair-row exposure and update/compute count.",
+  "objective_difference": "B0 receives replay BCE only. B1 adds 0.25 * mean softplus(0.2 - (score_positive - score_reviewed_negative)).",
+  "selection": "Inner Seen-validation pooled AUROC, earliest tie. Novel-dev is not read during training.",
+  "pair_source_gate": "Every unit must link source_qid to a human-temporally-annotated positive on the same video and have a user_attested_video_review negative. No absent label is inferred from missing annotation.",
+  "environment_audit": "Construction type is attached to complete pair units. No meta-learning, IRM, or Group-DRO is authorized in this gate. A D1/D3 comparison will be considered only if B1 provides reproducible conditional evidence.",
+  "required_metrics": [
+    "natural Seen and Novel pooled AUROC with video-cluster uncertainty",
+    "same-query cross-video PairAcc/AUROC with connected query-video component uncertainty",
+    "same-video source-linked PairAcc with video-cluster uncertainty",
+    "query-only and video-only baselines",
+    "fresh pre-fusion raw-video swap followed by adapter forward with original labels retained only as dependence diagnostic",
+    "strict-inner canonical baseline AUROC and frozen Seen localization",
+    "parameter count, train/evaluation/shuffle cost, per-row predictions, coverage validation"
+  ],
+  "formal_U_accessed": false,
+  "interpretation_rule": "A pooled gain without conditional support is not video-query compatibility evidence. A1-only conditional change is exploratory and does not pass the cross-fold gate.",
+  "pilot_is_exploratory": true,
+  "frozen_at": "2026-10-04T04:32:00+08:00",
+  "smoke_task": "07_smoke_A1_action_01_B0_natural_pair_replay_seed3407_manualrepair2",
+  "source_pair_manifests": {
+    "A1_action_01": "data/A1_action_01/environment_units.jsonl",
+    "C1_composition_01": "data/C1_composition_01/environment_units.jsonl"
+  },
+  "data_hash_manifests": [
+    "records/ENVIRONMENT_AUDIT.json",
+    "records/FEATURE_COPY_MANIFEST.json",
+    "records/VIDEO_FEATURE_MANIFEST.json"
+  ]
+}

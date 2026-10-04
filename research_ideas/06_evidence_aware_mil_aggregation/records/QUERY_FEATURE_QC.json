@@ -1,0 +1,39 @@
+{
+  "folds": {
+    "A1_action_01": {
+      "inner_novel_dev": {
+        "max_masked_mean_spread": 0.0001733473369053412,
+        "p95_spread": 0.00014922519524892159,
+        "repeated_exact_query_groups": 59
+      },
+      "inner_seen_val": {
+        "max_masked_mean_spread": 0.00018058504377092832,
+        "p95_spread": 7.110689367566255e-05,
+        "repeated_exact_query_groups": 65
+      },
+      "inner_train": {
+        "max_masked_mean_spread": 0.00026510655879974365,
+        "p95_spread": 0.00010659297307332726,
+        "repeated_exact_query_groups": 673
+      }
+    },
+    "C1_composition_01": {
+      "inner_novel_dev": {
+        "max_masked_mean_spread": 0.00019549897738865146,
+        "p95_spread": 0.00013148710131645204,
+        "repeated_exact_query_groups": 28
+      },
+      "inner_seen_val": {
+        "max_masked_mean_spread": 0.000258484057017741,
+        "p95_spread": 8.803680539131163e-05,
+        "repeated_exact_query_groups": 85
+      },
+      "inner_train": {
+        "max_masked_mean_spread": 0.0002675907952444864,
+        "p95_spread": 0.00012172072652786086,
+        "repeated_exact_query_groups": 887
+      }
+    }
+  },
+  "note": "Repeated exact query strings can differ slightly in cached token tensors; pooled query-only AUROC is reported, but same-query query-only PairAcc is cache-sensitive and is not used as compatibility evidence."
+}

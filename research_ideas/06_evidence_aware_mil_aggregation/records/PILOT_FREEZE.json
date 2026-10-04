@@ -1,0 +1,45 @@
+{
+  "arms": [
+    "A0_bag_BCE",
+    "A2_verified_negative_local"
+  ],
+  "batch_size": 32,
+  "candidate_audit_sha256": "59fe26b3fa5843acc13c797a6cb95467aab131143de61c19e3d9f9d80ed86fe4",
+  "candidate_semantics_guard": "Existing class_logits are localization foreground/background confidence, not candidate compatibility, and are not used as the trained candidate score.",
+  "candidate_source": "10 Moment-DETR decoder slots from exact strict-inner V5 bank rows; each candidate receives original query tokens through one cross-attention layer and a full-query compatibility scorer",
+  "controls": [
+    "strict-inner baseline existence score",
+    "query-only LR C=.1",
+    "video-only LR C=.1",
+    "same-query cross-video PairAcc",
+    "source-linked same-video PairAcc",
+    "max aggregation from identical candidate logits",
+    "fresh copied-baseline pre-fusion shuffled-video reforward for both arms",
+    "frozen localization metric"
+  ],
+  "dim": 128,
+  "disallowed": "No positive candidate mask, no GT seconds-to-slot alignment, no unverified negative mismatch, no grouping parameter search, no formal U tuning.",
+  "epochs": 5,
+  "eval_batch_size": 64,
+  "folds": [
+    "A1_action_01",
+    "C1_composition_01"
+  ],
+  "formal_U_accessed": false,
+  "frozen_at": "2026-10-04T04:01:00+08:00",
+  "idea": "06_evidence_aware_mil_aggregation",
+  "loss": "A0 natural bag BCE only; A2 identical bag BCE plus 0.25 times mean candidate BCE-to-zero on only verified full-query-negative bags",
+  "negative_provenance": "Every negative train row must carry user_attested_video_review; all 10 complete-query candidates on a reviewed absent video are valid negatives",
+  "optimizer": "AdamW lr=1e-3 weight decay 1e-4; grad norm clip 1.0",
+  "phase": "two-fold one-seed strict-inner screen, exploratory Novel-dev",
+  "positive_provenance": "Human temporal annotation; only bag presence is supervised. No positive-slot labels or GT-window mapping.",
+  "primary_aggregation": "normalized log-mean-exp, temperature=1.0, K=10",
+  "secondary_aggregation": "max over the same candidate logits; no tuned temperature",
+  "seed": 3407,
+  "selection": "inner Seen-val pooled AUROC under primary normalized-LSE aggregation, earliest tie; Novel-dev not read during training",
+  "strict_inner_checkpoint_sha256": {
+    "A1_action_01": "ae514a78ce1d8836cb849774fadd7ecbc496b25f36161bcce195c3efcae97343",
+    "C1_composition_01": "c5319f94c70ef323e78e6bdb83d3e4d60ed020385aff5c0a57ef142e079dae43"
+  },
+  "uncertainty": "Video-cluster bootstrap for pooled AUROC; connected query-video-component bootstrap for same-query pairs; video-cluster bootstrap for same-video pairs; paired deltas in summary"
+}

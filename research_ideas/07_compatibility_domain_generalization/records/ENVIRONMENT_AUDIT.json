@@ -1,0 +1,118 @@
+{
+  "environment_definition": "negative construction_type attached to the complete positive-negative pair unit, never to a negative row alone",
+  "folds": [
+    {
+      "cross_environment_overlap": {
+        "action_counterfactual x composition_counterfactual": {
+          "shared_source_positive_qids": 0,
+          "shared_videos": 0
+        },
+        "action_counterfactual x object_counterfactual": {
+          "shared_source_positive_qids": 6,
+          "shared_videos": 10
+        },
+        "object_counterfactual x composition_counterfactual": {
+          "shared_source_positive_qids": 1,
+          "shared_videos": 2
+        }
+      },
+      "environment_counts": {
+        "action_counterfactual": {
+          "independent_videos": 76,
+          "negative_labels": 80,
+          "negative_queries": 62,
+          "pair_units": 80,
+          "positive_labels": 80,
+          "positive_queries": 62,
+          "source_positive_qids": 80
+        },
+        "composition_counterfactual": {
+          "independent_videos": 19,
+          "negative_labels": 20,
+          "negative_queries": 17,
+          "pair_units": 20,
+          "positive_labels": 20,
+          "positive_queries": 17,
+          "source_positive_qids": 20
+        },
+        "object_counterfactual": {
+          "independent_videos": 441,
+          "negative_labels": 591,
+          "negative_queries": 363,
+          "pair_units": 591,
+          "positive_labels": 591,
+          "positive_queries": 312,
+          "source_positive_qids": 513
+        }
+      },
+      "pair_units": 691,
+      "rejected": {},
+      "unit_manifest": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/07_compatibility_domain_generalization/data/A1_action_01/environment_units.jsonl",
+      "unit_manifest_sha256": "73f8f194529506f7bb2a1590142fe67bc0d50259f0087bea6d25bb12e714958a"
+    },
+    {
+      "cross_environment_overlap": {
+        "action_counterfactual x composition_counterfactual": {
+          "shared_source_positive_qids": 10,
+          "shared_videos": 20
+        },
+        "action_counterfactual x object_counterfactual": {
+          "shared_source_positive_qids": 31,
+          "shared_videos": 52
+        },
+        "object_counterfactual x composition_counterfactual": {
+          "shared_source_positive_qids": 10,
+          "shared_videos": 17
+        }
+      },
+      "environment_counts": {
+        "action_counterfactual": {
+          "independent_videos": 506,
+          "negative_labels": 568,
+          "negative_queries": 424,
+          "pair_units": 568,
+          "positive_labels": 568,
+          "positive_queries": 424,
+          "source_positive_qids": 568
+        },
+        "composition_counterfactual": {
+          "independent_videos": 104,
+          "negative_labels": 120,
+          "negative_queries": 112,
+          "pair_units": 120,
+          "positive_labels": 120,
+          "positive_queries": 103,
+          "source_positive_qids": 110
+        },
+        "object_counterfactual": {
+          "independent_videos": 368,
+          "negative_labels": 431,
+          "negative_queries": 343,
+          "pair_units": 431,
+          "positive_labels": 431,
+          "positive_queries": 317,
+          "source_positive_qids": 401
+        }
+      },
+      "pair_units": 1119,
+      "rejected": {},
+      "unit_manifest": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/07_compatibility_domain_generalization/data/C1_composition_01/environment_units.jsonl",
+      "unit_manifest_sha256": "3d61cce8126b860eb6996136d4625926b60ccbc259c7b1b0ad6c18dde893fa19"
+    }
+  ],
+  "formal_U_accessed": false,
+  "idea": "07_compatibility_domain_generalization",
+  "source_rows": {
+    "A1_action_01": {
+      "path": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/07_compatibility_domain_generalization/data/A1_action_01/inner_train.jsonl",
+      "rows": 6611,
+      "sha256": "52fc6359a9209fbf67e8853434a40c3bffc0ca3784c507649661e3cd10a1ca14"
+    },
+    "C1_composition_01": {
+      "path": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/07_compatibility_domain_generalization/data/C1_composition_01/inner_train.jsonl",
+      "rows": 9165,
+      "sha256": "16790c0dc27c1347b70768e3635baae0e23aca1f8a9c1765d9a8097934f9a34a"
+    }
+  },
+  "unit_definition": "one reviewed full-query negative and its source_qid positive from the same video; pair risk compares their existence scores; both labels are retained"
+}

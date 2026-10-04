@@ -1,0 +1,11 @@
+# Direction 03 disposition
+
+**Disposition: blocked for the explicit joint-binding objective because the available audit does not provide a sufficiently large, independently verified binding challenge.** No training was run under this direction.
+
+The written plan explicitly requires examples where both necessary primitives are independently supported in a video while the full action–argument event is absent; full-query negatives alone cannot identify binding. I audited the strict inner-train rows and source pairs. The inherited source pairs provide reviewed full-query absences and a temporal positive source (all negatives are `user_attested_video_review`; positives are human temporal annotations), but they do not directly state that the edited action and object each occur independently.
+
+As a conservative candidate screen, I required a high-confidence parsed target action and object, a reviewed full-query negative, and two distinct positive human-temporal rows in the same video that separately support the target action and object. This produced only 4, 4, 14, and 18 candidate pairs in A1 action 01/02 and C1 composition 01/02. These are upper bounds: the audit excludes no candidate merely for lexical synonyms, ambiguous event identity, or review error. Examples include “sofa” versus “couch”, showing why the human-verified negative must still be reviewed for semantic-preserving substitutions. Fold supports also overlap, so these counts are not independent.
+
+The legal substitutes in the plan do not solve the missing supervision: reusing reviewed whole-query BCE, source pairs, or same-query cross-video pairs can test existence ranking, but cannot isolate joint binding from ordinary query-conditioned scoring. There is no documented substitute for the explicit W2 binding objective. I therefore did not fabricate labels from missing spans, use unreviewed edits as absence, or treat the screen's candidate pairs as confirmed challenge labels.
+
+The audit and example candidates are saved in `BINDING_CANDIDATE_AUDIT.json`. Continue to priority 04. Reopen 03 only after an independent reviewer verifies enough non-synonymous binding negatives and hard positives, with labels and provenance saved inside this idea directory.

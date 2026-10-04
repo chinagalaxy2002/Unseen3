@@ -1,0 +1,72 @@
+{
+  "active_code_hashes": [
+    {
+      "bytes": 3406,
+      "path": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/07_compatibility_domain_generalization/code/adapter.py",
+      "sha256": "db39b54b7a6905317f4866d5d99ef49e80933b754ce701df352c691768c59353"
+    },
+    {
+      "bytes": 5026,
+      "path": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/07_compatibility_domain_generalization/code/audit_environments.py",
+      "sha256": "0aef073c9be4bc222467efd31371d42312abf2d74e8b1d843ee48e70db6fa3ac"
+    },
+    {
+      "bytes": 2677,
+      "path": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/07_compatibility_domain_generalization/code/data.py",
+      "sha256": "c1f3dab7e0b469947703ccc44d8e23294a5441437cf4e051777775935306d841"
+    },
+    {
+      "bytes": 11142,
+      "path": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/07_compatibility_domain_generalization/code/evaluate_adapter.py",
+      "sha256": "70949b3cb18cb4732916d8b3f6f7874e58663ed435279a1f54b2acd2aa0ee515"
+    },
+    {
+      "bytes": 4725,
+      "path": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/07_compatibility_domain_generalization/code/prepare_jobs.py",
+      "sha256": "de31738de284e0e69e7c80b8ada7d2393c4dd628a99197eeed92a5f77f114935"
+    },
+    {
+      "bytes": 6022,
+      "path": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/07_compatibility_domain_generalization/code/shuffle_pooled.py",
+      "sha256": "3112a3e84dc69987d52a7472300d95d7357828f8dca698ca5cea98c24e71cce8"
+    },
+    {
+      "bytes": 10683,
+      "path": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/07_compatibility_domain_generalization/code/summarize_pilot.py",
+      "sha256": "272edee3fa2cfe4794d445faa5530f60c50b422c2a5a34100b521a4d685aaf67"
+    },
+    {
+      "bytes": 7005,
+      "path": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/07_compatibility_domain_generalization/code/train_pair_gate.py",
+      "sha256": "15c80826fed46520e518dd217570b8147b147e4dff1042375022d4e5baa6b78f"
+    }
+  ],
+  "baseline_project": "/home/guoxiangyu/paper/Openword/generalized-moment-retrieval",
+  "baseline_project_commit": "bc88348e0e6b7b629a77d884fe66efe8c87b2774",
+  "copied_readout_code": [
+    {
+      "copy": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/07_compatibility_domain_generalization/code/adapter.py",
+      "copy_sha256": "db39b54b7a6905317f4866d5d99ef49e80933b754ce701df352c691768c59353",
+      "source": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/05_independent_compatibility_adapter/code/adapter.py",
+      "source_sha256": "db39b54b7a6905317f4866d5d99ef49e80933b754ce701df352c691768c59353"
+    },
+    {
+      "copy": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/07_compatibility_domain_generalization/code/data.py",
+      "copy_sha256": "c1f3dab7e0b469947703ccc44d8e23294a5441437cf4e051777775935306d841",
+      "source": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/05_independent_compatibility_adapter/code/data.py",
+      "source_sha256": "d1754a9e89c48029839b4ba148b84a14753e76bfc1271d860120083a58b2966f"
+    },
+    {
+      "copy": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/07_compatibility_domain_generalization/code/evaluate_adapter.py",
+      "copy_sha256": "70949b3cb18cb4732916d8b3f6f7874e58663ed435279a1f54b2acd2aa0ee515",
+      "source": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/05_independent_compatibility_adapter/code/evaluate_adapter.py",
+      "source_sha256": "47916b0bac83fa7a3a8adb90fde7fd97cd9db9b15cfba6b5b6bc12ec3b7a4418"
+    }
+  ],
+  "method_source": "Independent raw-sequence compatibility adapter, copied into this idea directory and extended with matched source-pair ERM",
+  "research_repo_commit": "6cd96d723806e4b2b2474c68f289921eb543ffcc",
+  "strict_inner_baseline_checkpoint_sha256": {
+    "A1_action_01": "ae514a78ce1d8836cb849774fadd7ecbc496b25f36161bcce195c3efcae97343",
+    "C1_composition_01": "c5319f94c70ef323e78e6bdb83d3e4d60ed020385aff5c0a57ef142e079dae43"
+  }
+}

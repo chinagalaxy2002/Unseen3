@@ -1,0 +1,49 @@
+[2026-10-03T18:25:00+00:00] started GPU worker 0 session=research_queue_gpu0_1791051900 start_count=1
+[2026-10-03T18:26:20+00:00] queue empty; bounded controller exiting
+[2026-10-03T18:27:10+00:00] started GPU worker 0 session=research_queue_gpu0_1791052030 start_count=2
+[2026-10-03T18:29:41+00:00] queue empty; bounded controller exiting
+[2026-10-03T18:39:22+00:00] started GPU worker 0 session=research_queue_gpu0_1791052762 start_count=3
+[2026-10-03T18:40:56+00:00] started GPU worker 0 session=research_queue_gpu0_1791052856 start_count=4
+[2026-10-03T18:47:41+00:00] started GPU worker 0 session=research_queue_gpu0_1791053261 start_count=5
+[2026-10-03T18:51:12+00:00] queue empty; bounded controller exiting
+[2026-10-03T19:03:04+00:00] started GPU worker 0 session=research_queue_gpu0_1791054184 start_count=6
+[2026-10-03T19:04:19+00:00] worker restart budget exhausted on GPU 0
+[2026-10-03T19:04:35+00:00] worker restart budget exhausted on GPU 0
+[2026-10-03T19:04:39+00:00] started GPU worker 0 session=research_queue_gpu0_1791054279 start_count=7
+[2026-10-03T19:07:40+00:00] worker restart budget exhausted on GPU 0
+[2026-10-03T19:07:45+00:00] started GPU worker 0 session=research_queue_gpu0_1791054465 start_count=8
+[2026-10-03T19:19:03+00:00] queue empty; bounded controller exiting
+[2026-10-03T19:30:34+00:00] started GPU worker 0 session=research_queue_gpu0_1791055834 start_count=9
+[2026-10-03T19:33:05+00:00] queue empty; bounded controller exiting
+[2026-10-03T19:34:30+00:00] started GPU worker 0 session=research_queue_gpu0_1791056070 start_count=10
+[2026-10-03T19:40:09+00:00] Codex repair exited rc=1 task=05_smoke04_A1_P_pooled_seed3407; see /home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/05_independent_compatibility_adapter/records/repairs/05_smoke04_A1_P_pooled_seed3407_repair1_cli.log
+[2026-10-03T19:42:09+00:00] Codex repair accepted task=05_smoke04_A1_P_pooled_seed3407; creating new isolated config from /home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/_orchestration/specs/05_smoke04_A1_P_pooled_seed3407_repair2.json
+[2026-10-03T19:42:09+00:00] worker restart budget exhausted on GPU 0
+[2026-10-03T19:42:24+00:00] worker restart budget exhausted on GPU 0
+[2026-10-03T19:42:39+00:00] worker restart budget exhausted on GPU 0
+[2026-10-03T19:42:54+00:00] worker restart budget exhausted on GPU 0
+[2026-10-03T19:43:09+00:00] worker restart budget exhausted on GPU 0
+[2026-10-03T19:43:24+00:00] worker restart budget exhausted on GPU 0
+[2026-10-03T19:43:39+00:00] worker restart budget exhausted on GPU 0
+[2026-10-03T19:43:54+00:00] worker restart budget exhausted on GPU 0
+[2026-10-03T19:44:09+00:00] worker restart budget exhausted on GPU 0
+[2026-10-03T19:44:24+00:00] worker restart budget exhausted on GPU 0
+[2026-10-03T19:44:39+00:00] worker restart budget exhausted on GPU 0
+[2026-10-03T19:44:54+00:00] worker restart budget exhausted on GPU 0
+[2026-10-03T19:45:09+00:00] worker restart budget exhausted on GPU 0
+[2026-10-03T19:45:24+00:00] worker restart budget exhausted on GPU 0
+[2026-10-03T19:45:39+00:00] started GPU worker 0 session=research_queue_gpu0_1791056739 start_count=11
+[2026-10-03T19:47:55+00:00] queue empty; bounded controller exiting
+[2026-10-03T19:49:08+00:00] started GPU worker 0 session=research_queue_gpu0_1791056948 start_count=12
+[2026-10-03T19:56:55+00:00] queue empty; bounded controller exiting
+[2026-10-03T20:10:06+00:00] started GPU worker 0 session=research_queue_gpu0_1791058206 start_count=13
+[2026-10-03T20:11:21+00:00] started GPU worker 0 session=research_queue_gpu0_1791058281 start_count=14
+[2026-10-03T20:15:22+00:00] queue empty; bounded controller exiting
+[2026-10-03T20:23:53+00:00] started GPU worker 0 session=research_queue_gpu0_1791059033 start_count=15
+[2026-10-03T20:28:39+00:00] started GPU worker 0 session=research_queue_gpu0_1791059319 start_count=16
+[2026-10-03T20:30:51+00:00] started GPU worker 0 session=research_queue_gpu0_1791059451 start_count=17
+[2026-10-03T20:33:21+00:00] queue empty; bounded controller exiting
+[2026-10-03T20:33:41+00:00] started GPU worker 0 session=research_queue_gpu0_1791059621 start_count=18
+[2026-10-03T20:41:58+00:00] queue empty; bounded controller exiting
+[2026-10-03T20:56:46+00:00] started GPU worker 0 session=research_queue_gpu0_1791061006 start_count=19
+[2026-10-03T20:58:01+00:00] queue empty; bounded controller exiting

@@ -1,0 +1,24 @@
+
+[2026-10-03T18:15:07+00:00] START eval: /home/guoxiangyu/miniconda3/bin/python /home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/01_crossed_existence_supervision/code/evaluate.py --fold A1_action_01 --bank-root /home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/results/moment_detr_gmr_evidence_v5/banks --train-rows /home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/01_crossed_existence_supervision/data/A1_action_01/inner_train.jsonl --val-rows /home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/01_crossed_existence_supervision/data/A1_action_01/inner_seen_val.jsonl --novel-rows /home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/01_crossed_existence_supervision/data/A1_action_01/inner_novel_dev.jsonl --checkpoint /home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/01_crossed_existence_supervision/runs/A1_action_01/BCE_pair_seed3407/artifacts/best.ckpt --predictions /home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/01_crossed_existence_supervision/runs/A1_action_01/BCE_pair_seed3407/predictions.jsonl --metrics /home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/01_crossed_existence_supervision/runs/A1_action_01/BCE_pair_seed3407/metrics.json --task-id 01_A1_action_01_BCE_pair_seed3407
+/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/01_crossed_existence_supervision/code/evaluate.py:77: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at /pytorch/torch/csrc/utils/tensor_numpy.cpp:213.)
+  with torch.no_grad(): score=model(torch.as_tensor(np.asarray(arr['pooled']),dtype=torch.float32)).numpy().astype(np.float64)
+Traceback (most recent call last):
+  File "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/01_crossed_existence_supervision/code/evaluate.py", line 117, in <module>
+    main(p.parse_args())
+    ~~~~^^^^^^^^^^^^^^^^
+  File "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/01_crossed_existence_supervision/code/evaluate.py", line 113, in main
+    print(json.dumps({'seen':metric['seen_val']['pooled_auroc'],'novel':metric['novel_dev']['pooled_auroc'],'rows':len(allpred)},flush=True))
+          ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/guoxiangyu/miniconda3/lib/python3.13/json/__init__.py", line 234, in dumps
+    return cls(
+           ~~~^
+        skipkeys=skipkeys, ensure_ascii=ensure_ascii,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        check_circular=check_circular, allow_nan=allow_nan, indent=indent,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        separators=separators, default=default, sort_keys=sort_keys,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        **kw).encode(obj)
+        ^^^^^
+TypeError: JSONEncoder.__init__() got an unexpected keyword argument 'flush'
+[2026-10-03T18:15:17+00:00] EXIT eval: rc=1

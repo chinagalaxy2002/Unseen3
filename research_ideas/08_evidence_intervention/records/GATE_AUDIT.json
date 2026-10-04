@@ -1,0 +1,43 @@
+{
+  "date": "2026-10-04",
+  "decision": "blocked",
+  "formal_U_accessed": false,
+  "idea": "08_evidence_intervention",
+  "label_gate": {
+    "all_occurrence_witness_review_for_training_targets": false,
+    "keep/drop/background transformed-video labels": false,
+    "no_label_inference_from_unannotated_regions": true,
+    "repeated_occurrence coverage": false
+  },
+  "raw_video_inventory": {
+    "available_assets": [
+      "vid_clip feature directory",
+      "vid_slowfast feature directory",
+      "text feature directory"
+    ],
+    "search_root": "/home/guoxiangyu/paper",
+    "supported_video_files_found": 0
+  },
+  "reason": "Cannot map full event support or context to feature indices with a reproducible error bound, and no raw videos or independently verified transform labels are available. Approximate relative indices alone would not establish which altered sequence is absent/positive; the documentation-approved non-temporal source-pair substitute belongs to Idea 01 and cannot test this intervention.",
+  "time_source": {
+    "audit_file": "../../experiments/moment_detr_gmr_evidence_v5/time_grid_audit.json",
+    "checkpoint_clip_length_seconds": 1,
+    "feature_order": [
+      "CLIP",
+      "SlowFast"
+    ],
+    "independent_extractor_timestamp_logs_found": false,
+    "modality_length_difference_max": 1,
+    "nominal_end_minus_duration_quantiles_seconds": [
+      -0.499133333333333,
+      -0.2499999999999991,
+      0.0033666666666647416,
+      0.2666666666666657,
+      0.5
+    ],
+    "truncated_video_count": 0,
+    "video_count": 4918,
+    "videos_with_embedded_timestamps": 0,
+    "videos_with_gt_beyond_nominal_feature_end": 532
+  }
+}

@@ -1,0 +1,10 @@
+
+[2026-10-03T19:05:06+00:00] START train: python -u /home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/04_query_marginal_matching/code/train_marginal.py --fold A1_action_01 --arm M2_balanced_query --bank-root /home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/results/moment_detr_gmr_evidence_v5/banks --train-rows /home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/04_query_marginal_matching/data/A1_action_01/inner_train.jsonl --val-rows /home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/04_query_marginal_matching/data/A1_action_01/inner_seen_val.jsonl --output /home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/04_query_marginal_matching/runs/A1_action_01/M2_balanced_query/artifacts --seed 3407 --epochs 5 --batch-size 32 --lr 0.001 --aux-weight 0.25 --device cuda:0
+/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/04_query_marginal_matching/code/train_marginal.py:43: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at /pytorch/torch/csrc/utils/tensor_numpy.cpp:213.)
+  x=torch.as_tensor(np.asarray(tx),dtype=torch.float32,device=device);y=torch.tensor([int(r['exist_label']) for r in tr],dtype=torch.float32,device=device);xv=torch.as_tensor(np.asarray(vx),dtype=torch.float32,device=device);yv=np.asarray([int(r['exist_label']) for r in va],dtype=np.int8)
+A1_action_01 M2_balanced_query epoch=1/5 seen_auc=0.853065
+A1_action_01 M2_balanced_query epoch=2/5 seen_auc=0.855401
+A1_action_01 M2_balanced_query epoch=3/5 seen_auc=0.851421
+A1_action_01 M2_balanced_query epoch=4/5 seen_auc=0.854313
+A1_action_01 M2_balanced_query epoch=5/5 seen_auc=0.852644
+[2026-10-03T19:05:21+00:00] EXIT train: rc=0

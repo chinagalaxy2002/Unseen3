@@ -1,0 +1,54 @@
+
+[2026-10-03T19:34:47+00:00] START eval: python -u /home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/05_independent_compatibility_adapter/code/evaluate_adapter.py --fold A1_action_01 --train-rows /home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/05_independent_compatibility_adapter/data/A1_action_01/inner_train.jsonl --val-rows /home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/05_independent_compatibility_adapter/data/A1_action_01/inner_seen_val.jsonl --novel-rows /home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/05_independent_compatibility_adapter/data/A1_action_01/inner_novel_dev.jsonl --checkpoint /home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/05_independent_compatibility_adapter/runs/smoke/05_smoke04_A1_P_pooled_seed3407/artifacts/best.ckpt --predictions /home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/05_independent_compatibility_adapter/runs/smoke/05_smoke04_A1_P_pooled_seed3407/predictions.jsonl --metrics /home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/05_independent_compatibility_adapter/runs/smoke/05_smoke04_A1_P_pooled_seed3407/metrics.json --task-id 05_smoke04_A1_P_pooled_seed3407 --batch-size 16 --baseline-checkpoint /home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/results/moment_detr_gmr_evidence_v5/inner_baselines/A1_action_01/best.ckpt --temp-dir /home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/05_independent_compatibility_adapter/runs/smoke/05_smoke04_A1_P_pooled_seed3407/inputs --device cuda:0
+Traceback (most recent call last):
+  File "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/05_independent_compatibility_adapter/code/evaluate_adapter.py", line 96, in <module>
+    p.add_argument('--baseline-checkpoint');p.add_argument('--temp-dir');p.add_argument('--batch-size',type=int,default=16);p.add_argument('--device',default='cuda:0');main(p.parse_args())
+                                                                                                                                                                        ~~~~^^^^^^^^^^^^^^^^
+  File "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/05_independent_compatibility_adapter/code/evaluate_adapter.py", line 89, in main
+    item=pooled_shuffle(fold,role,row_path,a.checkpoint,a.predictions,a.baseline_checkpoint,a.temp_dir,a.device)
+  File "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/05_independent_compatibility_adapter/code/shuffle_pooled.py", line 57, in run
+    with torch.no_grad():real=scorer(torch.from_numpy(original_pool)).numpy().astype(np.float64);shuf=scorer(torch.from_numpy(swap_pool)).numpy().astype(np.float64)
+                              ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/guoxiangyu/miniconda3/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1776, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home/guoxiangyu/miniconda3/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1787, in _call_impl
+    return forward_call(*args, **kwargs)
+TypeError: CompatibilityAdapter.forward() missing 3 required positional arguments: 'query', 'query_mask', and 'video_mask'
+[2026-10-03T19:35:12+00:00] EXIT eval: rc=1
+
+[2026-10-03T19:35:12+00:00] START eval: python -u /home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/05_independent_compatibility_adapter/code/evaluate_adapter.py --fold A1_action_01 --train-rows /home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/05_independent_compatibility_adapter/data/A1_action_01/inner_train.jsonl --val-rows /home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/05_independent_compatibility_adapter/data/A1_action_01/inner_seen_val.jsonl --novel-rows /home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/05_independent_compatibility_adapter/data/A1_action_01/inner_novel_dev.jsonl --checkpoint /home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/05_independent_compatibility_adapter/runs/smoke/05_smoke04_A1_P_pooled_seed3407/artifacts/best.ckpt --predictions /home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/05_independent_compatibility_adapter/runs/smoke/05_smoke04_A1_P_pooled_seed3407/predictions.jsonl --metrics /home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/05_independent_compatibility_adapter/runs/smoke/05_smoke04_A1_P_pooled_seed3407/metrics.json --task-id 05_smoke04_A1_P_pooled_seed3407 --batch-size 16 --baseline-checkpoint /home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/results/moment_detr_gmr_evidence_v5/inner_baselines/A1_action_01/best.ckpt --temp-dir /home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/05_independent_compatibility_adapter/runs/smoke/05_smoke04_A1_P_pooled_seed3407/inputs --device cuda:0
+Traceback (most recent call last):
+  File "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/05_independent_compatibility_adapter/code/evaluate_adapter.py", line 96, in <module>
+    p.add_argument('--baseline-checkpoint');p.add_argument('--temp-dir');p.add_argument('--batch-size',type=int,default=16);p.add_argument('--device',default='cuda:0');main(p.parse_args())
+                                                                                                                                                                        ~~~~^^^^^^^^^^^^^^^^
+  File "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/05_independent_compatibility_adapter/code/evaluate_adapter.py", line 89, in main
+    item=pooled_shuffle(fold,role,row_path,a.checkpoint,a.predictions,a.baseline_checkpoint,a.temp_dir,a.device)
+  File "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/05_independent_compatibility_adapter/code/shuffle_pooled.py", line 57, in run
+    with torch.no_grad():real=scorer(torch.from_numpy(original_pool)).numpy().astype(np.float64);shuf=scorer(torch.from_numpy(swap_pool)).numpy().astype(np.float64)
+                              ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/guoxiangyu/miniconda3/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1776, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home/guoxiangyu/miniconda3/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1787, in _call_impl
+    return forward_call(*args, **kwargs)
+TypeError: CompatibilityAdapter.forward() missing 3 required positional arguments: 'query', 'query_mask', and 'video_mask'
+[2026-10-03T19:35:37+00:00] EXIT eval: rc=1
+
+[2026-10-03T19:35:37+00:00] START eval: python -u /home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/05_independent_compatibility_adapter/code/evaluate_adapter.py --fold A1_action_01 --train-rows /home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/05_independent_compatibility_adapter/data/A1_action_01/inner_train.jsonl --val-rows /home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/05_independent_compatibility_adapter/data/A1_action_01/inner_seen_val.jsonl --novel-rows /home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/05_independent_compatibility_adapter/data/A1_action_01/inner_novel_dev.jsonl --checkpoint /home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/05_independent_compatibility_adapter/runs/smoke/05_smoke04_A1_P_pooled_seed3407/artifacts/best.ckpt --predictions /home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/05_independent_compatibility_adapter/runs/smoke/05_smoke04_A1_P_pooled_seed3407/predictions.jsonl --metrics /home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/05_independent_compatibility_adapter/runs/smoke/05_smoke04_A1_P_pooled_seed3407/metrics.json --task-id 05_smoke04_A1_P_pooled_seed3407 --batch-size 16 --baseline-checkpoint /home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/results/moment_detr_gmr_evidence_v5/inner_baselines/A1_action_01/best.ckpt --temp-dir /home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/05_independent_compatibility_adapter/runs/smoke/05_smoke04_A1_P_pooled_seed3407/inputs --device cuda:0
+Traceback (most recent call last):
+  File "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/05_independent_compatibility_adapter/code/evaluate_adapter.py", line 96, in <module>
+    p.add_argument('--baseline-checkpoint');p.add_argument('--temp-dir');p.add_argument('--batch-size',type=int,default=16);p.add_argument('--device',default='cuda:0');main(p.parse_args())
+                                                                                                                                                                        ~~~~^^^^^^^^^^^^^^^^
+  File "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/05_independent_compatibility_adapter/code/evaluate_adapter.py", line 89, in main
+    item=pooled_shuffle(fold,role,row_path,a.checkpoint,a.predictions,a.baseline_checkpoint,a.temp_dir,a.device)
+  File "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/05_independent_compatibility_adapter/code/shuffle_pooled.py", line 57, in run
+    with torch.no_grad():real=scorer(torch.from_numpy(original_pool)).numpy().astype(np.float64);shuf=scorer(torch.from_numpy(swap_pool)).numpy().astype(np.float64)
+                              ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/guoxiangyu/miniconda3/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1776, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home/guoxiangyu/miniconda3/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1787, in _call_impl
+    return forward_call(*args, **kwargs)
+TypeError: CompatibilityAdapter.forward() missing 3 required positional arguments: 'query', 'query_mask', and 'video_mask'
+[2026-10-03T19:36:02+00:00] EXIT eval: rc=1

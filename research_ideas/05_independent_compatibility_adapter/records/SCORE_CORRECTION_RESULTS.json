@@ -1,0 +1,122 @@
+{
+  "disposition": "insufficient_evidence",
+  "exploratory_novel_dev": true,
+  "folds": {
+    "A1_action_01": {
+      "checkpoint_sha256": "c54edbc904ae7099b45fb412818a230ce4138f7b1e49ea74386b892835fd9f50",
+      "evaluation_seconds_including_shuffle": 6.252087116241455,
+      "lambda": 0.25,
+      "novel_dev": {
+        "corrected_minus_uncorrected_delta_pp": -3.827027027027019,
+        "paired_video_cluster_delta_ci95_pp": [
+          -6.868982085544616,
+          -0.7056856833642688
+        ],
+        "pooled_auroc_corrected": 0.5952432432432433,
+        "pooled_auroc_uncorrected": 0.6335135135135135,
+        "query_only_auroc": 0.6478558558558558,
+        "rows": 335,
+        "same_query_delta_component_ci95": [
+          0.0,
+          0.0
+        ],
+        "same_query_pairacc_corrected": 0.6179775280898876,
+        "same_query_pairacc_uncorrected": 0.6179775280898876,
+        "same_query_pairs": 178,
+        "same_video_delta_video_cluster_ci95": [
+          -0.2500383435582822,
+          -0.10604993597951351
+        ],
+        "same_video_pairs": 143,
+        "same_video_source_pairacc_corrected": 0.46153846153846156,
+        "same_video_source_pairacc_uncorrected": 0.6433566433566433,
+        "shuffle_seconds": null,
+        "shuffled_note": "Raw video sequence was deranged before the adapter cross-attention and scoring; original labels retained only as an input-dependence diagnostic.",
+        "shuffled_video_retained_label_auroc_corrected": 0.5443603603603604,
+        "shuffled_video_retained_label_auroc_uncorrected": 0.5922162162162162,
+        "strict_inner_baseline_auroc": 0.616036036036036,
+        "video_only_auroc": 0.5061621621621621,
+        "videos": 138
+      },
+      "parameters": 75649,
+      "prediction_rows": 960,
+      "seen": {
+        "frozen_localization_r1_iou50": {
+          "queries": 442,
+          "recall": 0.34841628959276016
+        },
+        "pooled_auroc_corrected": 0.9003906732932769,
+        "pooled_auroc_uncorrected": 0.8826249289122964,
+        "rows": 625
+      },
+      "selection_grid": {
+        "0.0": 0.8826249289122964,
+        "0.25": 0.9003906732932769,
+        "0.5": 0.8863338525826472,
+        "0.75": 0.8229977993719557,
+        "1.0": 0.6997131765694927
+      },
+      "task_id": "05_prior_correction_A1_action_01_seed3407"
+    },
+    "C1_composition_01": {
+      "checkpoint_sha256": "44a92b43664f732f683edc7382ea5294521e00727fce5fd54872060543c3daad",
+      "evaluation_seconds_including_shuffle": 6.053383111953735,
+      "lambda": 0.0,
+      "novel_dev": {
+        "corrected_minus_uncorrected_delta_pp": 0.0,
+        "paired_video_cluster_delta_ci95_pp": [
+          0.0,
+          0.0
+        ],
+        "pooled_auroc_corrected": 0.5924724842767296,
+        "pooled_auroc_uncorrected": 0.5924724842767296,
+        "query_only_auroc": 0.5718356918238994,
+        "rows": 202,
+        "same_query_delta_component_ci95": [
+          0.0,
+          0.0
+        ],
+        "same_query_pairacc_corrected": 0.5492957746478874,
+        "same_query_pairacc_uncorrected": 0.5492957746478874,
+        "same_query_pairs": 213,
+        "same_video_delta_video_cluster_ci95": [
+          0.0,
+          0.0
+        ],
+        "same_video_pairs": 76,
+        "same_video_source_pairacc_corrected": 0.6710526315789473,
+        "same_video_source_pairacc_uncorrected": 0.6710526315789473,
+        "shuffle_seconds": null,
+        "shuffled_note": "Raw video sequence was deranged before the adapter cross-attention and scoring; original labels retained only as an input-dependence diagnostic.",
+        "shuffled_video_retained_label_auroc_corrected": 0.5742924528301886,
+        "shuffled_video_retained_label_auroc_uncorrected": 0.5742924528301886,
+        "strict_inner_baseline_auroc": 0.5553262578616353,
+        "video_only_auroc": 0.5137087264150944,
+        "videos": 92
+      },
+      "parameters": 75649,
+      "prediction_rows": 1145,
+      "seen": {
+        "frozen_localization_r1_iou50": {
+          "queries": 706,
+          "recall": 0.34985835694050993
+        },
+        "pooled_auroc_corrected": 0.8362498655287409,
+        "pooled_auroc_uncorrected": 0.8362498655287409,
+        "rows": 943
+      },
+      "selection_grid": {
+        "0.0": 0.8362498655287409,
+        "0.25": 0.8141368140471665,
+        "0.5": 0.7602586629373305,
+        "0.75": 0.6045409450042433,
+        "1.0": 0.40066458684452727
+      },
+      "task_id": "05_prior_correction_C1_composition_01_seed3407"
+    }
+  },
+  "formal_U_accessed": false,
+  "freeze": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/05_independent_compatibility_adapter/records/SCORE_CORRECTION_FREEZE.json",
+  "interpretation": "A1 Seen-selected lambda=.25 improves Seen pooled AUROC but reduces Novel-dev pooled AUROC and same-video source-pair accuracy; same-query PairAcc is invariant to a query-constant correction. C1 selects lambda=0. No evidence this rule repairs semantic-novelty degradation or improves video-conditioned compatibility.",
+  "study": "Seen-selected query-only score correction on existing raw-sequence adapter"
+}

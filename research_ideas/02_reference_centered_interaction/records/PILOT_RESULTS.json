@@ -1,0 +1,217 @@
+{
+  "bootstrap_replicates": 1500,
+  "folds": [
+    {
+      "fold": "A1_action_01",
+      "novel_rows": 335,
+      "novel_videos": 138,
+      "parameters": 106497,
+      "pooled_auc_pair_decomposition": {
+        "B0_raw": {
+          "cross_pairs": 27572,
+          "cross_query": 0.6796024952850718,
+          "within_pairs": 178,
+          "within_query": 0.7078651685393258
+        },
+        "B1_posthoc": {
+          "cross_pairs": 27572,
+          "cross_query": 0.6776802553314957,
+          "within_pairs": 178,
+          "within_query": 0.702247191011236
+        },
+        "B2_centered": {
+          "cross_pairs": 27572,
+          "cross_query": 0.6806542869577833,
+          "within_pairs": 178,
+          "within_query": 0.7528089887640449
+        }
+      },
+      "pooled_auroc": {
+        "B0_raw": 0.6797837837837838,
+        "B1_posthoc": 0.6778378378378378,
+        "B2_centered": 0.6811171171171172
+      },
+      "pooled_delta_video_cluster_ci95": {
+        "B1_posthoc_minus_B0_raw": [
+          -0.006802818543065409,
+          0.0025105893844939967
+        ],
+        "B2_centered_minus_B0_raw": [
+          -0.008833646892561258,
+          0.010743824176240912
+        ],
+        "B2_centered_minus_B1_posthoc": [
+          -0.006032447932980642,
+          0.011325253277346469
+        ]
+      },
+      "query_only_auroc": 0.6367207207207206,
+      "query_only_empirical_same_query_pairacc": 0.6404494382022472,
+      "query_video_components": 56,
+      "same_query_delta_component_cluster_ci95": {
+        "B1_posthoc_minus_B0_raw": [
+          -0.0059880239520957446,
+          0.0
+        ],
+        "B2_centered_minus_B0_raw": [
+          0.0,
+          0.2736111111111085
+        ],
+        "B2_centered_minus_B1_posthoc": [
+          0.0,
+          0.2736111111111085
+        ]
+      },
+      "same_query_pairacc": {
+        "B0_raw": 0.7078651685393258,
+        "B1_posthoc": 0.702247191011236,
+        "B2_centered": 0.7528089887640449
+      },
+      "same_query_pairs": 178,
+      "same_video_pairacc": {
+        "B0_raw": 0.7342657342657343,
+        "B1_posthoc": 0.7412587412587412,
+        "B2_centered": 0.7272727272727273
+      },
+      "same_video_pairacc_video_cluster_ci95": {
+        "B0_raw": [
+          0.6430944055944056,
+          0.8169497376415354
+        ],
+        "B1_posthoc": [
+          0.649398854961832,
+          0.8243243243243243
+        ],
+        "B2_centered": [
+          0.6360227272727272,
+          0.8118495282560062
+        ]
+      },
+      "same_video_pairs": 143,
+      "seen_auroc": {
+        "B0_raw": 0.6773978191528818,
+        "B1_posthoc": 0.6815147244269713,
+        "B2_centered": 0.6848527557302871
+      },
+      "seen_localization_r1_iou50": 0.34841628959276016,
+      "shuffled_video_retained_label_auroc": {
+        "B0_raw": 0.540108108108108,
+        "B1_posthoc": 0.5441081081081081,
+        "B2_centered": 0.5412972972972974
+      },
+      "training_seconds": {
+        "B0_raw": 0.6193687915802002,
+        "B2_centered": 0.6279053688049316
+      },
+      "video_only_auroc": 0.5021261261261261
+    },
+    {
+      "fold": "C1_composition_01",
+      "novel_rows": 202,
+      "novel_videos": 92,
+      "parameters": 106497,
+      "pooled_auc_pair_decomposition": {
+        "B0_raw": {
+          "cross_pairs": 9963,
+          "cross_query": 0.5438121047877146,
+          "within_pairs": 213,
+          "within_query": 0.49295774647887325
+        },
+        "B1_posthoc": {
+          "cross_pairs": 9963,
+          "cross_query": 0.5439124761617986,
+          "within_pairs": 213,
+          "within_query": 0.5117370892018779
+        },
+        "B2_centered": {
+          "cross_pairs": 9963,
+          "cross_query": 0.5480277024992473,
+          "within_pairs": 213,
+          "within_query": 0.5352112676056338
+        }
+      },
+      "pooled_auroc": {
+        "B0_raw": 0.5427476415094339,
+        "B1_posthoc": 0.5432389937106918,
+        "B2_centered": 0.5477594339622641
+      },
+      "pooled_delta_video_cluster_ci95": {
+        "B1_posthoc_minus_B0_raw": [
+          -0.004546901703511802,
+          0.005807807039955245
+        ],
+        "B2_centered_minus_B0_raw": [
+          -0.00333176922374942,
+          0.013333333333333308
+        ],
+        "B2_centered_minus_B1_posthoc": [
+          -0.0032817132675755506,
+          0.01167673024363072
+        ]
+      },
+      "query_only_auroc": 0.5587657232704402,
+      "query_only_empirical_same_query_pairacc": 0.48826291079812206,
+      "query_video_components": 34,
+      "same_query_delta_component_cluster_ci95": {
+        "B1_posthoc_minus_B0_raw": [
+          0.0,
+          0.020000000000000052
+        ],
+        "B2_centered_minus_B0_raw": [
+          0.0,
+          0.04500000000000004
+        ],
+        "B2_centered_minus_B1_posthoc": [
+          0.0,
+          0.025000000000000022
+        ]
+      },
+      "same_query_pairacc": {
+        "B0_raw": 0.49295774647887325,
+        "B1_posthoc": 0.5117370892018779,
+        "B2_centered": 0.5352112676056338
+      },
+      "same_query_pairs": 213,
+      "same_video_pairacc": {
+        "B0_raw": 0.5526315789473685,
+        "B1_posthoc": 0.5526315789473685,
+        "B2_centered": 0.5394736842105263
+      },
+      "same_video_pairacc_video_cluster_ci95": {
+        "B0_raw": [
+          0.4128958333333333,
+          0.6939166666666665
+        ],
+        "B1_posthoc": [
+          0.4128958333333333,
+          0.6939166666666665
+        ],
+        "B2_centered": [
+          0.40386339662447257,
+          0.6756756756756757
+        ]
+      },
+      "same_video_pairs": 76,
+      "seen_auroc": {
+        "B0_raw": 0.6128482805608347,
+        "B1_posthoc": 0.6139658861357143,
+        "B2_centered": 0.6175816688779718
+      },
+      "seen_localization_r1_iou50": 0.34985835694050993,
+      "shuffled_video_retained_label_auroc": {
+        "B0_raw": 0.5250589622641509,
+        "B1_posthoc": 0.5259433962264152,
+        "B2_centered": 0.5217177672955975
+      },
+      "training_seconds": {
+        "B0_raw": 0.764448881149292,
+        "B2_centered": 0.8616759777069092
+      },
+      "video_only_auroc": 0.5230444182389937
+    }
+  ],
+  "formal_U_accessed": false,
+  "interpretation": "Exploratory two-fold one-seed inner Novel-dev screen; pooled/video-cluster and connected query-video component bootstrap intervals are paired.",
+  "method": "fixed-reference two-sided bilinear centering, separated into B0/B1/B2",
+  "seed": 3407
+}

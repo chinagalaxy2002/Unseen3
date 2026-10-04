@@ -1,0 +1,189 @@
+{
+  "decision_status": "insufficient_evidence_for_conditional_pair_ERM; do_not_advance_to_DG",
+  "disposition": "insufficient_evidence",
+  "folds": [
+    {
+      "B1_minus_B0_delta_pp": 0.0036036036035969055,
+      "baseline_auroc": {
+        "B0_natural_pair_replay": 0.616036036036036,
+        "B1_pair_ERM": 0.616036036036036
+      },
+      "cross_query_pair_auc": {
+        "B0_natural_pair_replay": 0.7111925141447846,
+        "B1_pair_ERM": 0.711736544320325
+      },
+      "eval_seconds": {
+        "B0_natural_pair_replay": 19.34539222717285,
+        "B1_pair_ERM": 19.19834017753601
+      },
+      "fold": "A1_action_01",
+      "localization_r1_iou50": {
+        "B0_natural_pair_replay": 0.34841628959276016,
+        "B1_pair_ERM": 0.34841628959276016
+      },
+      "novel_auroc": {
+        "B0_natural_pair_replay": 0.7106666666666667,
+        "B1_pair_ERM": 0.7107027027027026
+      },
+      "novel_rows": 335,
+      "novel_videos": 138,
+      "paired_video_cluster_delta_ci95_pp": [
+        -4.68015068431749,
+        3.910917114131851
+      ],
+      "parameters": {
+        "B0_natural_pair_replay": 75649,
+        "B1_pair_ERM": 75649
+      },
+      "pooled_video_cluster_ci95": {
+        "B0_natural_pair_replay": [
+          0.6481961753434554,
+          0.775445701926562
+        ],
+        "B1_pair_ERM": [
+          0.6316607337379395,
+          0.7802762583683527
+        ]
+      },
+      "query_only_auroc": {
+        "B0_natural_pair_replay": 0.6478558558558558,
+        "B1_pair_ERM": 0.6478558558558558
+      },
+      "same_query_delta_ci95": [
+        -0.5714285714285714,
+        -0.05555555555555555
+      ],
+      "same_query_pairacc": {
+        "B0_natural_pair_replay": 0.6292134831460674,
+        "B1_pair_ERM": 0.550561797752809
+      },
+      "same_query_pairs": 178,
+      "same_video_delta_ci95": [
+        -0.12049001374626021,
+        0.05634801718110074
+      ],
+      "same_video_pairs": 143,
+      "same_video_source_pairacc": {
+        "B0_natural_pair_replay": 0.7342657342657343,
+        "B1_pair_ERM": 0.7062937062937062
+      },
+      "seen_auroc": {
+        "B0_natural_pair_replay": 0.8782483989812823,
+        "B1_pair_ERM": 0.8705956531414585
+      },
+      "seen_delta_pp": -0.7652745839823782,
+      "shuffle_seconds": {
+        "B0_natural_pair_replay": 0.18387556076049805,
+        "B1_pair_ERM": 0.2357492446899414
+      },
+      "shuffled_video_retained_label_auroc": {
+        "B0_natural_pair_replay": 0.6344864864864864,
+        "B1_pair_ERM": 0.6467027027027027
+      },
+      "strict_inner_baseline_auroc": 0.616036036036036,
+      "train_seconds": {
+        "B0_natural_pair_replay": 52.51156258583069,
+        "B1_pair_ERM": 53.59565281867981
+      },
+      "video_only_auroc": {
+        "B0_natural_pair_replay": 0.5061621621621621,
+        "B1_pair_ERM": 0.5061621621621621
+      }
+    },
+    {
+      "B1_minus_B0_delta_pp": 1.7197327044025101,
+      "baseline_auroc": {
+        "B0_natural_pair_replay": 0.5553262578616353,
+        "B1_pair_ERM": 0.5553262578616353
+      },
+      "cross_query_pair_auc": {
+        "B0_natural_pair_replay": 0.5764328013650507,
+        "B1_pair_ERM": 0.592893706714845
+      },
+      "eval_seconds": {
+        "B0_natural_pair_replay": 29.174515962600708,
+        "B1_pair_ERM": 28.830271005630493
+      },
+      "fold": "C1_composition_01",
+      "localization_r1_iou50": {
+        "B0_natural_pair_replay": 0.34985835694050993,
+        "B1_pair_ERM": 0.34985835694050993
+      },
+      "novel_auroc": {
+        "B0_natural_pair_replay": 0.5750786163522014,
+        "B1_pair_ERM": 0.5922759433962265
+      },
+      "novel_rows": 202,
+      "novel_videos": 92,
+      "paired_video_cluster_delta_ci95_pp": [
+        -5.577536517533932,
+        8.635378402635473
+      ],
+      "parameters": {
+        "B0_natural_pair_replay": 75649,
+        "B1_pair_ERM": 75649
+      },
+      "pooled_video_cluster_ci95": {
+        "B0_natural_pair_replay": [
+          0.47896055381400204,
+          0.671773167742579
+        ],
+        "B1_pair_ERM": [
+          0.4961227451687439,
+          0.684463454168069
+        ]
+      },
+      "query_only_auroc": {
+        "B0_natural_pair_replay": 0.5718356918238994,
+        "B1_pair_ERM": 0.5718356918238994
+      },
+      "same_query_delta_ci95": [
+        -0.21428571428571427,
+        0.22727272727272727
+      ],
+      "same_query_pairacc": {
+        "B0_natural_pair_replay": 0.5117370892018779,
+        "B1_pair_ERM": 0.5633802816901409
+      },
+      "same_query_pairs": 213,
+      "same_video_delta_ci95": [
+        -0.1265867356034944,
+        0.1282352941176469
+      ],
+      "same_video_pairs": 76,
+      "same_video_source_pairacc": {
+        "B0_natural_pair_replay": 0.6447368421052632,
+        "B1_pair_ERM": 0.6447368421052632
+      },
+      "seen_auroc": {
+        "B0_natural_pair_replay": 0.8504440539797516,
+        "B1_pair_ERM": 0.8540717897228098
+      },
+      "seen_delta_pp": 0.36277357430581914,
+      "shuffle_seconds": {
+        "B0_natural_pair_replay": 0.1186378002166748,
+        "B1_pair_ERM": 0.11339759826660156
+      },
+      "shuffled_video_retained_label_auroc": {
+        "B0_natural_pair_replay": 0.5790094339622641,
+        "B1_pair_ERM": 0.5639740566037736
+      },
+      "strict_inner_baseline_auroc": 0.5553262578616353,
+      "train_seconds": {
+        "B0_natural_pair_replay": 77.98697018623352,
+        "B1_pair_ERM": 74.6267101764679
+      },
+      "video_only_auroc": {
+        "B0_natural_pair_replay": 0.5137087264150944,
+        "B1_pair_ERM": 0.5137087264150944
+      }
+    }
+  ],
+  "formal_U_accessed": false,
+  "idea": "07_compatibility_domain_generalization",
+  "mean_B1_minus_B0_delta_pp": 0.8616681540030535,
+  "mean_same_query_delta": -0.013504246452497704,
+  "mean_same_video_delta": -0.013986013986014012,
+  "phase": "two-fold one-seed source-linked pair ERM gate; inner Novel-dev exploratory",
+  "seed": 3407
+}

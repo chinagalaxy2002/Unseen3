@@ -1,0 +1,97 @@
+{
+  "files": [
+    {
+      "bytes": 27565,
+      "path": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/04_query_marginal_matching/vendor/baseline_moment/SOURCE.json",
+      "sha256": "5a816e72119aac7042830269aa77d62b39e68f618d32542cb2c11f3729a46c1a"
+    },
+    {
+      "bytes": 1,
+      "path": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/04_query_marginal_matching/vendor/baseline_moment/models/moment_detr_gmr/__init__.py",
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    {
+      "bytes": 1945,
+      "path": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/04_query_marginal_matching/vendor/baseline_moment/models/moment_detr_gmr/gmr_adapter.py",
+      "sha256": "0e1235c8425f9c61883e88a57a8a1feec2c9ceb15046aeecd83563deb3cefc67"
+    },
+    {
+      "bytes": 8655,
+      "path": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/04_query_marginal_matching/vendor/baseline_moment/models/moment_detr_gmr/matcher.py",
+      "sha256": "8b07afe4a76b955e215f18ff72d303e807a63fa56d0f6ab839d6cf28c5784d3c"
+    },
+    {
+      "bytes": 498,
+      "path": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/04_query_marginal_matching/vendor/baseline_moment/models/moment_detr_gmr/misc.py",
+      "sha256": "58ec43442128ad370d3b08cb677a378b51e017db3f25b2bbb68bc5910c353bca"
+    },
+    {
+      "bytes": 17375,
+      "path": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/04_query_marginal_matching/vendor/baseline_moment/models/moment_detr_gmr/moment_detr.py",
+      "sha256": "c2e86f6157a13a36fbde4f297951582f6c3ffe22655e84d05793bc415df25f0b"
+    },
+    {
+      "bytes": 19938,
+      "path": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/04_query_marginal_matching/vendor/baseline_moment/models/moment_detr_gmr/moment_transformer.py",
+      "sha256": "86229992218d9b512318d5a200a7283e5e06651a60abc784c8a2dc23f5ec0d47"
+    },
+    {
+      "bytes": 4071,
+      "path": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/04_query_marginal_matching/vendor/baseline_moment/models/moment_detr_gmr/position_encoding.py",
+      "sha256": "4e5087a96dc0e4794ea9efa747808ac632e170c3366b69e66e9603cdad57e911"
+    },
+    {
+      "bytes": 1,
+      "path": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/04_query_marginal_matching/vendor/baseline_moment/models/moment_detr_gmr/utils/__init__.py",
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    {
+      "bytes": 8270,
+      "path": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/04_query_marginal_matching/vendor/baseline_moment/models/moment_detr_gmr/utils/basic_utils.py",
+      "sha256": "6a79f057547fdd3c89607d199a1692686acd3147db5d1a41e2afbc3b4c55ea67"
+    },
+    {
+      "bytes": 1586,
+      "path": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/04_query_marginal_matching/vendor/baseline_moment/models/moment_detr_gmr/utils/model_utils.py",
+      "sha256": "b0bb879aa4df8af4fde6bb1db335aa71881d4721a8d43e8892e4ef40d24c4d9d"
+    },
+    {
+      "bytes": 4885,
+      "path": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/04_query_marginal_matching/vendor/baseline_moment/models/moment_detr_gmr/utils/span_utils.py",
+      "sha256": "82d769f160355d23cc68dfb520732eee806540a6192442d9815b992bfcb37126"
+    },
+    {
+      "bytes": 2589,
+      "path": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/04_query_marginal_matching/vendor/baseline_moment/models/moment_detr_gmr/utils/temporal_nms.py",
+      "sha256": "d48ca06574fee6b7bad2c858f842b54747a3cc292cc74e9f57de13d6068c56a2"
+    },
+    {
+      "bytes": 4475,
+      "path": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/04_query_marginal_matching/vendor/baseline_moment/models/moment_detr_gmr/utils/tensor_utils.py",
+      "sha256": "645dae24ee2a97add73d0e14d2ce79035928c4780f17868cdb82da96cbccbdea"
+    },
+    {
+      "bytes": 1934,
+      "path": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/04_query_marginal_matching/vendor/baseline_moment/models/moment_detr_gmr/utils/windows_utils.py",
+      "sha256": "d7410f8053d86105627534a1087f443d377f0c852bff7264b97890b5ec8af579"
+    },
+    {
+      "bytes": 0,
+      "path": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/04_query_marginal_matching/vendor/baseline_moment/training/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 0,
+      "path": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/04_query_marginal_matching/vendor/baseline_moment/training/moment_detr_gmr/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 11302,
+      "path": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/04_query_marginal_matching/vendor/baseline_moment/training/moment_detr_gmr/dataset.py",
+      "sha256": "7cf3a8fe9bb09f077d6bc01666e55c4f5b509a50c0dc0190352e6876f4fd7dab"
+    }
+  ],
+  "runtime_import_root": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/04_query_marginal_matching/vendor/baseline_moment",
+  "source_copy": "physical copy from research_ideas/01_crossed_existence_supervision/vendor/baseline_moment",
+  "source_manifest_sha256": "5a816e72119aac7042830269aa77d62b39e68f618d32542cb2c11f3729a46c1a"
+}

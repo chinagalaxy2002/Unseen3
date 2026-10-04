@@ -1,0 +1,8 @@
+
+[2026-10-03T20:33:41+00:00] START train: python -u /home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/07_compatibility_domain_generalization/code/train_pair_gate.py --fold A1_action_01 --arm B0_natural_pair_replay --train-rows /home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/07_compatibility_domain_generalization/data/A1_action_01/inner_train.jsonl --val-rows /home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/07_compatibility_domain_generalization/data/A1_action_01/inner_seen_val.jsonl --units /home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/07_compatibility_domain_generalization/data/A1_action_01/environment_units.jsonl --output /home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/07_compatibility_domain_generalization/runs/pilot1/A1_action_01/B0_natural_pair_replay/seed3407/artifacts --seed 3407 --epochs 5 --batch-size 32 --pair-batch-size 16 --eval-batch-size 64 --dim 32 --lr 0.001 --pair-weight 0.25 --margin 0.2 --device cuda:0
+A1_action_01 B0_natural_pair_replay epoch=1/5 seen_auc=0.859024 pairs=691
+A1_action_01 B0_natural_pair_replay epoch=2/5 seen_auc=0.874985 pairs=691
+A1_action_01 B0_natural_pair_replay epoch=3/5 seen_auc=0.876604 pairs=691
+A1_action_01 B0_natural_pair_replay epoch=4/5 seen_auc=0.869100 pairs=691
+A1_action_01 B0_natural_pair_replay epoch=5/5 seen_auc=0.878248 pairs=691
+[2026-10-03T20:34:41+00:00] EXIT train: rc=0

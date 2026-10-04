@@ -1,0 +1,13 @@
+{
+  "python": "3.13.5 | packaged by Anaconda, Inc. | (main, Jun 12 2025, 16:09:02) [GCC 11.2.0]",
+  "platform": "Linux-6.8.0-57-generic-x86_64-with-glibc2.35",
+  "packages": {
+    "torch": "2.10.0+cu128",
+    "numpy": "2.4.2",
+    "sklearn": "1.8.0",
+    "yaml": "6.0.3"
+  },
+  "torch_cuda": "12.8",
+  "cuda_available": true,
+  "gpus_startup": "0, NVIDIA GeForce RTX 3090, 24576 MiB, 34 MiB, 0 %\n1, NVIDIA GeForce RTX 3090, 24576 MiB, 15 MiB, 0 %"
+}

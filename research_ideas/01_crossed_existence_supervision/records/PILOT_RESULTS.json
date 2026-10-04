@@ -1,0 +1,84 @@
+{
+  "arms": "same 50,049-parameter pooled R1 head; natural BCE vs BCE + pairwise margin loss, weight 0.1; 5 epochs; Seen-val selection",
+  "disposition": "insufficient_evidence for this simple pair fallback: action fold regressed on pooled AUROC and same-query PairAcc; composition fold was near zero. This does not refute complete-quartet supervision.",
+  "folds": [
+    {
+      "fold": "A1_action_01",
+      "novel_bce": 0.6276756756756756,
+      "novel_bootstrap_reps": 1500,
+      "novel_delta": -0.011999999999999789,
+      "novel_pair": 0.6156756756756758,
+      "novel_paired_video_cluster_delta_ci95": [
+        -0.02826633169716245,
+        0.0038266632016632604
+      ],
+      "parameters": 50049,
+      "query_only_auc": 0.6714954954954955,
+      "query_only_same_query": 0.5337078651685393,
+      "same_query_bce": 0.449438202247191,
+      "same_query_bootstrap_reps": 1493,
+      "same_query_component_delta_ci95": [
+        -0.024024024024024024,
+        0.0
+      ],
+      "same_query_components": 56,
+      "same_query_delta": -0.02247191011235955,
+      "same_query_pair": 0.42696629213483145,
+      "same_query_pair_count": 178,
+      "same_video_bce": 0.7132867132867133,
+      "same_video_cluster_delta_ci95": null,
+      "same_video_delta": -0.006993006993007089,
+      "same_video_pair": 0.7062937062937062,
+      "seen_bce": 0.8719061395049823,
+      "seen_localization_r1_iou50": 0.34841628959276016,
+      "seen_pair": 0.8734638874465297,
+      "shuffled_bce_auc": 0.6127207207207206,
+      "shuffled_pair_auc": 0.5991711711711711,
+      "train_seconds_bce": 9.520453453063965,
+      "train_seconds_pair": 9.304160118103027,
+      "unique_videos": 138,
+      "video_only_auc": 0.5004324324324325
+    },
+    {
+      "fold": "C1_composition_01",
+      "novel_bce": 0.553557389937107,
+      "novel_bootstrap_reps": 1500,
+      "novel_delta": 0.0010809748427671462,
+      "novel_pair": 0.5546383647798742,
+      "novel_paired_video_cluster_delta_ci95": [
+        -0.002815932846656069,
+        0.004798136342302917
+      ],
+      "parameters": 50049,
+      "query_only_auc": 0.5829402515723271,
+      "query_only_same_query": 0.8826291079812206,
+      "same_query_bce": 0.5070422535211268,
+      "same_query_bootstrap_reps": 1492,
+      "same_query_component_delta_ci95": [
+        0.0,
+        0.010062893081761006
+      ],
+      "same_query_components": 34,
+      "same_query_delta": 0.009389671361502372,
+      "same_query_pair": 0.5164319248826291,
+      "same_query_pair_count": 213,
+      "same_video_bce": 0.6710526315789473,
+      "same_video_cluster_delta_ci95": null,
+      "same_video_delta": 0.0,
+      "same_video_pair": 0.6710526315789473,
+      "seen_bce": 0.8116505898805895,
+      "seen_localization_r1_iou50": 0.34985835694050993,
+      "seen_pair": 0.8112202818517589,
+      "shuffled_bce_auc": 0.5345911949685535,
+      "shuffled_pair_auc": 0.5348860062893082,
+      "train_seconds_bce": 12.344679117202759,
+      "train_seconds_pair": 12.514783382415771,
+      "unique_videos": 92,
+      "video_only_auc": 0.49415290880503143
+    }
+  ],
+  "interpretation": "Exploratory one-seed, two-fold pilot. This does not test complete closed quartets. Formal U was not accessed.",
+  "method": "exact-query cross-video pairwise loss fallback under Idea 01",
+  "next": "Proceed to priority 02 reference-centered interaction pilot; revisit Idea 01 only if a closed-quartet audit shows enough independent, trusted matrices.",
+  "seed": 3407
+}

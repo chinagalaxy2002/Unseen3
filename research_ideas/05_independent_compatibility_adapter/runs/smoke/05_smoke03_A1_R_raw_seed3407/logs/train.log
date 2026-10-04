@@ -1,0 +1,4 @@
+
+[2026-10-03T19:30:35+00:00] START train: python -u /home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/05_independent_compatibility_adapter/code/train_adapter.py --fold A1_action_01 --arm R_raw_sequence --train-rows /home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/05_independent_compatibility_adapter/data/A1_action_01/inner_train.jsonl --val-rows /home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/05_independent_compatibility_adapter/data/A1_action_01/inner_seen_val.jsonl --output /home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/05_independent_compatibility_adapter/runs/smoke/05_smoke03_A1_R_raw_seed3407/artifacts --seed 3407 --epochs 1 --batch-size 8 --eval-batch-size 8 --dim 32 --device cuda:0
+A1_action_01 R_raw_sequence epoch=1/1 seen_auc=0.837228
+[2026-10-03T19:30:55+00:00] EXIT train: rc=0

@@ -1,0 +1,42 @@
+{
+  "arms": [
+    "M0_natural_duplicate",
+    "M1_original_ratio",
+    "M2_balanced_query"
+  ],
+  "auxiliary_stream": "same number of draws and forward computations for every arm; M0 draws natural rows; M1 and M2 draw q uniformly from exactly the same reviewed dual-label query support, with M1 preserving within-q empirical y ratio and M2 sampling y uniformly",
+  "auxiliary_weight": 0.25,
+  "batch_size": 32,
+  "checkpoint_selection": "inner Seen-val pooled AUROC, earliest tie",
+  "compute_match": "one auxiliary batch per natural main batch in all arms; duplicate-stream control M0 prevents an auxiliary-compute advantage",
+  "epochs": 5,
+  "features": "frozen V5 pooled 256D strict-inner cached representation; no baseline checkpoint or labels from inner Novel-dev enter training",
+  "folds": [
+    "A1_action_01",
+    "C1_composition_01"
+  ],
+  "formal_U_accessed": false,
+  "idea": "04_query_marginal_matching",
+  "learning_rate": 0.001,
+  "main_stream": "all natural inner_train rows, unchanged in every arm",
+  "negative_provenance": "user_attested_video_review",
+  "planned_controls": "query-only, video-only, same-video, same-query, frozen localization, true input-level shuffled-video forward",
+  "positive_provenance": "human_temporal_annotation",
+  "seed": 3407,
+  "status": "frozen_before_training",
+  "support_manifests": {
+    "A1_action_01": {
+      "dual_queries": 89,
+      "inner_train_bank_metadata_sha256": "2b70341db854fa7b7bbb22f2bc1b75989111c9f1609a8ee29b9ef7045b145afb",
+      "path": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/04_query_marginal_matching/data/A1_action_01/query_support_manifest.jsonl",
+      "sha256": "c392402dcddf84343e9374748143174fccbeacc4d3ceb88a122718ce1c40e0e4"
+    },
+    "C1_composition_01": {
+      "dual_queries": 146,
+      "inner_train_bank_metadata_sha256": "bf2a56e81719ed833654552f2d5c1ed182a20f48b992fb5aaf6721bf92d1305e",
+      "path": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/04_query_marginal_matching/data/C1_composition_01/query_support_manifest.jsonl",
+      "sha256": "fea1dfb3560a35e09d0ed5a83eeccb5a45e81e59b21d6a35637141bd9c698487"
+    }
+  },
+  "support_normalization": "lowercase and collapse whitespace only; no semantic embedding merges"
+}

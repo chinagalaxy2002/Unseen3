@@ -1,0 +1,90 @@
+
+[2026-10-03T18:39:22+00:00] START train: python -u /home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/02_reference_centered_interaction/code/bilinear.py train --fold A1_action_01 --bank-root /home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/results/moment_detr_gmr_evidence_v5/banks --train-rows /home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/02_reference_centered_interaction/data/A1_action_01/inner_train.jsonl --val-rows /home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/02_reference_centered_interaction/data/A1_action_01/inner_seen_val.jsonl --output /home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/02_reference_centered_interaction/runs/A1_action_01/centered/artifacts --arm centered --seed 3407 --epochs 5 --rank 32 --batch-size 128 --lr 0.001 --device cuda:0
+Traceback (most recent call last):
+  File "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/02_reference_centered_interaction/code/bilinear.py", line 133, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/02_reference_centered_interaction/code/bilinear.py", line 132, in main
+    a=p.parse_args();(run_train(a) if a.mode=='train' else run_eval(a))
+                      ~~~~~~~~~^^^
+  File "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/02_reference_centered_interaction/code/bilinear.py", line 57, in run_train
+    ix=torch.tensor(ids,device=dev);score=model(vt[ix]-vm_t,qt[ix]-qm_t);loss=F.binary_cross_entropy_with_logits(score,y[ix])
+                                          ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/guoxiangyu/miniconda3/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1776, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home/guoxiangyu/miniconda3/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1787, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/02_reference_centered_interaction/code/bilinear.py", line 33, in forward
+    def forward(self,v,q):return (self.v(v)*self.q(q)).sum(-1)*self.scale+self.bias
+                                            ~~~~~~^^^
+  File "/home/guoxiangyu/miniconda3/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1776, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home/guoxiangyu/miniconda3/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1787, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/guoxiangyu/miniconda3/lib/python3.13/site-packages/torch/nn/modules/linear.py", line 134, in forward
+    return F.linear(input, self.weight, self.bias)
+           ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: expected mat1 and mat2 to have the same dtype, but got: double != float
+[2026-10-03T18:39:32+00:00] EXIT train: rc=1
+
+[2026-10-03T18:39:32+00:00] START train: python -u /home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/02_reference_centered_interaction/code/bilinear.py train --fold A1_action_01 --bank-root /home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/results/moment_detr_gmr_evidence_v5/banks --train-rows /home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/02_reference_centered_interaction/data/A1_action_01/inner_train.jsonl --val-rows /home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/02_reference_centered_interaction/data/A1_action_01/inner_seen_val.jsonl --output /home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/02_reference_centered_interaction/runs/A1_action_01/centered/artifacts --arm centered --seed 3407 --epochs 5 --rank 32 --batch-size 128 --lr 0.001 --device cuda:0
+Traceback (most recent call last):
+  File "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/02_reference_centered_interaction/code/bilinear.py", line 133, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/02_reference_centered_interaction/code/bilinear.py", line 132, in main
+    a=p.parse_args();(run_train(a) if a.mode=='train' else run_eval(a))
+                      ~~~~~~~~~^^^
+  File "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/02_reference_centered_interaction/code/bilinear.py", line 57, in run_train
+    ix=torch.tensor(ids,device=dev);score=model(vt[ix]-vm_t,qt[ix]-qm_t);loss=F.binary_cross_entropy_with_logits(score,y[ix])
+                                          ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/guoxiangyu/miniconda3/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1776, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home/guoxiangyu/miniconda3/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1787, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/02_reference_centered_interaction/code/bilinear.py", line 33, in forward
+    def forward(self,v,q):return (self.v(v)*self.q(q)).sum(-1)*self.scale+self.bias
+                                            ~~~~~~^^^
+  File "/home/guoxiangyu/miniconda3/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1776, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home/guoxiangyu/miniconda3/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1787, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/guoxiangyu/miniconda3/lib/python3.13/site-packages/torch/nn/modules/linear.py", line 134, in forward
+    return F.linear(input, self.weight, self.bias)
+           ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: expected mat1 and mat2 to have the same dtype, but got: double != float
+[2026-10-03T18:39:42+00:00] EXIT train: rc=1
+
+[2026-10-03T18:39:42+00:00] START train: python -u /home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/02_reference_centered_interaction/code/bilinear.py train --fold A1_action_01 --bank-root /home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/results/moment_detr_gmr_evidence_v5/banks --train-rows /home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/02_reference_centered_interaction/data/A1_action_01/inner_train.jsonl --val-rows /home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/02_reference_centered_interaction/data/A1_action_01/inner_seen_val.jsonl --output /home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/02_reference_centered_interaction/runs/A1_action_01/centered/artifacts --arm centered --seed 3407 --epochs 5 --rank 32 --batch-size 128 --lr 0.001 --device cuda:0
+Traceback (most recent call last):
+  File "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/02_reference_centered_interaction/code/bilinear.py", line 133, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/02_reference_centered_interaction/code/bilinear.py", line 132, in main
+    a=p.parse_args();(run_train(a) if a.mode=='train' else run_eval(a))
+                      ~~~~~~~~~^^^
+  File "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/02_reference_centered_interaction/code/bilinear.py", line 57, in run_train
+    ix=torch.tensor(ids,device=dev);score=model(vt[ix]-vm_t,qt[ix]-qm_t);loss=F.binary_cross_entropy_with_logits(score,y[ix])
+                                          ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/guoxiangyu/miniconda3/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1776, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home/guoxiangyu/miniconda3/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1787, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/02_reference_centered_interaction/code/bilinear.py", line 33, in forward
+    def forward(self,v,q):return (self.v(v)*self.q(q)).sum(-1)*self.scale+self.bias
+                                            ~~~~~~^^^
+  File "/home/guoxiangyu/miniconda3/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1776, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home/guoxiangyu/miniconda3/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1787, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/guoxiangyu/miniconda3/lib/python3.13/site-packages/torch/nn/modules/linear.py", line 134, in forward
+    return F.linear(input, self.weight, self.bias)
+           ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: expected mat1 and mat2 to have the same dtype, but got: double != float
+[2026-10-03T18:39:52+00:00] EXIT train: rc=1

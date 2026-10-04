@@ -1,0 +1,47 @@
+{
+  "arms": [
+    "P_pooled",
+    "R_raw_sequence"
+  ],
+  "batch_size": 16,
+  "checkpoint_sha256": {
+    "A1_action_01": "ae514a78ce1d8836cb849774fadd7ecbc496b25f36161bcce195c3efcae97343",
+    "C1_composition_01": "c5319f94c70ef323e78e6bdb83d3e4d60ed020385aff5c0a57ef142e079dae43"
+  },
+  "controls": [
+    "query-only LR C=.1",
+    "video-only LR C=.1",
+    "same-query cross-video PairAcc",
+    "source-linked same-video PairAcc",
+    "fresh copied-baseline pre-fusion reforward after video derangement for P_pooled",
+    "raw-sequence video replacement followed by fresh adapter forward for R_raw_sequence",
+    "Seen localization reuses frozen spans/class logits"
+  ],
+  "counterfactual_pairs": "not available in these two folds under current verified annotations; do not infer absences from missing windows",
+  "dim": 32,
+  "epochs": 5,
+  "eval_batch_size": 16,
+  "fold_majority_screen": "3/4 folds applies only to expanded four-fold stage; initial pilot is not a confirmation",
+  "folds": [
+    "A1_action_01",
+    "C1_composition_01"
+  ],
+  "formal_U_accessed": false,
+  "frozen_at": "2026-10-04T03:39:00+08:00",
+  "idea": "05_independent_compatibility_adapter",
+  "loss": "natural-sample BCE only, same rows and number of epochs in both arms",
+  "novel_screen_pp": 2.0,
+  "optimizer": "AdamW lr=1e-3 weight_decay=1e-4; grad norm clip 1.0",
+  "parameters": {
+    "P_pooled": 33665,
+    "R_raw_sequence": 75649
+  },
+  "phase": "two-fold, one-seed strict-inner development pilot; exploratory Novel-dev",
+  "pooled_representation": "strict-inner V5 Moment pooled 256-d decoder features; same query cross-attention and scorer family",
+  "raw_representation": "fold-declared CLIP 512 + SlowFast 2304 per temporal bin; min modality length used after verifying absolute difference <=1; separate LayerNorm and 16-d projections per modality",
+  "seed": 3407,
+  "seen_guard_pp": -1.0,
+  "selection": "inner Seen-val pooled AUROC, earliest tie",
+  "shuffled_labels": "retained original labels only for input-dependence diagnosis; not relabeled benchmark and no 0.5 expectation",
+  "smoke_note": "Raw one-epoch smoke was completed and its Novel-dev metric was viewed before this freeze; it is a process smoke only, not evidence or a model-selection input. The pooled one-epoch smoke is currently being debugged. Formal U untouched."
+}

@@ -1,0 +1,25 @@
+{
+  "idea": "05_independent_compatibility_adapter",
+  "revision": "Seen-selected query-only score correction on the existing raw-sequence adapter; no retraining",
+  "folds": ["A1_action_01", "C1_composition_01"],
+  "seed": 3407,
+  "source_checkpoint": "Existing five-epoch R_raw_sequence strict-inner checkpoint per fold; exact checkpoint copied into the new local run directory and SHA-256 recorded.",
+  "uncorrected_score": "Existing raw-sequence video-query adapter score from the successful Idea 05 run.",
+  "query_prior_score": "Existing training-only query logistic-regression score (C=0.1) computed from inner-train query features; reused per row from the validated original prediction artifact.",
+  "correction": "s_corrected(V,Q)=s_adapter(V,Q)-lambda*q_prior(Q)",
+  "lambda_grid": [0.0, 0.25, 0.5, 0.75, 1.0],
+  "selection": "Maximize pooled AUROC on inner Seen validation, earliest lambda tie. Novel-dev is read only after lambda is fixed.",
+  "primary_comparison": "Corrected versus uncorrected raw-sequence scores on identical rows/checkpoint.",
+  "required_controls": [
+    "natural Seen and Novel pooled AUROC and descriptive Seen−Novel gap",
+    "same-query cross-video PairAcc/AUROC with connected query-video component bootstrap",
+    "same-video source-linked PairAcc with video-cluster bootstrap",
+    "query-only and video-only AUROC",
+    "fresh raw-video derangement before adapter interaction and scoring; evaluate corrected and uncorrected scores with labels retained only as dependence diagnostic",
+    "strict-inner baseline AUROC, frozen localization, parameter count and evaluation/shuffle cost"
+  ],
+  "interpretation_guard": "Subtracting a query-only score is score comparability calibration. If conditional rankings do not improve, do not call it stronger video-query compatibility even if pooled AUROC improves.",
+  "formal_U_accessed": false,
+  "one_seed_two_fold_exploratory": true,
+  "frozen_at": "2026-10-04T04:51:00+08:00"
+}

@@ -1,0 +1,28 @@
+{
+  "correction_freeze_sha256": "c5057a3bafed00c8d2f0a8bb7f4e9486cfb8c98f4a5979b4809cc36ffbd25a26",
+  "folds": [
+    {
+      "fold": "A1_action_01",
+      "reused_checkpoint": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/05_independent_compatibility_adapter/runs/score_correction/A1_action_01/seed3407/artifacts/best.ckpt",
+      "reused_checkpoint_sha256": "c54edbc904ae7099b45fb412818a230ce4138f7b1e49ea74386b892835fd9f50",
+      "source_checkpoint": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/05_independent_compatibility_adapter/runs/A1_action_01/R_raw_sequence/seed3407_pilot1/artifacts/best.ckpt",
+      "source_checkpoint_sha256": "c54edbc904ae7099b45fb412818a230ce4138f7b1e49ea74386b892835fd9f50",
+      "source_metrics_sha256": "119397ce679b1f07ca1a35d08da4d0ae4bbb4dc4f434cf514029a46f9383f0af",
+      "source_predictions": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/05_independent_compatibility_adapter/runs/A1_action_01/R_raw_sequence/seed3407_pilot1/predictions.jsonl",
+      "source_predictions_sha256": "f5fd7ea21a7f68a41c75b06214348ef9fb2ed96c4c4ca7d3e9878ceadbb027de",
+      "task_spec": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/_orchestration/specs/05_prior_correction_A1_action_01_seed3407.json"
+    },
+    {
+      "fold": "C1_composition_01",
+      "reused_checkpoint": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/05_independent_compatibility_adapter/runs/score_correction/C1_composition_01/seed3407/artifacts/best.ckpt",
+      "reused_checkpoint_sha256": "44a92b43664f732f683edc7382ea5294521e00727fce5fd54872060543c3daad",
+      "source_checkpoint": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/05_independent_compatibility_adapter/runs/C1_composition_01/R_raw_sequence/seed3407_pilot1/artifacts/best.ckpt",
+      "source_checkpoint_sha256": "44a92b43664f732f683edc7382ea5294521e00727fce5fd54872060543c3daad",
+      "source_metrics_sha256": "ef92e4610eeaad79cf8ca702ba648e54b53aec74d4a678e1d0612977a0955bf1",
+      "source_predictions": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/05_independent_compatibility_adapter/runs/C1_composition_01/R_raw_sequence/seed3407_pilot1/predictions.jsonl",
+      "source_predictions_sha256": "ef728ebf70c1b7024443c204291df6cbac90662b4e07aceb0da9d713df365e0b",
+      "task_spec": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/_orchestration/specs/05_prior_correction_C1_composition_01_seed3407.json"
+    }
+  ],
+  "idea": "05_independent_compatibility_adapter"
+}

@@ -1,0 +1,5 @@
+# Pooled-smoke evaluator repair
+
+The pooled one-epoch smoke trained successfully, then failed during the optional fresh-fusion video-swap check. The isolated traceback was `CompatibilityAdapter.forward() missing 3 required positional arguments: 'query', 'query_mask', and 'video_mask'`: the check passed only the recomputed pooled video feature. This is an evaluator wiring error, not a data or label failure.
+
+The two bounded Codex CLI repair attempts could not reach workspace routing (repeated request and route-aware timeouts) and made no code changes. After verifying the child process belonged to this queue controller, I stopped that stalled repair process. In `code/shuffle_pooled.py`, the repair now reloads each original row's fold-specific raw query tokens, builds the same pooled-arm batch, and scores both original and swapped pooled features with video, query, and masks. No source model, shared data, or existing result was changed. The failed task and both CLI logs remain preserved; validation will use a new task ID and output path.

@@ -1,0 +1,43 @@
+{
+  "audit_caveat": "absence provenance is inherited from reviewed release; this audit does not constitute a new human review.",
+  "audit_scope": "inner_train only; inner Seen-val and Novel-dev used only to check exact query string overlap counts, no labels used to select support",
+  "folds": [
+    {
+      "all_support_labels_provenance_valid": true,
+      "balanced_pair_capacity_sum_min_per_query": 152,
+      "dual_class_exact_queries": 89,
+      "dual_class_queries_disjoint_videos": 89,
+      "fold": "A1_action_01",
+      "inner_train_rows": 6611,
+      "manifest_sha256": "c392402dcddf84343e9374748143174fccbeacc4d3ceb88a122718ce1c40e0e4",
+      "negative_support_rows": 231,
+      "positive_support_rows": 384,
+      "source_manifest_sha256": "9d59510429734a95b116715e30102edbb3b9b9e7f9199bfd3f3bc2bb66385aaa",
+      "support_issues": [],
+      "train_query_string_overlap_with_eval": {
+        "inner_novel_dev": 0,
+        "inner_seen_val": 196
+      }
+    },
+    {
+      "all_support_labels_provenance_valid": true,
+      "balanced_pair_capacity_sum_min_per_query": 225,
+      "dual_class_exact_queries": 146,
+      "dual_class_queries_disjoint_videos": 146,
+      "fold": "C1_composition_01",
+      "inner_train_rows": 9165,
+      "manifest_sha256": "fea1dfb3560a35e09d0ed5a83eeccb5a45e81e59b21d6a35637141bd9c698487",
+      "negative_support_rows": 305,
+      "positive_support_rows": 526,
+      "source_manifest_sha256": "a402c0c8892e4b820fd7e4b82e6130d197b5f1b8746958e63919a19dbb81594f",
+      "support_issues": [],
+      "train_query_string_overlap_with_eval": {
+        "inner_novel_dev": 0,
+        "inner_seen_val": 298
+      }
+    }
+  ],
+  "idea": "04_query_marginal_matching",
+  "normalization": "lowercase and collapse whitespace only; no embedding-based merging",
+  "support_rule": "at least one positive human_temporal_annotation row and one negative user_attested_video_review row, with no same-query same-video contradictory label"
+}

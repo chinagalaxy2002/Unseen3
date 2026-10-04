@@ -1,0 +1,28 @@
+{
+  "arms": {
+    "BCE": {
+      "pair_weight": 0.0
+    },
+    "BCE_pair": {
+      "pair_weight": 0.1
+    }
+  },
+  "checkpoint_selection": "inner Seen-val pooled AUROC, earliest epoch on ties; Novel-dev never enters gradients or selection",
+  "controls": "Report natural pooled Seen/Novel AUROC, source same-video PairAcc, exact same-query cross-video PairAcc, query-only and video-only AUROC, raw Seen localization R@1 IoU .5, parameter count and timing. Shuffled-video and full crossed quartets are explicitly unavailable in this cached-fusion pilot and must be added before compatibility claims.",
+  "data_scope": "inner_train_seen only; exact same query normalized only by lower-case plus whitespace; negatives require user_attested_video_review and positives human_temporal_annotation.",
+  "frozen_at": "2026-10-04 Asia/Shanghai before this pilot evaluation",
+  "pilot_decision": "feasibility only; no success claim from one fold/seed. Advance to four folds only if BCE_pair is not clearly harmful on Seen and its Novel-dev AUROC and same-query PairAcc both improve over BCE. Formal development gate remains >=+2pp macro Novel AUROC, >=3/4 folds positive, Seen drop <=1pp, and video-conditional evidence; then >=3 seeds and cross-backbone validation.",
+  "question": "On strict inner A1_action_01, does exact same-query cross-video ranking add useful compatibility signal beyond same pooled-head natural BCE?",
+  "same_configuration": {
+    "batch_size": 32,
+    "epochs": 5,
+    "head": "copied V5 R1 LayerNorm-MLP hidden=128",
+    "lr": 0.001,
+    "margin": 0.2,
+    "optimizer": "AdamW",
+    "pairs_per_step": 8,
+    "seed": 3407,
+    "weight_decay": 0.0001
+  },
+  "test_scope": "Only existing inner_novel_dev, already designated exploratory development data; never formal U."
+}

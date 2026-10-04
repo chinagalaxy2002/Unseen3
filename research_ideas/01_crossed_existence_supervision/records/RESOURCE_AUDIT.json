@@ -1,0 +1,293 @@
+{
+  "all_expected_resources_exist": true,
+  "checks": [
+    {
+      "asset": "A1/manifest.json",
+      "exists": true
+    },
+    {
+      "asset": "A1/train.jsonl",
+      "exists": true
+    },
+    {
+      "asset": "A1/val.jsonl",
+      "exists": true
+    },
+    {
+      "asset": "A1/test.jsonl",
+      "exists": true
+    },
+    {
+      "asset": "A1/matched_u_pairs.jsonl",
+      "exists": true
+    },
+    {
+      "asset": "A1/review_report.json",
+      "exists": true
+    },
+    {
+      "asset": "checkpoint/A1/moment",
+      "bytes": 58699889,
+      "exists": true,
+      "path": "/home/guoxiangyu/paper/Openword/generalized-moment-retrieval/results/semantic_existence/multi_split_v2/A1/moment/best.ckpt"
+    },
+    {
+      "asset": "checkpoint/A1/qd",
+      "bytes": 90884567,
+      "exists": true,
+      "path": "/home/guoxiangyu/paper/Openword/generalized-moment-retrieval/results/semantic_existence/multi_split_v2/A1/qd/best.ckpt"
+    },
+    {
+      "asset": "checkpoint/A1/flash",
+      "exists": true,
+      "matches": [
+        "/home/guoxiangyu/paper/Openword/generalized-moment-retrieval/results/semantic_existence/multi_split_v2/A1/flash/charadesSTA-video_tef-seen_only_seed3407_100ep-2026-09-28-19-04-42/model_best.ckpt"
+      ],
+      "path": "/home/guoxiangyu/paper/Openword/generalized-moment-retrieval/results/semantic_existence/multi_split_v2/A1/flash"
+    },
+    {
+      "asset": "baseline_results/A1",
+      "exists": true
+    },
+    {
+      "asset": "A2_alt/manifest.json",
+      "exists": true
+    },
+    {
+      "asset": "A2_alt/train.jsonl",
+      "exists": true
+    },
+    {
+      "asset": "A2_alt/val.jsonl",
+      "exists": true
+    },
+    {
+      "asset": "A2_alt/test.jsonl",
+      "exists": true
+    },
+    {
+      "asset": "A2_alt/matched_u_pairs.jsonl",
+      "exists": true
+    },
+    {
+      "asset": "A2_alt/review_report.json",
+      "exists": true
+    },
+    {
+      "asset": "checkpoint/A2_alt/moment",
+      "bytes": 58699953,
+      "exists": true,
+      "path": "/home/guoxiangyu/paper/Openword/generalized-moment-retrieval/results/semantic_existence/multi_split_v2/A2_alt/moment/best.ckpt"
+    },
+    {
+      "asset": "checkpoint/A2_alt/qd",
+      "bytes": 90884567,
+      "exists": true,
+      "path": "/home/guoxiangyu/paper/Openword/generalized-moment-retrieval/results/semantic_existence/multi_split_v2/A2_alt/qd/best.ckpt"
+    },
+    {
+      "asset": "checkpoint/A2_alt/flash",
+      "exists": true,
+      "matches": [
+        "/home/guoxiangyu/paper/Openword/generalized-moment-retrieval/results/semantic_existence/multi_split_v2/A2_alt/flash/charadesSTA-video_tef-seen_only_seed3407_100ep-2026-09-28-22-28-30/model_best.ckpt"
+      ],
+      "path": "/home/guoxiangyu/paper/Openword/generalized-moment-retrieval/results/semantic_existence/multi_split_v2/A2_alt/flash"
+    },
+    {
+      "asset": "baseline_results/A2_alt",
+      "exists": true
+    },
+    {
+      "asset": "A3/manifest.json",
+      "exists": true
+    },
+    {
+      "asset": "A3/train.jsonl",
+      "exists": true
+    },
+    {
+      "asset": "A3/val.jsonl",
+      "exists": true
+    },
+    {
+      "asset": "A3/test.jsonl",
+      "exists": true
+    },
+    {
+      "asset": "A3/matched_u_pairs.jsonl",
+      "exists": true
+    },
+    {
+      "asset": "A3/review_report.json",
+      "exists": true
+    },
+    {
+      "asset": "checkpoint/A3/moment",
+      "bytes": 58699889,
+      "exists": true,
+      "path": "/home/guoxiangyu/paper/Openword/generalized-moment-retrieval/results/semantic_existence/multi_split_v2/A3/moment/best.ckpt"
+    },
+    {
+      "asset": "checkpoint/A3/qd",
+      "bytes": 90884567,
+      "exists": true,
+      "path": "/home/guoxiangyu/paper/Openword/generalized-moment-retrieval/results/semantic_existence/multi_split_v2/A3/qd/best.ckpt"
+    },
+    {
+      "asset": "checkpoint/A3/flash",
+      "exists": true,
+      "matches": [
+        "/home/guoxiangyu/paper/Openword/generalized-moment-retrieval/results/semantic_existence/multi_split_v2/A3/flash/charadesSTA-video_tef-seen_only_seed3407_100ep-2026-09-29-02-38-11/model_best.ckpt"
+      ],
+      "path": "/home/guoxiangyu/paper/Openword/generalized-moment-retrieval/results/semantic_existence/multi_split_v2/A3/flash"
+    },
+    {
+      "asset": "baseline_results/A3",
+      "exists": true
+    },
+    {
+      "asset": "C1/manifest.json",
+      "exists": true
+    },
+    {
+      "asset": "C1/train.jsonl",
+      "exists": true
+    },
+    {
+      "asset": "C1/val.jsonl",
+      "exists": true
+    },
+    {
+      "asset": "C1/test.jsonl",
+      "exists": true
+    },
+    {
+      "asset": "C1/matched_u_pairs.jsonl",
+      "exists": true
+    },
+    {
+      "asset": "C1/review_report.json",
+      "exists": true
+    },
+    {
+      "asset": "checkpoint/C1/moment",
+      "bytes": 58699889,
+      "exists": true,
+      "path": "/home/guoxiangyu/paper/Openword/generalized-moment-retrieval/results/semantic_existence/multi_split_v2/C1/moment/best.ckpt"
+    },
+    {
+      "asset": "checkpoint/C1/qd",
+      "bytes": 90884567,
+      "exists": true,
+      "path": "/home/guoxiangyu/paper/Openword/generalized-moment-retrieval/results/semantic_existence/multi_split_v2/C1/qd/best.ckpt"
+    },
+    {
+      "asset": "checkpoint/C1/flash",
+      "exists": true,
+      "matches": [
+        "/home/guoxiangyu/paper/Openword/generalized-moment-retrieval/results/semantic_existence/multi_split_v2/C1/flash/charadesSTA-video_tef-seen_only_seed3407_100ep-2026-09-29-06-51-36/model_best.ckpt"
+      ],
+      "path": "/home/guoxiangyu/paper/Openword/generalized-moment-retrieval/results/semantic_existence/multi_split_v2/C1/flash"
+    },
+    {
+      "asset": "baseline_results/C1",
+      "exists": true
+    },
+    {
+      "asset": "C2_alt/manifest.json",
+      "exists": true
+    },
+    {
+      "asset": "C2_alt/train.jsonl",
+      "exists": true
+    },
+    {
+      "asset": "C2_alt/val.jsonl",
+      "exists": true
+    },
+    {
+      "asset": "C2_alt/test.jsonl",
+      "exists": true
+    },
+    {
+      "asset": "C2_alt/matched_u_pairs.jsonl",
+      "exists": true
+    },
+    {
+      "asset": "C2_alt/review_report.json",
+      "exists": true
+    },
+    {
+      "asset": "checkpoint/C2_alt/moment",
+      "bytes": 58699953,
+      "exists": true,
+      "path": "/home/guoxiangyu/paper/Openword/generalized-moment-retrieval/results/semantic_existence/multi_split_v2/C2_alt/moment/best.ckpt"
+    },
+    {
+      "asset": "checkpoint/C2_alt/qd",
+      "bytes": 90884567,
+      "exists": true,
+      "path": "/home/guoxiangyu/paper/Openword/generalized-moment-retrieval/results/semantic_existence/multi_split_v2/C2_alt/qd/best.ckpt"
+    },
+    {
+      "asset": "checkpoint/C2_alt/flash",
+      "exists": true,
+      "matches": [
+        "/home/guoxiangyu/paper/Openword/generalized-moment-retrieval/results/semantic_existence/multi_split_v2/C2_alt/flash/charadesSTA-video_tef-seen_only_seed3407_100ep-2026-09-29-10-52-24/model_best.ckpt"
+      ],
+      "path": "/home/guoxiangyu/paper/Openword/generalized-moment-retrieval/results/semantic_existence/multi_split_v2/C2_alt/flash"
+    },
+    {
+      "asset": "baseline_results/C2_alt",
+      "exists": true
+    },
+    {
+      "asset": "/home/guoxiangyu/paper/\u65b0\u5efa\u6587\u4ef6\u5939/charades/vid_clip",
+      "exists": true,
+      "npz_count": 9848
+    },
+    {
+      "asset": "/home/guoxiangyu/paper/\u65b0\u5efa\u6587\u4ef6\u5939/charades/vid_slowfast",
+      "exists": true,
+      "npz_count": 9848
+    },
+    {
+      "asset": "models/moment_detr_gmr",
+      "exists": true
+    },
+    {
+      "asset": "training/moment_detr_gmr",
+      "exists": true
+    },
+    {
+      "asset": "configs/moment_detr_gmr",
+      "exists": true
+    },
+    {
+      "asset": "models/flash_vtg_gmr",
+      "exists": true
+    },
+    {
+      "asset": "training/flash_vtg_gmr",
+      "exists": true
+    },
+    {
+      "asset": "configs/flash_vtg_gmr",
+      "exists": true
+    },
+    {
+      "asset": "models/qd_detr_gmr",
+      "exists": true
+    },
+    {
+      "asset": "training/qd_detr_gmr",
+      "exists": true
+    },
+    {
+      "asset": "configs/qd_detr_gmr",
+      "exists": true
+    }
+  ],
+  "original_baseline_source": "/home/guoxiangyu/paper/Openword/generalized-moment-retrieval",
+  "release": "/home/guoxiangyu/paper/Openword/data/release/semantic_existence_v2"
+}

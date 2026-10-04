@@ -1,0 +1,8 @@
+
+[2026-10-03T20:35:07+00:00] START train: python -u /home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/07_compatibility_domain_generalization/code/train_pair_gate.py --fold A1_action_01 --arm B1_pair_ERM --train-rows /home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/07_compatibility_domain_generalization/data/A1_action_01/inner_train.jsonl --val-rows /home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/07_compatibility_domain_generalization/data/A1_action_01/inner_seen_val.jsonl --units /home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/07_compatibility_domain_generalization/data/A1_action_01/environment_units.jsonl --output /home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/07_compatibility_domain_generalization/runs/pilot1/A1_action_01/B1_pair_ERM/seed3407/artifacts --seed 3407 --epochs 5 --batch-size 32 --pair-batch-size 16 --eval-batch-size 64 --dim 32 --lr 0.001 --pair-weight 0.25 --margin 0.2 --device cuda:0
+A1_action_01 B1_pair_ERM epoch=1/5 seen_auc=0.850926 pairs=691
+A1_action_01 B1_pair_ERM epoch=2/5 seen_auc=0.868890 pairs=691
+A1_action_01 B1_pair_ERM epoch=3/5 seen_auc=0.870596 pairs=691
+A1_action_01 B1_pair_ERM epoch=4/5 seen_auc=0.863734 pairs=691
+A1_action_01 B1_pair_ERM epoch=5/5 seen_auc=0.870126 pairs=691
+[2026-10-03T20:36:07+00:00] EXIT train: rc=0

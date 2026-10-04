@@ -1,0 +1,33 @@
+
+[2026-10-03T20:23:53+00:00] START train: python -u /home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/07_compatibility_domain_generalization/code/train_pair_gate.py --fold A1_action_01 --arm B0_natural_pair_replay --train-rows /home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/07_compatibility_domain_generalization/data/A1_action_01/inner_train.jsonl --val-rows /home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/07_compatibility_domain_generalization/data/A1_action_01/inner_seen_val.jsonl --units /home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/07_compatibility_domain_generalization/data/A1_action_01/environment_units.jsonl --output /home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/07_compatibility_domain_generalization/runs/smoke/A1_action_01/B0_natural_pair_replay/seed3407/artifacts --seed 3407 --epochs 1 --batch-size 16 --pair-batch-size 8 --eval-batch-size 64 --dim 32 --lr 0.001 --pair-weight 0.25 --margin 0.2 --device cuda:0
+Traceback (most recent call last):
+  File "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/07_compatibility_domain_generalization/code/train_pair_gate.py", line 97, in <module>
+    p.add_argument('--device',default='cuda:0');main(p.parse_args())
+                                                ~~~~^^^^^^^^^^^^^^^^
+  File "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/07_compatibility_domain_generalization/code/train_pair_gate.py", line 63, in main
+    pos=[tr[i] for i,_ in batch];neg=[tr[j] for _,j in batch]
+                   ^^^
+ValueError: too many values to unpack (expected 2)
+[2026-10-03T20:24:08+00:00] EXIT train: rc=1
+
+[2026-10-03T20:24:08+00:00] START train: python -u /home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/07_compatibility_domain_generalization/code/train_pair_gate.py --fold A1_action_01 --arm B0_natural_pair_replay --train-rows /home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/07_compatibility_domain_generalization/data/A1_action_01/inner_train.jsonl --val-rows /home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/07_compatibility_domain_generalization/data/A1_action_01/inner_seen_val.jsonl --units /home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/07_compatibility_domain_generalization/data/A1_action_01/environment_units.jsonl --output /home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/07_compatibility_domain_generalization/runs/smoke/A1_action_01/B0_natural_pair_replay/seed3407/artifacts --seed 3407 --epochs 1 --batch-size 16 --pair-batch-size 8 --eval-batch-size 64 --dim 32 --lr 0.001 --pair-weight 0.25 --margin 0.2 --device cuda:0
+Traceback (most recent call last):
+  File "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/07_compatibility_domain_generalization/code/train_pair_gate.py", line 97, in <module>
+    p.add_argument('--device',default='cuda:0');main(p.parse_args())
+                                                ~~~~^^^^^^^^^^^^^^^^
+  File "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/07_compatibility_domain_generalization/code/train_pair_gate.py", line 63, in main
+    pos=[tr[i] for i,_ in batch];neg=[tr[j] for _,j in batch]
+                   ^^^
+ValueError: too many values to unpack (expected 2)
+[2026-10-03T20:24:23+00:00] EXIT train: rc=1
+
+[2026-10-03T20:24:23+00:00] START train: python -u /home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/07_compatibility_domain_generalization/code/train_pair_gate.py --fold A1_action_01 --arm B0_natural_pair_replay --train-rows /home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/07_compatibility_domain_generalization/data/A1_action_01/inner_train.jsonl --val-rows /home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/07_compatibility_domain_generalization/data/A1_action_01/inner_seen_val.jsonl --units /home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/07_compatibility_domain_generalization/data/A1_action_01/environment_units.jsonl --output /home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/07_compatibility_domain_generalization/runs/smoke/A1_action_01/B0_natural_pair_replay/seed3407/artifacts --seed 3407 --epochs 1 --batch-size 16 --pair-batch-size 8 --eval-batch-size 64 --dim 32 --lr 0.001 --pair-weight 0.25 --margin 0.2 --device cuda:0
+Traceback (most recent call last):
+  File "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/07_compatibility_domain_generalization/code/train_pair_gate.py", line 97, in <module>
+    p.add_argument('--device',default='cuda:0');main(p.parse_args())
+                                                ~~~~^^^^^^^^^^^^^^^^
+  File "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/07_compatibility_domain_generalization/code/train_pair_gate.py", line 63, in main
+    pos=[tr[i] for i,_ in batch];neg=[tr[j] for _,j in batch]
+                   ^^^
+ValueError: too many values to unpack (expected 2)
+[2026-10-03T20:24:38+00:00] EXIT train: rc=1

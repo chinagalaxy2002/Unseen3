@@ -1,0 +1,222 @@
+{
+  "decision": "A2 local candidate negative supervision does not improve pooled Novel AUROC; A1 conditional signal is unreplicated.",
+  "disposition": "insufficient_evidence",
+  "folds": [
+    {
+      "A2_minus_A0_delta_pp": -0.872072072072072,
+      "A2_minus_A0_same_query_delta_ci95": [
+        0.0,
+        0.07171314741035857
+      ],
+      "A2_minus_A0_same_video_delta_ci95": [
+        0.0,
+        0.0
+      ],
+      "baseline_auroc": {
+        "A0_bag_BCE": 0.616036036036036,
+        "A2_verified_negative_local": 0.616036036036036
+      },
+      "eval_seconds": {
+        "A0_bag_BCE": 7.922260046005249,
+        "A2_verified_negative_local": 7.956609010696411
+      },
+      "fold": "A1_action_01",
+      "localization_r1_iou50": {
+        "A0_bag_BCE": 0.34841628959276016,
+        "A2_verified_negative_local": 0.34841628959276016
+      },
+      "max_aggregation_auroc": {
+        "A0_bag_BCE": 0.6374774774774775,
+        "A2_verified_negative_local": 0.6346666666666667
+      },
+      "novel_auroc": {
+        "A0_bag_BCE": 0.6433513513513514,
+        "A2_verified_negative_local": 0.6346306306306306
+      },
+      "novel_ci95": {
+        "A0_bag_BCE": [
+          0.5636396337356094,
+          0.7136726554055174
+        ],
+        "A2_verified_negative_local": [
+          0.557326508254817,
+          0.7050128861959795
+        ]
+      },
+      "novel_rows": 335,
+      "novel_videos": 138,
+      "paired_video_cluster_delta_ci95_pp": [
+        -2.968374412831451,
+        1.1684870835685945
+      ],
+      "parameters": {
+        "A0_bag_BCE": 232449,
+        "A2_verified_negative_local": 232449
+      },
+      "query_only_auroc": {
+        "A0_bag_BCE": 0.6714954954954955,
+        "A2_verified_negative_local": 0.6714954954954955
+      },
+      "same_query_component_ci95": {
+        "A0_bag_BCE": [
+          0.0,
+          0.4090909090909091
+        ],
+        "A2_verified_negative_local": [
+          0.0,
+          0.4624505928853755
+        ]
+      },
+      "same_query_pairacc": {
+        "A0_bag_BCE": 0.38202247191011235,
+        "A2_verified_negative_local": 0.449438202247191
+      },
+      "same_query_pairs": 178,
+      "same_video_cluster_ci95": {
+        "A0_bag_BCE": [
+          0.5851851851851851,
+          0.7973015737256243
+        ],
+        "A2_verified_negative_local": [
+          0.5851851851851851,
+          0.7973015737256243
+        ]
+      },
+      "same_video_pairacc": {
+        "A0_bag_BCE": 0.6993006993006993,
+        "A2_verified_negative_local": 0.6993006993006993
+      },
+      "same_video_pairs": 143,
+      "seen_auroc": {
+        "A0_bag_BCE": 0.8864574833716587,
+        "A2_verified_negative_local": 0.8768142818287465
+      },
+      "shuffle_seconds": {
+        "A0_bag_BCE": 1.5444841384887695,
+        "A2_verified_negative_local": 1.5652036666870117
+      },
+      "shuffled_video_retained_label_auroc": {
+        "A0_bag_BCE": 0.6272432432432433,
+        "A2_verified_negative_local": 0.6227747747747747
+      },
+      "train_seconds": {
+        "A0_bag_BCE": 9.546722888946533,
+        "A2_verified_negative_local": 14.78201961517334
+      },
+      "video_only_auroc": {
+        "A0_bag_BCE": 0.5004324324324325,
+        "A2_verified_negative_local": 0.5004324324324325
+      }
+    },
+    {
+      "A2_minus_A0_delta_pp": -0.019654088050313767,
+      "A2_minus_A0_same_query_delta_ci95": [
+        -0.21428571428571427,
+        0.0
+      ],
+      "A2_minus_A0_same_video_delta_ci95": [
+        0.0,
+        0.0
+      ],
+      "baseline_auroc": {
+        "A0_bag_BCE": 0.5553262578616353,
+        "A2_verified_negative_local": 0.5553262578616353
+      },
+      "eval_seconds": {
+        "A0_bag_BCE": 8.89449667930603,
+        "A2_verified_negative_local": 8.83785343170166
+      },
+      "fold": "C1_composition_01",
+      "localization_r1_iou50": {
+        "A0_bag_BCE": 0.34985835694050993,
+        "A2_verified_negative_local": 0.34985835694050993
+      },
+      "max_aggregation_auroc": {
+        "A0_bag_BCE": 0.5498231132075472,
+        "A2_verified_negative_local": 0.5479559748427674
+      },
+      "novel_auroc": {
+        "A0_bag_BCE": 0.5492334905660377,
+        "A2_verified_negative_local": 0.5490369496855345
+      },
+      "novel_ci95": {
+        "A0_bag_BCE": [
+          0.47472753671965345,
+          0.6210273292380674
+        ],
+        "A2_verified_negative_local": [
+          0.47674249830445226,
+          0.6157086546044607
+        ]
+      },
+      "novel_rows": 202,
+      "novel_videos": 92,
+      "paired_video_cluster_delta_ci95_pp": [
+        -0.9259379509379547,
+        0.8822009520539711
+      ],
+      "parameters": {
+        "A0_bag_BCE": 232449,
+        "A2_verified_negative_local": 232449
+      },
+      "query_only_auroc": {
+        "A0_bag_BCE": 0.5829402515723271,
+        "A2_verified_negative_local": 0.5829402515723271
+      },
+      "same_query_component_ci95": {
+        "A0_bag_BCE": [
+          0.47058823529411764,
+          0.7083333333333334
+        ],
+        "A2_verified_negative_local": [
+          0.2857142857142857,
+          0.6363636363636364
+        ]
+      },
+      "same_query_pairacc": {
+        "A0_bag_BCE": 0.5070422535211268,
+        "A2_verified_negative_local": 0.49765258215962443
+      },
+      "same_query_pairs": 213,
+      "same_video_cluster_ci95": {
+        "A0_bag_BCE": [
+          0.5383802816901408,
+          0.810126582278481
+        ],
+        "A2_verified_negative_local": [
+          0.5383802816901408,
+          0.810126582278481
+        ]
+      },
+      "same_video_pairacc": {
+        "A0_bag_BCE": 0.6710526315789473,
+        "A2_verified_negative_local": 0.6710526315789473
+      },
+      "same_video_pairs": 76,
+      "seen_auroc": {
+        "A0_bag_BCE": 0.804986791934115,
+        "A2_verified_negative_local": 0.8093078017236228
+      },
+      "shuffle_seconds": {
+        "A0_bag_BCE": 1.0568606853485107,
+        "A2_verified_negative_local": 0.9759073257446289
+      },
+      "shuffled_video_retained_label_auroc": {
+        "A0_bag_BCE": 0.5433372641509434,
+        "A2_verified_negative_local": 0.5354756289308176
+      },
+      "train_seconds": {
+        "A0_bag_BCE": 16.78182554244995,
+        "A2_verified_negative_local": 19.702803373336792
+      },
+      "video_only_auroc": {
+        "A0_bag_BCE": 0.49415290880503143,
+        "A2_verified_negative_local": 0.49415290880503143
+      }
+    }
+  ],
+  "formal_U_accessed": false,
+  "interpretation": "One-seed, two-fold inner Novel-dev screen; full-query candidate score learned on strict inner training data.",
+  "mean_A2_minus_A0_delta_pp": -0.4458630800611929,
+  "seed": 3407
+}

@@ -1,0 +1,680 @@
+{
+  "copied_vendor_files": [
+    {
+      "bytes": 1,
+      "path": "vendor/baseline_moment/models/moment_detr_gmr/__init__.py",
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    {
+      "bytes": 259,
+      "path": "vendor/baseline_moment/models/moment_detr_gmr/__pycache__/__init__.cpython-313.pyc",
+      "sha256": "9c81317e354a647fc9e006680246d7960a026bf47c828dce425f463236760299"
+    },
+    {
+      "bytes": 3492,
+      "path": "vendor/baseline_moment/models/moment_detr_gmr/__pycache__/gmr_adapter.cpython-313.pyc",
+      "sha256": "d30c2bac5e516abcc168f0630308efb7c8dca379cf83646f7386feb1110e3ea9"
+    },
+    {
+      "bytes": 9058,
+      "path": "vendor/baseline_moment/models/moment_detr_gmr/__pycache__/matcher.cpython-313.pyc",
+      "sha256": "9510fedb9c2063090a1ef706c982b2201c6bb81edfdeaaa9c7f4a10289b28080"
+    },
+    {
+      "bytes": 1232,
+      "path": "vendor/baseline_moment/models/moment_detr_gmr/__pycache__/misc.cpython-313.pyc",
+      "sha256": "cc9422ae65bc8448662d5d669155e26e5b7bbdfb5a89d2e808a31de420e8b8d1"
+    },
+    {
+      "bytes": 21853,
+      "path": "vendor/baseline_moment/models/moment_detr_gmr/__pycache__/moment_detr.cpython-313.pyc",
+      "sha256": "076d1c00508630207fe95919742fac0646b849beb6fde317b52ed77c1069b12c"
+    },
+    {
+      "bytes": 23094,
+      "path": "vendor/baseline_moment/models/moment_detr_gmr/__pycache__/moment_transformer.cpython-313.pyc",
+      "sha256": "4c03d58e134d0dab0df89cca9ff78502a5987f9a7b0760519bf0df08ac07f0c8"
+    },
+    {
+      "bytes": 7105,
+      "path": "vendor/baseline_moment/models/moment_detr_gmr/__pycache__/position_encoding.cpython-313.pyc",
+      "sha256": "a367a5a4767bc2dd6b81094402fca570b39595d76655103add22f922b69c823e"
+    },
+    {
+      "bytes": 1945,
+      "path": "vendor/baseline_moment/models/moment_detr_gmr/gmr_adapter.py",
+      "sha256": "0e1235c8425f9c61883e88a57a8a1feec2c9ceb15046aeecd83563deb3cefc67"
+    },
+    {
+      "bytes": 8655,
+      "path": "vendor/baseline_moment/models/moment_detr_gmr/matcher.py",
+      "sha256": "8b07afe4a76b955e215f18ff72d303e807a63fa56d0f6ab839d6cf28c5784d3c"
+    },
+    {
+      "bytes": 498,
+      "path": "vendor/baseline_moment/models/moment_detr_gmr/misc.py",
+      "sha256": "58ec43442128ad370d3b08cb677a378b51e017db3f25b2bbb68bc5910c353bca"
+    },
+    {
+      "bytes": 17375,
+      "path": "vendor/baseline_moment/models/moment_detr_gmr/moment_detr.py",
+      "sha256": "c2e86f6157a13a36fbde4f297951582f6c3ffe22655e84d05793bc415df25f0b"
+    },
+    {
+      "bytes": 19938,
+      "path": "vendor/baseline_moment/models/moment_detr_gmr/moment_transformer.py",
+      "sha256": "86229992218d9b512318d5a200a7283e5e06651a60abc784c8a2dc23f5ec0d47"
+    },
+    {
+      "bytes": 4071,
+      "path": "vendor/baseline_moment/models/moment_detr_gmr/position_encoding.py",
+      "sha256": "4e5087a96dc0e4794ea9efa747808ac632e170c3366b69e66e9603cdad57e911"
+    },
+    {
+      "bytes": 1,
+      "path": "vendor/baseline_moment/models/moment_detr_gmr/utils/__init__.py",
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    {
+      "bytes": 265,
+      "path": "vendor/baseline_moment/models/moment_detr_gmr/utils/__pycache__/__init__.cpython-313.pyc",
+      "sha256": "965993640ef341bdc6c3f31012e0c6f720d40b39643a83e52481ac04bcb419d1"
+    },
+    {
+      "bytes": 16167,
+      "path": "vendor/baseline_moment/models/moment_detr_gmr/utils/__pycache__/basic_utils.cpython-313.pyc",
+      "sha256": "224f9c381a39bc78cc3fee4baca92298572b3119a9fc5c1a5962690e6998488e"
+    },
+    {
+      "bytes": 5712,
+      "path": "vendor/baseline_moment/models/moment_detr_gmr/utils/__pycache__/span_utils.cpython-313.pyc",
+      "sha256": "663b7c98d2eae66d136b1f196b9932fce31d86ec80798f5a6814f96fb6e906b1"
+    },
+    {
+      "bytes": 5893,
+      "path": "vendor/baseline_moment/models/moment_detr_gmr/utils/__pycache__/tensor_utils.cpython-313.pyc",
+      "sha256": "943eab7777f192cd6d2aca3f0981e2bd436e67d376d00fbefe2fbc10a6e6cb9a"
+    },
+    {
+      "bytes": 8270,
+      "path": "vendor/baseline_moment/models/moment_detr_gmr/utils/basic_utils.py",
+      "sha256": "6a79f057547fdd3c89607d199a1692686acd3147db5d1a41e2afbc3b4c55ea67"
+    },
+    {
+      "bytes": 1586,
+      "path": "vendor/baseline_moment/models/moment_detr_gmr/utils/model_utils.py",
+      "sha256": "b0bb879aa4df8af4fde6bb1db335aa71881d4721a8d43e8892e4ef40d24c4d9d"
+    },
+    {
+      "bytes": 4885,
+      "path": "vendor/baseline_moment/models/moment_detr_gmr/utils/span_utils.py",
+      "sha256": "82d769f160355d23cc68dfb520732eee806540a6192442d9815b992bfcb37126"
+    },
+    {
+      "bytes": 2589,
+      "path": "vendor/baseline_moment/models/moment_detr_gmr/utils/temporal_nms.py",
+      "sha256": "d48ca06574fee6b7bad2c858f842b54747a3cc292cc74e9f57de13d6068c56a2"
+    },
+    {
+      "bytes": 4475,
+      "path": "vendor/baseline_moment/models/moment_detr_gmr/utils/tensor_utils.py",
+      "sha256": "645dae24ee2a97add73d0e14d2ce79035928c4780f17868cdb82da96cbccbdea"
+    },
+    {
+      "bytes": 1934,
+      "path": "vendor/baseline_moment/models/moment_detr_gmr/utils/windows_utils.py",
+      "sha256": "d7410f8053d86105627534a1087f443d377f0c852bff7264b97890b5ec8af579"
+    },
+    {
+      "bytes": 0,
+      "path": "vendor/baseline_moment/training/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 245,
+      "path": "vendor/baseline_moment/training/__pycache__/__init__.cpython-313.pyc",
+      "sha256": "7a888ac5c0e6b12a4b88aec08912aae4b5c7534d2c0dbca0805a714412ccb52f"
+    },
+    {
+      "bytes": 0,
+      "path": "vendor/baseline_moment/training/moment_detr_gmr/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 261,
+      "path": "vendor/baseline_moment/training/moment_detr_gmr/__pycache__/__init__.cpython-313.pyc",
+      "sha256": "2e9e7916f1d44fa530053a8fdcf7e073391ff6dcbf0572d030cc3ccbc3f5620a"
+    },
+    {
+      "bytes": 15216,
+      "path": "vendor/baseline_moment/training/moment_detr_gmr/__pycache__/dataset.cpython-313.pyc",
+      "sha256": "f09a088a391ca2fb368ffee629d2d68ec5ca9a34b4d0a417809f99e3b85ff6f0"
+    },
+    {
+      "bytes": 11302,
+      "path": "vendor/baseline_moment/training/moment_detr_gmr/dataset.py",
+      "sha256": "7cf3a8fe9bb09f077d6bc01666e55c4f5b509a50c0dc0190352e6876f4fd7dab"
+    }
+  ],
+  "feature_banks": {
+    "A1_action_01": {
+      "inner_novel_dev": {
+        "base_logit": {
+          "bytes": 1468,
+          "sha256": "d99fdd50599aa17fba0a11596cd45922f49288ac11a735020d80bf90f4344b54"
+        },
+        "class_logits": {
+          "bytes": 26928,
+          "sha256": "3a808c148731bacaea86d219dcb149213f404709a806303c5deb4e9961c93b97"
+        },
+        "pooled": {
+          "bytes": 343168,
+          "sha256": "a6228472daf1e57936bbb6905cd906242bb59ed6c6ceb36818e4b1cacc4a819a"
+        },
+        "spans_seconds": {
+          "bytes": 26928,
+          "sha256": "fc91ba2bce0b347d60e2575bd18599e22b3ee75ca516a39e1d96c8b88dc3570b"
+        },
+        "video_mean": {
+          "bytes": 3773568,
+          "sha256": "739708c5ec3062d78d152bd4ba95467a4e1cd0182621e447a70b2328b4fb91e9"
+        }
+      },
+      "inner_seen_val": {
+        "base_logit": {
+          "bytes": 2628,
+          "sha256": "7f70f4943a4df77d67964d254a60ba701a645dc168136218c880b1b058a5f5d4"
+        },
+        "class_logits": {
+          "bytes": 50128,
+          "sha256": "f39415c5e6a8928122bd2ea04c440d875bc358dbb8a7093106e475681a4bc3a3"
+        },
+        "pooled": {
+          "bytes": 640128,
+          "sha256": "7718daccd66e5efa2369d86600b5d16fafb650ab6f021cbba3b0a462512e00fd"
+        },
+        "spans_seconds": {
+          "bytes": 50128,
+          "sha256": "48198b9605069d2252c68c8e61f0171fc4d6c7fbd567d6a254f1c35ad8d537bb"
+        },
+        "video_mean": {
+          "bytes": 7040128,
+          "sha256": "813d27d00cde370100d7baf16b073e84893fd91f8ec906230b42b4646f1581c4"
+        }
+      },
+      "inner_train": {
+        "base_logit": {
+          "bytes": 26572,
+          "sha256": "4dfc912a4a809ba80f2b8c2927330b8f5d748e75ef631ca3324663f0dc6815f2"
+        },
+        "class_logits": {
+          "bytes": 529008,
+          "sha256": "cd00f92ee80e3226250e922435557966213de04a1544aa92344fcf842837c0e0"
+        },
+        "pooled": {
+          "bytes": 6769792,
+          "sha256": "199051c312bf5f87dd972321620ed854d731d970c853743740579c0c27328241"
+        },
+        "spans_seconds": {
+          "bytes": 529008,
+          "sha256": "18462cd20b3cb989ad0e82fa0fe829aca5c7e293370fcaa8ae3984b429ea9cc0"
+        },
+        "video_mean": {
+          "bytes": 74466432,
+          "sha256": "4034db82250fa3c02ea5188a170cbb1c5697a49fb89faace98c4fcf27e7ea93c"
+        }
+      }
+    },
+    "C1_composition_01": {
+      "inner_novel_dev": {
+        "base_logit": {
+          "bytes": 936,
+          "sha256": "d37c2b4eb9b7e5ce1fec4f9b6b5e9e195d186e87c91421cf9348c458d09e2f90"
+        },
+        "class_logits": {
+          "bytes": 16288,
+          "sha256": "e3b9da910348902c1b110998a628e123772b5cbc774910b27c06b57909d8274b"
+        },
+        "pooled": {
+          "bytes": 206976,
+          "sha256": "ce4788c524eda156119db7fcae4f678acfeefa6593020f927ed51146f8f4d764"
+        },
+        "spans_seconds": {
+          "bytes": 16288,
+          "sha256": "069e41c3724667b95d45ab17d1a584721dd607b8b2e1020fb1183a8c5928b221"
+        },
+        "video_mean": {
+          "bytes": 2275456,
+          "sha256": "9b6ffc236e1893411811699f28e36cd5aa9441611e0e37302ba0980a680bf60e"
+        }
+      },
+      "inner_seen_val": {
+        "base_logit": {
+          "bytes": 3900,
+          "sha256": "f6b1d8cb21fca49ccc4c50c9fb1e1252a3cf8c1d8d66efae3d2a44eaa7dc8431"
+        },
+        "class_logits": {
+          "bytes": 75568,
+          "sha256": "d2f862f7fa2cd5f4719e8ce84f21e10d9180176087ef50669c6f921ea2fa241a"
+        },
+        "pooled": {
+          "bytes": 965760,
+          "sha256": "43bf8583d47305883f820f1d354dba72aa9311312f5bda27bc746143d88d8057"
+        },
+        "spans_seconds": {
+          "bytes": 75568,
+          "sha256": "b51c3e80558aa454500f34f6af8c2a160e846bf29af016e2dca1e8cc6b2d3f43"
+        },
+        "video_mean": {
+          "bytes": 10622080,
+          "sha256": "65d7d819528f4af4600f507132a9d92b29d608d520bca547699ec2f9e3b1d758"
+        }
+      },
+      "inner_train": {
+        "base_logit": {
+          "bytes": 36788,
+          "sha256": "655624fb1f4362afe57695647d9ff336984d2090cab07a7006b71c33b5121957"
+        },
+        "class_logits": {
+          "bytes": 733328,
+          "sha256": "990f9fb746b13918e872665b5166e99d43646cfbb5df6aeb8760d3cb3e2c86ec"
+        },
+        "pooled": {
+          "bytes": 9385088,
+          "sha256": "e49270e32948d620a793c66fdda9d52ef82e6b2ffcd5cf1603ed1daada12c270"
+        },
+        "spans_seconds": {
+          "bytes": 733328,
+          "sha256": "2c4e640232598c832039b708be196d3bdda4e4f645118174b2da07d498d629c4"
+        },
+        "video_mean": {
+          "bytes": 103234688,
+          "sha256": "22a29c6dceb7b22e5eecd8019d177d1637e5da1f2e4c2af2855f42ef1d9d7774"
+        }
+      }
+    }
+  },
+  "inner_baseline_checkpoints": {
+    "A1_action_01": {
+      "path": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/results/moment_detr_gmr_evidence_v5/inner_baselines/A1_action_01/best.ckpt",
+      "sha256": "ae514a78ce1d8836cb849774fadd7ecbc496b25f36161bcce195c3efcae97343"
+    },
+    "C1_composition_01": {
+      "path": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/results/moment_detr_gmr_evidence_v5/inner_baselines/C1_composition_01/best.ckpt",
+      "sha256": "c5319f94c70ef323e78e6bdb83d3e4d60ed020385aff5c0a57ef142e079dae43"
+    }
+  },
+  "method_code": {
+    "code/adapter.py": "db39b54b7a6905317f4866d5d99ef49e80933b754ce701df352c691768c59353",
+    "code/audit_resources.py": "d457e2cb5d8f2be694b9d3512deabf8510838a2c723d9e209d9287dadf7cb70d",
+    "code/data.py": "d1754a9e89c48029839b4ba148b84a14753e76bfc1271d860120083a58b2966f",
+    "code/evaluate_adapter.py": "47916b0bac83fa7a3a8adb90fde7fd97cd9db9b15cfba6b5b6bc12ec3b7a4418",
+    "code/shuffle_pooled.py": "3112a3e84dc69987d52a7472300d95d7357828f8dca698ca5cea98c24e71cce8",
+    "code/summarize_pilot.py": "ff290b4921f48fd0b9fb34873c8f5fcac6ac122ea9561cda2d7645923ab7d588",
+    "code/train_adapter.py": "9894319926d3381ab6d5c33ae2905e9bf55b55fce04620790fa94ba91a274cbf"
+  },
+  "original_baseline_commit": "bc88348e0e6b7b629a77d884fe66efe8c87b2774",
+  "original_baseline_project": "/home/guoxiangyu/paper/Openword/generalized-moment-retrieval",
+  "original_baseline_worktree": "dirty at source audit; read-only",
+  "shared_data_mutation": "none; reads verified NPZs in original feature roots; staged JSONL/manifest copies live under this idea",
+  "vendor_lineage": {
+    "files": [
+      {
+        "equal": true,
+        "source": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/models/moment_detr_gmr/__init__.py",
+        "source_sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+        "vendor": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/01_crossed_existence_supervision/vendor/baseline_moment/models/moment_detr_gmr/__init__.py",
+        "vendor_sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+      },
+      {
+        "equal": true,
+        "source": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/models/moment_detr_gmr/__pycache__/__init__.cpython-310.pyc",
+        "source_sha256": "ad0ec34204f36047c15339c77b5ec80e5d4bd520b2e465cb959e7926eab85574",
+        "vendor": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/01_crossed_existence_supervision/vendor/baseline_moment/models/moment_detr_gmr/__pycache__/__init__.cpython-310.pyc",
+        "vendor_sha256": "ad0ec34204f36047c15339c77b5ec80e5d4bd520b2e465cb959e7926eab85574"
+      },
+      {
+        "equal": true,
+        "source": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/models/moment_detr_gmr/__pycache__/__init__.cpython-313.pyc",
+        "source_sha256": "45c693a97cd90bd90b14d537f62004230ebc6a99d66e6a1cd47e2ff0e2002b20",
+        "vendor": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/01_crossed_existence_supervision/vendor/baseline_moment/models/moment_detr_gmr/__pycache__/__init__.cpython-313.pyc",
+        "vendor_sha256": "45c693a97cd90bd90b14d537f62004230ebc6a99d66e6a1cd47e2ff0e2002b20"
+      },
+      {
+        "equal": true,
+        "source": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/models/moment_detr_gmr/__pycache__/__init__.cpython-38.pyc",
+        "source_sha256": "ee385ea7f20b518b5172b38ba2224d534c409c703f8ba6600e831ffcb57f1608",
+        "vendor": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/01_crossed_existence_supervision/vendor/baseline_moment/models/moment_detr_gmr/__pycache__/__init__.cpython-38.pyc",
+        "vendor_sha256": "ee385ea7f20b518b5172b38ba2224d534c409c703f8ba6600e831ffcb57f1608"
+      },
+      {
+        "equal": true,
+        "source": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/models/moment_detr_gmr/__pycache__/gmr_adapter.cpython-310.pyc",
+        "source_sha256": "518dcd68a82ff5e3287f0bbec815f27235fcce99ad6be304137423eb176a3ee8",
+        "vendor": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/01_crossed_existence_supervision/vendor/baseline_moment/models/moment_detr_gmr/__pycache__/gmr_adapter.cpython-310.pyc",
+        "vendor_sha256": "518dcd68a82ff5e3287f0bbec815f27235fcce99ad6be304137423eb176a3ee8"
+      },
+      {
+        "equal": true,
+        "source": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/models/moment_detr_gmr/__pycache__/gmr_adapter.cpython-313.pyc",
+        "source_sha256": "7d11f1fa64be044b6243c46b6c4c2984c6988b1c3744593f1a0fb59573d05fbc",
+        "vendor": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/01_crossed_existence_supervision/vendor/baseline_moment/models/moment_detr_gmr/__pycache__/gmr_adapter.cpython-313.pyc",
+        "vendor_sha256": "7d11f1fa64be044b6243c46b6c4c2984c6988b1c3744593f1a0fb59573d05fbc"
+      },
+      {
+        "equal": true,
+        "source": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/models/moment_detr_gmr/__pycache__/gmr_adapter.cpython-38.pyc",
+        "source_sha256": "cff10dc4a182ec8354c53da3d598a8cb0d4a5a824732d5abfae511449331f992",
+        "vendor": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/01_crossed_existence_supervision/vendor/baseline_moment/models/moment_detr_gmr/__pycache__/gmr_adapter.cpython-38.pyc",
+        "vendor_sha256": "cff10dc4a182ec8354c53da3d598a8cb0d4a5a824732d5abfae511449331f992"
+      },
+      {
+        "equal": true,
+        "source": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/models/moment_detr_gmr/__pycache__/matcher.cpython-310.pyc",
+        "source_sha256": "1689529bfdb7b6d80c237d4a64e9c550d580081a791a5b6cfdcae7464bcde13b",
+        "vendor": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/01_crossed_existence_supervision/vendor/baseline_moment/models/moment_detr_gmr/__pycache__/matcher.cpython-310.pyc",
+        "vendor_sha256": "1689529bfdb7b6d80c237d4a64e9c550d580081a791a5b6cfdcae7464bcde13b"
+      },
+      {
+        "equal": true,
+        "source": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/models/moment_detr_gmr/__pycache__/matcher.cpython-313.pyc",
+        "source_sha256": "0a04b326c3d2a14b353ee07b2fd33759049ce34bc936e3feb80730f7aaed8ce7",
+        "vendor": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/01_crossed_existence_supervision/vendor/baseline_moment/models/moment_detr_gmr/__pycache__/matcher.cpython-313.pyc",
+        "vendor_sha256": "0a04b326c3d2a14b353ee07b2fd33759049ce34bc936e3feb80730f7aaed8ce7"
+      },
+      {
+        "equal": true,
+        "source": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/models/moment_detr_gmr/__pycache__/matcher.cpython-38.pyc",
+        "source_sha256": "1ac7bb0f05af7b88b75da545558e3c5e551b298c31425702cf5b2e99e137e305",
+        "vendor": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/01_crossed_existence_supervision/vendor/baseline_moment/models/moment_detr_gmr/__pycache__/matcher.cpython-38.pyc",
+        "vendor_sha256": "1ac7bb0f05af7b88b75da545558e3c5e551b298c31425702cf5b2e99e137e305"
+      },
+      {
+        "equal": true,
+        "source": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/models/moment_detr_gmr/__pycache__/misc.cpython-310.pyc",
+        "source_sha256": "f74428dc075d6b4641b321b0a545b0846b7e36ff08ead18948c91df47f3e59b2",
+        "vendor": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/01_crossed_existence_supervision/vendor/baseline_moment/models/moment_detr_gmr/__pycache__/misc.cpython-310.pyc",
+        "vendor_sha256": "f74428dc075d6b4641b321b0a545b0846b7e36ff08ead18948c91df47f3e59b2"
+      },
+      {
+        "equal": true,
+        "source": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/models/moment_detr_gmr/__pycache__/misc.cpython-313.pyc",
+        "source_sha256": "1b885fc235de2ab737e38c41e403c9adb49604d1318b091514ea7bdad7dcf1ee",
+        "vendor": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/01_crossed_existence_supervision/vendor/baseline_moment/models/moment_detr_gmr/__pycache__/misc.cpython-313.pyc",
+        "vendor_sha256": "1b885fc235de2ab737e38c41e403c9adb49604d1318b091514ea7bdad7dcf1ee"
+      },
+      {
+        "equal": true,
+        "source": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/models/moment_detr_gmr/__pycache__/misc.cpython-38.pyc",
+        "source_sha256": "c4bd5cf739355ad0d7f738d9429fcf03d43dae8d07b4ae077446b4661d083de8",
+        "vendor": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/01_crossed_existence_supervision/vendor/baseline_moment/models/moment_detr_gmr/__pycache__/misc.cpython-38.pyc",
+        "vendor_sha256": "c4bd5cf739355ad0d7f738d9429fcf03d43dae8d07b4ae077446b4661d083de8"
+      },
+      {
+        "equal": true,
+        "source": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/models/moment_detr_gmr/__pycache__/moment_detr.cpython-310.pyc",
+        "source_sha256": "72017f19e4a5e3a573aa68193fe3a88540697d9ec80c9a48dd05e91d8870b872",
+        "vendor": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/01_crossed_existence_supervision/vendor/baseline_moment/models/moment_detr_gmr/__pycache__/moment_detr.cpython-310.pyc",
+        "vendor_sha256": "72017f19e4a5e3a573aa68193fe3a88540697d9ec80c9a48dd05e91d8870b872"
+      },
+      {
+        "equal": true,
+        "source": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/models/moment_detr_gmr/__pycache__/moment_detr.cpython-313.pyc",
+        "source_sha256": "1573c829e335bde8619b6742cfef7cb263632b74fd5058a27c29ede80900e792",
+        "vendor": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/01_crossed_existence_supervision/vendor/baseline_moment/models/moment_detr_gmr/__pycache__/moment_detr.cpython-313.pyc",
+        "vendor_sha256": "1573c829e335bde8619b6742cfef7cb263632b74fd5058a27c29ede80900e792"
+      },
+      {
+        "equal": true,
+        "source": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/models/moment_detr_gmr/__pycache__/moment_detr.cpython-38.pyc",
+        "source_sha256": "b53ea557e57dbdc608861108e3081acb7220f53c0f52240209382c222213a06f",
+        "vendor": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/01_crossed_existence_supervision/vendor/baseline_moment/models/moment_detr_gmr/__pycache__/moment_detr.cpython-38.pyc",
+        "vendor_sha256": "b53ea557e57dbdc608861108e3081acb7220f53c0f52240209382c222213a06f"
+      },
+      {
+        "equal": true,
+        "source": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/models/moment_detr_gmr/__pycache__/moment_transformer.cpython-310.pyc",
+        "source_sha256": "adbe6e910da21769909164f50006aae6353f7a42cce25a2bb5dc4b6fbe6a1839",
+        "vendor": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/01_crossed_existence_supervision/vendor/baseline_moment/models/moment_detr_gmr/__pycache__/moment_transformer.cpython-310.pyc",
+        "vendor_sha256": "adbe6e910da21769909164f50006aae6353f7a42cce25a2bb5dc4b6fbe6a1839"
+      },
+      {
+        "equal": true,
+        "source": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/models/moment_detr_gmr/__pycache__/moment_transformer.cpython-313.pyc",
+        "source_sha256": "b440a8814d24be19e54f148d24ac5567cdc4d3e806ffd50c656de1da588ec592",
+        "vendor": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/01_crossed_existence_supervision/vendor/baseline_moment/models/moment_detr_gmr/__pycache__/moment_transformer.cpython-313.pyc",
+        "vendor_sha256": "b440a8814d24be19e54f148d24ac5567cdc4d3e806ffd50c656de1da588ec592"
+      },
+      {
+        "equal": true,
+        "source": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/models/moment_detr_gmr/__pycache__/moment_transformer.cpython-38.pyc",
+        "source_sha256": "ea7df7fe0dc089867f0cadb90690ca5a293b08fcfbfecb460cdd05fd3ef76a2c",
+        "vendor": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/01_crossed_existence_supervision/vendor/baseline_moment/models/moment_detr_gmr/__pycache__/moment_transformer.cpython-38.pyc",
+        "vendor_sha256": "ea7df7fe0dc089867f0cadb90690ca5a293b08fcfbfecb460cdd05fd3ef76a2c"
+      },
+      {
+        "equal": true,
+        "source": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/models/moment_detr_gmr/__pycache__/position_encoding.cpython-310.pyc",
+        "source_sha256": "ae5176ce8f67631abe5c59020aa9b6b63eab5a267b5e6cab9f5b5bf010b69946",
+        "vendor": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/01_crossed_existence_supervision/vendor/baseline_moment/models/moment_detr_gmr/__pycache__/position_encoding.cpython-310.pyc",
+        "vendor_sha256": "ae5176ce8f67631abe5c59020aa9b6b63eab5a267b5e6cab9f5b5bf010b69946"
+      },
+      {
+        "equal": true,
+        "source": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/models/moment_detr_gmr/__pycache__/position_encoding.cpython-313.pyc",
+        "source_sha256": "c761133e104b46aff66708ac7c4eaed80693c524c0caca89075b2b591acf8dff",
+        "vendor": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/01_crossed_existence_supervision/vendor/baseline_moment/models/moment_detr_gmr/__pycache__/position_encoding.cpython-313.pyc",
+        "vendor_sha256": "c761133e104b46aff66708ac7c4eaed80693c524c0caca89075b2b591acf8dff"
+      },
+      {
+        "equal": true,
+        "source": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/models/moment_detr_gmr/__pycache__/position_encoding.cpython-38.pyc",
+        "source_sha256": "fdc26173a123b9783d60b8e5a9cc612655ea7f46ab5d3c80246ea6b5e8ac56dc",
+        "vendor": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/01_crossed_existence_supervision/vendor/baseline_moment/models/moment_detr_gmr/__pycache__/position_encoding.cpython-38.pyc",
+        "vendor_sha256": "fdc26173a123b9783d60b8e5a9cc612655ea7f46ab5d3c80246ea6b5e8ac56dc"
+      },
+      {
+        "equal": true,
+        "source": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/models/moment_detr_gmr/gmr_adapter.py",
+        "source_sha256": "0e1235c8425f9c61883e88a57a8a1feec2c9ceb15046aeecd83563deb3cefc67",
+        "vendor": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/01_crossed_existence_supervision/vendor/baseline_moment/models/moment_detr_gmr/gmr_adapter.py",
+        "vendor_sha256": "0e1235c8425f9c61883e88a57a8a1feec2c9ceb15046aeecd83563deb3cefc67"
+      },
+      {
+        "equal": true,
+        "source": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/models/moment_detr_gmr/matcher.py",
+        "source_sha256": "8b07afe4a76b955e215f18ff72d303e807a63fa56d0f6ab839d6cf28c5784d3c",
+        "vendor": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/01_crossed_existence_supervision/vendor/baseline_moment/models/moment_detr_gmr/matcher.py",
+        "vendor_sha256": "8b07afe4a76b955e215f18ff72d303e807a63fa56d0f6ab839d6cf28c5784d3c"
+      },
+      {
+        "equal": true,
+        "source": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/models/moment_detr_gmr/misc.py",
+        "source_sha256": "58ec43442128ad370d3b08cb677a378b51e017db3f25b2bbb68bc5910c353bca",
+        "vendor": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/01_crossed_existence_supervision/vendor/baseline_moment/models/moment_detr_gmr/misc.py",
+        "vendor_sha256": "58ec43442128ad370d3b08cb677a378b51e017db3f25b2bbb68bc5910c353bca"
+      },
+      {
+        "equal": true,
+        "source": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/models/moment_detr_gmr/moment_detr.py",
+        "source_sha256": "c2e86f6157a13a36fbde4f297951582f6c3ffe22655e84d05793bc415df25f0b",
+        "vendor": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/01_crossed_existence_supervision/vendor/baseline_moment/models/moment_detr_gmr/moment_detr.py",
+        "vendor_sha256": "c2e86f6157a13a36fbde4f297951582f6c3ffe22655e84d05793bc415df25f0b"
+      },
+      {
+        "equal": true,
+        "source": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/models/moment_detr_gmr/moment_transformer.py",
+        "source_sha256": "86229992218d9b512318d5a200a7283e5e06651a60abc784c8a2dc23f5ec0d47",
+        "vendor": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/01_crossed_existence_supervision/vendor/baseline_moment/models/moment_detr_gmr/moment_transformer.py",
+        "vendor_sha256": "86229992218d9b512318d5a200a7283e5e06651a60abc784c8a2dc23f5ec0d47"
+      },
+      {
+        "equal": true,
+        "source": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/models/moment_detr_gmr/position_encoding.py",
+        "source_sha256": "4e5087a96dc0e4794ea9efa747808ac632e170c3366b69e66e9603cdad57e911",
+        "vendor": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/01_crossed_existence_supervision/vendor/baseline_moment/models/moment_detr_gmr/position_encoding.py",
+        "vendor_sha256": "4e5087a96dc0e4794ea9efa747808ac632e170c3366b69e66e9603cdad57e911"
+      },
+      {
+        "equal": true,
+        "source": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/models/moment_detr_gmr/utils/__init__.py",
+        "source_sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+        "vendor": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/01_crossed_existence_supervision/vendor/baseline_moment/models/moment_detr_gmr/utils/__init__.py",
+        "vendor_sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+      },
+      {
+        "equal": true,
+        "source": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/models/moment_detr_gmr/utils/__pycache__/__init__.cpython-310.pyc",
+        "source_sha256": "82b21a224862c2092f7ca57fff87ae99bf3828493f80688a2f9f5fa854ac8bf6",
+        "vendor": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/01_crossed_existence_supervision/vendor/baseline_moment/models/moment_detr_gmr/utils/__pycache__/__init__.cpython-310.pyc",
+        "vendor_sha256": "82b21a224862c2092f7ca57fff87ae99bf3828493f80688a2f9f5fa854ac8bf6"
+      },
+      {
+        "equal": true,
+        "source": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/models/moment_detr_gmr/utils/__pycache__/__init__.cpython-313.pyc",
+        "source_sha256": "f762f4af6965d5c32945e7ff1e79d73974c1ce18cbff731f0c7f887cff8b2994",
+        "vendor": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/01_crossed_existence_supervision/vendor/baseline_moment/models/moment_detr_gmr/utils/__pycache__/__init__.cpython-313.pyc",
+        "vendor_sha256": "f762f4af6965d5c32945e7ff1e79d73974c1ce18cbff731f0c7f887cff8b2994"
+      },
+      {
+        "equal": true,
+        "source": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/models/moment_detr_gmr/utils/__pycache__/__init__.cpython-38.pyc",
+        "source_sha256": "942bcf3e97b00c2b520973f151b0df9ee7321a5a7f98f9439cb94f76890f9766",
+        "vendor": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/01_crossed_existence_supervision/vendor/baseline_moment/models/moment_detr_gmr/utils/__pycache__/__init__.cpython-38.pyc",
+        "vendor_sha256": "942bcf3e97b00c2b520973f151b0df9ee7321a5a7f98f9439cb94f76890f9766"
+      },
+      {
+        "equal": true,
+        "source": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/models/moment_detr_gmr/utils/__pycache__/basic_utils.cpython-310.pyc",
+        "source_sha256": "5fa1382b1d82ae927fc556378c1f8acacf594d6e459b83e84d1d42234e92ee0f",
+        "vendor": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/01_crossed_existence_supervision/vendor/baseline_moment/models/moment_detr_gmr/utils/__pycache__/basic_utils.cpython-310.pyc",
+        "vendor_sha256": "5fa1382b1d82ae927fc556378c1f8acacf594d6e459b83e84d1d42234e92ee0f"
+      },
+      {
+        "equal": true,
+        "source": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/models/moment_detr_gmr/utils/__pycache__/basic_utils.cpython-313.pyc",
+        "source_sha256": "ffe0b097d44fbeb07a51ea938f2227e3a0496b21ba0fc225d1282b588580e937",
+        "vendor": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/01_crossed_existence_supervision/vendor/baseline_moment/models/moment_detr_gmr/utils/__pycache__/basic_utils.cpython-313.pyc",
+        "vendor_sha256": "ffe0b097d44fbeb07a51ea938f2227e3a0496b21ba0fc225d1282b588580e937"
+      },
+      {
+        "equal": true,
+        "source": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/models/moment_detr_gmr/utils/__pycache__/basic_utils.cpython-38.pyc",
+        "source_sha256": "e21ab9a33b697ceacdc81660ceac30c8d8cabe027ae8ff326dba1174cb5fe685",
+        "vendor": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/01_crossed_existence_supervision/vendor/baseline_moment/models/moment_detr_gmr/utils/__pycache__/basic_utils.cpython-38.pyc",
+        "vendor_sha256": "e21ab9a33b697ceacdc81660ceac30c8d8cabe027ae8ff326dba1174cb5fe685"
+      },
+      {
+        "equal": true,
+        "source": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/models/moment_detr_gmr/utils/__pycache__/model_utils.cpython-310.pyc",
+        "source_sha256": "130338d9adaae767833e872189996895b8d3b3ad8546dcf43713197042d93cf1",
+        "vendor": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/01_crossed_existence_supervision/vendor/baseline_moment/models/moment_detr_gmr/utils/__pycache__/model_utils.cpython-310.pyc",
+        "vendor_sha256": "130338d9adaae767833e872189996895b8d3b3ad8546dcf43713197042d93cf1"
+      },
+      {
+        "equal": true,
+        "source": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/models/moment_detr_gmr/utils/__pycache__/model_utils.cpython-38.pyc",
+        "source_sha256": "6e497452a23db7a6c4c729e85a03b8e35d660f682a58704e0b29c02537d8aece",
+        "vendor": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/01_crossed_existence_supervision/vendor/baseline_moment/models/moment_detr_gmr/utils/__pycache__/model_utils.cpython-38.pyc",
+        "vendor_sha256": "6e497452a23db7a6c4c729e85a03b8e35d660f682a58704e0b29c02537d8aece"
+      },
+      {
+        "equal": true,
+        "source": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/models/moment_detr_gmr/utils/__pycache__/span_utils.cpython-310.pyc",
+        "source_sha256": "3835b52b31d66761c2a17dd96fa8ff6a07a12c455784b8c14ec534679a4b171c",
+        "vendor": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/01_crossed_existence_supervision/vendor/baseline_moment/models/moment_detr_gmr/utils/__pycache__/span_utils.cpython-310.pyc",
+        "vendor_sha256": "3835b52b31d66761c2a17dd96fa8ff6a07a12c455784b8c14ec534679a4b171c"
+      },
+      {
+        "equal": true,
+        "source": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/models/moment_detr_gmr/utils/__pycache__/span_utils.cpython-313.pyc",
+        "source_sha256": "312570e00e960f13730893f9fe326a5e79bc60e1f479d54d7209a74818c90be0",
+        "vendor": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/01_crossed_existence_supervision/vendor/baseline_moment/models/moment_detr_gmr/utils/__pycache__/span_utils.cpython-313.pyc",
+        "vendor_sha256": "312570e00e960f13730893f9fe326a5e79bc60e1f479d54d7209a74818c90be0"
+      },
+      {
+        "equal": true,
+        "source": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/models/moment_detr_gmr/utils/__pycache__/span_utils.cpython-38.pyc",
+        "source_sha256": "d186d337852ba660f702500e38afbfa39263fae1d23768941caca831b95e92c3",
+        "vendor": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/01_crossed_existence_supervision/vendor/baseline_moment/models/moment_detr_gmr/utils/__pycache__/span_utils.cpython-38.pyc",
+        "vendor_sha256": "d186d337852ba660f702500e38afbfa39263fae1d23768941caca831b95e92c3"
+      },
+      {
+        "equal": true,
+        "source": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/models/moment_detr_gmr/utils/__pycache__/tensor_utils.cpython-310.pyc",
+        "source_sha256": "f06c3eedd621c462794632c8fe34e31b69a17fd8758853ac6f46fc4e092cb082",
+        "vendor": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/01_crossed_existence_supervision/vendor/baseline_moment/models/moment_detr_gmr/utils/__pycache__/tensor_utils.cpython-310.pyc",
+        "vendor_sha256": "f06c3eedd621c462794632c8fe34e31b69a17fd8758853ac6f46fc4e092cb082"
+      },
+      {
+        "equal": true,
+        "source": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/models/moment_detr_gmr/utils/__pycache__/tensor_utils.cpython-313.pyc",
+        "source_sha256": "47df3d7897cc267b5b396317ea94907e4e7e3096badc662c621e7da8fbab96cc",
+        "vendor": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/01_crossed_existence_supervision/vendor/baseline_moment/models/moment_detr_gmr/utils/__pycache__/tensor_utils.cpython-313.pyc",
+        "vendor_sha256": "47df3d7897cc267b5b396317ea94907e4e7e3096badc662c621e7da8fbab96cc"
+      },
+      {
+        "equal": true,
+        "source": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/models/moment_detr_gmr/utils/__pycache__/tensor_utils.cpython-38.pyc",
+        "source_sha256": "f093bf2aa049977d52f0af0e5914bc957f20419b50f370e18ad42edb5416ed30",
+        "vendor": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/01_crossed_existence_supervision/vendor/baseline_moment/models/moment_detr_gmr/utils/__pycache__/tensor_utils.cpython-38.pyc",
+        "vendor_sha256": "f093bf2aa049977d52f0af0e5914bc957f20419b50f370e18ad42edb5416ed30"
+      },
+      {
+        "equal": true,
+        "source": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/models/moment_detr_gmr/utils/basic_utils.py",
+        "source_sha256": "6a79f057547fdd3c89607d199a1692686acd3147db5d1a41e2afbc3b4c55ea67",
+        "vendor": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/01_crossed_existence_supervision/vendor/baseline_moment/models/moment_detr_gmr/utils/basic_utils.py",
+        "vendor_sha256": "6a79f057547fdd3c89607d199a1692686acd3147db5d1a41e2afbc3b4c55ea67"
+      },
+      {
+        "equal": true,
+        "source": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/models/moment_detr_gmr/utils/model_utils.py",
+        "source_sha256": "b0bb879aa4df8af4fde6bb1db335aa71881d4721a8d43e8892e4ef40d24c4d9d",
+        "vendor": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/01_crossed_existence_supervision/vendor/baseline_moment/models/moment_detr_gmr/utils/model_utils.py",
+        "vendor_sha256": "b0bb879aa4df8af4fde6bb1db335aa71881d4721a8d43e8892e4ef40d24c4d9d"
+      },
+      {
+        "equal": true,
+        "source": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/models/moment_detr_gmr/utils/span_utils.py",
+        "source_sha256": "82d769f160355d23cc68dfb520732eee806540a6192442d9815b992bfcb37126",
+        "vendor": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/01_crossed_existence_supervision/vendor/baseline_moment/models/moment_detr_gmr/utils/span_utils.py",
+        "vendor_sha256": "82d769f160355d23cc68dfb520732eee806540a6192442d9815b992bfcb37126"
+      },
+      {
+        "equal": true,
+        "source": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/models/moment_detr_gmr/utils/temporal_nms.py",
+        "source_sha256": "d48ca06574fee6b7bad2c858f842b54747a3cc292cc74e9f57de13d6068c56a2",
+        "vendor": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/01_crossed_existence_supervision/vendor/baseline_moment/models/moment_detr_gmr/utils/temporal_nms.py",
+        "vendor_sha256": "d48ca06574fee6b7bad2c858f842b54747a3cc292cc74e9f57de13d6068c56a2"
+      },
+      {
+        "equal": true,
+        "source": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/models/moment_detr_gmr/utils/tensor_utils.py",
+        "source_sha256": "645dae24ee2a97add73d0e14d2ce79035928c4780f17868cdb82da96cbccbdea",
+        "vendor": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/01_crossed_existence_supervision/vendor/baseline_moment/models/moment_detr_gmr/utils/tensor_utils.py",
+        "vendor_sha256": "645dae24ee2a97add73d0e14d2ce79035928c4780f17868cdb82da96cbccbdea"
+      },
+      {
+        "equal": true,
+        "source": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/models/moment_detr_gmr/utils/windows_utils.py",
+        "source_sha256": "d7410f8053d86105627534a1087f443d377f0c852bff7264b97890b5ec8af579",
+        "vendor": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/01_crossed_existence_supervision/vendor/baseline_moment/models/moment_detr_gmr/utils/windows_utils.py",
+        "vendor_sha256": "d7410f8053d86105627534a1087f443d377f0c852bff7264b97890b5ec8af579"
+      },
+      {
+        "equal": true,
+        "source": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/training/moment_detr_gmr/dataset.py",
+        "source_sha256": "7cf3a8fe9bb09f077d6bc01666e55c4f5b509a50c0dc0190352e6876f4fd7dab",
+        "vendor": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/01_crossed_existence_supervision/vendor/baseline_moment/training/moment_detr_gmr/dataset.py",
+        "vendor_sha256": "7cf3a8fe9bb09f077d6bc01666e55c4f5b509a50c0dc0190352e6876f4fd7dab"
+      }
+    ],
+    "note": "Complete imported Moment-DETR-GMR model package plus dataset loader closure, physically copied into idea vendor; runtime sys.path points only here.",
+    "source_commit": "6cd96d723806e4b2b2474c68f289921eb543ffcc",
+    "source_root": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3"
+  },
+  "vendor_metadata_note": "vendor/baseline_moment/SOURCE.json is local lineage metadata; all imported Python source files and contents are hashed above.",
+  "vendor_parent": "research_ideas/04_query_marginal_matching/vendor/baseline_moment",
+  "workspace_start_commit": "6cd96d723806e4b2b2474c68f289921eb543ffcc"
+}

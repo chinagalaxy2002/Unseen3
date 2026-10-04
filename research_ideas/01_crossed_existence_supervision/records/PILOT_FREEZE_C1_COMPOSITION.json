@@ -1,0 +1,29 @@
+{
+  "arms": {
+    "BCE": 0.0,
+    "BCE_pair": 0.1
+  },
+  "batch_size": 32,
+  "decision": "pilot only; no single-fold success claim. Continue to full 4-fold only if action and composition folds both show non-harmful Seen change and same-query Novel PairAcc does not decline; formal threshold remains >=+2pp macro Novel AUROC, >=3/4 folds positive, Seen loss <=1pp, plus compatible conditional evidence.",
+  "epochs": 5,
+  "evidence_controls": "Cq/Cv, same-query, same-video, full pre-fusion shuffled-video recomputation, raw localization and parameter/runtime; complete quartet audit remains distinct.",
+  "fold": "C1_composition_01",
+  "formal_U_access": false,
+  "frozen_at": "2026-10-04 Asia/Shanghai before C1 composition Novel-dev run",
+  "margin": 0.2,
+  "pairs_per_step": 8,
+  "question": "Does exact same-query, cross-video ranking help beyond natural BCE on a strict composition holdout?",
+  "seed": 3407,
+  "selection": "inner Seen-val AUROC; earliest tie. Novel-dev is evaluation only.",
+  "support_audit": {
+    "fold": "C1_composition_01",
+    "negative_provenance_counts": {
+      "user_attested_video_review": 1119
+    },
+    "pair_capacity": 225,
+    "positive_provenance_counts": {
+      "human_temporal_annotation": 8046
+    },
+    "same_query_both_labels": 146
+  }
+}

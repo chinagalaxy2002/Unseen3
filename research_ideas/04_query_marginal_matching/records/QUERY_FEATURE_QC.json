@@ -1,0 +1,22 @@
+{
+  "folds": [
+    {
+      "empirical_query_only_same_query_pairacc": 0.5337078651685393,
+      "fold": "A1_action_01",
+      "max_masked_mean_l2_spread": 0.0007682224397437016,
+      "median_group_max_spread": 0.0005025321291615856,
+      "pooled_query_only_auroc": 0.6714954954954955,
+      "repeated_exact_query_groups": 59
+    },
+    {
+      "empirical_query_only_same_query_pairacc": 0.8826291079812206,
+      "fold": "C1_composition_01",
+      "max_masked_mean_l2_spread": 0.0007340396345487739,
+      "median_group_max_spread": 0.0005430152672159604,
+      "pooled_query_only_auroc": 0.5829402515723271,
+      "repeated_exact_query_groups": 28
+    }
+  ],
+  "interpretation": "Same source query token cache contains tiny non-identical row vectors for identical text. The resulting query-only per-row classifier can rank same-text rows above chance (C1 is 0.883) without video input. Treat query-only pooled AUROC as a prior diagnostic, but treat query-only same-query PairAcc as invalid until a deterministic one-vector-per-text feature control is introduced. This does not invalidate the main video model same-query PairAcc because that includes video, but it is a caution for Q-only attribution.",
+  "scope": "inner Novel-dev repeated exact normalized text"
+}

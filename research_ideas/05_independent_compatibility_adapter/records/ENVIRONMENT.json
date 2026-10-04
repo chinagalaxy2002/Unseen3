@@ -1,0 +1,26 @@
+{
+  "baseline_checkpoint_sha256": {
+    "A1_action_01": "ae514a78ce1d8836cb849774fadd7ecbc496b25f36161bcce195c3efcae97343",
+    "C1_composition_01": "c5319f94c70ef323e78e6bdb83d3e4d60ed020385aff5c0a57ef142e079dae43"
+  },
+  "cuda_available": true,
+  "date": "2026-10-04",
+  "gpu_inventory": "0, NVIDIA GeForce RTX 3090, 24576 MiB\n1, NVIDIA GeForce RTX 3090, 24576 MiB",
+  "held_gpu": [
+    "1"
+  ],
+  "initial_available_gpus": [
+    "0",
+    "1"
+  ],
+  "numpy": "2.4.2",
+  "original_project_commit": "bc88348e0e6b7b629a77d884fe66efe8c87b2774 (dirty source tree, read-only)",
+  "platform": "Linux-6.8.0-57-generic-x86_64-with-glibc2.35",
+  "python": "3.13.5 | packaged by Anaconda, Inc. | (main, Jun 12 2025, 16:09:02) [GCC 11.2.0]",
+  "research_used_gpu": [
+    "0"
+  ],
+  "torch": "2.10.0+cu128",
+  "torch_cuda": "12.8",
+  "workspace_commit_at_start": "6cd96d723806e4b2b2474c68f289921eb543ffcc"
+}

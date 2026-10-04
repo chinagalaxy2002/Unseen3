@@ -1,0 +1,3 @@
+# Manual repair 1
+
+The first full-pipeline smoke task failed in training because each audited pair unit is stored as `(positive_index, negative_index, environment)`, while the pair replay loop unpacked it as a two-item tuple. The logged exception was `ValueError: too many values to unpack (expected 2)`. The automated Codex repair subprocess repeatedly lost its HTTP/MCP route before making a change; its CLI output is preserved beside this record. I changed the isolated trainer to index the first two tuple elements and leave the environment metadata intact. The failed task and its output directory remain unchanged; the repaired smoke uses a new ID/config/output directory. No labels, batch sizes, objective, or data were changed.

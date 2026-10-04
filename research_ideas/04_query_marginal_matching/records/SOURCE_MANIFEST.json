@@ -1,0 +1,352 @@
+{
+  "actual_input_files": [
+    {
+      "kind": "strict_inner_split_manifest",
+      "path": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/experiments/moment_detr_gmr_evidence_v5/inner_folds/A1_action_01/manifest.json",
+      "sha256": "9d59510429734a95b116715e30102edbb3b9b9e7f9199bfd3f3bc2bb66385aaa"
+    },
+    {
+      "bytes": 58699590,
+      "kind": "strict_inner_baseline_checkpoint",
+      "path": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/results/moment_detr_gmr_evidence_v5/inner_baselines/A1_action_01/best.ckpt",
+      "sha256": "ae514a78ce1d8836cb849774fadd7ecbc496b25f36161bcce195c3efcae97343"
+    },
+    {
+      "kind": "feature_bank_metadata",
+      "path": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/results/moment_detr_gmr_evidence_v5/banks/A1_action_01/inner_train/metadata.json",
+      "sha256": "2b70341db854fa7b7bbb22f2bc1b75989111c9f1609a8ee29b9ef7045b145afb"
+    },
+    {
+      "bytes": 6769792,
+      "kind": "read_only_feature_array",
+      "path": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/results/moment_detr_gmr_evidence_v5/banks/A1_action_01/inner_train/pooled.npy",
+      "sha256": "199051c312bf5f87dd972321620ed854d731d970c853743740579c0c27328241"
+    },
+    {
+      "bytes": 433258624,
+      "kind": "read_only_feature_array",
+      "path": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/results/moment_detr_gmr_evidence_v5/banks/A1_action_01/inner_train/query_tokens.npy",
+      "sha256": "a009973f6285245dc8d4058fd747851e767b504213562906cca4fb0dcc4cb998"
+    },
+    {
+      "bytes": 846336,
+      "kind": "read_only_feature_array",
+      "path": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/results/moment_detr_gmr_evidence_v5/banks/A1_action_01/inner_train/query_mask.npy",
+      "sha256": "e7e287504ede5bf745bf184b2b1bf30e411adbe0f6daec43a5cc7f5f019b1dd3"
+    },
+    {
+      "bytes": 74466432,
+      "kind": "read_only_feature_array",
+      "path": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/results/moment_detr_gmr_evidence_v5/banks/A1_action_01/inner_train/video_mean.npy",
+      "sha256": "4034db82250fa3c02ea5188a170cbb1c5697a49fb89faace98c4fcf27e7ea93c"
+    },
+    {
+      "bytes": 529008,
+      "kind": "read_only_feature_array",
+      "path": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/results/moment_detr_gmr_evidence_v5/banks/A1_action_01/inner_train/spans_seconds.npy",
+      "sha256": "18462cd20b3cb989ad0e82fa0fe829aca5c7e293370fcaa8ae3984b429ea9cc0"
+    },
+    {
+      "bytes": 529008,
+      "kind": "read_only_feature_array",
+      "path": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/results/moment_detr_gmr_evidence_v5/banks/A1_action_01/inner_train/class_logits.npy",
+      "sha256": "cd00f92ee80e3226250e922435557966213de04a1544aa92344fcf842837c0e0"
+    },
+    {
+      "bytes": 7001227,
+      "kind": "isolated_annotation_copy",
+      "path": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/04_query_marginal_matching/data/A1_action_01/inner_train.jsonl",
+      "sha256": "52fc6359a9209fbf67e8853434a40c3bffc0ca3784c507649661e3cd10a1ca14"
+    },
+    {
+      "kind": "feature_bank_metadata",
+      "path": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/results/moment_detr_gmr_evidence_v5/banks/A1_action_01/inner_seen_val/metadata.json",
+      "sha256": "c930fb88d3764e09c11ff9f0ab51ad0ea4e1af720805ef164117969b13cc4206"
+    },
+    {
+      "bytes": 640128,
+      "kind": "read_only_feature_array",
+      "path": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/results/moment_detr_gmr_evidence_v5/banks/A1_action_01/inner_seen_val/pooled.npy",
+      "sha256": "7718daccd66e5efa2369d86600b5d16fafb650ab6f021cbba3b0a462512e00fd"
+    },
+    {
+      "bytes": 40960128,
+      "kind": "read_only_feature_array",
+      "path": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/results/moment_detr_gmr_evidence_v5/banks/A1_action_01/inner_seen_val/query_tokens.npy",
+      "sha256": "373dfb81b3b6cadf2a9225aed3fa506d8c009762fe3988344b397f866c12f7bd"
+    },
+    {
+      "bytes": 80128,
+      "kind": "read_only_feature_array",
+      "path": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/results/moment_detr_gmr_evidence_v5/banks/A1_action_01/inner_seen_val/query_mask.npy",
+      "sha256": "37ab6ec734890fa568a4385bc8d74b0ce5c8d4bc707d1f37f261f0c6027c6a43"
+    },
+    {
+      "bytes": 7040128,
+      "kind": "read_only_feature_array",
+      "path": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/results/moment_detr_gmr_evidence_v5/banks/A1_action_01/inner_seen_val/video_mean.npy",
+      "sha256": "813d27d00cde370100d7baf16b073e84893fd91f8ec906230b42b4646f1581c4"
+    },
+    {
+      "bytes": 50128,
+      "kind": "read_only_feature_array",
+      "path": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/results/moment_detr_gmr_evidence_v5/banks/A1_action_01/inner_seen_val/spans_seconds.npy",
+      "sha256": "48198b9605069d2252c68c8e61f0171fc4d6c7fbd567d6a254f1c35ad8d537bb"
+    },
+    {
+      "bytes": 50128,
+      "kind": "read_only_feature_array",
+      "path": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/results/moment_detr_gmr_evidence_v5/banks/A1_action_01/inner_seen_val/class_logits.npy",
+      "sha256": "f39415c5e6a8928122bd2ea04c440d875bc358dbb8a7093106e475681a4bc3a3"
+    },
+    {
+      "bytes": 720965,
+      "kind": "isolated_annotation_copy",
+      "path": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/04_query_marginal_matching/data/A1_action_01/inner_seen_val.jsonl",
+      "sha256": "b6f4446b1d06dc2871d195cabcf3ce1482caed903edf860214980dff6dc61551"
+    },
+    {
+      "kind": "feature_bank_metadata",
+      "path": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/results/moment_detr_gmr_evidence_v5/banks/A1_action_01/inner_novel_dev/metadata.json",
+      "sha256": "ab8ca9ef746b3595108d18ace7394a3b5992dffdf79416ccd12797a3fd710c3a"
+    },
+    {
+      "bytes": 343168,
+      "kind": "read_only_feature_array",
+      "path": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/results/moment_detr_gmr_evidence_v5/banks/A1_action_01/inner_novel_dev/pooled.npy",
+      "sha256": "a6228472daf1e57936bbb6905cd906242bb59ed6c6ceb36818e4b1cacc4a819a"
+    },
+    {
+      "bytes": 21954688,
+      "kind": "read_only_feature_array",
+      "path": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/results/moment_detr_gmr_evidence_v5/banks/A1_action_01/inner_novel_dev/query_tokens.npy",
+      "sha256": "25325cb6692679a9314fd1c46301eb5150230ecda20fa599de7457c73d64ba3d"
+    },
+    {
+      "bytes": 43008,
+      "kind": "read_only_feature_array",
+      "path": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/results/moment_detr_gmr_evidence_v5/banks/A1_action_01/inner_novel_dev/query_mask.npy",
+      "sha256": "ec152c9dd4caa2c07ad6c38fcf4211fabdf27fe3ae402c7a4a65f4aeffa754aa"
+    },
+    {
+      "bytes": 3773568,
+      "kind": "read_only_feature_array",
+      "path": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/results/moment_detr_gmr_evidence_v5/banks/A1_action_01/inner_novel_dev/video_mean.npy",
+      "sha256": "739708c5ec3062d78d152bd4ba95467a4e1cd0182621e447a70b2328b4fb91e9"
+    },
+    {
+      "bytes": 26928,
+      "kind": "read_only_feature_array",
+      "path": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/results/moment_detr_gmr_evidence_v5/banks/A1_action_01/inner_novel_dev/spans_seconds.npy",
+      "sha256": "fc91ba2bce0b347d60e2575bd18599e22b3ee75ca516a39e1d96c8b88dc3570b"
+    },
+    {
+      "bytes": 26928,
+      "kind": "read_only_feature_array",
+      "path": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/results/moment_detr_gmr_evidence_v5/banks/A1_action_01/inner_novel_dev/class_logits.npy",
+      "sha256": "3a808c148731bacaea86d219dcb149213f404709a806303c5deb4e9961c93b97"
+    },
+    {
+      "bytes": 446402,
+      "kind": "isolated_annotation_copy",
+      "path": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/04_query_marginal_matching/data/A1_action_01/inner_novel_dev.jsonl",
+      "sha256": "555bc70b0d80543a2dc5a05ae580dd42ca9d9cff640fdfec7881b1e84a0a694e"
+    },
+    {
+      "kind": "reviewed_dual_query_support_manifest",
+      "path": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/04_query_marginal_matching/data/A1_action_01/query_support_manifest.jsonl",
+      "sha256": "c392402dcddf84343e9374748143174fccbeacc4d3ceb88a122718ce1c40e0e4"
+    },
+    {
+      "kind": "strict_inner_split_manifest",
+      "path": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/experiments/moment_detr_gmr_evidence_v5/inner_folds/C1_composition_01/manifest.json",
+      "sha256": "a402c0c8892e4b820fd7e4b82e6130d197b5f1b8746958e63919a19dbb81594f"
+    },
+    {
+      "bytes": 58699654,
+      "kind": "strict_inner_baseline_checkpoint",
+      "path": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/results/moment_detr_gmr_evidence_v5/inner_baselines/C1_composition_01/best.ckpt",
+      "sha256": "c5319f94c70ef323e78e6bdb83d3e4d60ed020385aff5c0a57ef142e079dae43"
+    },
+    {
+      "kind": "feature_bank_metadata",
+      "path": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/results/moment_detr_gmr_evidence_v5/banks/C1_composition_01/inner_train/metadata.json",
+      "sha256": "bf2a56e81719ed833654552f2d5c1ed182a20f48b992fb5aaf6721bf92d1305e"
+    },
+    {
+      "bytes": 9385088,
+      "kind": "read_only_feature_array",
+      "path": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/results/moment_detr_gmr_evidence_v5/banks/C1_composition_01/inner_train/pooled.npy",
+      "sha256": "e49270e32948d620a793c66fdda9d52ef82e6b2ffcd5cf1603ed1daada12c270"
+    },
+    {
+      "bytes": 600637568,
+      "kind": "read_only_feature_array",
+      "path": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/results/moment_detr_gmr_evidence_v5/banks/C1_composition_01/inner_train/query_tokens.npy",
+      "sha256": "b10aac8ca15763fb8a6683e7440ac5b5c24289d695f79df427a0026411425242"
+    },
+    {
+      "bytes": 1173248,
+      "kind": "read_only_feature_array",
+      "path": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/results/moment_detr_gmr_evidence_v5/banks/C1_composition_01/inner_train/query_mask.npy",
+      "sha256": "09e20b57544f509e2d95272061c8c835e71cbdab9fd5ff85bd1cbb86a4215555"
+    },
+    {
+      "bytes": 103234688,
+      "kind": "read_only_feature_array",
+      "path": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/results/moment_detr_gmr_evidence_v5/banks/C1_composition_01/inner_train/video_mean.npy",
+      "sha256": "22a29c6dceb7b22e5eecd8019d177d1637e5da1f2e4c2af2855f42ef1d9d7774"
+    },
+    {
+      "bytes": 733328,
+      "kind": "read_only_feature_array",
+      "path": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/results/moment_detr_gmr_evidence_v5/banks/C1_composition_01/inner_train/spans_seconds.npy",
+      "sha256": "2c4e640232598c832039b708be196d3bdda4e4f645118174b2da07d498d629c4"
+    },
+    {
+      "bytes": 733328,
+      "kind": "read_only_feature_array",
+      "path": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/results/moment_detr_gmr_evidence_v5/banks/C1_composition_01/inner_train/class_logits.npy",
+      "sha256": "990f9fb746b13918e872665b5166e99d43646cfbb5df6aeb8760d3cb3e2c86ec"
+    },
+    {
+      "bytes": 10040359,
+      "kind": "isolated_annotation_copy",
+      "path": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/04_query_marginal_matching/data/C1_composition_01/inner_train.jsonl",
+      "sha256": "16790c0dc27c1347b70768e3635baae0e23aca1f8a9c1765d9a8097934f9a34a"
+    },
+    {
+      "kind": "feature_bank_metadata",
+      "path": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/results/moment_detr_gmr_evidence_v5/banks/C1_composition_01/inner_seen_val/metadata.json",
+      "sha256": "d1112e458f96a63979e9605e4d44282bd353f48733c3f42880c28eeea63f1fb9"
+    },
+    {
+      "bytes": 965760,
+      "kind": "read_only_feature_array",
+      "path": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/results/moment_detr_gmr_evidence_v5/banks/C1_composition_01/inner_seen_val/pooled.npy",
+      "sha256": "43bf8583d47305883f820f1d354dba72aa9311312f5bda27bc746143d88d8057"
+    },
+    {
+      "bytes": 61800576,
+      "kind": "read_only_feature_array",
+      "path": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/results/moment_detr_gmr_evidence_v5/banks/C1_composition_01/inner_seen_val/query_tokens.npy",
+      "sha256": "adf0e74e7e63d13f1419da990eda8585a975de777a0a3f63a4a0893a1b33a044"
+    },
+    {
+      "bytes": 120832,
+      "kind": "read_only_feature_array",
+      "path": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/results/moment_detr_gmr_evidence_v5/banks/C1_composition_01/inner_seen_val/query_mask.npy",
+      "sha256": "514c43c0c8cc9797c2146e635e22b1c87eaa73acc68c6e76f31a2fcc92525a90"
+    },
+    {
+      "bytes": 10622080,
+      "kind": "read_only_feature_array",
+      "path": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/results/moment_detr_gmr_evidence_v5/banks/C1_composition_01/inner_seen_val/video_mean.npy",
+      "sha256": "65d7d819528f4af4600f507132a9d92b29d608d520bca547699ec2f9e3b1d758"
+    },
+    {
+      "bytes": 75568,
+      "kind": "read_only_feature_array",
+      "path": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/results/moment_detr_gmr_evidence_v5/banks/C1_composition_01/inner_seen_val/spans_seconds.npy",
+      "sha256": "b51c3e80558aa454500f34f6af8c2a160e846bf29af016e2dca1e8cc6b2d3f43"
+    },
+    {
+      "bytes": 75568,
+      "kind": "read_only_feature_array",
+      "path": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/results/moment_detr_gmr_evidence_v5/banks/C1_composition_01/inner_seen_val/class_logits.npy",
+      "sha256": "d2f862f7fa2cd5f4719e8ce84f21e10d9180176087ef50669c6f921ea2fa241a"
+    },
+    {
+      "bytes": 1101344,
+      "kind": "isolated_annotation_copy",
+      "path": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/04_query_marginal_matching/data/C1_composition_01/inner_seen_val.jsonl",
+      "sha256": "87bf235a6b73471eb2736a02b99a42637a2102a724649d6a43b17847448c9414"
+    },
+    {
+      "kind": "feature_bank_metadata",
+      "path": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/results/moment_detr_gmr_evidence_v5/banks/C1_composition_01/inner_novel_dev/metadata.json",
+      "sha256": "41d5fa865478e18e2b9db6803c530f1bb00f589126667375fd9ad1f6d70490fb"
+    },
+    {
+      "bytes": 206976,
+      "kind": "read_only_feature_array",
+      "path": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/results/moment_detr_gmr_evidence_v5/banks/C1_composition_01/inner_novel_dev/pooled.npy",
+      "sha256": "ce4788c524eda156119db7fcae4f678acfeefa6593020f927ed51146f8f4d764"
+    },
+    {
+      "bytes": 13238400,
+      "kind": "read_only_feature_array",
+      "path": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/results/moment_detr_gmr_evidence_v5/banks/C1_composition_01/inner_novel_dev/query_tokens.npy",
+      "sha256": "f4c9456f48378584f56ccd5847c61d2d63b275d26e0f32b0292de69438573732"
+    },
+    {
+      "bytes": 25984,
+      "kind": "read_only_feature_array",
+      "path": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/results/moment_detr_gmr_evidence_v5/banks/C1_composition_01/inner_novel_dev/query_mask.npy",
+      "sha256": "a02343fe93ed5fb4e159b09e3c94aad49ce4e002b3f16f3550cb946e812bbe91"
+    },
+    {
+      "bytes": 2275456,
+      "kind": "read_only_feature_array",
+      "path": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/results/moment_detr_gmr_evidence_v5/banks/C1_composition_01/inner_novel_dev/video_mean.npy",
+      "sha256": "9b6ffc236e1893411811699f28e36cd5aa9441611e0e37302ba0980a680bf60e"
+    },
+    {
+      "bytes": 16288,
+      "kind": "read_only_feature_array",
+      "path": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/results/moment_detr_gmr_evidence_v5/banks/C1_composition_01/inner_novel_dev/spans_seconds.npy",
+      "sha256": "069e41c3724667b95d45ab17d1a584721dd607b8b2e1020fb1183a8c5928b221"
+    },
+    {
+      "bytes": 16288,
+      "kind": "read_only_feature_array",
+      "path": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/results/moment_detr_gmr_evidence_v5/banks/C1_composition_01/inner_novel_dev/class_logits.npy",
+      "sha256": "e3b9da910348902c1b110998a628e123772b5cbc774910b27c06b57909d8274b"
+    },
+    {
+      "bytes": 257876,
+      "kind": "isolated_annotation_copy",
+      "path": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/04_query_marginal_matching/data/C1_composition_01/inner_novel_dev.jsonl",
+      "sha256": "5eb00a9c02cd4725f09c9c29cec6117ffcde64bdf1b388860989cb79476207da"
+    },
+    {
+      "kind": "reviewed_dual_query_support_manifest",
+      "path": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/04_query_marginal_matching/data/C1_composition_01/query_support_manifest.jsonl",
+      "sha256": "fea1dfb3560a35e09d0ed5a83eeccb5a45e81e59b21d6a35637141bd9c698487"
+    }
+  ],
+  "branch": "main",
+  "code_files": [
+    {
+      "path": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/04_query_marginal_matching/code/evaluate.py",
+      "sha256": "d51f9354c6d467aa65073047bc5cbd756ad9834b547dfb1229b6c15345e0d18f"
+    },
+    {
+      "path": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/04_query_marginal_matching/code/readouts.py",
+      "sha256": "ec8d1fcc39b29a6fab0e31bb07b789b60d5452da706bde2740da3728d1cbfaa8"
+    },
+    {
+      "path": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/04_query_marginal_matching/code/shuffle_control.py",
+      "sha256": "cec945a5894c26afbde23282a83ff9f6c4f27875e8c10d14f08287691b3f8bdc"
+    },
+    {
+      "path": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/04_query_marginal_matching/code/summarize_pilot.py",
+      "sha256": "b2bdfc3610dedaf3c876d1819474ab3b27b8d06dd69811d65b64df1bf1c1b27f"
+    },
+    {
+      "path": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/04_query_marginal_matching/code/train_marginal.py",
+      "sha256": "b242d71b42ab3c52b3ed987d26e4e870d841d80f2391638d6b5878452b67aedd"
+    }
+  ],
+  "experiment_model_origin": "Strict-inner Moment-DETR-GMR V5 precomputed banks/checkpoints from project B; existing canonical GMR source is unchanged and read-only.",
+  "original_GMR_project_A": {
+    "commit": "bc88348e0e6b7b629a77d884fe66efe8c87b2774",
+    "direct_model_imported": false,
+    "dirty_at_start": true,
+    "path": "/home/guoxiangyu/paper/Openword/generalized-moment-retrieval"
+  },
+  "protection": "All copied annotation, model/vendor code, configs, predictions, metrics, logs and sidecars are under this idea; shared banks, feature files, original baselines and prior result folders remain read-only.",
+  "runtime_model_import": "verified module __file__ resolves inside this idea vendor directory; exact reforward replay max error 9.54e-7 on first shuffle task.",
+  "runtime_vendor_root": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/04_query_marginal_matching/vendor/baseline_moment",
+  "workspace_commit_at_start": "6cd96d723806e4b2b2474c68f289921eb543ffcc"
+}

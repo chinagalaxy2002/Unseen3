@@ -1,0 +1,20 @@
+{
+  "audit": "masked-mean query feature consistency for repeated exact normalized text in strict inner Novel-dev",
+  "folds": [
+    {
+      "exact_query_groups": 175,
+      "fold": "A1_action_01",
+      "max_feature_l2_spread_within_exact_text": 0.0007682224397437016,
+      "median_group_max_spread": 0.0005025321291615856,
+      "repeated_groups": 59
+    },
+    {
+      "exact_query_groups": 106,
+      "fold": "C1_composition_01",
+      "max_feature_l2_spread_within_exact_text": 0.0007340396345487739,
+      "median_group_max_spread": 0.0005430152672159604,
+      "repeated_groups": 28
+    }
+  ],
+  "interpretation": "The row-cached query feature vector is not bit-identical for repeated identical text. Consequently, the empirical query-only same-query PairAcc can drift from 0.5 (A1=0.640, C1=0.488) despite no video input. Treat query-only pooled AUROC as a prior diagnostic, but do not interpret that conditional value as semantic query compatibility. A deterministic one-vector-per-text embedding control should be used in later pilots. This does not use labels to select or alter predictions."
+}

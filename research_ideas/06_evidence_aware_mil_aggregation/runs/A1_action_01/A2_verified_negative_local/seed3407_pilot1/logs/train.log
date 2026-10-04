@@ -1,0 +1,8 @@
+
+[2026-10-03T20:11:52+00:00] START train: python -u /home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/06_evidence_aware_mil_aggregation/code/train_mil.py --fold A1_action_01 --arm A2_verified_negative_local --train-rows /home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/06_evidence_aware_mil_aggregation/data/A1_action_01/inner_train.jsonl --val-rows /home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/06_evidence_aware_mil_aggregation/data/A1_action_01/inner_seen_val.jsonl --output /home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/06_evidence_aware_mil_aggregation/runs/A1_action_01/A2_verified_negative_local/seed3407_pilot1/artifacts --seed 3407 --epochs 5 --batch-size 32 --eval-batch-size 64 --dim 128 --lr 0.001 --local-weight 0.25 --device cuda:0
+A1_action_01 A2_verified_negative_local epoch=1/5 seen_auc=0.866306
+A1_action_01 A2_verified_negative_local epoch=2/5 seen_auc=0.863450
+A1_action_01 A2_verified_negative_local epoch=3/5 seen_auc=0.876814
+A1_action_01 A2_verified_negative_local epoch=4/5 seen_auc=0.871659
+A1_action_01 A2_verified_negative_local epoch=5/5 seen_auc=0.873266
+[2026-10-03T20:12:12+00:00] EXIT train: rc=0

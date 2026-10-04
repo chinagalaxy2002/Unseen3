@@ -1,0 +1,8 @@
+
+[2026-10-03T18:44:27+00:00] START train: python -u /home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/02_reference_centered_interaction/code/bilinear.py train --fold C1_composition_01 --bank-root /home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/results/moment_detr_gmr_evidence_v5/banks --train-rows /home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/02_reference_centered_interaction/data/C1_composition_01/inner_train.jsonl --val-rows /home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/02_reference_centered_interaction/data/C1_composition_01/inner_seen_val.jsonl --output /home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/02_reference_centered_interaction/runs/C1_composition_01/raw_repair1/artifacts --arm raw --seed 3407 --epochs 5 --rank 32 --batch-size 128 --lr 0.001 --device cuda:0
+C1_composition_01 raw epoch=1/5 seen_auc=0.602885
+C1_composition_01 raw epoch=2/5 seen_auc=0.612848
+C1_composition_01 raw epoch=3/5 seen_auc=0.609519
+C1_composition_01 raw epoch=4/5 seen_auc=0.610081
+C1_composition_01 raw epoch=5/5 seen_auc=0.609654
+[2026-10-03T18:44:37+00:00] EXIT train: rc=0

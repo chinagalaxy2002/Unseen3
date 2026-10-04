@@ -1,0 +1,3 @@
+# Manual repair 2
+
+The new task passed one training epoch and then failed in evaluation because the checkpoint stored the experimental arm name (`B0_natural_pair_replay`) in the field consumed as the model architecture name. `CompatibilityAdapter` correctly accepts `R_raw_sequence`; it rejected the unrelated arm label. I changed the isolated trainer checkpoint to store `arm=R_raw_sequence` and the experimental label separately as `training_arm`. This is metadata plumbing only; parameters, losses, input, optimizer, and data remain unchanged. The attempted Codex repair again failed at the Codex HTTP/MCP route before editing; the CLI output is preserved. The failed task/checkpoint remain archived, and the next smoke uses a fresh task ID/config/output directory.

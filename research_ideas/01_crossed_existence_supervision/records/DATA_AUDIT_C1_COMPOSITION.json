@@ -1,0 +1,146 @@
+{
+  "bank_identity": {
+    "inner_novel_dev": {
+      "annotation_hash": "5eb00a9c02cd4725f09c9c29cec6117ffcde64bdf1b388860989cb79476207da",
+      "checkpoint_hash": "c5319f94c70ef323e78e6bdb83d3e4d60ed020385aff5c0a57ef142e079dae43",
+      "dataset_code_hash": "7cf3a8fe9bb09f077d6bc01666e55c4f5b509a50c0dc0190352e6876f4fd7dab",
+      "dtype": "float32",
+      "extractor_hash": "6d77404ff3d9341b16f8d74a07a0423baaec90cd798b37e1fb55bbc74be2f59d",
+      "feature_order": [
+        "/home/guoxiangyu/paper/\u65b0\u5efa\u6587\u4ef6\u5939/charades/vid_clip",
+        "/home/guoxiangyu/paper/\u65b0\u5efa\u6587\u4ef6\u5939/charades/vid_slowfast"
+      ],
+      "feature_source_count": 386,
+      "feature_sources_hash": "2dddd25d9e1fc3bf5b998d35f66c129dbe0c7fccf8055472f039e544386a122b",
+      "fold": "C1_composition_01",
+      "local_roi_enabled": false,
+      "manifest_hash": "a402c0c8892e4b820fd7e4b82e6130d197b5f1b8746958e63919a19dbb81594f",
+      "max_q_l": 32,
+      "max_v_l": 200,
+      "normalization": "original per-modality per-clip/token L2",
+      "query_dir": "/home/guoxiangyu/paper/Openword/generalized-moment-retrieval/features/semantic_existence_v2/C1/clip_text",
+      "role": "inner_novel_dev",
+      "schema": "evidence_v5_decoder_bank_01"
+    },
+    "inner_seen_val": {
+      "annotation_hash": "87bf235a6b73471eb2736a02b99a42637a2102a724649d6a43b17847448c9414",
+      "checkpoint_hash": "c5319f94c70ef323e78e6bdb83d3e4d60ed020385aff5c0a57ef142e079dae43",
+      "dataset_code_hash": "7cf3a8fe9bb09f077d6bc01666e55c4f5b509a50c0dc0190352e6876f4fd7dab",
+      "dtype": "float32",
+      "extractor_hash": "6d77404ff3d9341b16f8d74a07a0423baaec90cd798b37e1fb55bbc74be2f59d",
+      "feature_order": [
+        "/home/guoxiangyu/paper/\u65b0\u5efa\u6587\u4ef6\u5939/charades/vid_clip",
+        "/home/guoxiangyu/paper/\u65b0\u5efa\u6587\u4ef6\u5939/charades/vid_slowfast"
+      ],
+      "feature_source_count": 1683,
+      "feature_sources_hash": "fc9f3185818846f0b2dcf52588f2b249f5babbd708a3e10d39523febcb9b4f6c",
+      "fold": "C1_composition_01",
+      "local_roi_enabled": false,
+      "manifest_hash": "a402c0c8892e4b820fd7e4b82e6130d197b5f1b8746958e63919a19dbb81594f",
+      "max_q_l": 32,
+      "max_v_l": 200,
+      "normalization": "original per-modality per-clip/token L2",
+      "query_dir": "/home/guoxiangyu/paper/Openword/generalized-moment-retrieval/features/semantic_existence_v2/C1/clip_text",
+      "role": "inner_seen_val",
+      "schema": "evidence_v5_decoder_bank_01"
+    },
+    "inner_train": {
+      "annotation_hash": "16790c0dc27c1347b70768e3635baae0e23aca1f8a9c1765d9a8097934f9a34a",
+      "checkpoint_hash": "c5319f94c70ef323e78e6bdb83d3e4d60ed020385aff5c0a57ef142e079dae43",
+      "dataset_code_hash": "7cf3a8fe9bb09f077d6bc01666e55c4f5b509a50c0dc0190352e6876f4fd7dab",
+      "dtype": "float32",
+      "extractor_hash": "6d77404ff3d9341b16f8d74a07a0423baaec90cd798b37e1fb55bbc74be2f59d",
+      "feature_order": [
+        "/home/guoxiangyu/paper/\u65b0\u5efa\u6587\u4ef6\u5939/charades/vid_clip",
+        "/home/guoxiangyu/paper/\u65b0\u5efa\u6587\u4ef6\u5939/charades/vid_slowfast"
+      ],
+      "feature_source_count": 17493,
+      "feature_sources_hash": "b4f74a519c8428f145be3653062323c760464132243432e610ed54a80ac45c37",
+      "fold": "C1_composition_01",
+      "local_roi_enabled": false,
+      "manifest_hash": "a402c0c8892e4b820fd7e4b82e6130d197b5f1b8746958e63919a19dbb81594f",
+      "max_q_l": 32,
+      "max_v_l": 200,
+      "normalization": "original per-modality per-clip/token L2",
+      "query_dir": "/home/guoxiangyu/paper/Openword/generalized-moment-retrieval/features/semantic_existence_v2/C1/clip_text",
+      "role": "inner_train",
+      "schema": "evidence_v5_decoder_bank_01"
+    }
+  },
+  "local_annotation_sha256": {
+    "inner_novel_dev.jsonl": "5eb00a9c02cd4725f09c9c29cec6117ffcde64bdf1b388860989cb79476207da",
+    "inner_seen_val.jsonl": "87bf235a6b73471eb2736a02b99a42637a2102a724649d6a43b17847448c9414",
+    "inner_train.jsonl": "16790c0dc27c1347b70768e3635baae0e23aca1f8a9c1765d9a8097934f9a34a",
+    "inner_train_source_pairs.jsonl": "e2652d2a99c5a48cc5ee77c89eb297880ed9c75d45515264a2e8785bbb755a6c"
+  },
+  "manifest": {
+    "baseline_epochs": 100,
+    "baseline_selection": "inner Seen-val MR-full-mAP",
+    "counts": {
+      "inner_novel_dev": {
+        "labels": {
+          "0": 96,
+          "1": 106
+        },
+        "rows": 202,
+        "videos": 92
+      },
+      "inner_seen_val": {
+        "labels": {
+          "0": 237,
+          "1": 706
+        },
+        "rows": 943,
+        "videos": 370
+      },
+      "inner_train": {
+        "labels": {
+          "0": 1119,
+          "1": 8046
+        },
+        "rows": 9165,
+        "videos": 4164
+      }
+    },
+    "excluded_train_rows": 1351,
+    "excluded_val_context_rows": 306,
+    "files": {
+      "inner_novel_dev": {
+        "path": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/experiments/moment_detr_gmr_evidence_v5/inner_folds/C1_composition_01/inner_novel_dev.jsonl",
+        "sha256": "5eb00a9c02cd4725f09c9c29cec6117ffcde64bdf1b388860989cb79476207da"
+      },
+      "inner_seen_val": {
+        "path": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/experiments/moment_detr_gmr_evidence_v5/inner_folds/C1_composition_01/inner_seen_val.jsonl",
+        "sha256": "87bf235a6b73471eb2736a02b99a42637a2102a724649d6a43b17847448c9414"
+      },
+      "inner_train": {
+        "path": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/experiments/moment_detr_gmr_evidence_v5/inner_folds/C1_composition_01/inner_train.jsonl",
+        "sha256": "16790c0dc27c1347b70768e3635baae0e23aca1f8a9c1765d9a8097934f9a34a"
+      }
+    },
+    "fold": "C1_composition_01",
+    "heldout": [
+      "close::door",
+      "open::door"
+    ],
+    "initialization": "random task-model initialization; no canonical trained weights",
+    "level": "composition",
+    "parent_split": "C1",
+    "seed": 3407,
+    "selection": "Seen metadata only; support-greedy, deterministic; disjoint heldout IDs",
+    "train_eval_video_overlap": 0,
+    "train_source_semantic_exposure": 0
+  },
+  "same_query_support_labels": "negative user_attested_video_review; positive human_temporal_annotation; no unlabeled row converted to negative",
+  "summary": {
+    "fold": "C1_composition_01",
+    "negative_provenance_counts": {
+      "user_attested_video_review": 1119
+    },
+    "pair_capacity": 225,
+    "positive_provenance_counts": {
+      "human_temporal_annotation": 8046
+    },
+    "same_query_both_labels": 146
+  }
+}
