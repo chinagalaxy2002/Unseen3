@@ -47,3 +47,8 @@
 上文“draft_not_executed”及计划性语句记录的是授权前文档阶段。之后按用户最新授权，在 `_orchestration/` 建立了可恢复任务队列并完成优先级 01–08 的最小筛查或必要 gate。方向最终 disposition、逐 fold 结果、隔离边界和失败原因以各目录 `records/DIRECTION_DISPOSITION.md` 为准；集成解释见 [`_orchestration/RESULT_SYNTHESIS.md`](_orchestration/RESULT_SYNTHESIS.md)。所有方向均未打开正式 U；当前没有满足证据要求的候选方法，未运行正式确认评测。
 
 Idea 05 随后完成了预先冻结的 Seen-only query-prior score-correction 跟进，没有重训或访问正式 U。A1 校正后 Novel-dev pooled AUROC 下降 3.83 pp，且 same-video source-pair PairAcc 下降；C1 的 Seen-selected 系数为 0。方向 disposition 仍为 `insufficient_evidence`，详细 fold 结果见 [Idea 05 记录](05_independent_compatibility_adapter/records/DIRECTION_DISPOSITION.md)。当前队列没有运行任务，GPU worker/controller 均已退出。
+
+
+## 方向 09：先验受控的证据增量审计（PEI-0）
+
+[方向 09](09_prior_controlled_evidence_increment/README.md) 已实现 Stage 0 标签/特征审计、Stage 1 零训练相似度与双中心化、Stage 2 五 seed 视频分组交叉拟合 Cq、固定先验 offset 的 M2/M3、shuffle-refit null、共享视频 bootstrap 和条件功效模拟。13 项合成输入检查通过，尚未运行真实 PEI-0 实验。完整流程必须先通过有时间提取来源支持的 Stage 0 alignment gate；正式 U 不参与。冻结代码及判据见 [FREEZE](09_prior_controlled_evidence_increment/records/FREEZE.json)，验证记录见 [IMPLEMENTATION_VALIDATION](09_prior_controlled_evidence_increment/records/IMPLEMENTATION_VALIDATION.json)。

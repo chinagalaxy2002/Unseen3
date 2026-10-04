@@ -1,0 +1,24 @@
+{
+  "status": "passed",
+  "checks": 13,
+  "synthetic_pipeline": "four folds, Cq OOF, evidence/reference, shuffle-refit, conditional power, metrics, output hashes",
+  "additional_checks": [
+    "forbidden U partition rejected",
+    "pending alignment gate rejected",
+    "CLI help",
+    "Python AST",
+    "all frozen code and manifest hashes"
+  ],
+  "real_benchmark_experiment_run": false,
+  "formal_u_read": false,
+  "freeze_sha256": "a40869a134af9fee6036b5c5bab5f457121530359e8ab4e8e9a82f3cc7a348fd",
+  "environment": {
+    "python": "3.13.5",
+    "numpy": "2.4.2",
+    "scipy": "1.17.1",
+    "sklearn": "1.8.0",
+    "torch": "2.10.0+cu128"
+  },
+  "command": "python research_ideas/09_prior_controlled_evidence_increment/code/test_pei.py",
+  "notes": "Synthetic configuration uses reduced budgets; does not validate timestamp provenance or scientific hypotheses."
+}

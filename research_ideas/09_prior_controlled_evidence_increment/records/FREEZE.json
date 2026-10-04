@@ -1,0 +1,177 @@
+{
+  "experiment": "PEI-0",
+  "revision": 2,
+  "status": "implemented_not_executed",
+  "created_utc": "2026-10-04T02:55:12.584688+00:00",
+  "scope": "Stage 0/1/2 implemented, full experiment not run; protocol tests use synthetic inputs only",
+  "formal_u_read": false,
+  "folds": {
+    "A1_action_01": {
+      "parent_split": "A1",
+      "manifest_sha256": "9d59510429734a95b116715e30102edbb3b9b9e7f9199bfd3f3bc2bb66385aaa"
+    },
+    "A1_action_02": {
+      "parent_split": "A1",
+      "manifest_sha256": "f9953e7bab106de49e2f92dbceb92dec10b818836928c233c0d2ce67c8f2a53f"
+    },
+    "C1_composition_01": {
+      "parent_split": "C1",
+      "manifest_sha256": "a402c0c8892e4b820fd7e4b82e6130d197b5f1b8746958e63919a19dbb81594f"
+    },
+    "C1_composition_02": {
+      "parent_split": "C1",
+      "manifest_sha256": "4099052ee9e248780c16093ac60d6e911754ecaf996bfbee09368be3ef89955f"
+    }
+  },
+  "seed": 3407,
+  "crossfit_seeds": [
+    3407,
+    3408,
+    3409,
+    3410,
+    3411
+  ],
+  "crossfit_video_folds": 5,
+  "features": {
+    "video": "raw_vid_clip_features",
+    "text": "L2 normalized token masked mean then L2 normalization",
+    "max_query_tokens": 32,
+    "video_length": "all raw CLIP clips, no SlowFast or decoder truncation",
+    "nominal_clip_seconds": 1.0,
+    "alignment_gate": "complete train features and extraction timestamps; video-cluster CI95 lower > 0.5",
+    "alignment_aggregation": "row-macro GT-inside-versus-outside AUC, ties half",
+    "missing_timestamps": "pending; nominal mapping is descriptive only",
+    "gate_failure": "stop; separately register sentence-embedding extraction before attempting revised channel"
+  },
+  "aggregators": [
+    "max",
+    "top3",
+    "mean"
+  ],
+  "aggregator_selection": "inner_train pooled AUROC, ties in declared order; never Novel-dev",
+  "reference": {
+    "source": "inner_train unique exact query strings and unique video IDs, full Cartesian reference",
+    "labels_used": false,
+    "leave_self_out": "exclude evaluation video from video reference and evaluation query from query reference when present; global mean uses both exclusions",
+    "duplicate_query_encoding": "must resolve nonidentical encoded tokens before query-only or within-query claims",
+    "double_center": "z_tilde=z-mu_q-mu_v+mu; arithmetic average of chosen z aggregator over reference"
+  },
+  "stage2": {
+    "b": "mean logit across five seeds; five video-group OOF folds for train, mean of five train models per seed for eval",
+    "cq_selection": "held-in video-group validation from fitting portion only; no OOF labels for selection; Novel-dev never selects epoch",
+    "cq_recipe": "V5 Cq hidden128, LayerNorm/GELU/dropout.1, AdamW lr.001 wd.0001, natural BCE, batch32, 50 epochs, gradient_clip1, earliest held-in AUROC tie",
+    "M0": "b",
+    "M2": "b+c+a_q*standardized(mu_q)+a_v*standardized(mu_v)",
+    "M3": "b+c+a_q*standardized(mu_q)+a_v*standardized(mu_v)+w*standardized(z_tilde)",
+    "b_coefficient": 1.0,
+    "M2_fitted_parameters": 3,
+    "M3_fitted_parameters": 4,
+    "fit": "inner_train class-balanced logistic regression with intercept, fixed b offset; ridge1e-4 on slopes, none on intercept",
+    "standardization": "inner_train means and stds only; zero variance maps to zero",
+    "zero_fit": "standardize b, mu_q, mu_v, z_tilde on train; equal-weight M2 and M3; report separately",
+    "controls": [
+      "shuffled videos with centers recomputed and M2/M3 refitted",
+      "existing versioned Cv score replay",
+      "mean vs max",
+      "query-only centering",
+      "video-only centering"
+    ],
+    "controls_not_primary": true,
+    "heldin_validation_fraction": 0.2,
+    "cq_epochs": 50,
+    "cq_optimizer": "AdamW, matching actual V5 training implementation; lr.001 wd.0001, gradient_clip1",
+    "cv_replay": {
+      "A1_action_01": {
+        "predictions_sha256": "c9bc2b6cd498f8a91a3a0731c75e9a602385f6eaea68b6a8fc08ed5fd3faa895",
+        "status_sha256": "1d3d8c5bb3ec96d0a514ad43eed0734c0019dd373d79305feb57ec2e629fe39c"
+      },
+      "A1_action_02": {
+        "predictions_sha256": "c2515fa2911ee02c0fdf19b23b9155202ea6602701df3ae85cfa4417c2134bb1",
+        "status_sha256": "f5fa9019df0ab7fe450ea845014da5aca5fa71aa677a354a7c613fa54180068a"
+      },
+      "C1_composition_01": {
+        "predictions_sha256": "66509debd325e968fc4d3cd118b853d191ebbd85cfed6b737165d1a58d0e835b",
+        "status_sha256": "80a7ce195d77ef772b6bf70ccd56e3967218caac07ed00a20ec72a5e898258c3"
+      },
+      "C1_composition_02": {
+        "predictions_sha256": "b9944758f8812ccb1ab35f9bf7d502a984cfa594502a5c9ca2acf474f059d23d",
+        "status_sha256": "dff7d67fdf28d2f2816ddc609c0faa02b0914b62d78809f36e1ae5d74a82b6f5"
+      }
+    },
+    "cq_inference": "deduplicate exact mean input vectors, infer once and broadcast; OOF across outer models remains distinct"
+  },
+  "statistics": {
+    "shuffle_repetitions": 100,
+    "bootstrap_repetitions": 2000,
+    "shuffle_assignment": "unique video bijection without fixed points, shared by every row of a video within role; seeded circular shift of random ordering",
+    "primary": "macro Novel-dev AUROC(M3)-AUROC(M2)",
+    "macro_ci": "paired video-cluster bootstrap; same video multiplicity across all folds, seeds not independent units",
+    "within_query": "query-macro AUC for exact dual-label queries, incidence-component bootstrap; giant component means descriptive only",
+    "mde": "implemented conditional cluster-parametric simulation; fixed Cq/features, full M2/M3 refits; report finite-grid and model dependence",
+    "mde_target_power": 0.8,
+    "mde_one_sided_alpha": 0.05,
+    "mde_limit_auc": 0.02,
+    "mde_alternative": "positive standardized z_tilde coefficient, registered grid, shared video random-effect sensitivity and natural label-rate calibration",
+    "power_simulation": {
+      "repetitions": 200,
+      "video_random_effect_sd": [
+        0.0,
+        0.5,
+        1.0
+      ],
+      "coefficient_grid": [
+        0.0,
+        0.125,
+        0.25,
+        0.5,
+        0.75,
+        1.0,
+        1.5,
+        2.0
+      ],
+      "natural_label_rates": "per-role observed class fraction; intercept shifted to match expected fraction in each simulation",
+      "dependence": "shared video latent and shared uniform per exact video/query across folds and roles",
+      "test": "macro refitted M3-minus-M2 above empirical 95th percentile under coefficient0",
+      "effect": "mean oracle AUROC increment for base+injected residual vs base under alternative labels",
+      "mde": "smallest positive oracle increment passing >=80% power at it and all larger grid points; maximum across latent sensitivities",
+      "limitation": "conditional on observed Cq/features; Monte Carlo and grid approximation, not unconditional power"
+    },
+    "component_policy": {
+      "minimum_components": 5,
+      "largest_component_fraction_max": 0.5
+    }
+  },
+  "decisions": {
+    "E": {
+      "macro_delta_min": 0.02,
+      "positive_folds_min": 3,
+      "paired_macro_ci95_lower_gt": 0.0,
+      "shuffle_null_same_statistic_upper_95_quantile_max": 0.005,
+      "mde_max": 0.02
+    },
+    "N": {
+      "within_query_ci_includes": 0.5,
+      "macro_delta_lt": 0.01,
+      "positive_folds_max": 1,
+      "interpretation": "no usable increment detected in this channel and protocol; not proof of absence"
+    },
+    "insufficient_power": "MDE > .02 or undefined: inconclusive, never relax threshold",
+    "otherwise": "inconclusive; expand prespecified semantic holdout support before method work",
+    "wording": "conditional compatibility additionally requires within-query CI lower > .5 and video-only control; otherwise evidence increment only"
+  },
+  "runtime_hours": "unmeasured; 1-3 hours is planning estimate only",
+  "code_sha256": {
+    "code/analysis_stats.py": "42e890da3c107734f24a8d462fd3aafd59da35e246572fc9e0fadc261d41aedd",
+    "code/audit_stage0.py": "be99a24d1916a7c9a2849dc163a199fc79ff0491ca78ef122fdbc8bfbb854391",
+    "code/core.py": "0cd17d9e879125354d4216e3698a40d4ffc0dae2bd65e33505c633f3f65ea0d8",
+    "code/crossfit.py": "6ebca757a7c1de741bf346bf27ee917a73f1640ca989fdfd5b3d99fa808fce63",
+    "code/evidence.py": "a753e07e338b6cd21a09732c09258603f3ab3a99d526a513b3e0145ac9163a44",
+    "code/run_pipeline.py": "29f4463f3b70583bfdfaac0bb3acf1621e3c03d3b97817cbd69a239c2709d8a1",
+    "code/test_pei.py": "b719eb18ad6cf6e1082d4b3e93db14c145dbcd2a6dd99461cb5ff823db96acdf"
+  },
+  "updated_utc": "2026-10-04T03:06:36.005794+00:00",
+  "runtime": {
+    "blas_threads": 2,
+    "torch_threads": 2
+  }
+}
