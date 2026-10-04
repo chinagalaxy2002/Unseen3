@@ -1,0 +1,7 @@
+{
+  "status": "launched_by_user_override",
+  "fold": "C1",
+  "device": "cuda:1",
+  "worker_pid": 2024441,
+  "quiet_rule_superseded": true
+}

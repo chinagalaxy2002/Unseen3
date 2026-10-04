@@ -1,0 +1,36 @@
+{
+  "all_six_executing_optimizer_steps": true,
+  "progress": [
+    [
+      "A1",
+      "BCE_only",
+      300
+    ],
+    [
+      "A1",
+      "Pair_only",
+      300
+    ],
+    [
+      "A1",
+      "Weak_BCE_pair",
+      300
+    ],
+    [
+      "C1",
+      "BCE_only",
+      300
+    ],
+    [
+      "C1",
+      "Pair_only",
+      300
+    ],
+    [
+      "C1",
+      "Weak_BCE_pair",
+      300
+    ]
+  ],
+  "formal_U_accessed": false
+}

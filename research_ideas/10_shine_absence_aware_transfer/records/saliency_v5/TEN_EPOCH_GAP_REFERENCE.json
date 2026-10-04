@@ -1,0 +1,25 @@
+{
+  "definition": "gap = Seen AUROC minus Unseen AUROC; positive reduction is smaller gap",
+  "splits": [
+    {
+      "split": "A1",
+      "baseline_gap": 0.32146819332111654,
+      "saliency_gap": 0.3254831804941787,
+      "gap_reduction": -0.004014987173062146,
+      "relative_gap_reduction": -0.012489531644119922
+    },
+    {
+      "split": "C1",
+      "baseline_gap": 0.181946470799366,
+      "saliency_gap": 0.17554665719898266,
+      "gap_reduction": 0.006399813600383331,
+      "relative_gap_reduction": 0.03517415629039852
+    }
+  ],
+  "macro": {
+    "baseline_gap": 0.2517073320602412,
+    "saliency_gap": 0.2505149188465806,
+    "gap_reduction": 0.0011924132136605925,
+    "relative_gap_reduction": 0.004737300276081
+  }
+}

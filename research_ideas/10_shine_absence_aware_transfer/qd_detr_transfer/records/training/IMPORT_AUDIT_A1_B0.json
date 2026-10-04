@@ -1,0 +1,10 @@
+{
+  "models": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/10_shine_absence_aware_transfer/qd_detr_transfer/code/models/qd_detr_gmr/model.py",
+  "dataset": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/10_shine_absence_aware_transfer/qd_detr_transfer/code/training/qd_detr_gmr/dataset.py",
+  "checkpoint_source": "/home/guoxiangyu/paper/Openword/generalized-moment-retrieval/results/semantic_existence/multi_split_v2/A1/qd/best.ckpt",
+  "checkpoint_sha256": "7783a7f219ea8eacd8114eb8542dcec9b3dd9aad176c8e0a5661dbde839ffac8",
+  "train_chain_support": 6998,
+  "device": "cuda:0",
+  "python": "3.10.20 (main, Jun 11 2026, 15:17:37) [GCC 14.3.0]",
+  "torch": "2.6.0+cu124"
+}

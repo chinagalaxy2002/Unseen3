@@ -1,0 +1,8 @@
+{
+  "status": "running",
+  "fold": "A1",
+  "device": "cuda:0",
+  "pid": 1997647,
+  "trainer_pid": 1997649,
+  "started": 1791096562.6615202
+}

@@ -1,0 +1,35 @@
+{
+  "all_four_executing_optimizer_steps": true,
+  "progress": [
+    {
+      "fold": "A1",
+      "arm": "B0",
+      "epoch": 1,
+      "step": 300,
+      "loss": 0.2967609167098999
+    },
+    {
+      "fold": "A1",
+      "arm": "S1_saliency_only",
+      "epoch": 1,
+      "step": 200,
+      "loss": 3.4418365955352783
+    },
+    {
+      "fold": "C1",
+      "arm": "B0",
+      "epoch": 1,
+      "step": 200,
+      "loss": 0.3634445071220398
+    },
+    {
+      "fold": "C1",
+      "arm": "S1_saliency_only",
+      "epoch": 1,
+      "step": 200,
+      "loss": 3.102170705795288
+    }
+  ],
+  "schedule": "shared GPU launch authorized by user; prior quiet queues superseded",
+  "automatic_evaluation_scheduled": true
+}

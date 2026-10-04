@@ -1,0 +1,26 @@
+{
+  "created_unix": 1791115954.9640324,
+  "checkpoints": {
+    "B0": {
+      "path": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/10_shine_absence_aware_transfer/flash_vtg_transfer/runs/formal50/A1/B0/seed3407/flash_saliency_v1_50ep/best.ckpt",
+      "sha256": "bb148f4b43cafa294ba0223c646a74937655d0ee003173e71c443757ee300709",
+      "selected_epoch": 6
+    },
+    "S1_saliency_only": {
+      "path": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/10_shine_absence_aware_transfer/flash_vtg_transfer/runs/formal50/A1/S1_saliency_only/seed3407/flash_saliency_v1_50ep/best.ckpt",
+      "sha256": "055e3398a5918a1d464396f6c02d5c4328ca15879693fc43820cce8fe1abd04c",
+      "selected_epoch": 35
+    },
+    "canonical": {
+      "path": "/home/guoxiangyu/paper/Openword/generalized-moment-retrieval/results/semantic_existence/multi_split_v2/A1/flash/charadesSTA-video_tef-seen_only_seed3407_100ep-2026-09-28-19-04-42/model_best.ckpt",
+      "sha256": "73a0861f08216f11c2f335c51194919913d49bcbc41930e251a0568b035cadd3",
+      "selected_epoch": "canonical"
+    }
+  },
+  "formal_U_labels_read_at_gate": false,
+  "test_sha256": "db7ceabde112d1ae279dc739d76db19e17fcd1141a31ea67a7ca23a9eaacc2e0",
+  "evaluator_sha256": "3085704d655cabc21b2b579b3fdfdb4175d7f34d4f5a56326065819db633dcb2",
+  "training_freeze_sha256": "ec772ecb72cf4c133cfcc3a5bf1fa2e52c0983e384d03d3f19b9f25edb52f4bc",
+  "all_50_exposure_hashes_match": true,
+  "selection": "Seen-val only; earliest trained best; no epoch0 fallback"
+}

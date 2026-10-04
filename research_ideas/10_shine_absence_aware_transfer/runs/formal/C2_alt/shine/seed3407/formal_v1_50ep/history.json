@@ -1,0 +1,288 @@
+[
+  {
+    "epoch": 1,
+    "seen": {
+      "pooled_auroc": 0.7181939685059944,
+      "rows": 1476,
+      "videos": 466,
+      "source_pair_acc": 0.7615062761506276,
+      "source_pairs": 478,
+      "same_query_pair_acc": 0.5229122621564481,
+      "same_query_support": 43,
+      "raw_r1_iou_05": 0.374869109947644,
+      "raw_r1_iou_07": 0.18534031413612564,
+      "threshold_logit": -0.3721705675125122,
+      "gated_r1_iou_05": 0.23979057591623038
+    },
+    "losses": {
+      "gmr": 3.157764933015927,
+      "coarse": 3.0724131931741554,
+      "fine": 0.9212343949510391,
+      "rotated_bce": 0.6509102822157992,
+      "exist_pair": 0.3066723151020257
+    },
+    "chains": 2656,
+    "seconds": 53.08281636238098,
+    "selected": true
+  },
+  {
+    "epoch": 2,
+    "seen": {
+      "pooled_auroc": 0.7115072705530041,
+      "rows": 1476,
+      "videos": 466,
+      "source_pair_acc": 0.7594142259414226,
+      "source_pairs": 478,
+      "same_query_pair_acc": 0.5505285412262156,
+      "same_query_support": 43,
+      "raw_r1_iou_05": 0.37277486910994767,
+      "raw_r1_iou_07": 0.187434554973822,
+      "threshold_logit": -0.3216714560985565,
+      "gated_r1_iou_05": 0.24712041884816754
+    },
+    "losses": {
+      "gmr": 3.142029282917459,
+      "coarse": 2.936678728784423,
+      "fine": 0.9207063670079392,
+      "rotated_bce": 0.573466219142618,
+      "exist_pair": 0.22743570701365012
+    },
+    "chains": 2655,
+    "seconds": 52.30575513839722,
+    "selected": false
+  },
+  {
+    "epoch": 3,
+    "seen": {
+      "pooled_auroc": 0.7095919044125776,
+      "rows": 1476,
+      "videos": 466,
+      "source_pair_acc": 0.7510460251046025,
+      "source_pairs": 478,
+      "same_query_pair_acc": 0.5646229739252995,
+      "same_query_support": 43,
+      "raw_r1_iou_05": 0.362303664921466,
+      "raw_r1_iou_07": 0.17905759162303664,
+      "threshold_logit": -0.3051825165748596,
+      "gated_r1_iou_05": 0.2450261780104712
+    },
+    "losses": {
+      "gmr": 3.1233542184513734,
+      "coarse": 2.8316330855869385,
+      "fine": 0.9091611587139498,
+      "rotated_bce": 0.5696985891694764,
+      "exist_pair": 0.2151426098096263
+    },
+    "chains": 2656,
+    "seconds": 52.37169933319092,
+    "selected": false
+  },
+  {
+    "epoch": 4,
+    "seen": {
+      "pooled_auroc": 0.7034237420988635,
+      "rows": 1476,
+      "videos": 466,
+      "source_pair_acc": 0.7594142259414226,
+      "source_pairs": 478,
+      "same_query_pair_acc": 0.5821176885130374,
+      "same_query_support": 43,
+      "raw_r1_iou_05": 0.3633507853403141,
+      "raw_r1_iou_07": 0.17486910994764399,
+      "threshold_logit": -0.26651838421821594,
+      "gated_r1_iou_05": 0.23769633507853402
+    },
+    "losses": {
+      "gmr": 3.1136702528919082,
+      "coarse": 2.7314813803118394,
+      "fine": 0.8990456761724978,
+      "rotated_bce": 0.5687530770987631,
+      "exist_pair": 0.21105498517582932
+    },
+    "chains": 2654,
+    "seconds": 52.20088315010071,
+    "selected": false
+  },
+  {
+    "epoch": 5,
+    "seen": {
+      "pooled_auroc": 0.7046537568710997,
+      "rows": 1476,
+      "videos": 466,
+      "source_pair_acc": 0.7447698744769874,
+      "source_pairs": 478,
+      "same_query_pair_acc": 0.5560253699788583,
+      "same_query_support": 43,
+      "raw_r1_iou_05": 0.3539267015706806,
+      "raw_r1_iou_07": 0.18219895287958116,
+      "threshold_logit": -0.3068813681602478,
+      "gated_r1_iou_05": 0.23979057591623038
+    },
+    "losses": {
+      "gmr": 3.1015576763325425,
+      "coarse": 2.6542314635701927,
+      "fine": 0.8927788823304406,
+      "rotated_bce": 0.5688602346253683,
+      "exist_pair": 0.20854979141963176
+    },
+    "chains": 2656,
+    "seconds": 52.32795071601868,
+    "selected": false
+  },
+  {
+    "epoch": 6,
+    "seen": {
+      "pooled_auroc": 0.7081689461466572,
+      "rows": 1476,
+      "videos": 466,
+      "source_pair_acc": 0.7468619246861925,
+      "source_pairs": 478,
+      "same_query_pair_acc": 0.59526955602537,
+      "same_query_support": 43,
+      "raw_r1_iou_05": 0.36544502617801045,
+      "raw_r1_iou_07": 0.19162303664921465,
+      "threshold_logit": -0.3040216863155365,
+      "gated_r1_iou_05": 0.2628272251308901
+    },
+    "losses": {
+      "gmr": 3.089084999388959,
+      "coarse": 2.583158629845424,
+      "fine": 0.9035602076405502,
+      "rotated_bce": 0.5676821117031287,
+      "exist_pair": 0.20979050074490796
+    },
+    "chains": 2655,
+    "seconds": 52.428460121154785,
+    "selected": false
+  },
+  {
+    "epoch": 7,
+    "seen": {
+      "pooled_auroc": 0.6921606656550533,
+      "rows": 1476,
+      "videos": 466,
+      "source_pair_acc": 0.7447698744769874,
+      "source_pairs": 478,
+      "same_query_pair_acc": 0.5623238195912614,
+      "same_query_support": 43,
+      "raw_r1_iou_05": 0.37905759162303665,
+      "raw_r1_iou_07": 0.19790575916230366,
+      "threshold_logit": -0.24292969703674316,
+      "gated_r1_iou_05": 0.2607329842931937
+    },
+    "losses": {
+      "gmr": 3.081256885126413,
+      "coarse": 2.542762356619519,
+      "fine": 0.8900604739964727,
+      "rotated_bce": 0.5668285028582596,
+      "exist_pair": 0.20956916267792863
+    },
+    "chains": 2656,
+    "seconds": 52.46662926673889,
+    "selected": false
+  },
+  {
+    "epoch": 8,
+    "seen": {
+      "pooled_auroc": 0.6899056385726202,
+      "rows": 1476,
+      "videos": 466,
+      "source_pair_acc": 0.7531380753138075,
+      "source_pairs": 478,
+      "same_query_pair_acc": 0.5998062015503876,
+      "same_query_support": 43,
+      "raw_r1_iou_05": 0.374869109947644,
+      "raw_r1_iou_07": 0.193717277486911,
+      "threshold_logit": -0.22996051609516144,
+      "gated_r1_iou_05": 0.2764397905759162
+    },
+    "losses": {
+      "gmr": 3.0564989490681382,
+      "coarse": 2.5031783521534448,
+      "fine": 0.8851049923035036,
+      "rotated_bce": 0.5665603789040842,
+      "exist_pair": 0.20934020590418614
+    },
+    "chains": 2655,
+    "seconds": 52.510382890701294,
+    "selected": false
+  },
+  {
+    "epoch": 9,
+    "seen": {
+      "pooled_auroc": 0.6849594517189055,
+      "rows": 1476,
+      "videos": 466,
+      "source_pair_acc": 0.7531380753138075,
+      "source_pairs": 478,
+      "same_query_pair_acc": 0.6289200140944328,
+      "same_query_support": 43,
+      "raw_r1_iou_05": 0.37905759162303665,
+      "raw_r1_iou_07": 0.19267015706806281,
+      "threshold_logit": -0.3016516864299774,
+      "gated_r1_iou_05": 0.30052356020942406
+    },
+    "losses": {
+      "gmr": 3.0547186351684203,
+      "coarse": 2.4738456856414497,
+      "fine": 0.8844158551599606,
+      "rotated_bce": 0.5651871983904436,
+      "exist_pair": 0.2086840681731701
+    },
+    "chains": 2655,
+    "seconds": 52.18057370185852,
+    "selected": false
+  },
+  {
+    "epoch": 10,
+    "seen": {
+      "pooled_auroc": 0.6724080754891419,
+      "rows": 1476,
+      "videos": 466,
+      "source_pair_acc": 0.7405857740585774,
+      "source_pairs": 478,
+      "same_query_pair_acc": 0.6119626497533474,
+      "same_query_support": 43,
+      "raw_r1_iou_05": 0.37801047120418846,
+      "raw_r1_iou_07": 0.19895287958115182,
+      "threshold_logit": -0.33579176664352417,
+      "gated_r1_iou_05": 0.2973821989528796
+    },
+    "losses": {
+      "gmr": 3.0397736552249954,
+      "coarse": 2.4035619759416007,
+      "fine": 0.8779479480651488,
+      "rotated_bce": 0.563730756022844,
+      "exist_pair": 0.20506965326347265
+    },
+    "chains": 2656,
+    "seconds": 52.130311250686646,
+    "selected": false
+  },
+  {
+    "epoch": 11,
+    "seen": {
+      "pooled_auroc": 0.6687441589372028,
+      "rows": 1476,
+      "videos": 466,
+      "source_pair_acc": 0.7426778242677824,
+      "source_pairs": 478,
+      "same_query_pair_acc": 0.6226215644820297,
+      "same_query_support": 43,
+      "raw_r1_iou_05": 0.381151832460733,
+      "raw_r1_iou_07": 0.18638743455497384,
+      "threshold_logit": -0.36616161465644836,
+      "gated_r1_iou_05": 0.31518324607329845
+    },
+    "losses": {
+      "gmr": 3.0340664964842508,
+      "coarse": 2.3941089961543143,
+      "fine": 0.8716141817620001,
+      "rotated_bce": 0.5618162230106003,
+      "exist_pair": 0.2067938871143094
+    },
+    "chains": 2656,
+    "seconds": 51.77001929283142,
+    "selected": false
+  }
+]

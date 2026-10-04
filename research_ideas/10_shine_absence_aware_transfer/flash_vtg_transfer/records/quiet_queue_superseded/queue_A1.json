@@ -1,0 +1,18 @@
+{
+  "status": "waiting_for_gpu",
+  "fold": "A1",
+  "device": "cuda:0",
+  "pid": 2023624,
+  "started": 1791109366.6212025,
+  "occupying_compute_pids": [
+    2016754,
+    2016755
+  ],
+  "quiet_since": null,
+  "quiet_seconds_required": 60,
+  "planned_arms": [
+    "B0",
+    "S1_saliency_only"
+  ],
+  "epochs": 50
+}

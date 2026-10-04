@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/10_shine_absence_aware_transfer/code/prepare_bank.py", line 127, in <module>
+    prepare() if args.stage=='prepare' else encode(args.device)
+  File "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/10_shine_absence_aware_transfer/code/prepare_bank.py", line 111, in encode
+    tokens = clip.tokenize([text for _,text in batch], truncate=True).to(device)
+TypeError: tokenize() got an unexpected keyword argument 'truncate'

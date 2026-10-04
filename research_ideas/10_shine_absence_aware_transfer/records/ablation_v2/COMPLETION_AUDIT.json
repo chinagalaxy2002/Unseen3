@@ -1,0 +1,44 @@
+{
+  "frozen_inputs_verified": true,
+  "formal_test_loaded_by_audit": false,
+  "runs": {
+    "A1": {
+      "B0": {
+        "epochs": 10,
+        "checkpoint_hash_verified": true
+      },
+      "S1_saliency_only": {
+        "epochs": 10,
+        "checkpoint_hash_verified": true
+      },
+      "E1_rotated_exist_only": {
+        "epochs": 10,
+        "checkpoint_hash_verified": true
+      },
+      "SE1_full": {
+        "epochs": 10,
+        "checkpoint_hash_verified": true
+      },
+      "all_10_epoch_exposure_hashes_match": true
+    },
+    "C1": {
+      "B0": {
+        "epochs": 10,
+        "checkpoint_hash_verified": true
+      },
+      "S1_saliency_only": {
+        "epochs": 10,
+        "checkpoint_hash_verified": true
+      },
+      "E1_rotated_exist_only": {
+        "epochs": 10,
+        "checkpoint_hash_verified": true
+      },
+      "SE1_full": {
+        "epochs": 10,
+        "checkpoint_hash_verified": true
+      },
+      "all_10_epoch_exposure_hashes_match": true
+    }
+  }
+}

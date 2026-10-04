@@ -1,0 +1,54 @@
+{
+  "status": "passed",
+  "checks": [
+    {
+      "qid": "train1",
+      "tokens_compared": 10,
+      "mean_cosine": 0.9999992251396179,
+      "max_abs_raw_difference": 0.007809638977050781
+    },
+    {
+      "qid": "train2",
+      "tokens_compared": 9,
+      "mean_cosine": 0.9999991655349731,
+      "max_abs_raw_difference": 0.015699386596679688
+    },
+    {
+      "qid": "train3",
+      "tokens_compared": 9,
+      "mean_cosine": 0.999998927116394,
+      "max_abs_raw_difference": 0.019788742065429688
+    },
+    {
+      "qid": "train4",
+      "tokens_compared": 11,
+      "mean_cosine": 0.9999991059303284,
+      "max_abs_raw_difference": 0.01833629608154297
+    },
+    {
+      "qid": "train5",
+      "tokens_compared": 9,
+      "mean_cosine": 0.9999991655349731,
+      "max_abs_raw_difference": 0.019550800323486328
+    },
+    {
+      "qid": "train6",
+      "tokens_compared": 7,
+      "mean_cosine": 0.9999991655349731,
+      "max_abs_raw_difference": 0.013211250305175781
+    },
+    {
+      "qid": "train8",
+      "tokens_compared": 9,
+      "mean_cosine": 0.999998927116394,
+      "max_abs_raw_difference": 0.015633583068847656
+    },
+    {
+      "qid": "train10",
+      "tokens_compared": 8,
+      "mean_cosine": 0.9999992251396179,
+      "max_abs_raw_difference": 0.01709604263305664
+    }
+  ],
+  "comparison": "CPU float re-encode vs original stored states; GPU edit extraction uses same weights/code in half precision"
+}

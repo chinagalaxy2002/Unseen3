@@ -1,0 +1,15 @@
+{
+  "seen": {
+    "pooled_auroc": 0.6950186411552491,
+    "rows": 1476,
+    "videos": 466,
+    "source_pair_acc": 0.7510460251046025,
+    "source_pairs": 478,
+    "same_query_pair_acc": 0.5096282593375616,
+    "same_query_support": 43,
+    "raw_r1_iou_05": 0.374869109947644,
+    "raw_r1_iou_07": 0.1905759162303665,
+    "threshold_logit": 1.7230274677276611,
+    "gated_r1_iou_05": 0.25968586387434556
+  }
+}

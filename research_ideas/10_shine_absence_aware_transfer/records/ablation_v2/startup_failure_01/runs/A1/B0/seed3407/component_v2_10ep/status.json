@@ -1,0 +1,5 @@
+{
+  "status": "failed",
+  "error": "AttributeError(\"'int' object has no attribute 'detach'\")",
+  "seconds": 1.032834529876709
+}

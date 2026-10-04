@@ -1,0 +1,13 @@
+# Coarse/fine-only long-budget matched comparison
+
+User requested measuring baseline Seen→Unseen degradation and extending training to 50 epochs. We implement a fresh, total-50-epoch comparison from each canonical checkpoint, rather than append 50 to a selected 10-epoch checkpoint: old checkpoints lack optimizer/RNG continuation state, and selecting an intermediate epoch would change the starting point. Both baseline and saliency-only are run with the same budget, preserving all old artifacts.
+
+Scope: A1 and C1 only, seed3407, no multi-seed. Arms B0 (natural GMR) and S1_saliency_only (GMR + coarse1 + fine1), no rotated BCE or existence pair in the training objective. Both arms perform the same rotated/edit forwards as v2 for matching exposure and dropout RNG. Disabled losses may be measured but are omitted from backward. Initialization, data, feature bank, batch16, lr1e-5, original weight decay, grad clip .1, margins and chain sampling stay unchanged. No early stop. Best trained epoch selected by Seen-val AUROC, earliest tie; epoch0 diagnostic only.
+
+Track all 50 epochs, save best and epochs1/3/10/25/50 checkpoints and first-batch gradient probes. Preserve per-epoch Seen predictions, conditional ranking, loss components, score distributions and exposure hashes. Verify both arms match all50 exposures and first10 exposure matches original v2 runs.
+
+GPU0/A1 and GPU1/C1: two concurrent independent trainers per GPU (four total). After both arms in a split complete, the worker automatically freezes and validates selected checkpoint identities before formal test reads, evaluates Seen/Unseen with Seen-val thresholds, computes paired video-cluster 1000-resample CI, conditionals/localization/shuffled-video metrics. When both splits complete, generate combined evaluation/RESULTS.json and .md. A1/C1 U has been examined and all new outcomes are exploratory; do not tune epoch, threshold or weights using U.
+
+Success assessment: Unseen improvement with Seen retained; report Seen−Unseen gap reduction in percentage points and relative percentage, plus ΔU and ΔSeen. Do not treat a smaller gap from Seen collapse as mitigation. Canonical and old unmatched baseline50 remain historical references; primary comparison is this newly matched B0/S1 pair. No five-split expansion, no further backbone migration.
+
+Sources: code/train_saliency_v5.py, worker_saliency_v5.py, evaluate_saliency_v5.py, summarize_saliency_v5.py. Runs: runs/saliency_v5/<split>/<arm>/seed3407/saliency_v5_50ep. Records: records/saliency_v5; immutable training freeze: configs/SALIENCY_V5_FREEZE.json. Existing v2/v3/v4 and original formal frozen inputs remain unchanged.

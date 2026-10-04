@@ -1,0 +1,79 @@
+{
+  "A1_action_01": {
+    "inputs": {
+      "inner_train": {
+        "source": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/experiments/moment_detr_gmr_evidence_v5/inner_folds/A1_action_01/inner_train.jsonl",
+        "sha256": "52fc6359a9209fbf67e8853434a40c3bffc0ca3784c507649661e3cd10a1ca14"
+      },
+      "inner_seen_val": {
+        "source": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/experiments/moment_detr_gmr_evidence_v5/inner_folds/A1_action_01/inner_seen_val.jsonl",
+        "sha256": "b6f4446b1d06dc2871d195cabcf3ce1482caed903edf860214980dff6dc61551"
+      },
+      "inner_novel_dev": {
+        "source": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/experiments/moment_detr_gmr_evidence_v5/inner_folds/A1_action_01/inner_novel_dev.jsonl",
+        "sha256": "555bc70b0d80543a2dc5a05ae580dd42ca9d9cff640fdfec7881b1e84a0a694e"
+      }
+    },
+    "train_rows": 6611,
+    "positive_rows": 5920,
+    "eligible_three_level_chains": 5059,
+    "missing_upstream": 11,
+    "excluded_semantics": 850,
+    "semantic_filter": "all parsed content verbs against outer+inner held actions; conservative verb x noun check against held compositions",
+    "held_actions": [
+      "open",
+      "put",
+      "take"
+    ],
+    "held_pairs": [],
+    "split_spec_sha256": "16130d66f48d5112d9cbbe81a0a7a2e60fb7f322de243ab82d13cc3c37eb2d34",
+    "bank_sha256": "45fe07aac3ec61f6869c440788c1a894475ed59651f7acf00c3959ccc0f17efd"
+  },
+  "C1_composition_01": {
+    "inputs": {
+      "inner_train": {
+        "source": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/experiments/moment_detr_gmr_evidence_v5/inner_folds/C1_composition_01/inner_train.jsonl",
+        "sha256": "16790c0dc27c1347b70768e3635baae0e23aca1f8a9c1765d9a8097934f9a34a"
+      },
+      "inner_seen_val": {
+        "source": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/experiments/moment_detr_gmr_evidence_v5/inner_folds/C1_composition_01/inner_seen_val.jsonl",
+        "sha256": "87bf235a6b73471eb2736a02b99a42637a2102a724649d6a43b17847448c9414"
+      },
+      "inner_novel_dev": {
+        "source": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/experiments/moment_detr_gmr_evidence_v5/inner_folds/C1_composition_01/inner_novel_dev.jsonl",
+        "sha256": "5eb00a9c02cd4725f09c9c29cec6117ffcde64bdf1b388860989cb79476207da"
+      }
+    },
+    "train_rows": 9165,
+    "positive_rows": 8046,
+    "eligible_three_level_chains": 7749,
+    "missing_upstream": 17,
+    "excluded_semantics": 280,
+    "semantic_filter": "all parsed content verbs against outer+inner held actions; conservative verb x noun check against held compositions",
+    "held_actions": [],
+    "held_pairs": [
+      [
+        "close",
+        "door"
+      ],
+      [
+        "open",
+        "door"
+      ],
+      [
+        "sit",
+        "bed"
+      ],
+      [
+        "sit",
+        "chair"
+      ],
+      [
+        "sit",
+        "couch"
+      ]
+    ],
+    "split_spec_sha256": "58e969ba5da127548881f3bcd5899a6454326b5e4bc127bc390fd1f2ace893df",
+    "bank_sha256": "b7cf912b9ff1e27d6bb5892758bb2e12ebd9536b1253aae8f9e339f3309e3c1a"
+  }
+}

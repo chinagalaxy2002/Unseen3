@@ -1,0 +1,26 @@
+{
+  "created_unix": 1791113283.7695298,
+  "checkpoints": {
+    "B0": {
+      "path": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/10_shine_absence_aware_transfer/qd_detr_transfer/runs/formal50/C1/B0/seed3407/qd_saliency_v1_50ep/best.ckpt",
+      "sha256": "11f8bbbeb4428d9e2e689ed7b1aff9d34677d284ac3b28a4b942efe10051cfcf",
+      "selected_epoch": 1
+    },
+    "S1_saliency_only": {
+      "path": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/10_shine_absence_aware_transfer/qd_detr_transfer/runs/formal50/C1/S1_saliency_only/seed3407/qd_saliency_v1_50ep/best.ckpt",
+      "sha256": "bf086dc3b3a2d6192742f4fc3cbf407630861d1ff5060fdeae86097b037cf8fa",
+      "selected_epoch": 1
+    },
+    "canonical": {
+      "path": "/home/guoxiangyu/paper/Openword/generalized-moment-retrieval/results/semantic_existence/multi_split_v2/C1/qd/best.ckpt",
+      "sha256": "f2e1bfc6b67f19219661a8d4a8122cacc9df3199f23607a1a7ed42cc69390520",
+      "selected_epoch": "canonical"
+    }
+  },
+  "formal_U_labels_read_at_gate": false,
+  "test_sha256": "5db7a2e8bcc1250988f813f67dd778c18f39aff51a71ba3d8ecf9345b968bb53",
+  "evaluator_sha256": "01d81d5c914bd2694a26305630cbd93f07a32b0b6525fb5c08bb29c1d5908b90",
+  "training_freeze_sha256": "bcd202d31bfc8bff75a137621021d491b9162da5df56c8885a5836120a1e3d6f",
+  "all_50_exposure_hashes_match": true,
+  "selection": "Seen-val only; earliest trained best; no epoch0 fallback"
+}

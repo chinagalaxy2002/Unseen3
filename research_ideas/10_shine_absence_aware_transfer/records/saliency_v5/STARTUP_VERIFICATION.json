@@ -1,0 +1,34 @@
+{
+  "all_four_running_optimizer_steps": true,
+  "progress": [
+    {
+      "fold": "A1",
+      "arm": "B0",
+      "epoch": 2,
+      "step": 100,
+      "loss": 0.7464519739151001
+    },
+    {
+      "fold": "A1",
+      "arm": "S1_saliency_only",
+      "epoch": 1,
+      "step": 500,
+      "loss": 4.276119232177734
+    },
+    {
+      "fold": "C1",
+      "arm": "B0",
+      "epoch": 1,
+      "step": 600,
+      "loss": 1.8706315755844116
+    },
+    {
+      "fold": "C1",
+      "arm": "S1_saliency_only",
+      "epoch": 1,
+      "step": 500,
+      "loss": 5.304734706878662
+    }
+  ],
+  "automatic_evaluation_scheduled": true
+}

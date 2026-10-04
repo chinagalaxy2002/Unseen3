@@ -1,0 +1,8 @@
+{
+  "replicates": 1000,
+  "unit": "paired video cluster",
+  "delta_ci95": [
+    0.023827375675280222,
+    0.060867630796876133
+  ]
+}

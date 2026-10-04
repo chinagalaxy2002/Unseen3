@@ -1,0 +1,703 @@
+Loaded datasets C1
+{"fold": "C1", "arm": "baseline", "epoch": 1, "step": 100, "loss": 1.8408210277557373}
+{"fold": "C1", "arm": "baseline", "epoch": 1, "step": 200, "loss": 1.4793778657913208}
+{"fold": "C1", "arm": "baseline", "epoch": 1, "step": 300, "loss": 1.633521318435669}
+{"fold": "C1", "arm": "baseline", "epoch": 1, "step": 400, "loss": 1.2863757610321045}
+{"fold": "C1", "arm": "baseline", "epoch": 1, "step": 500, "loss": 1.7204939126968384}
+{"fold": "C1", "arm": "baseline", "epoch": 1, "step": 600, "loss": 1.580336332321167}
+{"fold": "C1", "arm": "baseline", "epoch": 1, "seen": {"pooled_auroc": 0.7838674526765808, "rows": 1451, "videos": 462, "source_pair_acc": 0.6686991869918699, "source_pairs": 492, "same_query_pair_acc": 0.6005603143901016, "same_query_support": 47, "raw_r1_iou_05": 0.3584305408271474, "raw_r1_iou_07": 0.176033934252386, "threshold_logit": 4.756946563720703, "gated_r1_iou_05": 0.21951219512195122}, "losses": {"gmr": 1.5359600330377423}, "chains": 0, "seconds": 31.46104335784912, "selected": true}
+{"fold": "C1", "arm": "baseline", "epoch": 2, "step": 100, "loss": 1.778907060623169}
+{"fold": "C1", "arm": "baseline", "epoch": 2, "step": 200, "loss": 1.5927811861038208}
+{"fold": "C1", "arm": "baseline", "epoch": 2, "step": 300, "loss": 1.5843541622161865}
+{"fold": "C1", "arm": "baseline", "epoch": 2, "step": 400, "loss": 1.4025291204452515}
+{"fold": "C1", "arm": "baseline", "epoch": 2, "step": 500, "loss": 1.5359047651290894}
+{"fold": "C1", "arm": "baseline", "epoch": 2, "step": 600, "loss": 1.331833839416504}
+{"fold": "C1", "arm": "baseline", "epoch": 2, "seen": {"pooled_auroc": 0.7774338056629454, "rows": 1451, "videos": 462, "source_pair_acc": 0.6686991869918699, "source_pairs": 492, "same_query_pair_acc": 0.6182290227502993, "same_query_support": 47, "raw_r1_iou_05": 0.36267232237539765, "raw_r1_iou_07": 0.18027571580063625, "threshold_logit": 4.608672618865967, "gated_r1_iou_05": 0.2142099681866384}, "losses": {"gmr": 1.4982381759262375}, "chains": 0, "seconds": 31.26522207260132, "selected": false}
+{"fold": "C1", "arm": "baseline", "epoch": 3, "step": 100, "loss": 1.3134788274765015}
+{"fold": "C1", "arm": "baseline", "epoch": 3, "step": 200, "loss": 1.5062175989151}
+{"fold": "C1", "arm": "baseline", "epoch": 3, "step": 300, "loss": 1.38687264919281}
+{"fold": "C1", "arm": "baseline", "epoch": 3, "step": 400, "loss": 1.390899419784546}
+{"fold": "C1", "arm": "baseline", "epoch": 3, "step": 500, "loss": 1.9686651229858398}
+{"fold": "C1", "arm": "baseline", "epoch": 3, "step": 600, "loss": 1.7228294610977173}
+{"fold": "C1", "arm": "baseline", "epoch": 3, "seen": {"pooled_auroc": 0.7774734679904143, "rows": 1451, "videos": 462, "source_pair_acc": 0.6666666666666666, "source_pairs": 492, "same_query_pair_acc": 0.6163673206226398, "same_query_support": 47, "raw_r1_iou_05": 0.3457051961823966, "raw_r1_iou_07": 0.16861081654294804, "threshold_logit": 4.584579944610596, "gated_r1_iou_05": 0.21314952279957583}, "losses": {"gmr": 1.4880942566416546}, "chains": 0, "seconds": 31.263771295547485, "selected": false}
+{"fold": "C1", "arm": "baseline", "epoch": 4, "step": 100, "loss": 1.1642266511917114}
+{"fold": "C1", "arm": "baseline", "epoch": 4, "step": 200, "loss": 1.5747287273406982}
+{"fold": "C1", "arm": "baseline", "epoch": 4, "step": 300, "loss": 1.6472622156143188}
+{"fold": "C1", "arm": "baseline", "epoch": 4, "step": 400, "loss": 1.164626121520996}
+{"fold": "C1", "arm": "baseline", "epoch": 4, "step": 500, "loss": 1.283084511756897}
+{"fold": "C1", "arm": "baseline", "epoch": 4, "step": 600, "loss": 1.6841737031936646}
+{"fold": "C1", "arm": "baseline", "epoch": 4, "seen": {"pooled_auroc": 0.7753379647798533, "rows": 1451, "videos": 462, "source_pair_acc": 0.6646341463414634, "source_pairs": 492, "same_query_pair_acc": 0.5906634736421971, "same_query_support": 47, "raw_r1_iou_05": 0.35100742311770944, "raw_r1_iou_07": 0.17179215270413573, "threshold_logit": 4.575191497802734, "gated_r1_iou_05": 0.21845174973488865}, "losses": {"gmr": 1.4701348888294312}, "chains": 0, "seconds": 31.083704948425293, "selected": false}
+{"fold": "C1", "arm": "baseline", "epoch": 5, "step": 100, "loss": 1.1997772455215454}
+{"fold": "C1", "arm": "baseline", "epoch": 5, "step": 200, "loss": 1.1706116199493408}
+{"fold": "C1", "arm": "baseline", "epoch": 5, "step": 300, "loss": 1.4036661386489868}
+{"fold": "C1", "arm": "baseline", "epoch": 5, "step": 400, "loss": 1.415347933769226}
+{"fold": "C1", "arm": "baseline", "epoch": 5, "step": 500, "loss": 1.3596429824829102}
+{"fold": "C1", "arm": "baseline", "epoch": 5, "step": 600, "loss": 0.9287948608398438}
+{"fold": "C1", "arm": "baseline", "epoch": 5, "seen": {"pooled_auroc": 0.7800222944030192, "rows": 1451, "videos": 462, "source_pair_acc": 0.6707317073170732, "source_pairs": 492, "same_query_pair_acc": 0.5655264652605078, "same_query_support": 47, "raw_r1_iou_05": 0.3616118769883351, "raw_r1_iou_07": 0.17815482502651114, "threshold_logit": 4.2876787185668945, "gated_r1_iou_05": 0.22693531283138918}, "losses": {"gmr": 1.4624776147238028}, "chains": 0, "seconds": 30.988279819488525, "selected": false}
+{"fold": "C1", "arm": "baseline", "epoch": 6, "step": 100, "loss": 1.7885615825653076}
+{"fold": "C1", "arm": "baseline", "epoch": 6, "step": 200, "loss": 1.3581459522247314}
+{"fold": "C1", "arm": "baseline", "epoch": 6, "step": 300, "loss": 1.4528212547302246}
+{"fold": "C1", "arm": "baseline", "epoch": 6, "step": 400, "loss": 1.8442145586013794}
+{"fold": "C1", "arm": "baseline", "epoch": 6, "step": 500, "loss": 1.7581615447998047}
+{"fold": "C1", "arm": "baseline", "epoch": 6, "step": 600, "loss": 2.148165225982666}
+{"fold": "C1", "arm": "baseline", "epoch": 6, "seen": {"pooled_auroc": 0.7695744023513498, "rows": 1451, "videos": 462, "source_pair_acc": 0.6707317073170732, "source_pairs": 492, "same_query_pair_acc": 0.5537437444352339, "same_query_support": 47, "raw_r1_iou_05": 0.3616118769883351, "raw_r1_iou_07": 0.1823966065747614, "threshold_logit": 5.6902360916137695, "gated_r1_iou_05": 0.2067868504772004}, "losses": {"gmr": 1.4446496098418367}, "chains": 0, "seconds": 31.02796769142151, "selected": false}
+{"fold": "C1", "arm": "baseline", "epoch": 7, "step": 100, "loss": 1.2979729175567627}
+{"fold": "C1", "arm": "baseline", "epoch": 7, "step": 200, "loss": 1.654144048690796}
+{"fold": "C1", "arm": "baseline", "epoch": 7, "step": 300, "loss": 1.8933032751083374}
+{"fold": "C1", "arm": "baseline", "epoch": 7, "step": 400, "loss": 1.6015921831130981}
+{"fold": "C1", "arm": "baseline", "epoch": 7, "step": 500, "loss": 1.4427262544631958}
+{"fold": "C1", "arm": "baseline", "epoch": 7, "step": 600, "loss": 1.2756472826004028}
+{"fold": "C1", "arm": "baseline", "epoch": 7, "seen": {"pooled_auroc": 0.7739810956822338, "rows": 1451, "videos": 462, "source_pair_acc": 0.6686991869918699, "source_pairs": 492, "same_query_pair_acc": 0.5640274323784963, "same_query_support": 47, "raw_r1_iou_05": 0.3531283138918346, "raw_r1_iou_07": 0.17815482502651114, "threshold_logit": 5.5202860832214355, "gated_r1_iou_05": 0.21951219512195122}, "losses": {"gmr": 1.434999890331077}, "chains": 0, "seconds": 31.107120752334595, "selected": false}
+{"fold": "C1", "arm": "baseline", "epoch": 8, "step": 100, "loss": 1.1147472858428955}
+{"fold": "C1", "arm": "baseline", "epoch": 8, "step": 200, "loss": 1.6418477296829224}
+{"fold": "C1", "arm": "baseline", "epoch": 8, "step": 300, "loss": 1.4586693048477173}
+{"fold": "C1", "arm": "baseline", "epoch": 8, "step": 400, "loss": 1.260572075843811}
+{"fold": "C1", "arm": "baseline", "epoch": 8, "step": 500, "loss": 1.215832233428955}
+{"fold": "C1", "arm": "baseline", "epoch": 8, "step": 600, "loss": 1.395591378211975}
+{"fold": "C1", "arm": "baseline", "epoch": 8, "seen": {"pooled_auroc": 0.7724781022202553, "rows": 1451, "videos": 462, "source_pair_acc": 0.6666666666666666, "source_pairs": 492, "same_query_pair_acc": 0.5442847932209635, "same_query_support": 47, "raw_r1_iou_05": 0.3552492046659597, "raw_r1_iou_07": 0.17709437963944857, "threshold_logit": 5.514599800109863, "gated_r1_iou_05": 0.1919406150583245}, "losses": {"gmr": 1.44582701481222}, "chains": 0, "seconds": 31.141883850097656, "selected": false}
+{"fold": "C1", "arm": "baseline", "epoch": 9, "step": 100, "loss": 1.4266412258148193}
+{"fold": "C1", "arm": "baseline", "epoch": 9, "step": 200, "loss": 1.0660672187805176}
+{"fold": "C1", "arm": "baseline", "epoch": 9, "step": 300, "loss": 1.476131558418274}
+{"fold": "C1", "arm": "baseline", "epoch": 9, "step": 400, "loss": 1.6378984451293945}
+{"fold": "C1", "arm": "baseline", "epoch": 9, "step": 500, "loss": 1.1659364700317383}
+{"fold": "C1", "arm": "baseline", "epoch": 9, "step": 600, "loss": 1.2187210321426392}
+{"fold": "C1", "arm": "baseline", "epoch": 9, "seen": {"pooled_auroc": 0.772083566436486, "rows": 1451, "videos": 462, "source_pair_acc": 0.6747967479674797, "source_pairs": 492, "same_query_pair_acc": 0.5776100672377269, "same_query_support": 47, "raw_r1_iou_05": 0.3563096500530223, "raw_r1_iou_07": 0.17815482502651114, "threshold_logit": 4.762016296386719, "gated_r1_iou_05": 0.21845174973488865}, "losses": {"gmr": 1.4193809124836443}, "chains": 0, "seconds": 31.465367078781128, "selected": false}
+{"fold": "C1", "arm": "baseline", "epoch": 10, "step": 100, "loss": 0.8531105518341064}
+{"fold": "C1", "arm": "baseline", "epoch": 10, "step": 200, "loss": 1.892945408821106}
+{"fold": "C1", "arm": "baseline", "epoch": 10, "step": 300, "loss": 1.2523729801177979}
+{"fold": "C1", "arm": "baseline", "epoch": 10, "step": 400, "loss": 1.6127432584762573}
+{"fold": "C1", "arm": "baseline", "epoch": 10, "step": 500, "loss": 1.3351600170135498}
+{"fold": "C1", "arm": "baseline", "epoch": 10, "step": 600, "loss": 1.156642198562622}
+{"fold": "C1", "arm": "baseline", "epoch": 10, "seen": {"pooled_auroc": 0.7761103364200367, "rows": 1451, "videos": 462, "source_pair_acc": 0.6686991869918699, "source_pairs": 492, "same_query_pair_acc": 0.5666117865585951, "same_query_support": 47, "raw_r1_iou_05": 0.35737009544008486, "raw_r1_iou_07": 0.17391304347826086, "threshold_logit": 4.592190265655518, "gated_r1_iou_05": 0.23435843054082714}, "losses": {"gmr": 1.4145854765883332}, "chains": 0, "seconds": 31.46715998649597, "selected": false}
+{"fold": "C1", "arm": "baseline", "epoch": 11, "step": 100, "loss": 1.4067422151565552}
+{"fold": "C1", "arm": "baseline", "epoch": 11, "step": 200, "loss": 1.5145677328109741}
+{"fold": "C1", "arm": "baseline", "epoch": 11, "step": 300, "loss": 1.1311442852020264}
+{"fold": "C1", "arm": "baseline", "epoch": 11, "step": 400, "loss": 0.7847446799278259}
+{"fold": "C1", "arm": "baseline", "epoch": 11, "step": 500, "loss": 1.141634225845337}
+{"fold": "C1", "arm": "baseline", "epoch": 11, "step": 600, "loss": 1.6069552898406982}
+{"fold": "C1", "arm": "baseline", "epoch": 11, "seen": {"pooled_auroc": 0.7745593306669116, "rows": 1451, "videos": 462, "source_pair_acc": 0.6707317073170732, "source_pairs": 492, "same_query_pair_acc": 0.5684761751251113, "same_query_support": 47, "raw_r1_iou_05": 0.3584305408271474, "raw_r1_iou_07": 0.1664899257688229, "threshold_logit": 5.494400501251221, "gated_r1_iou_05": 0.20254506892895016}, "losses": {"gmr": 1.4079619742997873}, "chains": 0, "seconds": 31.125427722930908, "selected": false}
+{"fold": "C1", "arm": "baseline", "epoch": 12, "step": 100, "loss": 0.9766979217529297}
+{"fold": "C1", "arm": "baseline", "epoch": 12, "step": 200, "loss": 1.490394949913025}
+{"fold": "C1", "arm": "baseline", "epoch": 12, "step": 300, "loss": 1.2128593921661377}
+{"fold": "C1", "arm": "baseline", "epoch": 12, "step": 400, "loss": 1.1958178281784058}
+{"fold": "C1", "arm": "baseline", "epoch": 12, "step": 500, "loss": 1.7226134538650513}
+{"fold": "C1", "arm": "baseline", "epoch": 12, "step": 600, "loss": 1.026207685470581}
+{"fold": "C1", "arm": "baseline", "epoch": 12, "seen": {"pooled_auroc": 0.7726889388031162, "rows": 1451, "videos": 462, "source_pair_acc": 0.6626016260162602, "source_pairs": 492, "same_query_pair_acc": 0.5839715544502779, "same_query_support": 47, "raw_r1_iou_05": 0.3488865323435843, "raw_r1_iou_07": 0.17815482502651114, "threshold_logit": 4.957247734069824, "gated_r1_iou_05": 0.20784729586426298}, "losses": {"gmr": 1.4282480404007398}, "chains": 0, "seconds": 30.785082817077637, "selected": false}
+{"fold": "C1", "arm": "baseline", "epoch": 13, "step": 100, "loss": 0.9596214294433594}
+{"fold": "C1", "arm": "baseline", "epoch": 13, "step": 200, "loss": 1.6170333623886108}
+{"fold": "C1", "arm": "baseline", "epoch": 13, "step": 300, "loss": 1.5013965368270874}
+{"fold": "C1", "arm": "baseline", "epoch": 13, "step": 400, "loss": 1.0697495937347412}
+{"fold": "C1", "arm": "baseline", "epoch": 13, "step": 500, "loss": 1.9158318042755127}
+{"fold": "C1", "arm": "baseline", "epoch": 13, "step": 600, "loss": 1.9780771732330322}
+{"fold": "C1", "arm": "baseline", "epoch": 13, "seen": {"pooled_auroc": 0.7700816626447675, "rows": 1451, "videos": 462, "source_pair_acc": 0.676829268292683, "source_pairs": 492, "same_query_pair_acc": 0.5845679438764545, "same_query_support": 47, "raw_r1_iou_05": 0.34994697773064687, "raw_r1_iou_07": 0.1728525980911983, "threshold_logit": 5.924647808074951, "gated_r1_iou_05": 0.20360551431601273}, "losses": {"gmr": 1.4058457741621417}, "chains": 0, "seconds": 30.81165838241577, "selected": false}
+{"fold": "C1", "arm": "baseline", "epoch": 14, "step": 100, "loss": 1.6724258661270142}
+{"fold": "C1", "arm": "baseline", "epoch": 14, "step": 200, "loss": 1.564427375793457}
+{"fold": "C1", "arm": "baseline", "epoch": 14, "step": 300, "loss": 1.5858478546142578}
+{"fold": "C1", "arm": "baseline", "epoch": 14, "step": 400, "loss": 1.4827419519424438}
+{"fold": "C1", "arm": "baseline", "epoch": 14, "step": 500, "loss": 1.6771198511123657}
+{"fold": "C1", "arm": "baseline", "epoch": 14, "step": 600, "loss": 1.6859816312789917}
+{"fold": "C1", "arm": "baseline", "epoch": 14, "seen": {"pooled_auroc": 0.776394235185077, "rows": 1451, "videos": 462, "source_pair_acc": 0.6707317073170732, "source_pairs": 492, "same_query_pair_acc": 0.5591515458536734, "same_query_support": 47, "raw_r1_iou_05": 0.3563096500530223, "raw_r1_iou_07": 0.17073170731707318, "threshold_logit": 5.09837532043457, "gated_r1_iou_05": 0.22269353128313893}, "losses": {"gmr": 1.408896080175794}, "chains": 0, "seconds": 29.856659173965454, "selected": false}
+{"fold": "C1", "arm": "baseline", "epoch": 15, "step": 100, "loss": 1.426452398300171}
+{"fold": "C1", "arm": "baseline", "epoch": 15, "step": 200, "loss": 1.4452273845672607}
+{"fold": "C1", "arm": "baseline", "epoch": 15, "step": 300, "loss": 1.1977730989456177}
+{"fold": "C1", "arm": "baseline", "epoch": 15, "step": 400, "loss": 1.3220701217651367}
+{"fold": "C1", "arm": "baseline", "epoch": 15, "step": 500, "loss": 1.3586832284927368}
+{"fold": "C1", "arm": "baseline", "epoch": 15, "step": 600, "loss": 1.7851243019104004}
+{"fold": "C1", "arm": "baseline", "epoch": 15, "seen": {"pooled_auroc": 0.7757074506725895, "rows": 1451, "videos": 462, "source_pair_acc": 0.6707317073170732, "source_pairs": 492, "same_query_pair_acc": 0.5810110988302477, "same_query_support": 47, "raw_r1_iou_05": 0.3488865323435843, "raw_r1_iou_07": 0.17179215270413573, "threshold_logit": 4.843416213989258, "gated_r1_iou_05": 0.19936373276776245}, "losses": {"gmr": 1.4000205836035198}, "chains": 0, "seconds": 30.955896377563477, "selected": false}
+{"fold": "C1", "arm": "baseline", "epoch": 16, "step": 100, "loss": 0.9440155029296875}
+{"fold": "C1", "arm": "baseline", "epoch": 16, "step": 200, "loss": 1.2879663705825806}
+{"fold": "C1", "arm": "baseline", "epoch": 16, "step": 300, "loss": 1.2827881574630737}
+{"fold": "C1", "arm": "baseline", "epoch": 16, "step": 400, "loss": 1.251534342765808}
+{"fold": "C1", "arm": "baseline", "epoch": 16, "step": 500, "loss": 1.4730925559997559}
+{"fold": "C1", "arm": "baseline", "epoch": 16, "step": 600, "loss": 1.2810728549957275}
+{"fold": "C1", "arm": "baseline", "epoch": 16, "seen": {"pooled_auroc": 0.7738662836816661, "rows": 1451, "videos": 462, "source_pair_acc": 0.6666666666666666, "source_pairs": 492, "same_query_pair_acc": 0.5860454852476129, "same_query_support": 47, "raw_r1_iou_05": 0.3616118769883351, "raw_r1_iou_07": 0.17815482502651114, "threshold_logit": 5.842389106750488, "gated_r1_iou_05": 0.21314952279957583}, "losses": {"gmr": 1.383745831740301}, "chains": 0, "seconds": 30.630069255828857, "selected": false}
+{"fold": "C1", "arm": "baseline", "epoch": 17, "step": 100, "loss": 1.3384320735931396}
+{"fold": "C1", "arm": "baseline", "epoch": 17, "step": 200, "loss": 1.5222822427749634}
+{"fold": "C1", "arm": "baseline", "epoch": 17, "step": 300, "loss": 1.9572042226791382}
+{"fold": "C1", "arm": "baseline", "epoch": 17, "step": 400, "loss": 2.246107578277588}
+{"fold": "C1", "arm": "baseline", "epoch": 17, "step": 500, "loss": 1.4492884874343872}
+{"fold": "C1", "arm": "baseline", "epoch": 17, "step": 600, "loss": 1.088735580444336}
+{"fold": "C1", "arm": "baseline", "epoch": 17, "seen": {"pooled_auroc": 0.7740019705914278, "rows": 1451, "videos": 462, "source_pair_acc": 0.6727642276422764, "source_pairs": 492, "same_query_pair_acc": 0.5838829019680084, "same_query_support": 47, "raw_r1_iou_05": 0.35737009544008486, "raw_r1_iou_07": 0.17073170731707318, "threshold_logit": 5.50892972946167, "gated_r1_iou_05": 0.2163308589607635}, "losses": {"gmr": 1.3894274415035015}, "chains": 0, "seconds": 30.741235733032227, "selected": false}
+{"fold": "C1", "arm": "baseline", "epoch": 18, "step": 100, "loss": 1.7890863418579102}
+{"fold": "C1", "arm": "baseline", "epoch": 18, "step": 200, "loss": 1.5750755071640015}
+{"fold": "C1", "arm": "baseline", "epoch": 18, "step": 300, "loss": 1.2789326906204224}
+{"fold": "C1", "arm": "baseline", "epoch": 18, "step": 400, "loss": 1.398828148841858}
+{"fold": "C1", "arm": "baseline", "epoch": 18, "step": 500, "loss": 1.2057753801345825}
+{"fold": "C1", "arm": "baseline", "epoch": 18, "step": 600, "loss": 1.1847777366638184}
+{"fold": "C1", "arm": "baseline", "epoch": 18, "seen": {"pooled_auroc": 0.7741000826646405, "rows": 1451, "videos": 462, "source_pair_acc": 0.6727642276422764, "source_pairs": 492, "same_query_pair_acc": 0.5748725860427988, "same_query_support": 47, "raw_r1_iou_05": 0.352067868504772, "raw_r1_iou_07": 0.17391304347826086, "threshold_logit": 5.3373494148254395, "gated_r1_iou_05": 0.21314952279957583}, "losses": {"gmr": 1.3853231814313443}, "chains": 0, "seconds": 30.56692385673523, "selected": false}
+{"fold": "C1", "arm": "baseline", "epoch": 19, "step": 100, "loss": 1.3022878170013428}
+{"fold": "C1", "arm": "baseline", "epoch": 19, "step": 200, "loss": 1.7053732872009277}
+{"fold": "C1", "arm": "baseline", "epoch": 19, "step": 300, "loss": 1.2560840845108032}
+{"fold": "C1", "arm": "baseline", "epoch": 19, "step": 400, "loss": 1.2686558961868286}
+{"fold": "C1", "arm": "baseline", "epoch": 19, "step": 500, "loss": 1.6325132846832275}
+{"fold": "C1", "arm": "baseline", "epoch": 19, "step": 600, "loss": 1.5495296716690063}
+{"fold": "C1", "arm": "baseline", "epoch": 19, "seen": {"pooled_auroc": 0.778156077521063, "rows": 1451, "videos": 462, "source_pair_acc": 0.676829268292683, "source_pairs": 492, "same_query_pair_acc": 0.5925466672807098, "same_query_support": 47, "raw_r1_iou_05": 0.352067868504772, "raw_r1_iou_07": 0.17815482502651114, "threshold_logit": 5.093804359436035, "gated_r1_iou_05": 0.21739130434782608}, "losses": {"gmr": 1.3845470488796119}, "chains": 0, "seconds": 30.883817434310913, "selected": false}
+{"fold": "C1", "arm": "baseline", "epoch": 20, "step": 100, "loss": 0.8730915784835815}
+{"fold": "C1", "arm": "baseline", "epoch": 20, "step": 200, "loss": 1.308233618736267}
+{"fold": "C1", "arm": "baseline", "epoch": 20, "step": 300, "loss": 1.6867800951004028}
+{"fold": "C1", "arm": "baseline", "epoch": 20, "step": 400, "loss": 1.4674371480941772}
+{"fold": "C1", "arm": "baseline", "epoch": 20, "step": 500, "loss": 1.2445577383041382}
+{"fold": "C1", "arm": "baseline", "epoch": 20, "step": 600, "loss": 1.4472274780273438}
+{"fold": "C1", "arm": "baseline", "epoch": 20, "seen": {"pooled_auroc": 0.77599134943763, "rows": 1451, "videos": 462, "source_pair_acc": 0.676829268292683, "source_pairs": 492, "same_query_pair_acc": 0.5831575634767124, "same_query_support": 47, "raw_r1_iou_05": 0.3425238600212089, "raw_r1_iou_07": 0.176033934252386, "threshold_logit": 4.249043941497803, "gated_r1_iou_05": 0.23435843054082714}, "losses": {"gmr": 1.3596862739342686}, "chains": 0, "seconds": 30.874511003494263, "selected": false}
+{"fold": "C1", "arm": "baseline", "epoch": 21, "step": 100, "loss": 1.066464900970459}
+{"fold": "C1", "arm": "baseline", "epoch": 21, "step": 200, "loss": 1.1388535499572754}
+{"fold": "C1", "arm": "baseline", "epoch": 21, "step": 300, "loss": 1.291713833808899}
+{"fold": "C1", "arm": "baseline", "epoch": 21, "step": 400, "loss": 1.4637210369110107}
+{"fold": "C1", "arm": "baseline", "epoch": 21, "step": 500, "loss": 1.3012511730194092}
+{"fold": "C1", "arm": "baseline", "epoch": 21, "step": 600, "loss": 1.0084742307662964}
+{"fold": "C1", "arm": "baseline", "epoch": 21, "seen": {"pooled_auroc": 0.7745259308122009, "rows": 1451, "videos": 462, "source_pair_acc": 0.6808943089430894, "source_pairs": 492, "same_query_pair_acc": 0.5905291516993644, "same_query_support": 47, "raw_r1_iou_05": 0.3563096500530223, "raw_r1_iou_07": 0.17709437963944857, "threshold_logit": 4.390721797943115, "gated_r1_iou_05": 0.23435843054082714}, "losses": {"gmr": 1.3651999772319678}, "chains": 0, "seconds": 30.713501691818237, "selected": false}
+{"fold": "C1", "arm": "baseline", "epoch": 22, "step": 100, "loss": 1.1596585512161255}
+{"fold": "C1", "arm": "baseline", "epoch": 22, "step": 200, "loss": 1.371463656425476}
+{"fold": "C1", "arm": "baseline", "epoch": 22, "step": 300, "loss": 1.2374099493026733}
+{"fold": "C1", "arm": "baseline", "epoch": 22, "step": 400, "loss": 1.5178985595703125}
+{"fold": "C1", "arm": "baseline", "epoch": 22, "step": 500, "loss": 1.5997998714447021}
+{"fold": "C1", "arm": "baseline", "epoch": 22, "step": 600, "loss": 1.1586642265319824}
+{"fold": "C1", "arm": "baseline", "epoch": 22, "seen": {"pooled_auroc": 0.7765424470403555, "rows": 1451, "videos": 462, "source_pair_acc": 0.676829268292683, "source_pairs": 492, "same_query_pair_acc": 0.5669852015596697, "same_query_support": 47, "raw_r1_iou_05": 0.34994697773064687, "raw_r1_iou_07": 0.18027571580063625, "threshold_logit": 4.746880531311035, "gated_r1_iou_05": 0.23647932131495228}, "losses": {"gmr": 1.352455296596133}, "chains": 0, "seconds": 30.75515604019165, "selected": false}
+{"fold": "C1", "arm": "baseline", "epoch": 23, "step": 100, "loss": 1.2278358936309814}
+{"fold": "C1", "arm": "baseline", "epoch": 23, "step": 200, "loss": 1.3998867273330688}
+{"fold": "C1", "arm": "baseline", "epoch": 23, "step": 300, "loss": 1.2693703174591064}
+{"fold": "C1", "arm": "baseline", "epoch": 23, "step": 400, "loss": 1.18901789188385}
+{"fold": "C1", "arm": "baseline", "epoch": 23, "step": 500, "loss": 1.1213898658752441}
+{"fold": "C1", "arm": "baseline", "epoch": 23, "step": 600, "loss": 1.0872067213058472}
+{"fold": "C1", "arm": "baseline", "epoch": 23, "seen": {"pooled_auroc": 0.7675036113592906, "rows": 1451, "videos": 462, "source_pair_acc": 0.6808943089430894, "source_pairs": 492, "same_query_pair_acc": 0.5827948942310645, "same_query_support": 47, "raw_r1_iou_05": 0.34358430540827145, "raw_r1_iou_07": 0.16861081654294804, "threshold_logit": 5.9227423667907715, "gated_r1_iou_05": 0.20784729586426298}, "losses": {"gmr": 1.3521000850707927}, "chains": 0, "seconds": 30.795501470565796, "selected": false}
+{"fold": "C1", "arm": "baseline", "epoch": 24, "step": 100, "loss": 1.365707278251648}
+{"fold": "C1", "arm": "baseline", "epoch": 24, "step": 200, "loss": 1.0740245580673218}
+{"fold": "C1", "arm": "baseline", "epoch": 24, "step": 300, "loss": 1.4515832662582397}
+{"fold": "C1", "arm": "baseline", "epoch": 24, "step": 400, "loss": 1.7697041034698486}
+{"fold": "C1", "arm": "baseline", "epoch": 24, "step": 500, "loss": 0.8760029673576355}
+{"fold": "C1", "arm": "baseline", "epoch": 24, "step": 600, "loss": 1.630035161972046}
+{"fold": "C1", "arm": "baseline", "epoch": 24, "seen": {"pooled_auroc": 0.7705471731197969, "rows": 1451, "videos": 462, "source_pair_acc": 0.6849593495934959, "source_pairs": 492, "same_query_pair_acc": 0.555484556814344, "same_query_support": 47, "raw_r1_iou_05": 0.3425238600212089, "raw_r1_iou_07": 0.17391304347826086, "threshold_logit": 4.101245403289795, "gated_r1_iou_05": 0.21527041357370094}, "losses": {"gmr": 1.3691124240315793}, "chains": 0, "seconds": 30.572877645492554, "selected": false}
+{"fold": "C1", "arm": "baseline", "epoch": 25, "step": 100, "loss": 1.4283223152160645}
+{"fold": "C1", "arm": "baseline", "epoch": 25, "step": 200, "loss": 1.238520860671997}
+{"fold": "C1", "arm": "baseline", "epoch": 25, "step": 300, "loss": 1.1276201009750366}
+{"fold": "C1", "arm": "baseline", "epoch": 25, "step": 400, "loss": 1.7116175889968872}
+{"fold": "C1", "arm": "baseline", "epoch": 25, "step": 500, "loss": 1.702646017074585}
+{"fold": "C1", "arm": "baseline", "epoch": 25, "step": 600, "loss": 1.465757131576538}
+{"fold": "C1", "arm": "baseline", "epoch": 25, "seen": {"pooled_auroc": 0.7726889388031162, "rows": 1451, "videos": 462, "source_pair_acc": 0.676829268292683, "source_pairs": 492, "same_query_pair_acc": 0.5526154401154402, "same_query_support": 47, "raw_r1_iou_05": 0.34782608695652173, "raw_r1_iou_07": 0.16967126193001061, "threshold_logit": 6.050228595733643, "gated_r1_iou_05": 0.19088016967126192}, "losses": {"gmr": 1.348114685537605}, "chains": 0, "seconds": 30.88699245452881, "selected": false}
+{"fold": "C1", "arm": "baseline", "epoch": 26, "step": 100, "loss": 1.3362767696380615}
+{"fold": "C1", "arm": "baseline", "epoch": 26, "step": 200, "loss": 1.5732730627059937}
+{"fold": "C1", "arm": "baseline", "epoch": 26, "step": 300, "loss": 1.6417872905731201}
+{"fold": "C1", "arm": "baseline", "epoch": 26, "step": 400, "loss": 1.5798858404159546}
+{"fold": "C1", "arm": "baseline", "epoch": 26, "step": 500, "loss": 1.5617653131484985}
+{"fold": "C1", "arm": "baseline", "epoch": 26, "step": 600, "loss": 1.1681089401245117}
+{"fold": "C1", "arm": "baseline", "epoch": 26, "seen": {"pooled_auroc": 0.7770079575153848, "rows": 1451, "videos": 462, "source_pair_acc": 0.6808943089430894, "source_pairs": 492, "same_query_pair_acc": 0.5679684381812041, "same_query_support": 47, "raw_r1_iou_05": 0.352067868504772, "raw_r1_iou_07": 0.1728525980911983, "threshold_logit": 4.815990924835205, "gated_r1_iou_05": 0.23860021208907742}, "losses": {"gmr": 1.3524305910143808}, "chains": 0, "seconds": 31.034417152404785, "selected": false}
+{"fold": "C1", "arm": "baseline", "epoch": 27, "step": 100, "loss": 1.1168527603149414}
+{"fold": "C1", "arm": "baseline", "epoch": 27, "step": 200, "loss": 1.4193097352981567}
+{"fold": "C1", "arm": "baseline", "epoch": 27, "step": 300, "loss": 1.1488481760025024}
+{"fold": "C1", "arm": "baseline", "epoch": 27, "step": 400, "loss": 1.3138911724090576}
+{"fold": "C1", "arm": "baseline", "epoch": 27, "step": 500, "loss": 1.5269018411636353}
+{"fold": "C1", "arm": "baseline", "epoch": 27, "step": 600, "loss": 1.214627981185913}
+{"fold": "C1", "arm": "baseline", "epoch": 27, "seen": {"pooled_auroc": 0.7758974123462563, "rows": 1451, "videos": 462, "source_pair_acc": 0.6808943089430894, "source_pairs": 492, "same_query_pair_acc": 0.55620183598907, "same_query_support": 47, "raw_r1_iou_05": 0.344644750795334, "raw_r1_iou_07": 0.18451749734888653, "threshold_logit": 5.225149154663086, "gated_r1_iou_05": 0.20042417815482502}, "losses": {"gmr": 1.3509747783644945}, "chains": 0, "seconds": 30.831865549087524, "selected": false}
+{"fold": "C1", "arm": "baseline", "epoch": 28, "step": 100, "loss": 0.9333710074424744}
+{"fold": "C1", "arm": "baseline", "epoch": 28, "step": 200, "loss": 1.1469206809997559}
+{"fold": "C1", "arm": "baseline", "epoch": 28, "step": 300, "loss": 1.2669496536254883}
+{"fold": "C1", "arm": "baseline", "epoch": 28, "step": 400, "loss": 1.2021257877349854}
+{"fold": "C1", "arm": "baseline", "epoch": 28, "step": 500, "loss": 1.1438114643096924}
+{"fold": "C1", "arm": "baseline", "epoch": 28, "step": 600, "loss": 1.3699805736541748}
+{"fold": "C1", "arm": "baseline", "epoch": 28, "seen": {"pooled_auroc": 0.7728747254949442, "rows": 1451, "videos": 462, "source_pair_acc": 0.6788617886178862, "source_pairs": 492, "same_query_pair_acc": 0.5848527063952597, "same_query_support": 47, "raw_r1_iou_05": 0.3584305408271474, "raw_r1_iou_07": 0.16861081654294804, "threshold_logit": 4.565784454345703, "gated_r1_iou_05": 0.24814422057264052}, "losses": {"gmr": 1.3297188383467653}, "chains": 0, "seconds": 30.922342538833618, "selected": false}
+{"fold": "C1", "arm": "baseline", "epoch": 29, "step": 100, "loss": 1.2908376455307007}
+{"fold": "C1", "arm": "baseline", "epoch": 29, "step": 200, "loss": 1.386720895767212}
+{"fold": "C1", "arm": "baseline", "epoch": 29, "step": 300, "loss": 1.2477666139602661}
+{"fold": "C1", "arm": "baseline", "epoch": 29, "step": 400, "loss": 1.210255742073059}
+{"fold": "C1", "arm": "baseline", "epoch": 29, "step": 500, "loss": 1.5296380519866943}
+{"fold": "C1", "arm": "baseline", "epoch": 29, "step": 600, "loss": 1.3389183282852173}
+{"fold": "C1", "arm": "baseline", "epoch": 29, "seen": {"pooled_auroc": 0.7762668982389926, "rows": 1451, "videos": 462, "source_pair_acc": 0.6849593495934959, "source_pairs": 492, "same_query_pair_acc": 0.565245540511498, "same_query_support": 47, "raw_r1_iou_05": 0.35737009544008486, "raw_r1_iou_07": 0.17815482502651114, "threshold_logit": 5.5891618728637695, "gated_r1_iou_05": 0.21527041357370094}, "losses": {"gmr": 1.3307561455888952}, "chains": 0, "seconds": 30.942175149917603, "selected": false}
+{"fold": "C1", "arm": "baseline", "epoch": 30, "step": 100, "loss": 1.6563471555709839}
+{"fold": "C1", "arm": "baseline", "epoch": 30, "step": 200, "loss": 1.8164548873901367}
+{"fold": "C1", "arm": "baseline", "epoch": 30, "step": 300, "loss": 1.2269092798233032}
+{"fold": "C1", "arm": "baseline", "epoch": 30, "step": 400, "loss": 1.3802461624145508}
+{"fold": "C1", "arm": "baseline", "epoch": 30, "step": 500, "loss": 1.4058881998062134}
+{"fold": "C1", "arm": "baseline", "epoch": 30, "step": 600, "loss": 2.142164468765259}
+{"fold": "C1", "arm": "baseline", "epoch": 30, "seen": {"pooled_auroc": 0.7773231686442164, "rows": 1451, "videos": 462, "source_pair_acc": 0.6808943089430894, "source_pairs": 492, "same_query_pair_acc": 0.5559439378588314, "same_query_support": 47, "raw_r1_iou_05": 0.344644750795334, "raw_r1_iou_07": 0.1664899257688229, "threshold_logit": 4.8541789054870605, "gated_r1_iou_05": 0.2417815482502651}, "losses": {"gmr": 1.3259183028911024}, "chains": 0, "seconds": 30.907479286193848, "selected": false}
+{"fold": "C1", "arm": "baseline", "epoch": 31, "step": 100, "loss": 1.3972628116607666}
+{"fold": "C1", "arm": "baseline", "epoch": 31, "step": 200, "loss": 1.348352074623108}
+{"fold": "C1", "arm": "baseline", "epoch": 31, "step": 300, "loss": 1.3718456029891968}
+{"fold": "C1", "arm": "baseline", "epoch": 31, "step": 400, "loss": 1.379727840423584}
+{"fold": "C1", "arm": "baseline", "epoch": 31, "step": 500, "loss": 1.2747007608413696}
+{"fold": "C1", "arm": "baseline", "epoch": 31, "step": 600, "loss": 1.4438157081604004}
+{"fold": "C1", "arm": "baseline", "epoch": 31, "seen": {"pooled_auroc": 0.7773565684989271, "rows": 1451, "videos": 462, "source_pair_acc": 0.6808943089430894, "source_pairs": 492, "same_query_pair_acc": 0.570684427865279, "same_query_support": 47, "raw_r1_iou_05": 0.35949098621421, "raw_r1_iou_07": 0.18133616118769882, "threshold_logit": 4.928901672363281, "gated_r1_iou_05": 0.24390243902439024}, "losses": {"gmr": 1.323489525216691}, "chains": 0, "seconds": 31.072253227233887, "selected": false}
+{"fold": "C1", "arm": "baseline", "epoch": 32, "step": 100, "loss": 1.8062841892242432}
+{"fold": "C1", "arm": "baseline", "epoch": 32, "step": 200, "loss": 1.2072817087173462}
+{"fold": "C1", "arm": "baseline", "epoch": 32, "step": 300, "loss": 1.6642471551895142}
+{"fold": "C1", "arm": "baseline", "epoch": 32, "step": 400, "loss": 1.2215023040771484}
+{"fold": "C1", "arm": "baseline", "epoch": 32, "step": 500, "loss": 1.4615015983581543}
+{"fold": "C1", "arm": "baseline", "epoch": 32, "step": 600, "loss": 0.9091475009918213}
+{"fold": "C1", "arm": "baseline", "epoch": 32, "seen": {"pooled_auroc": 0.7732379489149221, "rows": 1451, "videos": 462, "source_pair_acc": 0.6849593495934959, "source_pairs": 492, "same_query_pair_acc": 0.5697817844094439, "same_query_support": 47, "raw_r1_iou_05": 0.34994697773064687, "raw_r1_iou_07": 0.17497348886532343, "threshold_logit": 5.405518531799316, "gated_r1_iou_05": 0.20572640509013787}, "losses": {"gmr": 1.3166962227922805}, "chains": 0, "seconds": 30.91275143623352, "selected": false}
+{"fold": "C1", "arm": "baseline", "epoch": 33, "step": 100, "loss": 1.516309380531311}
+{"fold": "C1", "arm": "baseline", "epoch": 33, "step": 200, "loss": 1.5976964235305786}
+{"fold": "C1", "arm": "baseline", "epoch": 33, "step": 300, "loss": 1.2408826351165771}
+{"fold": "C1", "arm": "baseline", "epoch": 33, "step": 400, "loss": 1.2000112533569336}
+{"fold": "C1", "arm": "baseline", "epoch": 33, "step": 500, "loss": 1.513744592666626}
+{"fold": "C1", "arm": "baseline", "epoch": 33, "step": 600, "loss": 1.442567229270935}
+{"fold": "C1", "arm": "baseline", "epoch": 33, "seen": {"pooled_auroc": 0.7770204824609013, "rows": 1451, "videos": 462, "source_pair_acc": 0.6747967479674797, "source_pairs": 492, "same_query_pair_acc": 0.5759874581683092, "same_query_support": 47, "raw_r1_iou_05": 0.35100742311770944, "raw_r1_iou_07": 0.17073170731707318, "threshold_logit": 4.601998329162598, "gated_r1_iou_05": 0.22163308589607636}, "losses": {"gmr": 1.3224289135548843}, "chains": 0, "seconds": 30.821831703186035, "selected": false}
+{"fold": "C1", "arm": "baseline", "epoch": 34, "step": 100, "loss": 1.4546432495117188}
+{"fold": "C1", "arm": "baseline", "epoch": 34, "step": 200, "loss": 1.3522517681121826}
+{"fold": "C1", "arm": "baseline", "epoch": 34, "step": 300, "loss": 1.3857744932174683}
+{"fold": "C1", "arm": "baseline", "epoch": 34, "step": 400, "loss": 1.5995961427688599}
+{"fold": "C1", "arm": "baseline", "epoch": 34, "step": 500, "loss": 1.1630860567092896}
+{"fold": "C1", "arm": "baseline", "epoch": 34, "step": 600, "loss": 1.158238410949707}
+{"fold": "C1", "arm": "baseline", "epoch": 34, "seen": {"pooled_auroc": 0.7763691852940441, "rows": 1451, "videos": 462, "source_pair_acc": 0.6869918699186992, "source_pairs": 492, "same_query_pair_acc": 0.5499478063307851, "same_query_support": 47, "raw_r1_iou_05": 0.36267232237539765, "raw_r1_iou_07": 0.16755037115588547, "threshold_logit": 4.1108927726745605, "gated_r1_iou_05": 0.25556733828207845}, "losses": {"gmr": 1.3166139759010094}, "chains": 0, "seconds": 30.87174153327942, "selected": false}
+{"fold": "C1", "arm": "baseline", "epoch": 35, "step": 100, "loss": 1.4094935655593872}
+{"fold": "C1", "arm": "baseline", "epoch": 35, "step": 200, "loss": 1.0474852323532104}
+{"fold": "C1", "arm": "baseline", "epoch": 35, "step": 300, "loss": 1.2667123079299927}
+{"fold": "C1", "arm": "baseline", "epoch": 35, "step": 400, "loss": 1.1598248481750488}
+{"fold": "C1", "arm": "baseline", "epoch": 35, "step": 500, "loss": 1.1822956800460815}
+{"fold": "C1", "arm": "baseline", "epoch": 35, "step": 600, "loss": 1.6246737241744995}
+{"fold": "C1", "arm": "baseline", "epoch": 35, "seen": {"pooled_auroc": 0.7722630906555557, "rows": 1451, "videos": 462, "source_pair_acc": 0.6849593495934959, "source_pairs": 492, "same_query_pair_acc": 0.579936523287587, "same_query_support": 47, "raw_r1_iou_05": 0.34676564156945916, "raw_r1_iou_07": 0.1633085896076352, "threshold_logit": 5.00124454498291, "gated_r1_iou_05": 0.2354188759278897}, "losses": {"gmr": 1.314821050159837}, "chains": 0, "seconds": 30.909108638763428, "selected": false}
+{"fold": "C1", "arm": "baseline", "epoch": 36, "step": 100, "loss": 1.8859658241271973}
+{"fold": "C1", "arm": "baseline", "epoch": 36, "step": 200, "loss": 1.6589910984039307}
+{"fold": "C1", "arm": "baseline", "epoch": 36, "step": 300, "loss": 1.7563210725784302}
+{"fold": "C1", "arm": "baseline", "epoch": 36, "step": 400, "loss": 1.4977184534072876}
+{"fold": "C1", "arm": "baseline", "epoch": 36, "step": 500, "loss": 1.3242906332015991}
+{"fold": "C1", "arm": "baseline", "epoch": 36, "step": 600, "loss": 0.7409011125564575}
+{"fold": "C1", "arm": "baseline", "epoch": 36, "seen": {"pooled_auroc": 0.7742211571379665, "rows": 1451, "videos": 462, "source_pair_acc": 0.6890243902439024, "source_pairs": 492, "same_query_pair_acc": 0.5849709097049522, "same_query_support": 47, "raw_r1_iou_05": 0.352067868504772, "raw_r1_iou_07": 0.17391304347826086, "threshold_logit": 3.658407211303711, "gated_r1_iou_05": 0.23647932131495228}, "losses": {"gmr": 1.3048862713448546}, "chains": 0, "seconds": 30.88300633430481, "selected": false}
+{"fold": "C1", "arm": "baseline", "epoch": 37, "step": 100, "loss": 1.4469738006591797}
+{"fold": "C1", "arm": "baseline", "epoch": 37, "step": 200, "loss": 1.4448059797286987}
+{"fold": "C1", "arm": "baseline", "epoch": 37, "step": 300, "loss": 0.937085747718811}
+{"fold": "C1", "arm": "baseline", "epoch": 37, "step": 400, "loss": 1.1549988985061646}
+{"fold": "C1", "arm": "baseline", "epoch": 37, "step": 500, "loss": 1.1688354015350342}
+{"fold": "C1", "arm": "baseline", "epoch": 37, "step": 600, "loss": 0.9586713314056396}
+{"fold": "C1", "arm": "baseline", "epoch": 37, "seen": {"pooled_auroc": 0.7782938519217442, "rows": 1451, "videos": 462, "source_pair_acc": 0.6849593495934959, "source_pairs": 492, "same_query_pair_acc": 0.5931994719228763, "same_query_support": 47, "raw_r1_iou_05": 0.35100742311770944, "raw_r1_iou_07": 0.17709437963944857, "threshold_logit": 4.768749237060547, "gated_r1_iou_05": 0.2354188759278897}, "losses": {"gmr": 1.2980822764087956}, "chains": 0, "seconds": 30.8528950214386, "selected": false}
+{"fold": "C1", "arm": "baseline", "epoch": 38, "step": 100, "loss": 0.999552845954895}
+{"fold": "C1", "arm": "baseline", "epoch": 38, "step": 200, "loss": 0.9255201816558838}
+{"fold": "C1", "arm": "baseline", "epoch": 38, "step": 300, "loss": 1.5963914394378662}
+{"fold": "C1", "arm": "baseline", "epoch": 38, "step": 400, "loss": 1.2330541610717773}
+{"fold": "C1", "arm": "baseline", "epoch": 38, "step": 500, "loss": 1.452231526374817}
+{"fold": "C1", "arm": "baseline", "epoch": 38, "step": 600, "loss": 0.7030581831932068}
+{"fold": "C1", "arm": "baseline", "epoch": 38, "seen": {"pooled_auroc": 0.7721107038184384, "rows": 1451, "videos": 462, "source_pair_acc": 0.676829268292683, "source_pairs": 492, "same_query_pair_acc": 0.5791144729974517, "same_query_support": 47, "raw_r1_iou_05": 0.34358430540827145, "raw_r1_iou_07": 0.17179215270413573, "threshold_logit": 5.233380317687988, "gated_r1_iou_05": 0.22375397667020147}, "losses": {"gmr": 1.3066304289823607}, "chains": 0, "seconds": 30.92535662651062, "selected": false}
+{"fold": "C1", "arm": "baseline", "epoch": 39, "step": 100, "loss": 1.1275907754898071}
+{"fold": "C1", "arm": "baseline", "epoch": 39, "step": 200, "loss": 1.151990532875061}
+{"fold": "C1", "arm": "baseline", "epoch": 39, "step": 300, "loss": 1.0951193571090698}
+{"fold": "C1", "arm": "baseline", "epoch": 39, "step": 400, "loss": 1.565410852432251}
+{"fold": "C1", "arm": "baseline", "epoch": 39, "step": 500, "loss": 1.4601527452468872}
+{"fold": "C1", "arm": "baseline", "epoch": 39, "step": 600, "loss": 0.9137036204338074}
+{"fold": "C1", "arm": "baseline", "epoch": 39, "seen": {"pooled_auroc": 0.7766259466771319, "rows": 1451, "videos": 462, "source_pair_acc": 0.6788617886178862, "source_pairs": 492, "same_query_pair_acc": 0.5849091216112492, "same_query_support": 47, "raw_r1_iou_05": 0.35418875927889715, "raw_r1_iou_07": 0.17815482502651114, "threshold_logit": 4.2787580490112305, "gated_r1_iou_05": 0.23966065747614}, "losses": {"gmr": 1.2956755762766923}, "chains": 0, "seconds": 30.920621633529663, "selected": false}
+{"fold": "C1", "arm": "baseline", "epoch": 40, "step": 100, "loss": 1.1482336521148682}
+{"fold": "C1", "arm": "baseline", "epoch": 40, "step": 200, "loss": 1.8124761581420898}
+{"fold": "C1", "arm": "baseline", "epoch": 40, "step": 300, "loss": 1.3532445430755615}
+{"fold": "C1", "arm": "baseline", "epoch": 40, "step": 400, "loss": 1.0472639799118042}
+{"fold": "C1", "arm": "baseline", "epoch": 40, "step": 500, "loss": 0.9740321636199951}
+{"fold": "C1", "arm": "baseline", "epoch": 40, "step": 600, "loss": 1.322693943977356}
+{"fold": "C1", "arm": "baseline", "epoch": 40, "seen": {"pooled_auroc": 0.7770330074064178, "rows": 1451, "videos": 462, "source_pair_acc": 0.6788617886178862, "source_pairs": 492, "same_query_pair_acc": 0.5800466672807099, "same_query_support": 47, "raw_r1_iou_05": 0.3563096500530223, "raw_r1_iou_07": 0.176033934252386, "threshold_logit": 4.83519172668457, "gated_r1_iou_05": 0.2449628844114528}, "losses": {"gmr": 1.2914062999302132}, "chains": 0, "seconds": 30.896815061569214, "selected": false}
+{"fold": "C1", "arm": "baseline", "epoch": 41, "step": 100, "loss": 1.6833244562149048}
+{"fold": "C1", "arm": "baseline", "epoch": 41, "step": 200, "loss": 1.2054163217544556}
+{"fold": "C1", "arm": "baseline", "epoch": 41, "step": 300, "loss": 0.834930956363678}
+{"fold": "C1", "arm": "baseline", "epoch": 41, "step": 400, "loss": 2.1051151752471924}
+{"fold": "C1", "arm": "baseline", "epoch": 41, "step": 500, "loss": 1.5757801532745361}
+{"fold": "C1", "arm": "baseline", "epoch": 41, "step": 600, "loss": 1.5823397636413574}
+{"fold": "C1", "arm": "baseline", "epoch": 41, "seen": {"pooled_auroc": 0.7734508729887024, "rows": 1451, "videos": 462, "source_pair_acc": 0.6910569105691057, "source_pairs": 492, "same_query_pair_acc": 0.5833870621104663, "same_query_support": 47, "raw_r1_iou_05": 0.35418875927889715, "raw_r1_iou_07": 0.1728525980911983, "threshold_logit": 5.463372230529785, "gated_r1_iou_05": 0.23647932131495228}, "losses": {"gmr": 1.27550082030992}, "chains": 0, "seconds": 30.76917052268982, "selected": false}
+{"fold": "C1", "arm": "baseline", "epoch": 42, "step": 100, "loss": 1.4874597787857056}
+{"fold": "C1", "arm": "baseline", "epoch": 42, "step": 200, "loss": 1.1137568950653076}
+{"fold": "C1", "arm": "baseline", "epoch": 42, "step": 300, "loss": 1.0996911525726318}
+{"fold": "C1", "arm": "baseline", "epoch": 42, "step": 400, "loss": 1.3974463939666748}
+{"fold": "C1", "arm": "baseline", "epoch": 42, "step": 500, "loss": 1.2902793884277344}
+{"fold": "C1", "arm": "baseline", "epoch": 42, "step": 600, "loss": 1.4388008117675781}
+{"fold": "C1", "arm": "baseline", "epoch": 42, "seen": {"pooled_auroc": 0.7756970132179926, "rows": 1451, "videos": 462, "source_pair_acc": 0.6869918699186992, "source_pairs": 492, "same_query_pair_acc": 0.5762196432409199, "same_query_support": 47, "raw_r1_iou_05": 0.35418875927889715, "raw_r1_iou_07": 0.18027571580063625, "threshold_logit": 5.014829635620117, "gated_r1_iou_05": 0.22905620360551432}, "losses": {"gmr": 1.2874112416364503}, "chains": 0, "seconds": 30.866665601730347, "selected": false}
+{"fold": "C1", "arm": "baseline", "epoch": 43, "step": 100, "loss": 0.899509072303772}
+{"fold": "C1", "arm": "baseline", "epoch": 43, "step": 200, "loss": 1.157214879989624}
+{"fold": "C1", "arm": "baseline", "epoch": 43, "step": 300, "loss": 1.1308927536010742}
+{"fold": "C1", "arm": "baseline", "epoch": 43, "step": 400, "loss": 1.519465446472168}
+{"fold": "C1", "arm": "baseline", "epoch": 43, "step": 500, "loss": 0.8937115669250488}
+{"fold": "C1", "arm": "baseline", "epoch": 43, "step": 600, "loss": 0.9011628031730652}
+{"fold": "C1", "arm": "baseline", "epoch": 43, "seen": {"pooled_auroc": 0.7715616937066324, "rows": 1451, "videos": 462, "source_pair_acc": 0.676829268292683, "source_pairs": 492, "same_query_pair_acc": 0.5940698781124313, "same_query_support": 47, "raw_r1_iou_05": 0.3584305408271474, "raw_r1_iou_07": 0.16436903499469777, "threshold_logit": 5.6760382652282715, "gated_r1_iou_05": 0.2354188759278897}, "losses": {"gmr": 1.266877832111979}, "chains": 0, "seconds": 30.646715879440308, "selected": false}
+{"fold": "C1", "arm": "baseline", "epoch": 44, "step": 100, "loss": 1.2056982517242432}
+{"fold": "C1", "arm": "baseline", "epoch": 44, "step": 200, "loss": 1.5378029346466064}
+{"fold": "C1", "arm": "baseline", "epoch": 44, "step": 300, "loss": 0.8868118524551392}
+{"fold": "C1", "arm": "baseline", "epoch": 44, "step": 400, "loss": 1.3759151697158813}
+{"fold": "C1", "arm": "baseline", "epoch": 44, "step": 500, "loss": 1.3598134517669678}
+{"fold": "C1", "arm": "baseline", "epoch": 44, "step": 600, "loss": 1.2050092220306396}
+{"fold": "C1", "arm": "baseline", "epoch": 44, "seen": {"pooled_auroc": 0.7707183473751889, "rows": 1451, "videos": 462, "source_pair_acc": 0.6869918699186992, "source_pairs": 492, "same_query_pair_acc": 0.5936197077154524, "same_query_support": 47, "raw_r1_iou_05": 0.34782608695652173, "raw_r1_iou_07": 0.1728525980911983, "threshold_logit": 4.960252285003662, "gated_r1_iou_05": 0.23223753976670203}, "losses": {"gmr": 1.2767349790928937}, "chains": 0, "seconds": 30.811084985733032, "selected": false}
+{"fold": "C1", "arm": "baseline", "epoch": 45, "step": 100, "loss": 1.317986011505127}
+{"fold": "C1", "arm": "baseline", "epoch": 45, "step": 200, "loss": 1.0389169454574585}
+{"fold": "C1", "arm": "baseline", "epoch": 45, "step": 300, "loss": 1.2913386821746826}
+{"fold": "C1", "arm": "baseline", "epoch": 45, "step": 400, "loss": 1.1260969638824463}
+{"fold": "C1", "arm": "baseline", "epoch": 45, "step": 500, "loss": 1.239291787147522}
+{"fold": "C1", "arm": "baseline", "epoch": 45, "step": 600, "loss": 1.1173055171966553}
+{"fold": "C1", "arm": "baseline", "epoch": 45, "seen": {"pooled_auroc": 0.7668940640108216, "rows": 1451, "videos": 462, "source_pair_acc": 0.6788617886178862, "source_pairs": 492, "same_query_pair_acc": 0.5803245218138835, "same_query_support": 47, "raw_r1_iou_05": 0.352067868504772, "raw_r1_iou_07": 0.17497348886532343, "threshold_logit": 5.763459205627441, "gated_r1_iou_05": 0.23223753976670203}, "losses": {"gmr": 1.2776281868070818}, "chains": 0, "seconds": 30.820316314697266, "selected": false}
+{"fold": "C1", "arm": "baseline", "epoch": 46, "step": 100, "loss": 1.0376043319702148}
+{"fold": "C1", "arm": "baseline", "epoch": 46, "step": 200, "loss": 1.7100460529327393}
+{"fold": "C1", "arm": "baseline", "epoch": 46, "step": 300, "loss": 1.2991896867752075}
+{"fold": "C1", "arm": "baseline", "epoch": 46, "step": 400, "loss": 1.032942533493042}
+{"fold": "C1", "arm": "baseline", "epoch": 46, "step": 500, "loss": 1.0214285850524902}
+{"fold": "C1", "arm": "baseline", "epoch": 46, "step": 600, "loss": 1.0641177892684937}
+{"fold": "C1", "arm": "baseline", "epoch": 46, "seen": {"pooled_auroc": 0.7710105961039069, "rows": 1451, "videos": 462, "source_pair_acc": 0.6849593495934959, "source_pairs": 492, "same_query_pair_acc": 0.5731356114334838, "same_query_support": 47, "raw_r1_iou_05": 0.3605514316012725, "raw_r1_iou_07": 0.18027571580063625, "threshold_logit": 5.909661293029785, "gated_r1_iou_05": 0.22905620360551432}, "losses": {"gmr": 1.2726438676876137}, "chains": 0, "seconds": 30.914937734603882, "selected": false}
+{"fold": "C1", "arm": "baseline", "epoch": 47, "step": 100, "loss": 1.3404076099395752}
+{"fold": "C1", "arm": "baseline", "epoch": 47, "step": 200, "loss": 1.3146196603775024}
+{"fold": "C1", "arm": "baseline", "epoch": 47, "step": 300, "loss": 1.73306405544281}
+{"fold": "C1", "arm": "baseline", "epoch": 47, "step": 400, "loss": 1.2302954196929932}
+{"fold": "C1", "arm": "baseline", "epoch": 47, "step": 500, "loss": 1.139891266822815}
+{"fold": "C1", "arm": "baseline", "epoch": 47, "step": 600, "loss": 1.3374289274215698}
+{"fold": "C1", "arm": "baseline", "epoch": 47, "seen": {"pooled_auroc": 0.769334340895617, "rows": 1451, "videos": 462, "source_pair_acc": 0.6666666666666666, "source_pairs": 492, "same_query_pair_acc": 0.5325235639065427, "same_query_support": 47, "raw_r1_iou_05": 0.352067868504772, "raw_r1_iou_07": 0.18133616118769882, "threshold_logit": 5.87320613861084, "gated_r1_iou_05": 0.22481442205726404}, "losses": {"gmr": 1.2584041674992235}, "chains": 0, "seconds": 30.846342086791992, "selected": false}
+{"fold": "C1", "arm": "baseline", "epoch": 48, "step": 100, "loss": 1.4708044528961182}
+{"fold": "C1", "arm": "baseline", "epoch": 48, "step": 200, "loss": 1.2988044023513794}
+{"fold": "C1", "arm": "baseline", "epoch": 48, "step": 300, "loss": 1.1792042255401611}
+{"fold": "C1", "arm": "baseline", "epoch": 48, "step": 400, "loss": 1.18808913230896}
+{"fold": "C1", "arm": "baseline", "epoch": 48, "step": 500, "loss": 1.6931973695755005}
+{"fold": "C1", "arm": "baseline", "epoch": 48, "step": 600, "loss": 1.0575629472732544}
+{"fold": "C1", "arm": "baseline", "epoch": 48, "seen": {"pooled_auroc": 0.7691704728584432, "rows": 1451, "videos": 462, "source_pair_acc": 0.6727642276422764, "source_pairs": 492, "same_query_pair_acc": 0.5962566393417458, "same_query_support": 47, "raw_r1_iou_05": 0.35737009544008486, "raw_r1_iou_07": 0.17497348886532343, "threshold_logit": 4.47617769241333, "gated_r1_iou_05": 0.2492046659597031}, "losses": {"gmr": 1.2648515906920912}, "chains": 0, "seconds": 30.89491891860962, "selected": false}
+{"fold": "C1", "arm": "baseline", "epoch": 49, "step": 100, "loss": 1.3958415985107422}
+{"fold": "C1", "arm": "baseline", "epoch": 49, "step": 200, "loss": 1.3891018629074097}
+{"fold": "C1", "arm": "baseline", "epoch": 49, "step": 300, "loss": 1.1456726789474487}
+{"fold": "C1", "arm": "baseline", "epoch": 49, "step": 400, "loss": 0.9268887639045715}
+{"fold": "C1", "arm": "baseline", "epoch": 49, "step": 500, "loss": 1.0693936347961426}
+{"fold": "C1", "arm": "baseline", "epoch": 49, "step": 600, "loss": 0.7848542928695679}
+{"fold": "C1", "arm": "baseline", "epoch": 49, "seen": {"pooled_auroc": 0.7694188842778534, "rows": 1451, "videos": 462, "source_pair_acc": 0.6788617886178862, "source_pairs": 492, "same_query_pair_acc": 0.5773414233520617, "same_query_support": 47, "raw_r1_iou_05": 0.35100742311770944, "raw_r1_iou_07": 0.18027571580063625, "threshold_logit": 5.689352512359619, "gated_r1_iou_05": 0.2417815482502651}, "losses": {"gmr": 1.272344453084795}, "chains": 0, "seconds": 30.863826990127563, "selected": false}
+{"fold": "C1", "arm": "baseline", "epoch": 50, "step": 100, "loss": 1.2421592473983765}
+{"fold": "C1", "arm": "baseline", "epoch": 50, "step": 200, "loss": 1.2323561906814575}
+{"fold": "C1", "arm": "baseline", "epoch": 50, "step": 300, "loss": 0.9683282971382141}
+{"fold": "C1", "arm": "baseline", "epoch": 50, "step": 400, "loss": 1.6086612939834595}
+{"fold": "C1", "arm": "baseline", "epoch": 50, "step": 500, "loss": 1.587652564048767}
+{"fold": "C1", "arm": "baseline", "epoch": 50, "step": 600, "loss": 1.5112026929855347}
+{"fold": "C1", "arm": "baseline", "epoch": 50, "seen": {"pooled_auroc": 0.7676351232872137, "rows": 1451, "videos": 462, "source_pair_acc": 0.6686991869918699, "source_pairs": 492, "same_query_pair_acc": 0.5807597249086611, "same_query_support": 47, "raw_r1_iou_05": 0.3605514316012725, "raw_r1_iou_07": 0.16967126193001061, "threshold_logit": 5.604729652404785, "gated_r1_iou_05": 0.23647932131495228}, "losses": {"gmr": 1.2513982130039065}, "chains": 0, "seconds": 30.185907125473022, "selected": false}
+COMPLETED {"fold": "C1", "arm": "baseline", "seed": 3407, "best_epoch": 1, "seen_val": {"pooled_auroc": 0.7838674526765808, "rows": 1451, "videos": 462, "source_pair_acc": 0.6686991869918699, "source_pairs": 492, "same_query_pair_acc": 0.6005603143901016, "same_query_support": 47, "raw_r1_iou_05": 0.3584305408271474, "raw_r1_iou_07": 0.176033934252386, "threshold_logit": 4.756946563720703, "gated_r1_iou_05": 0.21951219512195122}, "epoch0": {"seen": {"pooled_auroc": 0.7882616210619483, "rows": 1451, "videos": 462, "source_pair_acc": 0.676829268292683, "source_pairs": 492, "same_query_pair_acc": 0.5633719412974733, "same_query_support": 47, "raw_r1_iou_05": 0.3743372216330859, "raw_r1_iou_07": 0.20042417815482502, "threshold_logit": 1.8752331733703613, "gated_r1_iou_05": 0.2735949098621421}}, "elapsed_seconds": 1546.5177264213562, "peak_gpu_bytes": 0, "formal_U_accessed": false}
+{"fold": "C1", "arm": "shine", "epoch": 1, "step": 100, "loss": 6.862948417663574}
+{"fold": "C1", "arm": "shine", "epoch": 1, "step": 200, "loss": 6.780136585235596}
+{"fold": "C1", "arm": "shine", "epoch": 1, "step": 300, "loss": 6.381265640258789}
+{"fold": "C1", "arm": "shine", "epoch": 1, "step": 400, "loss": 6.08779239654541}
+{"fold": "C1", "arm": "shine", "epoch": 1, "step": 500, "loss": 6.410764217376709}
+{"fold": "C1", "arm": "shine", "epoch": 1, "step": 600, "loss": 6.936186790466309}
+{"fold": "C1", "arm": "shine", "epoch": 1, "seen": {"pooled_auroc": 0.7599322817945742, "rows": 1451, "videos": 462, "source_pair_acc": 0.6910569105691057, "source_pairs": 492, "same_query_pair_acc": 0.5757940345706304, "same_query_support": 47, "raw_r1_iou_05": 0.3679745493107105, "raw_r1_iou_07": 0.17709437963944857, "threshold_logit": -0.307841956615448, "gated_r1_iou_05": 0.24284199363732767}, "losses": {"gmr": 2.090971586552072, "coarse": 2.9631327800113016, "fine": 0.8979803295664512, "rotated_bce": 0.6825127951279962, "exist_pair": 0.31960061224783265}, "chains": 2630, "seconds": 51.77994632720947, "selected": true}
+{"fold": "C1", "arm": "shine", "epoch": 2, "step": 100, "loss": 6.243193626403809}
+{"fold": "C1", "arm": "shine", "epoch": 2, "step": 200, "loss": 6.66821813583374}
+{"fold": "C1", "arm": "shine", "epoch": 2, "step": 300, "loss": 6.570598125457764}
+{"fold": "C1", "arm": "shine", "epoch": 2, "step": 400, "loss": 6.806909084320068}
+{"fold": "C1", "arm": "shine", "epoch": 2, "step": 500, "loss": 6.058424472808838}
+{"fold": "C1", "arm": "shine", "epoch": 2, "step": 600, "loss": 6.957498073577881}
+{"fold": "C1", "arm": "shine", "epoch": 2, "seen": {"pooled_auroc": 0.7453198453586727, "rows": 1451, "videos": 462, "source_pair_acc": 0.6910569105691057, "source_pairs": 492, "same_query_pair_acc": 0.5767665254367382, "same_query_support": 47, "raw_r1_iou_05": 0.3637327677624602, "raw_r1_iou_07": 0.1792152704135737, "threshold_logit": -0.33551353216171265, "gated_r1_iou_05": 0.25556733828207845}, "losses": {"gmr": 2.0669988766991985, "coarse": 2.755897314533999, "fine": 0.9200684448596554, "rotated_bce": 0.5734698719891371, "exist_pair": 0.22560945903955984}, "chains": 2632, "seconds": 51.679959774017334, "selected": false}
+{"fold": "C1", "arm": "shine", "epoch": 3, "step": 100, "loss": 5.553032875061035}
+{"fold": "C1", "arm": "shine", "epoch": 3, "step": 200, "loss": 6.515420913696289}
+{"fold": "C1", "arm": "shine", "epoch": 3, "step": 300, "loss": 5.963996887207031}
+{"fold": "C1", "arm": "shine", "epoch": 3, "step": 400, "loss": 6.307085037231445}
+{"fold": "C1", "arm": "shine", "epoch": 3, "step": 500, "loss": 6.5127339363098145}
+{"fold": "C1", "arm": "shine", "epoch": 3, "step": 600, "loss": 6.7923688888549805}
+{"fold": "C1", "arm": "shine", "epoch": 3, "seen": {"pooled_auroc": 0.7389509105635391, "rows": 1451, "videos": 462, "source_pair_acc": 0.6788617886178862, "source_pairs": 492, "same_query_pair_acc": 0.5691370390838475, "same_query_support": 47, "raw_r1_iou_05": 0.37327677624602335, "raw_r1_iou_07": 0.18663838812301167, "threshold_logit": -0.23191183805465698, "gated_r1_iou_05": 0.23860021208907742}, "losses": {"gmr": 2.053289386095609, "coarse": 2.588400618827089, "fine": 0.9010028366259891, "rotated_bce": 0.5687641589746649, "exist_pair": 0.21676948931532428}, "chains": 2630, "seconds": 51.62581491470337, "selected": false}
+{"fold": "C1", "arm": "shine", "epoch": 4, "step": 100, "loss": 6.503767013549805}
+{"fold": "C1", "arm": "shine", "epoch": 4, "step": 200, "loss": 6.256397724151611}
+{"fold": "C1", "arm": "shine", "epoch": 4, "step": 300, "loss": 6.245136737823486}
+{"fold": "C1", "arm": "shine", "epoch": 4, "step": 400, "loss": 5.914658546447754}
+{"fold": "C1", "arm": "shine", "epoch": 4, "step": 500, "loss": 6.260536193847656}
+{"fold": "C1", "arm": "shine", "epoch": 4, "step": 600, "loss": 5.989437580108643}
+{"fold": "C1", "arm": "shine", "epoch": 4, "seen": {"pooled_auroc": 0.7248269470027806, "rows": 1451, "videos": 462, "source_pair_acc": 0.6666666666666666, "source_pairs": 492, "same_query_pair_acc": 0.5734836971539099, "same_query_support": 47, "raw_r1_iou_05": 0.35949098621421, "raw_r1_iou_07": 0.18345705196182396, "threshold_logit": -0.25629904866218567, "gated_r1_iou_05": 0.24284199363732767}, "losses": {"gmr": 2.0356820742047668, "coarse": 2.502265599904452, "fine": 0.8828082294811956, "rotated_bce": 0.5675233852084285, "exist_pair": 0.2095136016686546}, "chains": 2631, "seconds": 51.713274002075195, "selected": false}
+{"fold": "C1", "arm": "shine", "epoch": 5, "step": 100, "loss": 5.859697341918945}
+{"fold": "C1", "arm": "shine", "epoch": 5, "step": 200, "loss": 4.819275379180908}
+{"fold": "C1", "arm": "shine", "epoch": 5, "step": 300, "loss": 5.919294357299805}
+{"fold": "C1", "arm": "shine", "epoch": 5, "step": 400, "loss": 5.460841178894043}
+{"fold": "C1", "arm": "shine", "epoch": 5, "step": 500, "loss": 6.069353103637695}
+{"fold": "C1", "arm": "shine", "epoch": 5, "step": 600, "loss": 5.851798057556152}
+{"fold": "C1", "arm": "shine", "epoch": 5, "seen": {"pooled_auroc": 0.7268831255584038, "rows": 1451, "videos": 462, "source_pair_acc": 0.6747967479674797, "source_pairs": 492, "same_query_pair_acc": 0.5915902950477417, "same_query_support": 47, "raw_r1_iou_05": 0.37327677624602335, "raw_r1_iou_07": 0.17709437963944857, "threshold_logit": -0.5541216731071472, "gated_r1_iou_05": 0.32343584305408274}, "losses": {"gmr": 2.0265891984965663, "coarse": 2.434397185102422, "fine": 0.8811716005704323, "rotated_bce": 0.5639670802829476, "exist_pair": 0.20396399176976782}, "chains": 2631, "seconds": 51.66273021697998, "selected": false}
+{"fold": "C1", "arm": "shine", "epoch": 6, "step": 100, "loss": 5.9110002517700195}
+{"fold": "C1", "arm": "shine", "epoch": 6, "step": 200, "loss": 5.529207706451416}
+{"fold": "C1", "arm": "shine", "epoch": 6, "step": 300, "loss": 6.249168872833252}
+{"fold": "C1", "arm": "shine", "epoch": 6, "step": 400, "loss": 5.195404052734375}
+{"fold": "C1", "arm": "shine", "epoch": 6, "step": 500, "loss": 6.548130512237549}
+{"fold": "C1", "arm": "shine", "epoch": 6, "step": 600, "loss": 6.423974990844727}
+{"fold": "C1", "arm": "shine", "epoch": 6, "seen": {"pooled_auroc": 0.7104691844590476, "rows": 1451, "videos": 462, "source_pair_acc": 0.7012195121951219, "source_pairs": 492, "same_query_pair_acc": 0.5845679438764545, "same_query_support": 47, "raw_r1_iou_05": 0.37009544008483564, "raw_r1_iou_07": 0.18133616118769882, "threshold_logit": -0.35733041167259216, "gated_r1_iou_05": 0.30328738069989397}, "losses": {"gmr": 2.006495269960908, "coarse": 2.356634604894644, "fine": 0.8862339654048526, "rotated_bce": 0.5584890464247179, "exist_pair": 0.20559409370583603}, "chains": 2632, "seconds": 52.070257902145386, "selected": false}
+{"fold": "C1", "arm": "shine", "epoch": 7, "step": 100, "loss": 6.11363410949707}
+{"fold": "C1", "arm": "shine", "epoch": 7, "step": 200, "loss": 5.761484146118164}
+{"fold": "C1", "arm": "shine", "epoch": 7, "step": 300, "loss": 6.662702560424805}
+{"fold": "C1", "arm": "shine", "epoch": 7, "step": 400, "loss": 6.508046627044678}
+{"fold": "C1", "arm": "shine", "epoch": 7, "step": 500, "loss": 6.144632816314697}
+{"fold": "C1", "arm": "shine", "epoch": 7, "step": 600, "loss": 4.930286407470703}
+{"fold": "C1", "arm": "shine", "epoch": 7, "seen": {"pooled_auroc": 0.7052713320697055, "rows": 1451, "videos": 462, "source_pair_acc": 0.6951219512195121, "source_pairs": 492, "same_query_pair_acc": 0.6204936907064568, "same_query_support": 47, "raw_r1_iou_05": 0.3647932131495228, "raw_r1_iou_07": 0.17815482502651114, "threshold_logit": -0.50425124168396, "gated_r1_iou_05": 0.32873806998939553}, "losses": {"gmr": 2.019080953395113, "coarse": 2.3212910963046878, "fine": 0.8647175925843259, "rotated_bce": 0.5585252291616335, "exist_pair": 0.20162139453084454}, "chains": 2631, "seconds": 51.76959490776062, "selected": false}
+{"fold": "C1", "arm": "shine", "epoch": 8, "step": 100, "loss": 5.994207859039307}
+{"fold": "C1", "arm": "shine", "epoch": 8, "step": 200, "loss": 6.313512325286865}
+{"fold": "C1", "arm": "shine", "epoch": 8, "step": 300, "loss": 6.102219581604004}
+{"fold": "C1", "arm": "shine", "epoch": 8, "step": 400, "loss": 4.211143970489502}
+{"fold": "C1", "arm": "shine", "epoch": 8, "step": 500, "loss": 4.784992218017578}
+{"fold": "C1", "arm": "shine", "epoch": 8, "step": 600, "loss": 3.9517314434051514}
+{"fold": "C1", "arm": "shine", "epoch": 8, "seen": {"pooled_auroc": 0.701561860705906, "rows": 1451, "videos": 462, "source_pair_acc": 0.6991869918699187, "source_pairs": 492, "same_query_pair_acc": 0.6223688250283995, "same_query_support": 47, "raw_r1_iou_05": 0.35737009544008486, "raw_r1_iou_07": 0.17709437963944857, "threshold_logit": -0.3974792957305908, "gated_r1_iou_05": 0.295864262990456}, "losses": {"gmr": 1.992523149878783, "coarse": 2.2655758156602506, "fine": 0.8632747675872501, "rotated_bce": 0.5530488720690225, "exist_pair": 0.20172355713543558}, "chains": 2632, "seconds": 52.10637331008911, "selected": false}
+{"fold": "C1", "arm": "shine", "epoch": 9, "step": 100, "loss": 6.298806190490723}
+{"fold": "C1", "arm": "shine", "epoch": 9, "step": 200, "loss": 4.819951057434082}
+{"fold": "C1", "arm": "shine", "epoch": 9, "step": 300, "loss": 5.688580513000488}
+{"fold": "C1", "arm": "shine", "epoch": 9, "step": 400, "loss": 4.700760364532471}
+{"fold": "C1", "arm": "shine", "epoch": 9, "step": 500, "loss": 5.395998477935791}
+{"fold": "C1", "arm": "shine", "epoch": 9, "step": 600, "loss": 5.4864983558654785}
+{"fold": "C1", "arm": "shine", "epoch": 9, "seen": {"pooled_auroc": 0.6932369469192808, "rows": 1451, "videos": 462, "source_pair_acc": 0.7296747967479674, "source_pairs": 492, "same_query_pair_acc": 0.6112496546007185, "same_query_support": 47, "raw_r1_iou_05": 0.35737009544008486, "raw_r1_iou_07": 0.18133616118769882, "threshold_logit": -0.5296940207481384, "gated_r1_iou_05": 0.3075291622481442}, "losses": {"gmr": 1.9778170543963423, "coarse": 2.217302608544341, "fine": 0.8618540598991069, "rotated_bce": 0.5477412863433542, "exist_pair": 0.20277397336840267}, "chains": 2631, "seconds": 51.85152196884155, "selected": false}
+{"fold": "C1", "arm": "shine", "epoch": 10, "step": 100, "loss": 4.887531280517578}
+{"fold": "C1", "arm": "shine", "epoch": 10, "step": 200, "loss": 5.830440521240234}
+{"fold": "C1", "arm": "shine", "epoch": 10, "step": 300, "loss": 5.129368305206299}
+{"fold": "C1", "arm": "shine", "epoch": 10, "step": 400, "loss": 4.661168098449707}
+{"fold": "C1", "arm": "shine", "epoch": 10, "step": 500, "loss": 5.7820658683776855}
+{"fold": "C1", "arm": "shine", "epoch": 10, "step": 600, "loss": 5.3663411140441895}
+{"fold": "C1", "arm": "shine", "epoch": 10, "seen": {"pooled_auroc": 0.6764263825452359, "rows": 1451, "videos": 462, "source_pair_acc": 0.725609756097561, "source_pairs": 492, "same_query_pair_acc": 0.6460766479383501, "same_query_support": 47, "raw_r1_iou_05": 0.3753976670201485, "raw_r1_iou_07": 0.18451749734888653, "threshold_logit": -0.5268749594688416, "gated_r1_iou_05": 0.32343584305408274}, "losses": {"gmr": 1.9893673065947906, "coarse": 2.197618651353842, "fine": 0.8602239167074303, "rotated_bce": 0.5468698961031836, "exist_pair": 0.20993221460029166}, "chains": 2630, "seconds": 51.58905100822449, "selected": false}
+{"fold": "C1", "arm": "shine", "epoch": 11, "step": 100, "loss": 6.691351890563965}
+{"fold": "C1", "arm": "shine", "epoch": 11, "step": 200, "loss": 5.753714084625244}
+{"fold": "C1", "arm": "shine", "epoch": 11, "step": 300, "loss": 5.363015174865723}
+{"fold": "C1", "arm": "shine", "epoch": 11, "step": 400, "loss": 4.060519218444824}
+{"fold": "C1", "arm": "shine", "epoch": 11, "step": 500, "loss": 4.837337970733643}
+{"fold": "C1", "arm": "shine", "epoch": 11, "step": 600, "loss": 5.371318817138672}
+{"fold": "C1", "arm": "shine", "epoch": 11, "seen": {"pooled_auroc": 0.6781903123721412, "rows": 1451, "videos": 462, "source_pair_acc": 0.7317073170731707, "source_pairs": 492, "same_query_pair_acc": 0.6260116361180191, "same_query_support": 47, "raw_r1_iou_05": 0.3584305408271474, "raw_r1_iou_07": 0.18769883351007424, "threshold_logit": -0.47071972489356995, "gated_r1_iou_05": 0.30010604453870626}, "losses": {"gmr": 1.983692325538415, "coarse": 2.1678345346523273, "fine": 0.8489207356805859, "rotated_bce": 0.543544997560217, "exist_pair": 0.2130804250539085}, "chains": 2632, "seconds": 51.97702956199646, "selected": false}
+{"fold": "C1", "arm": "shine", "epoch": 12, "step": 100, "loss": 4.906665802001953}
+{"fold": "C1", "arm": "shine", "epoch": 12, "step": 200, "loss": 6.138533115386963}
+{"fold": "C1", "arm": "shine", "epoch": 12, "step": 300, "loss": 5.9411797523498535}
+{"fold": "C1", "arm": "shine", "epoch": 12, "step": 400, "loss": 5.330351829528809}
+{"fold": "C1", "arm": "shine", "epoch": 12, "step": 500, "loss": 5.516872406005859}
+{"fold": "C1", "arm": "shine", "epoch": 12, "step": 600, "loss": 5.676514625549316}
+{"fold": "C1", "arm": "shine", "epoch": 12, "seen": {"pooled_auroc": 0.6690867644725745, "rows": 1451, "videos": 462, "source_pair_acc": 0.7276422764227642, "source_pairs": 492, "same_query_pair_acc": 0.6257698566209204, "same_query_support": 47, "raw_r1_iou_05": 0.3669141039236479, "raw_r1_iou_07": 0.176033934252386, "threshold_logit": -0.49236443638801575, "gated_r1_iou_05": 0.30328738069989397}, "losses": {"gmr": 1.964609890723301, "coarse": 2.103115555997315, "fine": 0.8498045211957943, "rotated_bce": 0.5382634946187579, "exist_pair": 0.2115539647447721}, "chains": 2631, "seconds": 52.01364779472351, "selected": false}
+{"fold": "C1", "arm": "shine", "epoch": 13, "step": 100, "loss": 4.786452770233154}
+{"fold": "C1", "arm": "shine", "epoch": 13, "step": 200, "loss": 5.558053970336914}
+{"fold": "C1", "arm": "shine", "epoch": 13, "step": 300, "loss": 4.846424102783203}
+{"fold": "C1", "arm": "shine", "epoch": 13, "step": 400, "loss": 4.326213359832764}
+{"fold": "C1", "arm": "shine", "epoch": 13, "step": 500, "loss": 6.0073113441467285}
+{"fold": "C1", "arm": "shine", "epoch": 13, "step": 600, "loss": 7.036996364593506}
+{"fold": "C1", "arm": "shine", "epoch": 13, "seen": {"pooled_auroc": 0.6691723516002706, "rows": 1451, "videos": 462, "source_pair_acc": 0.7479674796747967, "source_pairs": 492, "same_query_pair_acc": 0.6259632802185994, "same_query_support": 47, "raw_r1_iou_05": 0.3679745493107105, "raw_r1_iou_07": 0.18027571580063625, "threshold_logit": -0.49927055835723877, "gated_r1_iou_05": 0.3064687168610817}, "losses": {"gmr": 1.9697549524278264, "coarse": 2.0466033547301423, "fine": 0.8489743067138463, "rotated_bce": 0.5320594355146936, "exist_pair": 0.21316641254533128}, "chains": 2632, "seconds": 51.7224383354187, "selected": false}
+{"fold": "C1", "arm": "shine", "epoch": 14, "step": 100, "loss": 5.610329627990723}
+{"fold": "C1", "arm": "shine", "epoch": 14, "step": 200, "loss": 5.643308639526367}
+{"fold": "C1", "arm": "shine", "epoch": 14, "step": 300, "loss": 4.860578536987305}
+{"fold": "C1", "arm": "shine", "epoch": 14, "step": 400, "loss": 5.075173854827881}
+{"fold": "C1", "arm": "shine", "epoch": 14, "step": 500, "loss": 4.810275554656982}
+{"fold": "C1", "arm": "shine", "epoch": 14, "step": 600, "loss": 6.5602874755859375}
+{"fold": "C1", "arm": "shine", "epoch": 14, "seen": {"pooled_auroc": 0.6815616102069956, "rows": 1451, "videos": 462, "source_pair_acc": 0.7439024390243902, "source_pairs": 492, "same_query_pair_acc": 0.6074564029351264, "same_query_support": 47, "raw_r1_iou_05": 0.3531283138918346, "raw_r1_iou_07": 0.1728525980911983, "threshold_logit": -0.538705050945282, "gated_r1_iou_05": 0.2979851537645811}, "losses": {"gmr": 1.961772999140267, "coarse": 2.055758786237711, "fine": 0.8516721740863243, "rotated_bce": 0.5345291681927388, "exist_pair": 0.2108489411669333}, "chains": 2632, "seconds": 51.62695360183716, "selected": false}
+{"fold": "C1", "arm": "shine", "epoch": 15, "step": 100, "loss": 6.245660305023193}
+{"fold": "C1", "arm": "shine", "epoch": 15, "step": 200, "loss": 6.061635494232178}
+{"fold": "C1", "arm": "shine", "epoch": 15, "step": 300, "loss": 5.008829593658447}
+{"fold": "C1", "arm": "shine", "epoch": 15, "step": 400, "loss": 4.9566650390625}
+{"fold": "C1", "arm": "shine", "epoch": 15, "step": 500, "loss": 5.746294975280762}
+{"fold": "C1", "arm": "shine", "epoch": 15, "step": 600, "loss": 6.6178669929504395}
+{"fold": "C1", "arm": "shine", "epoch": 15, "seen": {"pooled_auroc": 0.6666444000968594, "rows": 1451, "videos": 462, "source_pair_acc": 0.7459349593495935, "source_pairs": 492, "same_query_pair_acc": 0.6078835467133339, "same_query_support": 47, "raw_r1_iou_05": 0.3552492046659597, "raw_r1_iou_07": 0.17391304347826086, "threshold_logit": -0.6899440288543701, "gated_r1_iou_05": 0.2948038176033934}, "losses": {"gmr": 1.9498653547742084, "coarse": 2.035151964081819, "fine": 0.8427132601343027, "rotated_bce": 0.5308610472182734, "exist_pair": 0.2123182726725667}, "chains": 2631, "seconds": 51.64297533035278, "selected": false}
+{"fold": "C1", "arm": "shine", "epoch": 16, "step": 100, "loss": 4.984589099884033}
+{"fold": "C1", "arm": "shine", "epoch": 16, "step": 200, "loss": 4.407804012298584}
+{"fold": "C1", "arm": "shine", "epoch": 16, "step": 300, "loss": 5.5246262550354}
+{"fold": "C1", "arm": "shine", "epoch": 16, "step": 400, "loss": 4.702444553375244}
+{"fold": "C1", "arm": "shine", "epoch": 16, "step": 500, "loss": 5.97086238861084}
+{"fold": "C1", "arm": "shine", "epoch": 16, "step": 600, "loss": 5.662233829498291}
+{"fold": "C1", "arm": "shine", "epoch": 16, "seen": {"pooled_auroc": 0.6663417139135445, "rows": 1451, "videos": 462, "source_pair_acc": 0.7378048780487805, "source_pairs": 492, "same_query_pair_acc": 0.6025643977771638, "same_query_support": 47, "raw_r1_iou_05": 0.3637327677624602, "raw_r1_iou_07": 0.1792152704135737, "threshold_logit": -0.550151526927948, "gated_r1_iou_05": 0.2990455991516437}, "losses": {"gmr": 1.956004486620245, "coarse": 2.0071138240464914, "fine": 0.8311113688449366, "rotated_bce": 0.5272753925308993, "exist_pair": 0.2100204852845599}, "chains": 2631, "seconds": 51.66697645187378, "selected": false}
+{"fold": "C1", "arm": "shine", "epoch": 17, "step": 100, "loss": 5.457579612731934}
+{"fold": "C1", "arm": "shine", "epoch": 17, "step": 200, "loss": 5.618674278259277}
+{"fold": "C1", "arm": "shine", "epoch": 17, "step": 300, "loss": 6.626721382141113}
+{"fold": "C1", "arm": "shine", "epoch": 17, "step": 400, "loss": 7.767128944396973}
+{"fold": "C1", "arm": "shine", "epoch": 17, "step": 500, "loss": 4.050019264221191}
+{"fold": "C1", "arm": "shine", "epoch": 17, "step": 600, "loss": 5.0755391120910645}
+{"fold": "C1", "arm": "shine", "epoch": 17, "seen": {"pooled_auroc": 0.6772655538948407, "rows": 1451, "videos": 462, "source_pair_acc": 0.7479674796747967, "source_pairs": 492, "same_query_pair_acc": 0.621022919161217, "same_query_support": 47, "raw_r1_iou_05": 0.34994697773064687, "raw_r1_iou_07": 0.1855779427359491, "threshold_logit": -0.6851944923400879, "gated_r1_iou_05": 0.295864262990456}, "losses": {"gmr": 1.9498033541676483, "coarse": 1.9812688180740843, "fine": 0.8333668834260894, "rotated_bce": 0.5207291032133856, "exist_pair": 0.21043486411097292}, "chains": 2631, "seconds": 51.35794234275818, "selected": false}
+{"fold": "C1", "arm": "shine", "epoch": 18, "step": 100, "loss": 5.520843505859375}
+{"fold": "C1", "arm": "shine", "epoch": 18, "step": 200, "loss": 5.9052042961120605}
+{"fold": "C1", "arm": "shine", "epoch": 18, "step": 300, "loss": 4.5135722160339355}
+{"fold": "C1", "arm": "shine", "epoch": 18, "step": 400, "loss": 5.698390007019043}
+{"fold": "C1", "arm": "shine", "epoch": 18, "step": 500, "loss": 4.8744916915893555}
+{"fold": "C1", "arm": "shine", "epoch": 18, "step": 600, "loss": 5.2419047355651855}
+{"fold": "C1", "arm": "shine", "epoch": 18, "seen": {"pooled_auroc": 0.6626197176042283, "rows": 1451, "videos": 462, "source_pair_acc": 0.7398373983739838, "source_pairs": 492, "same_query_pair_acc": 0.5989672561481072, "same_query_support": 47, "raw_r1_iou_05": 0.35737009544008486, "raw_r1_iou_07": 0.17709437963944857, "threshold_logit": -0.727234423160553, "gated_r1_iou_05": 0.30965005302226933}, "losses": {"gmr": 1.943237744203817, "coarse": 1.9531487130466565, "fine": 0.8319624151049414, "rotated_bce": 0.5198623673894123, "exist_pair": 0.21388208844322473}, "chains": 2631, "seconds": 51.08500552177429, "selected": false}
+{"fold": "C1", "arm": "shine", "epoch": 19, "step": 100, "loss": 7.060873031616211}
+{"fold": "C1", "arm": "shine", "epoch": 19, "step": 200, "loss": 5.498841762542725}
+{"fold": "C1", "arm": "shine", "epoch": 19, "step": 300, "loss": 5.346534252166748}
+{"fold": "C1", "arm": "shine", "epoch": 19, "step": 400, "loss": 5.165746688842773}
+{"fold": "C1", "arm": "shine", "epoch": 19, "step": 500, "loss": 5.620042324066162}
+{"fold": "C1", "arm": "shine", "epoch": 19, "step": 600, "loss": 4.837145805358887}
+{"fold": "C1", "arm": "shine", "epoch": 19, "seen": {"pooled_auroc": 0.6808748256945083, "rows": 1451, "videos": 462, "source_pair_acc": 0.7439024390243902, "source_pairs": 492, "same_query_pair_acc": 0.6160288293267017, "same_query_support": 47, "raw_r1_iou_05": 0.352067868504772, "raw_r1_iou_07": 0.18133616118769882, "threshold_logit": -0.732633650302887, "gated_r1_iou_05": 0.3022269353128314}, "losses": {"gmr": 1.9311485469884786, "coarse": 1.9065976036899357, "fine": 0.8202206975692674, "rotated_bce": 0.5169369529445845, "exist_pair": 0.21284398374057129}, "chains": 2631, "seconds": 51.24499320983887, "selected": false}
+{"fold": "C1", "arm": "shine", "epoch": 20, "step": 100, "loss": 4.3398213386535645}
+{"fold": "C1", "arm": "shine", "epoch": 20, "step": 200, "loss": 5.454849720001221}
+{"fold": "C1", "arm": "shine", "epoch": 20, "step": 300, "loss": 5.802582263946533}
+{"fold": "C1", "arm": "shine", "epoch": 20, "step": 400, "loss": 4.327976226806641}
+{"fold": "C1", "arm": "shine", "epoch": 20, "step": 500, "loss": 4.995893478393555}
+{"fold": "C1", "arm": "shine", "epoch": 20, "step": 600, "loss": 4.7597880363464355}
+{"fold": "C1", "arm": "shine", "epoch": 20, "seen": {"pooled_auroc": 0.6878804452200633, "rows": 1451, "videos": 462, "source_pair_acc": 0.733739837398374, "source_pairs": 492, "same_query_pair_acc": 0.6209638175063708, "same_query_support": 47, "raw_r1_iou_05": 0.35418875927889715, "raw_r1_iou_07": 0.17709437963944857, "threshold_logit": -0.5694487690925598, "gated_r1_iou_05": 0.29374337221633084}, "losses": {"gmr": 1.9298965041398277, "coarse": 1.9041757832725723, "fine": 0.8186750120305001, "rotated_bce": 0.5123335899371869, "exist_pair": 0.21317023176899447}, "chains": 2632, "seconds": 51.17248249053955, "selected": false}
+{"fold": "C1", "arm": "shine", "epoch": 21, "step": 100, "loss": 5.1137542724609375}
+{"fold": "C1", "arm": "shine", "epoch": 21, "step": 200, "loss": 4.536931037902832}
+{"fold": "C1", "arm": "shine", "epoch": 21, "step": 300, "loss": 4.666335582733154}
+{"fold": "C1", "arm": "shine", "epoch": 21, "step": 400, "loss": 5.828916549682617}
+{"fold": "C1", "arm": "shine", "epoch": 21, "step": 500, "loss": 4.759103775024414}
+{"fold": "C1", "arm": "shine", "epoch": 21, "step": 600, "loss": 5.167586326599121}
+{"fold": "C1", "arm": "shine", "epoch": 21, "seen": {"pooled_auroc": 0.6796306811065371, "rows": 1451, "videos": 462, "source_pair_acc": 0.741869918699187, "source_pairs": 492, "same_query_pair_acc": 0.5922108624236284, "same_query_support": 47, "raw_r1_iou_05": 0.3584305408271474, "raw_r1_iou_07": 0.1855779427359491, "threshold_logit": -0.5961363315582275, "gated_r1_iou_05": 0.30010604453870626}, "losses": {"gmr": 1.9351778885513815, "coarse": 1.890932425177206, "fine": 0.815767404473299, "rotated_bce": 0.5102151937126026, "exist_pair": 0.2148920501443263}, "chains": 2632, "seconds": 51.428863525390625, "selected": false}
+{"fold": "C1", "arm": "shine", "epoch": 22, "step": 100, "loss": 5.448073387145996}
+{"fold": "C1", "arm": "shine", "epoch": 22, "step": 200, "loss": 5.141440391540527}
+{"fold": "C1", "arm": "shine", "epoch": 22, "step": 300, "loss": 5.123528003692627}
+{"fold": "C1", "arm": "shine", "epoch": 22, "step": 400, "loss": 6.613729000091553}
+{"fold": "C1", "arm": "shine", "epoch": 22, "step": 500, "loss": 4.479223728179932}
+{"fold": "C1", "arm": "shine", "epoch": 22, "step": 600, "loss": 5.163824558258057}
+{"fold": "C1", "arm": "shine", "epoch": 22, "seen": {"pooled_auroc": 0.6796181561610207, "rows": 1451, "videos": 462, "source_pair_acc": 0.7398373983739838, "source_pairs": 492, "same_query_pair_acc": 0.623900095176691, "same_query_support": 47, "raw_r1_iou_05": 0.35737009544008486, "raw_r1_iou_07": 0.18451749734888653, "threshold_logit": -0.6286654472351074, "gated_r1_iou_05": 0.3075291622481442}, "losses": {"gmr": 1.9220791513434297, "coarse": 1.860105362751926, "fine": 0.8131454835637362, "rotated_bce": 0.5102998892405838, "exist_pair": 0.21564858233008397}, "chains": 2632, "seconds": 51.4315071105957, "selected": false}
+{"fold": "C1", "arm": "shine", "epoch": 23, "step": 100, "loss": 5.547362327575684}
+{"fold": "C1", "arm": "shine", "epoch": 23, "step": 200, "loss": 4.138340473175049}
+{"fold": "C1", "arm": "shine", "epoch": 23, "step": 300, "loss": 5.951382637023926}
+{"fold": "C1", "arm": "shine", "epoch": 23, "step": 400, "loss": 5.292387962341309}
+{"fold": "C1", "arm": "shine", "epoch": 23, "step": 500, "loss": 4.527637481689453}
+{"fold": "C1", "arm": "shine", "epoch": 23, "step": 600, "loss": 5.164444923400879}
+{"fold": "C1", "arm": "shine", "epoch": 23, "seen": {"pooled_auroc": 0.6876195088551365, "rows": 1451, "videos": 462, "source_pair_acc": 0.7439024390243902, "source_pairs": 492, "same_query_pair_acc": 0.6021238218046729, "same_query_support": 47, "raw_r1_iou_05": 0.35737009544008486, "raw_r1_iou_07": 0.1823966065747614, "threshold_logit": -0.42267370223999023, "gated_r1_iou_05": 0.2831389183457052}, "losses": {"gmr": 1.9133325701064252, "coarse": 1.8102842051207475, "fine": 0.8173356507324521, "rotated_bce": 0.5007633799205797, "exist_pair": 0.21009301681264012}, "chains": 2632, "seconds": 51.41329526901245, "selected": false}
+{"fold": "C1", "arm": "shine", "epoch": 24, "step": 100, "loss": 5.289798259735107}
+{"fold": "C1", "arm": "shine", "epoch": 24, "step": 200, "loss": 5.20252799987793}
+{"fold": "C1", "arm": "shine", "epoch": 24, "step": 300, "loss": 5.204107284545898}
+{"fold": "C1", "arm": "shine", "epoch": 24, "step": 400, "loss": 5.612274169921875}
+{"fold": "C1", "arm": "shine", "epoch": 24, "step": 500, "loss": 5.379319190979004}
+{"fold": "C1", "arm": "shine", "epoch": 24, "step": 600, "loss": 5.9176154136657715}
+{"fold": "C1", "arm": "shine", "epoch": 24, "seen": {"pooled_auroc": 0.6765349320730456, "rows": 1451, "videos": 462, "source_pair_acc": 0.7540650406504065, "source_pairs": 492, "same_query_pair_acc": 0.6083483006355347, "same_query_support": 47, "raw_r1_iou_05": 0.352067868504772, "raw_r1_iou_07": 0.17815482502651114, "threshold_logit": -0.5803236961364746, "gated_r1_iou_05": 0.28525980911983034}, "losses": {"gmr": 1.9052992325423337, "coarse": 1.791983123880027, "fine": 0.8117281292256613, "rotated_bce": 0.4997058454844365, "exist_pair": 0.21006256450423377}, "chains": 2631, "seconds": 51.24006962776184, "selected": false}
+{"fold": "C1", "arm": "shine", "epoch": 25, "step": 100, "loss": 5.054856777191162}
+{"fold": "C1", "arm": "shine", "epoch": 25, "step": 200, "loss": 5.0449934005737305}
+{"fold": "C1", "arm": "shine", "epoch": 25, "step": 300, "loss": 5.074913024902344}
+{"fold": "C1", "arm": "shine", "epoch": 25, "step": 400, "loss": 5.758149147033691}
+{"fold": "C1", "arm": "shine", "epoch": 25, "step": 500, "loss": 5.352618217468262}
+{"fold": "C1", "arm": "shine", "epoch": 25, "step": 600, "loss": 5.446126937866211}
+{"fold": "C1", "arm": "shine", "epoch": 25, "seen": {"pooled_auroc": 0.6723662127069747, "rows": 1451, "videos": 462, "source_pair_acc": 0.7398373983739838, "source_pairs": 492, "same_query_pair_acc": 0.6312448190107764, "same_query_support": 47, "raw_r1_iou_05": 0.35737009544008486, "raw_r1_iou_07": 0.18345705196182396, "threshold_logit": -0.22564254701137543, "gated_r1_iou_05": 0.2682926829268293}, "losses": {"gmr": 1.9114001353460968, "coarse": 1.7676535314883142, "fine": 0.8067378273579126, "rotated_bce": 0.49514880373304015, "exist_pair": 0.20791942175181574}, "chains": 2632, "seconds": 51.364827156066895, "selected": false}
+{"fold": "C1", "arm": "shine", "epoch": 26, "step": 100, "loss": 5.550797939300537}
+{"fold": "C1", "arm": "shine", "epoch": 26, "step": 200, "loss": 5.374703407287598}
+{"fold": "C1", "arm": "shine", "epoch": 26, "step": 300, "loss": 5.393934726715088}
+{"fold": "C1", "arm": "shine", "epoch": 26, "step": 400, "loss": 4.712141513824463}
+{"fold": "C1", "arm": "shine", "epoch": 26, "step": 500, "loss": 4.80001974105835}
+{"fold": "C1", "arm": "shine", "epoch": 26, "step": 600, "loss": 3.5621907711029053}
+{"fold": "C1", "arm": "shine", "epoch": 26, "seen": {"pooled_auroc": 0.6851228697155168, "rows": 1451, "videos": 462, "source_pair_acc": 0.7479674796747967, "source_pairs": 492, "same_query_pair_acc": 0.6074429707408431, "same_query_support": 47, "raw_r1_iou_05": 0.35100742311770944, "raw_r1_iou_07": 0.17815482502651114, "threshold_logit": -0.6355949640274048, "gated_r1_iou_05": 0.30010604453870626}, "losses": {"gmr": 1.8926448713320005, "coarse": 1.765390315226146, "fine": 0.7961591690959902, "rotated_bce": 0.49509245587518513, "exist_pair": 0.20941739327068679}, "chains": 2632, "seconds": 51.543782472610474, "selected": false}
+{"fold": "C1", "arm": "shine", "epoch": 27, "step": 100, "loss": 4.456697940826416}
+{"fold": "C1", "arm": "shine", "epoch": 27, "step": 200, "loss": 5.2759809494018555}
+{"fold": "C1", "arm": "shine", "epoch": 27, "step": 300, "loss": 5.987940788269043}
+{"fold": "C1", "arm": "shine", "epoch": 27, "step": 400, "loss": 4.041106224060059}
+{"fold": "C1", "arm": "shine", "epoch": 27, "step": 500, "loss": 6.78125}
+{"fold": "C1", "arm": "shine", "epoch": 27, "step": 600, "loss": 4.433475017547607}
+{"fold": "C1", "arm": "shine", "epoch": 27, "seen": {"pooled_auroc": 0.679060796085537, "rows": 1451, "videos": 462, "source_pair_acc": 0.741869918699187, "source_pairs": 492, "same_query_pair_acc": 0.6125149673022013, "same_query_support": 47, "raw_r1_iou_05": 0.34994697773064687, "raw_r1_iou_07": 0.1792152704135737, "threshold_logit": -0.4145113229751587, "gated_r1_iou_05": 0.2725344644750795}, "losses": {"gmr": 1.893489932397941, "coarse": 1.745400059141649, "fine": 0.8012694403030952, "rotated_bce": 0.49244690928778023, "exist_pair": 0.2052482459000609}, "chains": 2632, "seconds": 51.312620878219604, "selected": false}
+{"fold": "C1", "arm": "shine", "epoch": 28, "step": 100, "loss": 4.119296550750732}
+{"fold": "C1", "arm": "shine", "epoch": 28, "step": 200, "loss": 4.474483013153076}
+{"fold": "C1", "arm": "shine", "epoch": 28, "step": 300, "loss": 4.147793769836426}
+{"fold": "C1", "arm": "shine", "epoch": 28, "step": 400, "loss": 5.102752685546875}
+{"fold": "C1", "arm": "shine", "epoch": 28, "step": 500, "loss": 3.9279935359954834}
+{"fold": "C1", "arm": "shine", "epoch": 28, "step": 600, "loss": 4.293729782104492}
+{"fold": "C1", "arm": "shine", "epoch": 28, "seen": {"pooled_auroc": 0.6927714364442514, "rows": 1451, "videos": 462, "source_pair_acc": 0.7459349593495935, "source_pairs": 492, "same_query_pair_acc": 0.6188495901261858, "same_query_support": 47, "raw_r1_iou_05": 0.3552492046659597, "raw_r1_iou_07": 0.17815482502651114, "threshold_logit": -0.34986311197280884, "gated_r1_iou_05": 0.2682926829268293}, "losses": {"gmr": 1.8939732746150355, "coarse": 1.7007861095721235, "fine": 0.7923824894482604, "rotated_bce": 0.49069644028383186, "exist_pair": 0.20570960375867814}, "chains": 2632, "seconds": 51.241331815719604, "selected": false}
+{"fold": "C1", "arm": "shine", "epoch": 29, "step": 100, "loss": 3.7915172576904297}
+{"fold": "C1", "arm": "shine", "epoch": 29, "step": 200, "loss": 5.389693737030029}
+{"fold": "C1", "arm": "shine", "epoch": 29, "step": 300, "loss": 4.466125965118408}
+{"fold": "C1", "arm": "shine", "epoch": 29, "step": 400, "loss": 4.926398277282715}
+{"fold": "C1", "arm": "shine", "epoch": 29, "step": 500, "loss": 5.141448020935059}
+{"fold": "C1", "arm": "shine", "epoch": 29, "step": 600, "loss": 3.910489559173584}
+{"fold": "C1", "arm": "shine", "epoch": 29, "seen": {"pooled_auroc": 0.6943015672881823, "rows": 1451, "videos": 462, "source_pair_acc": 0.7540650406504065, "source_pairs": 492, "same_query_pair_acc": 0.6240371035583803, "same_query_support": 47, "raw_r1_iou_05": 0.3552492046659597, "raw_r1_iou_07": 0.18769883351007424, "threshold_logit": 0.2036374807357788, "gated_r1_iou_05": 0.23329798515376457}, "losses": {"gmr": 1.8854174677361832, "coarse": 1.6963278454668977, "fine": 0.7923828043655059, "rotated_bce": 0.4868883698454019, "exist_pair": 0.2050755391396139}, "chains": 2632, "seconds": 51.22209906578064, "selected": false}
+{"fold": "C1", "arm": "shine", "epoch": 30, "step": 100, "loss": 4.141674518585205}
+{"fold": "C1", "arm": "shine", "epoch": 30, "step": 200, "loss": 5.183310508728027}
+{"fold": "C1", "arm": "shine", "epoch": 30, "step": 300, "loss": 6.174844741821289}
+{"fold": "C1", "arm": "shine", "epoch": 30, "step": 400, "loss": 4.819163799285889}
+{"fold": "C1", "arm": "shine", "epoch": 30, "step": 500, "loss": 4.63967227935791}
+{"fold": "C1", "arm": "shine", "epoch": 30, "step": 600, "loss": 5.5172953605651855}
+{"fold": "C1", "arm": "shine", "epoch": 30, "seen": {"pooled_auroc": 0.6911745058908993, "rows": 1451, "videos": 462, "source_pair_acc": 0.7479674796747967, "source_pairs": 492, "same_query_pair_acc": 0.6453459365693408, "same_query_support": 47, "raw_r1_iou_05": 0.3647932131495228, "raw_r1_iou_07": 0.17179215270413573, "threshold_logit": -0.7039677500724792, "gated_r1_iou_05": 0.29692470837751855}, "losses": {"gmr": 1.8835182550467982, "coarse": 1.7134267163312906, "fine": 0.7883571783550605, "rotated_bce": 0.4874368179079972, "exist_pair": 0.2117492688620197}, "chains": 2632, "seconds": 51.12544298171997, "selected": false}
+{"fold": "C1", "arm": "shine", "epoch": 31, "step": 100, "loss": 4.641330242156982}
+{"fold": "C1", "arm": "shine", "epoch": 31, "step": 200, "loss": 6.025791645050049}
+{"fold": "C1", "arm": "shine", "epoch": 31, "step": 300, "loss": 5.230044364929199}
+{"fold": "C1", "arm": "shine", "epoch": 31, "step": 400, "loss": 5.959230899810791}
+{"fold": "C1", "arm": "shine", "epoch": 31, "step": 500, "loss": 4.82086706161499}
+{"fold": "C1", "arm": "shine", "epoch": 31, "step": 600, "loss": 4.284920692443848}
+{"fold": "C1", "arm": "shine", "epoch": 31, "seen": {"pooled_auroc": 0.6822588321740801, "rows": 1451, "videos": 462, "source_pair_acc": 0.7479674796747967, "source_pairs": 492, "same_query_pair_acc": 0.6373913911147954, "same_query_support": 47, "raw_r1_iou_05": 0.3647932131495228, "raw_r1_iou_07": 0.18133616118769882, "threshold_logit": -0.508483350276947, "gated_r1_iou_05": 0.29692470837751855}, "losses": {"gmr": 1.8818719727652413, "coarse": 1.6709794138068486, "fine": 0.7912068873372121, "rotated_bce": 0.48275906470318336, "exist_pair": 0.20327057327116602}, "chains": 2631, "seconds": 51.05498027801514, "selected": false}
+{"fold": "C1", "arm": "shine", "epoch": 32, "step": 100, "loss": 5.752213001251221}
+{"fold": "C1", "arm": "shine", "epoch": 32, "step": 200, "loss": 5.047724723815918}
+{"fold": "C1", "arm": "shine", "epoch": 32, "step": 300, "loss": 5.392362594604492}
+{"fold": "C1", "arm": "shine", "epoch": 32, "step": 400, "loss": 4.607181072235107}
+{"fold": "C1", "arm": "shine", "epoch": 32, "step": 500, "loss": 4.263856887817383}
+{"fold": "C1", "arm": "shine", "epoch": 32, "step": 600, "loss": 4.375839710235596}
+{"fold": "C1", "arm": "shine", "epoch": 32, "seen": {"pooled_auroc": 0.6917861407302878, "rows": 1451, "videos": 462, "source_pair_acc": 0.7439024390243902, "source_pairs": 492, "same_query_pair_acc": 0.64846757852077, "same_query_support": 47, "raw_r1_iou_05": 0.3531283138918346, "raw_r1_iou_07": 0.1728525980911983, "threshold_logit": -0.0958031490445137, "gated_r1_iou_05": 0.2672322375397667}, "losses": {"gmr": 1.870645773447031, "coarse": 1.6235090158540064, "fine": 0.790795762080552, "rotated_bce": 0.4805450835081219, "exist_pair": 0.20344504596393748}, "chains": 2632, "seconds": 51.36374568939209, "selected": false}
+{"fold": "C1", "arm": "shine", "epoch": 33, "step": 100, "loss": 5.716866493225098}
+{"fold": "C1", "arm": "shine", "epoch": 33, "step": 200, "loss": 4.989985942840576}
+{"fold": "C1", "arm": "shine", "epoch": 33, "step": 300, "loss": 5.0115532875061035}
+{"fold": "C1", "arm": "shine", "epoch": 33, "step": 400, "loss": 4.301312446594238}
+{"fold": "C1", "arm": "shine", "epoch": 33, "step": 500, "loss": 4.48171329498291}
+{"fold": "C1", "arm": "shine", "epoch": 33, "step": 600, "loss": 4.285419464111328}
+{"fold": "C1", "arm": "shine", "epoch": 33, "seen": {"pooled_auroc": 0.6952534631474354, "rows": 1451, "videos": 462, "source_pair_acc": 0.75, "source_pairs": 492, "same_query_pair_acc": 0.6321850726106045, "same_query_support": 47, "raw_r1_iou_05": 0.3531283138918346, "raw_r1_iou_07": 0.17179215270413573, "threshold_logit": -0.11884048581123352, "gated_r1_iou_05": 0.2608695652173913}, "losses": {"gmr": 1.8822373298526172, "coarse": 1.6370941114280724, "fine": 0.7889390386256041, "rotated_bce": 0.47764646665031785, "exist_pair": 0.20057329288959833}, "chains": 2631, "seconds": 51.74543786048889, "selected": false}
+{"fold": "C1", "arm": "shine", "epoch": 34, "step": 100, "loss": 5.413564682006836}
+{"fold": "C1", "arm": "shine", "epoch": 34, "step": 200, "loss": 4.792473316192627}
+{"fold": "C1", "arm": "shine", "epoch": 34, "step": 300, "loss": 4.645254611968994}
+{"fold": "C1", "arm": "shine", "epoch": 34, "step": 400, "loss": 5.356400489807129}
+{"fold": "C1", "arm": "shine", "epoch": 34, "step": 500, "loss": 4.786711692810059}
+{"fold": "C1", "arm": "shine", "epoch": 34, "step": 600, "loss": 3.816483497619629}
+{"fold": "C1", "arm": "shine", "epoch": 34, "seen": {"pooled_auroc": 0.6933872462654789, "rows": 1451, "videos": 462, "source_pair_acc": 0.7479674796747967, "source_pairs": 492, "same_query_pair_acc": 0.6568546406312363, "same_query_support": 47, "raw_r1_iou_05": 0.3531283138918346, "raw_r1_iou_07": 0.17497348886532343, "threshold_logit": -0.08006816357374191, "gated_r1_iou_05": 0.256627783669141}, "losses": {"gmr": 1.8696245906200815, "coarse": 1.619332009626377, "fine": 0.7741634010091016, "rotated_bce": 0.4708393232211878, "exist_pair": 0.20204578914779017}, "chains": 2631, "seconds": 51.25196623802185, "selected": false}
+{"fold": "C1", "arm": "shine", "epoch": 35, "step": 100, "loss": 4.76619291305542}
+{"fold": "C1", "arm": "shine", "epoch": 35, "step": 200, "loss": 5.084049224853516}
+{"fold": "C1", "arm": "shine", "epoch": 35, "step": 300, "loss": 4.547267913818359}
+{"fold": "C1", "arm": "shine", "epoch": 35, "step": 400, "loss": 3.6627984046936035}
+{"fold": "C1", "arm": "shine", "epoch": 35, "step": 500, "loss": 4.586742401123047}
+{"fold": "C1", "arm": "shine", "epoch": 35, "step": 600, "loss": 5.173203945159912}
+{"fold": "C1", "arm": "shine", "epoch": 35, "seen": {"pooled_auroc": 0.693685757466955, "rows": 1451, "videos": 462, "source_pair_acc": 0.758130081300813, "source_pairs": 492, "same_query_pair_acc": 0.6685567682908108, "same_query_support": 47, "raw_r1_iou_05": 0.344644750795334, "raw_r1_iou_07": 0.176033934252386, "threshold_logit": -0.04742059484124184, "gated_r1_iou_05": 0.256627783669141}, "losses": {"gmr": 1.8621408837906859, "coarse": 1.6147655389048046, "fine": 0.7824375811500027, "rotated_bce": 0.47658219002753405, "exist_pair": 0.2031555276793657}, "chains": 2631, "seconds": 51.631678104400635, "selected": false}
+{"fold": "C1", "arm": "shine", "epoch": 36, "step": 100, "loss": 6.236214637756348}
+{"fold": "C1", "arm": "shine", "epoch": 36, "step": 200, "loss": 4.914096355438232}
+{"fold": "C1", "arm": "shine", "epoch": 36, "step": 300, "loss": 4.693695545196533}
+{"fold": "C1", "arm": "shine", "epoch": 36, "step": 400, "loss": 3.0221447944641113}
+{"fold": "C1", "arm": "shine", "epoch": 36, "step": 500, "loss": 6.6045823097229}
+{"fold": "C1", "arm": "shine", "epoch": 36, "step": 600, "loss": 3.8617982864379883}
+{"fold": "C1", "arm": "shine", "epoch": 36, "seen": {"pooled_auroc": 0.7036138642796903, "rows": 1451, "videos": 462, "source_pair_acc": 0.7520325203252033, "source_pairs": 492, "same_query_pair_acc": 0.668903318903319, "same_query_support": 47, "raw_r1_iou_05": 0.3563096500530223, "raw_r1_iou_07": 0.18133616118769882, "threshold_logit": -0.09141213446855545, "gated_r1_iou_05": 0.25874867444326616}, "losses": {"gmr": 1.8548947067246249, "coarse": 1.5899581573563868, "fine": 0.7850109877285624, "rotated_bce": 0.47098754855908886, "exist_pair": 0.19983807442169127}, "chains": 2631, "seconds": 51.11310410499573, "selected": false}
+{"fold": "C1", "arm": "shine", "epoch": 37, "step": 100, "loss": 5.27349853515625}
+{"fold": "C1", "arm": "shine", "epoch": 37, "step": 200, "loss": 3.6392226219177246}
+{"fold": "C1", "arm": "shine", "epoch": 37, "step": 300, "loss": 3.6137948036193848}
+{"fold": "C1", "arm": "shine", "epoch": 37, "step": 400, "loss": 4.848269939422607}
+{"fold": "C1", "arm": "shine", "epoch": 37, "step": 500, "loss": 4.601533889770508}
+{"fold": "C1", "arm": "shine", "epoch": 37, "step": 600, "loss": 3.9015979766845703}
+{"fold": "C1", "arm": "shine", "epoch": 37, "seen": {"pooled_auroc": 0.7065864513489366, "rows": 1451, "videos": 462, "source_pair_acc": 0.75, "source_pairs": 492, "same_query_pair_acc": 0.6502582819072181, "same_query_support": 47, "raw_r1_iou_05": 0.37009544008483564, "raw_r1_iou_07": 0.17073170731707318, "threshold_logit": -0.16220475733280182, "gated_r1_iou_05": 0.2831389183457052}, "losses": {"gmr": 1.8500833107345371, "coarse": 1.5703226968329003, "fine": 0.7804046068057463, "rotated_bce": 0.46998898843501474, "exist_pair": 0.19626437230506277}, "chains": 2632, "seconds": 50.83746647834778, "selected": false}
+{"fold": "C1", "arm": "shine", "epoch": 38, "step": 100, "loss": 4.430254936218262}
+{"fold": "C1", "arm": "shine", "epoch": 38, "step": 200, "loss": 4.516761779785156}
+{"fold": "C1", "arm": "shine", "epoch": 38, "step": 300, "loss": 4.8225483894348145}
+{"fold": "C1", "arm": "shine", "epoch": 38, "step": 400, "loss": 3.682419538497925}
+{"fold": "C1", "arm": "shine", "epoch": 38, "step": 500, "loss": 4.87867546081543}
+{"fold": "C1", "arm": "shine", "epoch": 38, "step": 600, "loss": 4.449712753295898}
+{"fold": "C1", "arm": "shine", "epoch": 38, "seen": {"pooled_auroc": 0.7054779936707275, "rows": 1451, "videos": 462, "source_pair_acc": 0.7560975609756098, "source_pairs": 492, "same_query_pair_acc": 0.6182224985416475, "same_query_support": 47, "raw_r1_iou_05": 0.352067868504772, "raw_r1_iou_07": 0.18027571580063625, "threshold_logit": 0.13227146863937378, "gated_r1_iou_05": 0.24602332979851538}, "losses": {"gmr": 1.8545746747121261, "coarse": 1.5612395974187503, "fine": 0.7796298574803449, "rotated_bce": 0.4725159489320404, "exist_pair": 0.20592545942752977}, "chains": 2631, "seconds": 50.836017370224, "selected": false}
+{"fold": "C1", "arm": "shine", "epoch": 39, "step": 100, "loss": 3.98760724067688}
+{"fold": "C1", "arm": "shine", "epoch": 39, "step": 200, "loss": 4.6990532875061035}
+{"fold": "C1", "arm": "shine", "epoch": 39, "step": 300, "loss": 4.50832986831665}
+{"fold": "C1", "arm": "shine", "epoch": 39, "step": 400, "loss": 6.032272815704346}
+{"fold": "C1", "arm": "shine", "epoch": 39, "step": 500, "loss": 4.860782623291016}
+{"fold": "C1", "arm": "shine", "epoch": 39, "step": 600, "loss": 3.5781960487365723}
+{"fold": "C1", "arm": "shine", "epoch": 39, "seen": {"pooled_auroc": 0.7018812468165764, "rows": 1451, "videos": 462, "source_pair_acc": 0.75, "source_pairs": 492, "same_query_pair_acc": 0.6412318473488686, "same_query_support": 47, "raw_r1_iou_05": 0.3669141039236479, "raw_r1_iou_07": 0.18133616118769882, "threshold_logit": -0.35830557346343994, "gated_r1_iou_05": 0.2916224814422057}, "losses": {"gmr": 1.8442153436072328, "coarse": 1.5567477105417513, "fine": 0.7728997007872921, "rotated_bce": 0.4642349821274766, "exist_pair": 0.1973480931582286}, "chains": 2632, "seconds": 51.378634452819824, "selected": false}
+{"fold": "C1", "arm": "shine", "epoch": 40, "step": 100, "loss": 4.618285655975342}
+{"fold": "C1", "arm": "shine", "epoch": 40, "step": 200, "loss": 4.201083660125732}
+{"fold": "C1", "arm": "shine", "epoch": 40, "step": 300, "loss": 4.864989280700684}
+{"fold": "C1", "arm": "shine", "epoch": 40, "step": 400, "loss": 4.096567630767822}
+{"fold": "C1", "arm": "shine", "epoch": 40, "step": 500, "loss": 5.5339860916137695}
+{"fold": "C1", "arm": "shine", "epoch": 40, "step": 600, "loss": 5.099750518798828}
+{"fold": "C1", "arm": "shine", "epoch": 40, "seen": {"pooled_auroc": 0.6983011998897806, "rows": 1451, "videos": 462, "source_pair_acc": 0.7439024390243902, "source_pairs": 492, "same_query_pair_acc": 0.6654823309078629, "same_query_support": 47, "raw_r1_iou_05": 0.35949098621421, "raw_r1_iou_07": 0.1792152704135737, "threshold_logit": -0.27964702248573303, "gated_r1_iou_05": 0.27465535524920465}, "losses": {"gmr": 1.8393051919603782, "coarse": 1.5437238285244417, "fine": 0.7772744988688582, "rotated_bce": 0.46117606951563556, "exist_pair": 0.1928928294367692}, "chains": 2632, "seconds": 51.135122299194336, "selected": false}
+{"fold": "C1", "arm": "shine", "epoch": 41, "step": 100, "loss": 4.8796281814575195}
+{"fold": "C1", "arm": "shine", "epoch": 41, "step": 200, "loss": 4.889307975769043}
+{"fold": "C1", "arm": "shine", "epoch": 41, "step": 300, "loss": 4.445404052734375}
+{"fold": "C1", "arm": "shine", "epoch": 41, "step": 400, "loss": 6.1494460105896}
+{"fold": "C1", "arm": "shine", "epoch": 41, "step": 500, "loss": 5.492466449737549}
+{"fold": "C1", "arm": "shine", "epoch": 41, "step": 600, "loss": 5.563340663909912}
+{"fold": "C1", "arm": "shine", "epoch": 41, "seen": {"pooled_auroc": 0.7096383630731207, "rows": 1451, "videos": 462, "source_pair_acc": 0.7378048780487805, "source_pairs": 492, "same_query_pair_acc": 0.6541348131773663, "same_query_support": 47, "raw_r1_iou_05": 0.3647932131495228, "raw_r1_iou_07": 0.18769883351007424, "threshold_logit": 0.08034317195415497, "gated_r1_iou_05": 0.2704135737009544}, "losses": {"gmr": 1.8264432373742565, "coarse": 1.506887902967111, "fine": 0.78074386815532, "rotated_bce": 0.4567838070693349, "exist_pair": 0.19140678307911632}, "chains": 2631, "seconds": 50.94355082511902, "selected": false}
+{"fold": "C1", "arm": "shine", "epoch": 42, "step": 100, "loss": 3.933992862701416}
+{"fold": "C1", "arm": "shine", "epoch": 42, "step": 200, "loss": 6.142273902893066}
+{"fold": "C1", "arm": "shine", "epoch": 42, "step": 300, "loss": 5.190575122833252}
+{"fold": "C1", "arm": "shine", "epoch": 42, "step": 400, "loss": 4.676796913146973}
+{"fold": "C1", "arm": "shine", "epoch": 42, "step": 500, "loss": 4.168666839599609}
+{"fold": "C1", "arm": "shine", "epoch": 42, "step": 600, "loss": 4.8457441329956055}
+{"fold": "C1", "arm": "shine", "epoch": 42, "seen": {"pooled_auroc": 0.6958066482410801, "rows": 1451, "videos": 462, "source_pair_acc": 0.7520325203252033, "source_pairs": 492, "same_query_pair_acc": 0.6741633661846428, "same_query_support": 47, "raw_r1_iou_05": 0.3584305408271474, "raw_r1_iou_07": 0.19088016967126192, "threshold_logit": -0.4024290144443512, "gated_r1_iou_05": 0.2863202545068929}, "losses": {"gmr": 1.8233663452432511, "coarse": 1.4952230690369852, "fine": 0.7699297188263171, "rotated_bce": 0.4596994456956814, "exist_pair": 0.1930194546192202}, "chains": 2632, "seconds": 51.00024604797363, "selected": false}
+{"fold": "C1", "arm": "shine", "epoch": 43, "step": 100, "loss": 4.008825302124023}
+{"fold": "C1", "arm": "shine", "epoch": 43, "step": 200, "loss": 4.503017425537109}
+{"fold": "C1", "arm": "shine", "epoch": 43, "step": 300, "loss": 4.438660621643066}
+{"fold": "C1", "arm": "shine", "epoch": 43, "step": 400, "loss": 5.143261909484863}
+{"fold": "C1", "arm": "shine", "epoch": 43, "step": 500, "loss": 3.57381010055542}
+{"fold": "C1", "arm": "shine", "epoch": 43, "step": 600, "loss": 2.994831085205078}
+{"fold": "C1", "arm": "shine", "epoch": 43, "seen": {"pooled_auroc": 0.699975367607151, "rows": 1451, "videos": 462, "source_pair_acc": 0.758130081300813, "source_pairs": 492, "same_query_pair_acc": 0.6697522335820209, "same_query_support": 47, "raw_r1_iou_05": 0.35737009544008486, "raw_r1_iou_07": 0.1823966065747614, "threshold_logit": -0.5633622407913208, "gated_r1_iou_05": 0.2948038176033934}, "losses": {"gmr": 1.8308275253214734, "coarse": 1.4949980823374085, "fine": 0.7753229989106895, "rotated_bce": 0.45601272813998456, "exist_pair": 0.18965983185329754}, "chains": 2632, "seconds": 50.926212310791016, "selected": false}
+{"fold": "C1", "arm": "shine", "epoch": 44, "step": 100, "loss": 3.7723488807678223}
+{"fold": "C1", "arm": "shine", "epoch": 44, "step": 200, "loss": 4.880676746368408}
+{"fold": "C1", "arm": "shine", "epoch": 44, "step": 300, "loss": 3.8563172817230225}
+{"fold": "C1", "arm": "shine", "epoch": 44, "step": 400, "loss": 4.070512771606445}
+{"fold": "C1", "arm": "shine", "epoch": 44, "step": 500, "loss": 4.828554153442383}
+{"fold": "C1", "arm": "shine", "epoch": 44, "step": 600, "loss": 3.9425504207611084}
+{"fold": "C1", "arm": "shine", "epoch": 44, "seen": {"pooled_auroc": 0.6993115454947771, "rows": 1451, "videos": 462, "source_pair_acc": 0.7540650406504065, "source_pairs": 492, "same_query_pair_acc": 0.6537318473488686, "same_query_support": 47, "raw_r1_iou_05": 0.35418875927889715, "raw_r1_iou_07": 0.1855779427359491, "threshold_logit": -0.5842623114585876, "gated_r1_iou_05": 0.29374337221633084}, "losses": {"gmr": 1.8171978583814163, "coarse": 1.484187307011755, "fine": 0.7708187847423699, "rotated_bce": 0.4536578104715217, "exist_pair": 0.19159621512062863}, "chains": 2632, "seconds": 50.8473117351532, "selected": false}
+{"fold": "C1", "arm": "shine", "epoch": 45, "step": 100, "loss": 3.62038254737854}
+{"fold": "C1", "arm": "shine", "epoch": 45, "step": 200, "loss": 3.9508676528930664}
+{"fold": "C1", "arm": "shine", "epoch": 45, "step": 300, "loss": 4.720365047454834}
+{"fold": "C1", "arm": "shine", "epoch": 45, "step": 400, "loss": 4.33516263961792}
+{"fold": "C1", "arm": "shine", "epoch": 45, "step": 500, "loss": 4.186855316162109}
+{"fold": "C1", "arm": "shine", "epoch": 45, "step": 600, "loss": 3.909724473953247}
+{"fold": "C1", "arm": "shine", "epoch": 45, "seen": {"pooled_auroc": 0.7001653292808176, "rows": 1451, "videos": 462, "source_pair_acc": 0.7357723577235772, "source_pairs": 492, "same_query_pair_acc": 0.6426744650148906, "same_query_support": 47, "raw_r1_iou_05": 0.34782608695652173, "raw_r1_iou_07": 0.18769883351007424, "threshold_logit": -0.4619370400905609, "gated_r1_iou_05": 0.29374337221633084}, "losses": {"gmr": 1.8188648448526679, "coarse": 1.4723212854840473, "fine": 0.7650165372615889, "rotated_bce": 0.451991873196012, "exist_pair": 0.19275822621058264}, "chains": 2632, "seconds": 50.83313512802124, "selected": false}
+{"fold": "C1", "arm": "shine", "epoch": 46, "step": 100, "loss": 3.3026845455169678}
+{"fold": "C1", "arm": "shine", "epoch": 46, "step": 200, "loss": 4.639278888702393}
+{"fold": "C1", "arm": "shine", "epoch": 46, "step": 300, "loss": 4.346025466918945}
+{"fold": "C1", "arm": "shine", "epoch": 46, "step": 400, "loss": 3.669031858444214}
+{"fold": "C1", "arm": "shine", "epoch": 46, "step": 500, "loss": 4.097170829772949}
+{"fold": "C1", "arm": "shine", "epoch": 46, "step": 600, "loss": 4.080511093139648}
+{"fold": "C1", "arm": "shine", "epoch": 46, "seen": {"pooled_auroc": 0.7044697355566503, "rows": 1451, "videos": 462, "source_pair_acc": 0.7540650406504065, "source_pairs": 492, "same_query_pair_acc": 0.6541939148322128, "same_query_support": 47, "raw_r1_iou_05": 0.35737009544008486, "raw_r1_iou_07": 0.18027571580063625, "threshold_logit": -0.2815174162387848, "gated_r1_iou_05": 0.2926829268292683}, "losses": {"gmr": 1.8139246336232564, "coarse": 1.4488936970661477, "fine": 0.7665004929057733, "rotated_bce": 0.448584291982071, "exist_pair": 0.18897189781160695}, "chains": 2631, "seconds": 50.87222075462341, "selected": false}
+{"fold": "C1", "arm": "shine", "epoch": 47, "step": 100, "loss": 4.9319844245910645}
+{"fold": "C1", "arm": "shine", "epoch": 47, "step": 200, "loss": 5.437036991119385}
+{"fold": "C1", "arm": "shine", "epoch": 47, "step": 300, "loss": 3.421051502227783}
+{"fold": "C1", "arm": "shine", "epoch": 47, "step": 400, "loss": 5.317523956298828}
+{"fold": "C1", "arm": "shine", "epoch": 47, "step": 500, "loss": 5.261416912078857}
+{"fold": "C1", "arm": "shine", "epoch": 47, "step": 600, "loss": 4.48679780960083}
+{"fold": "C1", "arm": "shine", "epoch": 47, "seen": {"pooled_auroc": 0.7115964295555315, "rows": 1451, "videos": 462, "source_pair_acc": 0.7520325203252033, "source_pairs": 492, "same_query_pair_acc": 0.6622720364741642, "same_query_support": 47, "raw_r1_iou_05": 0.36585365853658536, "raw_r1_iou_07": 0.17815482502651114, "threshold_logit": -0.03539738059043884, "gated_r1_iou_05": 0.2672322375397667}, "losses": {"gmr": 1.8014316204652236, "coarse": 1.4211204024343143, "fine": 0.7728127346665663, "rotated_bce": 0.4497646192785092, "exist_pair": 0.18467810693666506}, "chains": 2632, "seconds": 51.36606240272522, "selected": false}
+{"fold": "C1", "arm": "shine", "epoch": 48, "step": 100, "loss": 5.335975170135498}
+{"fold": "C1", "arm": "shine", "epoch": 48, "step": 200, "loss": 4.648259162902832}
+{"fold": "C1", "arm": "shine", "epoch": 48, "step": 300, "loss": 4.285066604614258}
+{"fold": "C1", "arm": "shine", "epoch": 48, "step": 400, "loss": 5.013612747192383}
+{"fold": "C1", "arm": "shine", "epoch": 48, "step": 500, "loss": 5.3966383934021}
+{"fold": "C1", "arm": "shine", "epoch": 48, "step": 600, "loss": 3.866314649581909}
+{"fold": "C1", "arm": "shine", "epoch": 48, "seen": {"pooled_auroc": 0.702620218602049, "rows": 1451, "videos": 462, "source_pair_acc": 0.741869918699187, "source_pairs": 492, "same_query_pair_acc": 0.6618610113290964, "same_query_support": 47, "raw_r1_iou_05": 0.3637327677624602, "raw_r1_iou_07": 0.1792152704135737, "threshold_logit": 0.04655803367495537, "gated_r1_iou_05": 0.26193001060445387}, "losses": {"gmr": 1.8069725128111507, "coarse": 1.42583217759444, "fine": 0.7648384257652839, "rotated_bce": 0.4510527189515282, "exist_pair": 0.18901719932343902}, "chains": 2631, "seconds": 51.84341335296631, "selected": false}
+{"fold": "C1", "arm": "shine", "epoch": 49, "step": 100, "loss": 4.674676895141602}
+{"fold": "C1", "arm": "shine", "epoch": 49, "step": 200, "loss": 4.17690896987915}
+{"fold": "C1", "arm": "shine", "epoch": 49, "step": 300, "loss": 3.3993303775787354}
+{"fold": "C1", "arm": "shine", "epoch": 49, "step": 400, "loss": 3.992802619934082}
+{"fold": "C1", "arm": "shine", "epoch": 49, "step": 500, "loss": 5.805832862854004}
+{"fold": "C1", "arm": "shine", "epoch": 49, "step": 600, "loss": 4.21699333190918}
+{"fold": "C1", "arm": "shine", "epoch": 49, "seen": {"pooled_auroc": 0.7019125591803677, "rows": 1451, "videos": 462, "source_pair_acc": 0.7520325203252033, "source_pairs": 492, "same_query_pair_acc": 0.6624332228055632, "same_query_support": 47, "raw_r1_iou_05": 0.35100742311770944, "raw_r1_iou_07": 0.18133616118769882, "threshold_logit": -0.379447877407074, "gated_r1_iou_05": 0.2831389183457052}, "losses": {"gmr": 1.7976869034912086, "coarse": 1.4126637677653582, "fine": 0.7588309155137343, "rotated_bce": 0.4414955956187654, "exist_pair": 0.1863191090380889}, "chains": 2631, "seconds": 51.39193677902222, "selected": false}
+{"fold": "C1", "arm": "shine", "epoch": 50, "step": 100, "loss": 4.703723430633545}
+{"fold": "C1", "arm": "shine", "epoch": 50, "step": 200, "loss": 4.386224269866943}
+{"fold": "C1", "arm": "shine", "epoch": 50, "step": 300, "loss": 3.798907995223999}
+{"fold": "C1", "arm": "shine", "epoch": 50, "step": 400, "loss": 5.001282215118408}
+{"fold": "C1", "arm": "shine", "epoch": 50, "step": 500, "loss": 3.1841883659362793}
+{"fold": "C1", "arm": "shine", "epoch": 50, "step": 600, "loss": 3.447209358215332}
+{"fold": "C1", "arm": "shine", "epoch": 50, "seen": {"pooled_auroc": 0.6985683987274656, "rows": 1451, "videos": 462, "source_pair_acc": 0.7378048780487805, "source_pairs": 492, "same_query_pair_acc": 0.6754490190660404, "same_query_support": 47, "raw_r1_iou_05": 0.352067868504772, "raw_r1_iou_07": 0.18027571580063625, "threshold_logit": -0.1746211051940918, "gated_r1_iou_05": 0.264050901378579}, "losses": {"gmr": 1.7878354117500745, "coarse": 1.4039418329583837, "fine": 0.7651875218359533, "rotated_bce": 0.44414216538149537, "exist_pair": 0.18544878145555277}, "chains": 2631, "seconds": 50.99596381187439, "selected": false}
+COMPLETED {"fold": "C1", "arm": "shine", "seed": 3407, "best_epoch": 1, "seen_val": {"pooled_auroc": 0.7599322817945742, "rows": 1451, "videos": 462, "source_pair_acc": 0.6910569105691057, "source_pairs": 492, "same_query_pair_acc": 0.5757940345706304, "same_query_support": 47, "raw_r1_iou_05": 0.3679745493107105, "raw_r1_iou_07": 0.17709437963944857, "threshold_logit": -0.307841956615448, "gated_r1_iou_05": 0.24284199363732767}, "epoch0": {"seen": {"pooled_auroc": 0.7882616210619483, "rows": 1451, "videos": 462, "source_pair_acc": 0.676829268292683, "source_pairs": 492, "same_query_pair_acc": 0.5633719412974733, "same_query_support": 47, "raw_r1_iou_05": 0.3743372216330859, "raw_r1_iou_07": 0.20042417815482502, "threshold_logit": 1.8752331733703613, "gated_r1_iou_05": 0.2735949098621421}}, "elapsed_seconds": 2571.5448701381683, "peak_gpu_bytes": 0, "formal_U_accessed": false}

@@ -1,6 +1,6 @@
 # Semantic-novelty GMR：下一阶段研究目录
 
-状态：`draft_not_executed`。更新时间：2026-10-04。本次交付仅撰写 Markdown，没有实施数据构造、模型修改、训练或推理，也没有提交或 push。
+状态：各方向包含设计、实施和实验结果，详见各目录 records。更新时间：2026-10-04。下文初始 01–08 方案保留文档阶段描述，之后的实施更新及方向 09/10 记录当前状态。
 
 研究依据是用户整理的 [semantic_novelty_GMR_next_stage_research.md](../semantic_novelty_GMR_next_stage_research.md)，该文件保留原样。证据锚点为 main commit [`6cd96d723806e4b2b2474c68f289921eb543ffcc`](https://github.com/chinagalaxy2002/Unseen3/tree/6cd96d723806e4b2b2474c68f289921eb543ffcc)。目录编号表示建议的研究优先级，不是已启动的实验队列，也不意味着需要依次完成所有方向。
 
@@ -10,7 +10,7 @@
 
 三条优先排查的解释是：正负 query 的语言边际相关性；监督不足以识别条件兼容性；单个 existence score 混合了跨 query 的语义偏置和视觉证据。这些是待验证假设。V5 Cq 在四个 inner folds 的 pooled Novel AUROC 都提高，而 source-pair PairAcc 都降低，使区分语言先验与视频条件证据成为当前首要任务。
 
-## 八个独立方向及优先级
+## 初始八个独立方向及优先级
 
 | 优先级 / 原总结编号 | 目录与完整 idea | 定位 | 最小实验要回答什么 | 依赖与成本 |
 |---|---|---|---|---|
@@ -52,3 +52,22 @@ Idea 05 随后完成了预先冻结的 Seen-only query-prior score-correction �
 ## 方向 09：先验受控的证据增量审计（PEI-0）
 
 [方向 09](09_prior_controlled_evidence_increment/README.md) 已实现 Stage 0 标签/特征审计、Stage 1 零训练相似度与双中心化、Stage 2 五 seed 视频分组交叉拟合 Cq、固定先验 offset 的 M2/M3、shuffle-refit null、共享视频 bootstrap 和条件功效模拟。13 项合成输入检查通过，尚未运行真实 PEI-0 实验。完整流程必须先通过有时间提取来源支持的 Stage 0 alignment gate；正式 U 不参与。冻结代码及判据见 [FREEZE](09_prior_controlled_evidence_increment/records/FREEZE.json)，验证记录见 [IMPLEMENTATION_VALIDATION](09_prior_controlled_evidence_increment/records/IMPLEMENTATION_VALIDATION.json)。
+
+
+## 方向 10：SHINE → GMR 单 seed 迁移
+
+[Idea 10](10_shine_absence_aware_transfer/README.md) 以用户提供的 [zxccade/SHINE](https://github.com/zxccade/SHINE) 为源码依据，已实现 coarse/fine saliency ranking 与最终 existence 监督的独立 Moment-DETR-GMR 迁移。按用户确认采用 batch 轮换 absent negative 和强制三层距离链；仅 seed 3407，先 A1/C1 各一折比较同起点十轮微调，优先检查 AUROC 与定位效果。已完成两个 folds × 两个 arms 的各十轮训练：Novel-dev AUROC A1 0.6122→0.6541（+4.18 pp）、C1 0.5455→0.5813（+3.58 pp），macro +3.88 pp；Seen macro +1.32 pp。该 pilot 未使用正式 U，未进行多 seed。定位和条件排序尚未一致改善，当前为 pooled 增益候选；[完整结果](10_shine_absence_aware_transfer/records/PILOT_RESULTS.md)包含配对区间和声明边界。
+
+Idea 10 的用户目标已明确为 COMMON_PROTOCOL 的正式 Seen→Unseen 退化缓解。已冻结五 split 的 canonical / 同起点 baseline50 / SHINE50 比较，仍只用 seed 3407；A1/C1 两 arms 均已完成 50 epochs，按 Seen-val 选模冻结后已完成正式 U 评测；用户随后取消五 split 收尾优先级，当前聚焦 A1/C1 诊断与修复。[正式方案](10_shine_absence_aware_transfer/FORMAL_EXPERIMENT_PLAN.md)。此前两折 Novel-dev 增益不得作为正式 U 结论。
+
+Idea 10 的 [A1/C1 正式评测](10_shine_absence_aware_transfer/records/formal/A1_C1_FORMAL_RESULTS.md) 未观察到退化缓解：SHINE 相对 baseline50 的 Unseen AUROC 分别 0.4858→0.4799、0.5747→0.5672，Seen 分别 0.8088→0.7517、0.7606→0.7365。两 split macro ΔUnseen −0.67 pp、ΔSeen −4.06 pp；Gap 缩小由 Seen 下降驱动。仅为两 split、单 seed 结果，不代表五 split 汇总。
+
+Idea 10 清空上下文后的执行入口：[交接文档](10_shine_absence_aware_transfer/records/formal/WORK_HANDOFF.md)、[后续任务及恢复提示](10_shine_absence_aware_transfer/records/formal/NEXT_ACTIONS.md)、[诊断分析](10_shine_absence_aware_transfer/records/formal/A1_C1_FAILURE_ANALYSIS.md)。这些文档区分已完成结果、实时训练快照和待验证消融；v2/v3 消融已完成，最新阶段为 v4 修复开发；先读交接顶部更新和实时状态。
+
+Idea 10 后续已完成 A1/C1 的 v2/v3 分项消融与[10-epoch 正式探索性评测](10_shine_absence_aware_transfer/records/ablation_test_v2_v3/RESULTS.md)。saliency-only 相对匹配 B0 的 macro ΔUnseen +.38 pp、ΔSeen +.26 pp，但 A1 −.40 pp/C1 +1.16 pp，尚无跨两折一致改善；新增 BCE/pair 的小幅 U 增量伴随 Seen 损伤。当前[低强度 v4 修复实验](10_shine_absence_aware_transfer/records/ablation_v4/README.md)已启动，继续单 seed、两卡各三任务、Seen-only 开发；权重在新 U 评测前固定。
+
+Idea 10 最新进展：低权重v4已完成，用户要求扩大coarse/fine-only训练预算，已启动[匹配50epoch对照](10_shine_absence_aware_transfer/records/saliency_v5/README.md)，A1/C1各B0/S1两任务并行、seed3407，结束后自动评测。10epoch的Seen−Unseen Gap平均只缩小.12pp（相对.47%），其中A1扩大.40pp、C1缩小.64pp；暂不能称稳定退化缓解。
+
+Idea 10 最新综合评估：A1/C1三模型50epoch与v2-v4均完成，详见[最终评估](10_shine_absence_aware_transfer/records/final_assessment/RESULTS.md)。coarse/fine-only相对同预算B0：Moment/QD/Flash macro ΔU +.27/+.65/−2.45pp，Gap缩小−.19/+.36/−3.04pp；不能认定跨模型普适缓解。Moment低BCE=.01无pair（10ep）U+.75pp、Seen−.04pp、Gap缩小.78pp，但A1 Seen−.42pp且两折U区间跨0，为待验证候选。当前没有新训练排程。
+
+Idea 10 已整理[2026-10-04统一实验README](10_shine_absence_aware_transfer/EXPERIMENTS_README.md)，包含三模型50epoch、Moment全部分项消融、低权重修复和局部证据侧线。完整baseline表包含逐fold/两foldmacro，训练与正式评测均有独立记录。

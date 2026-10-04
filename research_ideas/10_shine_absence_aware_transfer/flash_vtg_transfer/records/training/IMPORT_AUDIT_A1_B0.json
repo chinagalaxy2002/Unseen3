@@ -1,0 +1,10 @@
+{
+  "models": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/10_shine_absence_aware_transfer/flash_vtg_transfer/code/models/flash_vtg_gmr/model.py",
+  "dataset": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/10_shine_absence_aware_transfer/flash_vtg_transfer/code/training/flash_vtg_gmr/dataset.py",
+  "checkpoint_source": "/home/guoxiangyu/paper/Openword/generalized-moment-retrieval/results/semantic_existence/multi_split_v2/A1/flash/charadesSTA-video_tef-seen_only_seed3407_100ep-2026-09-28-19-04-42/model_best.ckpt",
+  "checkpoint_sha256": "73a0861f08216f11c2f335c51194919913d49bcbc41930e251a0568b035cadd3",
+  "train_chain_support": 6998,
+  "device": "cuda:0",
+  "python": "3.10.20 (main, Jun 11 2026, 15:17:37) [GCC 14.3.0]",
+  "torch": "2.6.0+cu124"
+}

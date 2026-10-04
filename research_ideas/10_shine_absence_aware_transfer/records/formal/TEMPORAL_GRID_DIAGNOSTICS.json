@@ -1,0 +1,26 @@
+{
+  "A1": {
+    "positives": 7108,
+    "feature_seconds_if_uniform_duration_over_length_quantiles": [
+      0.986621114379158,
+      0.9998877777777778,
+      1.0133333333333334
+    ],
+    "positive_rows_start_clamped_past_feature_length": 0,
+    "positive_rows_end_clipped": 518,
+    "nominal_clip_length": 1,
+    "limitation": "duration/length is a diagnostic proxy, not verified extraction timestamps"
+  },
+  "C1": {
+    "positives": 9016,
+    "feature_seconds_if_uniform_duration_over_length_quantiles": [
+      0.9866807787218124,
+      0.9997641975308643,
+      1.0133333333333332
+    ],
+    "positive_rows_start_clamped_past_feature_length": 0,
+    "positive_rows_end_clipped": 625,
+    "nominal_clip_length": 1,
+    "limitation": "duration/length is a diagnostic proxy, not verified extraction timestamps"
+  }
+}

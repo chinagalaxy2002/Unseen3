@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/10_shine_absence_aware_transfer/code/worker_ablation_v2.py", line 28, in <module>
+    if rc: raise RuntimeError(f'Trainer exited {rc}')
+RuntimeError: Trainer exited 1

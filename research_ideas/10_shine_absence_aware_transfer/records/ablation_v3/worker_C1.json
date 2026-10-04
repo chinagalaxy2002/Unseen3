@@ -1,0 +1,33 @@
+{
+  "status": "completed",
+  "fold": "C1",
+  "device": "cuda:1",
+  "pid": 2002736,
+  "started": 1791098843.2168524,
+  "trainer_pids": {
+    "BCE_only": 2002748,
+    "Pair_only": 2002750,
+    "Weak_BCE_pair": 2002752
+  },
+  "runs": {
+    "BCE_only": {
+      "status": "completed",
+      "epochs_done": 10,
+      "seconds": 869.4663150310516,
+      "checkpoint_sha256": "9106f9d5be449c88eb5ed7ea44a5e100efb2232f3b13241d26e426e65783e43b"
+    },
+    "Pair_only": {
+      "status": "completed",
+      "epochs_done": 10,
+      "seconds": 879.9839737415314,
+      "checkpoint_sha256": "749485368302027ff9ac24aa3e51f7eaf31410e37234a6b54d6f488040080f58"
+    },
+    "Weak_BCE_pair": {
+      "status": "completed",
+      "epochs_done": 10,
+      "seconds": 872.4424257278442,
+      "checkpoint_sha256": "cb9e58b2f0900054f4b2df75b155e1610163b6471da781cdcc5906a98b3baaff"
+    }
+  },
+  "elapsed_seconds": 930.8031868934631
+}

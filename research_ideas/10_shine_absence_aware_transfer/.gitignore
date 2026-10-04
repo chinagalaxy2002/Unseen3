@@ -1,0 +1,36 @@
+# Keep source, configs and experiment evidence; large runtime artifacts stay local.
+artifacts/
+data/
+code/_deps/
+vendor/shine/data/
+/runs/**
+!/runs/**/
+!/runs/**/*.json
+!/runs/**/predictions_seen.jsonl
+!/runs/**/predictions_novel.jsonl
+!/runs/**/predictions.jsonl
+!/records/**/*.log
+/qd_detr_transfer/runs/**
+!/qd_detr_transfer/runs/**/
+!/qd_detr_transfer/runs/**/*.json
+!/qd_detr_transfer/runs/**/predictions_seen.jsonl
+!/qd_detr_transfer/runs/**/predictions_novel.jsonl
+!/qd_detr_transfer/runs/**/predictions.jsonl
+!/qd_detr_transfer/records/**/*.log
+/flash_vtg_transfer/runs/**
+!/flash_vtg_transfer/runs/**/
+!/flash_vtg_transfer/runs/**/*.json
+!/flash_vtg_transfer/runs/**/predictions_seen.jsonl
+!/flash_vtg_transfer/runs/**/predictions_novel.jsonl
+!/flash_vtg_transfer/runs/**/predictions.jsonl
+!/flash_vtg_transfer/records/**/*.log
+/local_evidence_transfer/runs/**
+!/local_evidence_transfer/runs/**/
+!/local_evidence_transfer/runs/**/*.json
+!/local_evidence_transfer/runs/**/predictions_seen.jsonl
+!/local_evidence_transfer/runs/**/predictions_novel.jsonl
+!/local_evidence_transfer/runs/**/predictions.jsonl
+!/local_evidence_transfer/records/**/*.log
+
+# Transient scheduler lock
+*.lock

@@ -1,0 +1,11 @@
+{
+  "status": "passed",
+  "upstream_coarse_parity": true,
+  "upstream_red_fine_parity": true,
+  "padding_zero_gradient": true,
+  "empty_null_safe": true,
+  "real_mixed_batch_backward": true,
+  "temporal_fusion_gradient_l1": 15785.455953031778,
+  "existence_head_gradient": true,
+  "formal_U_accessed": false
+}

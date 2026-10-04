@@ -1,0 +1,36 @@
+{
+  "all_six_executing_optimizer_steps": true,
+  "progress": [
+    {
+      "split": "A1",
+      "arm": "Low_BCE_only",
+      "step": 500
+    },
+    {
+      "split": "A1",
+      "arm": "Low_Pair_only",
+      "step": 500
+    },
+    {
+      "split": "A1",
+      "arm": "Low_BCE_pair",
+      "step": 500
+    },
+    {
+      "split": "C1",
+      "arm": "Low_BCE_only",
+      "step": 500
+    },
+    {
+      "split": "C1",
+      "arm": "Low_Pair_only",
+      "step": 500
+    },
+    {
+      "split": "C1",
+      "arm": "Low_BCE_pair",
+      "step": 500
+    }
+  ],
+  "formal_U_accessed_by_training": false
+}

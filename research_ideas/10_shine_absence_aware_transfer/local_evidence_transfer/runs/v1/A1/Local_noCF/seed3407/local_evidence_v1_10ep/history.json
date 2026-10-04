@@ -1,0 +1,622 @@
+[
+  {
+    "epoch": 1,
+    "seen": {
+      "pooled_auroc": 0.8400188991259155,
+      "rows": 1257,
+      "videos": 389,
+      "source_pair_acc": 0.7333333333333333,
+      "source_pairs": 510,
+      "same_query_pair_acc": 0.7543688949938949,
+      "same_query_support": 52,
+      "raw_r1_iou_05": 0.38420348058902276,
+      "raw_r1_iou_07": 0.19143239625167335,
+      "threshold_logit": 5.352230072021484,
+      "gated_r1_iou_05": 0.285140562248996,
+      "score_distribution": {
+        "0": {
+          "mean": -1.9134060512515991,
+          "std": 6.979825633611848,
+          "quantiles": [
+            -10.596147537231445,
+            -2.6118762493133545,
+            8.307906723022462
+          ]
+        },
+        "1": {
+          "mean": 7.55892410456456,
+          "std": 5.891772811642523,
+          "quantiles": [
+            -1.6819433212280273,
+            9.712008476257324,
+            13.360010147094727
+          ]
+        }
+      }
+    },
+    "losses": {
+      "gmr": 0.9372214827838884,
+      "local_residual_abs": 0.0035228530198808884,
+      "pool_entropy": 3.3381983595709817,
+      "gmr_loss_span": 0.02294875898478089,
+      "gmr_loss_giou": 0.16752252719437766,
+      "gmr_loss_label": 0.01115333793670126,
+      "gmr_class_error": 1.426845876700816,
+      "gmr_loss_saliency": 0.0,
+      "gmr_loss_exist": 0.04579371207602626,
+      "gmr_loss_span_0": 0.02314246073018995,
+      "gmr_loss_giou_0": 0.16933020594837941,
+      "gmr_loss_label_0": 0.012262372186210103,
+      "gmr_class_error_0": 1.557755892161543,
+      "gmr_loss_exist_0": 0.0,
+      "coarse": 3.3043648842098987,
+      "fine": 0.8687045229633501,
+      "rotated_bce": 7.087425077714885,
+      "exist_pair": 1.3764400328942281,
+      "total": 0.9372214827838884
+    },
+    "chains": 2152,
+    "seconds": 64.6239058971405,
+    "selected": true,
+    "exposure_sha256": "141325fad5754388325eabc4189b9256ef47aa7cd740e6b70a9fdeb466605a14",
+    "local_output_weight_norm": 0.004467794671654701
+  },
+  {
+    "epoch": 2,
+    "seen": {
+      "pooled_auroc": 0.841470456991364,
+      "rows": 1257,
+      "videos": 389,
+      "source_pair_acc": 0.7549019607843137,
+      "source_pairs": 510,
+      "same_query_pair_acc": 0.7434131840381841,
+      "same_query_support": 52,
+      "raw_r1_iou_05": 0.3895582329317269,
+      "raw_r1_iou_07": 0.19678714859437751,
+      "threshold_logit": 4.339723587036133,
+      "gated_r1_iou_05": 0.3078982597054886,
+      "score_distribution": {
+        "0": {
+          "mean": -2.241355584057815,
+          "std": 7.260854410645215,
+          "quantiles": [
+            -10.9635085105896,
+            -3.1656737327575684,
+            8.450449657440187
+          ]
+        },
+        "1": {
+          "mean": 7.610944670010383,
+          "std": 6.050831795039701,
+          "quantiles": [
+            -2.1122534275054927,
+            9.697659492492676,
+            13.547228622436524
+          ]
+        }
+      }
+    },
+    "losses": {
+      "gmr": 0.901248377273517,
+      "local_residual_abs": 0.00549795319452591,
+      "pool_entropy": 3.33704595140365,
+      "gmr_loss_span": 0.02228167472012535,
+      "gmr_loss_giou": 0.1630819673930402,
+      "gmr_loss_label": 0.010063155268930889,
+      "gmr_class_error": 1.4081477197129486,
+      "gmr_loss_saliency": 0.0,
+      "gmr_loss_exist": 0.03872124460649772,
+      "gmr_loss_span_0": 0.022660760402845627,
+      "gmr_loss_giou_0": 0.1650494580818375,
+      "gmr_loss_label_0": 0.011179684033594874,
+      "gmr_class_error_0": 1.3291560602010848,
+      "gmr_loss_exist_0": 0.0,
+      "coarse": 3.304489115800113,
+      "fine": 0.8711904084593833,
+      "rotated_bce": 7.42089446769771,
+      "exist_pair": 1.3496999815660338,
+      "total": 0.901248377273517
+    },
+    "chains": 2152,
+    "seconds": 63.088088274002075,
+    "selected": true,
+    "exposure_sha256": "a6a2c62b5de94ba2ac761e04fa648e77fd9f30a0a790f7d0659edab97522c869",
+    "local_output_weight_norm": 0.0041069150902330875
+  },
+  {
+    "epoch": 3,
+    "seen": {
+      "pooled_auroc": 0.842677901147072,
+      "rows": 1257,
+      "videos": 389,
+      "source_pair_acc": 0.7490196078431373,
+      "source_pairs": 510,
+      "same_query_pair_acc": 0.7375346875346875,
+      "same_query_support": 52,
+      "raw_r1_iou_05": 0.3895582329317269,
+      "raw_r1_iou_07": 0.20883534136546184,
+      "threshold_logit": 5.6273579597473145,
+      "gated_r1_iou_05": 0.2918340026773762,
+      "score_distribution": {
+        "0": {
+          "mean": -2.332759758107839,
+          "std": 7.528747296624819,
+          "quantiles": [
+            -11.163810443878173,
+            -3.3492422103881836,
+            9.005271148681645
+          ]
+        },
+        "1": {
+          "mean": 7.874201564336447,
+          "std": 6.1800239161882065,
+          "quantiles": [
+            -1.9895259380340575,
+            10.108925819396973,
+            13.823946571350097
+          ]
+        }
+      }
+    },
+    "losses": {
+      "gmr": 0.886861658173866,
+      "local_residual_abs": 0.005176677188981449,
+      "pool_entropy": 3.3373461850956914,
+      "gmr_loss_span": 0.02206328659245682,
+      "gmr_loss_giou": 0.16259743289876605,
+      "gmr_loss_label": 0.009646768096166223,
+      "gmr_class_error": 1.4047024099357066,
+      "gmr_loss_saliency": 0.0,
+      "gmr_loss_exist": 0.03446342220663153,
+      "gmr_loss_span_0": 0.022164012881889107,
+      "gmr_loss_giou_0": 0.1637082611622642,
+      "gmr_loss_label_0": 0.011308118301101,
+      "gmr_class_error_0": 1.246884654445719,
+      "gmr_loss_exist_0": 0.0,
+      "coarse": 3.3118361513853958,
+      "fine": 0.8710063766812747,
+      "rotated_bce": 7.602575281738792,
+      "exist_pair": 1.335795749768227,
+      "total": 0.886861658173866
+    },
+    "chains": 2152,
+    "seconds": 64.88904333114624,
+    "selected": true,
+    "exposure_sha256": "c86121cdee7b21a052f875f91be989e7ea2c42f0b9f697527fcc6c84940b2ec8",
+    "local_output_weight_norm": 0.0046232459135353565
+  },
+  {
+    "epoch": 4,
+    "seen": {
+      "pooled_auroc": 0.8411948447384309,
+      "rows": 1257,
+      "videos": 389,
+      "source_pair_acc": 0.7352941176470589,
+      "source_pairs": 510,
+      "same_query_pair_acc": 0.7723103285603286,
+      "same_query_support": 52,
+      "raw_r1_iou_05": 0.3895582329317269,
+      "raw_r1_iou_07": 0.1994645247657296,
+      "threshold_logit": 6.925321102142334,
+      "gated_r1_iou_05": 0.28647925033467203,
+      "score_distribution": {
+        "0": {
+          "mean": -1.6478581073292184,
+          "std": 7.626161225659347,
+          "quantiles": [
+            -11.079562091827393,
+            -2.7197808027267456,
+            9.89277753829956
+          ]
+        },
+        "1": {
+          "mean": 8.411283893356103,
+          "std": 5.9497291244450015,
+          "quantiles": [
+            -1.051103258132934,
+            10.627741813659668,
+            14.060288619995116
+          ]
+        }
+      }
+    },
+    "losses": {
+      "gmr": 0.882118916921456,
+      "local_residual_abs": 0.00375844226573632,
+      "pool_entropy": 3.337405756946833,
+      "gmr_loss_span": 0.021828088950933577,
+      "gmr_loss_giou": 0.16044704052429218,
+      "gmr_loss_label": 0.009594381303694376,
+      "gmr_class_error": 1.3323016255318454,
+      "gmr_loss_saliency": 0.0,
+      "gmr_loss_exist": 0.03802295671895828,
+      "gmr_loss_span_0": 0.022165145643650932,
+      "gmr_loss_giou_0": 0.16259904722354226,
+      "gmr_loss_label_0": 0.010685001195063918,
+      "gmr_class_error_0": 1.2361281724667461,
+      "gmr_loss_exist_0": 0.0,
+      "coarse": 3.3101266347785865,
+      "fine": 0.8644834137538995,
+      "rotated_bce": 7.855497260962277,
+      "exist_pair": 1.3717977644730235,
+      "total": 0.882118916921456
+    },
+    "chains": 2152,
+    "seconds": 64.98388934135437,
+    "selected": false,
+    "exposure_sha256": "edb136ff97d360e576922c184fc3d65d127e6cf97410bef57d7621bcfcbd577b",
+    "local_output_weight_norm": 0.005322698038071394
+  },
+  {
+    "epoch": 5,
+    "seen": {
+      "pooled_auroc": 0.8458487544951047,
+      "rows": 1257,
+      "videos": 389,
+      "source_pair_acc": 0.7588235294117647,
+      "source_pairs": 510,
+      "same_query_pair_acc": 0.7683961871461873,
+      "same_query_support": 52,
+      "raw_r1_iou_05": 0.392235609103079,
+      "raw_r1_iou_07": 0.20615796519410978,
+      "threshold_logit": 5.982206344604492,
+      "gated_r1_iou_05": 0.2931726907630522,
+      "score_distribution": {
+        "0": {
+          "mean": -2.346547523319867,
+          "std": 7.506415583312986,
+          "quantiles": [
+            -11.169669914245606,
+            -3.6903738975524902,
+            9.157251644134524
+          ]
+        },
+        "1": {
+          "mean": 7.956941169253993,
+          "std": 6.099219119998644,
+          "quantiles": [
+            -1.8304346561431872,
+            10.080755233764648,
+            13.814297294616697
+          ]
+        }
+      }
+    },
+    "losses": {
+      "gmr": 0.8678620472605787,
+      "local_residual_abs": 0.004625361295915503,
+      "pool_entropy": 3.337823384756492,
+      "gmr_loss_span": 0.02150237660501914,
+      "gmr_loss_giou": 0.15768298474884831,
+      "gmr_loss_label": 0.009706931321563193,
+      "gmr_class_error": 1.3801887824189707,
+      "gmr_loss_saliency": 0.0,
+      "gmr_loss_exist": 0.037324131683631585,
+      "gmr_loss_span_0": 0.021569470431807982,
+      "gmr_loss_giou_0": 0.15901130005772673,
+      "gmr_loss_label_0": 0.011074358266977365,
+      "gmr_class_error_0": 1.3967258070481312,
+      "gmr_loss_exist_0": 0.0,
+      "coarse": 3.304458349167636,
+      "fine": 0.8688705743023897,
+      "rotated_bce": 7.795788741909439,
+      "exist_pair": 1.3682606776580768,
+      "total": 0.8678620472605787
+    },
+    "chains": 2152,
+    "seconds": 62.56192398071289,
+    "selected": true,
+    "exposure_sha256": "8a3111e25616601676fc7b2421736b389ac9e695c4a47ae58391c871182c83ac",
+    "local_output_weight_norm": 0.006128676701337099
+  },
+  {
+    "epoch": 6,
+    "seen": {
+      "pooled_auroc": 0.8455810168779694,
+      "rows": 1257,
+      "videos": 389,
+      "source_pair_acc": 0.7529411764705882,
+      "source_pairs": 510,
+      "same_query_pair_acc": 0.7645208957708959,
+      "same_query_support": 52,
+      "raw_r1_iou_05": 0.3908969210174029,
+      "raw_r1_iou_07": 0.20080321285140562,
+      "threshold_logit": 3.1150457859039307,
+      "gated_r1_iou_05": 0.31860776439089694,
+      "score_distribution": {
+        "0": {
+          "mean": -2.549980909665864,
+          "std": 7.536376232591922,
+          "quantiles": [
+            -11.26116647720337,
+            -4.076477527618408,
+            8.944160079956056
+          ]
+        },
+        "1": {
+          "mean": 7.9242238279885875,
+          "std": 6.2494968400885655,
+          "quantiles": [
+            -1.8864681243896482,
+            10.087627410888672,
+            13.914500999450684
+          ]
+        }
+      }
+    },
+    "losses": {
+      "gmr": 0.8749591636170242,
+      "local_residual_abs": 0.005645372034535227,
+      "pool_entropy": 3.3375126739416867,
+      "gmr_loss_span": 0.021677866088205665,
+      "gmr_loss_giou": 0.1595370854531522,
+      "gmr_loss_label": 0.009594647810932035,
+      "gmr_class_error": 1.3217942191765655,
+      "gmr_loss_saliency": 0.0,
+      "gmr_loss_exist": 0.03716431670071697,
+      "gmr_loss_span_0": 0.02191479893082746,
+      "gmr_loss_giou_0": 0.1607772221851083,
+      "gmr_loss_label_0": 0.01079382443758157,
+      "gmr_class_error_0": 1.300768146727608,
+      "gmr_loss_exist_0": 0.0,
+      "coarse": 3.2967169138578676,
+      "fine": 0.8693426877370998,
+      "rotated_bce": 7.989206320291115,
+      "exist_pair": 1.3351467972964075,
+      "total": 0.8749591636170242
+    },
+    "chains": 2152,
+    "seconds": 57.97776174545288,
+    "selected": false,
+    "exposure_sha256": "eaca79b4a632bc52ef4abf21c73eb949fcf8845e22b998da495fb6e20c15ad60",
+    "local_output_weight_norm": 0.0068026576191186905
+  },
+  {
+    "epoch": 7,
+    "seen": {
+      "pooled_auroc": 0.8440165892327479,
+      "rows": 1257,
+      "videos": 389,
+      "source_pair_acc": 0.7588235294117647,
+      "source_pairs": 510,
+      "same_query_pair_acc": 0.745472236097236,
+      "same_query_support": 52,
+      "raw_r1_iou_05": 0.3855421686746988,
+      "raw_r1_iou_07": 0.19678714859437751,
+      "threshold_logit": 3.698970079421997,
+      "gated_r1_iou_05": 0.3172690763052209,
+      "score_distribution": {
+        "0": {
+          "mean": -2.265559446258361,
+          "std": 7.607565406553434,
+          "quantiles": [
+            -11.299668312072754,
+            -3.3214430809020996,
+            9.309270477294922
+          ]
+        },
+        "1": {
+          "mean": 8.091966903832065,
+          "std": 6.168369056307734,
+          "quantiles": [
+            -1.78968424797058,
+            10.227474212646484,
+            13.98789348602295
+          ]
+        }
+      }
+    },
+    "losses": {
+      "gmr": 0.856408185453663,
+      "local_residual_abs": 0.007609741686112819,
+      "pool_entropy": 3.3372359612617353,
+      "gmr_loss_span": 0.0214058653361486,
+      "gmr_loss_giou": 0.15768966228323797,
+      "gmr_loss_label": 0.008750908472315584,
+      "gmr_class_error": 1.2639477669527983,
+      "gmr_loss_saliency": 0.0,
+      "gmr_loss_exist": 0.034342530498801364,
+      "gmr_loss_span_0": 0.02155770120110543,
+      "gmr_loss_giou_0": 0.15901882672287718,
+      "gmr_loss_label_0": 0.01017946648678905,
+      "gmr_class_error_0": 1.234709700687224,
+      "gmr_loss_exist_0": 0.0,
+      "coarse": 3.289781927619282,
+      "fine": 0.8675770165751858,
+      "rotated_bce": 7.837064002083137,
+      "exist_pair": 1.334254243584232,
+      "total": 0.856408185453663
+    },
+    "chains": 2152,
+    "seconds": 64.96851325035095,
+    "selected": false,
+    "exposure_sha256": "c7cc5251dc8521057dd891fbdd36f1225fccddd33b62dc3de915cd9bc6a26324",
+    "local_output_weight_norm": 0.007682829163968563
+  },
+  {
+    "epoch": 8,
+    "seen": {
+      "pooled_auroc": 0.8440795863191327,
+      "rows": 1257,
+      "videos": 389,
+      "source_pair_acc": 0.7627450980392156,
+      "source_pairs": 510,
+      "same_query_pair_acc": 0.7354999167499167,
+      "same_query_support": 52,
+      "raw_r1_iou_05": 0.3868808567603748,
+      "raw_r1_iou_07": 0.18607764390896922,
+      "threshold_logit": 3.683839797973633,
+      "gated_r1_iou_05": 0.31860776439089694,
+      "score_distribution": {
+        "0": {
+          "mean": -2.3300042534320085,
+          "std": 7.645162163842634,
+          "quantiles": [
+            -11.335659503936768,
+            -3.44031298160553,
+            9.21858263015748
+          ]
+        },
+        "1": {
+          "mean": 8.116105567150246,
+          "std": 6.230151880527536,
+          "quantiles": [
+            -1.8766070842742901,
+            10.309708595275879,
+            14.055967712402344
+          ]
+        }
+      }
+    },
+    "losses": {
+      "gmr": 0.8536304376714735,
+      "local_residual_abs": 0.007851341256324798,
+      "pool_entropy": 3.3368137294918188,
+      "gmr_loss_span": 0.02123662390223389,
+      "gmr_loss_giou": 0.15605509851723356,
+      "gmr_loss_label": 0.009136792006608113,
+      "gmr_class_error": 1.2472025647925622,
+      "gmr_loss_saliency": 0.0,
+      "gmr_loss_exist": 0.036325936795825485,
+      "gmr_loss_span_0": 0.021321811524590263,
+      "gmr_loss_giou_0": 0.15742720590149603,
+      "gmr_loss_label_0": 0.010422669324052752,
+      "gmr_class_error_0": 1.1145308824276836,
+      "gmr_loss_exist_0": 0.0,
+      "coarse": 3.307049820414263,
+      "fine": 0.8704957284005601,
+      "rotated_bce": 7.924349931092953,
+      "exist_pair": 1.346471915717434,
+      "total": 0.8536304376714735
+    },
+    "chains": 2152,
+    "seconds": 65.23575496673584,
+    "selected": false,
+    "exposure_sha256": "eb4ff8f43b141222187a23bb4b5dce46e20bc25310d373ac8b3ecd61f32e0252",
+    "local_output_weight_norm": 0.008321723900735378
+  },
+  {
+    "epoch": 9,
+    "seen": {
+      "pooled_auroc": 0.8433734939759036,
+      "rows": 1257,
+      "videos": 389,
+      "source_pair_acc": 0.7588235294117647,
+      "source_pairs": 510,
+      "same_query_pair_acc": 0.7551677489177488,
+      "same_query_support": 52,
+      "raw_r1_iou_05": 0.3908969210174029,
+      "raw_r1_iou_07": 0.19812583668005354,
+      "threshold_logit": 3.211432456970215,
+      "gated_r1_iou_05": 0.3279785809906292,
+      "score_distribution": {
+        "0": {
+          "mean": -2.5003270425194617,
+          "std": 7.662890672558844,
+          "quantiles": [
+            -11.394927406311036,
+            -3.745265007019043,
+            9.219757843017579
+          ]
+        },
+        "1": {
+          "mean": 7.908800557156005,
+          "std": 6.239734381574725,
+          "quantiles": [
+            -2.0104190349578857,
+            10.096705436706543,
+            13.898290252685547
+          ]
+        }
+      }
+    },
+    "losses": {
+      "gmr": 0.8573478268646396,
+      "local_residual_abs": 0.007287750211907862,
+      "pool_entropy": 3.336309491036993,
+      "gmr_loss_span": 0.021254816591102618,
+      "gmr_loss_giou": 0.15685661450083815,
+      "gmr_loss_label": 0.00894854981727036,
+      "gmr_class_error": 1.2776484719882668,
+      "gmr_loss_saliency": 0.0,
+      "gmr_loss_exist": 0.034999843873011915,
+      "gmr_loss_span_0": 0.02160586641935223,
+      "gmr_loss_giou_0": 0.15976977233383735,
+      "gmr_loss_label_0": 0.010330141987218816,
+      "gmr_class_error_0": 1.3687060189513025,
+      "gmr_loss_exist_0": 0.0,
+      "coarse": 3.297602113737936,
+      "fine": 0.8699229207845426,
+      "rotated_bce": 8.006317075300394,
+      "exist_pair": 1.3432523212689893,
+      "total": 0.8573478268646396
+    },
+    "chains": 2152,
+    "seconds": 65.79187893867493,
+    "selected": false,
+    "exposure_sha256": "4d47b0a2c7e81b940f2146f85ea42723b6e5257e36d5e196b61f264c9da5ef7d",
+    "local_output_weight_norm": 0.008959705010056496
+  },
+  {
+    "epoch": 10,
+    "seen": {
+      "pooled_auroc": 0.8432160012599417,
+      "rows": 1257,
+      "videos": 389,
+      "source_pair_acc": 0.7470588235294118,
+      "source_pairs": 510,
+      "same_query_pair_acc": 0.7524943806193807,
+      "same_query_support": 52,
+      "raw_r1_iou_05": 0.39357429718875503,
+      "raw_r1_iou_07": 0.1994645247657296,
+      "threshold_logit": 3.4039742946624756,
+      "gated_r1_iou_05": 0.321285140562249,
+      "score_distribution": {
+        "0": {
+          "mean": -2.480963061808371,
+          "std": 7.698611481129343,
+          "quantiles": [
+            -11.411277103424073,
+            -4.127943992614746,
+            9.269973278045656
+          ]
+        },
+        "1": {
+          "mean": 8.00424933210115,
+          "std": 6.303812135245424,
+          "quantiles": [
+            -2.2237468242645257,
+            10.17286491394043,
+            14.019991302490235
+          ]
+        }
+      }
+    },
+    "losses": {
+      "gmr": 0.8461060900116498,
+      "local_residual_abs": 0.010648423504624447,
+      "pool_entropy": 3.336119616785014,
+      "gmr_loss_span": 0.02095691922387337,
+      "gmr_loss_giou": 0.15474142645205263,
+      "gmr_loss_label": 0.009472246360242347,
+      "gmr_class_error": 1.460834304639398,
+      "gmr_loss_saliency": 0.0,
+      "gmr_loss_exist": 0.033399928749048194,
+      "gmr_loss_span_0": 0.021253292452280848,
+      "gmr_loss_giou_0": 0.15687840063554204,
+      "gmr_loss_label_0": 0.010273808428518246,
+      "gmr_class_error_0": 1.1899178941010542,
+      "gmr_loss_exist_0": 0.0,
+      "coarse": 3.301233732567401,
+      "fine": 0.8694817052676332,
+      "rotated_bce": 7.885627451439329,
+      "exist_pair": 1.3294921235205626,
+      "total": 0.8461060900116498
+    },
+    "chains": 2152,
+    "seconds": 65.69252419471741,
+    "selected": false,
+    "exposure_sha256": "8ddf76b5ec7bab1978521b6979e7916693693006628c3fbcd0d0da3a63b8035a",
+    "local_output_weight_norm": 0.009626862592995167
+  }
+]

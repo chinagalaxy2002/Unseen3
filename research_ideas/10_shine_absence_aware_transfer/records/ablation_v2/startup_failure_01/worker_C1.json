@@ -1,0 +1,6 @@
+{
+  "status": "failed",
+  "fold": "C1",
+  "error": "RuntimeError('Trainer exited 1')",
+  "elapsed_seconds": 33.14634847640991
+}

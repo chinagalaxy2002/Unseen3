@@ -1,0 +1,30 @@
+{
+  "created_unix": 1791097371.0894246,
+  "adopted_workers": {
+    "A1": {
+      "status": "running",
+      "fold": "A1",
+      "device": "cuda:0",
+      "pid": 1997647,
+      "trainer_pid": 1997649,
+      "started": 1791096562.6615202
+    },
+    "C1": {
+      "status": "running",
+      "fold": "C1",
+      "device": "cuda:1",
+      "pid": 1997648,
+      "trainer_pid": 1997650,
+      "started": 1791096562.665782
+    }
+  },
+  "file_sha256": {
+    "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/10_shine_absence_aware_transfer/code/train_ablation_v2_parallel.py": "cf8966883cb3ae85abbff22f7e93785cef2245e14033a1c1e772bf17aeb1bb6e",
+    "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/10_shine_absence_aware_transfer/code/worker_ablation_v2_parallel.py": "d5f4ecaaf0513814fcac917963240f33987b7645028414565ddc292a589b65f7",
+    "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/10_shine_absence_aware_transfer/code/train_ablation_v2.py": "cf60a10dd5c5d850ac152a6ab787337bbde9126749e184fad84391dc33f1c842",
+    "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/10_shine_absence_aware_transfer/code/summarize_ablation_v2.py": "8ee6ab6d3ed7328994f5fd21cf1f6892917b71e02f7818f7f2094ee0024845e4",
+    "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/10_shine_absence_aware_transfer/configs/ABLATION_V2_FREEZE.json": "bffe5e5d350c6023f6001c9f4dd9261d94e069ef06f4717f544cefc988d45863"
+  },
+  "change": "scheduling only; 3 trainers per GPU; S1 briefly suspended until independent E1/SE1 status exists; old waiting worker retired; S1 continues existing state; old sequential trainer ends after S1 completion; existing-run guard prevents duplicate E1",
+  "training_design_changed": false
+}

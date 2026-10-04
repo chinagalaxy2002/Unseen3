@@ -1,0 +1,12 @@
+{
+  "status": "passed",
+  "training_code_matches_freeze": true,
+  "completed_runs": 4,
+  "epochs_per_run": 10,
+  "model_seeds": [
+    3407
+  ],
+  "formal_U_accessed": false,
+  "workers_completed": true,
+  "summary_code_sha256": "d35f570e0392a4c05cfed4fb8d04c2a0492400c66d5733dfc47b843ceb49b190"
+}

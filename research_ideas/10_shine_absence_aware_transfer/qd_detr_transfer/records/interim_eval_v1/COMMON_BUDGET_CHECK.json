@@ -1,0 +1,10 @@
+{
+  "A1": {
+    "common_budget_epochs": 26,
+    "both_checkpoints_equal_earliest_best_under_common_budget": true
+  },
+  "C1": {
+    "common_budget_epochs": 16,
+    "both_checkpoints_equal_earliest_best_under_common_budget": true
+  }
+}

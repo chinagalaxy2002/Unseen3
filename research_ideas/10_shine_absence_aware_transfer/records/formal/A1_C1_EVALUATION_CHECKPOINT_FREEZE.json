@@ -1,0 +1,23 @@
+{
+  "checkpoints": {
+    "A1": {
+      "baseline": "00db206e2e78d9a99f6a44b3b12e216aff5084a5589939d3e9bb7653b578af1b",
+      "shine": "494dcb897bb37d8032f83d6e99478bb49230feba3d83e9555a161c9b625dfb79",
+      "canonical": "c112e65584eccfd997cf96c08f84dd53b8145485af97af0cb61cba4fa5780ec5"
+    },
+    "C1": {
+      "baseline": "15bf5e13cb710a6887e6d5d6fd632f696adb7c00a84205a45d33fbe57be4df88",
+      "shine": "f796e11ae821bf7faead515bdeb36b332e3a3332bf873ea2d536520852736a8e",
+      "canonical": "1aa8edf5aebb577eca6c7a03aed8ab417bf79af08315dec3b6531d457c77d7a4"
+    }
+  },
+  "freeze_sha256": "ec30f1cb39776e6249840fe03b4fdb1dca1f8d83741caf0db5295e91bf922c06",
+  "selection": "Seen-val only",
+  "formal_U_read_at_this_gate": false,
+  "evaluated_splits": [
+    "A1",
+    "C1"
+  ],
+  "evaluator_sha256": "a01d1236467c9f8e84728de77a2061b02c48f6fc73cade4a9827f53c57af83e6",
+  "scope": "requested partial formal evaluation"
+}

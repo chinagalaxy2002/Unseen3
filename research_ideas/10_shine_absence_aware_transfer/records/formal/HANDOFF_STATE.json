@@ -1,0 +1,76 @@
+{
+  "captured_at": "2026-10-04T14:32:51.662405+08:00",
+  "purpose": "handoff snapshot; reread live status before acting",
+  "seed": 3407,
+  "multi_seed": false,
+  "formal_evaluated_splits": [
+    "A1",
+    "C1"
+  ],
+  "all_five_results_exist": false,
+  "runs": {
+    "A1": {
+      "baseline": {
+        "status": "completed",
+        "epochs_done": 50,
+        "seconds": 1236.2889330387115,
+        "checkpoint_sha256": "00db206e2e78d9a99f6a44b3b12e216aff5084a5589939d3e9bb7653b578af1b"
+      },
+      "shine": {
+        "status": "completed",
+        "epochs_done": 50,
+        "seconds": 2012.9101750850677,
+        "checkpoint_sha256": "494dcb897bb37d8032f83d6e99478bb49230feba3d83e9555a161c9b625dfb79"
+      }
+    },
+    "A2_alt": {
+      "baseline": {
+        "status": "completed",
+        "epochs_done": 50,
+        "seconds": 1490.9869730472565,
+        "checkpoint_sha256": "c285b17b08a729f613d9e43fe0faed098c5001febc012ba7f407b811c3247dff"
+      },
+      "shine": {
+        "status": "running",
+        "epochs_done": 27,
+        "seconds": 1342.0098299980164
+      }
+    },
+    "A3": {
+      "baseline": {
+        "status": "not_started"
+      },
+      "shine": {
+        "status": "not_started"
+      }
+    },
+    "C1": {
+      "baseline": {
+        "status": "completed",
+        "epochs_done": 50,
+        "seconds": 1546.5181338787079,
+        "checkpoint_sha256": "15bf5e13cb710a6887e6d5d6fd632f696adb7c00a84205a45d33fbe57be4df88"
+      },
+      "shine": {
+        "status": "completed",
+        "epochs_done": 50,
+        "seconds": 2571.545309782028,
+        "checkpoint_sha256": "f796e11ae821bf7faead515bdeb36b332e3a3332bf873ea2d536520852736a8e"
+      }
+    },
+    "C2_alt": {
+      "baseline": {
+        "status": "completed",
+        "epochs_done": 50,
+        "seconds": 1560.0928480625153,
+        "checkpoint_sha256": "18f5b61cf266160a74f928a6f7163055ed8e198b54ab697443cd5fb75b32945e"
+      },
+      "shine": {
+        "status": "running",
+        "epochs_done": 7,
+        "seconds": 367.89492416381836
+      }
+    }
+  },
+  "frozen_code_unchanged": true
+}

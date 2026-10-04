@@ -1,0 +1,54 @@
+{
+  "macro_delta": {
+    "seen": 0.01321848896193134,
+    "novel": 0.03880413904470498
+  },
+  "folds": [
+    {
+      "fold": "A1_action_01",
+      "comparison": {
+        "seen": {
+          "delta_auroc": 0.011979823455233296,
+          "replicates": 1000,
+          "unit": "paired video cluster",
+          "delta_ci95": [
+            0.0003133959744026915,
+            0.02477561586616425
+          ]
+        },
+        "novel": {
+          "delta_auroc": 0.04183783783783768,
+          "replicates": 1000,
+          "unit": "paired video cluster",
+          "delta_ci95": [
+            0.023827375675280222,
+            0.060867630796876133
+          ]
+        }
+      }
+    },
+    {
+      "fold": "C1_composition_01",
+      "comparison": {
+        "seen": {
+          "delta_auroc": 0.014457154468629385,
+          "replicates": 1000,
+          "unit": "paired video cluster",
+          "delta_ci95": [
+            -0.0018978353813758754,
+            0.03148580195123552
+          ]
+        },
+        "novel": {
+          "delta_auroc": 0.03577044025157228,
+          "replicates": 1000,
+          "unit": "paired video cluster",
+          "delta_ci95": [
+            0.003045930362740762,
+            0.07007432249730187
+          ]
+        }
+      }
+    }
+  ]
+}

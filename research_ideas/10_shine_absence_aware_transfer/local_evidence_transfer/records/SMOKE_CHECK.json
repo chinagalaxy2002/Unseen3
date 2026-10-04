@@ -1,0 +1,25 @@
+{
+  "formal_test_accessed": false,
+  "records": {
+    "A1": {
+      "zero_init_replays_canonical_exactly": true,
+      "natural_loss_finite": true,
+      "initial_local_final_layer_gradient_norm": 0.0022377087734639645,
+      "local_residual_to_saliency_gradient_norm": 0.00059208192396909,
+      "padding_invariant": true,
+      "uniform_control_independent_of_saliency": true,
+      "data": "actual first2 train rows",
+      "optimizer_updates": 0
+    },
+    "C1": {
+      "zero_init_replays_canonical_exactly": true,
+      "natural_loss_finite": true,
+      "initial_local_final_layer_gradient_norm": 0.7269829511642456,
+      "local_residual_to_saliency_gradient_norm": 0.0011493356432765722,
+      "padding_invariant": true,
+      "uniform_control_independent_of_saliency": true,
+      "data": "actual first2 train rows",
+      "optimizer_updates": 0
+    }
+  }
+}

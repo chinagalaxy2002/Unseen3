@@ -1,0 +1,1102 @@
+[
+  {
+    "epoch": 1,
+    "seen": {
+      "pooled_auroc": 0.7040287003446856,
+      "rows": 1476,
+      "videos": 466,
+      "source_pair_acc": 0.7510460251046025,
+      "source_pairs": 478,
+      "same_query_pair_acc": 0.5273343904157858,
+      "same_query_support": 43,
+      "raw_r1_iou_05": 0.3717277486910995,
+      "raw_r1_iou_07": 0.19790575916230366,
+      "threshold_logit": 1.885887622833252,
+      "gated_r1_iou_05": 0.26596858638743454
+    },
+    "losses": {
+      "gmr": 2.687690223735499
+    },
+    "chains": 0,
+    "seconds": 31.764958381652832,
+    "selected": true
+  },
+  {
+    "epoch": 2,
+    "seen": {
+      "pooled_auroc": 0.7037573735566922,
+      "rows": 1476,
+      "videos": 466,
+      "source_pair_acc": 0.7510460251046025,
+      "source_pairs": 478,
+      "same_query_pair_acc": 0.5743745595489781,
+      "same_query_support": 43,
+      "raw_r1_iou_05": 0.3706806282722513,
+      "raw_r1_iou_07": 0.19267015706806281,
+      "threshold_logit": 1.5888214111328125,
+      "gated_r1_iou_05": 0.28167539267015707
+    },
+    "losses": {
+      "gmr": 2.659138388123857
+    },
+    "chains": 0,
+    "seconds": 31.417397260665894,
+    "selected": false
+  },
+  {
+    "epoch": 3,
+    "seen": {
+      "pooled_auroc": 0.6999708574931414,
+      "rows": 1476,
+      "videos": 466,
+      "source_pair_acc": 0.7510460251046025,
+      "source_pairs": 478,
+      "same_query_pair_acc": 0.5508104298801973,
+      "same_query_support": 43,
+      "raw_r1_iou_05": 0.3675392670157068,
+      "raw_r1_iou_07": 0.18638743455497384,
+      "threshold_logit": 1.927652359008789,
+      "gated_r1_iou_05": 0.25863874345549737
+    },
+    "losses": {
+      "gmr": 2.6206769164068153
+    },
+    "chains": 0,
+    "seconds": 31.285170555114746,
+    "selected": false
+  },
+  {
+    "epoch": 4,
+    "seen": {
+      "pooled_auroc": 0.7034277617549819,
+      "rows": 1476,
+      "videos": 466,
+      "source_pair_acc": 0.7552301255230126,
+      "source_pairs": 478,
+      "same_query_pair_acc": 0.5809372797744891,
+      "same_query_support": 43,
+      "raw_r1_iou_05": 0.3612565445026178,
+      "raw_r1_iou_07": 0.181151832460733,
+      "threshold_logit": 1.487942099571228,
+      "gated_r1_iou_05": 0.2837696335078534
+    },
+    "losses": {
+      "gmr": 2.600692059081721
+    },
+    "chains": 0,
+    "seconds": 31.218294143676758,
+    "selected": false
+  },
+  {
+    "epoch": 5,
+    "seen": {
+      "pooled_auroc": 0.7048024841474811,
+      "rows": 1476,
+      "videos": 466,
+      "source_pair_acc": 0.7510460251046025,
+      "source_pairs": 478,
+      "same_query_pair_acc": 0.5560958421423537,
+      "same_query_support": 43,
+      "raw_r1_iou_05": 0.3612565445026178,
+      "raw_r1_iou_07": 0.181151832460733,
+      "threshold_logit": 1.4028708934783936,
+      "gated_r1_iou_05": 0.2858638743455497
+    },
+    "losses": {
+      "gmr": 2.579321690173034
+    },
+    "chains": 0,
+    "seconds": 31.561226844787598,
+    "selected": true
+  },
+  {
+    "epoch": 6,
+    "seen": {
+      "pooled_auroc": 0.7018018108550814,
+      "rows": 1476,
+      "videos": 466,
+      "source_pair_acc": 0.7552301255230126,
+      "source_pairs": 478,
+      "same_query_pair_acc": 0.5583421423537702,
+      "same_query_support": 43,
+      "raw_r1_iou_05": 0.3539267015706806,
+      "raw_r1_iou_07": 0.181151832460733,
+      "threshold_logit": 2.034824848175049,
+      "gated_r1_iou_05": 0.23979057591623038
+    },
+    "losses": {
+      "gmr": 2.5614482855581375
+    },
+    "chains": 0,
+    "seconds": 30.1197566986084,
+    "selected": false
+  },
+  {
+    "epoch": 7,
+    "seen": {
+      "pooled_auroc": 0.6993317321703127,
+      "rows": 1476,
+      "videos": 466,
+      "source_pair_acc": 0.7531380753138075,
+      "source_pairs": 478,
+      "same_query_pair_acc": 0.5619538407329105,
+      "same_query_support": 43,
+      "raw_r1_iou_05": 0.36544502617801045,
+      "raw_r1_iou_07": 0.18638743455497384,
+      "threshold_logit": 1.450724720954895,
+      "gated_r1_iou_05": 0.30157068062827225
+    },
+    "losses": {
+      "gmr": 2.553032073629908
+    },
+    "chains": 0,
+    "seconds": 31.216330766677856,
+    "selected": false
+  },
+  {
+    "epoch": 8,
+    "seen": {
+      "pooled_auroc": 0.7016611228909367,
+      "rows": 1476,
+      "videos": 466,
+      "source_pair_acc": 0.7531380753138075,
+      "source_pairs": 478,
+      "same_query_pair_acc": 0.5538847780126851,
+      "same_query_support": 43,
+      "raw_r1_iou_05": 0.35916230366492147,
+      "raw_r1_iou_07": 0.17591623036649215,
+      "threshold_logit": 1.2043827772140503,
+      "gated_r1_iou_05": 0.2973821989528796
+    },
+    "losses": {
+      "gmr": 2.526447987879615
+    },
+    "chains": 0,
+    "seconds": 31.326122999191284,
+    "selected": false
+  },
+  {
+    "epoch": 9,
+    "seen": {
+      "pooled_auroc": 0.706287747083237,
+      "rows": 1476,
+      "videos": 466,
+      "source_pair_acc": 0.7552301255230126,
+      "source_pairs": 478,
+      "same_query_pair_acc": 0.5821969696969697,
+      "same_query_support": 43,
+      "raw_r1_iou_05": 0.35916230366492147,
+      "raw_r1_iou_07": 0.17486910994764399,
+      "threshold_logit": 1.3000702857971191,
+      "gated_r1_iou_05": 0.29842931937172773
+    },
+    "losses": {
+      "gmr": 2.5344966676938965
+    },
+    "chains": 0,
+    "seconds": 31.33236074447632,
+    "selected": true
+  },
+  {
+    "epoch": 10,
+    "seen": {
+      "pooled_auroc": 0.7060244596074806,
+      "rows": 1476,
+      "videos": 466,
+      "source_pair_acc": 0.7510460251046025,
+      "source_pairs": 478,
+      "same_query_pair_acc": 0.5765327695560253,
+      "same_query_support": 43,
+      "raw_r1_iou_05": 0.35916230366492147,
+      "raw_r1_iou_07": 0.17801047120418848,
+      "threshold_logit": 1.306188702583313,
+      "gated_r1_iou_05": 0.2848167539267016
+    },
+    "losses": {
+      "gmr": 2.5084824592593207
+    },
+    "chains": 0,
+    "seconds": 31.07775568962097,
+    "selected": false
+  },
+  {
+    "epoch": 11,
+    "seen": {
+      "pooled_auroc": 0.7027424103867915,
+      "rows": 1476,
+      "videos": 466,
+      "source_pair_acc": 0.7552301255230126,
+      "source_pairs": 478,
+      "same_query_pair_acc": 0.5667899929527835,
+      "same_query_support": 43,
+      "raw_r1_iou_05": 0.33298429319371725,
+      "raw_r1_iou_07": 0.1706806282722513,
+      "threshold_logit": 1.3280417919158936,
+      "gated_r1_iou_05": 0.2680628272251309
+    },
+    "losses": {
+      "gmr": 2.4829957379275056
+    },
+    "chains": 0,
+    "seconds": 31.23656153678894,
+    "selected": false
+  },
+  {
+    "epoch": 12,
+    "seen": {
+      "pooled_auroc": 0.7094471967923144,
+      "rows": 1476,
+      "videos": 466,
+      "source_pair_acc": 0.7573221757322176,
+      "source_pairs": 478,
+      "same_query_pair_acc": 0.5726291150709755,
+      "same_query_support": 43,
+      "raw_r1_iou_05": 0.35287958115183243,
+      "raw_r1_iou_07": 0.17382198952879582,
+      "threshold_logit": 1.2221249341964722,
+      "gated_r1_iou_05": 0.2931937172774869
+    },
+    "losses": {
+      "gmr": 2.4799360914761763
+    },
+    "chains": 0,
+    "seconds": 31.263455629348755,
+    "selected": true
+  },
+  {
+    "epoch": 13,
+    "seen": {
+      "pooled_auroc": 0.7032890836188964,
+      "rows": 1476,
+      "videos": 466,
+      "source_pair_acc": 0.7552301255230126,
+      "source_pairs": 478,
+      "same_query_pair_acc": 0.5691495519983892,
+      "same_query_support": 43,
+      "raw_r1_iou_05": 0.34450261780104713,
+      "raw_r1_iou_07": 0.16649214659685863,
+      "threshold_logit": 1.789417028427124,
+      "gated_r1_iou_05": 0.24083769633507854
+    },
+    "losses": {
+      "gmr": 2.4718433358224043
+    },
+    "chains": 0,
+    "seconds": 31.291539430618286,
+    "selected": false
+  },
+  {
+    "epoch": 14,
+    "seen": {
+      "pooled_auroc": 0.708225221332315,
+      "rows": 1476,
+      "videos": 466,
+      "source_pair_acc": 0.7552301255230126,
+      "source_pairs": 478,
+      "same_query_pair_acc": 0.5659783046410953,
+      "same_query_support": 43,
+      "raw_r1_iou_05": 0.3382198952879581,
+      "raw_r1_iou_07": 0.16335078534031414,
+      "threshold_logit": 2.2080254554748535,
+      "gated_r1_iou_05": 0.225130890052356
+    },
+    "losses": {
+      "gmr": 2.4470759077244493
+    },
+    "chains": 0,
+    "seconds": 31.332448959350586,
+    "selected": false
+  },
+  {
+    "epoch": 15,
+    "seen": {
+      "pooled_auroc": 0.707208248334355,
+      "rows": 1476,
+      "videos": 466,
+      "source_pair_acc": 0.7552301255230126,
+      "source_pairs": 478,
+      "same_query_pair_acc": 0.5806642001409443,
+      "same_query_support": 43,
+      "raw_r1_iou_05": 0.3424083769633508,
+      "raw_r1_iou_07": 0.1643979057591623,
+      "threshold_logit": 2.4643471240997314,
+      "gated_r1_iou_05": 0.20732984293193718
+    },
+    "losses": {
+      "gmr": 2.4504293013049896
+    },
+    "chains": 0,
+    "seconds": 31.22940945625305,
+    "selected": false
+  },
+  {
+    "epoch": 16,
+    "seen": {
+      "pooled_auroc": 0.7088703761393211,
+      "rows": 1476,
+      "videos": 466,
+      "source_pair_acc": 0.7594142259414226,
+      "source_pairs": 478,
+      "same_query_pair_acc": 0.5497256619349642,
+      "same_query_support": 43,
+      "raw_r1_iou_05": 0.3267015706806283,
+      "raw_r1_iou_07": 0.15916230366492146,
+      "threshold_logit": 2.1920006275177,
+      "gated_r1_iou_05": 0.2157068062827225
+    },
+    "losses": {
+      "gmr": 2.4227269744298545
+    },
+    "chains": 0,
+    "seconds": 31.206947565078735,
+    "selected": false
+  },
+  {
+    "epoch": 17,
+    "seen": {
+      "pooled_auroc": 0.7060968134176121,
+      "rows": 1476,
+      "videos": 466,
+      "source_pair_acc": 0.7510460251046025,
+      "source_pairs": 478,
+      "same_query_pair_acc": 0.4934800664451828,
+      "same_query_support": 43,
+      "raw_r1_iou_05": 0.34659685863874345,
+      "raw_r1_iou_07": 0.16649214659685863,
+      "threshold_logit": 1.7804536819458008,
+      "gated_r1_iou_05": 0.23141361256544501
+    },
+    "losses": {
+      "gmr": 2.417431917714785
+    },
+    "chains": 0,
+    "seconds": 31.219586610794067,
+    "selected": false
+  },
+  {
+    "epoch": 18,
+    "seen": {
+      "pooled_auroc": 0.7078674719377758,
+      "rows": 1476,
+      "videos": 466,
+      "source_pair_acc": 0.7510460251046025,
+      "source_pairs": 478,
+      "same_query_pair_acc": 0.5713077620054364,
+      "same_query_support": 43,
+      "raw_r1_iou_05": 0.3308900523560209,
+      "raw_r1_iou_07": 0.1643979057591623,
+      "threshold_logit": 1.1002302169799805,
+      "gated_r1_iou_05": 0.2743455497382199
+    },
+    "losses": {
+      "gmr": 2.4010286501732216
+    },
+    "chains": 0,
+    "seconds": 31.17332673072815,
+    "selected": false
+  },
+  {
+    "epoch": 19,
+    "seen": {
+      "pooled_auroc": 0.7035664398910673,
+      "rows": 1476,
+      "videos": 466,
+      "source_pair_acc": 0.7510460251046025,
+      "source_pairs": 478,
+      "same_query_pair_acc": 0.5540420819490587,
+      "same_query_support": 43,
+      "raw_r1_iou_05": 0.33612565445026177,
+      "raw_r1_iou_07": 0.16963350785340314,
+      "threshold_logit": 1.349863052368164,
+      "gated_r1_iou_05": 0.2858638743455497
+    },
+    "losses": {
+      "gmr": 2.3857676709990905
+    },
+    "chains": 0,
+    "seconds": 31.215689182281494,
+    "selected": false
+  },
+  {
+    "epoch": 20,
+    "seen": {
+      "pooled_auroc": 0.7060365185758358,
+      "rows": 1476,
+      "videos": 466,
+      "source_pair_acc": 0.7552301255230126,
+      "source_pairs": 478,
+      "same_query_pair_acc": 0.5392177589852009,
+      "same_query_support": 43,
+      "raw_r1_iou_05": 0.3392670157068063,
+      "raw_r1_iou_07": 0.1581151832460733,
+      "threshold_logit": 1.1795291900634766,
+      "gated_r1_iou_05": 0.27958115183246074
+    },
+    "losses": {
+      "gmr": 2.383837605456272
+    },
+    "chains": 0,
+    "seconds": 31.236119985580444,
+    "selected": false
+  },
+  {
+    "epoch": 21,
+    "seen": {
+      "pooled_auroc": 0.7043542924902775,
+      "rows": 1476,
+      "videos": 466,
+      "source_pair_acc": 0.7573221757322176,
+      "source_pairs": 478,
+      "same_query_pair_acc": 0.5783549783549784,
+      "same_query_support": 43,
+      "raw_r1_iou_05": 0.33507853403141363,
+      "raw_r1_iou_07": 0.1643979057591623,
+      "threshold_logit": 1.4603126049041748,
+      "gated_r1_iou_05": 0.24921465968586387
+    },
+    "losses": {
+      "gmr": 2.378803787102182
+    },
+    "chains": 0,
+    "seconds": 31.19898772239685,
+    "selected": false
+  },
+  {
+    "epoch": 22,
+    "seen": {
+      "pooled_auroc": 0.706585201636,
+      "rows": 1476,
+      "videos": 466,
+      "source_pair_acc": 0.7594142259414226,
+      "source_pairs": 478,
+      "same_query_pair_acc": 0.5861069163394745,
+      "same_query_support": 43,
+      "raw_r1_iou_05": 0.33403141361256544,
+      "raw_r1_iou_07": 0.16230366492146597,
+      "threshold_logit": 1.2370326519012451,
+      "gated_r1_iou_05": 0.2680628272251309
+    },
+    "losses": {
+      "gmr": 2.358653648790107
+    },
+    "chains": 0,
+    "seconds": 31.02114987373352,
+    "selected": false
+  },
+  {
+    "epoch": 23,
+    "seen": {
+      "pooled_auroc": 0.705807398177086,
+      "rows": 1476,
+      "videos": 466,
+      "source_pair_acc": 0.7594142259414226,
+      "source_pairs": 478,
+      "same_query_pair_acc": 0.5796322863183329,
+      "same_query_support": 43,
+      "raw_r1_iou_05": 0.35602094240837695,
+      "raw_r1_iou_07": 0.16753926701570682,
+      "threshold_logit": 1.282718539237976,
+      "gated_r1_iou_05": 0.28272251308900526
+    },
+    "losses": {
+      "gmr": 2.33852595342211
+    },
+    "chains": 0,
+    "seconds": 31.311429023742676,
+    "selected": false
+  },
+  {
+    "epoch": 24,
+    "seen": {
+      "pooled_auroc": 0.7086784375596668,
+      "rows": 1476,
+      "videos": 466,
+      "source_pair_acc": 0.7594142259414226,
+      "source_pairs": 478,
+      "same_query_pair_acc": 0.5569842947749924,
+      "same_query_support": 43,
+      "raw_r1_iou_05": 0.33403141361256544,
+      "raw_r1_iou_07": 0.16544502617801046,
+      "threshold_logit": 1.1330134868621826,
+      "gated_r1_iou_05": 0.25654450261780104
+    },
+    "losses": {
+      "gmr": 2.3459865429315223
+    },
+    "chains": 0,
+    "seconds": 31.00446629524231,
+    "selected": false
+  },
+  {
+    "epoch": 25,
+    "seen": {
+      "pooled_auroc": 0.7028991769754097,
+      "rows": 1476,
+      "videos": 466,
+      "source_pair_acc": 0.7468619246861925,
+      "source_pairs": 478,
+      "same_query_pair_acc": 0.5748666062619552,
+      "same_query_support": 43,
+      "raw_r1_iou_05": 0.3424083769633508,
+      "raw_r1_iou_07": 0.16858638743455498,
+      "threshold_logit": 1.770323395729065,
+      "gated_r1_iou_05": 0.24293193717277486
+    },
+    "losses": {
+      "gmr": 2.326998904706484
+    },
+    "chains": 0,
+    "seconds": 31.638129949569702,
+    "selected": false
+  },
+  {
+    "epoch": 26,
+    "seen": {
+      "pooled_auroc": 0.7044306659565275,
+      "rows": 1476,
+      "videos": 466,
+      "source_pair_acc": 0.7531380753138075,
+      "source_pairs": 478,
+      "same_query_pair_acc": 0.5380889459377831,
+      "same_query_support": 43,
+      "raw_r1_iou_05": 0.3392670157068063,
+      "raw_r1_iou_07": 0.17172774869109947,
+      "threshold_logit": 1.9780586957931519,
+      "gated_r1_iou_05": 0.23769633507853402
+    },
+    "losses": {
+      "gmr": 2.3148428059845085
+    },
+    "chains": 0,
+    "seconds": 30.705016374588013,
+    "selected": false
+  },
+  {
+    "epoch": 27,
+    "seen": {
+      "pooled_auroc": 0.7060103908110661,
+      "rows": 1476,
+      "videos": 466,
+      "source_pair_acc": 0.7635983263598326,
+      "source_pairs": 478,
+      "same_query_pair_acc": 0.5469860565790798,
+      "same_query_support": 43,
+      "raw_r1_iou_05": 0.3382198952879581,
+      "raw_r1_iou_07": 0.1612565445026178,
+      "threshold_logit": 1.239304780960083,
+      "gated_r1_iou_05": 0.2523560209424084
+    },
+    "losses": {
+      "gmr": 2.300070460481816
+    },
+    "chains": 0,
+    "seconds": 31.095730781555176,
+    "selected": false
+  },
+  {
+    "epoch": 28,
+    "seen": {
+      "pooled_auroc": 0.7056365627920531,
+      "rows": 1476,
+      "videos": 466,
+      "source_pair_acc": 0.7552301255230126,
+      "source_pairs": 478,
+      "same_query_pair_acc": 0.55059775495822,
+      "same_query_support": 43,
+      "raw_r1_iou_05": 0.3308900523560209,
+      "raw_r1_iou_07": 0.1612565445026178,
+      "threshold_logit": 1.2850022315979004,
+      "gated_r1_iou_05": 0.2753926701570681
+    },
+    "losses": {
+      "gmr": 2.3018749979246094
+    },
+    "chains": 0,
+    "seconds": 31.587870121002197,
+    "selected": false
+  },
+  {
+    "epoch": 29,
+    "seen": {
+      "pooled_auroc": 0.703582518515541,
+      "rows": 1476,
+      "videos": 466,
+      "source_pair_acc": 0.7531380753138075,
+      "source_pairs": 478,
+      "same_query_pair_acc": 0.546237289841941,
+      "same_query_support": 43,
+      "raw_r1_iou_05": 0.33717277486910996,
+      "raw_r1_iou_07": 0.16230366492146597,
+      "threshold_logit": 1.7719556093215942,
+      "gated_r1_iou_05": 0.23979057591623038
+    },
+    "losses": {
+      "gmr": 2.29503651448043
+    },
+    "chains": 0,
+    "seconds": 31.04959011077881,
+    "selected": false
+  },
+  {
+    "epoch": 30,
+    "seen": {
+      "pooled_auroc": 0.7072162876465917,
+      "rows": 1476,
+      "videos": 466,
+      "source_pair_acc": 0.7552301255230126,
+      "source_pairs": 478,
+      "same_query_pair_acc": 0.5365914124635055,
+      "same_query_support": 43,
+      "raw_r1_iou_05": 0.3403141361256545,
+      "raw_r1_iou_07": 0.17486910994764399,
+      "threshold_logit": 2.1293044090270996,
+      "gated_r1_iou_05": 0.24293193717277486
+    },
+    "losses": {
+      "gmr": 2.2793377686336815
+    },
+    "chains": 0,
+    "seconds": 31.04738998413086,
+    "selected": false
+  },
+  {
+    "epoch": 31,
+    "seen": {
+      "pooled_auroc": 0.7049692998763956,
+      "rows": 1476,
+      "videos": 466,
+      "source_pair_acc": 0.7573221757322176,
+      "source_pairs": 478,
+      "same_query_pair_acc": 0.45767139836907283,
+      "same_query_support": 43,
+      "raw_r1_iou_05": 0.34345549738219894,
+      "raw_r1_iou_07": 0.17382198952879582,
+      "threshold_logit": 1.6892768144607544,
+      "gated_r1_iou_05": 0.22827225130890053
+    },
+    "losses": {
+      "gmr": 2.2625110955482506
+    },
+    "chains": 0,
+    "seconds": 31.01191520690918,
+    "selected": false
+  },
+  {
+    "epoch": 32,
+    "seen": {
+      "pooled_auroc": 0.7046336585905075,
+      "rows": 1476,
+      "videos": 466,
+      "source_pair_acc": 0.7594142259414226,
+      "source_pairs": 478,
+      "same_query_pair_acc": 0.5607721735628712,
+      "same_query_support": 43,
+      "raw_r1_iou_05": 0.3413612565445026,
+      "raw_r1_iou_07": 0.14973821989528796,
+      "threshold_logit": 1.6037561893463135,
+      "gated_r1_iou_05": 0.23455497382198953
+    },
+    "losses": {
+      "gmr": 2.2520774267165056
+    },
+    "chains": 0,
+    "seconds": 30.851208686828613,
+    "selected": false
+  },
+  {
+    "epoch": 33,
+    "seen": {
+      "pooled_auroc": 0.7085689019304399,
+      "rows": 1476,
+      "videos": 466,
+      "source_pair_acc": 0.7552301255230126,
+      "source_pairs": 478,
+      "same_query_pair_acc": 0.5358426457263666,
+      "same_query_support": 43,
+      "raw_r1_iou_05": 0.33612565445026177,
+      "raw_r1_iou_07": 0.1643979057591623,
+      "threshold_logit": 1.7744554281234741,
+      "gated_r1_iou_05": 0.23141361256544501
+    },
+    "losses": {
+      "gmr": 2.2511469364525323
+    },
+    "chains": 0,
+    "seconds": 30.93172335624695,
+    "selected": false
+  },
+  {
+    "epoch": 34,
+    "seen": {
+      "pooled_auroc": 0.7059360271728753,
+      "rows": 1476,
+      "videos": 466,
+      "source_pair_acc": 0.7573221757322176,
+      "source_pairs": 478,
+      "same_query_pair_acc": 0.5380449008355985,
+      "same_query_support": 43,
+      "raw_r1_iou_05": 0.34554973821989526,
+      "raw_r1_iou_07": 0.15602094240837697,
+      "threshold_logit": 2.29362154006958,
+      "gated_r1_iou_05": 0.23769633507853402
+    },
+    "losses": {
+      "gmr": 2.2415427096995963
+    },
+    "chains": 0,
+    "seconds": 31.040985345840454,
+    "selected": false
+  },
+  {
+    "epoch": 35,
+    "seen": {
+      "pooled_auroc": 0.7091135653344857,
+      "rows": 1476,
+      "videos": 466,
+      "source_pair_acc": 0.7573221757322176,
+      "source_pairs": 478,
+      "same_query_pair_acc": 0.5411721030907077,
+      "same_query_support": 43,
+      "raw_r1_iou_05": 0.33717277486910996,
+      "raw_r1_iou_07": 0.1612565445026178,
+      "threshold_logit": 2.275965452194214,
+      "gated_r1_iou_05": 0.2198952879581152
+    },
+    "losses": {
+      "gmr": 2.2323009565652137
+    },
+    "chains": 0,
+    "seconds": 31.170004844665527,
+    "selected": false
+  },
+  {
+    "epoch": 36,
+    "seen": {
+      "pooled_auroc": 0.7055240124207375,
+      "rows": 1476,
+      "videos": 466,
+      "source_pair_acc": 0.7552301255230126,
+      "source_pairs": 478,
+      "same_query_pair_acc": 0.5101643511527232,
+      "same_query_support": 43,
+      "raw_r1_iou_05": 0.33298429319371725,
+      "raw_r1_iou_07": 0.16963350785340314,
+      "threshold_logit": 1.907533884048462,
+      "gated_r1_iou_05": 0.22408376963350785
+    },
+    "losses": {
+      "gmr": 2.2360871848930794
+    },
+    "chains": 0,
+    "seconds": 31.158531188964844,
+    "selected": false
+  },
+  {
+    "epoch": 37,
+    "seen": {
+      "pooled_auroc": 0.7055863170905727,
+      "rows": 1476,
+      "videos": 466,
+      "source_pair_acc": 0.7552301255230126,
+      "source_pairs": 478,
+      "same_query_pair_acc": 0.5179162891372193,
+      "same_query_support": 43,
+      "raw_r1_iou_05": 0.3319371727748691,
+      "raw_r1_iou_07": 0.16544502617801046,
+      "threshold_logit": 1.8979324102401733,
+      "gated_r1_iou_05": 0.2324607329842932
+    },
+    "losses": {
+      "gmr": 2.21572231294879
+    },
+    "chains": 0,
+    "seconds": 31.039112091064453,
+    "selected": false
+  },
+  {
+    "epoch": 38,
+    "seen": {
+      "pooled_auroc": 0.7074795751223482,
+      "rows": 1476,
+      "videos": 466,
+      "source_pair_acc": 0.7573221757322176,
+      "source_pairs": 478,
+      "same_query_pair_acc": 0.5389698479814758,
+      "same_query_support": 43,
+      "raw_r1_iou_05": 0.34659685863874345,
+      "raw_r1_iou_07": 0.17801047120418848,
+      "threshold_logit": 1.4892635345458984,
+      "gated_r1_iou_05": 0.2607329842931937
+    },
+    "losses": {
+      "gmr": 2.21358109059104
+    },
+    "chains": 0,
+    "seconds": 30.842899084091187,
+    "selected": false
+  },
+  {
+    "epoch": 39,
+    "seen": {
+      "pooled_auroc": 0.7004090000100491,
+      "rows": 1476,
+      "videos": 466,
+      "source_pair_acc": 0.7552301255230126,
+      "source_pairs": 478,
+      "same_query_pair_acc": 0.5328475787778113,
+      "same_query_support": 43,
+      "raw_r1_iou_05": 0.3319371727748691,
+      "raw_r1_iou_07": 0.16020942408376965,
+      "threshold_logit": 2.582904100418091,
+      "gated_r1_iou_05": 0.2261780104712042
+    },
+    "losses": {
+      "gmr": 2.200360615748957
+    },
+    "chains": 0,
+    "seconds": 31.173747539520264,
+    "selected": false
+  },
+  {
+    "epoch": 40,
+    "seen": {
+      "pooled_auroc": 0.7063118650199476,
+      "rows": 1476,
+      "videos": 466,
+      "source_pair_acc": 0.7573221757322176,
+      "source_pairs": 478,
+      "same_query_pair_acc": 0.5408637873754153,
+      "same_query_support": 43,
+      "raw_r1_iou_05": 0.33403141361256544,
+      "raw_r1_iou_07": 0.15916230366492146,
+      "threshold_logit": 1.8436278104782104,
+      "gated_r1_iou_05": 0.2356020942408377
+    },
+    "losses": {
+      "gmr": 2.195429647543344
+    },
+    "chains": 0,
+    "seconds": 31.380696058273315,
+    "selected": false
+  },
+  {
+    "epoch": 41,
+    "seen": {
+      "pooled_auroc": 0.7065731426676448,
+      "rows": 1476,
+      "videos": 466,
+      "source_pair_acc": 0.7552301255230126,
+      "source_pairs": 478,
+      "same_query_pair_acc": 0.523783096748213,
+      "same_query_support": 43,
+      "raw_r1_iou_05": 0.3382198952879581,
+      "raw_r1_iou_07": 0.16335078534031414,
+      "threshold_logit": 2.036318302154541,
+      "gated_r1_iou_05": 0.22827225130890053
+    },
+    "losses": {
+      "gmr": 2.1917449822985984
+    },
+    "chains": 0,
+    "seconds": 31.26994752883911,
+    "selected": false
+  },
+  {
+    "epoch": 42,
+    "seen": {
+      "pooled_auroc": 0.7051099878405402,
+      "rows": 1476,
+      "videos": 466,
+      "source_pair_acc": 0.7552301255230126,
+      "source_pairs": 478,
+      "same_query_pair_acc": 0.4928986710963455,
+      "same_query_support": 43,
+      "raw_r1_iou_05": 0.3413612565445026,
+      "raw_r1_iou_07": 0.17277486910994763,
+      "threshold_logit": 2.2292659282684326,
+      "gated_r1_iou_05": 0.2293193717277487
+    },
+    "losses": {
+      "gmr": 2.1796028395015075
+    },
+    "chains": 0,
+    "seconds": 31.338661432266235,
+    "selected": false
+  },
+  {
+    "epoch": 43,
+    "seen": {
+      "pooled_auroc": 0.7047180713689943,
+      "rows": 1476,
+      "videos": 466,
+      "source_pair_acc": 0.7552301255230126,
+      "source_pairs": 478,
+      "same_query_pair_acc": 0.5371728078123427,
+      "same_query_support": 43,
+      "raw_r1_iou_05": 0.33717277486910996,
+      "raw_r1_iou_07": 0.16020942408376965,
+      "threshold_logit": 1.9034528732299805,
+      "gated_r1_iou_05": 0.2293193717277487
+    },
+    "losses": {
+      "gmr": 2.156087214688221
+    },
+    "chains": 0,
+    "seconds": 31.25980019569397,
+    "selected": false
+  },
+  {
+    "epoch": 44,
+    "seen": {
+      "pooled_auroc": 0.7051783219945534,
+      "rows": 1476,
+      "videos": 466,
+      "source_pair_acc": 0.7552301255230126,
+      "source_pairs": 478,
+      "same_query_pair_acc": 0.5132915534078325,
+      "same_query_support": 43,
+      "raw_r1_iou_05": 0.3267015706806283,
+      "raw_r1_iou_07": 0.1581151832460733,
+      "threshold_logit": 2.2545390129089355,
+      "gated_r1_iou_05": 0.20628272251308902
+    },
+    "losses": {
+      "gmr": 2.1468704226146262
+    },
+    "chains": 0,
+    "seconds": 31.156129837036133,
+    "selected": false
+  },
+  {
+    "epoch": 45,
+    "seen": {
+      "pooled_auroc": 0.702191717498568,
+      "rows": 1476,
+      "videos": 466,
+      "source_pair_acc": 0.7552301255230126,
+      "source_pairs": 478,
+      "same_query_pair_acc": 0.5688324272626598,
+      "same_query_support": 43,
+      "raw_r1_iou_05": 0.3413612565445026,
+      "raw_r1_iou_07": 0.16963350785340314,
+      "threshold_logit": 1.3215622901916504,
+      "gated_r1_iou_05": 0.2628272251308901
+    },
+    "losses": {
+      "gmr": 2.1452817040753653
+    },
+    "chains": 0,
+    "seconds": 30.885521173477173,
+    "selected": false
+  },
+  {
+    "epoch": 46,
+    "seen": {
+      "pooled_auroc": 0.7024871622232718,
+      "rows": 1476,
+      "videos": 466,
+      "source_pair_acc": 0.7531380753138075,
+      "source_pairs": 478,
+      "same_query_pair_acc": 0.5417446894191081,
+      "same_query_support": 43,
+      "raw_r1_iou_05": 0.3403141361256545,
+      "raw_r1_iou_07": 0.16230366492146597,
+      "threshold_logit": 1.2504236698150635,
+      "gated_r1_iou_05": 0.2670157068062827
+    },
+    "losses": {
+      "gmr": 2.1372447489614945
+    },
+    "chains": 0,
+    "seconds": 31.24638819694519,
+    "selected": false
+  },
+  {
+    "epoch": 47,
+    "seen": {
+      "pooled_auroc": 0.7045150787350142,
+      "rows": 1476,
+      "videos": 466,
+      "source_pair_acc": 0.7573221757322176,
+      "source_pairs": 478,
+      "same_query_pair_acc": 0.5435593476291151,
+      "same_query_support": 43,
+      "raw_r1_iou_05": 0.3298429319371728,
+      "raw_r1_iou_07": 0.1612565445026178,
+      "threshold_logit": 1.0306241512298584,
+      "gated_r1_iou_05": 0.2617801047120419
+    },
+    "losses": {
+      "gmr": 2.1308359943599586
+    },
+    "chains": 0,
+    "seconds": 30.73260760307312,
+    "selected": false
+  },
+  {
+    "epoch": 48,
+    "seen": {
+      "pooled_auroc": 0.7050838600757705,
+      "rows": 1476,
+      "videos": 466,
+      "source_pair_acc": 0.7615062761506276,
+      "source_pairs": 478,
+      "same_query_pair_acc": 0.5144014899828854,
+      "same_query_support": 43,
+      "raw_r1_iou_05": 0.32460732984293195,
+      "raw_r1_iou_07": 0.15602094240837697,
+      "threshold_logit": 1.5648329257965088,
+      "gated_r1_iou_05": 0.23036649214659685
+    },
+    "losses": {
+      "gmr": 2.1260123491646294
+    },
+    "chains": 0,
+    "seconds": 30.56196165084839,
+    "selected": false
+  },
+  {
+    "epoch": 49,
+    "seen": {
+      "pooled_auroc": 0.7077127151772166,
+      "rows": 1476,
+      "videos": 466,
+      "source_pair_acc": 0.7573221757322176,
+      "source_pairs": 478,
+      "same_query_pair_acc": 0.5446076210611094,
+      "same_query_support": 43,
+      "raw_r1_iou_05": 0.3507853403141361,
+      "raw_r1_iou_07": 0.18534031413612564,
+      "threshold_logit": 2.2701587677001953,
+      "gated_r1_iou_05": 0.22827225130890053
+    },
+    "losses": {
+      "gmr": 2.1115840106125336
+    },
+    "chains": 0,
+    "seconds": 31.190335273742676,
+    "selected": false
+  },
+  {
+    "epoch": 50,
+    "seen": {
+      "pooled_auroc": 0.7052305775240928,
+      "rows": 1476,
+      "videos": 466,
+      "source_pair_acc": 0.7635983263598326,
+      "source_pairs": 478,
+      "same_query_pair_acc": 0.545884929024464,
+      "same_query_support": 43,
+      "raw_r1_iou_05": 0.3382198952879581,
+      "raw_r1_iou_07": 0.1643979057591623,
+      "threshold_logit": 2.0165538787841797,
+      "gated_r1_iou_05": 0.2293193717277487
+    },
+    "losses": {
+      "gmr": 2.1031408920345536
+    },
+    "chains": 0,
+    "seconds": 31.32081151008606,
+    "selected": false
+  }
+]

@@ -1,0 +1,126 @@
+{
+  "A1": {
+    "train_rows": 8608,
+    "seen_val_rows": 1257,
+    "positive_train": 7108,
+    "eligible_chains": 6998,
+    "missing_upstream": 11,
+    "excluded_held_semantics": 99,
+    "train_sha256": "0cd951d33e1429d1cecf4ce0a661fc290dc4997b995abba362f76545bb486a14",
+    "seen_val_sha256": "da227548ea5eb9f35b54e785cb6158a3b739cd88e76d6cd1d713e211e9f7e7a4",
+    "query_bank_sha256": "f3037d319bb4e35e9ba9660eacfcf98e6184c6e962a21ed0c91df8a53704fb92",
+    "spec_sha256": "16130d66f48d5112d9cbbe81a0a7a2e60fb7f322de243ab82d13cc3c37eb2d34",
+    "held_actions": [
+      "put",
+      "take"
+    ],
+    "held_pairs": [],
+    "source_checkpoint": "/home/guoxiangyu/paper/Openword/generalized-moment-retrieval/results/semantic_existence/multi_split_v2/A1/moment/best.ckpt",
+    "checkpoint_sha256": "c112e65584eccfd997cf96c08f84dd53b8145485af97af0cb61cba4fa5780ec5",
+    "formal_test_read": false
+  },
+  "A2_alt": {
+    "train_rows": 10323,
+    "seen_val_rows": 1529,
+    "positive_train": 8823,
+    "eligible_chains": 8733,
+    "missing_upstream": 17,
+    "excluded_held_semantics": 73,
+    "train_sha256": "d00938614ba3e0583dbb32d129804adc8938f5c1f89a66316b4b754d539f71a3",
+    "seen_val_sha256": "5ec493d841d9174a5b9e6e73d8a5f9ceea63b8eb15259286246690684c59caed",
+    "query_bank_sha256": "cb17ea51666469282235735d82f42a328e56e8c00e26aa3354150bf1d6c7710c",
+    "spec_sha256": "6fd05fa9bff0329169f9b41e68c29f7617adacbfb25fe0a6bebf725d7006adab",
+    "held_actions": [
+      "drink",
+      "pour"
+    ],
+    "held_pairs": [],
+    "source_checkpoint": "/home/guoxiangyu/paper/Openword/generalized-moment-retrieval/results/semantic_existence/multi_split_v2/A2_alt/moment/best.ckpt",
+    "checkpoint_sha256": "e1f2749f8b5904da4beeb76a6761e374a18cc17510e955fba84a90b55f56f1f2",
+    "formal_test_read": false
+  },
+  "A3": {
+    "train_rows": 10352,
+    "seen_val_rows": 1548,
+    "positive_train": 8852,
+    "eligible_chains": 8634,
+    "missing_upstream": 18,
+    "excluded_held_semantics": 200,
+    "train_sha256": "53a1976cad3aedead9019daa3b25967c44f6e7f993b502e4521eb30dff0e6ffe",
+    "seen_val_sha256": "fe68018ae5a7413910a4a4a0857e64fbc971de5dce9fc550515b2f1b80fb9e08",
+    "query_bank_sha256": "7b0a5d8b28bcef14302d3de22401bbb1688996267867662cb6e7b7453c990119",
+    "spec_sha256": "7c1f00637fed4e5c35000695a112b482315bbab0ad7a5190b677365156ecdc28",
+    "held_actions": [
+      "run",
+      "walk"
+    ],
+    "held_pairs": [],
+    "source_checkpoint": "/home/guoxiangyu/paper/Openword/generalized-moment-retrieval/results/semantic_existence/multi_split_v2/A3/moment/best.ckpt",
+    "checkpoint_sha256": "ce0ae14f36a09f7dde7be7c5bccdec7fc8ec370f0f7d04ca3a61ab38458cecf2",
+    "formal_test_read": false
+  },
+  "C1": {
+    "train_rows": 10516,
+    "seen_val_rows": 1451,
+    "positive_train": 9016,
+    "eligible_chains": 8947,
+    "missing_upstream": 18,
+    "excluded_held_semantics": 51,
+    "train_sha256": "0fa9cc62f1964069e9ec35808533c89845049dc93e0d7ecd16c6eb0576be0638",
+    "seen_val_sha256": "15b5b063f9aabb40ba48265c38c1b4824a8b38487b9d5403134929610e4ee735",
+    "query_bank_sha256": "70511ccf617bbc2777baa54a0c9ce550fc0f5342d0f4d5e8f912ed62ca6ee527",
+    "spec_sha256": "58e969ba5da127548881f3bcd5899a6454326b5e4bc127bc390fd1f2ace893df",
+    "held_actions": [],
+    "held_pairs": [
+      [
+        "sit",
+        "bed"
+      ],
+      [
+        "sit",
+        "chair"
+      ],
+      [
+        "sit",
+        "couch"
+      ]
+    ],
+    "source_checkpoint": "/home/guoxiangyu/paper/Openword/generalized-moment-retrieval/results/semantic_existence/multi_split_v2/C1/moment/best.ckpt",
+    "checkpoint_sha256": "1aa8edf5aebb577eca6c7a03aed8ab417bf79af08315dec3b6531d457c77d7a4",
+    "formal_test_read": false
+  },
+  "C2_alt": {
+    "train_rows": 10612,
+    "seen_val_rows": 1476,
+    "positive_train": 9112,
+    "eligible_chains": 9011,
+    "missing_upstream": 19,
+    "excluded_held_semantics": 82,
+    "train_sha256": "bb731690357dbb9af7b0641ec7649ba42b4fe3f3aad9798281cfb482caccbf3e",
+    "seen_val_sha256": "9edc93c94ad22ce6dd763e5c4411eb6217c5b96f26638a536acdf0db0d7dd2f8",
+    "query_bank_sha256": "1098cab211be5626c70e41ecd632eb09fe8ea55a06dc8b58ee90aee47c68d70d",
+    "spec_sha256": "79b5fcfdc034b30d08732dafe4970742c543f4a89d2b1fb6659dd983fa2c36c8",
+    "held_actions": [],
+    "held_pairs": [
+      [
+        "close",
+        "box"
+      ],
+      [
+        "close",
+        "cabinet"
+      ],
+      [
+        "open",
+        "box"
+      ],
+      [
+        "open",
+        "cabinet"
+      ]
+    ],
+    "source_checkpoint": "/home/guoxiangyu/paper/Openword/generalized-moment-retrieval/results/semantic_existence/multi_split_v2/C2_alt/moment/best.ckpt",
+    "checkpoint_sha256": "e74348408eec196d9c866dee7f924ed81053786d607c86ec64754780a4e21db4",
+    "formal_test_read": false
+  }
+}

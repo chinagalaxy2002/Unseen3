@@ -1,0 +1,62 @@
+[
+  {
+    "split": "A1",
+    "arm": "canonical",
+    "prediction_hash_verified": true
+  },
+  {
+    "split": "A1",
+    "arm": "B0",
+    "prediction_hash_verified": true
+  },
+  {
+    "split": "A1",
+    "arm": "S1_saliency_only",
+    "prediction_hash_verified": true
+  },
+  {
+    "split": "A1",
+    "arm": "Low_BCE_only",
+    "prediction_hash_verified": true
+  },
+  {
+    "split": "A1",
+    "arm": "Low_Pair_only",
+    "prediction_hash_verified": true
+  },
+  {
+    "split": "A1",
+    "arm": "Low_BCE_pair",
+    "prediction_hash_verified": true
+  },
+  {
+    "split": "C1",
+    "arm": "canonical",
+    "prediction_hash_verified": true
+  },
+  {
+    "split": "C1",
+    "arm": "B0",
+    "prediction_hash_verified": true
+  },
+  {
+    "split": "C1",
+    "arm": "S1_saliency_only",
+    "prediction_hash_verified": true
+  },
+  {
+    "split": "C1",
+    "arm": "Low_BCE_only",
+    "prediction_hash_verified": true
+  },
+  {
+    "split": "C1",
+    "arm": "Low_Pair_only",
+    "prediction_hash_verified": true
+  },
+  {
+    "split": "C1",
+    "arm": "Low_BCE_pair",
+    "prediction_hash_verified": true
+  }
+]

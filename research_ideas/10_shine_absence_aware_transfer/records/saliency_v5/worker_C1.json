@@ -1,0 +1,26 @@
+{
+  "status": "completed",
+  "fold": "C1",
+  "device": "cuda:1",
+  "pid": 2011627,
+  "started": 1791103514.148608,
+  "trainer_pids": {
+    "B0": 2011630,
+    "S1_saliency_only": 2011631
+  },
+  "runs": {
+    "B0": {
+      "status": "completed",
+      "epochs_done": 50,
+      "seconds": 3118.970077753067,
+      "checkpoint_sha256": "9775d81c4f79eb49fc65962faeabf39af42e09145ba49fb486fff692bf151043"
+    },
+    "S1_saliency_only": {
+      "status": "completed",
+      "epochs_done": 50,
+      "seconds": 3239.459046125412,
+      "checkpoint_sha256": "71d3d82cd4aae91486d0e9570fc3d202d5a7aa4d1902c5d15d8e0cb9010767c2"
+    }
+  },
+  "elapsed_seconds": 3301.4064059257507
+}

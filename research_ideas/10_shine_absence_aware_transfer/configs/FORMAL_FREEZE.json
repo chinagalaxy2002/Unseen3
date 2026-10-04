@@ -1,0 +1,236 @@
+{
+  "created_unix": 1791089427.7266586,
+  "seed": 3407,
+  "multi_seed": false,
+  "splits": [
+    "A1",
+    "A2_alt",
+    "A3",
+    "C1",
+    "C2_alt"
+  ],
+  "epochs": 50,
+  "arms": [
+    "baseline",
+    "shine"
+  ],
+  "comparison_table": [
+    "canonical",
+    "baseline50",
+    "shine50"
+  ],
+  "lr": 1e-05,
+  "batch_size": 16,
+  "selection": "formal Seen-val pooled AUROC; earliest tie",
+  "early_stop": false,
+  "initialization": "same canonical per-split Moment-DETR-GMR best.ckpt",
+  "weights": {
+    "coarse": 1.0,
+    "fine": 1.0,
+    "rotated_bce": 1.0,
+    "exist_pair": 0.2
+  },
+  "margins": {
+    "coarse": [
+      1.0,
+      2.0
+    ],
+    "fine": [
+      0.25,
+      0.25,
+      0.25,
+      0.25
+    ],
+    "exist_pair": 0.2
+  },
+  "aux_chain_limit": 4,
+  "fine_type": "red",
+  "code_sha256": {
+    "code/train_formal.py": "f87b0fbdc36336b1a119c9f3f258c906fc2be163a22fd2744084c3ec014157e0",
+    "code/semantic_parser.py": "c68eb55453a54e6db92bbe9cb89543b7697f47d657f74d46475aaed9c70e7fda",
+    "code/prepare_bank.py": "6166bc46dd3b6681250e199d03217c154c70eed1eeb2527ac6f3ec89e181cbef",
+    "code/shine_losses.py": "6547b2ff928a814b7068bf23da43e58626006658935513290cca4a182a53e2b8",
+    "code/evaluate_formal.py": "8ee72b6bca722654669c37ee8e6bd8a2f77a1970464517b79eed173f5590e93a",
+    "code/summarize_results.py": "d35f570e0392a4c05cfed4fb8d04c2a0492400c66d5733dfc47b843ceb49b190",
+    "code/train_pilot.py": "59b8c3ba2ff397c441213f91c5d1b474811c9d2ce1774177544c0e641b840ca8",
+    "code/check_transfer.py": "94ee55b2e94950f6a02f1d7f0abf65c926679d001bbbaacf5f68c27a460d923c",
+    "code/worker_formal.py": "d703f0663ee4df6e4d6e98d5d3b2f80cb1fd3948e9994799b1afe8d04fc7312d",
+    "code/prepare_formal.py": "c54aef00191dcdd48f10efba589265963aa3abf820e076786ee373c135ab12bd",
+    "code/clip/clip.py": "512fed191301a05d20d10d858ea91348fb492b0a4993944f08a0a2ec30e3806b",
+    "code/clip/simple_tokenizer.py": "d1b09f10ed3d1e2c343619cb98cbfacb92363dd8607526a43aa7fe2d60d15bad",
+    "code/clip/__init__.py": "d7930eb290ebed432116795c91473200d098451a94c0aedd4ae0f934f97955e8",
+    "code/clip/model.py": "e8e189318c30073ee3ed96cff5a606691738d10d529a7bef1b943f62f0030c41",
+    "code/models/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "code/training/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "code/training/moment_detr_gmr/train.py": "e04452bf12f784476fbebcfd3e7c0de813436d4c5e42240b07ed49fa3b7833b3",
+    "code/training/moment_detr_gmr/evaluate.py": "546ce3520f7a535882596472e9bddb61ca1ffd89a4364cad0748f5a398b4b2b3",
+    "code/training/moment_detr_gmr/__init__.py": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "code/training/moment_detr_gmr/postprocessing.py": "9fbaec910916772f136b0dac6af71ee005e6f68040e99944c910b200740f2da4",
+    "code/training/moment_detr_gmr/dataset.py": "7cf3a8fe9bb09f077d6bc01666e55c4f5b509a50c0dc0190352e6876f4fd7dab",
+    "code/training/moment_detr_gmr/config.py": "cf41d01c7ebde781db4aa291a020a18e71f77e74b2f5e32e97eb7201a0711d0e",
+    "code/training/moment_detr_gmr/standalone_eval/utils.py": "6e6d4a542a566a32e81457a8011d11c7efaed3c2ad2e61aa5eab8c271c938c6f",
+    "code/training/moment_detr_gmr/standalone_eval/__init__.py": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "code/training/moment_detr_gmr/standalone_eval/eval.py": "78da18aee7e57b929e5c1551b314caa8be7e443d00b2dba1b2b6d5c3a7578adf",
+    "code/models/moment_detr_gmr/gmr_adapter.py": "0e1235c8425f9c61883e88a57a8a1feec2c9ceb15046aeecd83563deb3cefc67",
+    "code/models/moment_detr_gmr/moment_transformer.py": "86229992218d9b512318d5a200a7283e5e06651a60abc784c8a2dc23f5ec0d47",
+    "code/models/moment_detr_gmr/moment_detr.py": "c2e86f6157a13a36fbde4f297951582f6c3ffe22655e84d05793bc415df25f0b",
+    "code/models/moment_detr_gmr/__init__.py": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "code/models/moment_detr_gmr/matcher.py": "8b07afe4a76b955e215f18ff72d303e807a63fa56d0f6ab839d6cf28c5784d3c",
+    "code/models/moment_detr_gmr/misc.py": "58ec43442128ad370d3b08cb677a378b51e017db3f25b2bbb68bc5910c353bca",
+    "code/models/moment_detr_gmr/position_encoding.py": "4e5087a96dc0e4794ea9efa747808ac632e170c3366b69e66e9603cdad57e911",
+    "code/models/moment_detr_gmr/utils/basic_utils.py": "6a79f057547fdd3c89607d199a1692686acd3147db5d1a41e2afbc3b4c55ea67",
+    "code/models/moment_detr_gmr/utils/span_utils.py": "82d769f160355d23cc68dfb520732eee806540a6192442d9815b992bfcb37126",
+    "code/models/moment_detr_gmr/utils/model_utils.py": "b0bb879aa4df8af4fde6bb1db335aa71881d4721a8d43e8892e4ef40d24c4d9d",
+    "code/models/moment_detr_gmr/utils/tensor_utils.py": "645dae24ee2a97add73d0e14d2ce79035928c4780f17868cdb82da96cbccbdea",
+    "code/models/moment_detr_gmr/utils/__init__.py": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "code/models/moment_detr_gmr/utils/windows_utils.py": "d7410f8053d86105627534a1087f443d377f0c852bff7264b97890b5ec8af579",
+    "code/models/moment_detr_gmr/utils/temporal_nms.py": "d48ca06574fee6b7bad2c858f842b54747a3cc292cc74e9f57de13d6068c56a2"
+  },
+  "data": {
+    "A1": {
+      "train_rows": 8608,
+      "seen_val_rows": 1257,
+      "positive_train": 7108,
+      "eligible_chains": 6998,
+      "missing_upstream": 11,
+      "excluded_held_semantics": 99,
+      "train_sha256": "0cd951d33e1429d1cecf4ce0a661fc290dc4997b995abba362f76545bb486a14",
+      "seen_val_sha256": "da227548ea5eb9f35b54e785cb6158a3b739cd88e76d6cd1d713e211e9f7e7a4",
+      "query_bank_sha256": "f3037d319bb4e35e9ba9660eacfcf98e6184c6e962a21ed0c91df8a53704fb92",
+      "spec_sha256": "16130d66f48d5112d9cbbe81a0a7a2e60fb7f322de243ab82d13cc3c37eb2d34",
+      "held_actions": [
+        "put",
+        "take"
+      ],
+      "held_pairs": [],
+      "source_checkpoint": "/home/guoxiangyu/paper/Openword/generalized-moment-retrieval/results/semantic_existence/multi_split_v2/A1/moment/best.ckpt",
+      "checkpoint_sha256": "c112e65584eccfd997cf96c08f84dd53b8145485af97af0cb61cba4fa5780ec5",
+      "formal_test_read": false
+    },
+    "A2_alt": {
+      "train_rows": 10323,
+      "seen_val_rows": 1529,
+      "positive_train": 8823,
+      "eligible_chains": 8733,
+      "missing_upstream": 17,
+      "excluded_held_semantics": 73,
+      "train_sha256": "d00938614ba3e0583dbb32d129804adc8938f5c1f89a66316b4b754d539f71a3",
+      "seen_val_sha256": "5ec493d841d9174a5b9e6e73d8a5f9ceea63b8eb15259286246690684c59caed",
+      "query_bank_sha256": "cb17ea51666469282235735d82f42a328e56e8c00e26aa3354150bf1d6c7710c",
+      "spec_sha256": "6fd05fa9bff0329169f9b41e68c29f7617adacbfb25fe0a6bebf725d7006adab",
+      "held_actions": [
+        "drink",
+        "pour"
+      ],
+      "held_pairs": [],
+      "source_checkpoint": "/home/guoxiangyu/paper/Openword/generalized-moment-retrieval/results/semantic_existence/multi_split_v2/A2_alt/moment/best.ckpt",
+      "checkpoint_sha256": "e1f2749f8b5904da4beeb76a6761e374a18cc17510e955fba84a90b55f56f1f2",
+      "formal_test_read": false
+    },
+    "A3": {
+      "train_rows": 10352,
+      "seen_val_rows": 1548,
+      "positive_train": 8852,
+      "eligible_chains": 8634,
+      "missing_upstream": 18,
+      "excluded_held_semantics": 200,
+      "train_sha256": "53a1976cad3aedead9019daa3b25967c44f6e7f993b502e4521eb30dff0e6ffe",
+      "seen_val_sha256": "fe68018ae5a7413910a4a4a0857e64fbc971de5dce9fc550515b2f1b80fb9e08",
+      "query_bank_sha256": "7b0a5d8b28bcef14302d3de22401bbb1688996267867662cb6e7b7453c990119",
+      "spec_sha256": "7c1f00637fed4e5c35000695a112b482315bbab0ad7a5190b677365156ecdc28",
+      "held_actions": [
+        "run",
+        "walk"
+      ],
+      "held_pairs": [],
+      "source_checkpoint": "/home/guoxiangyu/paper/Openword/generalized-moment-retrieval/results/semantic_existence/multi_split_v2/A3/moment/best.ckpt",
+      "checkpoint_sha256": "ce0ae14f36a09f7dde7be7c5bccdec7fc8ec370f0f7d04ca3a61ab38458cecf2",
+      "formal_test_read": false
+    },
+    "C1": {
+      "train_rows": 10516,
+      "seen_val_rows": 1451,
+      "positive_train": 9016,
+      "eligible_chains": 8947,
+      "missing_upstream": 18,
+      "excluded_held_semantics": 51,
+      "train_sha256": "0fa9cc62f1964069e9ec35808533c89845049dc93e0d7ecd16c6eb0576be0638",
+      "seen_val_sha256": "15b5b063f9aabb40ba48265c38c1b4824a8b38487b9d5403134929610e4ee735",
+      "query_bank_sha256": "70511ccf617bbc2777baa54a0c9ce550fc0f5342d0f4d5e8f912ed62ca6ee527",
+      "spec_sha256": "58e969ba5da127548881f3bcd5899a6454326b5e4bc127bc390fd1f2ace893df",
+      "held_actions": [],
+      "held_pairs": [
+        [
+          "sit",
+          "bed"
+        ],
+        [
+          "sit",
+          "chair"
+        ],
+        [
+          "sit",
+          "couch"
+        ]
+      ],
+      "source_checkpoint": "/home/guoxiangyu/paper/Openword/generalized-moment-retrieval/results/semantic_existence/multi_split_v2/C1/moment/best.ckpt",
+      "checkpoint_sha256": "1aa8edf5aebb577eca6c7a03aed8ab417bf79af08315dec3b6531d457c77d7a4",
+      "formal_test_read": false
+    },
+    "C2_alt": {
+      "train_rows": 10612,
+      "seen_val_rows": 1476,
+      "positive_train": 9112,
+      "eligible_chains": 9011,
+      "missing_upstream": 19,
+      "excluded_held_semantics": 82,
+      "train_sha256": "bb731690357dbb9af7b0641ec7649ba42b4fe3f3aad9798281cfb482caccbf3e",
+      "seen_val_sha256": "9edc93c94ad22ce6dd763e5c4411eb6217c5b96f26638a536acdf0db0d7dd2f8",
+      "query_bank_sha256": "1098cab211be5626c70e41ecd632eb09fe8ea55a06dc8b58ee90aee47c68d70d",
+      "spec_sha256": "79b5fcfdc034b30d08732dafe4970742c543f4a89d2b1fb6659dd983fa2c36c8",
+      "held_actions": [],
+      "held_pairs": [
+        [
+          "close",
+          "box"
+        ],
+        [
+          "close",
+          "cabinet"
+        ],
+        [
+          "open",
+          "box"
+        ],
+        [
+          "open",
+          "cabinet"
+        ]
+      ],
+      "source_checkpoint": "/home/guoxiangyu/paper/Openword/generalized-moment-retrieval/results/semantic_existence/multi_split_v2/C2_alt/moment/best.ckpt",
+      "checkpoint_sha256": "e74348408eec196d9c866dee7f924ed81053786d607c86ec64754780a4e21db4",
+      "formal_test_read": false
+    }
+  },
+  "text_manifest_sha256": "6cc5b507827648034247eac7d2bc7105a8b27e4df22b16a78074b12ebc25c2ee",
+  "plan_sha256": "363fb76cbaaffee75055b92d6ac78fa1fb40f76488f6238a453e62f1f643fd60",
+  "user_instructions": {
+    "batch_rotation_absence": true,
+    "hierarchy_valid": true,
+    "formal_Unseen_comparison": true,
+    "epochs": 50
+  },
+  "formal_test_loaded_before_freeze": false,
+  "evaluation_gate": "all ten completed 50-epoch runs with checkpoint hashes; no U in trainer",
+  "gpu_plan": {
+    "cuda:0": [
+      "A1",
+      "A2_alt",
+      "A3"
+    ],
+    "cuda:1": [
+      "C1",
+      "C2_alt"
+    ]
+  }
+}

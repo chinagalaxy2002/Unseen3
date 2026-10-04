@@ -1,0 +1,9 @@
+{
+  "created_unix": 1791120768.3494737,
+  "all_freeze_files_verified": true,
+  "unique_files_checked": 46603,
+  "checkpoints_verified": 16,
+  "prediction_files_verified": 16,
+  "adapted50epoch_runs": 12,
+  "selection_and_exposure_verified": true
+}

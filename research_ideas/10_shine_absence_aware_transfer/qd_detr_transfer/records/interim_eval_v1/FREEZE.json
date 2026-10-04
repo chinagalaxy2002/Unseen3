@@ -1,0 +1,121 @@
+{
+  "created_unix": 1791108616.244373,
+  "interim": true,
+  "full_50_epoch_complete": false,
+  "checkpoints": {
+    "A1": {
+      "B0": {
+        "path": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/10_shine_absence_aware_transfer/qd_detr_transfer/records/interim_eval_v1/snapshots/A1/B0.ckpt",
+        "sha256": "5ce1e7887b9f4be6e3024c8f541b4b15ca4b1570fef1575b652980346269b017",
+        "selected_epoch": 24,
+        "epochs_observed": 28,
+        "selected_seen_val": 0.8284878074389059
+      },
+      "S1_saliency_only": {
+        "path": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/10_shine_absence_aware_transfer/qd_detr_transfer/records/interim_eval_v1/snapshots/A1/S1_saliency_only.ckpt",
+        "sha256": "7326f5296a1ca443ca70291905c6ca28c9854e5c434b2ae935842593fd8b47b2",
+        "selected_epoch": 1,
+        "epochs_observed": 26,
+        "selected_seen_val": 0.8248051027639971
+      },
+      "canonical": {
+        "path": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/10_shine_absence_aware_transfer/qd_detr_transfer/records/interim_eval_v1/snapshots/A1/canonical.ckpt",
+        "sha256": "7783a7f219ea8eacd8114eb8542dcec9b3dd9aad176c8e0a5661dbde839ffac8",
+        "selected_epoch": "canonical",
+        "epochs_observed": 0
+      }
+    },
+    "C1": {
+      "B0": {
+        "path": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/10_shine_absence_aware_transfer/qd_detr_transfer/records/interim_eval_v1/snapshots/C1/B0.ckpt",
+        "sha256": "11f8bbbeb4428d9e2e689ed7b1aff9d34677d284ac3b28a4b942efe10051cfcf",
+        "selected_epoch": 1,
+        "epochs_observed": 16,
+        "selected_seen_val": 0.789549602959227
+      },
+      "S1_saliency_only": {
+        "path": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/10_shine_absence_aware_transfer/qd_detr_transfer/records/interim_eval_v1/snapshots/C1/S1_saliency_only.ckpt",
+        "sha256": "bf086dc3b3a2d6192742f4fc3cbf407630861d1ff5060fdeae86097b037cf8fa",
+        "selected_epoch": 1,
+        "epochs_observed": 16,
+        "selected_seen_val": 0.7942026202186021
+      },
+      "canonical": {
+        "path": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/10_shine_absence_aware_transfer/qd_detr_transfer/records/interim_eval_v1/snapshots/C1/canonical.ckpt",
+        "sha256": "f2e1bfc6b67f19219661a8d4a8122cacc9df3199f23607a1a7ed42cc69390520",
+        "selected_epoch": "canonical",
+        "epochs_observed": 0
+      }
+    }
+  },
+  "training_epochs_observed": {
+    "A1": {
+      "B0": 28,
+      "S1_saliency_only": 26
+    },
+    "C1": {
+      "B0": 16,
+      "S1_saliency_only": 16
+    }
+  },
+  "file_sha256": {
+    "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/10_shine_absence_aware_transfer/qd_detr_transfer/code/freeze_experiment.py": "4feb01d8fc37127d7b760955ccd305b682a8942b5a119905a511c2c906fb557a",
+    "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/10_shine_absence_aware_transfer/qd_detr_transfer/code/summarize_qd.py": "93ccd16ca47ec22a5e439e1c9399b3a2c0f338795ac9f8be98b4cb279cfa39fd",
+    "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/10_shine_absence_aware_transfer/qd_detr_transfer/code/train_qd_saliency.py": "c71ff2b7156fd6367898f1f152be026ac7158aaafa35c3078578c2fa04ff2b9c",
+    "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/10_shine_absence_aware_transfer/qd_detr_transfer/code/shine_losses.py": "6547b2ff928a814b7068bf23da43e58626006658935513290cca4a182a53e2b8",
+    "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/10_shine_absence_aware_transfer/qd_detr_transfer/code/evaluation_helpers.py": "bc91221a83a536a911808adfd572cf2f0b5fce7aed8542591231515b7d50b7c3",
+    "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/10_shine_absence_aware_transfer/qd_detr_transfer/code/worker_qd.py": "0c6a828abd7a8a1a004d86e890482172358da6601652aad1aa3815e24ee63900",
+    "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/10_shine_absence_aware_transfer/qd_detr_transfer/code/evaluate_qd.py": "01d81d5c914bd2694a26305630cbd93f07a32b0b6525fb5c08bb29c1d5908b90",
+    "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/10_shine_absence_aware_transfer/qd_detr_transfer/code/bootstrap_helpers.py": "d35f570e0392a4c05cfed4fb8d04c2a0492400c66d5733dfc47b843ceb49b190",
+    "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/10_shine_absence_aware_transfer/qd_detr_transfer/code/smoke_qd.py": "a739fa51e42fad469cde28e62b06eb96cff0202db5f6e5e90901680db2c188fe",
+    "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/10_shine_absence_aware_transfer/qd_detr_transfer/code/models/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/10_shine_absence_aware_transfer/qd_detr_transfer/code/models/qd_detr_gmr/gmr_adapter.py": "0e1235c8425f9c61883e88a57a8a1feec2c9ceb15046aeecd83563deb3cefc67",
+    "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/10_shine_absence_aware_transfer/qd_detr_transfer/code/models/qd_detr_gmr/attention.py": "747ad3ece444f3dcb526bfc77f2767b63b70caae595b07e59c2e236f839efd28",
+    "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/10_shine_absence_aware_transfer/qd_detr_transfer/code/models/qd_detr_gmr/__init__.py": "f97d6fdacfb56a2394b2ee3a587d9df75463a2d7bf15c57192cc45fb171a5b0c",
+    "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/10_shine_absence_aware_transfer/qd_detr_transfer/code/models/qd_detr_gmr/transformer.py": "08bd3b62104a2b120ad46421e5fe8b38b530c986660f3ae7404928c717bd8e81",
+    "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/10_shine_absence_aware_transfer/qd_detr_transfer/code/models/qd_detr_gmr/matcher.py": "200f023db48c0324aa0a5b9a40e9a302784c866a177f962eb545f81a8ac70f08",
+    "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/10_shine_absence_aware_transfer/qd_detr_transfer/code/models/qd_detr_gmr/misc.py": "0d5cad144f7d23f390744128b03b16c556f5b0ef0eec0f917bba09d26f6a94e7",
+    "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/10_shine_absence_aware_transfer/qd_detr_transfer/code/models/qd_detr_gmr/position_encoding.py": "9e49e2608d440322db7e6752420d55e2d49077f767c2987eb2bcc51b701ffa15",
+    "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/10_shine_absence_aware_transfer/qd_detr_transfer/code/models/qd_detr_gmr/model.py": "0ff06ebf2c5fab56a63c0217c4e035140e141d92ba5b67de0d86e5b50c947940",
+    "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/10_shine_absence_aware_transfer/qd_detr_transfer/code/models/qd_detr_gmr/utils/basic_utils.py": "6a79f057547fdd3c89607d199a1692686acd3147db5d1a41e2afbc3b4c55ea67",
+    "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/10_shine_absence_aware_transfer/qd_detr_transfer/code/models/qd_detr_gmr/utils/span_utils.py": "82d769f160355d23cc68dfb520732eee806540a6192442d9815b992bfcb37126",
+    "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/10_shine_absence_aware_transfer/qd_detr_transfer/code/models/qd_detr_gmr/utils/model_utils.py": "b0bb879aa4df8af4fde6bb1db335aa71881d4721a8d43e8892e4ef40d24c4d9d",
+    "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/10_shine_absence_aware_transfer/qd_detr_transfer/code/models/qd_detr_gmr/utils/tensor_utils.py": "645dae24ee2a97add73d0e14d2ce79035928c4780f17868cdb82da96cbccbdea",
+    "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/10_shine_absence_aware_transfer/qd_detr_transfer/code/models/qd_detr_gmr/utils/__init__.py": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/10_shine_absence_aware_transfer/qd_detr_transfer/code/models/qd_detr_gmr/utils/windows_utils.py": "d7410f8053d86105627534a1087f443d377f0c852bff7264b97890b5ec8af579",
+    "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/10_shine_absence_aware_transfer/qd_detr_transfer/code/models/qd_detr_gmr/utils/temporal_nms.py": "d48ca06574fee6b7bad2c858f842b54747a3cc292cc74e9f57de13d6068c56a2",
+    "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/10_shine_absence_aware_transfer/qd_detr_transfer/code/training/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/10_shine_absence_aware_transfer/qd_detr_transfer/code/training/qd_detr_gmr/train.py": "9d140579d3331a3aa16a213c40f3c7ba39b81cd712368345f61d432fb20da5e2",
+    "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/10_shine_absence_aware_transfer/qd_detr_transfer/code/training/qd_detr_gmr/evaluate.py": "5b1d68ecefa182f3e07e1d8ba0910b7400fe523ed12dd752bdb49987898c00eb",
+    "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/10_shine_absence_aware_transfer/qd_detr_transfer/code/training/qd_detr_gmr/__init__.py": "d6a6642318da2827944f37d863ce4937806e19df0b852896bda88e1c742f21fb",
+    "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/10_shine_absence_aware_transfer/qd_detr_transfer/code/training/qd_detr_gmr/postprocessing.py": "50e6501c642e77502f7a4d781e01e12bbd97521d3b0a8f47d793b3044be30046",
+    "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/10_shine_absence_aware_transfer/qd_detr_transfer/code/training/qd_detr_gmr/dataset.py": "fd57e2a6b9e4b529e35ecaddc20447f6d6e7d85159666aaa2307421346a7b6e2",
+    "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/10_shine_absence_aware_transfer/qd_detr_transfer/code/training/qd_detr_gmr/config.py": "3fa736dcbac53829b48617b2a088f8a9070feb8bbc058b292e0f2c0bacb22f80",
+    "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/10_shine_absence_aware_transfer/qd_detr_transfer/code/training/qd_detr_gmr/standalone_eval/utils.py": "6e6d4a542a566a32e81457a8011d11c7efaed3c2ad2e61aa5eab8c271c938c6f",
+    "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/10_shine_absence_aware_transfer/qd_detr_transfer/code/training/qd_detr_gmr/standalone_eval/__init__.py": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/10_shine_absence_aware_transfer/qd_detr_transfer/code/training/qd_detr_gmr/standalone_eval/eval.py": "78da18aee7e57b929e5c1551b314caa8be7e443d00b2dba1b2b6d5c3a7578adf",
+    "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/10_shine_absence_aware_transfer/qd_detr_transfer/code/training/qd_detr_gmr/standalone_eval/README.md": "3c0830c9af6d3a852bfd700c6450a37f8585ce168b4abdae700dee93d0ca052d",
+    "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/10_shine_absence_aware_transfer/qd_detr_transfer/code/queue_qd.py": "3f4b718032c026be22d8076339b66d179ce5a2ccaef3604e70c15790626bef2e",
+    "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/10_shine_absence_aware_transfer/qd_detr_transfer/records/interim_eval_v1/snapshots/A1/B0.ckpt": "5ce1e7887b9f4be6e3024c8f541b4b15ca4b1570fef1575b652980346269b017",
+    "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/10_shine_absence_aware_transfer/qd_detr_transfer/records/interim_eval_v1/snapshots/A1/B0_history.json": "dd99039744193120c8e28a42b42f0f3466b4aa83c73789ddd26b0973a102dd73",
+    "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/10_shine_absence_aware_transfer/qd_detr_transfer/records/interim_eval_v1/snapshots/A1/S1_saliency_only.ckpt": "7326f5296a1ca443ca70291905c6ca28c9854e5c434b2ae935842593fd8b47b2",
+    "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/10_shine_absence_aware_transfer/qd_detr_transfer/records/interim_eval_v1/snapshots/A1/S1_saliency_only_history.json": "c81091c4737f48d537429295fdbd9e9d9589b733a2462652cc2171dc817b5647",
+    "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/10_shine_absence_aware_transfer/qd_detr_transfer/records/interim_eval_v1/snapshots/A1/canonical.ckpt": "7783a7f219ea8eacd8114eb8542dcec9b3dd9aad176c8e0a5661dbde839ffac8",
+    "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/10_shine_absence_aware_transfer/qd_detr_transfer/data/formal/A1/test.jsonl": "db7ceabde112d1ae279dc739d76db19e17fcd1141a31ea67a7ca23a9eaacc2e0",
+    "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/10_shine_absence_aware_transfer/qd_detr_transfer/data/formal/A1/seen_val.jsonl": "da227548ea5eb9f35b54e785cb6158a3b739cd88e76d6cd1d713e211e9f7e7a4",
+    "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/10_shine_absence_aware_transfer/qd_detr_transfer/records/interim_eval_v1/snapshots/C1/B0.ckpt": "11f8bbbeb4428d9e2e689ed7b1aff9d34677d284ac3b28a4b942efe10051cfcf",
+    "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/10_shine_absence_aware_transfer/qd_detr_transfer/records/interim_eval_v1/snapshots/C1/B0_history.json": "9828cb49998817a4256376918e5283b687a65359e6326fe5f0dad7abe474ee0e",
+    "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/10_shine_absence_aware_transfer/qd_detr_transfer/records/interim_eval_v1/snapshots/C1/S1_saliency_only.ckpt": "bf086dc3b3a2d6192742f4fc3cbf407630861d1ff5060fdeae86097b037cf8fa",
+    "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/10_shine_absence_aware_transfer/qd_detr_transfer/records/interim_eval_v1/snapshots/C1/S1_saliency_only_history.json": "b8d8211d94be7c0b0e9faf1615b008e34897bd0fd6c92ae6cfbed7a17dcbbcfc",
+    "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/10_shine_absence_aware_transfer/qd_detr_transfer/records/interim_eval_v1/snapshots/C1/canonical.ckpt": "f2e1bfc6b67f19219661a8d4a8122cacc9df3199f23607a1a7ed42cc69390520",
+    "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/10_shine_absence_aware_transfer/qd_detr_transfer/data/formal/C1/test.jsonl": "5db7a2e8bcc1250988f813f67dd778c18f39aff51a71ba3d8ecf9345b968bb53",
+    "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/10_shine_absence_aware_transfer/qd_detr_transfer/data/formal/C1/seen_val.jsonl": "15b5b063f9aabb40ba48265c38c1b4824a8b38487b9d5403134929610e4ee735",
+    "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/10_shine_absence_aware_transfer/qd_detr_transfer/records/interim_eval_v1/EVALUATOR_EXECUTED.py": "33cb01c89552d7eb29c0d566febf186ce8cce713f60f6b90bea58ef1d1832cfb"
+  },
+  "formal_U_labels_read_at_gate": false,
+  "selection": "earliest best Seen-val among completed observed epochs; no U selection",
+  "training_left_running": true,
+  "unequal_training_budgets": true,
+  "shared_prefix_exposure_verified": true,
+  "training_freeze_sha256": "bcd202d31bfc8bff75a137621021d491b9162da5df56c8885a5836120a1e3d6f"
+}

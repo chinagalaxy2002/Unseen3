@@ -1,0 +1,39 @@
+{
+  "status": "completed",
+  "fold": "A1",
+  "device": "cuda:0",
+  "pid": 1999604,
+  "adopted_s1_trainer_pid": 1997649,
+  "parallel_trainer_pids": {
+    "E1_rotated_exist_only": 1999607,
+    "SE1_full": 1999609
+  },
+  "started": 1791097371.1235976,
+  "runs": {
+    "B0": {
+      "status": "completed",
+      "epochs_done": 10,
+      "seconds": 371.42191433906555,
+      "checkpoint_sha256": "e5bd898ad2dbd39663fb307cf42f588e111831b6ba1b9ed74f77bed3b6cb0409"
+    },
+    "S1_saliency_only": {
+      "status": "completed",
+      "epochs_done": 10,
+      "seconds": 444.6033778190613,
+      "checkpoint_sha256": "4e3d780ed3d16edd83632c612d230f549a16922510ad72e3d9b7684cca376153"
+    },
+    "E1_rotated_exist_only": {
+      "status": "completed",
+      "epochs_done": 10,
+      "seconds": 552.7603511810303,
+      "checkpoint_sha256": "307ac96486df3fae67bf2f14a284bd24cfa8e2923ebac284a99546507d2478d2"
+    },
+    "SE1_full": {
+      "status": "completed",
+      "epochs_done": 10,
+      "seconds": 570.3671793937683,
+      "checkpoint_sha256": "30f8ff48ca708ce20a23f285cd160d570380b5400534b803251fd8588cf0c007"
+    }
+  },
+  "elapsed_seconds": 601.22287940979
+}

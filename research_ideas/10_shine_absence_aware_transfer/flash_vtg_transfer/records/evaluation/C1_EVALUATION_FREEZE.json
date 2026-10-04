@@ -1,0 +1,26 @@
+{
+  "created_unix": 1791117821.5851123,
+  "checkpoints": {
+    "B0": {
+      "path": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/10_shine_absence_aware_transfer/flash_vtg_transfer/runs/formal50/C1/B0/seed3407/flash_saliency_v1_50ep/best.ckpt",
+      "sha256": "9f4ba512b3b296f840c3cbbc6555b5ccada37b7695c3daeb1c34e4a65f8a4a41",
+      "selected_epoch": 2
+    },
+    "S1_saliency_only": {
+      "path": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/10_shine_absence_aware_transfer/flash_vtg_transfer/runs/formal50/C1/S1_saliency_only/seed3407/flash_saliency_v1_50ep/best.ckpt",
+      "sha256": "ac31e0e9b53001f49fe8342abf3b05325b96f9f71f07dc872c8128cf65dc3101",
+      "selected_epoch": 45
+    },
+    "canonical": {
+      "path": "/home/guoxiangyu/paper/Openword/generalized-moment-retrieval/results/semantic_existence/multi_split_v2/C1/flash/charadesSTA-video_tef-seen_only_seed3407_100ep-2026-09-29-06-51-36/model_best.ckpt",
+      "sha256": "67c5da20e7c1789461d266daa0c65e130b6bcb0c2a31bdc543df3944e0ce74f1",
+      "selected_epoch": "canonical"
+    }
+  },
+  "formal_U_labels_read_at_gate": false,
+  "test_sha256": "5db7a2e8bcc1250988f813f67dd778c18f39aff51a71ba3d8ecf9345b968bb53",
+  "evaluator_sha256": "3085704d655cabc21b2b579b3fdfdb4175d7f34d4f5a56326065819db633dcb2",
+  "training_freeze_sha256": "ec772ecb72cf4c133cfcc3a5bf1fa2e52c0983e384d03d3f19b9f25edb52f4bc",
+  "all_50_exposure_hashes_match": true,
+  "selection": "Seen-val only; earliest trained best; no epoch0 fallback"
+}

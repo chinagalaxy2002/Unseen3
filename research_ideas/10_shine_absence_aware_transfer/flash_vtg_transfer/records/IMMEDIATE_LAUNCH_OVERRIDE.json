@@ -1,0 +1,56 @@
+{
+  "created_unix": 1791109514.6199105,
+  "user_authorization": "User explicitly requested immediate launch on shared GPUs because VRAM has headroom. Supersedes initial 60s idle scheduling rule only.",
+  "training_recipe_changed": false,
+  "frozen_training_inputs_changed": false,
+  "existing_QD_processes_changed": false,
+  "archived_waiting_queues": {
+    "A1": {
+      "status": "waiting_for_gpu",
+      "fold": "A1",
+      "device": "cuda:0",
+      "pid": 2023624,
+      "started": 1791109366.6212025,
+      "occupying_compute_pids": [
+        2016754,
+        2016755
+      ],
+      "quiet_since": null,
+      "quiet_seconds_required": 60,
+      "planned_arms": [
+        "B0",
+        "S1_saliency_only"
+      ],
+      "epochs": 50
+    },
+    "C1": {
+      "status": "waiting_for_gpu",
+      "fold": "C1",
+      "device": "cuda:1",
+      "pid": 2023625,
+      "started": 1791109366.6225314,
+      "occupying_compute_pids": [
+        2017429,
+        2017428
+      ],
+      "quiet_since": null,
+      "quiet_seconds_required": 60,
+      "planned_arms": [
+        "B0",
+        "S1_saliency_only"
+      ],
+      "epochs": 50
+    }
+  },
+  "workers": {
+    "A1": {
+      "pid": 2024440,
+      "device": "cuda:0"
+    },
+    "C1": {
+      "pid": 2024441,
+      "device": "cuda:1"
+    }
+  },
+  "worker_source_sha256": "252a031cea6f2b53dd9ea72b653e09dfb0d6b2063b5d30fcb1409f3c0f772c61"
+}

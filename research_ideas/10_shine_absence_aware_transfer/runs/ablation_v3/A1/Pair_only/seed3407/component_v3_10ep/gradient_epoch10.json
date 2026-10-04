@@ -1,0 +1,40 @@
+{
+  "scope": "first shuffled training batch; train mode; pre-clipping; shared transformer/input projections",
+  "gmr_norm": 13.897507667541504,
+  "components": {
+    "coarse": {
+      "loss": 1.8680849075317383,
+      "norm": 30.579853057861328,
+      "norm_ratio_to_gmr": 2.2003839015960693,
+      "cosine_to_gmr": 0.011691173538565636,
+      "active": true
+    },
+    "fine": {
+      "loss": 0.643904447555542,
+      "norm": 4.306073188781738,
+      "norm_ratio_to_gmr": 0.309844970703125,
+      "cosine_to_gmr": 0.038707949221134186,
+      "active": true
+    },
+    "rotated_bce": {
+      "loss": 4.014568328857422,
+      "norm": 28.561304092407227,
+      "norm_ratio_to_gmr": 2.05513858795166,
+      "cosine_to_gmr": 0.0633489340543747,
+      "active": false
+    },
+    "exist_pair": {
+      "loss": 0.027113894000649452,
+      "norm": 1.1766997575759888,
+      "norm_ratio_to_gmr": 0.08466983586549759,
+      "cosine_to_gmr": 0.06600047647953033,
+      "active": true
+    }
+  },
+  "active_auxiliary": {
+    "norm": 31.496673583984375,
+    "norm_ratio_to_gmr": 2.2663538455963135,
+    "cosine_to_gmr": 0.019108569249510765
+  },
+  "limitation": "local raw gradient geometry, not AdamW update attribution"
+}

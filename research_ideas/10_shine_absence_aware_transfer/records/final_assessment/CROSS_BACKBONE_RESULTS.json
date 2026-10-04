@@ -1,0 +1,697 @@
+{
+  "Moment": {
+    "source": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/10_shine_absence_aware_transfer/records/saliency_v5/evaluation/RESULTS.json",
+    "macro": {
+      "B0": {
+        "seen": 0.7822100270679853,
+        "unseen": 0.5325656210084031,
+        "gap": 0.24964440605958216
+      },
+      "S1_saliency_only": {
+        "seen": 0.786825131774278,
+        "unseen": 0.5352892719358822,
+        "gap": 0.2515358598383959
+      }
+    },
+    "splits": {
+      "A1": {
+        "models": {
+          "B0": {
+            "selected_epoch": 43,
+            "seen": {
+              "pooled_auroc": 0.8044900442419545,
+              "rows": 3586,
+              "videos": 1022,
+              "source_pair_acc": 0.72953216374269,
+              "source_pairs": 1368,
+              "same_query_pair_acc": 0.60458450240489,
+              "same_query_support": 133,
+              "raw_r1_iou_05": 0.3602344454463481,
+              "gated_r1_iou_05": 0.2813345356176736,
+              "positive_count": 2218,
+              "negative_count": 1368,
+              "query_count": 2286,
+              "threshold_logit": 5.090090751647949
+            },
+            "unseen": {
+              "pooled_auroc": 0.487147702922156,
+              "rows": 1584,
+              "videos": 645,
+              "source_pair_acc": 0.6320754716981132,
+              "source_pairs": 424,
+              "same_query_pair_acc": 0.4666666666666667,
+              "same_query_support": 21,
+              "raw_r1_iou_05": 0.23010752688172043,
+              "gated_r1_iou_05": 0.1913978494623656,
+              "positive_count": 465,
+              "negative_count": 1119,
+              "query_count": 1304,
+              "threshold_logit": 5.090090751647949
+            },
+            "gap": 0.3173423413197985,
+            "shuffle": {
+              "S": 0.780148400381778,
+              "U": 0.487889532704892
+            }
+          },
+          "S1_saliency_only": {
+            "selected_epoch": 35,
+            "seen": {
+              "pooled_auroc": 0.8085517087729844,
+              "rows": 3586,
+              "videos": 1022,
+              "source_pair_acc": 0.7390350877192983,
+              "source_pairs": 1368,
+              "same_query_pair_acc": 0.6053654729781904,
+              "same_query_support": 133,
+              "raw_r1_iou_05": 0.3651938683498647,
+              "gated_r1_iou_05": 0.2908025247971145,
+              "positive_count": 2218,
+              "negative_count": 1368,
+              "query_count": 2286,
+              "threshold_logit": 3.7805657386779785
+            },
+            "unseen": {
+              "pooled_auroc": 0.4810266462951752,
+              "rows": 1584,
+              "videos": 645,
+              "source_pair_acc": 0.6273584905660378,
+              "source_pairs": 424,
+              "same_query_pair_acc": 0.4920634920634921,
+              "same_query_support": 21,
+              "raw_r1_iou_05": 0.24516129032258063,
+              "gated_r1_iou_05": 0.2064516129032258,
+              "positive_count": 465,
+              "negative_count": 1119,
+              "query_count": 1304,
+              "threshold_logit": 3.7805657386779785
+            },
+            "gap": 0.3275250624778092,
+            "shuffle": {
+              "S": 0.7836458349812012,
+              "U": 0.47908174541401216
+            }
+          }
+        },
+        "comparison": {
+          "seen": {
+            "delta_auroc": 0.004061664531029963,
+            "replicates": 1000,
+            "unit": "paired video cluster",
+            "delta_ci95": [
+              -0.0011760890694702596,
+              0.009270276940919418
+            ]
+          },
+          "unseen": {
+            "delta_auroc": -0.006121056626980759,
+            "replicates": 1000,
+            "unit": "paired video cluster",
+            "delta_ci95": [
+              -0.01396018670803925,
+              0.0018867137595569986
+            ]
+          },
+          "gap_reduction": -0.010182721158010721
+        },
+        "all50_exposures_match": true
+      },
+      "C1": {
+        "models": {
+          "B0": {
+            "selected_epoch": 5,
+            "seen": {
+              "pooled_auroc": 0.7599300098940162,
+              "rows": 4273,
+              "videos": 1190,
+              "source_pair_acc": 0.6923615977575333,
+              "source_pairs": 1427,
+              "same_query_pair_acc": 0.5379590268477161,
+              "same_query_support": 129,
+              "raw_r1_iou_05": 0.3529832082886745,
+              "gated_r1_iou_05": 0.22579492675955698,
+              "positive_count": 2799,
+              "negative_count": 1474,
+              "query_count": 2974,
+              "threshold_logit": 3.533430576324463
+            },
+            "unseen": {
+              "pooled_auroc": 0.5779835390946502,
+              "rows": 432,
+              "videos": 109,
+              "source_pair_acc": 0.7125984251968503,
+              "source_pairs": 254,
+              "same_query_pair_acc": 0.4105072463768115,
+              "same_query_support": 23,
+              "raw_r1_iou_05": 0.47530864197530864,
+              "gated_r1_iou_05": 0.4382716049382716,
+              "positive_count": 162,
+              "negative_count": 270,
+              "query_count": 267,
+              "threshold_logit": 3.533430576324463
+            },
+            "gap": 0.181946470799366,
+            "shuffle": {
+              "S": 0.7549114992125023,
+              "U": 0.5794695930498399
+            }
+          },
+          "S1_saliency_only": {
+            "selected_epoch": 1,
+            "seen": {
+              "pooled_auroc": 0.7650985547755716,
+              "rows": 4273,
+              "videos": 1190,
+              "source_pair_acc": 0.6902592852137351,
+              "source_pairs": 1427,
+              "same_query_pair_acc": 0.5656532569928684,
+              "same_query_support": 129,
+              "raw_r1_iou_05": 0.360843158270811,
+              "gated_r1_iou_05": 0.21864951768488747,
+              "positive_count": 2799,
+              "negative_count": 1474,
+              "query_count": 2974,
+              "threshold_logit": 4.507059574127197
+            },
+            "unseen": {
+              "pooled_auroc": 0.589551897576589,
+              "rows": 432,
+              "videos": 109,
+              "source_pair_acc": 0.7007874015748031,
+              "source_pairs": 254,
+              "same_query_pair_acc": 0.46606280193236715,
+              "same_query_support": 23,
+              "raw_r1_iou_05": 0.43209876543209874,
+              "gated_r1_iou_05": 0.41358024691358025,
+              "positive_count": 162,
+              "negative_count": 270,
+              "query_count": 267,
+              "threshold_logit": 4.507059574127197
+            },
+            "gap": 0.17554665719898266,
+            "shuffle": {
+              "S": 0.762164768091725,
+              "U": 0.5852994970278921
+            }
+          }
+        },
+        "comparison": {
+          "seen": {
+            "delta_auroc": 0.005168544881555492,
+            "replicates": 1000,
+            "unit": "paired video cluster",
+            "delta_ci95": [
+              0.0019433351499275942,
+              0.008453820811667713
+            ]
+          },
+          "unseen": {
+            "delta_auroc": 0.011568358481938823,
+            "replicates": 1000,
+            "unit": "paired video cluster",
+            "delta_ci95": [
+              2.4735668442904604e-05,
+              0.02310041285698995
+            ]
+          },
+          "gap_reduction": 0.006399813600383331
+        },
+        "all50_exposures_match": true
+      }
+    },
+    "comparison": {
+      "delta_seen": 0.004615104706292783,
+      "delta_unseen": 0.00272365092747906,
+      "gap_reduction": -0.0018914537788137231,
+      "relative_gap_reduction": -0.007576591875895242
+    }
+  },
+  "QD-DETR": {
+    "source": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/10_shine_absence_aware_transfer/qd_detr_transfer/records/evaluation/RESULTS.json",
+    "macro": {
+      "canonical": {
+        "seen": 0.7830175197079537,
+        "unseen": 0.5363647414389296,
+        "gap": 0.2466527782690241
+      },
+      "B0": {
+        "seen": 0.7904099811993935,
+        "unseen": 0.5361707681910052,
+        "gap": 0.25423921300838837
+      },
+      "S1_saliency_only": {
+        "seen": 0.793366136452459,
+        "unseen": 0.5426850346213727,
+        "gap": 0.2506811018310863
+      }
+    },
+    "splits": {
+      "A1": {
+        "models": {
+          "B0": {
+            "selected_epoch": 24,
+            "seen": {
+              "pooled_auroc": 0.7997896661551684,
+              "rows": 3586,
+              "videos": 1022,
+              "source_pair_acc": 0.7317251461988304,
+              "source_pairs": 1368,
+              "same_query_pair_acc": 0.7000264595370566,
+              "same_query_support": 133,
+              "raw_r1_iou_05": 0.3886384129846709,
+              "gated_r1_iou_05": 0.3345356176735798,
+              "positive_count": 2218,
+              "negative_count": 1368,
+              "query_count": 2286,
+              "threshold_logit": 4.944533824920654
+            },
+            "unseen": {
+              "pooled_auroc": 0.4982674623079363,
+              "rows": 1584,
+              "videos": 645,
+              "source_pair_acc": 0.6485849056603774,
+              "source_pairs": 424,
+              "same_query_pair_acc": 0.4587301587301587,
+              "same_query_support": 21,
+              "raw_r1_iou_05": 0.22580645161290322,
+              "gated_r1_iou_05": 0.2021505376344086,
+              "positive_count": 465,
+              "negative_count": 1119,
+              "query_count": 1304,
+              "threshold_logit": 4.944533824920654
+            },
+            "gap": 0.30152220384723216,
+            "shuffle": {
+              "S": 0.760141307958806,
+              "U": 0.5116098282837018
+            }
+          },
+          "S1_saliency_only": {
+            "selected_epoch": 1,
+            "seen": {
+              "pooled_auroc": 0.8012638486809148,
+              "rows": 3586,
+              "videos": 1022,
+              "source_pair_acc": 0.7171052631578947,
+              "source_pairs": 1368,
+              "same_query_pair_acc": 0.6878882703406541,
+              "same_query_support": 133,
+              "raw_r1_iou_05": 0.3999098286744815,
+              "gated_r1_iou_05": 0.324165915238954,
+              "positive_count": 2218,
+              "negative_count": 1368,
+              "query_count": 2286,
+              "threshold_logit": 5.010912895202637
+            },
+            "unseen": {
+              "pooled_auroc": 0.500779305639636,
+              "rows": 1584,
+              "videos": 645,
+              "source_pair_acc": 0.6391509433962265,
+              "source_pairs": 424,
+              "same_query_pair_acc": 0.42698412698412697,
+              "same_query_support": 21,
+              "raw_r1_iou_05": 0.25806451612903225,
+              "gated_r1_iou_05": 0.21935483870967742,
+              "positive_count": 465,
+              "negative_count": 1119,
+              "query_count": 1304,
+              "threshold_logit": 5.010912895202637
+            },
+            "gap": 0.3004845430412788,
+            "shuffle": {
+              "S": 0.7590425097158284,
+              "U": 0.5094775481180394
+            }
+          }
+        },
+        "comparison": {
+          "seen": {
+            "delta_auroc": 0.0014741825257463814,
+            "replicates": 1000,
+            "unit": "paired video cluster",
+            "delta_ci95": [
+              -0.0058453755580161445,
+              0.008937316596328421
+            ]
+          },
+          "unseen": {
+            "delta_auroc": 0.002511843331699737,
+            "replicates": 1000,
+            "unit": "paired video cluster",
+            "delta_ci95": [
+              -0.00815313202627199,
+              0.013346086584940785
+            ]
+          },
+          "gap_reduction": 0.0010376608059533554,
+          "relative_gap_reduction": 0.0034414076068477258
+        },
+        "all50_exposures_match": true
+      },
+      "C1": {
+        "models": {
+          "B0": {
+            "selected_epoch": 1,
+            "seen": {
+              "pooled_auroc": 0.7810302962436186,
+              "rows": 4273,
+              "videos": 1190,
+              "source_pair_acc": 0.6916608269096005,
+              "source_pairs": 1427,
+              "same_query_pair_acc": 0.5261679316950088,
+              "same_query_support": 129,
+              "raw_r1_iou_05": 0.345837799214005,
+              "gated_r1_iou_05": 0.20543051089674885,
+              "positive_count": 2799,
+              "negative_count": 1474,
+              "query_count": 2974,
+              "threshold_logit": 5.113354206085205
+            },
+            "unseen": {
+              "pooled_auroc": 0.5740740740740741,
+              "rows": 432,
+              "videos": 109,
+              "source_pair_acc": 0.6968503937007874,
+              "source_pairs": 254,
+              "same_query_pair_acc": 0.4833333333333333,
+              "same_query_support": 23,
+              "raw_r1_iou_05": 0.3888888888888889,
+              "gated_r1_iou_05": 0.35185185185185186,
+              "positive_count": 162,
+              "negative_count": 270,
+              "query_count": 267,
+              "threshold_logit": 5.113354206085205
+            },
+            "gap": 0.20695622216954457,
+            "shuffle": {
+              "S": 0.7693579263382979,
+              "U": 0.5925468678555098
+            }
+          },
+          "S1_saliency_only": {
+            "selected_epoch": 1,
+            "seen": {
+              "pooled_auroc": 0.7854684242240032,
+              "rows": 4273,
+              "videos": 1190,
+              "source_pair_acc": 0.6909600560616679,
+              "source_pairs": 1427,
+              "same_query_pair_acc": 0.5263880513208132,
+              "same_query_support": 129,
+              "raw_r1_iou_05": 0.34941050375133975,
+              "gated_r1_iou_05": 0.21757770632368703,
+              "positive_count": 2799,
+              "negative_count": 1474,
+              "query_count": 2974,
+              "threshold_logit": 4.635888576507568
+            },
+            "unseen": {
+              "pooled_auroc": 0.5845907636031094,
+              "rows": 432,
+              "videos": 109,
+              "source_pair_acc": 0.6850393700787402,
+              "source_pairs": 254,
+              "same_query_pair_acc": 0.5219806763285024,
+              "same_query_support": 23,
+              "raw_r1_iou_05": 0.4691358024691358,
+              "gated_r1_iou_05": 0.4506172839506173,
+              "positive_count": 162,
+              "negative_count": 270,
+              "query_count": 267,
+              "threshold_logit": 4.635888576507568
+            },
+            "gap": 0.20087766062089385,
+            "shuffle": {
+              "S": 0.7748432639491812,
+              "U": 0.5906950160036579
+            }
+          }
+        },
+        "comparison": {
+          "seen": {
+            "delta_auroc": 0.004438127980384565,
+            "replicates": 1000,
+            "unit": "paired video cluster",
+            "delta_ci95": [
+              0.0022250796668506546,
+              0.006575919601000468
+            ]
+          },
+          "unseen": {
+            "delta_auroc": 0.010516689529035284,
+            "replicates": 1000,
+            "unit": "paired video cluster",
+            "delta_ci95": [
+              -0.002216187295252697,
+              0.022926108288504755
+            ]
+          },
+          "gap_reduction": 0.006078561548650718,
+          "relative_gap_reduction": 0.029371243275164657
+        },
+        "all50_exposures_match": true
+      }
+    },
+    "comparison": {
+      "delta_seen": 0.0029561552530654733,
+      "delta_unseen": 0.006514266430367566,
+      "gap_reduction": 0.0035581111773020924,
+      "relative_gap_reduction": 0.013995131337921095
+    }
+  },
+  "FlashVTG": {
+    "source": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/10_shine_absence_aware_transfer/flash_vtg_transfer/records/evaluation/RESULTS.json",
+    "macro": {
+      "canonical": {
+        "seen": 0.7984313312075682,
+        "unseen": 0.5691191069887274,
+        "gap": 0.2293122242188408
+      },
+      "B0": {
+        "seen": 0.7973259376693691,
+        "unseen": 0.5593284573198154,
+        "gap": 0.2379974803495537
+      },
+      "S1_saliency_only": {
+        "seen": 0.8032319306079775,
+        "unseen": 0.5348489365489097,
+        "gap": 0.26838299405906774
+      }
+    },
+    "splits": {
+      "A1": {
+        "models": {
+          "B0": {
+            "selected_epoch": 6,
+            "seen": {
+              "pooled_auroc": 0.8288099362472909,
+              "rows": 3586,
+              "videos": 1022,
+              "source_pair_acc": 0.7383040935672515,
+              "source_pairs": 1368,
+              "same_query_pair_acc": 0.6142655102141632,
+              "same_query_support": 133,
+              "raw_r1_iou_05": 0.5689810640216412,
+              "gated_r1_iou_05": 0.4292155094679892,
+              "positive_count": 2218,
+              "negative_count": 1368,
+              "query_count": 2286,
+              "threshold_logit": 4.793095588684082
+            },
+            "unseen": {
+              "pooled_auroc": 0.4657076690977927,
+              "rows": 1584,
+              "videos": 645,
+              "source_pair_acc": 0.6768867924528302,
+              "source_pairs": 424,
+              "same_query_pair_acc": 0.584126984126984,
+              "same_query_support": 21,
+              "raw_r1_iou_05": 0.3053763440860215,
+              "gated_r1_iou_05": 0.25161290322580643,
+              "positive_count": 465,
+              "negative_count": 1119,
+              "query_count": 1304,
+              "threshold_logit": 4.793095588684082
+            },
+            "gap": 0.3631022671494982,
+            "shuffle": {
+              "S": 0.7886540347713287,
+              "U": 0.4706323810622003
+            }
+          },
+          "S1_saliency_only": {
+            "selected_epoch": 35,
+            "seen": {
+              "pooled_auroc": 0.8282025321795623,
+              "rows": 3586,
+              "videos": 1022,
+              "source_pair_acc": 0.7383040935672515,
+              "source_pairs": 1368,
+              "same_query_pair_acc": 0.6297900237138995,
+              "same_query_support": 133,
+              "raw_r1_iou_05": 0.5811541929666366,
+              "gated_r1_iou_05": 0.4684400360685302,
+              "positive_count": 2218,
+              "negative_count": 1368,
+              "query_count": 2286,
+              "threshold_logit": 2.9590303897857666
+            },
+            "unseen": {
+              "pooled_auroc": 0.4629306120095708,
+              "rows": 1584,
+              "videos": 645,
+              "source_pair_acc": 0.6580188679245284,
+              "source_pairs": 424,
+              "same_query_pair_acc": 0.4412698412698412,
+              "same_query_support": 21,
+              "raw_r1_iou_05": 0.3247311827956989,
+              "gated_r1_iou_05": 0.25806451612903225,
+              "positive_count": 465,
+              "negative_count": 1119,
+              "query_count": 1304,
+              "threshold_logit": 2.9590303897857666
+            },
+            "gap": 0.3652719201699915,
+            "shuffle": {
+              "S": 0.7838715928685556,
+              "U": 0.46362439582192244
+            }
+          }
+        },
+        "comparison": {
+          "seen": {
+            "delta_auroc": -0.0006074040677286341,
+            "replicates": 1000,
+            "unit": "paired video cluster",
+            "delta_ci95": [
+              -0.0057623463383773,
+              0.004614868043819295
+            ]
+          },
+          "unseen": {
+            "delta_auroc": -0.0027770570882219014,
+            "replicates": 1000,
+            "unit": "paired video cluster",
+            "delta_ci95": [
+              -0.011175337306103721,
+              0.005886634314597501
+            ]
+          },
+          "gap_reduction": -0.0021696530204932674,
+          "relative_gap_reduction": -0.005975322152422605
+        },
+        "all50_exposures_match": true
+      },
+      "C1": {
+        "models": {
+          "B0": {
+            "selected_epoch": 2,
+            "seen": {
+              "pooled_auroc": 0.7658419390914473,
+              "rows": 4273,
+              "videos": 1190,
+              "source_pair_acc": 0.6832515767344078,
+              "source_pairs": 1427,
+              "same_query_pair_acc": 0.6074857980859006,
+              "same_query_support": 129,
+              "raw_r1_iou_05": 0.5326902465166131,
+              "gated_r1_iou_05": 0.3762057877813505,
+              "positive_count": 2799,
+              "negative_count": 1474,
+              "query_count": 2974,
+              "threshold_logit": 5.018836975097656
+            },
+            "unseen": {
+              "pooled_auroc": 0.6529492455418382,
+              "rows": 432,
+              "videos": 109,
+              "source_pair_acc": 0.7283464566929134,
+              "source_pairs": 254,
+              "same_query_pair_acc": 0.5397342995169082,
+              "same_query_support": 23,
+              "raw_r1_iou_05": 0.5123456790123457,
+              "gated_r1_iou_05": 0.48148148148148145,
+              "positive_count": 162,
+              "negative_count": 270,
+              "query_count": 267,
+              "threshold_logit": 5.018836975097656
+            },
+            "gap": 0.11289269354960907,
+            "shuffle": {
+              "S": 0.7452252040004597,
+              "U": 0.6473936899862826
+            }
+          },
+          "S1_saliency_only": {
+            "selected_epoch": 45,
+            "seen": {
+              "pooled_auroc": 0.7782613290363927,
+              "rows": 4273,
+              "videos": 1190,
+              "source_pair_acc": 0.7154870357393133,
+              "source_pairs": 1427,
+              "same_query_pair_acc": 0.6063433784632467,
+              "same_query_support": 129,
+              "raw_r1_iou_05": 0.5555555555555556,
+              "gated_r1_iou_05": 0.39764201500535906,
+              "positive_count": 2799,
+              "negative_count": 1474,
+              "query_count": 2974,
+              "threshold_logit": 4.991300106048584
+            },
+            "unseen": {
+              "pooled_auroc": 0.6067672610882487,
+              "rows": 432,
+              "videos": 109,
+              "source_pair_acc": 0.7007874015748031,
+              "source_pairs": 254,
+              "same_query_pair_acc": 0.5047101449275363,
+              "same_query_support": 23,
+              "raw_r1_iou_05": 0.5370370370370371,
+              "gated_r1_iou_05": 0.47530864197530864,
+              "positive_count": 162,
+              "negative_count": 270,
+              "query_count": 267,
+              "threshold_logit": 4.991300106048584
+            },
+            "gap": 0.17149406794814392,
+            "shuffle": {
+              "S": 0.7432788798868368,
+              "U": 0.6186785550983083
+            }
+          }
+        },
+        "comparison": {
+          "seen": {
+            "delta_auroc": 0.012419389944945403,
+            "replicates": 1000,
+            "unit": "paired video cluster",
+            "delta_ci95": [
+              0.005342360947798131,
+              0.02026098484544772
+            ]
+          },
+          "unseen": {
+            "delta_auroc": -0.04618198445358945,
+            "replicates": 1000,
+            "unit": "paired video cluster",
+            "delta_ci95": [
+              -0.07216278770910427,
+              -0.02061663018792802
+            ]
+          },
+          "gap_reduction": -0.058601374398534856,
+          "relative_gap_reduction": -0.5190891682709592
+        },
+        "all50_exposures_match": true
+      }
+    },
+    "comparison": {
+      "delta_seen": 0.005905992938608384,
+      "delta_unseen": -0.02447952077090565,
+      "gap_reduction": -0.030385513709514034,
+      "relative_gap_reduction": -0.12767157729941495
+    }
+  }
+}

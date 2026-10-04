@@ -1,0 +1,11 @@
+Loaded datasets A1
+Traceback (most recent call last):
+  File "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/10_shine_absence_aware_transfer/code/train_ablation_v2.py", line 340, in <module>
+    if __name__=='__main__':main()
+  File "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/10_shine_absence_aware_transfer/code/train_ablation_v2.py", line 336, in main
+    results.append(run_arm(args,opt,checkpoint,datasets,arm))
+  File "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/10_shine_absence_aware_transfer/code/train_ablation_v2.py", line 199, in run_arm
+    parts={'gmr':float(loss.detach()), **{'gmr_'+k:float(v.detach()) for k,v in original.items()}}
+  File "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/10_shine_absence_aware_transfer/code/train_ablation_v2.py", line 199, in <dictcomp>
+    parts={'gmr':float(loss.detach()), **{'gmr_'+k:float(v.detach()) for k,v in original.items()}}
+AttributeError: 'int' object has no attribute 'detach'

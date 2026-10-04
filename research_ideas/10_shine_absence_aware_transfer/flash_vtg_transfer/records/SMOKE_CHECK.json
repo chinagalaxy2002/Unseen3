@@ -1,0 +1,44 @@
+{
+  "A1": {
+    "gmr_loss": 0.294441282749176,
+    "coarse": 3.065429449081421,
+    "fine": 0.9251836538314819,
+    "total": 4.2850542068481445,
+    "finite_backward": true,
+    "chains": 4,
+    "native_saliency_shape": [
+      16,
+      35
+    ],
+    "native_inference_verified": true,
+    "smoke_train_auc": 1.0,
+    "native_proposals_in_seconds": true,
+    "positive_labels_verified": true,
+    "checkpoint_sha256": "73a0861f08216f11c2f335c51194919913d49bcbc41930e251a0568b035cadd3",
+    "model_module": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/10_shine_absence_aware_transfer/flash_vtg_transfer/code/models/flash_vtg_gmr/model.py",
+    "device": "cpu",
+    "optimizer_updated": false,
+    "formal_test_accessed": false
+  },
+  "C1": {
+    "gmr_loss": 0.342323362827301,
+    "coarse": 3.1123461723327637,
+    "fine": 0.8226232528686523,
+    "total": 4.277292728424072,
+    "finite_backward": true,
+    "chains": 4,
+    "native_saliency_shape": [
+      16,
+      71
+    ],
+    "native_inference_verified": true,
+    "smoke_train_auc": 1.0,
+    "native_proposals_in_seconds": true,
+    "positive_labels_verified": true,
+    "checkpoint_sha256": "67c5da20e7c1789461d266daa0c65e130b6bcb0c2a31bdc543df3944e0ce74f1",
+    "model_module": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/10_shine_absence_aware_transfer/flash_vtg_transfer/code/models/flash_vtg_gmr/model.py",
+    "device": "cpu",
+    "optimizer_updated": false,
+    "formal_test_accessed": false
+  }
+}

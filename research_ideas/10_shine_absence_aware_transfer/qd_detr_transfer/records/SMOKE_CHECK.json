@@ -1,0 +1,38 @@
+{
+  "A1": {
+    "gmr_loss": 1.133346438407898,
+    "coarse": 3.0833678245544434,
+    "fine": 0.9200462698936462,
+    "total": 5.136760711669922,
+    "finite_backward": true,
+    "chains": 4,
+    "native_saliency_shape": [
+      16,
+      35
+    ],
+    "qd_global_token_saliency_retained": true,
+    "positive_labels_verified": true,
+    "checkpoint_sha256": "7783a7f219ea8eacd8114eb8542dcec9b3dd9aad176c8e0a5661dbde839ffac8",
+    "model_module": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/10_shine_absence_aware_transfer/qd_detr_transfer/code/models/qd_detr_gmr/model.py",
+    "max_gpu_bytes": 409597952,
+    "optimizer_updated": false
+  },
+  "C1": {
+    "gmr_loss": 2.1796021461486816,
+    "coarse": 3.0043768882751465,
+    "fine": 0.7637898325920105,
+    "total": 5.947768688201904,
+    "finite_backward": true,
+    "chains": 4,
+    "native_saliency_shape": [
+      16,
+      71
+    ],
+    "qd_global_token_saliency_retained": true,
+    "positive_labels_verified": true,
+    "checkpoint_sha256": "f2e1bfc6b67f19219661a8d4a8122cacc9df3199f23607a1a7ed42cc69390520",
+    "model_module": "/home/guoxiangyu/VLMbasedIter_momentretrival/Unseen3/research_ideas/10_shine_absence_aware_transfer/qd_detr_transfer/code/models/qd_detr_gmr/model.py",
+    "max_gpu_bytes": 780606464,
+    "optimizer_updated": false
+  }
+}

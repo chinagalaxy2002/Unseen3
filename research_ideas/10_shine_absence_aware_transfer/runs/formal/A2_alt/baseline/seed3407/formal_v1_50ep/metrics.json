@@ -1,0 +1,37 @@
+{
+  "fold": "A2_alt",
+  "arm": "baseline",
+  "seed": 3407,
+  "best_epoch": 19,
+  "seen_val": {
+    "pooled_auroc": 0.8183054582234583,
+    "rows": 1529,
+    "videos": 457,
+    "source_pair_acc": 0.7079796264855688,
+    "source_pairs": 589,
+    "same_query_pair_acc": 0.6241844960594961,
+    "same_query_support": 52,
+    "raw_r1_iou_05": 0.3372340425531915,
+    "raw_r1_iou_07": 0.17553191489361702,
+    "threshold_logit": 2.9199602603912354,
+    "gated_r1_iou_05": 0.2521276595744681
+  },
+  "epoch0": {
+    "seen": {
+      "pooled_auroc": 0.8207401654444967,
+      "rows": 1529,
+      "videos": 457,
+      "source_pair_acc": 0.7215619694397284,
+      "source_pairs": 589,
+      "same_query_pair_acc": 0.5984442640692641,
+      "same_query_support": 52,
+      "raw_r1_iou_05": 0.3648936170212766,
+      "raw_r1_iou_07": 0.18829787234042553,
+      "threshold_logit": 1.4747703075408936,
+      "gated_r1_iou_05": 0.26595744680851063
+    }
+  },
+  "elapsed_seconds": 1490.9865381717682,
+  "peak_gpu_bytes": 478747136,
+  "formal_U_accessed": false
+}

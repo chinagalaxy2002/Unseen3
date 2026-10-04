@@ -1,0 +1,9 @@
+{
+  "status": "running",
+  "device": "cuda:1",
+  "current": "C2_alt",
+  "completed_splits": [
+    "C1"
+  ],
+  "started": 1791089427.8005066
+}
