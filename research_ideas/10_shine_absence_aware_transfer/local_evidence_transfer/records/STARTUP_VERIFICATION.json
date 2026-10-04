@@ -1,0 +1,72 @@
+{
+  "all_six_executing_optimizer_steps": true,
+  "formal_test_accessed": false,
+  "records": [
+    {
+      "split": "A1",
+      "arm": "Local_CF",
+      "progress": {
+        "fold": "A1",
+        "arm": "Local_CF",
+        "epoch": 1,
+        "step": 500,
+        "loss": 4.274754524230957
+      }
+    },
+    {
+      "split": "A1",
+      "arm": "Uniform_CF",
+      "progress": {
+        "fold": "A1",
+        "arm": "Uniform_CF",
+        "epoch": 1,
+        "step": 500,
+        "loss": 4.284367561340332
+      }
+    },
+    {
+      "split": "A1",
+      "arm": "Local_noCF",
+      "progress": {
+        "fold": "A1",
+        "arm": "Local_noCF",
+        "epoch": 2,
+        "step": 100,
+        "loss": 0.7496204972267151
+      }
+    },
+    {
+      "split": "C1",
+      "arm": "Local_CF",
+      "progress": {
+        "fold": "C1",
+        "arm": "Local_CF",
+        "epoch": 1,
+        "step": 500,
+        "loss": 5.295976638793945
+      }
+    },
+    {
+      "split": "C1",
+      "arm": "Uniform_CF",
+      "progress": {
+        "fold": "C1",
+        "arm": "Uniform_CF",
+        "epoch": 1,
+        "step": 500,
+        "loss": 5.295610427856445
+      }
+    },
+    {
+      "split": "C1",
+      "arm": "Local_noCF",
+      "progress": {
+        "fold": "C1",
+        "arm": "Local_noCF",
+        "epoch": 1,
+        "step": 500,
+        "loss": 1.6283758878707886
+      }
+    }
+  ]
+}
